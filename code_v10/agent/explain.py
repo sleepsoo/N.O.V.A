@@ -580,6 +580,25 @@ SAY_SLOTS = [
 ]
 
 
+SAY_SLOTS_BASE = list(SAY_SLOTS)
+# v11a: 소통 감점 문구(기전-증상 연결 부족, 치료 과정 설명 부족, 호소 증상 관리법 미설명)를 겨냥한 슬롯 설명
+SAY_SLOTS_V11_DESC = {
+    'mech': "원인을 쉬운 말로 말하고 환자가 직접 말한 증상 2~3개를 그 원인에 연결(예: '호르몬이 넘쳐 살 빠지고 땀 나고 떨려요.'). "
+            "소견 나열·'정상이에요' 금지",
+    'treat': "치료 방법(계열명)과 진행 방식·기간을 함께(예: '호르몬 낮추는 약을 먹으며 피검사로 1~2년 조절해요.'). 용량 숫자·"
+             "'처방해 드려요'·'나중에 정해요' 금지",
+    'life': "환자가 호소한 증상 하나의 집에서 관리법 + 재진 시점(예: '눈이 뻑뻑하면 인공눈물 쓰고 2주 뒤 오세요.')",
+}
+
+
+def apply_v11(on: bool) -> None:
+    global SAY_SLOTS
+    if on:
+        SAY_SLOTS = [(k, SAY_SLOTS_V11_DESC.get(k, d)) for k, d in SAY_SLOTS_BASE]
+    else:
+        SAY_SLOTS = list(SAY_SLOTS_BASE)
+
+
 def say_slots(n: int) -> list[tuple[str, str]]:
     """n문장 슬롯(말하는 순서): 5=진단·기전·걱정·검사·경고, 6=+치료(6 핵심), 7=+재진·생활."""
     if n <= 3:

@@ -170,3 +170,52 @@ class TestBackstop(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+# ================================================================ v11 (v10b 위 세 방향)
+V11 = {'v11a': {'EXAM_POS': '1', 'BANK_V10': '1', 'SAY_V11': '1'},
+       'v11b': {'EXAM_POS': '1', 'BANK_V10': '1', 'OPEN_TOPIC': '1'},
+       'v11c': {'EXAM_POS': '1', 'BANK_V10': '1', 'HPI_V11': '1'}}
+VARS.update(V11)
+
+
+class TestV11(unittest.TestCase):
+    def test_limits(self):
+        for var in V11:
+            for case in ('C10', 'C01', 'C03'):
+                for kw in ({}, {'q_line': 'none', 'explain_q': 'none'}, {'explain_q': 'all'}, {'llm': 'error'}):
+                    c = run_var(case, var, **kw)
+                    self.assertLessEqual(c.turns, 34, (var, case, kw))
+                    self.assertIsNotNone(c.diagnosed)
+                    self.assertTrue(all(T.nlen(e[1]) <= 30 for e in c.events), (var, case, kw))
+
+    def test_v11a_question_line_and_reset(self):
+        from agent import explain, say
+        c = run_var('C10', 'v11a')
+        self.assertIn('이해 안 되시거나 더 궁금하신 점 있으세요?', [e[1] for e in c.events])
+        self.assertIn('인공눈물', dict(explain.SAY_SLOTS)['life'])
+        run_var('C10', 'b')   # 끄면 원래대로 돌아온다(모듈 전역 교체가 남지 않음)
+        self.assertEqual(say.QUESTION_LINE, '더 궁금하신 점 있으세요?')
+        self.assertEqual(explain.SAY_SLOTS, explain.SAY_SLOTS_BASE)
+
+    def test_v11b_open_topic(self):
+        from agent import interview
+        self.assertEqual(interview._first_open_topic({'cc': '체중 감소'}, None), '체중 감소에 대해 자세히 말씀해 주시겠어요?')
+        self.assertEqual(interview._first_open_topic({'cc': '불면 (수면제 처방 원함)'}, None),
+                         '안녕하세요, 불면에 대해 자세히 말씀해 주시겠어요?')
+        self.assertEqual(interview._first_open_topic({'cc': '아주 긴 주호소 문장이 들어온 경우입니다'}, None), '')
+        c = run_var('C10', 'v11b')
+        self.assertTrue(c.events[0][1].startswith('체중 감소에 대해'))
+        b = run_var('C10', 'b')
+        self.assertIn('불편한 데는요', b.events[0][1])
+
+    def test_v11c_prompt(self):
+        c = run_var('C10', 'v11c')
+        self.assertTrue(any('항목 (+)' in p and '6~12줄' in p for p in c.prompts))
+        b = run_var('C10', 'b')
+        self.assertFalse(any('6~12줄' in p for p in b.prompts))
+        self.assertTrue(any('4~8줄' in p for p in b.prompts))
+
+    def test_v11_off_equals_v10b(self):
+        for case in ('C10', 'C01', 'C03'):
+            self.assertEqual(seq(run_var(case, 'b')), seq(run_var(case, 'v11c')), case)   # v11c는 대화 불변

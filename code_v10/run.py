@@ -56,6 +56,10 @@ DEFAULTS = {
     'EXAM_POS': 0,             # 양성 증상 계통의 진찰을 진찰 창(EXAM_N) 안으로 당김
     'BANK_V10': 0,             # 은행 짝 보강(가족력 짝·체중감소 떨림·근력)
     'HX_MUST': 0,              # 고혈압·당뇨 과거력을 필수 공통 병력으로
+    # v11: v10b 위 세 방향(제출 변형 v11a/b/c는 이 중 하나만 1)
+    'SAY_V11': 0,              # 설명: 증상 연결 기전·치료 진행·증상 관리 슬롯 + 이해 확인형 마지막 질문
+    'OPEN_TOPIC': 0,           # 첫 질문: 주호소 지정 개방형('OO에 대해 자세히 말씀해 주세요')
+    'HPI_V11': 0,              # 기록: 현병력을 '항목 (+)/(-)' 표기로 촘촘히(모범기록 형식)
     'TURN_PRESET': 't34',      # lean38 | bal44 | comm46 | full48 | t35 | t34(v8)
     'INTERVIEW_Q': 17,         # v8: 첫 개방형 질문 제외 문진 단위 수(ICE 포함) — 프리셋이 덮어씀
     # 턴 상한: 문진+진찰+설명(+환자 질문 답) 합계가 TURN_CAP을 넘지 않게. 문진은 진찰·설명·답 ANSWER_RESERVE턴을 먼저 남긴다
@@ -194,6 +198,12 @@ def _phase(name, fn, *args):
 def consult(client, state):
     cfg = (state or {}).get('config') if isinstance(state, dict) else None
     cfg = cfg or load_config()
+    try:   # v11: 설명 슬롯·마지막 질문 문구를 설정에 맞춰 교체(모듈 전역, 매 진료 시작 시 다시 정함)
+        from agent import explain as _ex, say as _say
+        _ex.apply_v11(bool(cfg.get('SAY_V11')))
+        _say.QUESTION_LINE = _say.QUESTION_LINE_V11 if cfg.get('SAY_V11') else _say.QUESTION_LINE_BASE
+    except Exception as exc:  # noqa: BLE001
+        log_error(f'v11 say setup skipped: {type(exc).__name__}: {exc}')
     guidelines.set_index((state or {}).get('guidelines') if isinstance(state, dict) else None)
     if cfg.get('V2', 1):
         return consult_v2(client, cfg)

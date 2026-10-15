@@ -633,7 +633,31 @@ def _llm_units(enc, units: list[dict], bank: bool, built: dict | None = None) ->
     return out
 
 
-def _first_open(prof: dict, main) -> str:
+def _cc_noun(prof: dict) -> str:
+    cc = nfc(str(prof.get('cc') or prof.get('chief_complaint') or '')).strip()
+    cc = re.sub(r'\s*[\(\[].*?[\)\]]', '', cc).strip()           # '불면 (수면제 처방 원함)' → '불면'
+    cc = re.split(r'[,/·]| 및 ', cc)[0].strip()
+    return cc if 1 < len(cc) <= 10 and re.fullmatch(r'[가-힣A-Za-z0-9 ]+', cc) else ''
+
+
+def _first_open_topic(prof: dict, main) -> str:
+    """v11b: 주제 지정 개방형(프로브 답당 사실 2.0, '그 밖에'형 1.1). 맞는 문장이 없으면 ''(기존 문장)."""
+    cc = _cc_noun(prof)
+    if not cc:
+        return ''
+    who = '아이 ' if prof.get('pediatric') else ''
+    for c in (f'안녕하세요, {who}{cc}에 대해 자세히 말씀해 주시겠어요?', f'{who}{cc}에 대해 자세히 말씀해 주시겠어요?',
+              f'{who}{cc}에 대해 자세히 말씀해 주세요?'):
+        if fits(c) and validate_question(c)[0]:
+            return c
+    return ''
+
+
+def _first_open(prof: dict, main, cfg=None) -> str:
+    if (cfg or {}).get('OPEN_TOPIC'):
+        t = _first_open_topic(prof, main)
+        if t:
+            return t
     emp = prof.get('empathy_short') or '걱정되셨죠.'
     if prof.get('pediatric'):
         cands = [f'안녕하세요, {emp} 아이가 다른 불편한 데는요?', '안녕하세요, 아이가 다른 불편한 데는요?']
@@ -742,7 +766,7 @@ def run_v8(enc):
 
     # 1. 첫 턴: 인사·공감 + 개방형 질문 1개(공감 접두가 잘려도 질문 문장은 남는다)
     if enc.can_act():
-        e = enc.act('SAY', _first_open(prof, built['main']), phase='first', qid='open', label='개방형')
+        e = enc.act('SAY', _first_open(prof, built['main'], cfg), phase='first', qid='open', label='개방형')
         if e and not e.get('refused'):
             enc.counts['interview'] += 0  # 첫 턴은 문진 예산(INTERVIEW_Q) 밖
             note_mentions(e.get('reply') or '', e['turn'], entry=e)
