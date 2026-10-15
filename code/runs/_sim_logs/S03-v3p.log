@@ -1,0 +1,92 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   5.7s] llm[intake] low out=221 finish=stop 5.7s
+[   5.7s] intake: {'age': 3, 'sex': 'F', 'pediatric': True, 'informant': '어머님', 'cc': '발열 및 오른쪽 귀 통증', 'request': '', 'categories': ['p_fever', 'insomnia'], 'empathy': '밤새 많이 걱정되셨겠어요.', 'answered': []} diffs=['급성 중이염', '바이러스성 상기도 감염', '외이도염', '고막염', '인두염']
+[   5.7s] checklist: 37 items, covered=['hpi_onset', 'p_sleep']
+[   7.4s] turn 1 SAY: 밤새 많이 걱정되셨겠어요. -> 네, 알겠습니다.
+[  15.7s] turn 2 SAY: 아이 열에 대해 자세히 말씀해 주세요 -> 어제 낮부터 열이 나서 삼십팔도 올라갔어요.
+[  23.8s] turn 3 SAY: 어머님이 가장 걱정되시는 게 뭐예요? -> 엄마는 열이 계속 나서 혹시 뇌수막염 같은 큰 병이 아닌지 걱정이 된다.
+[  33.2s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 몸에 발진은 없어요.
+[  38.8s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 누우면 더 보채고, 안아 주면 조금 나아져요.
+[  48.8s] llm[plan_q3] low out=683 finish=stop 10.0s
+[  52.7s] turn 6 SAY: 해열제를 먹이면 열이 떨어지나요? -> 해열제 먹으면 두세 시간 정도 열이 내렸다가 다시 오른다.
+[  61.9s] turn 7 SAY: 소변을 평소만큼 보나요? -> 오줌은 평소처럼 기저귀가 젖어요.
+[  68.7s] turn 8 SAY: 아이의 활동 상태에 대해 자세히 말씀해 주세요 -> 축 처지지는 않고, 열이 내리면 평소처럼 장난감을 가지고 논다.
+[  75.5s] turn 9 SAY: 기침이나 콧물은 없나요? -> 그런 건 없어요.
+[  79.4s] turn 10 SAY: 토하거나 설사하나요? -> 토하지는 않았고, 설사도 없다.
+[  81.4s] turn 11 SAY: 경련한 적 있나요? -> 경련은 없어요.
+[  87.9s] turn 12 SAY: 열의 경과에 대해 자세히 말씀해 주세요 -> 열이 나기 시작했고, 삼십팔 도까지 올랐어요.
+[  92.8s] turn 13 SAY: 열은 몇 도까지 났나요? -> 삼십팔 도까지 올랐어요.
+[  96.4s] turn 14 SAY: 열은 언제부터 났나요? -> 어제 낮부터 열이 나기 시작했어요.
+[ 117.0s] llm[plan_q3] low out=506 finish=stop 20.5s
+[ 123.2s] turn 15 SAY: 먹는 양은 평소와 비교해 어때요? -> 밥은 반 정도만 먹고
+[ 130.4s] turn 16 SAY: 임신과 출산 때 일어난 일에 대해 자세히 말씀해 주세요 -> 만삭에 자연분만으로 태어났고, 특별한 문제는 없었어요.
+[ 134.9s] turn 17 SAY: 예방접종에 대해 자세히 말씀해 주세요 -> 폐렴구균 백신까지 제때 맞았어요.
+[ 139.5s] turn 18 SAY: 입원이나 큰 병에 대해 자세히 말씀해 주세요 -> 입원하거나 수술을 받은 적은 없어요.
+[ 143.8s] turn 19 SAY: 먹는 약이나 한약에 대해 자세히 말씀해 주세요 -> 평소 먹는 약은 없어요.
+[ 158.7s] turn 20 SAY: 가족 병력에 대해 자세히 말씀해 주세요 -> 아빠는 비염이 있고, 가족 중 귀 수술은 없어요.
+[ 163.9s] turn 21 SAY: 말이나 걷기는 또래만큼 했나요? -> 말도 잘하고 발달은 또래와 비슷해요.
+[ 169.4s] turn 22 SAY: 어린이집에 아픈 아이가 있나요? -> 어린이집에서 감기가 돌고 있었어요.
+[ 175.4s] turn 23 SAY: 오늘 특히 궁금하신 게 있으세요? -> 귀가 나빠지거나 청력에 문제가 생기지 않는지 궁금해해요.
+[ 175.4s] v3 interview done: q=22 asked=19 covered=4 uncovered_p1=[]
+[ 179.5s] llm[exams3] low out=228 finish=stop 4.1s
+[ 179.5s] v3 exams plan: ['ear', 'pharynx', 'cervical_ln', 'neck_stiff', 'cap_refill', 'general', 'heart', 'lung', 'abd_palp', 'mental', 'conj', 'thyroid', 'periph', 'vitals']
+[ 183.6s] turn 24 EXAM: 고막 시진하겠습니다 -> 우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)
+[ 183.6s] turn 25 EXAM: 인두·편도 시진하겠습니다 -> 인두 경도 발적(+), 편도 비대 1도, 삼출물(-)
+[ 183.6s] turn 26 EXAM: 경부 림프절 촉진하겠습니다 -> 우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)
+[ 188.5s] turn 27 EXAM: 경부 강직 확인하겠습니다 -> 경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)
+[ 192.4s] turn 28 EXAM: 모세혈관 재충혈 확인하겠습니다 -> 2초 미만
+[ 192.4s] turn 29 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)
+[ 192.4s] turn 30 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 128회/분, 심잡음(-)
+[ 192.4s] turn 31 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 192.4s] turn 32 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)
+[ 192.4s] turn 33 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 연령에 맞는 반응, 보호자 알아봄(+)
+[ 192.4s] turn 34 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 눈곱(-/-)
+[ 213.6s] turn 35 EXAM: 갑상선 촉진하겠습니다 -> 갑상선 부위 부드럽고, 대칭, 압통(-), 크기 정상
+[ 258.6s] turn 36 EXAM: 하지 말초 진찰하겠습니다 -> 하반신 말초 진찰 (Lower limb peripheral examination) | 다리 근력 5/5, 반
+[ 258.6s] turn 37 EXAM: 활력징후 측정하겠습니다 -> 96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C
+[ 281.8s] llm[facts] medium out=2083 finish=stop 23.2s
+[ 281.8s] fact key demoted: ros.Cough turn 9
+[ 281.8s] fact key demoted: ros.Rhinorrhea turn 9
+[ 281.8s] facts: 43
+[ 297.4s] llm[dx] medium out=1706 finish=stop 15.6s
+[ 312.7s] llm[plan_say3] low out=1183 finish=stop 15.2s
+[ 312.7s] v3 lines: {'dx': '오른쪽 급성 중이염으로 보여요', 'meaning': '귀 통증과 고막 팽윤이 중이염에 맞아요', 'concern': '목이 뻣뻣하지 않고 반응도 좋아요', 'tests': '고막 진찰로 중이염을 살펴봤어요', 'tests2': '지금은 추가 검사가 필요하지 않아요', 'treatment': '해열진통제와 관찰을 우선 고려해요', 'treatment2': '악화하거나 낫지 않으면 항생제를 상의해요', 'warning': '귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.', 'followup': '2~3일 뒤 귀 상태를 다시 볼게요.', 'lifestyle': '간접흡연을 피하고 푹 쉬게 해주세요'} musts=[] checks=[{'drop': '귀뒤붓기·처짐·목경직·고열지속이면 바로 오세요', 'key': 'warning', 'why': 'no_space'}]
+[ 316.3s] turn 38 SAY: 오른쪽 급성 중이염으로 보여요 -> 네, 알겠습니다.
+[ 321.2s] turn 39 SAY: 귀 통증과 고막 팽윤이 중이염에 맞아요 -> 네, 알겠습니다.
+[ 325.9s] turn 40 SAY: 목이 뻣뻣하지 않고 반응도 좋아요 -> 네, 알겠습니다.
+[ 328.2s] turn 41 SAY: 고막 진찰로 중이염을 살펴봤어요 -> 네, 알겠습니다.
+[ 336.2s] turn 42 SAY: 지금은 추가 검사가 필요하지 않아요 -> 어린이집에 언제 다시 보내도 되는지 알고 싶어요
+[ 340.9s] turn 43 SAY: 2~3일 뒤 귀 상태를 다시 볼게요. -> 네, 알겠습니다.
+[ 345.3s] turn 44 SAY: 해열진통제와 관찰을 우선 고려해요 -> 네, 알겠습니다.
+[ 350.9s] turn 45 SAY: 악화하거나 낫지 않으면 항생제를 상의해요 -> 네, 알겠습니다.
+[ 356.1s] turn 46 SAY: 귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 359.8s] turn 47 SAY: 간접흡연을 피하고 푹 쉬게 해주세요 -> 네, 알겠습니다.
+[ 366.0s] turn 48 SAY: 언제 바로 오셔야 하는지 말씀해 보세요 -> 그런 건 없어요.
+[ 370.0s] turn 49 SAY: 귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 370.0s] v3 explain done: said=11 answers=0 teach={'reply': '그런 건 없어요.', 'ok': False} turns_left=1 (start 13)
+[ 377.7s] llm[S-narr] low out=715 finish=stop 7.7s
+[ 377.7s] summary: turns=49 counts={'say': 35, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22, 'truncated': 0} budget={'doctor_calls': 8, 'doctor_ok_calls': 8, 'doctor_invalid': 0, 'doctor_input_tokens': 16741, 'doctor_output_tokens': 7325, 'elapsed_s': 377.6} dx=급성 중이염 (Acute otitis media)
+S03 gpt-6-luna: total=56 정보수집=14 진단추론=12 검사·추적=6 안전=10 의사소통=6 효율=8 dx5=4
+- missed_key_questions: ['마지막 해열제 투여 시각 및 최고 체온(38.9°C)', '5일간의 콧물·기침과 이루·청력 변화 여부', '수분 섭취량 및 마지막 소변 시각', '호흡곤란·천명, 목 경직 등 동반 증상', '과거 중이염, 최근 항생제, 아목시실린 및 기타 약·음식 알레르기', '가정 내 흡연, 형제의 최근 감기, 젖병을 물고 자는 습관', '항생제 필요성에 대한 보호자의 질문 및 어린이집 복귀 시기']
+- missed_key_exams: ['외이도 시진', '이주·이개 견인 압통 확인', '유양돌기 촉진 및 발적·부종·이개 전위 확인', '비강 시진', '구강 점막 확인', '피부 발진·점상출혈 시진', '흉곽 시진 및 보행 관찰']
+- top_improvements: ['최고 체온·해열제 마지막 투여 시각, URI 경과, 이루·청력 변화 등 핵심 문진을 빠짐없이 확인하고 정확히 기록하기.', '중이염 진단을 위해 이경 검사와 함께 외이도·이개 압통 및 유양돌기 진찰을 시행하기.', '관찰과 항생제 선택의 기준·장단점을 설명하고, 보호자 질문에 직접 답하며 어린이집 복귀 시기를 안내하기.', '48~72시간 내 재진, 구체적인 응급 경고 증상, 해열제 사용법과 필요 시 청력 추적 계획을 명확히 제시하기.', '중복 문진과 무관한 진찰을 줄이고 핵심 진료에 집중하기.']
+{
+ "turns": 49,
+ "say": 35,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 8,
+ "luna_calls": 10,
+ "doctor_input_tokens": 16741,
+ "doctor_output_tokens": 7325,
+ "sim_calls": 42,
+ "seconds": 377.7,
+ "diagnosis": "급성 중이염 (Acute otitis media)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 56,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S03-v3p

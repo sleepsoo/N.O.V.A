@@ -1,0 +1,495 @@
+{
+  "case_id": "35dd8b69-2531-454e-bb8c-fb8030293447",
+  "alias": "C10",
+  "turns": 46,
+  "say": 36,
+  "exam": 10,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 24,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 18621,
+  "doctor_output_tokens": 9290,
+  "seconds": 261.6,
+  "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves disease causing hyperthyroidism)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "비의도적 체중 감소",
+    "request": "",
+    "categories": [
+      "weight_loss"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "그레이브스병에 의한 항진증 가능성이 높아요.",
+    "흔한 병이고 약으로 잘 조절돼요.",
+    "호르몬이 많아 살 빠짐·두근거림이 생겨요.",
+    "큰 병인지 검사로 원인과 정도를 확인해요.",
+    "피검사로 갑상샘 호르몬·항체를 확인해요.",
+    "심전도·임신검사와 간·혈액검사도 해요.",
+    "검사 뒤 약을 고려하고 복용법을 안내해요.",
+    "고열·인후통·황달·불규칙한 맥·숨참은 바로 오세요.",
+    "1~2주 뒤 결과를 보고 치료를 결정해요.",
+    "카페인을 줄이고 눈은 인공눈물로 관리해요.",
+    "더 궁금하신 점 있으세요?",
+    "검사와 임신 여부 확인 뒤 약을 고려해요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 720,
+      "out": 271,
+      "finish": "stop",
+      "sec": 4.6
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2813,
+      "out": 613,
+      "finish": "stop",
+      "sec": 8.8
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3025,
+      "out": 601,
+      "finish": "stop",
+      "sec": 8.4
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1016,
+      "out": 176,
+      "finish": "stop",
+      "sec": 4.0
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1915,
+      "out": 2147,
+      "finish": "stop",
+      "sec": 11.5
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2626,
+      "out": 2346,
+      "finish": "stop",
+      "sec": 27.9
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3363,
+      "out": 1711,
+      "finish": "stop",
+      "sec": 18.2
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 153,
+      "out": 476,
+      "finish": "stop",
+      "sec": 6.2
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2990,
+      "out": 949,
+      "finish": "stop",
+      "sec": 10.9
+    }
+  ],
+  "phase_times": {
+    "intake": 4.6,
+    "interview": 110.2,
+    "examine": 31.0,
+    "facts": 11.5,
+    "dx": 27.9,
+    "plan_say": 24.4,
+    "explain": 40.8,
+    "S": 10.9
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "최윤정",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이·성별",
+      "pol": "?",
+      "detail": "32세 여성",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 감소",
+      "pol": "+",
+      "detail": "56kg→49kg, 3개월간 7kg 감소",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 감소 의도",
+      "pol": "-",
+      "detail": "다이어트·운동 안 함",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "평소 체중",
+      "pol": "?",
+      "detail": "변화 거의 없었음",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키",
+      "pol": "?",
+      "detail": "164cm",
+      "id": "F6"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "ros.Anorexia",
+      "label": "식욕 저하",
+      "pol": "-",
+      "detail": "예전보다 더 많이 먹음",
+      "id": "F7"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "other",
+      "label": "식욕 증가",
+      "pol": "+",
+      "detail": "예전보다 더 많이 먹음",
+      "id": "F8"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "other",
+      "label": "더위 민감",
+      "pol": "+",
+      "detail": "예전보다 더위를 많이 탐",
+      "id": "F9"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "ros.Palpitation",
+      "label": "심계항진",
+      "pol": "+",
+      "detail": "가만히 있어도 자주 두근거림",
+      "id": "F10"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "other",
+      "label": "손떨림",
+      "pol": "+",
+      "detail": "잔 들거나 글씨 쓸 때 떨림",
+      "id": "F11"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "배변 횟수",
+      "pol": "?",
+      "detail": "하루 2~3회",
+      "id": "F12"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "변 상태",
+      "pol": "?",
+      "detail": "좀 묽어짐",
+      "id": "F13"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "갈증 증가",
+      "pol": "-",
+      "detail": "예전과 비슷하게 마심",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "진단받은 적 없음",
+      "id": "F15"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "진단받은 적 없음",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "발한 증가",
+      "pol": "+",
+      "detail": "밤에 잠옷이 젖기도 함",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "목 앞 두꺼워짐",
+      "pol": "+",
+      "detail": "목 앞이 두꺼워짐",
+      "id": "F18"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "목 혹",
+      "pol": "-",
+      "detail": "혹은 없음",
+      "id": "F19"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "눈 돌출",
+      "pol": "+",
+      "detail": "좀 튀어나와 보임",
+      "id": "F20"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "배뇨 횟수 증가",
+      "pol": "+",
+      "detail": "조금 늘어난 것 같음",
+      "id": "F21"
+    },
+    {
+      "turn": 12,
+      "sec": "meds",
+      "key": "other",
+      "label": "약·영양제",
+      "pol": "-",
+      "detail": "복용 안 함",
+      "id": "F22"
+    },
+    {
+      "turn": 13,
+      "sec": "fh",
+      "key": "other",
+      "label": "모친 질환",
+      "pol": "+",
+      "detail": "갑상샘저하",
+      "id": "F23"
+    },
+    {
+      "turn": 13,
+      "sec": "fh",
+      "key": "fh.HTN",
+      "label": "부친 고혈압",
+      "pol": "+",
+      "detail": "아버지 고혈압",
+      "id": "F24"
+    },
+    {
+      "turn": 14,
+      "sec": "ros",
+      "key": "other",
+      "label": "다리 힘 빠짐",
+      "pol": "+",
+      "detail": "계단 오를 때 힘 빠져 힘듦",
+      "id": "F25"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "활동량 증가",
+      "pol": "-",
+      "detail": "평소와 비슷함",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "복통",
+      "pol": "-",
+      "detail": "배 안 아픔",
+      "id": "F27"
+    },
+    {
+      "turn": 17,
+      "sec": "pmh",
+      "key": "other",
+      "label": "기타 지병",
+      "pol": "-",
+      "detail": "다른 지병 없음",
+      "id": "F28"
+    },
+    {
+      "turn": 18,
+      "sec": "women",
+      "key": "other",
+      "label": "월경량 감소",
+      "pol": "+",
+      "detail": "최근 두 달간 양 감소",
+      "id": "F29"
+    },
+    {
+      "turn": 18,
+      "sec": "women",
+      "key": "other",
+      "label": "월경 기간 감소",
+      "pol": "+",
+      "detail": "최근 두 달간 기간 감소",
+      "id": "F30"
+    },
+    {
+      "turn": 19,
+      "sec": "women",
+      "key": "other",
+      "label": "임신 가능성",
+      "pol": "-",
+      "detail": "몇 달간 성관계 없음",
+      "id": "F31"
+    },
+    {
+      "turn": 20,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "담배 안 피움",
+      "id": "F32"
+    },
+    {
+      "turn": 21,
+      "sec": "sh",
+      "key": "other",
+      "label": "음주",
+      "pol": "?",
+      "detail": "한 달 1~2회 가볍게",
+      "id": "F33"
+    },
+    {
+      "turn": 22,
+      "sec": "ros",
+      "key": "other",
+      "label": "피로",
+      "pol": "+",
+      "detail": "쉽게 지침",
+      "id": "F34"
+    },
+    {
+      "turn": 22,
+      "sec": "hpi",
+      "key": "other",
+      "label": "일상 지장",
+      "pol": "+",
+      "detail": "일하기 힘듦",
+      "id": "F35"
+    },
+    {
+      "turn": 23,
+      "sec": "ice",
+      "key": "other",
+      "label": "큰 병 걱정",
+      "pol": "+",
+      "detail": "혹시 큰 병일까 걱정",
+      "id": "F36"
+    },
+    {
+      "turn": 24,
+      "sec": "ice",
+      "key": "other",
+      "label": "검사 문의",
+      "pol": "?",
+      "detail": "어떤 검사를 받아야 하나요",
+      "id": "F37"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "a3202ba137e98f4eea87fb4a2df725bd1b2f82603a48e2e37d6133bb3140164c",
+    "score_status": "not_scored",
+    "turn": 46
+  },
+  "error": null,
+  "session_id": "27b2b178-1cad-4f3a-9d07-2f102fd1b540",
+  "api": "https://nova.snubhai.org"
+}

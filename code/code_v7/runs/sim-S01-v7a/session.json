@@ -1,0 +1,601 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "불편하셨겠어요. 배 어디가 아프세요?",
+      "effective_content": "배 어디가 아프세요?",
+      "response": {
+        "status": "OK",
+        "content": "오른쪽 아랫배가 제일 아프요",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "불편하셨겠어요. 배 어디가 아프세요?"
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "어떻게 아프세요?",
+      "effective_content": "어떻게 아프세요?",
+      "response": {
+        "status": "OK",
+        "content": "걷거나 기침하면 울려서 더 아프고, 차 덜컹거릴 때도 아파요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "어떻게 아프세요?"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "0~10점이면 몇 점이에요?",
+      "effective_content": "0~10점이면 몇 점이에요?",
+      "response": {
+        "status": "OK",
+        "content": "일곱 점이에요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "0~10점이면 몇 점이에요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "식사와 관련해 달라지나요?",
+      "effective_content": "식사와 관련해 달라지나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "식사와 관련해 달라지나요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "메스껍거나 토하세요?",
+      "effective_content": "메스껍거나 토하세요?",
+      "response": {
+        "status": "OK",
+        "content": "속이 메스껍고, 새벽에 한 번 토했어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "메스껍거나 토하세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "설사나 변비가 있나요?",
+      "effective_content": "설사나 변비가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "그 뒤로 대변은 보지 않았고, 설사는 없어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "설사나 변비가 있나요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "변이 검거나 피가 섞이나요?",
+      "effective_content": "변이 검거나 피가 섞이나요?",
+      "response": {
+        "status": "OK",
+        "content": "검은 변은 없고, 피도 없어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "변이 검거나 피가 섞이나요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "맹장염이 아닌지 걱정돼요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨 있으세요?",
+      "effective_content": "고혈압이나 당뇨 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압, 당뇨는 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨 있으세요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "다른 지병이 있으세요?",
+      "effective_content": "다른 지병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "다른 지병이 있으세요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "열이 혹시 있었나요?",
+      "effective_content": "열이 혹시 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "삼십칠 도였어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "열이 혹시 있었나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "소변 볼 때 아프거나 피가 나나요?",
+      "effective_content": "소변 볼 때 아프거나 피가 나나요?",
+      "response": {
+        "status": "OK",
+        "content": "소변 볼 때 따갑거나 아프지 않고, 소변 색도 평소와 같아요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "소변 볼 때 아프거나 피가 나나요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "진통제나 알코올을 자주 드시나요?",
+      "effective_content": "진통제나 알코올을 자주 드시나요?",
+      "response": {
+        "status": "OK",
+        "content": "진통제는 안 먹었고, 일주일에 한 번 정도 마셔요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "진통제나 알코올을 자주 드시나요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "증상이 점점 심해지고 있나요?",
+      "effective_content": "증상이 점점 심해지고 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "통증은 계속 있고, 시간이 갈수록 점점 심해지고 있어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "증상이 점점 심해지고 있나요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "일상생활이 지장되나요?",
+      "effective_content": "일상생활이 지장되나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "일상생활이 지장되나요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "술은 얼마나 드세요?",
+      "effective_content": "술은 얼마나 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "일주일에 한 번 정도 맥주 두세 잔 마셔요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "술은 얼마나 드세요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "커피는 하루 몇 잔 드세요?",
+      "effective_content": "커피는 하루 몇 잔 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "커피는 하루 몇 잔 드세요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "요즘 기분이 많이 가라앉나요?",
+      "effective_content": "요즘 기분이 많이 가라앉나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "요즘 기분이 많이 가라앉나요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "약이나 영양제를 드시나요?",
+      "effective_content": "약이나 영양제를 드시나요?",
+      "response": {
+        "status": "OK",
+        "content": "소화제 한 알만 먹었어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "약이나 영양제를 드시나요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "담배는 피우세요?",
+      "effective_content": "담배는 피우세요?",
+      "response": {
+        "status": "OK",
+        "content": "하루 반 갑 정도, 오 년째 피워요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "담배는 피우세요?"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "부모님이나 형제분이 같은 병을 앓는 분이 있나요?",
+      "effective_content": "부모님이나 형제분이 같은 병을 앓는 분이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지는 고혈압으로 약을 드시고, 어머니는 건강하시다.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "부모님이나 형제분이 같은 병을 앓는 분이 있나요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "혹시 맹장염이 아닌지 걱정이 돼요",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "124/76mmHg, 98회/분 규칙적, 18회/분, 37.9°C",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 지남력 3/3점",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "주간 진정·불안 관찰하겠습니다",
+      "refused": "EXAM_NOT_RECOGNIZED"
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "복부 시진하겠습니다",
+      "effective_content": "r09",
+      "response": {
+        "status": "OK",
+        "result": "편평, 팽만(-), 수술 반흔(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "장음 청진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "감소 4회/분, 금속성음(-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r12",
+      "response": {
+        "status": "OK",
+        "result": "우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "반발통 확인하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "우하복부 반발압통(+)",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "머피 징후 확인하겠습니다",
+      "effective_content": "r18",
+      "response": {
+        "status": "OK",
+        "result": "머피 징후(-)",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "EXAM",
+      "content": "맥버니 압통 확인하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "맥버니점 압통(+)",
+        "turn": 32,
+        "turns_remaining": 18
+      }
+    },
+    {
+      "turn": 33,
+      "action": "EXAM",
+      "content": "심부건반사 검사하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "심부건반사 검사 (Deep tendon reflex test) | 2+/2+, 대칭",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "급성 충수염 가능성이 높습니다.",
+      "effective_content": "급성 충수염 가능성이 높습니다.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "급성 충수염 가능성이 높습니다."
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "운동 시 통증이 악화됩니다.",
+      "effective_content": "운동 시 통증이 악화됩니다.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "운동 시 통증이 악화됩니다."
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "통증 위치와 증상으로 맹장염이 의심됩니다.",
+      "effective_content": "통증 위치와 증상으로 맹장염이 의심됩니다.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "통증 위치와 증상으로 맹장염이 의심됩니다."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "오른손 압통이 충수염을 시사합니다.",
+      "effective_content": "오른손 압통이 충수염을 시사합니다.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "오른손 압통이 충수염을 시사합니다."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "피검사로 혈액 내 염증 수치와 백혈구를 확인할 거예요.",
+      "effective_content": "피검사로 혈액 내 염증 수치와 백혈구를 확인할 거예요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "피검사로 혈액 내 염증 수치와 백혈구를 확인할 거예요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+      "effective_content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "숨참·흉통·의식 변화·고열 시 바로 오세요."
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "피검사로 혈액 내 염증 수치와 백혈구를 확인할 거예요.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요."
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "1~2주 뒤 결과 보러 다시 오세요.",
+      "effective_content": "1~2주 뒤 결과 보러 다시 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 41,
+        "turns_remaining": 9
+      },
+      "payload": {
+        "content": "1~2주 뒤 결과 보러 다시 오세요."
+      }
+    },
+    {
+      "turn": 42,
+      "action": "SAY",
+      "content": "더 궁금하신 점 있으세요?",
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 42,
+        "turns_remaining": 8
+      },
+      "payload": {
+        "content": "더 궁금하신 점 있으세요?"
+      }
+    },
+    {
+      "turn": 42,
+      "action": "DIAGNOSE",
+      "diagnosis": "급성 충수염 (Acute appendicitis)"
+    }
+  ]
+}

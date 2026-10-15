@@ -1,0 +1,382 @@
+{
+  "case_id": "C01",
+  "alias": "C01",
+  "turns": 33,
+  "say": 25,
+  "exam": 8,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 16,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 15734,
+  "doctor_output_tokens": 8190,
+  "seconds": 523.7,
+  "diagnosis": "벤조디아제핀 사용장애 (Benzodiazepine Use Disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "벤조디아제핀 사용장애 가능성이 높아 보여요",
+    "이 약이 불안과 두통을 일으켜 잠을 못 자게 해요",
+    "덜 먹어도 걱정이 되신 건 이해돼요",
+    "혈액 검사로 과다복용 원인과 신체 반응을 확인할 거예요",
+    "비약물 치료와 인지행동치료를 할게요",
+    "약이 운전이 어려운 상태이니 운전은 금지해 주세요",
+    "숨 참·두통·체중 급증·갑작스러운 혼란 시 바로 오세요",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 692,
+      "out": 158,
+      "finish": "stop",
+      "sec": 7.5
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2846,
+      "out": 230,
+      "finish": "stop",
+      "sec": 10.6
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1030,
+      "out": 91,
+      "finish": "stop",
+      "sec": 4.6
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1332,
+      "out": 2913,
+      "finish": "stop",
+      "sec": 137.1
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1970,
+      "out": 1638,
+      "finish": "stop",
+      "sec": 75.2
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1992,
+      "out": 1551,
+      "finish": "stop",
+      "sec": 73.5
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1912,
+      "out": 289,
+      "finish": "stop",
+      "sec": 13.6
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1933,
+      "out": 637,
+      "finish": "stop",
+      "sec": 29.5
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 236,
+      "out": 392,
+      "finish": "stop",
+      "sec": 17.6
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1791,
+      "out": 291,
+      "finish": "stop",
+      "sec": 14.2
+    }
+  ],
+  "phase_times": {
+    "intake": 7.5,
+    "interview": 104.7,
+    "examine": 10.3,
+    "facts": 137.1,
+    "dx": 148.7,
+    "plan_say": 60.7,
+    "explain": 40.5,
+    "S": 14.2
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "women",
+      "key": "other",
+      "label": "환자이름",
+      "pol": "+",
+      "detail": "박선희",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "women",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "62세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "women",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여성",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면부족",
+      "pol": "+",
+      "detail": "잠 못자다",
+      "id": "F4"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면시작",
+      "pol": "+",
+      "detail": "일곱 해 전",
+      "id": "F5"
+    },
+    {
+      "turn": 2,
+      "sec": "meds",
+      "key": "other",
+      "label": "약이름",
+      "pol": "+",
+      "detail": "스틸녹스 10mg",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "meds",
+      "key": "other",
+      "label": "약이용시작",
+      "pol": "+",
+      "detail": "일곱 해 전",
+      "id": "F7"
+    },
+    {
+      "turn": 4,
+      "sec": "meds",
+      "key": "other",
+      "label": "일일복용량",
+      "pol": "+",
+      "detail": "한 번에 서너 알, 때때로 네 알까지",
+      "id": "F8"
+    },
+    {
+      "turn": 5,
+      "sec": "meds",
+      "key": "other",
+      "label": "최근복용",
+      "pol": "+",
+      "detail": "어젯밤 4알, 새벽 2알",
+      "id": "F9"
+    },
+    {
+      "turn": 6,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용시간",
+      "pol": "+",
+      "detail": "밤11시, 새벽2~3시",
+      "id": "F10"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "부작용불안",
+      "pol": "+",
+      "detail": "밤새 뒤척, 불안",
+      "id": "F11"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "불안",
+      "pol": "+",
+      "detail": "약안먹어도 위험",
+      "id": "F12"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "약감소시도",
+      "pol": "+",
+      "detail": "실패",
+      "id": "F13"
+    },
+    {
+      "turn": 10,
+      "sec": "psych",
+      "key": "other",
+      "label": "복귀원인",
+      "pol": "+",
+      "detail": "불안, 초조, 두통 등",
+      "id": "F14"
+    },
+    {
+      "turn": 11,
+      "sec": "meds",
+      "key": "other",
+      "label": "다이수처방",
+      "pol": "+",
+      "detail": "여러 병원",
+      "id": "F15"
+    },
+    {
+      "turn": 12,
+      "sec": "meds",
+      "key": "other",
+      "label": "다이복용",
+      "pol": "+",
+      "detail": "밤11시, 새벽2~3시",
+      "id": "F16"
+    },
+    {
+      "turn": 13,
+      "sec": "psych",
+      "key": "other",
+      "label": "기억상실",
+      "pol": "+",
+      "detail": "약후 기억부족",
+      "id": "F17"
+    },
+    {
+      "turn": 14,
+      "sec": "psych",
+      "key": "other",
+      "label": "수면중복용",
+      "pol": "+",
+      "detail": "밤에 2~4알",
+      "id": "F18"
+    },
+    {
+      "turn": 15,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "암로디핀",
+      "id": "F19"
+    },
+    {
+      "turn": 15,
+      "sec": "meds",
+      "key": "other",
+      "label": "항고혈압",
+      "pol": "+",
+      "detail": "암로디핀",
+      "id": "F20"
+    },
+    {
+      "turn": 16,
+      "sec": "ice",
+      "key": "other",
+      "label": "기대사항",
+      "pol": "+",
+      "detail": "없음",
+      "id": "F21"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "61f838b8f161b41f2f5f1c40611c34b0f3213454556bb9667af45e1b5221bd94",
+    "score_status": "not_scored",
+    "turn": 33
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 걱정되셨겠어요. 언제부터 그러셨어요?",
+      "effective": "언제부터 그러셨어요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 26,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 10,
+  "sim_doctor_calls": 10,
+  "sim_doctor_input_tokens": 15734,
+  "sim_doctor_output_tokens": 8190,
+  "sim_turns": 33,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_js7/run.py"
+}

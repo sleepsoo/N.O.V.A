@@ -1,0 +1,391 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "걱정이 많으셨겠어요. 열은 몇 도까지 났나요?",
+    "reply": "삼십팔 도까지 올랐어요.",
+    "phase": "first",
+    "qid": "pf_max",
+    "label": "최고 체온"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "열은 언제부터 났나요?",
+    "reply": "어제 낮부터 열이 나기 시작했어요.",
+    "phase": "interview",
+    "qid": "pf_duration",
+    "label": "기간"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "해열제 먹이면 열이 떨어지나요?",
+    "reply": "해열제 먹으면 두세 시간 정도 열이 내려요.",
+    "phase": "interview",
+    "qid": "pf_antipyretic",
+    "label": "해열제 반응"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "먹는 양은 평소와 비교해 어때요?",
+    "reply": "밥은 평소의 반 정도만 먹었어요.",
+    "phase": "interview",
+    "qid": "pf_feeding",
+    "label": "수유·식사"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "소변은 평소만큼 보나요?",
+    "reply": "오줌은 평소처럼 기저귀가 젖고, 마지막으로 오줌 싼 건 두 시간 전이에요.",
+    "phase": "interview",
+    "qid": "pf_urine",
+    "label": "소변량"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "많이 처지거나 보채나요?",
+    "reply": "밤새 보채고 잠 못 자서 데려왔어요.",
+    "phase": "interview",
+    "qid": "pf_activity",
+    "label": "처짐"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "기침이나 콧물이 있나요?",
+    "reply": "맑은 콧물과 가벼운 기침이 있었어요.",
+    "phase": "interview",
+    "qid": "pf_resp",
+    "label": "호흡기"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "어머님이 가장 걱정되시는 게 뭐예요?",
+    "reply": "귀가 아파요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "보호자 걱정"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "오른쪽 귀가 아프면 다른 쪽은 편안한가요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "pf_ear",
+    "label": "귀"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "어린이집에 아픈 아이가 있나요?",
+    "reply": "어린이집에서 감기가 돌고 있었어요.",
+    "phase": "interview",
+    "qid": "pf_contact",
+    "label": "접촉"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "구토나 설사가 있나요?",
+    "reply": "토하지는 않았고, 설사도 없어요.",
+    "phase": "interview",
+    "qid": "pf_gi",
+    "label": "구토·설사"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "몸에 발진이 생겼나요?",
+    "reply": "몸에 발진은 없어요.",
+    "phase": "interview",
+    "qid": "pf_rash",
+    "label": "발진"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "경련한 적 있나요?",
+    "reply": "경련을 한 적도 없어요.",
+    "phase": "interview",
+    "qid": "pf_seizure",
+    "label": "경련"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "가족 중 귀가 아픈 분이 있나요?",
+    "reply": "가족 중에 귀 수술을 받거나 난청이 있는 사람은 없어요.",
+    "phase": "interview",
+    "qid": "p_fh",
+    "label": "가족력"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "어린이집 생활은 잘하나요?",
+    "reply": "평일에 어린이집에 다녀요.",
+    "phase": "interview",
+    "qid": "p_daycare",
+    "label": "어린이집·학교"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "증상이 점점 심해지고 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "hpi_course",
+    "label": "경과"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "임신이나 출산 때 문제 있었나요?",
+    "reply": "만삭에 자연분만으로 태어났고, 태어날 때 특별한 문제는 없었어요.",
+    "phase": "interview",
+    "qid": "p_perinatal",
+    "label": "주산기"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "준비된 예방접종을 마쳤나요?",
+    "reply": "폐렴구균 백신까지 모두 제때 맞았어요.",
+    "phase": "interview",
+    "qid": "p_vaccine",
+    "label": "예방접종"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "걷기와 말하기는 또래 수준이에요?",
+    "reply": "발달은 또래와 비슷하고, 말도 잘해요.",
+    "phase": "interview",
+    "qid": "p_develop",
+    "label": "발달"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "입원하거나 크게 아픈 적 있나요?",
+    "reply": "입원하거나 수술을 받은 적은 없어요.",
+    "phase": "interview",
+    "qid": "p_illness",
+    "label": "입원·큰 병"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "먹는 약이나 한약, 영양제 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "p_meds",
+    "label": "약·한약·보조제"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "열이 계속 나서 혹시 뇌수막염 같은 큰 병이 아닌지 걱정이 돼요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "보호자 궁금증"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "신장 96cm, 체중 14.5kg",
+    "phase": "exam",
+    "qid": "anthro",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "고막 시진하겠습니다",
+    "reply": "우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)",
+    "phase": "exam",
+    "qid": "ear",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "인두·편도 시진하겠습니다",
+    "reply": "인두 경도 발적(+), 편도 비대 1도, 삼출물(-)",
+    "phase": "exam",
+    "qid": "pharynx",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "경부 림프절 촉진하겠습니다",
+    "reply": "우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)",
+    "phase": "exam",
+    "qid": "cervical_ln",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 128회/분, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 연령에 맞는 반응, 보호자 알아봄(+)",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "주간 진정·불안 관찰하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_RECOGNIZED",
+    "qid": "sedation",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "급성중이염 가능성이 높아 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "감염이 귀 안에서 생긴 거예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "귀가 아프고 열이 나는 이유는 염증이 때문이예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "항생제 처방했다 48시간 후 확인해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "복용 시 변비나 구토가 있을 수 있으니 조심해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "처음 2일 안에 통증이 가라앉다면 기분이 나아질 거예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "정확히 확인하려고 피검사를 할게요.",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

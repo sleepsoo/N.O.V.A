@@ -1,0 +1,82 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   3.7s] llm[intake] low out=227 finish=stop 3.7s
+[   3.7s] intake: {'age': 72, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '호흡곤란, 기침·가래', 'request': '', 'categories': ['dyspnea', 'cough_fever'], 'empathy': '많이 힘드셨겠어요.', 'answered': []} diffs=['만성폐쇄성폐질환 급성 악화', '폐렴', '급성 기관지염', '심부전 악화', '폐색전증']
+[   3.7s] checklist: 51 items, covered=['hpi_onset']
+[   7.7s] turn 1 SAY: 많이 힘드셨겠어요. 갑자기 숨이 찼나요, 서서히였나요? -> 서서히 숨이 차요.
+[  15.8s] turn 2 SAY: 어느 정도 움직이면 숨이 차나요? -> 집 안에서 조금만 움직여도 숨이 차서 힘들어요.
+[  22.3s] turn 3 SAY: 누우면 숨이 더 차나요? -> 누우면 숨이 더 차서 베개를 하나 더 받치고 잤어요.
+[  26.1s] turn 4 SAY: 다리가 붓나요? -> 그런 건 없어요.
+[  28.9s] turn 5 SAY: 기침이나 가래가 있나요? -> 기침이 부쩍 늘고 가래가 많아졌어요.
+[  34.0s] turn 6 SAY: 숨 쉴 때 쌕쌕 소리가 나나요? -> 숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.
+[  36.1s] turn 7 SAY: 가슴 통증도 있나요? -> 그런 건 없어요.
+[  43.3s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 작년처럼 입원해야 하는 건 아닌지 걱정이 돼요.
+[  52.1s] llm[plan_q] low out=706 finish=stop 8.8s
+[  56.8s] turn 9 SAY: 자다가 숨이 차서 깬 적 있나요? -> 자다가 숨이 막혀서 벌떡 일어나 앉은 적은 없어요.
+[  62.2s] turn 10 SAY: 열이 나셨나요? -> 열은 조금 나는 것 같고, 으슬으슬 춥기도 했어요.
+[  68.5s] turn 11 SAY: 가래 색깔은 어떤가요? -> 하루 종일 누렇고 끈적한 가래가 많이 나온다.
+[  71.7s] turn 12 SAY: 가래에 피가 섞인 적 있나요? -> 가래에 피가 섞여 나온 적은 없어요.
+[  77.7s] turn 13 SAY: 다른 지병이 있으세요? -> 고혈압이 있어서 혈압약을 하루 한 알 먹어요.
+[  83.7s] turn 14 SAY: 담배를 하루 몇 개비 피우세요? -> 하루 서너 개비씩 피우고 있어요.
+[  95.2s] llm[plan_q] low out=978 finish=stop 11.5s
+[ 102.0s] turn 15 SAY: 부모님이나 형제분 앓는 병 있나요? -> 아버지는 폐암, 어머니는 고혈압, 형님은 담배 많이 피우시고 숨이 찬 병이 있어요.
+[ 106.5s] turn 16 SAY: 술은 얼마나 드세요? -> 일주일에 한두 번 소주 반병 정도 마셔요.
+[ 113.5s] turn 17 SAY: 작년에 숨찬 증상으로 입원하셨어요? -> 작년 겨울에 숨이 차서 한 번 응급실에 갔고, 사흘 입원했어요.
+[ 119.0s] turn 18 SAY: 담배를 몇 년째 피우셨어요? -> 스무 살부터 오십 년 가까이 피웠어요.
+[ 123.9s] turn 19 SAY: 콧물이 나나요? -> 콧물이 나요.
+[ 138.8s] turn 20 SAY: 주변에 비슷하게 아픈 분이 있나요? -> 숨이 차서 숨을 못 쉬는 분이 있어요.
+[ 142.1s] turn 21 SAY: 천식이나 알레르기가 있으세요? -> 천식은 없어요.
+[ 151.6s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 흡입기를 더 세게 바꿔야 하는지, 담배는 정말 다 끊어야 하는지 궁금해요.
+[ 151.6s] interview done: asked=22 covered=6 uncovered_p1=[]
+[ 154.8s] llm[exams] low out=205 finish=stop 3.2s
+[ 154.8s] exams plan: ['general', 'chest_insp', 'lung', 'chest_perc', 'heart', 'jvp', 'periph', 'pharynx', 'cervical_ln', 'calf', 'abd_palp']
+[ 154.8s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 앉은 자세에서 입술 오므린 호흡(+), 안절부절(-)
+[ 154.8s] turn 24 EXAM: 흉곽 시진하겠습니다 -> 전후:좌우 1:1.2 술통형 흉곽(+), 보조호흡근 사용(+) 경도, 늑간 함몰(-)
+[ 154.8s] turn 25 EXAM: 폐 청진하겠습니다 -> 호흡음 감소(+/+), 호기 연장(+), 호기성 천명음(+/+) 미만성, 수포음(-/-)
+[ 154.8s] turn 26 EXAM: 흉부 타진하겠습니다 -> 양측 과공명음(+/+), 탁음(-/-)
+[ 154.8s] turn 27 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 104회/분, S3(-), 심잡음(-)
+[ 162.2s] turn 28 EXAM: 경정맥 팽대 관찰하겠습니다 -> 경정맥 팽창(-), 45도에서 JVP 3cm
+[ 162.2s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 191.9s] turn 30 EXAM: 인두·편도 시진하겠습니다 -> 인두 점막 부드럽고, 편도 부위에 충혈 없음, 후두 부위에 염증 징후 없음
+[ 191.9s] turn 31 EXAM: 경부 림프절 촉진하겠습니다 -> 촉지(-/-), 압통(-/-)
+[ 196.7s] turn 32 EXAM: 종아리 압통 확인하겠습니다 -> 압통(-/-), 둘레 차이(-)
+[ 196.7s] turn 33 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 221.0s] llm[facts] medium out=2428 finish=stop 24.3s
+[ 221.0s] facts: 39
+[ 243.6s] llm[dx] medium out=2536 finish=stop 22.6s
+[ 261.8s] llm[plan_say] low out=1730 finish=stop 18.2s
+[ 261.8s] say fixes: ['warning']
+[ 264.9s] turn 34 SAY: 만성폐쇄성폐질환 급성 악화로 보여요. -> 네, 알겠습니다.
+[ 273.7s] turn 35 SAY: 기도가 좁아져 숨참과 가래가 늘었어요. -> 기침이 부쩍 늘고 가래가 많아졌어요.
+[ 278.2s] turn 36 SAY: 입원 여부는 산소와 검사 후 정해요. -> 네, 알겠습니다.
+[ 280.8s] turn 37 SAY: 산소포화도·흉부 엑스선·심전도로 확인해요. -> 네, 알겠습니다.
+[ 283.3s] turn 38 SAY: 응급실에서 산소와 흡입치료를 평가해요. -> 네, 알겠습니다.
+[ 286.3s] turn 39 SAY: 항생제·스테로이드는 검사 후 결정해요. -> 네, 알겠습니다.
+[ 292.1s] turn 40 SAY: 오늘 응급실로 가고 금연, 1~2일 내 재진해요. -> 네, 알겠습니다.
+[ 295.2s] turn 41 SAY: 숨참·흉통·의식 변화·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 301.0s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 열이 조금 나고 으슬으슬 춥기도 해요.
+[ 310.6s] llm[S-narr] low out=753 finish=stop 9.6s
+[ 310.6s] summary: turns=42 counts={'say': 31, 'exam': 11, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22} budget={'doctor_calls': 8, 'doctor_ok_calls': 8, 'doctor_invalid': 0, 'doctor_input_tokens': 18144, 'doctor_output_tokens': 9563, 'elapsed_s': 310.6} dx=만성폐쇄성폐질환의 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)
+S04 gpt-6-luna: total=66 정보수집=15 진단추론=12 검사·추적=7 안전=11 의사소통=8 효율=13 dx5=5
+- missed_key_questions: ['5년 전 COPD 진단 여부와 평소 유지 흡입기 종류·사용 여부', '구조 흡입기를 하루 4~5회 사용해도 호전되지 않는지', '감기 증상이 시작된 시점과 손주 접촉 등 상기도 감염 선행력', '평소보다 가래 양이 늘었는지, 화장실에 다녀오기만 해도 숨찬 정도인지', '갑작스러운 체중 증가와 소변량 변화', '당뇨·심장병·결핵·수술력 및 약물 알레르기', '독감·폐렴구균 예방접종 여부', '흡연을 끊었다가 다시 시작한 시점과 금연 의향·도움 필요 여부', '건설 현장 직업력 및 현재 생활 환경', '폐암에 대한 불안과 그 걱정에 대한 직접 응답']
+- missed_key_exams: ['산소포화도 측정', '의식·지남력 평가', '입술·혀 청색증 확인', '결막·공막 및 곤봉지 확인', '복부 시진 및 간·비장 촉진', '피부 온도·발한, 자세성 떨림, 퍼덕이떨림 확인']
+- top_improvements: ['초기에 COPD 진단·흡입제와 사용 빈도·효과, 흡연력, 감염 선행력 및 객담 변화를 집중적으로 확인하세요.', '산소포화도를 즉시 측정하고, 저산소증·빈호흡을 포함해 진찰 결과를 빠짐없이 기록하세요.', '응급실 의뢰와 함께 산소 목표, 기관지확장제, 스테로이드·항생제 판단 및 입원 고려를 구체적으로 설명하세요.', '입원·폐암 걱정과 흡입기·금연 질문에 직접 답하고, 환자가 이해했는지 확인하세요.', '관련성이 낮은 질문·진찰을 줄이고, 핵심 정보와 급성 처치 결정에 대화와 모델 사용을 집중하세요.']
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 11,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 8,
+ "luna_calls": 9,
+ "doctor_input_tokens": 18144,
+ "doctor_output_tokens": 9563,
+ "sim_calls": 35,
+ "seconds": 310.6,
+ "diagnosis": "만성폐쇄성폐질환의 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)",
+ "dx_hit": false,
+ "session_status": "completed",
+ "grade_total": 66,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S04-v2c

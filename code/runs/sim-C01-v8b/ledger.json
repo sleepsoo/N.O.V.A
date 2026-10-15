@@ -1,0 +1,570 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "안녕하세요, 걱정되셨죠. 잠 말고 불편한 데는요?",
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.",
+    "phase": "first",
+    "qid": "open",
+    "label": "개방형"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "언제부터 잠을 못 주무셨어요?",
+    "reply": "일곱 해 전부터요.",
+    "phase": "interview",
+    "qid": "hpi_onset",
+    "label": "Onset",
+    "items": [
+      {
+        "id": "hpi_onset",
+        "label": "Onset",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "hpi_onset",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "드시는 수면제 이름과 용량을 아세요?",
+    "reply": "약 이름은 스틸녹스이고, 한 알이 10밀리그램이예요.",
+    "phase": "interview",
+    "qid": "sb_name",
+    "label": "약 이름·1회 용량",
+    "items": [
+      {
+        "id": "sb_name",
+        "label": "약 이름",
+        "answered": true,
+        "pol": "+",
+        "kw": "[가-힣]{1,}(뎀|팜|람|녹스|핀)|이름|수면제|졸피"
+      },
+      {
+        "id": "sb_mg",
+        "label": "1회 용량",
+        "answered": true,
+        "pol": "+",
+        "kw": "mg|밀리|알|정|그램"
+      }
+    ],
+    "unit": "sb_name",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "요즘 하루에 몇 알 드세요?",
+    "reply": "네 알 먹고도 깨서 다시 한두 알 더 먹어요.",
+    "phase": "interview",
+    "qid": "sb_dose_now",
+    "label": "현재 복용량",
+    "items": [
+      {
+        "id": "sb_dose_now",
+        "label": "현재 복용량",
+        "answered": true,
+        "pol": "+",
+        "kw": "알|정|개|번"
+      }
+    ],
+    "unit": "sb_dose_now",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "처음보다 양이 늘거나 효과가 줄었나요?",
+    "reply": "네 알 먹어도 깨서 다시 한두 알 더 먹는 일이 많아졌어요.",
+    "phase": "interview",
+    "qid": "sb_tol",
+    "label": "내성(증량)·효과 감소",
+    "items": [
+      {
+        "id": "sb_tolerance",
+        "label": "내성(증량)",
+        "answered": true,
+        "pol": "+",
+        "kw": "늘|많아|양|알"
+      },
+      {
+        "id": "sb_effect",
+        "label": "효과 감소",
+        "answered": false,
+        "pol": "?",
+        "kw": "효과|안\\s*들|잠이\\s*안|소용"
+      }
+    ],
+    "unit": "sb_tol",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "약을 안 드시면 어떤 증상이 있나요?",
+    "reply": "수면제를 안 먹으면 밤새 뒤척이고 온몸이 불안해요.",
+    "phase": "interview",
+    "qid": "sb_withdraw",
+    "label": "금단 증상",
+    "items": [
+      {
+        "id": "sb_withdraw",
+        "label": "금단 증상",
+        "answered": true,
+        "pol": "-",
+        "kw": "."
+      }
+    ],
+    "unit": "sb_withdraw",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "줄이거나 끊어 보려 하신 적 있나요?",
+    "reply": "약을 줄여보려고 했지만, 잠을 못 자고 불안해서 결국 다시 먹게 된다.",
+    "phase": "interview",
+    "qid": "sb_cutdown",
+    "label": "감량 시도·실패",
+    "items": [
+      {
+        "id": "sb_cutdown",
+        "label": "감량 시도·실패",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      },
+      {
+        "id": "ps_sleep",
+        "label": "수면",
+        "answered": true,
+        "pol": "+",
+        "kw": "잠|자|깨",
+        "mention": true
+      }
+    ],
+    "unit": "sb_cutdown",
+    "ukind": "single",
+    "safety": false,
+    "mentioned": [
+      "ps_sleep"
+    ]
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "끊었을 때 경련이나 헛것이 있었나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "sb_seizure",
+    "label": "금단 경련·금단 환각·섬망",
+    "items": [
+      {
+        "id": "sb_seizure",
+        "label": "금단 경련",
+        "answered": true,
+        "pol": "-",
+        "kw": "경련|발작"
+      },
+      {
+        "id": "sb_delirium",
+        "label": "금단 환각·섬망",
+        "answered": true,
+        "pol": "-",
+        "kw": "헛것|환각|환청|헛"
+      }
+    ],
+    "unit": "sb_seizure",
+    "ukind": "pair",
+    "safety": true
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "약은 어디서 처방받으세요?",
+    "reply": "최근에는 집 근처 내과, 신경과, 정신과 등 여러 병원을 다니며 처방을 받고 있어요.",
+    "phase": "interview",
+    "qid": "sb_sources",
+    "label": "처방 기관",
+    "items": [
+      {
+        "id": "sb_sources",
+        "label": "처방 기관",
+        "answered": true,
+        "pol": "+",
+        "kw": "."
+      }
+    ],
+    "unit": "sb_sources",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "다른 수면제나 약국 약도 드세요?",
+    "reply": "네, 처방 없이 살 수 있는 수면유도제도 가끔 사서 같이 먹어요.",
+    "phase": "interview",
+    "qid": "sb_other",
+    "label": "타 진정수면제·약국 수면유도제",
+    "items": [
+      {
+        "id": "sb_other_rx",
+        "label": "타 진정수면제",
+        "answered": false,
+        "pol": "?",
+        "kw": "수면제|안정제|신경"
+      },
+      {
+        "id": "sb_otc",
+        "label": "약국 수면유도제",
+        "answered": true,
+        "pol": "-",
+        "kw": "약국|유도제|수면유도"
+      }
+    ],
+    "unit": "sb_other",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "마지막으로 언제 몇 알 드셨어요?",
+    "reply": "어젯밤에 네 알을 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_last",
+    "label": "마지막 복용",
+    "items": [
+      {
+        "id": "sb_last",
+        "label": "마지막 복용",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "sb_last",
+    "ukind": "single",
+    "safety": true
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "약 드신 뒤 기억이 끊긴 적 있나요?",
+    "reply": "가끔은 약을 먹고 난 뒤 기억이 잘 안 나요.",
+    "phase": "interview",
+    "qid": "sb_blackout",
+    "label": "기억 공백",
+    "items": [
+      {
+        "id": "sb_blackout",
+        "label": "기억 공백",
+        "answered": true,
+        "pol": "?",
+        "kw": "기억|생각"
+      }
+    ],
+    "unit": "sb_blackout",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "가족과 약 문제로 갈등이 있나요?",
+    "reply": "가족들과 갈등이 있었어요.",
+    "phase": "interview",
+    "qid": "sb_family",
+    "label": "가족 갈등",
+    "items": [
+      {
+        "id": "sb_family",
+        "label": "가족 갈등",
+        "answered": true,
+        "pol": "+",
+        "kw": "."
+      }
+    ],
+    "unit": "sb_family",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "기분이 가라앉거나 죽고 싶은 적 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ps_mood_si",
+    "label": "우울감·자살 사고",
+    "items": [
+      {
+        "id": "ps_mood",
+        "label": "우울감",
+        "answered": true,
+        "pol": "-",
+        "kw": "기분|우울|가라앉|처지"
+      },
+      {
+        "id": "ps_si",
+        "label": "자살 사고",
+        "answered": true,
+        "pol": "-",
+        "kw": "죽|자살|극단"
+      }
+    ],
+    "unit": "ps_mood_si",
+    "ukind": "pair",
+    "safety": true
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "그 밖에 드시는 약이 있나요?",
+    "reply": "암로디핀을 먹고 있어요.",
+    "phase": "interview",
+    "qid": "sb_meds2",
+    "label": "복용약",
+    "items": [
+      {
+        "id": "pmh_meds",
+        "label": "복용약",
+        "answered": true,
+        "pol": "+",
+        "kw": "약|[가-힣](핀|린|롤|팜|뎀|틴|졸|드)\\b|먹고|먹어|드시"
+      }
+    ],
+    "unit": "sb_meds2",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "고혈압은 있고 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "hx_htn_dm",
+    "label": "고혈압·당뇨",
+    "items": [
+      {
+        "id": "pmh_htn",
+        "label": "고혈압",
+        "answered": true,
+        "pol": "+",
+        "kw": "고혈압|혈압"
+      },
+      {
+        "id": "pmh_dm",
+        "label": "당뇨",
+        "answered": true,
+        "pol": "-",
+        "kw": "당뇨|혈당"
+      }
+    ],
+    "unit": "hx_htn_dm",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "술이나 담배는 하세요?",
+    "reply": "술은 일 년에 명절이나 가족 모임 때 소주 한두 잔 정도만 마신다.",
+    "phase": "interview",
+    "qid": "sh_alc_smoke",
+    "label": "음주·흡연",
+    "items": [
+      {
+        "id": "sh_alcohol",
+        "label": "음주",
+        "answered": true,
+        "pol": "+",
+        "kw": "술|음주|소주|맥주|마셔|마시"
+      },
+      {
+        "id": "sh_smoke",
+        "label": "흡연",
+        "answered": false,
+        "pol": "?",
+        "kw": "담배|흡연|피우|피워|금연"
+      }
+    ],
+    "unit": "sh_alc_smoke",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "가장 걱정되거나 궁금한 게 뭐예요?",
+    "reply": "최근에 수면제로 인해 일상생활에 문제가 생겼어요.",
+    "phase": "interview",
+    "qid": "ice",
+    "label": "걱정·기대(ICE)",
+    "items": [
+      {
+        "id": "ice_concern",
+        "label": "걱정·기대(ICE)",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "ice",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "주간 진정·불안 관찰하겠습니다",
+    "reply": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+    "phase": "exam",
+    "qid": "sedation",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 6mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(-/-)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "소뇌 협조운동 검사하겠습니다",
+    "reply": "겨냥이상(-/-), 실조(-/-)",
+    "phase": "exam",
+    "qid": "cerebellar",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "보행 관찰하겠습니다",
+    "reply": "보폭 정상, 절뚝임(-), 불균형(-)",
+    "phase": "exam",
+    "qid": "gait",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 26,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요, 진정제 중독 가능해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "혈액·전해질·심전도 검사를 1주 후에 진행해요.",
+    "reply": "네, 알겠습니다. 가슴이 두근거리고 머리가 아프고 손이 떨리는 건 있나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "약은 갑자기 끊지 말고 천천히 줄여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "졸릴 땐 운전과 위험한 일은 피하세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "수면 습관 교정과 인지행동치료도 같이 해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "경련·혼동·환각·심한 불안이 오면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "reply": "집안일을 못해요.",
+    "phase": "explain-teachback",
+    "qid": "",
+    "label": ""
+  }
+]

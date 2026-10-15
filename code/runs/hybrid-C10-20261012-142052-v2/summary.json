@@ -1,0 +1,188 @@
+{
+  "case_id": "C10",
+  "alias": "C10",
+  "turns": 46,
+  "say": 37,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 29,
+  "skipped_invalid": 0,
+  "doctor_calls": 13,
+  "doctor_invalid": 1,
+  "doctor_input_tokens": 21438,
+  "doctor_output_tokens": 20012,
+  "seconds": 912.8,
+  "diagnosis": "그라브스병 (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "그라브스병",
+      "diagnosis_en": "Graves' disease",
+      "confidence": 0.92,
+      "_effort": "high"
+    },
+    {
+      "diagnosis_ko": "그라브스병 (갑상선 기능항진증)",
+      "diagnosis_en": "Graves disease (hyperthyroidism)",
+      "confidence": 0.92,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "체중감소",
+    "categories": [
+      "weight"
+    ],
+    "answered": [
+      "onset",
+      "course",
+      "impact"
+    ],
+    "empathy": "체중이 빠져서 많이 걱정 되셨겠어요."
+  },
+  "explained": [
+    "자기항체반응 때문에 생긴 갑상선과다분비가 의심돼요.",
+    "갑상선자극항체검사로 확인할게요.",
+    "항갑상선제복용으로 치료할 수 있어요.",
+    "심한두근거림호흡곤란시가 있으면 바로 오세요.",
+    "규칙적인 식사와 충분한 수분 섭취를 하세요.",
+    "원인바로확인하고치료할게요",
+    "더 궁금한 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 577,
+      "out": 158,
+      "finish": "stop",
+      "sec": 5.1
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1317,
+      "out": 3185,
+      "finish": "stop",
+      "sec": 198.0
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1288,
+      "out": 3050,
+      "finish": "stop",
+      "sec": 85.2
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2671,
+      "out": 868,
+      "finish": "stop",
+      "sec": 23.9
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2693,
+      "out": 1283,
+      "finish": "stop",
+      "sec": 35.5
+    },
+    {
+      "tag": "dx1-high",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1681,
+      "out": 1204,
+      "finish": "stop",
+      "sec": 165.6
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1681,
+      "out": 632,
+      "finish": "stop",
+      "sec": 21.5
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1742,
+      "out": 881,
+      "finish": "stop",
+      "sec": 29.1
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2254,
+      "out": 3573,
+      "finish": "stop",
+      "sec": 99.7
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1955,
+      "out": 3248,
+      "finish": "stop",
+      "sec": 91.0
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1231,
+      "out": 553,
+      "finish": "stop",
+      "sec": 17.4
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2348,
+      "out": 1377,
+      "finish": "stop",
+      "sec": 41.9
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "e768e6509d110532188946475b508df66c2bc0d8877b27ba77a7e5ffd4206bdf",
+    "score_status": "not_scored",
+    "turn": 46
+  },
+  "error": null,
+  "mode": "hybrid",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_calls": 46
+}

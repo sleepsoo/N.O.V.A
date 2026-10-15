@@ -1,0 +1,391 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 언제부터 작다는 말을 들었나요?",
+    "reply": "최근 육 개월에서 일 년 사이에 키가 별로 크지 않다고 느꼈어요.",
+    "phase": "first",
+    "qid": "gr_noticed",
+    "label": "인지 시점"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "예전에 잰 키 기록이 있나요?",
+    "reply": "일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였어요.",
+    "phase": "interview",
+    "qid": "gr_record",
+    "label": "성장 기록"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "두 살, 네 살 때 키는 얼마였나요?",
+    "reply": "두 살 때 키는 팔십삼 센티미터, 네 살 때는 구십육 센티미터였어요.",
+    "phase": "interview",
+    "qid": "gr_values",
+    "label": "과거 계측치"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "부모님 키는 각각 어떻게 되세요?",
+    "reply": "아빠는 백칠십팔, 엄마는 백육십오 센티미터예요.",
+    "phase": "interview",
+    "qid": "gr_parents",
+    "label": "부모 키"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "부모님 중 늦게 키가 큰 분 있나요?",
+    "reply": "아빠가 어릴 때 키가 작아서 할머니가 걱정을 많이 하셨다고 해요.",
+    "phase": "interview",
+    "qid": "gr_late",
+    "label": "부모 사춘기"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "가족 중 키가 작거나 유전병 있나요?",
+    "reply": "아빠 말고는 엄마 쪽, 아빠 쪽 모두 키가 작거나 뼈에 이상이 있는 사람은 없고, 다른 가족 중에 사춘기…",
+    "phase": "interview",
+    "qid": "gr_fh",
+    "label": "저신장·유전 가족력"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+    "reply": "천식이나 장, 콩팥 질환 들은 적 없어요.",
+    "phase": "interview",
+    "qid": "gr_chronic",
+    "label": "만성질환"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "어머님이 가장 걱정되시는 게 뭐예요?",
+    "reply": "키가 작아서 큰 병이 있을까 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "보호자 걱정"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "스테로이드나 한약을 복용하고 있나요?",
+    "reply": "스테로이드나 한약은 안 먹었어요.",
+    "phase": "interview",
+    "qid": "gr_steroid",
+    "label": "스테로이드"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "음모가 늘어나셨나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_puberty",
+    "label": "사춘기 징후"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "지치거나 변비가 자주 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_hypo",
+    "label": "갑상선저하 증상"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "배가 부풀었거나 얼굴이 둥글어졌나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_cushing",
+    "label": "쿠싱 양상"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "태어날 때 키와 몸무게는 어땠나요?",
+    "reply": "태어날 때 키는 오십 센티미터, 몸무게는 삼 점 이 키로그람이었어요.",
+    "phase": "interview",
+    "qid": "p_birth_size",
+    "label": "출생 체격"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "임신이나 출산 때 문제가 있었나요?",
+    "reply": "임신 중이나 출산 과정에서 특별한 문제는 없었어요.",
+    "phase": "interview",
+    "qid": "p_perinatal",
+    "label": "주산기"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "입원하거나 큰 병이 있었나요?",
+    "reply": "입원하거나 큰 병을 앓은 적도 없었어요.",
+    "phase": "interview",
+    "qid": "p_illness",
+    "label": "입원·큰 병"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "두통이나 구토가 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_ich",
+    "label": "두개내 병변"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "최근 체중이 급증했어요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_weight",
+    "label": "체중 변화"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "하루에 우유를 얼마나 마시나요?",
+    "reply": "우유도 하루 한두 잔씩 마신다.",
+    "phase": "interview",
+    "qid": "gr_milk",
+    "label": "우유·간식"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "걷기나 말하기는 또래와 비슷해요?",
+    "reply": "언어, 운동, 사회성 모두 또래와 비슷해요.",
+    "phase": "interview",
+    "qid": "p_develop",
+    "label": "발달"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "밥을 잘 먹어요?",
+    "reply": "식사는 평소 잘 먹는 편이에요.",
+    "phase": "interview",
+    "qid": "p_diet",
+    "label": "식사"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "활동량은 충분한가요?",
+    "reply": "평소에도 운동이나 신체 활동을 활발하게 해요.",
+    "phase": "interview",
+    "qid": "p_activity",
+    "label": "활동"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "도현이가 앞으로 키가 더 클 수 있는지 궁금해해요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "보호자 궁금증"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 또래보다 작은 키, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "phase": "exam",
+    "qid": "anthro",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "성장도표 백분위수 확인하겠습니다",
+    "reply": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+    "phase": "exam",
+    "qid": "growth_chart",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "신체 비율 평가하겠습니다",
+    "reply": "상·하절 비율 정상, 양팔간격 불균형(-)",
+    "phase": "exam",
+    "qid": "body_prop",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "사춘기 성숙도 평가하겠습니다",
+    "reply": "Tanner 1기, 고환 2mL/2mL",
+    "phase": "exam",
+    "qid": "tanner",
+    "label": "",
+    "system": "Genitalia"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "안면 기형 소견 시진하겠습니다",
+    "reply": "안면 기형(-), 귀 위치 이상(-/-)",
+    "phase": "exam",
+    "qid": "dysmorph",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "흉곽 시진하겠습니다",
+    "reply": "전후:좌우 1:2, 보조호흡근 사용(-)",
+    "phase": "exam",
+    "qid": "chest_insp",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "가족성 저신장은 유전 가능성이 높습니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "신장은 부모 신장과 유사합니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "키가 더 클 수도 있어요 확인이 필요합니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "성장 호르몬 필요 시 치료 링크가 있어요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "reply": "최근 일 년 동안 입원이나 수술, 큰 병을 앓은 적도 없어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "6개월 후 성장 곡선 확인으로 다시 오세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "손 엑스레이로 뼈 나이를 확인할게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "도현이가 앞으로 키가 더 클 수 있는지 궁금해해요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

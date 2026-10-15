@@ -1,0 +1,6 @@
+시작: synthetic_cases/S03 → ../code_v7/runs/_sim_logs/S03-v6ref.log
+시작: synthetic_cases/S06 → ../code_v7/runs/_sim_logs/S06-v6ref.log
+완료: synthetic_cases/S03 (exit 0)
+완료: synthetic_cases/S06 (exit 0)
+S03: 턴 42 거절 1 하나씩 0 절단 1 doctor local:10 luna 0 dx=급성중이염 (Acute Otitis Media) hit=True grade=75
+S06: 턴 42 거절 1 하나씩 0 절단 1 doctor local:9 luna 0 dx=제2형 당뇨병 (Type 2 Diabetes Mellitus) hit=True grade=57.4

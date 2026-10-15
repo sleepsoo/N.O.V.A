@@ -1,0 +1,435 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "잠을 못 주무셔서 많이 힘드셨겠어요.",
+    "reply": "네, 많이 힘들어요.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "언제부터 그러셨어요?",
+    "reply": "7년 전부터",
+    "phase": "hpi",
+    "qid": "onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "그 뒤로 점점 심해지고 있나요?",
+    "reply": "네, 심해졌어요",
+    "phase": "hpi",
+    "qid": "course",
+    "label": "경과"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "일상생활에 지장이 얼마나 있으세요?",
+    "reply": "집안일이 힘들어졌어요.",
+    "phase": "hpi",
+    "qid": "impact",
+    "label": "일상 지장"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "잠드는 데 오래 걸리세요?",
+    "reply": "요요요",
+    "phase": "bundle",
+    "qid": "sl_initiate",
+    "label": "입면 장애"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "자다가 자주 깨세요?",
+    "reply": "네, 새벽에 깨요.",
+    "phase": "bundle",
+    "qid": "sl_maintain",
+    "label": "수면 유지 장애"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "낮에 졸리거나 멍하세요?",
+    "reply": "네, 멍해요",
+    "phase": "bundle",
+    "qid": "sl_daytime",
+    "label": "주간 졸림"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "그 약은 언제부터 드셨어요?",
+    "reply": "7년 전부터요.",
+    "phase": "bundle",
+    "qid": "dr_since",
+    "label": "복용 기간"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "최근 기분이 우울한가요?",
+    "reply": "네",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "불안해서 잠이 안오나요?",
+    "reply": "네, 불안해요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "밤에 호흡이 멈추나요?",
+    "reply": "아니요, 호흡이 멈추진 않아요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "당뇨나 고혈압 있으세요?",
+    "reply": "네, 고혈압 있어요.",
+    "phase": "history",
+    "qid": "pmh_dm_htn",
+    "label": "DM/HTN"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "다른 지병 있으세요?",
+    "reply": "네, 고혈압 있어요.",
+    "phase": "history",
+    "qid": "pmh_other",
+    "label": "기타 지병"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "결핵이나 간염 앓은 적 있으세요?",
+    "reply": "아니요.",
+    "phase": "history",
+    "qid": "pmh_tb_hep",
+    "label": "Tbc/hepatitis"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "수술받으신 적 있으세요?",
+    "reply": "아니요, 수술받은 적 없어요.",
+    "phase": "history",
+    "qid": "pmh_op",
+    "label": "Op. Hx"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "지금 드시는 약 있으세요?",
+    "reply": "네, 수면제를 먹고 있어요",
+    "phase": "history",
+    "qid": "meds",
+    "label": "Medicine history"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "약 알레르기 있으세요?",
+    "reply": "아니요, 알러지는 없어요.",
+    "phase": "history",
+    "qid": "allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "가족 중 비슷한 병 있는 분 계세요?",
+    "reply": "아니요.",
+    "phase": "history",
+    "qid": "fh_similar",
+    "label": "FH 유사 질환"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "가족 중 당뇨나 고혈압 있으세요?",
+    "reply": "아니요.",
+    "phase": "history",
+    "qid": "fh_dm_htn",
+    "label": "FH DM/HTN"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "담배 피우세요?",
+    "reply": "아니요, 평생 안 피워요.",
+    "phase": "history",
+    "qid": "smoking",
+    "label": "Smoking"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "술은 얼마나 드세요?",
+    "reply": "한 달에 한 번 정도",
+    "phase": "history",
+    "qid": "alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "무슨 일 하세요?",
+    "reply": "전업주부예요.",
+    "phase": "history",
+    "qid": "job",
+    "label": "직업"
+  },
+  {
+    "turn": 23,
+    "kind": "SAY",
+    "text": "가슴 두근거림 있으세요?",
+    "reply": "네, 두근거려요",
+    "phase": "ros",
+    "qid": "ros_palp",
+    "label": "Palpitation"
+  },
+  {
+    "turn": 24,
+    "kind": "SAY",
+    "text": "숨이 찬 적 있으세요?",
+    "reply": "아니요, 숨이 차본 적 없어요",
+    "phase": "ros",
+    "qid": "ros_dyspnea",
+    "label": "Dyspnea"
+  },
+  {
+    "turn": 25,
+    "kind": "SAY",
+    "text": "가슴 아픈 적 있으세요?",
+    "reply": "아니요, 없어요.",
+    "phase": "ros",
+    "qid": "ros_chest",
+    "label": "Chest pain"
+  },
+  {
+    "turn": 26,
+    "kind": "SAY",
+    "text": "요즘 기분은 어떠세요?",
+    "reply": "우울해요.",
+    "phase": "ros",
+    "qid": "ros_mood",
+    "label": "기분"
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "대변 횟수나 모양이 변했나요?",
+    "reply": "네, 가끔 변비가 느껴져요.",
+    "phase": "ros",
+    "qid": "ros_bowel",
+    "label": "배변"
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "혈압약을 복용하시나요?",
+    "reply": "한 번에 하나씩 물어봐 주세요.",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형",
+    "one_at_a_time": true
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "혈압약 복용하시나요?",
+    "reply": "네, 암로디핀 2번씩 먹어요",
+    "phase": "adaptive2-single",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "해당 수면제는 벤조디아제핀인가요?",
+    "reply": "네, 벤조디아제핀이에요",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형"
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "가장 걱정되는 게 뭐예요?",
+    "reply": "안정된 수면부족이 가장 두려워요",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(+)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 34,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 35,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 36,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 37,
+    "kind": "EXAM",
+    "text": "기분·정동 관찰하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_RECOGNIZED",
+    "qid": "affect",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 39,
+    "kind": "EXAM",
+    "text": "주간 진정·불안 관찰하겠습니다",
+    "reply": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+    "phase": "exam",
+    "qid": "sedation",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 40,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(-/-)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "불안과 우울 때문에 생긴 수면장애가 의심돼요.",
+    "reply": "네, 그럴까요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "CBC 검사, 전기신경 검사로 확인할게요.",
+    "reply": "네, 잠이 안 와요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "인지행동 치료, SSRI도입으로 치료할 수 있어요.",
+    "reply": "네, 그게 맞나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 44,
+    "kind": "SAY",
+    "text": "불면이 갑자기 심해지면이 있으면 바로 오세요.",
+    "reply": "네.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 45,
+    "kind": "SAY",
+    "text": "규칙적인 수면시간을 지켜 주세요.",
+    "reply": "감사합니다, 네.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 46,
+    "kind": "SAY",
+    "text": "안정된 잠을 위해 수면습관을 정리할게요.",
+    "reply": "그래요, 다행이네요",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 47,
+    "kind": "SAY",
+    "text": "더 궁금한 점 있으세요?",
+    "reply": "네",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

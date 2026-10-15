@@ -1,0 +1,13 @@
+---
+title: "Clinical Practice Guideline for the Treatment of Traumatic Shock Patients from the Korean Society of Traumatology"
+organization: "the Korean Society of Traumatology"
+year: "2020"
+language: en
+source_url: "https://www.jtraumainj.org/journal/view.php?doi=10.20408/jti.2020.015"
+license: "CC BY-NC"
+---
+# Clinical Practice Guideline for the Treatment of Traumatic Shock Patients from the Korean Society of Traumatology
+
+## Abstract
+
+<sec><title>Purpose</title> <p>Despite recent developments in the management of trauma patients in South Korea, a standardized system and guideline for trauma treatment are absent.</p></sec> <sec><title>Methods</title> <p>Five guidelines were assessed using the Appraisal of Guidelines for Research and Evaluation II instrument.</p></sec> <sec><title>Results</title> <p>Restrictive volume replacement must be used for patients experiencing shock from trauma until hemostasis is achieved (1B). The target systolic pressure for fluid resuscitation should be 80–90 mmHg in hypovolemic shock patients (1C). For patients with head trauma, the target pressure for fluid resuscitation should be 100–110 mmHg (2C). Isotonic crystalloid fluid is recommended for initially treating traumatic hypovolemic shock patients (1A). Hypothermia should be prevented in patients with severe trauma, and if hypothermia occurs, the body temperature should be increased without delay (1B). Acidemia must be corrected with an appropriate means of treatment for hypovolemic trauma patients (1B). When a large amount of transfusion is required for trauma patients in hypovolemic shock, a massive transfusion protocol (MTP) should be used (1B). The decision to implement MTP should be made based on hemodynamic status and initial responses to fluid resuscitation, not only the patient’s initial condition (1B). The ratio of plasma to red blood cell concentration should be at least 1:2 for trauma patients requiring massive transfusion (1B). When a trauma patient is in life-threatening hypovolemic shock, vasopressors can be administered in addition to fluids and blood products (1B). Early administration of tranexamic acid is recommended in trauma patients who are actively bleeding or at high risk of hemorrhage (1B). For hypovolemic patients with coagulopathy non-responsive to primary therapy, the use of fibrinogen concentrate, cryoprecipitate, or recombinant factor VIIa can be considered (2C).</p></sec> <sec><title>Conclusions</title> <p>This research presents Korea's first clinical practice guideline for patients with traumatic shock. This guideline will be revised with updated research every 5 years.</p></sec>

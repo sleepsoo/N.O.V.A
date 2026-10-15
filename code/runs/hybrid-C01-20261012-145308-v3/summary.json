@@ -1,0 +1,384 @@
+{
+  "case_id": "C01",
+  "alias": "C01",
+  "turns": 47,
+  "say": 38,
+  "exam": 8,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 1,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 12,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 17343,
+  "doctor_output_tokens": 21345,
+  "seconds": 1478.2,
+  "diagnosis": "우울증에 의한 불증 (Insomnia due to depression)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": false,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "우울증에 의한 불증",
+      "diagnosis_en": "Insomnia due to depression",
+      "confidence": 0.8,
+      "_effort": "high"
+    },
+    {
+      "diagnosis_ko": "우울증에 의한 불면증",
+      "diagnosis_en": "Insomnia due to depression",
+      "confidence": 0.85,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "수면 문제",
+    "categories": [
+      "sleep",
+      "drug"
+    ],
+    "answered": [],
+    "empathy": "잠을 못 주무셔서 많이 힘드셨겠어요."
+  },
+  "explained": [
+    "불안과 우울 때문에 생긴 수면장애가 의심돼요.",
+    "CBC 검사, 전기신경 검사로 확인할게요.",
+    "인지행동 치료, SSRI도입으로 치료할 수 있어요.",
+    "불면이 갑자기 심해지면이 있으면 바로 오세요.",
+    "규칙적인 수면시간을 지켜 주세요.",
+    "안정된 잠을 위해 수면습관을 정리할게요.",
+    "더 궁금한 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 485,
+      "out": 174,
+      "finish": "stop",
+      "sec": 5.5
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 899,
+      "out": 1669,
+      "finish": "stop",
+      "sec": 53.5
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1222,
+      "out": 3211,
+      "finish": "stop",
+      "sec": 99.0
+    },
+    {
+      "tag": "single",
+      "effort": "low",
+      "max_tokens": 800,
+      "in": 158,
+      "out": 119,
+      "finish": "stop",
+      "sec": 3.8
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2658,
+      "out": 1502,
+      "finish": "stop",
+      "sec": 45.1
+    },
+    {
+      "tag": "dx1-high",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1590,
+      "out": 2438,
+      "finish": "stop",
+      "sec": 194.9
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1590,
+      "out": 845,
+      "finish": "stop",
+      "sec": 23.3
+    },
+    {
+      "tag": "plan",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1665,
+      "out": 4477,
+      "finish": "stop",
+      "sec": 374.1
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2003,
+      "out": 1957,
+      "finish": "stop",
+      "sec": 51.6
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1917,
+      "out": 2893,
+      "finish": "stop",
+      "sec": 67.6
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1192,
+      "out": 1110,
+      "finish": "stop",
+      "sec": 27.9
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1964,
+      "out": 950,
+      "finish": "stop",
+      "sec": 25.0
+    }
+  ],
+  "phase_times": {
+    "structure": 5.6,
+    "interview": 236.5,
+    "examine": 61.7,
+    "diagnose_vote": 218.2,
+    "plan": 768.5,
+    "explain": 67.1,
+    "S": 95.6,
+    "S-verify": 0.0,
+    "A": 25.0
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.onset",
+      "pol": "+",
+      "detail": "7년전"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.course",
+      "pol": "+",
+      "detail": "점점심해짐"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.impact",
+      "pol": "+",
+      "detail": "집안일힘들어짐"
+    },
+    {
+      "turn": 5,
+      "key": "ros.Sleep disturbance",
+      "pol": "?",
+      "detail": "잠들기어려움"
+    },
+    {
+      "turn": 6,
+      "key": "ros.Sleep disturbance",
+      "pol": "+",
+      "detail": "새벽깨짐"
+    },
+    {
+      "turn": 7,
+      "key": "ros.Fatigue",
+      "pol": "+",
+      "detail": "멍함"
+    },
+    {
+      "turn": 8,
+      "key": "pmh.meds",
+      "pol": "+",
+      "detail": "7년전"
+    },
+    {
+      "turn": 9,
+      "key": "ros.Depressed mood",
+      "pol": "+",
+      "detail": "우울"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Anxiety",
+      "pol": "+",
+      "detail": "불안"
+    },
+    {
+      "turn": 11,
+      "key": "ros.other:Sleep apnea",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 12,
+      "key": "pmh.HTN",
+      "pol": "+",
+      "detail": "고혈압"
+    },
+    {
+      "turn": 12,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 13,
+      "key": "pmh.other_illness",
+      "pol": "+",
+      "detail": "고혈압"
+    },
+    {
+      "turn": 14,
+      "key": "pmh.Tbc",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 14,
+      "key": "pmh.hepatitis",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 15,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 16,
+      "key": "pmh.meds",
+      "pol": "+",
+      "detail": "수면제"
+    },
+    {
+      "turn": 17,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 18,
+      "key": "fh.similar",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 19,
+      "key": "fh.DM",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 19,
+      "key": "fh.HTN",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 20,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 21,
+      "key": "sh.alcohol",
+      "pol": "+",
+      "detail": "주 1회"
+    },
+    {
+      "turn": 22,
+      "key": "sh.job",
+      "pol": "+",
+      "detail": "주부"
+    },
+    {
+      "turn": 23,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "두근거림"
+    },
+    {
+      "turn": 24,
+      "key": "ros.Dyspnea",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 25,
+      "key": "ros.Chest pain",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 26,
+      "key": "ros.Depressed mood",
+      "pol": "+",
+      "detail": "우울"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Bowel change",
+      "pol": "+",
+      "detail": "가끔변비"
+    },
+    {
+      "turn": 29,
+      "key": "pmh.meds",
+      "pol": "+",
+      "detail": "암로디핀2번"
+    },
+    {
+      "turn": 31,
+      "key": "ice.concern",
+      "pol": "+",
+      "detail": "수면부족두려움"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "ff3f94580dea826b905092d598bdfd72c6b03386983732039438b6e77a319228",
+    "score_status": "not_scored",
+    "turn": 47
+  },
+  "error": null,
+  "mode": "hybrid",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_calls": 48
+}

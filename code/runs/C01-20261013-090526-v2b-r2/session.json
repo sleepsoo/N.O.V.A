@@ -1,0 +1,903 @@
+{
+  "session_id": "2da2d83c-995f-4d91-8d4f-e44c77d601c6",
+  "status": "completed",
+  "turns_remaining": 6,
+  "initial": {
+    "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+    "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+  },
+  "available_actions": [
+    "SAY",
+    "EXAM",
+    "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T09:27:29.850143+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+    {
+      "id": "50f071c0-7469-4c3c-8419-26401823bfab",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "잠 못 들어 힘드셨겠어요. 언제부터 그러셨어요?",
+        "request_id": "89ad8af3-e3a2-47c9-a922-2a455e116930"
+      },
+      "effective_content": "언제부터 그러셨어요?",
+      "response": {
+        "turn": 1,
+        "status": "OK",
+        "content": "칠 년 전부터 잠을 잘 못 잤어요.",
+        "turns_remaining": 49
+      },
+      "http_status": 200,
+      "turn": 1
+    },
+    {
+      "id": "5573af17-6f95-41c6-830d-684fafeae194",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "드시는 약 이름과 용량을 아세요?",
+        "request_id": "ddb2018a-a335-4cf1-bd69-fc4e04b399d3"
+      },
+      "effective_content": "드시는 약 이름과 용량을 아세요?",
+      "response": {
+        "turn": 2,
+        "status": "OK",
+        "content": "졸피뎀, 한 알에 10밀리그램이에요.",
+        "turns_remaining": 48
+      },
+      "http_status": 200,
+      "turn": 2
+    },
+    {
+      "id": "6120e465-6375-4783-8af2-11105b1e17e3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "그 약은 언제부터 드셨어요?",
+        "request_id": "d5b5beea-827f-45f0-a2a2-c30fb9a1ee02"
+      },
+      "effective_content": "그 약은 언제부터 드셨어요?",
+      "response": {
+        "turn": 3,
+        "status": "OK",
+        "content": "칠 년 전부터 먹었어요.",
+        "turns_remaining": 47
+      },
+      "http_status": 200,
+      "turn": 3
+    },
+    {
+      "id": "87bc4c5d-1e55-42ec-9e1c-0351acb8d7df",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "요즘 하루에 몇 알 드세요?",
+        "request_id": "2668f18e-2754-4175-bd0b-69b7221296ca"
+      },
+      "effective_content": "요즘 하루에 몇 알 드세요?",
+      "response": {
+        "turn": 4,
+        "status": "OK",
+        "content": "대여섯 알, 가끔 낮에 한 알 더요.",
+        "turns_remaining": 46
+      },
+      "http_status": 200,
+      "turn": 4
+    },
+    {
+      "id": "8be2dd56-de86-4e4e-957e-057e1246f6ed",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "하루 중 언제 언제 드세요?",
+        "request_id": "72299b11-b93e-4927-a047-c1af48725f79"
+      },
+      "effective_content": "하루 중 언제 언제 드세요?",
+      "response": {
+        "turn": 5,
+        "status": "OK",
+        "content": "밤11시랑 새벽2~3시, 가끔 낮요.",
+        "turns_remaining": 45
+      },
+      "http_status": 200,
+      "turn": 5
+    },
+    {
+      "id": "4b355790-9d88-4eca-b895-285715cc7476",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "처음보다 양이 늘었나요?",
+        "request_id": "3c5b5ab3-9d2f-46a8-aea7-ca921ca7df5e"
+      },
+      "effective_content": "처음보다 양이 늘었나요?",
+      "response": {
+        "turn": 6,
+        "status": "OK",
+        "content": "네, 반 알에서 대여섯 알로 늘었어요.",
+        "turns_remaining": 44
+      },
+      "http_status": 200,
+      "turn": 6
+    },
+    {
+      "id": "fe6108c2-a0f6-4b78-b910-b9eddb6ee99b",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "약을 안 드시면 어떤 증상이 있나요?",
+        "request_id": "f09a8c27-7217-474a-86ad-8ee028bd11d3"
+      },
+      "effective_content": "약을 안 드시면 어떤 증상이 있나요?",
+      "response": {
+        "turn": 7,
+        "status": "OK",
+        "content": "잠이 안 오고 온몸이 불안해요.",
+        "turns_remaining": 43
+      },
+      "http_status": 200,
+      "turn": 7
+    },
+    {
+      "id": "60bb9da2-6c2e-40ac-a668-024a16a843f7",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "약을 줄이거나 끊어 보려 하셨어요?",
+        "request_id": "ebbc05f9-a98e-467f-acec-4a9ee0eb7359"
+      },
+      "effective_content": "약을 줄이거나 끊어 보려 하셨어요?",
+      "response": {
+        "turn": 8,
+        "status": "OK",
+        "content": "네, 여러 번 했지만 다시 먹었어요.",
+        "turns_remaining": 42
+      },
+      "http_status": 200,
+      "turn": 8
+    },
+    {
+      "id": "28f3eb24-5b02-4e1a-9489-4c92644b5026",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "다른 수면제나 약국 약도 드세요?",
+        "request_id": "a78d1071-4584-4373-a6b0-00aecc5ce017"
+      },
+      "effective_content": "다른 수면제나 약국 약도 드세요?",
+      "response": {
+        "turn": 9,
+        "status": "OK",
+        "content": "약국 수면유도제도 가끔 같이 먹어요.",
+        "turns_remaining": 41
+      },
+      "http_status": 200,
+      "turn": 9
+    },
+    {
+      "id": "9c790ca8-4f91-4cb2-9231-ac1303a21f66",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "점점 심해지고 있나요?",
+        "request_id": "d65ed963-d6d1-4120-8cbc-79efbede467c"
+      },
+      "effective_content": "점점 심해지고 있나요?",
+      "response": {
+        "turn": 10,
+        "status": "OK",
+        "content": "네, 먹는 양이 자꾸 늘어요.",
+        "turns_remaining": 40
+      },
+      "http_status": 200,
+      "turn": 10
+    },
+    {
+      "id": "dd930847-c268-4b6f-b227-493d6e9b55c3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "약 드신 뒤 기억이 끊긴 적 있나요?",
+        "request_id": "5bff7757-7f82-4905-94ac-00ddb90604e7"
+      },
+      "effective_content": "약 드신 뒤 기억이 끊긴 적 있나요?",
+      "response": {
+        "turn": 11,
+        "status": "OK",
+        "content": "네, 먹고 나서 기억이 안 날 때 있어요.",
+        "turns_remaining": 39
+      },
+      "http_status": 200,
+      "turn": 11
+    },
+    {
+      "id": "9e442295-b0da-45d5-88cc-59893e96c610",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가족들이 약 문제로 걱정하나요?",
+        "request_id": "f95bc40e-adcc-4408-96c0-e25f9821c565"
+      },
+      "effective_content": "가족들이 약 문제로 걱정하나요?",
+      "response": {
+        "turn": 12,
+        "status": "OK",
+        "content": "네, 남편과 딸이 걱정해요.",
+        "turns_remaining": 38
+      },
+      "http_status": 200,
+      "turn": 12
+    },
+    {
+      "id": "cbccc741-3c50-485d-a078-48bced29814f",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "잠들기 어렵나요, 자주 깨나요?",
+        "request_id": "343c626b-6f4e-4959-9cac-cfe9415477bf"
+      },
+      "effective_content": "잠들기 어렵나요, 자주 깨나요?",
+      "response": {
+        "turn": 13,
+        "status": "OK",
+        "content": "잠들기도 어렵고 자주 깨요.",
+        "turns_remaining": 37
+      },
+      "http_status": 200,
+      "turn": 13
+    },
+    {
+      "id": "75ea7a5c-c1a5-4337-92fd-82b633bc6f72",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "보통 몇 시에 자고 깨세요?",
+        "request_id": "158c82de-c68d-4bee-8a48-152616bb951f"
+      },
+      "effective_content": "보통 몇 시에 자고 깨세요?",
+      "response": {
+        "turn": 14,
+        "status": "OK",
+        "content": "밤11시에 자고 새벽2~3시에 깨요.",
+        "turns_remaining": 36
+      },
+      "http_status": 200,
+      "turn": 14
+    },
+    {
+      "id": "d61f4c9e-80a1-418b-9f20-28db16c14ae1",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "부모님이나 형제분 앓는 병 있나요?",
+        "request_id": "fdba4fda-10a3-404f-b135-6459d8aa9b82"
+      },
+      "effective_content": "부모님이나 형제분 앓는 병 있나요?",
+      "response": {
+        "turn": 15,
+        "status": "OK",
+        "content": "어머니는 치매, 아버지는 심장병요.",
+        "turns_remaining": 35
+      },
+      "http_status": 200,
+      "turn": 15
+    },
+    {
+      "id": "85312670-3271-4724-b4f9-fde1c7255433",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "드시는 약이나 영양제 있으세요?",
+        "request_id": "5e4c439b-d889-470c-8bce-23af38a86951"
+      },
+      "effective_content": "드시는 약이나 영양제 있으세요?",
+      "response": {
+        "turn": 16,
+        "status": "OK",
+        "content": "수면제랑 혈압약 암로디핀 먹어요.",
+        "turns_remaining": 34
+      },
+      "http_status": 200,
+      "turn": 16
+    },
+    {
+      "id": "752e1e74-d29f-4da7-b463-5a76e1e1939d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "다른 지병이나 수술받은 적 있으세요?",
+        "request_id": "e5537c61-1c15-4a7a-a6fb-71281d494286"
+      },
+      "effective_content": "다른 지병이나 수술받은 적 있으세요?",
+      "response": {
+        "turn": 17,
+        "status": "OK",
+        "content": "고혈압 말곤 없어요.",
+        "turns_remaining": 33
+      },
+      "http_status": 200,
+      "turn": 17
+    },
+    {
+      "id": "0ec4345f-d745-4def-aace-c68d12b8a756",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "낮에 졸리거나 멍한가요?",
+        "request_id": "084b78e7-f089-4acc-b8ab-b5b939b89189"
+      },
+      "effective_content": "낮에 졸리거나 멍한가요?",
+      "response": {
+        "turn": 18,
+        "status": "OK",
+        "content": "네, 낮에 졸리고 멍해요.",
+        "turns_remaining": 32
+      },
+      "http_status": 200,
+      "turn": 18
+    },
+    {
+      "id": "31b816c5-2f90-4522-94e2-65d38ce78244",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "요즘 기분이 많이 가라앉나요?",
+        "request_id": "3431ac78-c0fe-4821-bcee-3dc9f56f7325"
+      },
+      "effective_content": "요즘 기분이 많이 가라앉나요?",
+      "response": {
+        "turn": 19,
+        "status": "OK",
+        "content": "많이 가라앉지는 않아요.",
+        "turns_remaining": 31
+      },
+      "http_status": 200,
+      "turn": 19
+    },
+    {
+      "id": "d1134c8a-4d08-4757-8be1-b53e91413693",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "고혈압이나 당뇨 있으세요?",
+        "request_id": "d41223c1-80ea-4146-a75b-ba8365fdd255"
+      },
+      "effective_content": "고혈압이나 당뇨 있으세요?",
+      "response": {
+        "turn": 20,
+        "status": "OK",
+        "content": "고혈압은 있고 당뇨는 없어요.",
+        "turns_remaining": 30
+      },
+      "http_status": 200,
+      "turn": 20
+    },
+    {
+      "id": "eb86068f-e21f-4ee4-8bb8-47c45f6de3ca",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가장 걱정되시는 게 뭐예요?",
+        "request_id": "11a5c8be-3526-47a4-94b3-c398ef001679"
+      },
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "turn": 21,
+        "status": "OK",
+        "content": "약을 계속 먹어도 괜찮을까 걱정돼요.",
+        "turns_remaining": 29
+      },
+      "http_status": 200,
+      "turn": 21
+    },
+    {
+      "id": "8d8dd927-98c8-45b2-abe5-39f45a900bed",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "오늘 특히 궁금하신 게 있으세요?",
+        "request_id": "19462b9f-4afa-4492-8927-662f7fca6dc8"
+      },
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "turn": 22,
+        "status": "OK",
+        "content": "약을 줄이거나 끊을 수 있을까요?",
+        "turns_remaining": 28
+      },
+      "http_status": 200,
+      "turn": 22
+    },
+    {
+      "id": "b7189a12-c97f-4723-8203-c75df6e0dd37",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "활력징후 측정하겠습니다",
+        "request_id": "dc01c10a-6ff4-4bdc-9395-a932a8da55f8"
+      },
+      "effective_content": "gen_vital_signs",
+      "response": {
+        "turn": 23,
+        "result": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+        "status": "OK",
+        "turns_remaining": 27
+      },
+      "http_status": 200,
+      "turn": 23
+    },
+    {
+      "id": "dc01a151-6092-4140-be27-8bb75751e849",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "전반적 외관 시진하겠습니다",
+        "request_id": "1d53f2d6-0bcc-4846-af6c-cafd7d5b57d3"
+      },
+      "effective_content": "gen_general_appearance",
+      "response": {
+        "turn": 24,
+        "result": "급성 병색(-), 정상 체형, 안절부절(+)",
+        "status": "OK",
+        "turns_remaining": 26
+      },
+      "http_status": 200,
+      "turn": 24
+    },
+    {
+      "id": "32094702-17e5-4be1-b5a0-6fc4b32f5971",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "의식·지남력 평가하겠습니다",
+        "request_id": "793e5011-bef0-4df4-a166-7d1a172bc086"
+      },
+      "effective_content": "gen_mental_status",
+      "response": {
+        "turn": 25,
+        "result": "명료, 지남력 3/3점",
+        "status": "OK",
+        "turns_remaining": 25
+      },
+      "http_status": 200,
+      "turn": 25
+    },
+    {
+      "id": "40de7f62-b522-4e0f-b2ed-b23d051c3b8c",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "주간 진정·불안 관찰하겠습니다",
+        "request_id": "b4d1611f-d31e-4e55-958a-36201b764880"
+      },
+      "effective_content": "c00_sedation_anxiety",
+      "response": {
+        "turn": 26,
+        "result": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+        "status": "OK",
+        "turns_remaining": 24
+      },
+      "http_status": 200,
+      "turn": 26
+    },
+    {
+      "id": "cc5a9d90-a65e-4d21-90a5-2fb3863855b4",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "인지기능 선별검사 하겠습니다",
+        "request_id": "cd51ca30-ebb2-4f08-a992-5b42d9431421"
+      },
+      "effective_content": "gen_cognitive_screening",
+      "response": {
+        "turn": 27,
+        "result": "MMSE-K 28/30점, 지연회상 2/3점",
+        "status": "OK",
+        "turns_remaining": 23
+      },
+      "http_status": 200,
+      "turn": 27
+    },
+    {
+      "id": "ec6a0d0c-1ef4-4714-8796-4536189a08e9",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "기립성 혈압 측정하겠습니다",
+        "request_id": "546aa726-4c51-4e19-8cc1-dcb5475bb36b"
+      },
+      "effective_content": "gen_orthostatic_bp",
+      "response": {
+        "turn": 28,
+        "result": "수축기 강하 6mmHg, 어지럼(-)",
+        "status": "OK",
+        "turns_remaining": 22
+      },
+      "http_status": 200,
+      "turn": 28
+    },
+    {
+      "id": "af810f9b-4faa-4097-93ef-42550fea39b7",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "자세성 떨림 확인하겠습니다",
+        "request_id": "cdf879f0-b3f7-4681-a8be-e8ee4fa48b49"
+      },
+      "effective_content": "bex_postural_tremor",
+      "response": {
+        "turn": 29,
+        "result": "자세성 떨림(-/-)",
+        "status": "OK",
+        "turns_remaining": 21
+      },
+      "http_status": 200,
+      "turn": 29
+    },
+    {
+      "id": "768af567-bb06-460b-b4d4-3dba40dc1495",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "피부 온도·발한 촉진하겠습니다",
+        "request_id": "4915f282-dbf6-40ba-ae9f-207a42b4819f"
+      },
+      "effective_content": "gen_skin_palpation",
+      "response": {
+        "turn": 30,
+        "result": "온난, 발한(-), 손바닥 습윤(-/-)",
+        "status": "OK",
+        "turns_remaining": 20
+      },
+      "http_status": 200,
+      "turn": 30
+    },
+    {
+      "id": "25f4d9bb-fd52-43d3-ad49-6fadb05731c9",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "보행 관찰하겠습니다",
+        "request_id": "14596090-46c3-493f-932a-01552377645e"
+      },
+      "effective_content": "bex_gait",
+      "response": {
+        "turn": 31,
+        "result": "보폭 정상, 절뚝임(-), 불균형(-)",
+        "status": "OK",
+        "turns_remaining": 19
+      },
+      "http_status": 200,
+      "turn": 31
+    },
+    {
+      "id": "e9ca504d-d8a3-446b-8caf-e8dcc7da3525",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "인두·편도 시진하겠습니다",
+        "request_id": "dc172aa1-3486-4815-b947-f3ce10328d43"
+      },
+      "effective_content": "",
+      "response": {
+        "error": {
+          "code": "PROVIDER_UNAVAILABLE",
+          "message": "Provider unavailable"
+        }
+      },
+      "http_status": 503,
+      "turn": 31
+    },
+    {
+      "id": "f83799b7-023b-4049-9440-d631ac151658",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "사지 감각 검사하겠습니다",
+        "request_id": "dca07f75-57eb-454f-9491-e01c48b96735"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 32,
+        "result": "상하지 촉각·통각·진동감각 보존(+/+), 좌우 대칭",
+        "status": "OK",
+        "turns_remaining": 18
+      },
+      "http_status": 200,
+      "turn": 32
+    },
+    {
+      "id": "076753f7-86ed-4c45-ae95-c72da90b7ddd",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "안구진탕 확인하겠습니다",
+        "request_id": "4c6bd16c-c126-4da9-9ba2-2cb4da26355f"
+      },
+      "effective_content": "c00_nystagmus",
+      "response": {
+        "turn": 33,
+        "result": "안구진탕(-/-)",
+        "status": "OK",
+        "turns_remaining": 17
+      },
+      "http_status": 200,
+      "turn": 33
+    },
+    {
+      "id": "7b8d4b88-6492-42de-87ea-24e63f7971b3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "수면제 사용장애로 진단합니다.",
+        "request_id": "c2879b9c-efe0-49bd-8a32-6713b0bdf7d5"
+      },
+      "effective_content": "수면제 사용장애로 진단합니다.",
+      "response": {
+        "turn": 34,
+        "status": "OK",
+        "content": "그럼 약을 줄일 수 있을까요?",
+        "turns_remaining": 16
+      },
+      "http_status": 200,
+      "turn": 34
+    },
+    {
+      "id": "8576ebe7-6dc1-4884-a089-d0770d0f2414",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "혼자 끊지 않고 실제 복용량에 맞춰 감량합니다.",
+        "request_id": "28677cf4-5ecd-45b8-8c67-1fe62b898c98"
+      },
+      "effective_content": "혼자 끊지 않고 실제 복용량에 맞춰 감량합니다.",
+      "response": {
+        "turn": 35,
+        "status": "OK",
+        "content": "네, 혼자 끊지는 않을게요.",
+        "turns_remaining": 15
+      },
+      "http_status": 200,
+      "turn": 35
+    },
+    {
+      "id": "978edc43-edac-4e34-9ee4-77b687580d35",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "졸피뎀을 늘려 먹어 의존이 생겼습니다.",
+        "request_id": "ec401942-ed2a-481e-b941-fe8084a8d340"
+      },
+      "effective_content": "졸피뎀을 늘려 먹어 의존이 생겼습니다.",
+      "response": {
+        "turn": 36,
+        "status": "OK",
+        "content": "줄이면 잠을 못 잘까 봐 두려워요.",
+        "turns_remaining": 14
+      },
+      "http_status": 200,
+      "turn": 36
+    },
+    {
+      "id": "59924f3b-76d7-4981-bba9-3dfaa9b34d60",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "수면제 추가 처방은 안 하고 약국약도 끊으세요.",
+        "request_id": "ba79d75d-d465-4dc9-a189-a824a38872af"
+      },
+      "effective_content": "수면제 추가 처방은 안 하고 약국약도 끊으세요.",
+      "response": {
+        "turn": 37,
+        "status": "OK",
+        "content": "약 없이는 못 잘까 봐 두려워요.",
+        "turns_remaining": 13
+      },
+      "http_status": 200,
+      "turn": 37
+    },
+    {
+      "id": "78cf5c78-abbb-42df-9b88-b5820eefb081",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "처방 조회·소변검사로 병용약을 확인합니다.",
+        "request_id": "f42d3aff-c80e-4b3d-84f8-8e88905ea015"
+      },
+      "effective_content": "처방 조회·소변검사로 병용약을 확인합니다.",
+      "response": {
+        "turn": 38,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 12
+      },
+      "http_status": 200,
+      "turn": 38
+    },
+    {
+      "id": "377d6ea5-cfbd-46e7-bef1-5fdc9f26ad1e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "피검사로 간·신장·전해질·갑상샘을 확인합니다.",
+        "request_id": "3ac0ed2f-f6d5-4217-9320-029956a3423a"
+      },
+      "effective_content": "피검사로 간·신장·전해질·갑상샘을 확인합니다.",
+      "response": {
+        "turn": 39,
+        "status": "OK",
+        "content": "네, 피검사 받을게요.",
+        "turns_remaining": 11
+      },
+      "http_status": 200,
+      "turn": 39
+    },
+    {
+      "id": "54d26cb2-87c7-464a-a610-42f930fb864b",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "피검사, 소변 약물검사, 심전도를 할게요.",
+        "request_id": "f99354d1-fa5d-4477-9c2d-a5c423a39e3a"
+      },
+      "effective_content": "피검사, 소변 약물검사, 심전도를 할게요.",
+      "response": {
+        "turn": 40,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 10
+      },
+      "http_status": 200,
+      "turn": 40
+    },
+    {
+      "id": "7070d1bc-8950-42c2-8b64-f1792f5c0da2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "1~2주 뒤 재진하고 매일 같은 시각에 일어나세요.",
+        "request_id": "3008c044-acf0-41d7-bc40-b0bbfc700878"
+      },
+      "effective_content": "1~2주 뒤 재진하고 매일 같은 시각에 일어나세요.",
+      "response": {
+        "turn": 41,
+        "status": "OK",
+        "content": "네, 같은 시간에 일어날게요.",
+        "turns_remaining": 9
+      },
+      "http_status": 200,
+      "turn": 41
+    },
+    {
+      "id": "b585072a-0e53-4b4f-b97e-7d10ea111aca",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "경련·혼동·환각·심한 불안이 오면 바로 오세요.",
+        "request_id": "46517195-a086-46a0-80af-a05a9a7de1be"
+      },
+      "effective_content": "경련·혼동·환각·심한 불안이 오면 바로 오세요.",
+      "response": {
+        "turn": 42,
+        "status": "OK",
+        "content": "네, 그러면 바로 올게요.",
+        "turns_remaining": 8
+      },
+      "http_status": 200,
+      "turn": 42
+    },
+    {
+      "id": "49d65363-c04b-41d9-be4d-d29e34fac141",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "더 궁금하신 점 있으세요?",
+        "request_id": "9934f106-95eb-4b7c-a7d1-7776a49e67b4"
+      },
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "turn": 43,
+        "status": "OK",
+        "content": "약 없이도 잘 잘 수 있을까요?",
+        "turns_remaining": 7
+      },
+      "http_status": 200,
+      "turn": 43
+    },
+    {
+      "id": "7dbcb438-bf43-4b34-9617-1edf3fe16579",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "네, 천천히 줄이고 습관을 바꾸면 가능할 수 있습니다.",
+        "request_id": "d0371197-29ee-4ab4-b1c4-e47b4ab1f58f"
+      },
+      "effective_content": "네, 천천히 줄이고 습관을 바꾸면 가능할 수 있습니다.",
+      "response": {
+        "turn": 44,
+        "status": "OK",
+        "content": "네, 천천히 줄여볼게요.",
+        "turns_remaining": 6
+      },
+      "http_status": 200,
+      "turn": 44
+    },
+    {
+      "id": "3f25a6b0-b408-4aab-8cfc-8852941121d9",
+      "action": "DIAGNOSE",
+      "payload": {
+        "note": {
+          "A": {
+            "evidence": "#1. 수면제(진정수면제) 사용장애 (Sedative, Hypnotic, or Anxiolytic Use Disorder)\n- 근거 : 호소상 10mg 정을 하루 5–6알(약 50–60mg) 복용하고 때때로 낮에도 추가 복용함 → 장기간 빈번한 고용량 복용 양상. (턴 2, 4, 5)\n- 근거 : 호소상 반 알에서 5–6알로 복용량이 늘었고 감량·중단을 여러 번 시도했으나 다시 복용함 → 내성 및 조절 실패를 뒷받침함. (턴 6, 8)\n- 근거 : 호소상 약을 먹지 않으면 불면과 온몸의 불안이 나타남 → 진정수면제 금단 또는 반동 증상 가능성을 뒷받침함. (턴 7)\n- 근거 : 호소상 복용 후 기억이 나지 않을 때가 있고 낮에 졸리고 멍함; 진찰상 반응 지연과 졸림이 관찰됨 → 복용 관련 부작용 및 주간 기능 저하가 동반됨. (턴 11, 18, 26)\n- 근거 : 호소상 약국 수면유도제를 가끔 함께 복용하고 가족도 약 복용을 걱정함; 진찰상 의식은 명료하고 지남력은 3/3점이며 급성 중독 징후는 관찰되지 않음 → 병용 위험은 있으나 진찰 당시 급성 중독 소견은 없음. (턴 9, 12, 25, 26)",
+            "differential": "r/o 만성 불면장애 (Chronic Insomnia Disorder) : 7년간 불면을 호소하고 잠들기 어렵고 자주 깬다고 함(F6, F18). 다만 하루 5–6알 복용, 복용량 증가 및 미복용 시 증상도 있어 독립적인 불면장애인지 약물 관련 증상인지 구분이 필요함(F9, F11, F12) (턴 1, 4, 6, 7, 13). 감별 검사 : 수면일지 및 불면 증상에 대한 구조화 평가\nr/o 약물·물질 유발 수면장애 (Substance/Medication-Induced Sleep Disorder) : 고용량 졸피뎀 복용 중에도 수면 문제가 호소되고(F9, F18), 미복용 시 불면과 불안이 나타남(F12). 불면과 졸피뎀 복용 모두 약 7년 전부터라고 보고되어 시간적 선후관계는 분명하지 않음(F6, F8) (턴 1, 3, 4, 7, 13). 감별 검사 : 복용·수면 경과의 상세 문진과 의료진 감독하 감량 과정의 수면일지\nr/o 불안 또는 우울 관련 수면장애 (Anxiety- or Depression-Related Sleep Disorder) : 약을 복용하지 않을 때 전신 불안을 호소하고 진찰상 초조가 관찰됨(F12, E2, E4). 다만 기분이 많이 가라앉지는 않는다고 호소하며, 불안은 약 미복용과 연동되어 독립적인 불안·우울 문제인지는 불확실함(F25, F12) (턴 7, 19, 24, 26). 감별 검사 : 정신건강 면담 및 PHQ-9/GAD-7 선별검사"
+          },
+          "O": {
+            "exam": "V/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보) / 활력징후 측정 : 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C (턴 23) / 기립성 혈압 측정 : 수축기 강하 6mmHg, 어지럼(-) (턴 28)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 정상 체형, 안절부절(+) (턴 24). 의식·지남력 평가 : 명료, 지남력 3/3점 (턴 25). 주간 진정·불안 관찰 : 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-) (턴 26)\nSkin : 피부 온도·발한 촉진 : 온난, 발한(-), 손바닥 습윤(-/-) (턴 30)\nH/E/E/N/T : 안구진탕 확인 : 안구진탕(-/-) (턴 33)\nNeuro : 인지기능 선별검사 : MMSE-K 28/30점, 지연회상 2/3점 (턴 27). 자세성 떨림 확인 : 자세성 떨림(-/-) (턴 29). 보행 관찰 : 보폭 정상, 절뚝임(-), 불균형(-) (턴 31). 사지 감각 검사 : 상하지 촉각·통각·진동감각 보존(+/+), 좌우 대칭 (턴 32)",
+            "tests": ""
+          },
+          "P": {
+            "tests": "- 처방 내역 조회(DUR) : 여러 기관의 진정수면제 처방량과 중복 처방 여부를 확인합니다.\n- 소변 약물 선별검사 : 다른 진정제 병용 여부를 확인합니다. 졸피뎀은 일반 선별검사에서 검출되지 않을 수 있어 복용 내역도 함께 확인합니다.\n- 혈액검사(CBC, 간·신기능, 전해질, 혈당) : 기저 건강 상태와 감량 중 안전성을 확인하고 대체 치료 선택에 참고합니다.\n- 갑상샘 기능검사(TFT) : 불안·불면 등 금단과 비슷한 증상을 일으킬 수 있는 갑상샘 이상을 감별합니다.",
+            "education": "진료 중 설명함:\n- 수면제 사용장애로 진단합니다.\n- 혼자 끊지 않고 실제 복용량에 맞춰 감량합니다.\n- 졸피뎀을 늘려 먹어 의존이 생겼습니다.\n- 수면제 추가 처방은 안 하고 약국약도 끊으세요.\n- 처방 조회·소변검사로 병용약을 확인합니다.\n- 피검사로 간·신장·전해질·갑상샘을 확인합니다.\n- 피검사, 소변 약물검사, 심전도를 할게요.\n- 1~2주 뒤 재진하고 매일 같은 시각에 일어나세요.\n- 경련·혼동·환각·심한 불안이 오면 바로 오세요.\n- 네, 천천히 줄이고 습관을 바꾸면 가능할 수 있습니다.\n다음 방문 시 교육 예정 : 갑자기 끊으면 심한 불면·불안이나 경련을 포함한 금단이 생길 수 있어 혼자 중단하지 않습니다.; 처방 조회와 소변검사는 중복 처방 및 다른 진정제 병용 확인에, 혈액·갑상샘 검사는 기저 상태와 증상 감별에 필요합니다. 일반 소변검사에서 졸피뎀이 검출되지 않을 수 있습니다.",
+            "follow_up": "- 재진: 1~2주 후 실제 복용량, 금단 증상, 수면일지와 검사 결과를 확인해 감량 단계를 조정합니다.\n- 모니터링: 이후 1~2주 간격으로 복용량, 불안·불면, 낮 졸림 및 기억 공백을 확인합니다.\n- 즉시 내원: 경련, 혼동, 환각, 과량 복용, 자해 생각이 있으면 즉시 응급실로 오도록 안내합니다.",
+            "treatment": "- 정확한 하루 복용량과 다른 약·술 복용을 확인한 뒤, 금단 증상에 따라 1~2주마다 10~25%씩 점진 감량을 고려합니다. 급격히 중단하지 않습니다.\n- 처방은 한 의료기관으로 일원화하고, 가족이 복용량과 감량 과정을 함께 확인하도록 권합니다. 주간 추가 복용과 약국 수면유도제는 중단합니다.\n- 수면일지, 수면위생 교육과 불면 인지행동치료를 권합니다. 복용 중인 혈압약은 유지합니다.\n- 새 약 시작 전 금기·약물 알레르기·상호작용 확인",
+            "disposition": "- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 외래 귀가 및 감량 추적이 가능합니다. 활력징후가 안정적이고 의식이 명료하며 급성 중독이나 심한 금단 징후가 없어 현재 입원은 필요하지 않습니다.\n- 주간 졸림과 반응 지연이 있으므로 오늘 운전과 위험 작업을 피하고, 가족의 복용 확인을 권합니다."
+          },
+          "S": {
+            "cc": "C.C : 불면 (수면제 처방 원함)\nOnset : 7년 전\n통증평가 : 해당 없음",
+            "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 모친 치매 (+), 모친 병력(+, 어머니 치매), 부친 병력(+, 아버지 심장병)",
+            "sh": "Smoking ( )\nAlcohol ( )",
+            "hpi": "62세 여성으로, 7년 전부터 잠을 잘 못 잤다고 함.\n졸피뎀 복용량이 처음 반 알에서 현재 하루 5~6알로 늘었고, 가끔 낮에 1알 더 복용한다고 함.\n잠들기 어렵고 자주 깨며, 밤 11시에 자고 새벽 2~3시에 깬다고 함. 약을 복용하지 않으면 잠이 안 오고 온몸이 불안하다고 함.\n약을 줄이거나 끊으려 여러 번 시도했으나 다시 복용했고, 약 복용 후 기억이 나지 않을 때가 있다고 함.\n낮에 졸리고 멍한 느낌이 있으며, 기분이 많이 가라앉지는 않는다고 함.\n남편과 딸이 약 복용을 걱정하고, 본인도 계속 복용해도 괜찮을지 걱정하며 약을 줄이거나 끊을 수 있는지 궁금해하여 내원함.",
+            "pmh": "DM / HTN (-/+)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history : 졸피뎀 10mg/정, 하루 5~6알(밤 11시, 새벽 2~3시; 가끔 낮에 1알 추가 복용); 약국 수면유도제 가끔 함께 복용; 암로디핀(용량 및 복용법 미상)\nAllergy ( )\nOthers : 복용량 증가(+, 반 알에서 대여섯 알), 미복용 증상(+, 불면, 온몸이 불안), 감량·중단 시도(+, 여러 번, 다시 복용), 복용 후 기억 소실(+, 먹고 나서 기억 안 날 때 있음)",
+            "ros": "General weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 가족의 약 걱정(+, 남편과 딸이 걱정), 기분 저하(-)"
+          }
+        },
+        "action": "DIAGNOSE",
+        "diagnosis": "수면제(진정수면제) 사용장애 (Sedative, Hypnotic, or Anxiolytic Use Disorder)",
+        "request_id": "afe42dcb-a99f-43b4-af38-e2095b2caf01"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 44,
+        "status": "completed",
+        "score_status": "not_scored",
+        "record_digest": "bf07925c2bd62b9fb84673dd9947bcde003b15b3c2300229ad74b0724555ff70"
+      },
+      "http_status": 200,
+      "turn": 44
+    }
+  ],
+  "note": "[S] 주호소 (CC)\nC.C : 불면 (수면제 처방 원함)\nOnset : 7년 전\n통증평가 : 해당 없음\n\n[S] 현병력 (HPI)\n62세 여성으로, 7년 전부터 잠을 잘 못 잤다고 함.\n졸피뎀 복용량이 처음 반 알에서 현재 하루 5~6알로 늘었고, 가끔 낮에 1알 더 복용한다고 함.\n잠들기 어렵고 자주 깨며, 밤 11시에 자고 새벽 2~3시에 깬다고 함. 약을 복용하지 않으면 잠이 안 오고 온몸이 불안하다고 함.\n약을 줄이거나 끊으려 여러 번 시도했으나 다시 복용했고, 약 복용 후 기억이 나지 않을 때가 있다고 함.\n낮에 졸리고 멍한 느낌이 있으며, 기분이 많이 가라앉지는 않는다고 함.\n남편과 딸이 약 복용을 걱정하고, 본인도 계속 복용해도 괜찮을지 걱정하며 약을 줄이거나 끊을 수 있는지 궁금해하여 내원함.\n\n[S] 과거력·약물·알레르기 (PMH)\nDM / HTN (-/+)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history : 졸피뎀 10mg/정, 하루 5~6알(밤 11시, 새벽 2~3시; 가끔 낮에 1알 추가 복용); 약국 수면유도제 가끔 함께 복용; 암로디핀(용량 및 복용법 미상)\nAllergy ( )\nOthers : 복용량 증가(+, 반 알에서 대여섯 알), 미복용 증상(+, 불면, 온몸이 불안), 감량·중단 시도(+, 여러 번, 다시 복용), 복용 후 기억 소실(+, 먹고 나서 기억 안 날 때 있음)\n\n[S] 가족력 (FH)\nDM / HTN ( / )\nStroke ( )\nOthers : 모친 치매 (+), 모친 병력(+, 어머니 치매), 부친 병력(+, 아버지 심장병)\n\n[S] 사회력 (SH)\nSmoking ( )\nAlcohol ( )\n\n[S] 계통 문진 (ROS)\nGeneral weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 가족의 약 걱정(+, 남편과 딸이 걱정), 기분 저하(-)\n\n[O] 진찰 소견\nV/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보) / 활력징후 측정 : 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C (턴 23) / 기립성 혈압 측정 : 수축기 강하 6mmHg, 어지럼(-) (턴 28)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 정상 체형, 안절부절(+) (턴 24). 의식·지남력 평가 : 명료, 지남력 3/3점 (턴 25). 주간 진정·불안 관찰 : 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-) (턴 26)\nSkin : 피부 온도·발한 촉진 : 온난, 발한(-), 손바닥 습윤(-/-) (턴 30)\nH/E/E/N/T : 안구진탕 확인 : 안구진탕(-/-) (턴 33)\nNeuro : 인지기능 선별검사 : MMSE-K 28/30점, 지연회상 2/3점 (턴 27). 자세성 떨림 확인 : 자세성 떨림(-/-) (턴 29). 보행 관찰 : 보폭 정상, 절뚝임(-), 불균형(-) (턴 31). 사지 감각 검사 : 상하지 촉각·통각·진동감각 보존(+/+), 좌우 대칭 (턴 32)\n\n[O] 검사 결과\n\n\n[A] 주진단\n수면제(진정수면제) 사용장애 (Sedative, Hypnotic, or Anxiolytic Use Disorder)\n\n[A] 근거\n#1. 수면제(진정수면제) 사용장애 (Sedative, Hypnotic, or Anxiolytic Use Disorder)\n- 근거 : 호소상 10mg 정을 하루 5–6알(약 50–60mg) 복용하고 때때로 낮에도 추가 복용함 → 장기간 빈번한 고용량 복용 양상. (턴 2, 4, 5)\n- 근거 : 호소상 반 알에서 5–6알로 복용량이 늘었고 감량·중단을 여러 번 시도했으나 다시 복용함 → 내성 및 조절 실패를 뒷받침함. (턴 6, 8)\n- 근거 : 호소상 약을 먹지 않으면 불면과 온몸의 불안이 나타남 → 진정수면제 금단 또는 반동 증상 가능성을 뒷받침함. (턴 7)\n- 근거 : 호소상 복용 후 기억이 나지 않을 때가 있고 낮에 졸리고 멍함; 진찰상 반응 지연과 졸림이 관찰됨 → 복용 관련 부작용 및 주간 기능 저하가 동반됨. (턴 11, 18, 26)\n- 근거 : 호소상 약국 수면유도제를 가끔 함께 복용하고 가족도 약 복용을 걱정함; 진찰상 의식은 명료하고 지남력은 3/3점이며 급성 중독 징후는 관찰되지 않음 → 병용 위험은 있으나 진찰 당시 급성 중독 소견은 없음. (턴 9, 12, 25, 26)\n\n[A] 감별진단\nr/o 만성 불면장애 (Chronic Insomnia Disorder) : 7년간 불면을 호소하고 잠들기 어렵고 자주 깬다고 함(F6, F18). 다만 하루 5–6알 복용, 복용량 증가 및 미복용 시 증상도 있어 독립적인 불면장애인지 약물 관련 증상인지 구분이 필요함(F9, F11, F12) (턴 1, 4, 6, 7, 13). 감별 검사 : 수면일지 및 불면 증상에 대한 구조화 평가\nr/o 약물·물질 유발 수면장애 (Substance/Medication-Induced Sleep Disorder) : 고용량 졸피뎀 복용 중에도 수면 문제가 호소되고(F9, F18), 미복용 시 불면과 불안이 나타남(F12). 불면과 졸피뎀 복용 모두 약 7년 전부터라고 보고되어 시간적 선후관계는 분명하지 않음(F6, F8) (턴 1, 3, 4, 7, 13). 감별 검사 : 복용·수면 경과의 상세 문진과 의료진 감독하 감량 과정의 수면일지\nr/o 불안 또는 우울 관련 수면장애 (Anxiety- or Depression-Related Sleep Disorder) : 약을 복용하지 않을 때 전신 불안을 호소하고 진찰상 초조가 관찰됨(F12, E2, E4). 다만 기분이 많이 가라앉지는 않는다고 호소하며, 불안은 약 미복용과 연동되어 독립적인 불안·우울 문제인지는 불확실함(F25, F12) (턴 7, 19, 24, 26). 감별 검사 : 정신건강 면담 및 PHQ-9/GAD-7 선별검사\n\n[P] 추가 검사\n- 처방 내역 조회(DUR) : 여러 기관의 진정수면제 처방량과 중복 처방 여부를 확인합니다.\n- 소변 약물 선별검사 : 다른 진정제 병용 여부를 확인합니다. 졸피뎀은 일반 선별검사에서 검출되지 않을 수 있어 복용 내역도 함께 확인합니다.\n- 혈액검사(CBC, 간·신기능, 전해질, 혈당) : 기저 건강 상태와 감량 중 안전성을 확인하고 대체 치료 선택에 참고합니다.\n- 갑상샘 기능검사(TFT) : 불안·불면 등 금단과 비슷한 증상을 일으킬 수 있는 갑상샘 이상을 감별합니다.\n\n[P] 치료\n- 정확한 하루 복용량과 다른 약·술 복용을 확인한 뒤, 금단 증상에 따라 1~2주마다 10~25%씩 점진 감량을 고려합니다. 급격히 중단하지 않습니다.\n- 처방은 한 의료기관으로 일원화하고, 가족이 복용량과 감량 과정을 함께 확인하도록 권합니다. 주간 추가 복용과 약국 수면유도제는 중단합니다.\n- 수면일지, 수면위생 교육과 불면 인지행동치료를 권합니다. 복용 중인 혈압약은 유지합니다.\n- 새 약 시작 전 금기·약물 알레르기·상호작용 확인\n\n[P] 처치 결정\n- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 외래 귀가 및 감량 추적이 가능합니다. 활력징후가 안정적이고 의식이 명료하며 급성 중독이나 심한 금단 징후가 없어 현재 입원은 필요하지 않습니다.\n- 주간 졸림과 반응 지연이 있으므로 오늘 운전과 위험 작업을 피하고, 가족의 복용 확인을 권합니다.\n\n[P] 추적\n- 재진: 1~2주 후 실제 복용량, 금단 증상, 수면일지와 검사 결과를 확인해 감량 단계를 조정합니다.\n- 모니터링: 이후 1~2주 간격으로 복용량, 불안·불면, 낮 졸림 및 기억 공백을 확인합니다.\n- 즉시 내원: 경련, 혼동, 환각, 과량 복용, 자해 생각이 있으면 즉시 응급실로 오도록 안내합니다.\n\n[P] 환자 교육\n진료 중 설명함:\n- 수면제 사용장애로 진단합니다.\n- 혼자 끊지 않고 실제 복용량에 맞춰 감량합니다.\n- 졸피뎀을 늘려 먹어 의존이 생겼습니다.\n- 수면제 추가 처방은 안 하고 약국약도 끊으세요.\n- 처방 조회·소변검사로 병용약을 확인합니다.\n- 피검사로 간·신장·전해질·갑상샘을 확인합니다.\n- 피검사, 소변 약물검사, 심전도를 할게요.\n- 1~2주 뒤 재진하고 매일 같은 시각에 일어나세요.\n- 경련·혼동·환각·심한 불안이 오면 바로 오세요.\n- 네, 천천히 줄이고 습관을 바꾸면 가능할 수 있습니다.\n다음 방문 시 교육 예정 : 갑자기 끊으면 심한 불면·불안이나 경련을 포함한 금단이 생길 수 있어 혼자 중단하지 않습니다.; 처방 조회와 소변검사는 중복 처방 및 다른 진정제 병용 확인에, 혈액·갑상샘 검사는 기저 상태와 증상 감별에 필요합니다. 일반 소변검사에서 졸피뎀이 검출되지 않을 수 있습니다.\n\n",
+  "record": {
+    "A": {
+      "evidence": "#1. 수면제(진정수면제) 사용장애 (Sedative, Hypnotic, or Anxiolytic Use Disorder)\n- 근거 : 호소상 10mg 정을 하루 5–6알(약 50–60mg) 복용하고 때때로 낮에도 추가 복용함 → 장기간 빈번한 고용량 복용 양상. (턴 2, 4, 5)\n- 근거 : 호소상 반 알에서 5–6알로 복용량이 늘었고 감량·중단을 여러 번 시도했으나 다시 복용함 → 내성 및 조절 실패를 뒷받침함. (턴 6, 8)\n- 근거 : 호소상 약을 먹지 않으면 불면과 온몸의 불안이 나타남 → 진정수면제 금단 또는 반동 증상 가능성을 뒷받침함. (턴 7)\n- 근거 : 호소상 복용 후 기억이 나지 않을 때가 있고 낮에 졸리고 멍함; 진찰상 반응 지연과 졸림이 관찰됨 → 복용 관련 부작용 및 주간 기능 저하가 동반됨. (턴 11, 18, 26)\n- 근거 : 호소상 약국 수면유도제를 가끔 함께 복용하고 가족도 약 복용을 걱정함; 진찰상 의식은 명료하고 지남력은 3/3점이며 급성 중독 징후는 관찰되지 않음 → 병용 위험은 있으나 진찰 당시 급성 중독 소견은 없음. (턴 9, 12, 25, 26)",
+      "differential": "r/o 만성 불면장애 (Chronic Insomnia Disorder) : 7년간 불면을 호소하고 잠들기 어렵고 자주 깬다고 함(F6, F18). 다만 하루 5–6알 복용, 복용량 증가 및 미복용 시 증상도 있어 독립적인 불면장애인지 약물 관련 증상인지 구분이 필요함(F9, F11, F12) (턴 1, 4, 6, 7, 13). 감별 검사 : 수면일지 및 불면 증상에 대한 구조화 평가\nr/o 약물·물질 유발 수면장애 (Substance/Medication-Induced Sleep Disorder) : 고용량 졸피뎀 복용 중에도 수면 문제가 호소되고(F9, F18), 미복용 시 불면과 불안이 나타남(F12). 불면과 졸피뎀 복용 모두 약 7년 전부터라고 보고되어 시간적 선후관계는 분명하지 않음(F6, F8) (턴 1, 3, 4, 7, 13). 감별 검사 : 복용·수면 경과의 상세 문진과 의료진 감독하 감량 과정의 수면일지\nr/o 불안 또는 우울 관련 수면장애 (Anxiety- or Depression-Related Sleep Disorder) : 약을 복용하지 않을 때 전신 불안을 호소하고 진찰상 초조가 관찰됨(F12, E2, E4). 다만 기분이 많이 가라앉지는 않는다고 호소하며, 불안은 약 미복용과 연동되어 독립적인 불안·우울 문제인지는 불확실함(F25, F12) (턴 7, 19, 24, 26). 감별 검사 : 정신건강 면담 및 PHQ-9/GAD-7 선별검사"
+    },
+    "O": {
+      "exam": "V/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보) / 활력징후 측정 : 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C (턴 23) / 기립성 혈압 측정 : 수축기 강하 6mmHg, 어지럼(-) (턴 28)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 정상 체형, 안절부절(+) (턴 24). 의식·지남력 평가 : 명료, 지남력 3/3점 (턴 25). 주간 진정·불안 관찰 : 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-) (턴 26)\nSkin : 피부 온도·발한 촉진 : 온난, 발한(-), 손바닥 습윤(-/-) (턴 30)\nH/E/E/N/T : 안구진탕 확인 : 안구진탕(-/-) (턴 33)\nNeuro : 인지기능 선별검사 : MMSE-K 28/30점, 지연회상 2/3점 (턴 27). 자세성 떨림 확인 : 자세성 떨림(-/-) (턴 29). 보행 관찰 : 보폭 정상, 절뚝임(-), 불균형(-) (턴 31). 사지 감각 검사 : 상하지 촉각·통각·진동감각 보존(+/+), 좌우 대칭 (턴 32)",
+      "tests": ""
+    },
+    "P": {
+      "tests": "- 처방 내역 조회(DUR) : 여러 기관의 진정수면제 처방량과 중복 처방 여부를 확인합니다.\n- 소변 약물 선별검사 : 다른 진정제 병용 여부를 확인합니다. 졸피뎀은 일반 선별검사에서 검출되지 않을 수 있어 복용 내역도 함께 확인합니다.\n- 혈액검사(CBC, 간·신기능, 전해질, 혈당) : 기저 건강 상태와 감량 중 안전성을 확인하고 대체 치료 선택에 참고합니다.\n- 갑상샘 기능검사(TFT) : 불안·불면 등 금단과 비슷한 증상을 일으킬 수 있는 갑상샘 이상을 감별합니다.",
+      "education": "진료 중 설명함:\n- 수면제 사용장애로 진단합니다.\n- 혼자 끊지 않고 실제 복용량에 맞춰 감량합니다.\n- 졸피뎀을 늘려 먹어 의존이 생겼습니다.\n- 수면제 추가 처방은 안 하고 약국약도 끊으세요.\n- 처방 조회·소변검사로 병용약을 확인합니다.\n- 피검사로 간·신장·전해질·갑상샘을 확인합니다.\n- 피검사, 소변 약물검사, 심전도를 할게요.\n- 1~2주 뒤 재진하고 매일 같은 시각에 일어나세요.\n- 경련·혼동·환각·심한 불안이 오면 바로 오세요.\n- 네, 천천히 줄이고 습관을 바꾸면 가능할 수 있습니다.\n다음 방문 시 교육 예정 : 갑자기 끊으면 심한 불면·불안이나 경련을 포함한 금단이 생길 수 있어 혼자 중단하지 않습니다.; 처방 조회와 소변검사는 중복 처방 및 다른 진정제 병용 확인에, 혈액·갑상샘 검사는 기저 상태와 증상 감별에 필요합니다. 일반 소변검사에서 졸피뎀이 검출되지 않을 수 있습니다.",
+      "follow_up": "- 재진: 1~2주 후 실제 복용량, 금단 증상, 수면일지와 검사 결과를 확인해 감량 단계를 조정합니다.\n- 모니터링: 이후 1~2주 간격으로 복용량, 불안·불면, 낮 졸림 및 기억 공백을 확인합니다.\n- 즉시 내원: 경련, 혼동, 환각, 과량 복용, 자해 생각이 있으면 즉시 응급실로 오도록 안내합니다.",
+      "treatment": "- 정확한 하루 복용량과 다른 약·술 복용을 확인한 뒤, 금단 증상에 따라 1~2주마다 10~25%씩 점진 감량을 고려합니다. 급격히 중단하지 않습니다.\n- 처방은 한 의료기관으로 일원화하고, 가족이 복용량과 감량 과정을 함께 확인하도록 권합니다. 주간 추가 복용과 약국 수면유도제는 중단합니다.\n- 수면일지, 수면위생 교육과 불면 인지행동치료를 권합니다. 복용 중인 혈압약은 유지합니다.\n- 새 약 시작 전 금기·약물 알레르기·상호작용 확인",
+      "disposition": "- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 외래 귀가 및 감량 추적이 가능합니다. 활력징후가 안정적이고 의식이 명료하며 급성 중독이나 심한 금단 징후가 없어 현재 입원은 필요하지 않습니다.\n- 주간 졸림과 반응 지연이 있으므로 오늘 운전과 위험 작업을 피하고, 가족의 복용 확인을 권합니다."
+    },
+    "S": {
+      "cc": "C.C : 불면 (수면제 처방 원함)\nOnset : 7년 전\n통증평가 : 해당 없음",
+      "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 모친 치매 (+), 모친 병력(+, 어머니 치매), 부친 병력(+, 아버지 심장병)",
+      "sh": "Smoking ( )\nAlcohol ( )",
+      "hpi": "62세 여성으로, 7년 전부터 잠을 잘 못 잤다고 함.\n졸피뎀 복용량이 처음 반 알에서 현재 하루 5~6알로 늘었고, 가끔 낮에 1알 더 복용한다고 함.\n잠들기 어렵고 자주 깨며, 밤 11시에 자고 새벽 2~3시에 깬다고 함. 약을 복용하지 않으면 잠이 안 오고 온몸이 불안하다고 함.\n약을 줄이거나 끊으려 여러 번 시도했으나 다시 복용했고, 약 복용 후 기억이 나지 않을 때가 있다고 함.\n낮에 졸리고 멍한 느낌이 있으며, 기분이 많이 가라앉지는 않는다고 함.\n남편과 딸이 약 복용을 걱정하고, 본인도 계속 복용해도 괜찮을지 걱정하며 약을 줄이거나 끊을 수 있는지 궁금해하여 내원함.",
+      "pmh": "DM / HTN (-/+)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history : 졸피뎀 10mg/정, 하루 5~6알(밤 11시, 새벽 2~3시; 가끔 낮에 1알 추가 복용); 약국 수면유도제 가끔 함께 복용; 암로디핀(용량 및 복용법 미상)\nAllergy ( )\nOthers : 복용량 증가(+, 반 알에서 대여섯 알), 미복용 증상(+, 불면, 온몸이 불안), 감량·중단 시도(+, 여러 번, 다시 복용), 복용 후 기억 소실(+, 먹고 나서 기억 안 날 때 있음)",
+      "ros": "General weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 가족의 약 걱정(+, 남편과 딸이 걱정), 기분 저하(-)"
+    }
+  },
+  "diagnosis": "수면제(진정수면제) 사용장애 (Sedative, Hypnotic, or Anxiolytic Use Disorder)",
+  "score": {
+    "status": "not_scored",
+    "total": null,
+    "components": {}
+  }
+}

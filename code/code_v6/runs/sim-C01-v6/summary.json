@@ -1,0 +1,430 @@
+{
+  "case_id": "C01",
+  "alias": "C01",
+  "turns": 42,
+  "say": 31,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 16987,
+  "doctor_output_tokens": 10414,
+  "seconds": 752.4,
+  "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia",
+      "fatigue"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "진정제 불법 사용해 수면이 안 돼서 상담했습니다",
+    "갑상선 저하와 불안, 우울도 검사를 확인합니다",
+    "2주 뒤 결과 보러 다시 오세요.",
+    "오늘 바로 끊지 않고 천천히 줄여요.",
+    "졸릴 땐 운전 말고 술·약국 수면제도 피하세요.",
+    "수면 습관 교정과 인지행동치료도 같이 해요.",
+    "경련·혼동·환각·심한 불안이 오면 바로 오세요.",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 692,
+      "out": 120,
+      "finish": "stop",
+      "sec": 5.7
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2909,
+      "out": 459,
+      "finish": "stop",
+      "sec": 24.1
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3088,
+      "out": 395,
+      "finish": "stop",
+      "sec": 23.0
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1159,
+      "out": 84,
+      "finish": "stop",
+      "sec": 4.5
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1548,
+      "out": 4489,
+      "finish": "stop",
+      "sec": 241.0
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2094,
+      "out": 2263,
+      "finish": "stop",
+      "sec": 113.5
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3002,
+      "out": 693,
+      "finish": "stop",
+      "sec": 34.7
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 310,
+      "out": 1603,
+      "finish": "stop",
+      "sec": 83.5
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2185,
+      "out": 308,
+      "finish": "stop",
+      "sec": 19.1
+    }
+  ],
+  "phase_times": {
+    "intake": 5.7,
+    "interview": 191.0,
+    "examine": 13.0,
+    "facts": 241.0,
+    "dx": 113.5,
+    "plan_say": 118.3,
+    "explain": 50.8,
+    "S": 19.1
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "women",
+      "key": "other",
+      "label": "환자이름",
+      "pol": "+",
+      "detail": "박선희",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "62세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "women",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여성",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "환자주호소",
+      "pol": "+",
+      "detail": "수면장애로 병원 방문, 수면제 처방요청",
+      "id": "F4"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면장애 시작 시점",
+      "pol": "+",
+      "detail": "7년전부터",
+      "id": "F5"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "혈액조제명",
+      "pol": "+",
+      "detail": "스틸녹스, 졸피뎀 10mg",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면제 복용 시작",
+      "pol": "+",
+      "detail": "7년전부터",
+      "id": "F7"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "현재 일일 복용량",
+      "pol": "+",
+      "detail": "하루 4알",
+      "id": "F8"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "복용 시점",
+      "pol": "+",
+      "detail": "밤 11시 1알, 새벽 2시 1알",
+      "id": "F9"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "증량 경향",
+      "pol": "+",
+      "detail": "추가 1~2알 복용",
+      "id": "F10"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "해제 시 증상",
+      "pol": "+",
+      "detail": "뒤척임, 불안",
+      "id": "F11"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "우려사항",
+      "pol": "+",
+      "detail": "지속 복용으로 인한 건강 문제",
+      "id": "F12"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "처방 소스",
+      "pol": "+",
+      "detail": "여러 병원",
+      "id": "F13"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "OTC 수면유도제",
+      "pol": "+",
+      "detail": "가끔 구매해서 추가",
+      "id": "F14"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "최종 복용",
+      "pol": "+",
+      "detail": "어젯밤 자기 전 4알",
+      "id": "F15"
+    },
+    {
+      "turn": 12,
+      "sec": "sh",
+      "key": "other",
+      "label": "카페인 섭취량",
+      "pol": "+",
+      "detail": "하루 1~2잔",
+      "id": "F16"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "감소 시도",
+      "pol": "+",
+      "detail": "여러 번 실패",
+      "id": "F17"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "other",
+      "label": "면역성 발작",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F18"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기억상실",
+      "pol": "+",
+      "detail": "가끔 발생",
+      "id": "F19"
+    },
+    {
+      "turn": 16,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "현재 암로디핀 복용 중",
+      "id": "F20"
+    },
+    {
+      "turn": 17,
+      "sec": "meds",
+      "key": "other",
+      "label": "암로디핀",
+      "pol": "+",
+      "detail": "암로디핀을 먹고 있어요. 다른 약은 ",
+      "id": "F21"
+    },
+    {
+      "turn": 18,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가족과 갈등",
+      "pol": "+",
+      "detail": "가족과 갈등 존재",
+      "id": "F22"
+    },
+    {
+      "turn": 19,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 병력",
+      "pol": "+",
+      "detail": "모부 각 치매·심장병",
+      "id": "F23"
+    },
+    {
+      "turn": 20,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "전혀 없음",
+      "id": "F24"
+    },
+    {
+      "turn": 21,
+      "sec": "sh",
+      "key": "other",
+      "label": "음주",
+      "pol": "+",
+      "detail": "하루 1~2잔",
+      "id": "F25"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "예상 증상",
+      "pol": "+",
+      "detail": "아침 무기력·낮 졸음",
+      "id": "F26"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "25b0d2e060b5eda4ca2fc33a2acc9e5dfd92f04a955fd4702549e8eb13d0590f",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 걱정되셨겠어요. 언제부터 그러셨어요?",
+      "effective": "언제부터 그러셨어요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 32,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 9,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 16987,
+  "sim_doctor_output_tokens": 10414,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v6/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 75,
+  "grade_scores": {
+    "정보수집": 17,
+    "진단추론": 13,
+    "검사·추적": 5,
+    "안전": 13,
+    "의사소통": 9,
+    "효율": 18
+  }
+}

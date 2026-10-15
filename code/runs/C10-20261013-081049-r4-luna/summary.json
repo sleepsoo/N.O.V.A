@@ -1,0 +1,445 @@
+{
+  "case_id": "35dd8b69-2531-454e-bb8c-fb8030293447",
+  "alias": "C10",
+  "turns": 48,
+  "say": 39,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 12,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 24732,
+  "doctor_output_tokens": 9515,
+  "seconds": 287.5,
+  "diagnosis": "그레이브스병에 의한 갑상샘기능항진증 (Graves disease with hyperthyroidism)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "그레이브스병",
+      "diagnosis_en": "Graves disease",
+      "confidence": 0.98,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "그레이브스병에 의한 갑상샘기능항진증",
+      "diagnosis_en": "Graves disease with hyperthyroidism",
+      "confidence": 0.99,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "비의도적 체중 감소",
+    "categories": [
+      "weight"
+    ],
+    "answered": [
+      "onset",
+      "course"
+    ],
+    "empathy": "살이 갑자기 빠져 많이 걱정되셨겠어요."
+  },
+  "explained": [
+    "면역 이상 때문에 생긴 갑상샘 기능 항진증이 의심돼요.",
+    "갑상샘 호르몬·항체 검사로 확인할게요.",
+    "검사 결과에 맞는 치료로 치료할 수 있어요.",
+    "흉통·실신·심한 두근거림이 있으면 바로 오세요.",
+    "담배와 해조류를 피하고 보충제는 삼가세요.",
+    "검사로 원인을 확인하고 치료를 서두르겠습니다.",
+    "더 궁금한 점 있으세요?",
+    "기능이 조절되면 체중이 늘 수 있어요."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 512,
+      "out": 223,
+      "finish": "stop",
+      "sec": 2.8
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1327,
+      "out": 589,
+      "finish": "stop",
+      "sec": 10.0
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1732,
+      "out": 961,
+      "finish": "stop",
+      "sec": 13.8
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 3538,
+      "out": 347,
+      "finish": "stop",
+      "sec": 4.7
+    },
+    {
+      "tag": "dx1-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2491,
+      "out": 1003,
+      "finish": "stop",
+      "sec": 9.1
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1993,
+      "out": 1082,
+      "finish": "stop",
+      "sec": 10.5
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2322,
+      "out": 1308,
+      "finish": "stop",
+      "sec": 14.3
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 3185,
+      "out": 720,
+      "finish": "stop",
+      "sec": 9.6
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 561,
+      "out": 94,
+      "finish": "stop",
+      "sec": 2.3
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2601,
+      "out": 2074,
+      "finish": "stop",
+      "sec": 22.7
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1678,
+      "out": 442,
+      "finish": "stop",
+      "sec": 5.6
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2792,
+      "out": 672,
+      "finish": "stop",
+      "sec": 7.0
+    }
+  ],
+  "phase_times": {
+    "structure": 2.8,
+    "interview": 132.7,
+    "examine": 32.1,
+    "diagnose_vote": 19.5,
+    "plan": 14.3,
+    "explain": 50.7,
+    "S": 28.2,
+    "S-verify": 0.0,
+    "A": 7.0
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.course",
+      "pol": "+",
+      "detail": "계속 감소",
+      "label": "경과"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.impact",
+      "pol": "+",
+      "detail": "계단 오르기 힘듦",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 3,
+      "key": "ros.Fatigue",
+      "pol": "+",
+      "detail": "쉽게 지침",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.prior_visit",
+      "pol": "-",
+      "detail": "이번이 처음",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 5,
+      "key": "ros.Appetite",
+      "pol": "+",
+      "detail": "예전보다 더 먹음",
+      "label": "식사량"
+    },
+    {
+      "turn": 6,
+      "key": "ros.Heat intolerance",
+      "pol": "+",
+      "detail": "더위를 많이 탐",
+      "label": "더위/추위 민감"
+    },
+    {
+      "turn": 7,
+      "key": "ros.Sweating",
+      "pol": "+",
+      "detail": "밤에 잠옷 젖음",
+      "label": "발한"
+    },
+    {
+      "turn": 7,
+      "key": "ros.Night sweats",
+      "pol": "+",
+      "detail": "밤에 잠옷 젖음",
+      "label": "발한"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Tremor",
+      "pol": "+",
+      "detail": "잔 들거나 글씨 쓸 때",
+      "label": "손떨림"
+    },
+    {
+      "turn": 9,
+      "key": "ros.Polydipsia",
+      "pol": "-",
+      "detail": "평소와 같음",
+      "label": "다음/갈증"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Night sweats",
+      "pol": "+",
+      "detail": "잠옷 젖을 만큼",
+      "label": "야간 발한"
+    },
+    {
+      "turn": 11,
+      "key": "ros.other:목 앞 부음",
+      "pol": "+",
+      "detail": "전보다 두꺼워짐",
+      "label": "적응형"
+    },
+    {
+      "turn": 12,
+      "key": "ros.other:안구 돌출",
+      "pol": "+",
+      "detail": "전보다 튀어나옴",
+      "label": "적응형"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.HTN",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 14,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "다른 지병 없음",
+      "label": "기타 지병"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.Tbc",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.hepatitis",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 16,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "수술력 없음",
+      "label": "Op. Hx"
+    },
+    {
+      "turn": 17,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": "복용약 없음",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 18,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": "약 알레르기 없음",
+      "label": "Allergy"
+    },
+    {
+      "turn": 19,
+      "key": "ros.Menstrual change",
+      "pol": "+",
+      "detail": "최근 2달 양·기간 감소",
+      "label": "월경 변화"
+    },
+    {
+      "turn": 20,
+      "key": "ros.LMP",
+      "pol": "?",
+      "detail": "2주 전 시작",
+      "label": "LMP"
+    },
+    {
+      "turn": 21,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "어머니 갑상샘저하증",
+      "label": "FH 유사 질환"
+    },
+    {
+      "turn": 22,
+      "key": "fh.HTN",
+      "pol": "+",
+      "detail": "아버지",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 22,
+      "key": "fh.DM",
+      "pol": "+",
+      "detail": "할머니",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 23,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "담배 안 피움",
+      "label": "Smoking"
+    },
+    {
+      "turn": 24,
+      "key": "sh.alcohol",
+      "pol": "+",
+      "detail": "월 1~2회 가볍게",
+      "label": "Alcohol"
+    },
+    {
+      "turn": 25,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "가만히 있어도 자주",
+      "label": "Palpitation"
+    },
+    {
+      "turn": 26,
+      "key": "ros.Dyspnea",
+      "pol": "+",
+      "detail": "계단·빨리 걸을 때",
+      "label": "Dyspnea"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Chest pain",
+      "pol": "-",
+      "detail": "가슴 통증 없음",
+      "label": "Chest pain"
+    },
+    {
+      "turn": 28,
+      "key": "ros.other:복시",
+      "pol": "-",
+      "detail": "두 개로 보이지 않음",
+      "label": "적응형"
+    },
+    {
+      "turn": 29,
+      "key": "ros.other:목 압통",
+      "pol": "-",
+      "detail": "눌러도 아프지 않음",
+      "label": "적응형"
+    },
+    {
+      "turn": 30,
+      "key": "ice.concern",
+      "pol": "+",
+      "detail": "큰 병일까 걱정",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 31,
+      "key": "ice.expectation",
+      "pol": "+",
+      "detail": "원인 알고 치료받기",
+      "label": "기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "60f4a89a43754733a7f8eafc713b21ab87daf40631fed5dfd2a1189886205607",
+    "score_status": "not_scored",
+    "turn": 48
+  },
+  "error": null,
+  "session_id": "b1526891-16dc-4d26-b135-d0e240c8b2e9",
+  "api": "https://nova.snubhai.org"
+}

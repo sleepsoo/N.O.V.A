@@ -1,0 +1,421 @@
+{
+  "summary": {
+    "case_id": "C01",
+    "status": "completed",
+    "turns": 33,
+    "doctor_calls": 6,
+    "doctor_input_tokens": 7925,
+    "doctor_output_tokens": 9446,
+    "simulator_calls": 33,
+    "seconds": 1727.0,
+    "doctor_model": "openai/gpt-oss-20b",
+    "simulator_model": "openai/gpt-oss-20b"
+  },
+  "start_information": {
+    "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+    "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+  },
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "잠을 제대로 못 주무셔서 많이 힘드셨겠어요.",
+      "effective_content": "잠을 제대로 못 주무셔서 많이 힘드셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 정말 힘드네요.",
+        "turn": 1,
+        "turns_remaining": 49
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "언제부터 그러셨어요?",
+      "effective_content": "언제부터 그러셨어요?",
+      "response": {
+        "status": "OK",
+        "content": "일곱 해 전부터요",
+        "turn": 2,
+        "turns_remaining": 48
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "그 뒤로 점점 심해지고 있나요?",
+      "effective_content": "그 뒤로 점점 심해지고 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 점점 심해졌어요.",
+        "turn": 3,
+        "turns_remaining": 47
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "일상생활에 지장이 얼마나 있으세요?",
+      "effective_content": "일상생활에 지장이 얼마나 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "모든 게 방해돼요.",
+        "turn": 4,
+        "turns_remaining": 46
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "잠드는 데 오래 걸리세요?",
+      "effective_content": "잠드는 데 오래 걸리세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 오래 걸려요.",
+        "turn": 5,
+        "turns_remaining": 45
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "자다가 자주 깨세요?",
+      "effective_content": "자다가 자주 깨세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 가끔 깨서요.",
+        "turn": 6,
+        "turns_remaining": 44
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "낮에 졸리거나 멍하세요?",
+      "effective_content": "낮에 졸리거나 멍하세요?",
+      "response": {
+        "status": "OK",
+        "content": "조금 멍해요",
+        "turn": 7,
+        "turns_remaining": 43
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "그 약은 언제부터 드셨어요?",
+      "effective_content": "그 약은 언제부터 드셨어요?",
+      "response": {
+        "status": "OK",
+        "content": "7년 전부터요",
+        "turn": 8,
+        "turns_remaining": 42
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "수면 중 크게 기침이 나나요?",
+      "effective_content": "수면 중 크게 기침이 나나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 자주 기침해요",
+        "turn": 9,
+        "turns_remaining": 41
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "낮에 숨이 차거나 가슴이 답답한 적이 있나요?",
+      "effective_content": "낮에 숨이 차거나 가슴이 답답한 적이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 적은 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "다리나 손에 저림, 따가운 감각이 있나요?",
+      "effective_content": "다리나 손에 저림, 따가운 감각이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 그런 건 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "당뇨나 고혈압 있으세요?",
+      "effective_content": "당뇨나 고혈압 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "있어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "다른 지병 있으세요?",
+      "effective_content": "다른 지병 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "예, 고혈압이 있어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "결핵이나 간염 앓은 적 있으세요?",
+      "effective_content": "결핵이나 간염 앓은 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "수술받으신 적 있으세요?",
+      "effective_content": "수술받으신 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없습니다.",
+        "turn": 15,
+        "turns_remaining": 35
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "지금 드시는 약 있으세요?",
+      "effective_content": "지금 드시는 약 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "암로디핀 먹고 있어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "약 알레르기 있으세요?",
+      "effective_content": "약 알레르기 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "암로디핀 알러지 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "가족 중 비슷한 병 있는 분 계세요?",
+      "effective_content": "가족 중 비슷한 병 있는 분 계세요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지는 심장병이었어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "가족 중 당뇨나 고혈압 있으세요?",
+      "effective_content": "가족 중 당뇨나 고혈압 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지 심장병이거든요.",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "담배 피우세요?",
+      "effective_content": "담배 피우세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 안해요",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "술은 얼마나 드세요?",
+      "effective_content": "술은 얼마나 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "주말에 한두 잔 정도요.",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "무슨 일 하세요?",
+      "effective_content": "무슨 일 하세요?",
+      "response": {
+        "status": "OK",
+        "content": "가정주부예요",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "SAY",
+      "content": "가슴 두근거림 있으세요?",
+      "effective_content": "가슴 두근거림 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 두근거려요.",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "SAY",
+      "content": "숨이 찬 적 있으세요?",
+      "effective_content": "숨이 찬 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 적은 없어요.",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "SAY",
+      "content": "가슴 아픈 적 있으세요?",
+      "effective_content": "가슴 아픈 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 없어요.",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "SAY",
+      "content": "요즘 기분은 어떠세요?",
+      "effective_content": "요즘 기분은 어떠세요?",
+      "response": {
+        "status": "OK",
+        "content": "불안해요",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "SAY",
+      "content": "대변 횟수나 모양이 변했나요?",
+      "effective_content": "대변 횟수나 모양이 변했나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 변함 없어요.",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "SAY",
+      "content": "밤에 코골이가 나나요?",
+      "effective_content": "밤에 코골이가 나나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "아침에 두통이 있나요?",
+      "effective_content": "아침에 두통이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 아침에 두통이 있어요.",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "가장 걱정되는 게 뭐예요?",
+      "effective_content": "가장 걱정되는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "약량이 늘어나는 거요.",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "오늘 바라시는 게 있으세요?",
+      "effective_content": "오늘 바라시는 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "약량 줄이길 원해요",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "위식도 역류성 질환 가능성이 높아 보여요.",
+      "effective_content": "위식도 역류성 질환 가능성이 높아 보여요.",
+      "response": {
+        "status": "OK",
+        "content": "그렇게 생각하시나요?",
+        "turn": 32,
+        "turns_remaining": 18
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "검사 후 치료를 정하고, 심해지면 바로 오세요.",
+      "effective_content": "검사 후 치료를 정하고, 심해지면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "그럴까요?",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 33,
+      "action": "DIAGNOSE",
+      "diagnosis": "위식도 역류성 질환 (Gastroesophageal Reflux Disease)"
+    }
+  ]
+}

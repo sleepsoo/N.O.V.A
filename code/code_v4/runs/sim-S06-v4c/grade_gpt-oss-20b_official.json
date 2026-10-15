@@ -1,0 +1,86 @@
+{
+  "checklist": {
+    "history_total": 24,
+    "history_done": 10,
+    "exam_total": 22,
+    "exam_done": 13
+  },
+  "scores": {
+    "정보수집": 12,
+    "진단추론": 10,
+    "검사·추적": 0,
+    "안전": 15,
+    "의사소통": 8,
+    "효율": 7
+  },
+  "total": 52,
+  "diagnosis_5pt": 3,
+  "deductions": {
+    "정보수집": [
+      "40% history items not covered (polyuria, weight change, smoking/alcohol, diet, exercise, medication details, orthostatic BP, mucous dryness, acanthosis nigricans, foot exam, monofilament, vibration sense, deep tendon reflex, Acanthosis nigricans, fundoscopy); 13/22 exam items performed"
+    ],
+    "진단추론": [
+      "Diagnosis stated only as ‘당뇨병’ with no specific type; lacking explicit mention of it being a new diagnosis; safety of non‑prescriptive explanation but not confirmed with appropriate investigations"
+    ],
+    "검사·추적": [
+      "No plan for laboratory, imaging or specialist referrals; no HbA1c, fasting glucose or other recommended tests documented"
+    ],
+    "안전": [
+      "No medication prescribed, but lack of safety plan for potential hypoglycemia or hyperglycemia; no monitoring alarms"
+    ],
+    "의사소통": [
+      "Repeated ‘네, 알겠습니다.’ responses; minimal probing for understanding; did not summarize key points or confirm comprehension"
+    ],
+    "효율": [
+      "Redundant explanations; questions repeated (e.g., vision blurriness) without new info; no structured flow of history"
+    ],
+    "기타": [
+      "Missing documentation of weight, BMI, and detailed medication list in formal record"
+    ]
+  },
+  "missed_key_questions": [
+    "하루에 물을 얼마나 마시고 있나요?",
+    "하루 몇 번 화장실을 가나요?",
+    "최근 3개월 동안 무게가 얼마나 변했나요?",
+    "흡연 여부 및 음주량은 어떻게 되나요?",
+    "현재 식사 양과 빈도는 무엇인가요?",
+    "주요 운동/활동 수준은 어떻습니까?",
+    "현재 복용 중인 모든 약(명칭·용량·기간)을 알려주십시오?",
+    "갑상선 질환 혹은 과거 호흡기 질환이 있나요?",
+    "전과 같은 증상이 있었나요?",
+    "가족력 외에 고혈압 이외의 만성 질환이 있나요?"
+  ],
+  "missed_key_exams": [
+    "Orthostatic BP",
+    "Mucous membrane/ skin turgor",
+    "Acanthosis nigricans",
+    "Fundoscopy",
+    "Foot inspection",
+    "Monofilament test",
+    "Vibration sense",
+    "Deep tendon reflex",
+    "External genital inspection"
+  ],
+  "record_errors": [
+    "Weight and BMI not documented in the patient record; medication names missing; no lab/tests listed; no explicit plan for follow‑up"
+  ],
+  "top_improvements": [
+    "1. Systematically capture all key history items—including polyuria, polydipsia, weight change, smoking/alcohol, diet, exercise, medication details, family history, and psychosocial concerns—using a structured ROS template.",
+    "2. Perform the full set of required physical exams (orthostatic BP, mucous inspection, acanthosis nigricans, fundoscopy, foot neuro exam, monofilament, vibration, DTR, genital exam) and record findings in the chart.",
+    "3. Provide a definitive diagnosis statement with disease type and certainty level, and link it explicitly to collected data.",
+    "4. Create a clear, actionable order set for initial investigations (fasting glucose, HbA1c, lipid panel, creatinine/eGFR, urinalysis, TSH, fundoscopic referral, vaginal swab) and document it in the plan section.",
+    "5. Use active learning techniques (e.g., teach–back, summarization) to confirm patient understanding and reduce repetitive statements; focus on concise, patient‑centered communication."
+  ],
+  "usage": {
+    "prompt_tokens": 7893,
+    "total_tokens": 12416,
+    "completion_tokens": 4523,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "_calls": 1,
+  "_model": "openai/gpt-oss-20b",
+  "remote": false
+}

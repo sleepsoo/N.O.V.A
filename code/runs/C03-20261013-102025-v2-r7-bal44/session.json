@@ -1,0 +1,885 @@
+{
+  "session_id": "9ac29cae-76d0-4506-99fc-fe369f748d05",
+  "status": "completed",
+  "turns_remaining": 6,
+  "initial": {
+    "opening": "이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다.",
+    "vital_signs": "혈압: 100/60 mmHg\n맥박: 90회/분\n호흡: 20회/분\n체온: 36.7°C"
+  },
+  "available_actions": [
+    "SAY",
+    "EXAM",
+    "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T10:46:51.006672+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+    {
+      "id": "30a552c6-eb41-420a-8bf1-e2fd170074ce",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "많이 걱정되셨겠어요. 언제부터 작다는 말을 들었나요?",
+        "request_id": "f1162958-5b2e-4ffd-968b-9ba75d9fdc9a"
+      },
+      "effective_content": "언제부터 작다는 말을 들었나요?",
+      "response": {
+        "turn": 1,
+        "status": "OK",
+        "content": "두 살 무렵부터 들었어요.",
+        "turns_remaining": 49
+      },
+      "http_status": 200,
+      "turn": 1
+    },
+    {
+      "id": "d3387a47-22aa-404b-b17a-509608c69d5d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "예전에 잰 키 기록이 있나요?",
+        "request_id": "1e66a20f-707b-49b4-a7a5-5f9a9ed8972d"
+      },
+      "effective_content": "예전에 잰 키 기록이 있나요?",
+      "response": {
+        "turn": 2,
+        "status": "OK",
+        "content": "네, 집에 영유아 검진 수첩 있어요.",
+        "turns_remaining": 48
+      },
+      "http_status": 200,
+      "turn": 2
+    },
+    {
+      "id": "6566a15f-7698-4a66-be74-0d2d35025dae",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "두 살, 네 살 때 키는 얼마였나요?",
+        "request_id": "f4534513-aec6-4c29-acd8-8e6ec797e6c4"
+      },
+      "effective_content": "두 살, 네 살 때 키는 얼마였나요?",
+      "response": {
+        "turn": 3,
+        "status": "OK",
+        "content": "두 살 83, 네 살 96cm요.",
+        "turns_remaining": 47
+      },
+      "http_status": 200,
+      "turn": 3
+    },
+    {
+      "id": "e6b72734-ed87-456d-ac1d-b327192cc86c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "부모님 키는 각각 어떻게 되세요?",
+        "request_id": "833c9fd8-2609-4660-96b7-2af0f168ccd3"
+      },
+      "effective_content": "부모님 키는 각각 어떻게 되세요?",
+      "response": {
+        "turn": 4,
+        "status": "OK",
+        "content": "아빠 178, 엄마 165cm예요.",
+        "turns_remaining": 46
+      },
+      "http_status": 200,
+      "turn": 4
+    },
+    {
+      "id": "410517b7-884b-4887-ac7e-f8bd782f9226",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "부모님 중 늦게 키가 큰 분 있나요?",
+        "request_id": "ac1a079e-4765-4e61-82db-b1bbabd21465"
+      },
+      "effective_content": "부모님 중 늦게 키가 큰 분 있나요?",
+      "response": {
+        "turn": 5,
+        "status": "OK",
+        "content": "아빠가 고등학교 때 많이 컸대요.",
+        "turns_remaining": 45
+      },
+      "http_status": 200,
+      "turn": 5
+    },
+    {
+      "id": "f454058d-8a5b-4371-a366-b54886e3d8e3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가족 중 키가 작거나 유전병 있나요?",
+        "request_id": "df048f8c-f90a-4544-9ebb-837d638a213d"
+      },
+      "effective_content": "가족 중 키가 작거나 유전병 있나요?",
+      "response": {
+        "turn": 6,
+        "status": "OK",
+        "content": "키 작은 분이나 유전병은 없어요.",
+        "turns_remaining": 44
+      },
+      "http_status": 200,
+      "turn": 6
+    },
+    {
+      "id": "fcf40753-fabd-4686-ad05-400f3f857de2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+        "request_id": "1a1baf6a-e337-45d3-a94f-f6cddf3743ea"
+      },
+      "effective_content": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+      "response": {
+        "turn": 7,
+        "status": "OK",
+        "content": "아니요, 그런 얘기 들은 적 없어요.",
+        "turns_remaining": 43
+      },
+      "http_status": 200,
+      "turn": 7
+    },
+    {
+      "id": "1d97badd-999c-4dd6-8658-57569507e533",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "어머님이 가장 걱정되시는 게 뭐예요?",
+        "request_id": "40f3984c-2053-4455-be22-98db832dbf2a"
+      },
+      "effective_content": "어머님이 가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "turn": 8,
+        "status": "OK",
+        "content": "키가 작아서 큰 병일까 걱정돼요.",
+        "turns_remaining": 42
+      },
+      "http_status": 200,
+      "turn": 8
+    },
+    {
+      "id": "a021429f-888a-4571-bba9-dd6af83bc508",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "스테로이드나 한약을 먹은 적 있나요?",
+        "request_id": "202b38d7-77bd-4ff3-af59-60946bf2999e"
+      },
+      "effective_content": "스테로이드나 한약을 먹은 적 있나요?",
+      "response": {
+        "turn": 9,
+        "status": "OK",
+        "content": "아니요, 둘 다 먹인 적 없어요.",
+        "turns_remaining": 41
+      },
+      "http_status": 200,
+      "turn": 9
+    },
+    {
+      "id": "2149365e-27cf-473d-90a1-255869908645",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "고환이 커지기 시작했나요?",
+        "request_id": "34fd969a-2ff2-4a07-9932-07320ebf31ab"
+      },
+      "effective_content": "고환이 커지기 시작했나요?",
+      "response": {
+        "turn": 10,
+        "status": "OK",
+        "content": "아니요, 아직 그런 변화는 없어요.",
+        "turns_remaining": 40
+      },
+      "http_status": 200,
+      "turn": 10
+    },
+    {
+      "id": "ba1afaa0-6962-4e90-ae6d-5019881383ae",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "변비가 있나요?",
+        "request_id": "de98296c-09bb-47fa-9d66-ab6fb1f10788"
+      },
+      "effective_content": "변비가 있나요?",
+      "response": {
+        "turn": 11,
+        "status": "OK",
+        "content": "아니요, 변비는 없어요.",
+        "turns_remaining": 39
+      },
+      "http_status": 200,
+      "turn": 11
+    },
+    {
+      "id": "8bca1eb6-ca64-463a-b56c-edf1db09524c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "두통이 있나요?",
+        "request_id": "e1911a27-7326-49ca-876d-41d7183cc1b2"
+      },
+      "effective_content": "두통이 있나요?",
+      "response": {
+        "turn": 12,
+        "status": "OK",
+        "content": "아니요, 두통은 없어요.",
+        "turns_remaining": 38
+      },
+      "http_status": 200,
+      "turn": 12
+    },
+    {
+      "id": "6f7dd47e-5e50-4234-9a84-be3610ee2d66",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "태어날 때 몸무게는 얼마였나요?",
+        "request_id": "43082dc3-7d15-4f06-9712-7aaec5dd62b3"
+      },
+      "effective_content": "태어날 때 몸무게는 얼마였나요?",
+      "response": {
+        "turn": 13,
+        "status": "OK",
+        "content": "3.2킬로였어요.",
+        "turns_remaining": 37
+      },
+      "http_status": 200,
+      "turn": 13
+    },
+    {
+      "id": "51a54bde-8f7e-4cd0-8ac8-09057d7340a7",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "혼자 걷기 시작한 시기는 언제인가요?",
+        "request_id": "dc4fdcb8-0239-4f10-b49c-bbdd838a93f9"
+      },
+      "effective_content": "혼자 걷기 시작한 시기는 언제인가요?",
+      "response": {
+        "turn": 14,
+        "status": "OK",
+        "content": "돌 무렵부터 혼자 걸었어요.",
+        "turns_remaining": 36
+      },
+      "http_status": 200,
+      "turn": 14
+    },
+    {
+      "id": "07a5ea2a-a4ec-4243-9517-45b0babee7b0",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "현재 먹는 약이나 영양제가 있나요?",
+        "request_id": "d5226572-fe46-4099-b1bb-4f647722f850"
+      },
+      "effective_content": "현재 먹는 약이나 영양제가 있나요?",
+      "response": {
+        "turn": 15,
+        "status": "OK",
+        "content": "아니요, 약이나 영양제 안 먹어요.",
+        "turns_remaining": 35
+      },
+      "http_status": 200,
+      "turn": 15
+    },
+    {
+      "id": "75db80d3-f84a-48b5-99ba-9aee838b8bad",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "최근 체중이 많이 변했나요?",
+        "request_id": "859f4740-c27b-4e8e-93e2-248b0cf63c05"
+      },
+      "effective_content": "최근 체중이 많이 변했나요?",
+      "response": {
+        "turn": 16,
+        "status": "OK",
+        "content": "아니요, 일 년에 1.5킬로 늘었어요.",
+        "turns_remaining": 34
+      },
+      "http_status": 200,
+      "turn": 16
+    },
+    {
+      "id": "524b9cef-9da6-4991-935a-70c451fe2d29",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "얼굴이 둥글어졌나요?",
+        "request_id": "0ae8e087-dae3-4d9b-abc5-d62654fb838a"
+      },
+      "effective_content": "얼굴이 둥글어졌나요?",
+      "response": {
+        "turn": 17,
+        "status": "OK",
+        "content": "아니요, 얼굴이 둥글어지진 않았어요.",
+        "turns_remaining": 33
+      },
+      "http_status": 200,
+      "turn": 17
+    },
+    {
+      "id": "82a11211-9cca-4010-aedd-94bb6e1728c6",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "임신이나 출산 때 문제가 있었나요?",
+        "request_id": "b38a51fa-769d-4133-ab81-5f10227d14d0"
+      },
+      "effective_content": "임신이나 출산 때 문제가 있었나요?",
+      "response": {
+        "turn": 18,
+        "status": "OK",
+        "content": "아니요, 별문제 없었어요.",
+        "turns_remaining": 32
+      },
+      "http_status": 200,
+      "turn": 18
+    },
+    {
+      "id": "5bbf74dd-6111-4811-b217-8d98c6f0adb4",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "입원하거나 크게 아픈 적 있나요?",
+        "request_id": "ec58770e-bb5c-437b-8366-689ae7045cf5"
+      },
+      "effective_content": "입원하거나 크게 아픈 적 있나요?",
+      "response": {
+        "turn": 19,
+        "status": "OK",
+        "content": "아니요, 입원이나 큰 병 없었어요.",
+        "turns_remaining": 31
+      },
+      "http_status": 200,
+      "turn": 19
+    },
+    {
+      "id": "29d2519e-eaf7-4a19-b139-fd0cd060910c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "우유는 하루 얼마나 마시나요?",
+        "request_id": "f5c967fe-d5e5-41d4-b771-32adc349c6eb"
+      },
+      "effective_content": "우유는 하루 얼마나 마시나요?",
+      "response": {
+        "turn": 20,
+        "status": "OK",
+        "content": "하루 한두 잔 마셔요.",
+        "turns_remaining": 30
+      },
+      "http_status": 200,
+      "turn": 20
+    },
+    {
+      "id": "cc902a63-b888-4057-9281-2cdf910dc51e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "밥은 잘 먹는 편인가요?",
+        "request_id": "aeae9f57-1e53-4c01-a297-f14176d99001"
+      },
+      "effective_content": "밥은 잘 먹는 편인가요?",
+      "response": {
+        "turn": 21,
+        "status": "OK",
+        "content": "네, 하루 세 끼 잘 먹어요.",
+        "turns_remaining": 29
+      },
+      "http_status": 200,
+      "turn": 21
+    },
+    {
+      "id": "cba9790a-1375-486c-9c49-f58fa8ab293d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "오늘 특히 궁금하신 게 있으세요?",
+        "request_id": "af1e17e4-72a2-48c1-aaa4-05c5035231ae"
+      },
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "turn": 22,
+        "status": "OK",
+        "content": "앞으로 키가 더 클 수 있을까요?",
+        "turns_remaining": 28
+      },
+      "http_status": 200,
+      "turn": 22
+    },
+    {
+      "id": "88f8a043-fc4f-4af2-8a6e-9b2f5ad5ee22",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "전반적 외관 시진하겠습니다",
+        "request_id": "ed0c8a64-4989-4356-b157-bc5258ce2dc9"
+      },
+      "effective_content": "gen_general_appearance",
+      "response": {
+        "turn": 23,
+        "result": "급성 병색(-), 또래보다 작은 키, 안절부절(-)",
+        "status": "OK",
+        "turns_remaining": 27
+      },
+      "http_status": 200,
+      "turn": 23
+    },
+    {
+      "id": "f457735f-0199-4063-affd-219099577cf3",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "신체 계측하겠습니다",
+        "request_id": "29e30e0f-1dd8-4644-9866-37f91c99036b"
+      },
+      "effective_content": "c02_anthropometry",
+      "response": {
+        "turn": 24,
+        "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+        "status": "OK",
+        "turns_remaining": 26
+      },
+      "http_status": 200,
+      "turn": 24
+    },
+    {
+      "id": "62724780-7576-491b-8cc0-9f8ac291660d",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "성장도표 백분위수 확인하겠습니다",
+        "request_id": "56380553-bcfc-42ad-b3bb-880eba03bb5c"
+      },
+      "effective_content": "c02_growth_percentile",
+      "response": {
+        "turn": 25,
+        "result": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+        "status": "OK",
+        "turns_remaining": 25
+      },
+      "http_status": 200,
+      "turn": 25
+    },
+    {
+      "id": "6d52e635-f8ce-40c8-94da-d70eb70c389e",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "신체 비율 평가하겠습니다",
+        "request_id": "d67061b8-e543-49ff-a3d5-f55d75789fb2"
+      },
+      "effective_content": "c02_body_proportion",
+      "response": {
+        "turn": 26,
+        "result": "상·하절 비율 정상, 양팔간격 불균형(-)",
+        "status": "OK",
+        "turns_remaining": 24
+      },
+      "http_status": 200,
+      "turn": 26
+    },
+    {
+      "id": "d36a530d-c8a0-45fa-b11d-c10e32455f8a",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "사춘기 성숙도 평가하겠습니다",
+        "request_id": "132fe27c-920b-43ab-b6b0-ea55c43498be"
+      },
+      "effective_content": "c02_pubertal_status",
+      "response": {
+        "turn": 27,
+        "result": "Tanner 1기, 고환 2mL/2mL",
+        "status": "OK",
+        "turns_remaining": 23
+      },
+      "http_status": 200,
+      "turn": 27
+    },
+    {
+      "id": "0d4471ad-72f9-47aa-86c7-21f17e8a8d01",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "안면 기형 소견 시진하겠습니다",
+        "request_id": "19611f7f-35ad-4f79-a417-b6a0495b59a1"
+      },
+      "effective_content": "c02_dysmorphic_face",
+      "response": {
+        "turn": 28,
+        "result": "안면 기형(-), 귀 위치 이상(-/-)",
+        "status": "OK",
+        "turns_remaining": 22
+      },
+      "http_status": 200,
+      "turn": 28
+    },
+    {
+      "id": "6458bd6c-96b9-4773-b8ee-d6d92489aac4",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "갑상선 촉진하겠습니다",
+        "request_id": "6c2ed9c7-04a4-4c01-8b79-335b9a1a6dee"
+      },
+      "effective_content": "hn_thyroid_palpation",
+      "response": {
+        "turn": 29,
+        "result": "비대(-), 결절(-), 압통(-)",
+        "status": "OK",
+        "turns_remaining": 21
+      },
+      "http_status": 200,
+      "turn": 29
+    },
+    {
+      "id": "8d672f48-777f-4e21-a1eb-4772158d6313",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "심음 청진하겠습니다",
+        "request_id": "26d8dc90-cd53-4c39-8bdc-4f7ba10562b1"
+      },
+      "effective_content": "ch_heart_auscultation",
+      "response": {
+        "turn": 30,
+        "result": "S1·S2 명료, 심잡음(-)",
+        "status": "OK",
+        "turns_remaining": 20
+      },
+      "http_status": 200,
+      "turn": 30
+    },
+    {
+      "id": "71edeba1-68c9-426f-8c18-ff8cb571bd85",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "폐 청진하겠습니다",
+        "request_id": "362e7a6e-b521-42a2-b0f8-7f2805732d24"
+      },
+      "effective_content": "ch_lung_auscultation",
+      "response": {
+        "turn": 31,
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "status": "OK",
+        "turns_remaining": 19
+      },
+      "http_status": 200,
+      "turn": 31
+    },
+    {
+      "id": "2a1d6c98-168a-43f1-aa5a-d0c11d90da34",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "복부 촉진하겠습니다",
+        "request_id": "cf188b01-4c82-42cc-9177-f603be62627a"
+      },
+      "effective_content": "abd_palpation",
+      "response": {
+        "turn": 32,
+        "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+        "status": "OK",
+        "turns_remaining": 18
+      },
+      "http_status": 200,
+      "turn": 32
+    },
+    {
+      "id": "e63a0138-f1c4-4907-bcb3-7e8d95f93a4b",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "결막·공막 시진하겠습니다",
+        "request_id": "3dfe957c-4bf7-468c-853e-d6f2d6db5081"
+      },
+      "effective_content": "hn_conjunctiva_sclera_inspection",
+      "response": {
+        "turn": 33,
+        "result": "창백(-/-), 충혈(-/-), 황달(-/-)",
+        "status": "OK",
+        "turns_remaining": 17
+      },
+      "http_status": 200,
+      "turn": 33
+    },
+    {
+      "id": "b95ca83a-b832-4342-a15d-63d915962e86",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "체질성 성장지연 가능성이 높아 보여요.",
+        "request_id": "ba4ee777-4285-4cb0-8018-5c7615b56758"
+      },
+      "effective_content": "체질성 성장지연 가능성이 높아 보여요.",
+      "response": {
+        "turn": 34,
+        "status": "OK",
+        "content": "그럼 앞으로 키가 더 클까요?",
+        "turns_remaining": 16
+      },
+      "http_status": 200,
+      "turn": 34
+    },
+    {
+      "id": "b8af3f42-9c44-490f-b71b-1bf39b108219",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "성장판이 남아 있으면 더 클 수 있어요.",
+        "request_id": "48315b92-7232-497c-8953-0f961bf96011"
+      },
+      "effective_content": "성장판이 남아 있으면 더 클 수 있어요.",
+      "response": {
+        "turn": 35,
+        "status": "OK",
+        "content": "네, 그럼 좀 안심이 되네요.",
+        "turns_remaining": 15
+      },
+      "http_status": 200,
+      "turn": 35
+    },
+    {
+      "id": "2c7bf307-d72f-412c-8a39-35f969a497c2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "성장 시기가 또래보다 늦을 수 있어요.",
+        "request_id": "2c77f68f-b821-4907-a528-98b02066d300"
+      },
+      "effective_content": "성장 시기가 또래보다 늦을 수 있어요.",
+      "response": {
+        "turn": 36,
+        "status": "OK",
+        "content": "네, 조금 더 지켜봐야겠네요.",
+        "turns_remaining": 14
+      },
+      "http_status": 200,
+      "turn": 36
+    },
+    {
+      "id": "60e663cc-d907-4fe2-a250-68ee5108113b",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "더 클 수 있는지는 성장 추이로 살펴봐요.",
+        "request_id": "656de5e4-7ca5-4a46-98aa-0a0f461961bb"
+      },
+      "effective_content": "더 클 수 있는지는 성장 추이로 살펴봐요.",
+      "response": {
+        "turn": 37,
+        "status": "OK",
+        "content": "네, 꾸준히 지켜봐야겠네요.",
+        "turns_remaining": 13
+      },
+      "http_status": 200,
+      "turn": 37
+    },
+    {
+      "id": "21f8b558-8fa7-4dd7-85e3-cfeeaaf13692",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "손 엑스선으로 뼈 나이를 확인해요.",
+        "request_id": "5cfc2acd-cb16-45d2-b6d1-580fc7ba8bbd"
+      },
+      "effective_content": "손 엑스선으로 뼈 나이를 확인해요.",
+      "response": {
+        "turn": 38,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 12
+      },
+      "http_status": 200,
+      "turn": 38
+    },
+    {
+      "id": "36c7ace4-a68f-4440-8dc6-33b5e65286ac",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "피검사로 갑상샘과 성장호르몬을 살펴요.",
+        "request_id": "efa0706b-f856-4ad1-89d5-78c5976c95c7"
+      },
+      "effective_content": "피검사로 갑상샘과 성장호르몬을 살펴요.",
+      "response": {
+        "turn": 39,
+        "status": "OK",
+        "content": "네, 피검사도 받을게요.",
+        "turns_remaining": 11
+      },
+      "http_status": 200,
+      "turn": 39
+    },
+    {
+      "id": "cef5bc1b-3a3b-4271-b323-6a57fb154fee",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "결과를 보고 치료를 정하며 지금은 약을 쓰지 않아요.",
+        "request_id": "88b8260f-e9cc-421d-aa3a-74a792216648"
+      },
+      "effective_content": "결과를 보고 치료를 정하며 지금은 약을 쓰지 않아요.",
+      "response": {
+        "turn": 40,
+        "status": "OK",
+        "content": "네, 결과 보고 결정할게요.",
+        "turns_remaining": 10
+      },
+      "http_status": 200,
+      "turn": 40
+    },
+    {
+      "id": "f5124883-f491-4c3f-ab78-99da1748f9e1",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "두통·구토·시야 이상·성장 급감 시 바로 오세요.",
+        "request_id": "70e8e26d-7ac7-4b55-8cbe-602451a4e54d"
+      },
+      "effective_content": "두통·구토·시야 이상·성장 급감 시 바로 오세요.",
+      "response": {
+        "turn": 41,
+        "status": "OK",
+        "content": "네, 그런 증상 있으면 바로 올게요.",
+        "turns_remaining": 9
+      },
+      "http_status": 200,
+      "turn": 41
+    },
+    {
+      "id": "5a1b1589-a70a-4dd4-969a-370843b2faf4",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "1~2주 뒤 결과를 보고, 잘 먹고 자도록 해요.",
+        "request_id": "a394d124-82db-406d-92f5-7fb447baa3e7"
+      },
+      "effective_content": "1~2주 뒤 결과를 보고, 잘 먹고 자도록 해요.",
+      "response": {
+        "turn": 42,
+        "status": "OK",
+        "content": "네, 잘 먹이고 재울게요.",
+        "turns_remaining": 8
+      },
+      "http_status": 200,
+      "turn": 42
+    },
+    {
+      "id": "d7abb18f-cf74-47e7-b4ce-c3e650bc13ef",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+        "request_id": "80dcfe5e-0b35-4cb7-9e7f-2f77e7dbb7dc"
+      },
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "turn": 43,
+        "status": "OK",
+        "content": "검사는 아프지 않을까요?",
+        "turns_remaining": 7
+      },
+      "http_status": 200,
+      "turn": 43
+    },
+    {
+      "id": "4645bc9e-9d3d-4620-8219-2993c0464935",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "피 뽑을 때 잠깐 따끔하고 금방 끝나요.",
+        "request_id": "4f541fc8-0df6-43d7-9798-771e4de5c2d1"
+      },
+      "effective_content": "피 뽑을 때 잠깐 따끔하고 금방 끝나요.",
+      "response": {
+        "turn": 44,
+        "status": "OK",
+        "content": "네, 아이한테 잘 설명해 줄게요.",
+        "turns_remaining": 6
+      },
+      "http_status": 200,
+      "turn": 44
+    },
+    {
+      "id": "69765779-e597-48f0-8de5-bad2e079959a",
+      "action": "DIAGNOSE",
+      "payload": {
+        "note": {
+          "A": {
+            "evidence": "#1. 체질성 성장지연 (Constitutional delay of growth and puberty)\n- 근거 : 집에서 잰 키는 1년 전 100cm에서 현재 약 105cm로 늘었고, 진찰상 신장 105cm는 3백분위수 미만이며 성장속도는 5cm/년으로 정상 하한이다 → 저신장이 확인되지만 성장속도는 현저히 저하된 것으로 제시되지 않았다. (시작 정보; 턴 24, 25)\n- 근거 : 부 키 178cm, 모 키 165cm이고 아버지는 고등학교 때 많이 컸다 → 부모의 키가 작지 않고 가족력에 늦은 성장 시기가 있어 체질성 성장지연을 지지한다. (턴 4, 5)\n- 근거 : 진찰상 상·하절 비율은 정상이고 양팔간격 불균형 및 안면 기형은 없다 → 체형 불균형이나 뚜렷한 기형성 원인을 시사하는 소견이 없다. (턴 26, 28)\n- 근거 : 하루 세 끼 잘 먹고, 체중은 1년간 1.5kg 증가했으며 장·콩팥 질환을 들은 적이 없다 → 영양 부족이나 만성 질환에 의한 성장장애를 뒷받침하는 병력은 제한적이다. (턴 7, 16, 21)\n- 근거 : 변비 호소가 없고 진찰상 갑상선 비대·결절·압통이 없다 → 갑상선기능저하증을 뒷받침하는 해당 병력 및 진찰 소견은 확인되지 않았다. (턴 11, 29)",
+            "differential": "r/o 성장호르몬 결핍증 : 신장이 3백분위수 미만이고 보호자가 최근 성장 둔화를 호소해 고려할 수 있으나, 제시된 성장속도는 5cm/년으로 정상 하한이다 (시작 정보; 턴 25). 감별 검사 : 골연령, IGF-1 및 IGFBP-3\nr/o 갑상선기능저하증 : 저신장과 성장 둔화 호소가 있어 감별할 수 있으나, 변비 호소가 없고 진찰상 갑상선 비대는 없다 (시작 정보; 턴 11, 25, 29). 감별 검사 : TSH, 유리 T4\nr/o 만성 질환 또는 영양 부족에 의한 성장장애 : 체중이 3~10백분위수여서 고려할 수 있으나, 식사를 잘하고 체중이 증가했으며 장·콩팥 질환 병력은 없다 (턴 7, 16, 21, 25). 감별 검사 : CBC, 대사·염증 검사 및 셀리악병 선별검사\nr/o 가족성 저신장 : 저신장 자체는 고려 근거이나, 부모 키는 부 178cm·모 165cm이고 키 작은 가족이 없다고 하여 가족성 저신장을 지지하지 않는다 (턴 4, 6, 25). 감별 검사 : 부모 및 가족의 성장곡선·신장 확인"
+          },
+          "O": {
+            "exam": "V/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / Ht 105 cm, Wt 16.5 kg(환자 진술)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 23)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 24). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 25). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 26)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 28). 결막·공막 시진 : 창백(-/-), 충혈(-/-), 황달(-/-) (턴 33)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 29)\nChest : 심음 청진 : S1·S2 명료, 심잡음(-) (턴 30). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 31)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 32)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 27)",
+            "tests": ""
+          },
+          "P": {
+            "tests": "- 과거 성장 기록 확인 : 영유아 검진 수첩의 키·체중을 성장도표에 표시해 성장 곡선과 성장속도를 확인합니다.\n- 좌측 손 엑스선 : 골연령을 확인해 체질성 성장지연 가능성을 살피고 가족성 저신장과 구별합니다.\n- 갑상샘자극호르몬, 유리 티록신 : 갑상샘기능저하증 여부를 확인합니다.\n- 인슐린유사성장인자-1, 인슐린유사성장인자결합단백질-3 : 성장호르몬 결핍 가능성을 선별합니다.\n- 혈액검사, 염증수치, 신장·간 기능, 소변검사, 셀리악 선별검사 : 만성 질환이나 영양 흡수 문제 등 성장에 영향을 주는 원인을 확인합니다.",
+            "education": "진료 중 설명함:\n- 체질성 성장지연 가능성이 높아 보여요.\n- 성장판이 남아 있으면 더 클 수 있어요.\n- 성장 시기가 또래보다 늦을 수 있어요.\n- 더 클 수 있는지는 성장 추이로 살펴봐요.\n- 손 엑스선으로 뼈 나이를 확인해요.\n- 피검사로 갑상샘과 성장호르몬을 살펴요.\n- 결과를 보고 치료를 정하며 지금은 약을 쓰지 않아요.\n- 두통·구토·시야 이상·성장 급감 시 바로 오세요.\n- 1~2주 뒤 결과를 보고, 잘 먹고 자도록 해요.\n- 피 뽑을 때 잠깐 따끔하고 금방 끝나요.\n다음 방문 시 교육 예정 : 체질성 성장지연은 성장과 사춘기가 늦게 진행되는 경우를 말합니다. 현재 진찰만으로 원인을 확정할 수 없어 검사와 성장 기록 확인이 필요합니다.; 키가 작아도 성장 여지가 있을 수 있지만, 앞으로 얼마나 클지는 골연령과 성장 추이를 함께 보아야 합니다.",
+            "follow_up": "- 재진: 1~2주 후 검사 결과와 골연령을 확인합니다.\n- 모니터링: 3~6개월 간격으로 키·체중·성장속도와 사춘기 발달을 확인합니다. 다음 방문에 영유아 검진 수첩을 가져오세요.\n- 즉시 내원: 성장속도 급감, 두통, 반복 구토, 시야 이상이 생기면 바로 진료받으세요.",
+            "treatment": "- 현재 약물치료 적응 없음(성장호르몬 치료 적응 아님, 검사 결과 확인 후 재판단)\n- 현재 식습관·수면·신체 활동 유지\n- 세 끼 식사를 유지하고 충분한 수면과 규칙적인 신체 활동을 권합니다.",
+            "disposition": "- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C\n- 외래 추적(입원 불필요), 검사 후 결과 확인 외래 예약"
+          },
+          "S": {
+            "cc": "C.C : 또래보다 작은 키\nOnset : 2세경부터\n통증평가 : 해당 없음",
+            "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 부 키 178cm, 모 키 165cm, 부 고등학교 때 많이 큼, 가족 저신장 (-), 가족 유전병 (-)",
+            "sh": "Smoking / Alcohol : 해당 없음(소아)",
+            "hpi": "보호자(모) 동반, 문진은 모가 대신 답함. 6세 남아로, 2세경부터 주변에서 또래보다 작다는 말을 들었다고 함.\n어린이집 같은 반 친구들보다 작아 보이며, 최근 6개월~1년간 키가 별로 크지 않은 느낌이 있다고 함. 집에서 잰 키는 1년 전 100cm, 현재 약 105cm로 1년간 약 5cm 증가했으며, 체중은 15kg에서 16.5kg으로 1년간 1.5kg 증가함.\n하루 세 끼 잘 먹고 우유는 하루 1~2잔 마심. 변비 (-), 두통 (-), 고환이 커지기 시작하지 않음.\n영유아 검진 수첩이 있으며, 이전 키는 2세 83cm, 4세 96cm라고 함. 스테로이드·한약 복용한 적 없고 현재 복용 약·영양제 없음.\n어린이집에서 또래와 비교해 작아 보인다고 함. 키가 작아 큰 병일까 걱정되며, 앞으로 키가 더 클 수 있는지 궁금해하여 내원함.",
+            "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 천식 (-), 장 질환 (-), 콩팥 질환 (-), 스테로이드(-), 한약(-), 고환 발달(-), 복용약(-), 영양제(-), 얼굴 둥글어짐(-), 입원력(-), 중증 질환(-)\n* 소아\n- 출생력 : 임신·출산 특이사항 없음, 출생 체중 3.2kg\n- 발달 : 독립 보행 돌 무렵\n- 영양 : 하루 세 끼 잘 먹음, 우유 하루 1~2잔\n- 성장 기록 : 2세 키 83cm, 4세 키 96cm, 1년 전 키 100cm·체중 15kg, 현재 키 약 105cm·체중 16.5kg",
+            "ros": "General weakness ( )  Fatigue ( )\nHeadache (-)  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / /-)\nOthers : 변비 (-), 두통 (-)"
+          }
+        },
+        "action": "DIAGNOSE",
+        "diagnosis": "체질성 성장지연 (Constitutional delay of growth and puberty)",
+        "request_id": "2c6490ec-e18a-4d56-9c4d-56c8546aa470"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 44,
+        "status": "completed",
+        "score_status": "not_scored",
+        "record_digest": "07bed7b67b748904fd2a9fcf0fe3a25f1b3e3a3905243098c9e9f31302d8282d"
+      },
+      "http_status": 200,
+      "turn": 44
+    }
+  ],
+  "note": "[S] 주호소 (CC)\nC.C : 또래보다 작은 키\nOnset : 2세경부터\n통증평가 : 해당 없음\n\n[S] 현병력 (HPI)\n보호자(모) 동반, 문진은 모가 대신 답함. 6세 남아로, 2세경부터 주변에서 또래보다 작다는 말을 들었다고 함.\n어린이집 같은 반 친구들보다 작아 보이며, 최근 6개월~1년간 키가 별로 크지 않은 느낌이 있다고 함. 집에서 잰 키는 1년 전 100cm, 현재 약 105cm로 1년간 약 5cm 증가했으며, 체중은 15kg에서 16.5kg으로 1년간 1.5kg 증가함.\n하루 세 끼 잘 먹고 우유는 하루 1~2잔 마심. 변비 (-), 두통 (-), 고환이 커지기 시작하지 않음.\n영유아 검진 수첩이 있으며, 이전 키는 2세 83cm, 4세 96cm라고 함. 스테로이드·한약 복용한 적 없고 현재 복용 약·영양제 없음.\n어린이집에서 또래와 비교해 작아 보인다고 함. 키가 작아 큰 병일까 걱정되며, 앞으로 키가 더 클 수 있는지 궁금해하여 내원함.\n\n[S] 과거력·약물·알레르기 (PMH)\nDM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 천식 (-), 장 질환 (-), 콩팥 질환 (-), 스테로이드(-), 한약(-), 고환 발달(-), 복용약(-), 영양제(-), 얼굴 둥글어짐(-), 입원력(-), 중증 질환(-)\n* 소아\n- 출생력 : 임신·출산 특이사항 없음, 출생 체중 3.2kg\n- 발달 : 독립 보행 돌 무렵\n- 영양 : 하루 세 끼 잘 먹음, 우유 하루 1~2잔\n- 성장 기록 : 2세 키 83cm, 4세 키 96cm, 1년 전 키 100cm·체중 15kg, 현재 키 약 105cm·체중 16.5kg\n\n[S] 가족력 (FH)\nDM / HTN ( / )\nStroke ( )\nOthers : 부 키 178cm, 모 키 165cm, 부 고등학교 때 많이 큼, 가족 저신장 (-), 가족 유전병 (-)\n\n[S] 사회력 (SH)\nSmoking / Alcohol : 해당 없음(소아)\n\n[S] 계통 문진 (ROS)\nGeneral weakness ( )  Fatigue ( )\nHeadache (-)  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / /-)\nOthers : 변비 (-), 두통 (-)\n\n[O] 진찰 소견\nV/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / Ht 105 cm, Wt 16.5 kg(환자 진술)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 23)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 24). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 25). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 26)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 28). 결막·공막 시진 : 창백(-/-), 충혈(-/-), 황달(-/-) (턴 33)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 29)\nChest : 심음 청진 : S1·S2 명료, 심잡음(-) (턴 30). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 31)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 32)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 27)\n\n[O] 검사 결과\n\n\n[A] 주진단\n체질성 성장지연 (Constitutional delay of growth and puberty)\n\n[A] 근거\n#1. 체질성 성장지연 (Constitutional delay of growth and puberty)\n- 근거 : 집에서 잰 키는 1년 전 100cm에서 현재 약 105cm로 늘었고, 진찰상 신장 105cm는 3백분위수 미만이며 성장속도는 5cm/년으로 정상 하한이다 → 저신장이 확인되지만 성장속도는 현저히 저하된 것으로 제시되지 않았다. (시작 정보; 턴 24, 25)\n- 근거 : 부 키 178cm, 모 키 165cm이고 아버지는 고등학교 때 많이 컸다 → 부모의 키가 작지 않고 가족력에 늦은 성장 시기가 있어 체질성 성장지연을 지지한다. (턴 4, 5)\n- 근거 : 진찰상 상·하절 비율은 정상이고 양팔간격 불균형 및 안면 기형은 없다 → 체형 불균형이나 뚜렷한 기형성 원인을 시사하는 소견이 없다. (턴 26, 28)\n- 근거 : 하루 세 끼 잘 먹고, 체중은 1년간 1.5kg 증가했으며 장·콩팥 질환을 들은 적이 없다 → 영양 부족이나 만성 질환에 의한 성장장애를 뒷받침하는 병력은 제한적이다. (턴 7, 16, 21)\n- 근거 : 변비 호소가 없고 진찰상 갑상선 비대·결절·압통이 없다 → 갑상선기능저하증을 뒷받침하는 해당 병력 및 진찰 소견은 확인되지 않았다. (턴 11, 29)\n\n[A] 감별진단\nr/o 성장호르몬 결핍증 : 신장이 3백분위수 미만이고 보호자가 최근 성장 둔화를 호소해 고려할 수 있으나, 제시된 성장속도는 5cm/년으로 정상 하한이다 (시작 정보; 턴 25). 감별 검사 : 골연령, IGF-1 및 IGFBP-3\nr/o 갑상선기능저하증 : 저신장과 성장 둔화 호소가 있어 감별할 수 있으나, 변비 호소가 없고 진찰상 갑상선 비대는 없다 (시작 정보; 턴 11, 25, 29). 감별 검사 : TSH, 유리 T4\nr/o 만성 질환 또는 영양 부족에 의한 성장장애 : 체중이 3~10백분위수여서 고려할 수 있으나, 식사를 잘하고 체중이 증가했으며 장·콩팥 질환 병력은 없다 (턴 7, 16, 21, 25). 감별 검사 : CBC, 대사·염증 검사 및 셀리악병 선별검사\nr/o 가족성 저신장 : 저신장 자체는 고려 근거이나, 부모 키는 부 178cm·모 165cm이고 키 작은 가족이 없다고 하여 가족성 저신장을 지지하지 않는다 (턴 4, 6, 25). 감별 검사 : 부모 및 가족의 성장곡선·신장 확인\n\n[P] 추가 검사\n- 과거 성장 기록 확인 : 영유아 검진 수첩의 키·체중을 성장도표에 표시해 성장 곡선과 성장속도를 확인합니다.\n- 좌측 손 엑스선 : 골연령을 확인해 체질성 성장지연 가능성을 살피고 가족성 저신장과 구별합니다.\n- 갑상샘자극호르몬, 유리 티록신 : 갑상샘기능저하증 여부를 확인합니다.\n- 인슐린유사성장인자-1, 인슐린유사성장인자결합단백질-3 : 성장호르몬 결핍 가능성을 선별합니다.\n- 혈액검사, 염증수치, 신장·간 기능, 소변검사, 셀리악 선별검사 : 만성 질환이나 영양 흡수 문제 등 성장에 영향을 주는 원인을 확인합니다.\n\n[P] 치료\n- 현재 약물치료 적응 없음(성장호르몬 치료 적응 아님, 검사 결과 확인 후 재판단)\n- 현재 식습관·수면·신체 활동 유지\n- 세 끼 식사를 유지하고 충분한 수면과 규칙적인 신체 활동을 권합니다.\n\n[P] 처치 결정\n- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C\n- 외래 추적(입원 불필요), 검사 후 결과 확인 외래 예약\n\n[P] 추적\n- 재진: 1~2주 후 검사 결과와 골연령을 확인합니다.\n- 모니터링: 3~6개월 간격으로 키·체중·성장속도와 사춘기 발달을 확인합니다. 다음 방문에 영유아 검진 수첩을 가져오세요.\n- 즉시 내원: 성장속도 급감, 두통, 반복 구토, 시야 이상이 생기면 바로 진료받으세요.\n\n[P] 환자 교육\n진료 중 설명함:\n- 체질성 성장지연 가능성이 높아 보여요.\n- 성장판이 남아 있으면 더 클 수 있어요.\n- 성장 시기가 또래보다 늦을 수 있어요.\n- 더 클 수 있는지는 성장 추이로 살펴봐요.\n- 손 엑스선으로 뼈 나이를 확인해요.\n- 피검사로 갑상샘과 성장호르몬을 살펴요.\n- 결과를 보고 치료를 정하며 지금은 약을 쓰지 않아요.\n- 두통·구토·시야 이상·성장 급감 시 바로 오세요.\n- 1~2주 뒤 결과를 보고, 잘 먹고 자도록 해요.\n- 피 뽑을 때 잠깐 따끔하고 금방 끝나요.\n다음 방문 시 교육 예정 : 체질성 성장지연은 성장과 사춘기가 늦게 진행되는 경우를 말합니다. 현재 진찰만으로 원인을 확정할 수 없어 검사와 성장 기록 확인이 필요합니다.; 키가 작아도 성장 여지가 있을 수 있지만, 앞으로 얼마나 클지는 골연령과 성장 추이를 함께 보아야 합니다.\n\n",
+  "record": {
+    "A": {
+      "evidence": "#1. 체질성 성장지연 (Constitutional delay of growth and puberty)\n- 근거 : 집에서 잰 키는 1년 전 100cm에서 현재 약 105cm로 늘었고, 진찰상 신장 105cm는 3백분위수 미만이며 성장속도는 5cm/년으로 정상 하한이다 → 저신장이 확인되지만 성장속도는 현저히 저하된 것으로 제시되지 않았다. (시작 정보; 턴 24, 25)\n- 근거 : 부 키 178cm, 모 키 165cm이고 아버지는 고등학교 때 많이 컸다 → 부모의 키가 작지 않고 가족력에 늦은 성장 시기가 있어 체질성 성장지연을 지지한다. (턴 4, 5)\n- 근거 : 진찰상 상·하절 비율은 정상이고 양팔간격 불균형 및 안면 기형은 없다 → 체형 불균형이나 뚜렷한 기형성 원인을 시사하는 소견이 없다. (턴 26, 28)\n- 근거 : 하루 세 끼 잘 먹고, 체중은 1년간 1.5kg 증가했으며 장·콩팥 질환을 들은 적이 없다 → 영양 부족이나 만성 질환에 의한 성장장애를 뒷받침하는 병력은 제한적이다. (턴 7, 16, 21)\n- 근거 : 변비 호소가 없고 진찰상 갑상선 비대·결절·압통이 없다 → 갑상선기능저하증을 뒷받침하는 해당 병력 및 진찰 소견은 확인되지 않았다. (턴 11, 29)",
+      "differential": "r/o 성장호르몬 결핍증 : 신장이 3백분위수 미만이고 보호자가 최근 성장 둔화를 호소해 고려할 수 있으나, 제시된 성장속도는 5cm/년으로 정상 하한이다 (시작 정보; 턴 25). 감별 검사 : 골연령, IGF-1 및 IGFBP-3\nr/o 갑상선기능저하증 : 저신장과 성장 둔화 호소가 있어 감별할 수 있으나, 변비 호소가 없고 진찰상 갑상선 비대는 없다 (시작 정보; 턴 11, 25, 29). 감별 검사 : TSH, 유리 T4\nr/o 만성 질환 또는 영양 부족에 의한 성장장애 : 체중이 3~10백분위수여서 고려할 수 있으나, 식사를 잘하고 체중이 증가했으며 장·콩팥 질환 병력은 없다 (턴 7, 16, 21, 25). 감별 검사 : CBC, 대사·염증 검사 및 셀리악병 선별검사\nr/o 가족성 저신장 : 저신장 자체는 고려 근거이나, 부모 키는 부 178cm·모 165cm이고 키 작은 가족이 없다고 하여 가족성 저신장을 지지하지 않는다 (턴 4, 6, 25). 감별 검사 : 부모 및 가족의 성장곡선·신장 확인"
+    },
+    "O": {
+      "exam": "V/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / Ht 105 cm, Wt 16.5 kg(환자 진술)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 23)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 24). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 25). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 26)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 28). 결막·공막 시진 : 창백(-/-), 충혈(-/-), 황달(-/-) (턴 33)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 29)\nChest : 심음 청진 : S1·S2 명료, 심잡음(-) (턴 30). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 31)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 32)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 27)",
+      "tests": ""
+    },
+    "P": {
+      "tests": "- 과거 성장 기록 확인 : 영유아 검진 수첩의 키·체중을 성장도표에 표시해 성장 곡선과 성장속도를 확인합니다.\n- 좌측 손 엑스선 : 골연령을 확인해 체질성 성장지연 가능성을 살피고 가족성 저신장과 구별합니다.\n- 갑상샘자극호르몬, 유리 티록신 : 갑상샘기능저하증 여부를 확인합니다.\n- 인슐린유사성장인자-1, 인슐린유사성장인자결합단백질-3 : 성장호르몬 결핍 가능성을 선별합니다.\n- 혈액검사, 염증수치, 신장·간 기능, 소변검사, 셀리악 선별검사 : 만성 질환이나 영양 흡수 문제 등 성장에 영향을 주는 원인을 확인합니다.",
+      "education": "진료 중 설명함:\n- 체질성 성장지연 가능성이 높아 보여요.\n- 성장판이 남아 있으면 더 클 수 있어요.\n- 성장 시기가 또래보다 늦을 수 있어요.\n- 더 클 수 있는지는 성장 추이로 살펴봐요.\n- 손 엑스선으로 뼈 나이를 확인해요.\n- 피검사로 갑상샘과 성장호르몬을 살펴요.\n- 결과를 보고 치료를 정하며 지금은 약을 쓰지 않아요.\n- 두통·구토·시야 이상·성장 급감 시 바로 오세요.\n- 1~2주 뒤 결과를 보고, 잘 먹고 자도록 해요.\n- 피 뽑을 때 잠깐 따끔하고 금방 끝나요.\n다음 방문 시 교육 예정 : 체질성 성장지연은 성장과 사춘기가 늦게 진행되는 경우를 말합니다. 현재 진찰만으로 원인을 확정할 수 없어 검사와 성장 기록 확인이 필요합니다.; 키가 작아도 성장 여지가 있을 수 있지만, 앞으로 얼마나 클지는 골연령과 성장 추이를 함께 보아야 합니다.",
+      "follow_up": "- 재진: 1~2주 후 검사 결과와 골연령을 확인합니다.\n- 모니터링: 3~6개월 간격으로 키·체중·성장속도와 사춘기 발달을 확인합니다. 다음 방문에 영유아 검진 수첩을 가져오세요.\n- 즉시 내원: 성장속도 급감, 두통, 반복 구토, 시야 이상이 생기면 바로 진료받으세요.",
+      "treatment": "- 현재 약물치료 적응 없음(성장호르몬 치료 적응 아님, 검사 결과 확인 후 재판단)\n- 현재 식습관·수면·신체 활동 유지\n- 세 끼 식사를 유지하고 충분한 수면과 규칙적인 신체 활동을 권합니다.",
+      "disposition": "- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C\n- 외래 추적(입원 불필요), 검사 후 결과 확인 외래 예약"
+    },
+    "S": {
+      "cc": "C.C : 또래보다 작은 키\nOnset : 2세경부터\n통증평가 : 해당 없음",
+      "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 부 키 178cm, 모 키 165cm, 부 고등학교 때 많이 큼, 가족 저신장 (-), 가족 유전병 (-)",
+      "sh": "Smoking / Alcohol : 해당 없음(소아)",
+      "hpi": "보호자(모) 동반, 문진은 모가 대신 답함. 6세 남아로, 2세경부터 주변에서 또래보다 작다는 말을 들었다고 함.\n어린이집 같은 반 친구들보다 작아 보이며, 최근 6개월~1년간 키가 별로 크지 않은 느낌이 있다고 함. 집에서 잰 키는 1년 전 100cm, 현재 약 105cm로 1년간 약 5cm 증가했으며, 체중은 15kg에서 16.5kg으로 1년간 1.5kg 증가함.\n하루 세 끼 잘 먹고 우유는 하루 1~2잔 마심. 변비 (-), 두통 (-), 고환이 커지기 시작하지 않음.\n영유아 검진 수첩이 있으며, 이전 키는 2세 83cm, 4세 96cm라고 함. 스테로이드·한약 복용한 적 없고 현재 복용 약·영양제 없음.\n어린이집에서 또래와 비교해 작아 보인다고 함. 키가 작아 큰 병일까 걱정되며, 앞으로 키가 더 클 수 있는지 궁금해하여 내원함.",
+      "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 천식 (-), 장 질환 (-), 콩팥 질환 (-), 스테로이드(-), 한약(-), 고환 발달(-), 복용약(-), 영양제(-), 얼굴 둥글어짐(-), 입원력(-), 중증 질환(-)\n* 소아\n- 출생력 : 임신·출산 특이사항 없음, 출생 체중 3.2kg\n- 발달 : 독립 보행 돌 무렵\n- 영양 : 하루 세 끼 잘 먹음, 우유 하루 1~2잔\n- 성장 기록 : 2세 키 83cm, 4세 키 96cm, 1년 전 키 100cm·체중 15kg, 현재 키 약 105cm·체중 16.5kg",
+      "ros": "General weakness ( )  Fatigue ( )\nHeadache (-)  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / /-)\nOthers : 변비 (-), 두통 (-)"
+    }
+  },
+  "diagnosis": "체질성 성장지연 (Constitutional delay of growth and puberty)",
+  "score": {
+    "status": "not_scored",
+    "total": null,
+    "components": {}
+  }
+}

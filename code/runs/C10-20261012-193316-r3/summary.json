@@ -1,0 +1,400 @@
+{
+  "case_id": "35dd8b69-2531-454e-bb8c-fb8030293447",
+  "alias": "C10",
+  "turns": 46,
+  "say": 37,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 28,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 16081,
+  "doctor_output_tokens": 13322,
+  "seconds": 746.6,
+  "diagnosis": "그레브스병 (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "그레브스병",
+      "diagnosis_en": "Graves' disease",
+      "confidence": 0.92,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "그레브스병",
+      "diagnosis_en": "Graves' disease",
+      "confidence": 0.95,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "갑작스런 체중 감소",
+    "categories": [
+      "weight"
+    ],
+    "answered": [
+      "onset",
+      "course",
+      "impact"
+    ],
+    "empathy": "체중이 갑자기 빠져서 많이 걱정되셨겠어요."
+  },
+  "explained": [
+    "자체 항체 반응 때문에 생긴 갑상선 항진증이 의심돼요.",
+    "혈액검사, 초음파로 확인할게요.",
+    "항갑상선제로 치료할 수 있어요.",
+    "심장 박동 변화가 있으면 바로 오세요.",
+    "규칙적인 식사와 충분한 수면을 유지하세요.",
+    "빠른 검사를 통해 원인을 찾아 치료에 집중하겠습니다.",
+    "더 궁금한 점 있으세요?",
+    "검사 결과는 재진 때 알려드릴게요"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 577,
+      "out": 144,
+      "finish": "stop",
+      "sec": 7.4
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1123,
+      "out": 2279,
+      "finish": "stop",
+      "sec": 95.2
+    },
+    {
+      "tag": "dx1-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1973,
+      "out": 1585,
+      "finish": "stop",
+      "sec": 59.3
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1973,
+      "out": 1190,
+      "finish": "stop",
+      "sec": 42.7
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1807,
+      "out": 1139,
+      "finish": "stop",
+      "sec": 49.1
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2467,
+      "out": 1441,
+      "finish": "stop",
+      "sec": 40.1
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 590,
+      "out": 92,
+      "finish": "stop",
+      "sec": 2.6
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2056,
+      "out": 3229,
+      "finish": "stop",
+      "sec": 144.4
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1332,
+      "out": 748,
+      "finish": "stop",
+      "sec": 29.4
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2183,
+      "out": 1475,
+      "finish": "stop",
+      "sec": 57.3
+    }
+  ],
+  "phase_times": {
+    "structure": 7.5,
+    "interview": 272.4,
+    "examine": 22.7,
+    "diagnose_vote": 102.0,
+    "plan": 49.1,
+    "explain": 61.4,
+    "S": 173.8,
+    "S-verify": 0.0,
+    "A": 57.3
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.course",
+      "pol": "+",
+      "detail": "계속 살이 빠짐",
+      "label": "경과"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.impact",
+      "pol": "+",
+      "detail": "지치고 일하기 힘들다",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.prior_visit",
+      "pol": "-",
+      "detail": "처음 방문",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 5,
+      "key": "ros.Appetite",
+      "pol": "+",
+      "detail": "더 많이 먹음",
+      "label": "식사량"
+    },
+    {
+      "turn": 6,
+      "key": "ros.Heat intolerance",
+      "pol": "+",
+      "detail": "더위 많이 타고",
+      "label": "더위/추위 민감"
+    },
+    {
+      "turn": 7,
+      "key": "ros.Sweating",
+      "pol": "+",
+      "detail": "밤잠옷 젖음",
+      "label": "발한"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Tremor",
+      "pol": "+",
+      "detail": "잔 잡기 떨림",
+      "label": "손떨림"
+    },
+    {
+      "turn": 9,
+      "key": "ros.Polydipsia",
+      "pol": "-",
+      "detail": "",
+      "label": "다음/갈증"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Night sweats",
+      "pol": "+",
+      "detail": "밤잠옷 젖음",
+      "label": "야간 발한"
+    },
+    {
+      "turn": 11,
+      "key": "ros.Edema",
+      "pol": "+",
+      "detail": "약간 튀어나온",
+      "label": "적응형"
+    },
+    {
+      "turn": 12,
+      "key": "ros.other:목이아프다",
+      "pol": "+",
+      "detail": "가끔 걸린 듯",
+      "label": "적응형"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": "-",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.HTN",
+      "pol": "-",
+      "detail": "-",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 14,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "-",
+      "label": "기타 지병"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.Tbc",
+      "pol": "-",
+      "detail": "-",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.hepatitis",
+      "pol": "-",
+      "detail": "-",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 16,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "-",
+      "label": "Op. Hx"
+    },
+    {
+      "turn": 17,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": "-",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 18,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": "-",
+      "label": "Allergy"
+    },
+    {
+      "turn": 19,
+      "key": "ros.Menstrual change",
+      "pol": "+",
+      "detail": "양 줄고 기간짧음",
+      "label": "월경 변화"
+    },
+    {
+      "turn": 20,
+      "key": "ros.LMP",
+      "pol": "+",
+      "detail": "2주전",
+      "label": "LMP"
+    },
+    {
+      "turn": 21,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "어머니 갑상샘저하증",
+      "label": "FH 유사 질환"
+    },
+    {
+      "turn": 22,
+      "key": "fh.DM",
+      "pol": "+",
+      "detail": "할머니 당뇨",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 22,
+      "key": "fh.HTN",
+      "pol": "+",
+      "detail": "아버지 고혈압",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 23,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "-",
+      "label": "Smoking"
+    },
+    {
+      "turn": 24,
+      "key": "sh.alcohol",
+      "pol": "+",
+      "detail": "한두번 가볍게",
+      "label": "Alcohol"
+    },
+    {
+      "turn": 25,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "가만히 두근거림",
+      "label": "Palpitation"
+    },
+    {
+      "turn": 26,
+      "key": "ros.Dyspnea",
+      "pol": "+",
+      "detail": "계단서 숨차",
+      "label": "Dyspnea"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Chest pain",
+      "pol": "-",
+      "detail": "-",
+      "label": "Chest pain"
+    },
+    {
+      "turn": 28,
+      "key": "ice.concern",
+      "pol": "+",
+      "detail": "큰 병 걱정",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 29,
+      "key": "ice.expectation",
+      "pol": "+",
+      "detail": "원인 알고 치료",
+      "label": "기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "e0de46dd980911f79c3f4b120729b622f670248be99491bce25231104f1bf780",
+    "score_status": "not_scored",
+    "turn": 46
+  },
+  "error": null,
+  "session_id": "652c08f3-d524-4a47-891c-a0c5cb1671d8",
+  "api": "https://nova.snubhai.org"
+}

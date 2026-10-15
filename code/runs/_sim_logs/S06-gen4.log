@@ -1,0 +1,76 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   4.0s] llm[intake] low out=229 finish=stop 4.0s
+[   4.1s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로, 갈증 및 잦은 소변', 'request': '', 'categories': ['dm', 'fatigue', 'urinary'], 'empathy': '많이 불편하셨겠어요.', 'answered': []} diffs=['당뇨병', '요붕증', '원발성 다음증', '요로감염', '고칼슘혈증']
+[   4.1s] checklist: 58 items, covered=['hpi_onset']
+[   5.7s] turn 1 SAY: 많이 불편하셨겠어요. -> 네, 알겠습니다.
+[  10.8s] turn 2 SAY: 혈당에 대해 자세히 말씀해 주세요 -> 혈당이 조금 높다고 해서 운동하라는 말이 있었어요.
+[  14.9s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정돼요.
+[  28.6s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 단 음료가 당겨서 요즘 음료수를 자주 마셨다
+[  43.0s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 발이 저리거나 화끈거리는 증상은 없어요.
+[  52.3s] llm[plan_q3] low out=699 finish=stop 9.4s
+[  56.3s] turn 6 SAY: 고혈압이나 당뇨 진단을 받으셨나요? -> 고혈압이 있어서 하루에 한 알 먹어요.
+[  63.0s] turn 7 SAY: 드시는 약이나 영양제에 대해 자세히 말씀해 주세요 -> 고혈압이 있어서 혈압약을 하루 한 알 먹고 있어요.
+[  67.0s] turn 8 SAY: 소변 볼 때 아프거나 화끈거리나요? -> 아프거나 따갑지는 않아요.
+[  72.8s] turn 9 SAY: 소변에 피가 섞인 적 있나요? -> 소변 색이 붉은 적도 없어요.
+[  78.6s] turn 10 SAY: 담배를 피우시나요? -> 담배는 피운 적 없어요.
+[  88.5s] llm[plan_q3] low out=737 finish=stop 9.9s
+[  93.1s] turn 11 SAY: 최근 체중 변화에 대해 자세히 말씀해 주세요 -> 몸무게가 삼 키로그람 정도 빠졌어요.
+[  98.4s] turn 12 SAY: 소변을 자주 보는 정도에 대해 자세히 말씀해 주세요 -> 낮에 열 번 넘게 가고 밤에 두세 번 깨요.
+[ 102.8s] turn 13 SAY: 술을 드시는 양과 횟수에 대해 자세히 말씀해 주세요 -> 술은 거의 마시지 않아요.
+[ 106.1s] turn 14 SAY: 요즘 기분이 많이 가라앉으세요? -> 그런 건 없어요.
+[ 120.4s] llm[plan_q3] low out=1016 finish=stop 14.3s
+[ 124.2s] turn 15 SAY: 눈이 침침하거나 잘 안 보이세요? -> 한 달 전부터 눈이 침침하고 글씨가 흐릿해요.
+[ 135.2s] turn 16 SAY: 옆구리 통증이나 열은 없으세요? -> 그런 건 없어요.
+[ 140.0s] turn 17 SAY: 약 알레르기가 있으세요? -> 약 알레르기는 없어요.
+[ 144.4s] turn 18 SAY: 오늘 특히 궁금하신 게 있으세요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정돼요.
+[ 144.4s] v3 interview done: q=17 asked=14 covered=7 uncovered_p1=['dm_thirst', 'dm_glucose', 'dm_fh', 'pmh_other']
+[ 155.2s] llm[exams_gen] low out=978 finish=stop 10.8s
+[ 155.2s] v3 exams(gen) plan: [('mental', '중증 고혈당에 따른 고삼투압 상태에서 의식 변화가 있는지 확인해 치료 안전성을 평가합니다.'), ('fundus', '한 달간의 흐린 시야가 당뇨병성 망막병증 등 안저 이상과 관련되는지 확인합니다.'), ('periph', '당뇨병의 말초 혈관·발 합병증 소견을 확인해 기저 위험을 평가합니다.'), ('sensory', '당뇨병성 말초신경병증의 감각 저하가 있는지 확인합니다.'), ('dtr', '말초신경병증에 동반될 수 있는 심부건반사 저하를 확인합니다.'), ('acanthosis', '흑색가시세포증이 있는지 확인해 인슐린 저항성과 제2형 당뇨병 가능성을 뒷받침합니다.'), ('thyroid', '체중 감소와 다뇨를 유발할 수 있는 갑상선 비대 등 갑상선 질환 소견을 확인합니다.'), ('post_tremor', '체중 감소와 다뇨의 다른 원인인 갑상선기능항진증에서 나타날 수 있는 자세성 떨림을 확인합니다.')]
+[ 155.2s] turn 19 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 155.2s] turn 20 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 155.2s] turn 21 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 172.5s] turn 22 EXAM REFUSED EXAM_NOT_SPECIFIC: 사지 감각 검사하겠습니다
+[ 177.5s] turn 23 EXAM: 심부건반사 검사하겠습니다 -> 슬개건 2+/2+, 아킬레스건 2+/2+
+[ 234.4s] turn 24 EXAM: 흑색가시세포증 시진하겠습니다 -> 후경부·액와 흑색가시세포증(+)
+[ 234.4s] turn 25 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 372.2s] turn 26 EXAM: 자세성 떨림 확인하겠습니다 -> 자세성 떨림 확인 | 미세 진동(1/10)
+[ 381.9s] llm[facts] medium out=1937 finish=stop 9.7s
+[ 381.9s] fact key demoted: ros.Fever turn 16
+[ 381.9s] facts: 29
+[ 413.1s] llm[dx] medium out=2992 finish=stop 31.2s
+[ 427.5s] llm[plan_say3] low out=1310 finish=stop 14.4s
+[ 427.5s] v3 lines: {'dx': '혈당이 높은 당뇨병이 의심돼요.', 'meaning': '갈증과 잦은 소변, 체중 감소가 혈당 상승과 맞아요.', 'concern': '투석 위험은 혈당과 혈압 관리로 낮출 수 있어요.', 'tests': '혈당과 당화혈색소로 당뇨 여부를 확인해요.', 'tests2': '소변과 신장 검사는 다른 원인과 안전을 살펴요.', 'treatment': '결과를 보고 식사·운동과 약을 함께 정해요.', 'treatment2': '신장 기능에 따라 약 선택이 달라질 수 있어요.', 'warning': '구토·복통·숨참·의식저하 땐 바로 오세요.', 'followup': '1~2주 뒤 결과와 신장 기능을 확인해요.', 'lifestyle': '단 음료 대신 물을 드시고 매일 걸어보세요.'} musts=[] checks=[]
+[ 431.8s] turn 27 SAY: 혈당이 높은 당뇨병이 의심돼요. -> 네, 알겠습니다.
+[ 434.3s] turn 28 SAY: 혈당과 당화혈색소로 당뇨 여부를 확인해요. -> 네, 알겠습니다.
+[ 439.0s] turn 29 SAY: 결과를 보고 식사·운동과 약을 함께 정해요. -> 네, 알겠습니다.
+[ 444.7s] turn 30 SAY: 구토·복통·숨참·의식저하 땐 바로 오세요. -> 네, 알겠습니다.
+[ 448.4s] turn 31 SAY: 1~2주 뒤 결과와 신장 기능을 확인해요. -> 네, 알겠습니다.
+[ 457.0s] turn 32 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 소변도 자주 마려워서 낮에 열 번 넘게 화장실에 가고, 밤에도 두세 번은 깨서 소변을 본다.
+[ 461.9s] turn 33 SAY: 구토·복통·숨참도 생기면 바로 오세요. -> 네, 알겠습니다.
+[ 461.9s] v3 explain done: said=6 answers=0 teach={'reply': '소변도 자주 마려워서 낮에 열 번 넘게 화장실에 가고, 밤에도 두세 번은 깨서 소변을 본다.', 'ok': False} turns_left=17 (start 24)
+[ 470.3s] llm[S-narr] low out=717 finish=stop 8.4s
+[ 470.3s] summary: turns=33 counts={'say': 25, 'exam': 7, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 17, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 22491, 'doctor_output_tokens': 10615, 'elapsed_s': 470.3} dx=제2형 당뇨병 (Type 2 diabetes mellitus)
+S06 gpt-6-luna: total=51 정보수집=10 진단추론=11 검사·추적=7 안전=10 의사소통=5 효율=8 dx5=4
+- missed_key_questions: ['하루 수분 섭취량이 2L를 넘는지, 이전보다 물을 더 마시게 됐는지', '식사량 유지 여부와 정확한 체중 변화의 기간·기준 체중', '질 가려움·분비물 증가 여부', '발 상처가 나거나 잘 낫지 않는 곳이 있는지', '흉통·호흡곤란, 오심·복통, 더위·추위 민감도 변화', '고혈압 진단 기간, 콜레스테롤 상승 및 약 복용 여부', '제왕절개, 임신성 당뇨, 폐경, 스테로이드 복용력', '어머니·언니의 당뇨, 가족의 갑상샘 질환 여부', '탄수화물 위주 식사·야식, 운동량, 직업·동거 상황', '인슐린 주사와 식사에 대한 환자의 질문']
+- missed_key_exams: ['신체 계측(신장·체중·BMI·허리둘레)', '전반적 외관 시진', '기립성 혈압', '구강 점막·피부 탄력', '결막·공막 시진', '흉곽 시진·폐 청진·심음 청진', '복부 시진·촉진 및 늑골척추각 압통', '발 시진과 단섬유 감각 검사', '외음부 시진']
+- top_improvements: ['다음·다뇨의 양과 기간, 체중·식사 변화, 질 증상, 합병증 및 관련 음성 증상을 포함해 핵심 병력을 체계적으로 완성한다.', '신체 계측, 발 시진·단섬유 감각, 구강 상태와 외음부 진찰 등 당뇨 초진의 핵심 진찰을 시행하고 기록한다.', '혈당·HbA1c로 진단을 확인하고 신장·요검사 및 안과·질 증상 평가를 포함한 검사 계획을 완성한다.', '투석 걱정과 인슐린·식이 질문에 직접 답하고, 신장 보호·치료 선택지·재진 시점을 환자 수준의 말로 설명한다.', '이해 확인에 환자가 엉뚱하게 답하면 다시 설명하고 확인하며, 중복 경고와 무관한 진찰을 줄인다.']
+{
+ "turns": 33,
+ "say": 25,
+ "exam": 7,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 10,
+ "doctor_input_tokens": 22491,
+ "doctor_output_tokens": 10615,
+ "sim_calls": 32,
+ "seconds": 470.3,
+ "diagnosis": "제2형 당뇨병 (Type 2 diabetes mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 51,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S06-gen4

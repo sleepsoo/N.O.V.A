@@ -1,0 +1,96 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[   7.8s] llm[intake] low out=146 finish=stop 7.7s
+[   7.8s] intake: {'age': 62, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '불면 (수면제 처방 원함)', 'request': '수면제 처방', 'categories': ['substance', 'insomnia', 'mood'], 'empathy': '많이 걱정되셨겠어요。', 'answered': []} diffs=['불면증 (Insomnia)', '우울증 (Depression)', '갑상선 기능저하증 (Hypothyroidism)', '만성 피로증후군 (Chronic Fatigue Syndrome)', '신경쇠약 (Neuropathy)']
+[   7.8s] checklist: 61 items, covered=['ps_sleep']
+[  10.0s] turn 1 SAY: 많이 걱정되셨겠어요. -> 네, 알겠습니다.
+[  17.4s] turn 2 SAY: 불면에 대해 자세히 말씀해 주세요 -> 나는 일곱 해 전부터 잠을 잘 못 자서 힘들었어요.
+[  23.1s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨려요.
+[  38.8s] turn 4 SAY: 두근거림에 대해 자세히 말씀해 주세요 -> 가슴이 두근거리고, 머리가 아프고
+[  48.0s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨려요.
+[  48.0s] guidelines[iv]: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia i (KR_EuropePMC, 2020)
+[  48.1s] guidelines[iv]: 우울증 Practical tip (KR_KoMGI, 2023)
+[  48.1s] guidelines[iv]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)
+[  77.6s] llm[plan_v4] low out=563 finish=stop 29.6s
+[  77.6s] v4 plan q bad (too_long): 갑상선 기능저하증에 대한 혈액 검사 결과를 말씀해 주세요
+[  77.6s] v4 plan q bad (pair): 잠 드는 횟수와 잠을 자는 시간을 말씀해 주세요
+[  77.6s] v4 plan: diffs=['불면증 (Insomnia)', '우울증 (Depression)', '갑상선 기능저하증 (Hypothyroidism)'] qs=[('free', '최근 1년간 같은 불면이 있었나요?'), ('free', '현재 복용 중인 약은 무엇인가요?'), ('free', '가족 중 유사한 증상이 있었나요?'), ('free', '최근 큰 생활 변화가 있었나요?'), ('free', '가만히 있으면 불안해지나요?'), ('free', '저녁을 언제 드시나요?'), ('free', '주말에는 낮잠을 자나요?'), ('free', '카페인 음료를 자주 드시나요?'), ('free', '주말에 운동을 하시나요?'), ('free', '수면제를 드렸을 때 부작용이 있었나요?')] exams=[('cognitive', '인지력 저하 여부 확인, 우울증 배제', 'mid'), ('skin_temp', '갑상선 기능저하증 시 발한 증상 확인', 'mid')] thyroid=True
+[  83.3s] turn 6 SAY: 드시는 수면제 이름이 뭐예요? -> 스틸녹스예요.
+[  91.9s] turn 7 SAY: 수면제는 마지막으로 언제 드셨어요? -> 어젯밤에 네 알 먹었어요.
+[  95.6s] turn 8 SAY: 약을 끊었을 때 경련한 적 있나요? -> 그런 건 없어요.
+[  98.1s] turn 9 SAY: 천식 있으세요? -> 그런 건 없어요.
+[ 101.4s] turn 10 SAY: 가만히 있어도 숨이 차세요? -> 그런 건 없어요.
+[ 110.1s] turn 11 SAY: 최근 1년간 같은 불면이 있었나요? -> 최근 육 개월 사이에 같은 불면이 있었어요.
+[ 113.6s] turn 12 SAY: 현재 복용 중인 약은 무엇인가요? -> 암로디핀을 먹고 있어요.
+[ 123.7s] turn 13 SAY: 평소 앓는 병이 있으세요? -> 고혈압이 있어서 암로디핀을 먹고 있어요.
+[ 134.1s] turn 14 SAY: 가족 중에 아픈 분이 있으세요? -> 아버지는 심장병으로 돌아가셨고, 어머니는 치매로 돌아가셨다.
+[ 141.8s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 약을 줄이고 싶지만, 잠을 못 잘까 봐 두렵다.
+[ 141.8s] v4 interview done: q=14 turn=15 left=25
+[ 141.8s] v4 exams plan (c8flex, budget 14): spec=['thyroid', 'cognitive', 'skin_temp', 'orthostatic'] order=['vitals', 'orthostatic', 'general', 'mental', 'skin_temp', 'conj', 'thyroid', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph', 'cognitive'] backups=['chest_insp', 'post_tremor', 'nystagmus', 'dysarthria', 'gait', 'cerebellar']
+[ 141.8s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C
+[ 141.8s] turn 17 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 6mmHg, 어지럼(-)
+[ 141.8s] turn 18 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 정상 체형, 안절부절(+)
+[ 141.8s] turn 19 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 141.8s] turn 20 EXAM: 피부 온도·발한 촉진하겠습니다 -> 온난, 발한(-), 손바닥 습윤(-/-)
+[ 141.8s] turn 21 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 141.8s] turn 22 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 141.8s] turn 23 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 141.8s] turn 24 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 141.8s] turn 25 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-)
+[ 141.8s] turn 26 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 141.8s] turn 27 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 141.8s] turn 28 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 141.8s] turn 29 EXAM: 인지기능 선별검사 하겠습니다 -> MMSE-K 28/30점, 지연회상 2/3점
+[ 141.8s] v4 exams done: ['vitals', 'orthostatic', 'general', 'mental', 'skin_temp', 'conj', 'thyroid', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph', 'cognitive'] refused=[]
+[ 316.3s] llm[facts] medium out=3724 finish=stop 174.5s
+[ 316.3s] fact key demoted: ros.Chill turn 3
+[ 316.4s] facts: 19
+[ 316.4s] guidelines[dx]: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia i (KR_EuropePMC, 2020)
+[ 316.4s] guidelines[dx]: 우울증 Practical tip (KR_KoMGI, 2023)
+[ 316.4s] guidelines[dx]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)
+[ 400.1s] llm[dx] medium out=1807 finish=stop 83.7s
+[ 400.1s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia i (KR_EuropePMC, 2020)
+[ 447.1s] llm[plan_say4] low out=975 finish=stop 47.1s
+[ 447.2s] v4 lines: {'dx': '우울증이 수면에 영향을 주어 치유에 더디게 진행됩니다', 'options': '검사 결과를 보고 치료 방법을 같이 정해요.', 'link': '스트레스·우울이 교차작용한 결과입니다', 'concern': '', 'tests': '정확히 확인하려고 피검사를 할게요.', 'caution': '', 'followup': '1~2주 뒤 결과 보고 다음 치료를 정해요.', 'warning': '심한 우울·자살 생각·졸음운전·낙상 시 바로 오세요.', 'lifestyle': '고루 자고, 스크린 시간을 줄이는 것이 중요합니다'} musts=[] emergency=False checks=[{'drop': '우울성 불면증·각질이 많이 덜어진 수면 패턴이 원인입니다', 'key': 'dx', 'why': 'too_long'}, {'drop': 'CBT-I가 첫번째 치료 방법이자 가장 효과적이며, 약물은 필요 시 최소 용량으로 제한합니다', 'key': 'options', 'why': 'too_long'}, {'drop': '약물과 심리치료를 병행하면 빠른 회복을 기대할 수 있습니다', 'key': 'options', 'why': 'too_long'}, {'drop': '역부족을 줄이려면 약을 줄이겠다고 하셨는데, 부작용 때문이지만 점차 줄여 나가야 합니다', 'key': 'concern', 'why': 'too_long'}, {'drop': '수면일지로 일상 활동과 잠재적 문제를 기록하시면 도움이 됩니다', 'key': 'tests', 'why': 'too_long'}, {'drop': '우울·불안 진단 스크리닝을 통해 현재 증상이 어느 정도인지 파악할 수 있습니다', 'key': 'tests', 'why': 'too_long'}, {'drop': '일상에서 편안한 분위기를 유지하고, 과도한 흡연·음주를 피하십시오', 'key': 'caution', 'why': 'too_long'}, {'drop': '2주 후 재진에서 수면일지와 설문을 검토하고 필요 시 조정합니다', 'key': 'followup', 'why': 'too_long'}, {'drop': '수면이 향상되는지 관찰하며 불안·우울 증상 변화도 체크합니다', 'key': 'followup', 'why': 'too_long'}, {'drop': '가슴 두근거림이 계속 심해지면 즉시 재진', 'key': 'warning', 'why': 'ending'}, {'drop': '정신 불안이 심해지면 언제든 내원', 'key': 'warning', 'why': 'ending'}]
+[ 452.1s] turn 30 SAY: 우울증이 수면에 영향을 주어 치유에 더디게 진행됩니다 -> 네, 알겠습니다.
+[ 456.8s] turn 31 SAY: 검사 결과를 보고 치료 방법을 같이 정해요. -> 네, 알겠습니다.
+[ 459.3s] turn 32 SAY: 스트레스·우울이 교차작용한 결과입니다 -> 네, 알겠습니다.
+[ 461.8s] turn 33 SAY: 정확히 확인하려고 피검사를 할게요. -> 네, 알겠습니다.
+[ 463.9s] turn 34 SAY: 고루 자고, 스크린 시간을 줄이는 것이 중요합니다 -> 네, 알겠습니다.
+[ 465.9s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 네, 알겠습니다.
+[ 470.2s] turn 36 SAY: 1~2주 뒤 결과 보고 다음 치료를 정해요. -> 네, 알겠습니다.
+[ 472.9s] turn 37 SAY: 심한 우울·자살 생각·졸음운전·낙상 시 바로 오세요. -> 네, 알겠습니다.
+[ 479.9s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.
+[ 479.9s] v4 explain done: said=7 answers=0 final=True teach={'reply': '식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.'} turns_left=2 (start 11)
+[ 505.4s] llm[S-narr] low out=553 finish=stop 25.5s
+[ 505.4s] v4 S safety net: ['안전: 어젯밤에 네 알 먹었어요.']
+[ 505.4s] summary: turns=38 counts={'say': 24, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 6, 'doctor_ok_calls': 6, 'doctor_invalid': 0, 'doctor_input_tokens': 10914, 'doctor_output_tokens': 7768, 'elapsed_s': 505.3} dx=우울성 불면증 (Primary Insomnia)
+C01 gpt-oss-20b: total=27 정보수집=14 진단추론=1 검사·추적=0 안전=5 의사소통=2 효율=5 dx5=1
+- missed_key_questions: ['수면 취침 시각과 기상 시각', '수면 주기와 수면의 질(깊음/얕음, 알레르기)', '수면제 복용량(용량, 빈도, 내성 변화를 정량화)', '내성·금단 반응(수면 부족, 불안, 두근거림)', '기저 정신건강(우울·불안) 상태', '카페인·알코올·흡연 섭취량', '수면 위생·습관·환경 소집']
+- missed_key_exams: ['주간 진정·불안 관찰', '병식 평가', '안구진탕 확인', '흉곽 시진', '소뇌 협조운동 검사', '보행 관찰', '롬베르그 검사']
+- top_improvements: ['1. 수면제 복용 패턴 및 내성/금단 정보 현황을 체계적으로 기록하고, Sedative‑Hypnotic Use Disorder를 주진단으로 설정 및 치료 계획 수립', '2. 수면위생·CBT‑I 교육과 함께 소변 약물 검사, TFT, 혈액·전기생리검사를 포함한 포괄적 검사 계획 제시', '3. 환자와 명확히 소통(경향, 위험, 개선 목표)하고 이해도를 확인하는 질문을 통한 교육과 치료 협약 체결', '4. 불필요한 반복 질문을 줄이고 핵심 정보를 한 번에 정리해 5분 수준의 효율성 향상', '5. 진단·시정/과정 기록을 표 형식(진단, 감별, 검사, 치료, 교육, 추적)으로 구성해 문서화 실태 개선']
+{
+ "turns": 38,
+ "say": 24,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 6,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 6,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 10914,
+ "doctor_output_tokens": 7768,
+ "sim_calls": 24,
+ "seconds": 505.4,
+ "diagnosis": "우울성 불면증 (Primary Insomnia)",
+ "dx_hit": false,
+ "session_status": "completed",
+ "grade_total": 27,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-C01-v4c

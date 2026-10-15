@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "competition": "N.O.V.A. 2026",
+    "site": "https://nova.snubhai.org",
+    "captured_at": "2026-10-12 (KST)",
+    "sources": {
+      "evaluation": "https://nova.snubhai.org/evaluation/",
+      "rules": "https://nova.snubhai.org/rules/",
+      "docs": "https://nova.snubhai.org/docs/"
+    },
+    "contact": "aisnubh@gmail.com"
+  },
+  "evaluation": {
+    "title": "진행 및 평가",
+    "overview": "참가자는 환자의 시작 정보와 활력징후를 바탕으로 문진, 진찰, 검사를 수행하는 Doctor Agent를 개발한다. 환자의 전체 정보는 공개되지 않으며, 허용된 인터페이스를 통해 필요한 정보를 획득한다.",
+    "actions": [
+      {
+        "action": "SAY",
+        "name": "대화 (문진·설명)",
+        "desc": "환자에게 질문해 병력과 증상 등 진단 단서를 수집하고, 필요한 설명을 전달"
+      },
+      {
+        "action": "EXAM",
+        "name": "신체진찰",
+        "desc": "진찰 동작 하나를 문장으로 요청하고 소견을 확인"
+      },
+      {
+        "action": "TEST",
+        "name": "검사",
+        "desc": "혈액·영상 검사 하나를 문장으로 요청하고 결과 확인. 예선에서는 사용하지 않음"
+      },
+      {
+        "action": "DIAGNOSE",
+        "name": "초진 기록·최종 진단",
+        "desc": "수집한 정보를 종합해 S·O·A·P 칸으로 나눈 초진 기록과 주진단 1개 제출"
+      }
+    ],
+    "turn_limit": "한 증례당 최대 50턴. 문진·진찰 선택은 필요에 따라 반복 가능",
+    "scoring": {
+      "preliminary_official": "대회 서버가 gpt-6.1-sol로 증례마다 100점 만점 자동 채점",
+      "preliminary_final": "GPT(gpt-6.1-sol)·Claude·Gemini 세 모델이 각각 채점한 점수의 평균",
+      "areas": [
+        {
+          "area": "정보수집",
+          "points": 25,
+          "criteria": "필요한 문진·진찰을 실제로 했고 기록했는가"
+        },
+        {
+          "area": "진단추론",
+          "points": 15,
+          "criteria": "주진단이 정확하고 근거와 감별진단이 타당한가. 주진단은 5점 척도로 판정 (Sequential Diagnosis with Language Models, Nori et al., Microsoft AI, 2025)"
+        },
+        {
+          "area": "검사·추적",
+          "points": 10,
+          "criteria": "필요한 검사와 추적 계획을 세웠는가"
+        },
+        {
+          "area": "안전",
+          "points": 15,
+          "criteria": "처치 결정이 적절하고 환자에게 해롭지 않은가"
+        },
+        {
+          "area": "의사소통",
+          "points": 15,
+          "criteria": "환자와 잘 소통하고 필요한 설명을 했는가"
+        },
+        {
+          "area": "효율",
+          "points": 20,
+          "criteria": "불필요한 진료 행동과 모델 사용 비용을 줄였는가"
+        }
+      ],
+      "notes": [
+        "채점은 서버에 기록된 대화·진찰·검사 로그와 제출한 초진 기록·최종 진단을 근거로 함. 질문하지 않은 내용을 기록에 적어도 수행한 것으로 인정되지 않음",
+        "초진 기록의 판단 근거와 향후 계획, 환자와 나눈 대화도 평가에 반영",
+        "미제출, 시간 초과 등 무효 증례는 0점",
+        "영역 안의 세부 채점 항목, 증례별 평가 기준과 채점 프롬프트는 비공개. 리더보드에는 팀별 총점만, 영역별 점수는 우리 팀 제출 화면에서 확인"
+      ]
+    },
+    "stages": {
+      "preliminary": {
+        "doctor_model": "고정 LLM openai/gpt-oss-20b",
+        "evaluation": "자동 채점(gpt-6.1-sol) · 최종 평가는 GPT(gpt-6.1-sol)·Claude·Gemini 세 모델 평균",
+        "ranking": "예선 최종 평가 결과와 검증 자료 확인 후 본선 진출팀 확정"
+      },
+      "final": {
+        "doctor_model": "참가자가 선택·학습한 모델",
+        "evaluation": "자동 채점 + 최종 5팀 의사 평가",
+        "ranking": "자동 채점과 의사 평가를 합산해 수상팀 확정"
+      },
+      "notes": [
+        "공식 평가는 팀·단계별 하루 1회이며, 리더보드는 공식 평가의 총점을 보여 줌. 예선 종료 시점의 리더보드는 최종 순위가 아님",
+        "단계별 최종 평가에는 팀이 선택한 제출 하나를 사용",
+        "본선 최종 5팀은 의료진이 초진 기록을 추가로 평가. 합산 방식은 확정 후 본선 진출팀에 안내"
+      ]
+    },
+    "development_and_submission": [
+      "개발 단계에서는 공개된 샘플 증례로 에이전트를 실험",
+      "샘플 검증은 공개 샘플 증례로 채점한 참고 점수를 우리 팀에만 보여 주며 리더보드에 반영되지 않음. 가상 환자·진찰 판정·채점에 gpt-6-luna를 쓰므로 실제 점수와 다를 수 있음",
+      "리더보드 점수는 하루 1회 공식 평가(예선 리더보드 5증례)에서만 나오며, 예선 마지막 최종 평가는 10증례로 채점",
+      "예선은 평가 서버의 고정 LLM openai/gpt-oss-20b 사용, 모델 파일 제출하지 않음. 본선 모델은 A6000 48GB급 GPU 한 장에서 로드·실행되어야 함",
+      "제출 파일: run.py와 requirements.txt를 포함한 ZIP, 최대 50MB",
+      "샘플 검증은 공식 평가 횟수를 사용하지 않음. 리더보드 제출은 샘플 검증 없이도 가능",
+      "채점 증례 원문과 실행 산출물은 참가자에게 제공하지 않음"
+    ]
+  },
+  "rules": {
+    "title": "참가 규칙",
+    "participation_and_accounts": [
+      "의료 AI에 관심 있는 누구나, 개인 또는 최대 4인 팀으로 참가. 한 사람은 한 팀에만 소속",
+      "참가 신청에 등록한 이메일로 개인 계정에 로그인. 팀장·부팀장·팀원 모두 제출과 최종 버전 선택 가능",
+      "개인 개발 API 키는 본인만 발급·폐기. 활성 키는 계정당 하나, 재발급하면 이전 키 폐기",
+      "팀명·계정 변경으로 제출 횟수나 크레딧을 추가로 받을 수 없음. 소속 정보 정정은 운영진에 요청"
+    ],
+    "submission_spec": {
+      "code": {
+        "preliminary": "Python · UTF-8 · ZIP 50MB (50,000,000바이트) 이하",
+        "final": "동일"
+      },
+      "required_files": {
+        "preliminary": "압축 루트의 run.py, requirements.txt",
+        "final": "동일"
+      },
+      "doctor_model": {
+        "preliminary": "지정 openai/gpt-oss-20b API",
+        "final": "직접 선택·학습한 모델"
+      },
+      "model_assets": {
+        "preliminary": "고정 모델의 가중치·어댑터 제출 금지",
+        "final": "별도 ZIP 최대 32GB · 등록 후 재사용"
+      },
+      "dependencies": "requirements.txt에 PyPI 패키지를 name==version으로 기재. 미리 빌드된 휠만 설치되며 실행 중 인터넷 차단",
+      "time_limits": "빌드(의존성 설치) 제출 버전당 1회 20분 · 증례마다 준비(prepare()) 10분, 진료 30분",
+      "resources": {
+        "preliminary": "증례마다 컨테이너 1개 · CPU 2코어 · RAM 8GB · GPU 없음",
+        "final": "증례마다 컨테이너 1개 · A6000 48GB급 GPU 1장 · CPU 8코어 · RAM 32GB"
+      },
+      "presentation": {
+        "preliminary": "해당 없음",
+        "final": "PPT 또는 PPTX 필수"
+      }
+    },
+    "preliminary_model_rules": [
+      "지정 모델의 가중치 변경·파인튜닝 불가",
+      "각 증례에서 지정 Doctor 모델을 최소 1회 호출해야 하며, 호출하지 않은 증례는 0점",
+      "Doctor 모델(client.chat())은 증례마다 최대 200회, 입력 500,000·출력 100,000토큰까지 호출 가능하며 턴은 쓰지 않음",
+      "빈 답 호출(PROVIDER_RESPONSE_INVALID)은 200회에는 포함되지만 토큰 한도와 효율 점수의 모델 사용 비용에는 포함되지 않음",
+      "수상 후보 팀의 제출 코드는 운영진이 직접 검토",
+      "검색 인덱스와 CPU용 보조 임베딩 자산은 제출·실행 한도 안에서 사용 가능"
+    ],
+    "final_model_rules": [
+      "모델 파일 크기와 실행 중 GPU 메모리는 다름. 가중치, KV 캐시, 추론 메모리를 모두 포함해 48GB급 GPU 한 장에서 실행되어야 함",
+      "등록한 코드·모델·PPT는 제출 버전으로 고정"
+    ],
+    "interaction": {
+      "description": "증례마다 최대 50턴 동안 환자와 대화(SAY: 문진·설명·공감)하고 신체진찰(EXAM) 수행. 각 행동은 1턴",
+      "exam_rules": [
+        "진찰 목록은 제공하지 않음. EXAM에는 '복부 청진하겠습니다'처럼 구체적인 진찰 동작 하나를 문장으로 요청",
+        "'신체검진 다 해 주세요'처럼 여러 진찰을 묶은 요청은 EXAM_NOT_SPECIFIC",
+        "신체진찰이 아닌 요청(문진·검사·처치·기록 등)이나 존재하지 않는 진찰은 EXAM_NOT_RECOGNIZED",
+        "잘못 보낸 요청과 빈 내용·30자 초과 SAY·EXAM은 답을 받지 못해도 1턴 사용",
+        "가상 환자·진찰 판정 모델 오류 등 서버 쪽 문제로 답하지 못한 경우는 턴을 쓰지 않음"
+      ],
+      "patient_behavior": "증상·병력·검사 결과를 한꺼번에 알려 달라고 하면 '한 번에 하나씩 물어봐 주세요.'라고만 답함",
+      "test_rules": "예선에서는 TEST 미사용. 본선 TEST도 목록 없이 '간기능검사 하겠습니다'처럼 검사 하나를 문장으로 요청하며, 제공하지 않는 검사는 턴 차감 없이 TEST_NOT_OFFERED",
+      "length_limits": [
+        {
+          "target": "대화 (SAY)",
+          "limit": "한 번에 30자 이하"
+        },
+        {
+          "target": "환자 답변",
+          "limit": "20자 안팎으로 짧게 (길이로 거절하지 않음)"
+        },
+        {
+          "target": "초진 기록·최종 답안",
+          "limit": "30자 대화 한도 적용 안 함"
+        }
+      ],
+      "length_counting": "공백·문장부호·줄바꿈 포함, NFC 정규화 후 유니코드 코드 포인트로 계산. 길이 초과 질문은 잘라 실행하지 않음",
+      "diagnose": "진료 종료 시 S·O·A·P 초진 의무기록과 주진단 1개를 DIAGNOSE로 함께 제출. 제출 자체는 턴을 사용하지 않으며, 환자에게 전달하는 마지막 설명은 종료 전에 일반 대화로 수행"
+    },
+    "official_evaluation_and_final_selection": {
+      "submission_flow": {
+        "submit": "코드(본선은 모델·발표 자료 포함)를 올리면서 샘플 검증 또는 리더보드 제출을 선택. 빌드는 서버가 수행",
+        "sample_validation": "공개 샘플로 실행 확인, 우리 팀만 보는 참고 점수. 선택 사항이며 공식 평가 횟수를 쓰지 않음",
+        "leaderboard_submission": "공식 평가 증례로 채점해 리더보드 반영. 샘플 검증 없이 바로 진행하며, 실행에 실패해도 그날의 공식 평가 1회 소모",
+        "final_selection": "팀·단계별 최종 평가에 사용할 제출 하나를 선택"
+      },
+      "details": [
+        "공식 평가는 팀·단계별 KST 하루 1회",
+        "공식 평가 1회는 예선 리더보드 5증례 채점. 예선 최종 평가는 10증례를 GPT(gpt-6.1-sol)·Claude·Gemini 세 모델 채점 평균",
+        "코드·모델 업로드와 샘플 검증은 공식 평가 횟수에 포함되지 않음. 샘플 검증 참고 점수는 gpt-6-luna 채점",
+        "평가 시작 후 참가자 코드 오류·시간 초과·결과 누락은 평가 횟수에 포함. 확인된 서비스 장애의 복구 평가는 추가 차감 없음",
+        "공식 평가의 총점과 처리 상태 공개, 영역별 점수는 우리 팀 제출 화면에서 확인",
+        "이름이 public인 평가 세트도 증례 원문이 공개되는 것은 아님",
+        "본선 자동 점수와 최종 5팀 의사 평가는 구분하며, 결합 정책 확정 전 자동 순위를 최종 수상 순위로 표시하지 않음"
+      ]
+    },
+    "development_credits": [
+      "개인 API 키로 사용하는 개발 크레딧은 팀원이 공유. 남은 크레딧과 사용·예약 비율은 개발·API 화면에서 확인",
+      "개발 Doctor와 가상 환자 호출에 실제 사용 비용 반영",
+      "개발 키로 진료 세션 밖에서 gpt-6.1-sol·gpt-6-luna 호출 가능(자가 채점·데이터 생성용). 사용한 만큼 차감, 제출 코드 실행 중에는 사용 불가",
+      "세션 밖 호출은 팀당 하루 gpt-6.1-sol 100회, gpt-6-luna 500회, Doctor(gpt-oss-20b) 3,000회 (KST 기준)",
+      "Evaluation Agent 채점 비용은 개발 크레딧에서 차감하지 않음",
+      "공식 평가 비용도 개발 잔액과 구분. 개발 잔액 부족만으로 공식 평가 기회가 제한되지 않음",
+      "개발 키는 대회 준비에 사용하며 요청·사용량은 기록됨. 키 공유 금지",
+      "개발 키와 크레딧을 Claude Code, Codex, Cursor 같은 코딩 도구나 다른 서비스에 연결해 쓰지 말 것. 대회 에이전트 개발 외 용도로 확인되면 크레딧 회수 가능"
+    ],
+    "data_use_and_security": [
+      "외부 자료와 오프라인 라벨 생성 도구는 연구 출판에 사용할 수 있는 라이선스를 확인하고 출처·생성 과정을 명시해 사용",
+      "실행 중에는 지정 대회 API만 허용. 외부 인터넷·API에서 자료나 모델을 내려받을 수 없음",
+      "운영진 제공 진료지침 자료는 실행 환경 /opt/nova/guidelines에 있으며, 문서별 라이선스 조건(비상업적 이용, 출처 유지, 변경본 배포 금지 등)을 지켜 사용",
+      "비공개 평가 증례로 학습·튜닝하거나 정답을 추출하는 행위 금지",
+      "증례는 독립적으로 처리. 다른 증례의 기억·예측·통계를 가져올 수 없음",
+      "다른 팀의 계정·코드·키 접근, 비공개 증례 반출, 평가 시스템의 지시 변경·비공개 프롬프트 추출 시도는 참가 제한·실격 검토 대상",
+      "출처·라이선스와 결과 재현에 필요한 코드·실행 방법을 보관할 것"
+    ]
+  },
+  "docs": {
+    "title": "개발 가이드",
+    "quick_start": {
+      "summary": "공개 샘플에서 Doctor Agent를 개발하고, 서버에서 코드 버전을 검증한 뒤 공식 평가를 요청",
+      "steps": [
+        {
+          "step": "개발 키 발급",
+          "desc": "개발·API 메뉴에서 본인 키 발급. 개발 비용은 팀 잔액 사용"
+        },
+        {
+          "step": "Python 시작 패키지 다운로드",
+          "desc": "SDK, 예제 에이전트, 샘플 실행 도구, 서버와 같은 규칙의 로컬 빌드용 local.Dockerfile 포함. 기본 예제는 Python 표준 라이브러리로 실행"
+        },
+        {
+          "step": "공개 샘플 받기",
+          "desc": "샘플 3건의 시작 정보, 가상 환자 대본, 진찰 결과표, 모범 초진기록 다운로드"
+        },
+        {
+          "step": "에이전트 실행",
+          "desc": "환경변수 설정 후 서버의 공개 샘플로 실행. --list로 샘플 ID 확인 후 --case로 실행. 서버 없이 로컬에서 먼저 돌리려면 개발 키트 사용",
+          "commands": [
+            "export NOVA_API_BASE=https://nova.snubhai.org",
+            "read -rs -p 'Development API key: ' NOVA_DEV_KEY",
+            "export NOVA_DEV_KEY",
+            "python sample.py --list",
+            "python sample.py --case PUBLIC_SAMPLE_UUID"
+          ]
+        }
+      ],
+      "public_sample_status_note": "임상 검토 후 공개로 배정된 증례만 제공. 목록이 비어 있거나 모델 연결이 준비 중이면 실제 실행 불가",
+      "agent_structure": "예제의 prepare()에서 자산 준비, consult(client, state)에서 진료 행동 구현. 최종 기록은 client.diagnose(note=..., diagnosis=...)로 제출. note는 S·O·A·P 칸 기록(empty_record()로 틀 생성). 시작 패키지의 run.py는 Doctor 모델이 매 턴 다음 행동(질문·설명, 진찰, 종료)을 고르고 마지막에 S·O·A·P 기록과 주진단을 작성하는 기본 에이전트 — 출발점으로 고쳐 쓸 것"
+    },
+    "public_samples": {
+      "content": "개발용 샘플 3건의 시작 정보, 가상 환자 대본, 진찰 결과표, 모범 초진기록(S·O·A·P와 주진단). 서버의 샘플 실행과 같은 증례",
+      "download": "샘플 ZIP 44KB",
+      "notes": [
+        "실제 진료에서 Doctor Agent가 처음 받는 것은 시작 정보뿐. 대본과 진찰 결과표는 가상 환자와 진찰 판정 모델만 봄",
+        "모범 기록은 작성 형식과 수준 예시이며 만점 답안이 아님",
+        "예선·본선 평가 증례는 비공개"
+      ]
+    },
+    "dev_kit_local": {
+      "desc": "공개 샘플로 서버에 올리지 않고 로컬에서 끝까지 실행. 서버와 같은 규칙(50턴, 30자, 진찰 한 번에 하나, 기록 형식)의 로컬 시뮬레이터이며 시작 패키지 run.py를 그대로 실행. 가상 환자·진찰 판정·Doctor 모델은 직접 지정한 OpenAI 호환 모델(예: Ollama gpt-oss:20b) 사용. 크레딧 사용·채점 없음",
+      "commands": [
+        "ollama pull gpt-oss:20b",
+        "python develop.py --list",
+        "python develop.py --case samples/C10  # ./run.py로 진료, 결과는 results/에 저장",
+        "python develop.py --case samples/C10 --manual  # 직접 질문·진찰해 보기"
+      ],
+      "note": "가상 환자 모델이 서버와 달라 답이 조금 다를 수 있음. 서버 동작은 개발 키로 sample.py 실행해 확인"
+    },
+    "dev_models": {
+      "desc": "개발 키로 진료 세션 밖에서 client.chat() 호출 시 Doctor 모델 외에 openai/gpt-6.1-sol, openai/gpt-6-luna 선택 가능 — 자가 채점, 연습용 증례·대화 데이터 생성용. 대회 서버의 가상 환자와 공식 채점은 gpt-6.1-sol. 샘플 검증만 gpt-6-luna가 가상 환자·진찰 판정·채점 담당",
+      "example_code": "import os\nfrom nova_sdk import Client\n\nclient = Client(token=os.environ[\"NOVA_DEV_KEY\"], sample=True)  # 세션을 만들지 않은 클라이언트\nreply = client.chat([{\"role\": \"user\", \"content\": \"이 초진 기록을 채점 기준에 따라 평가해 주세요: ...\"}],\n                    model=\"openai/gpt-6.1-sol\", reasoning_effort=\"medium\", max_tokens=4000)\nprint(reply[\"choices\"][0][\"message\"][\"content\"])",
+      "pricing_per_1M_tokens_KRW": [
+        {
+          "model": "openai/gpt-oss-20b (Doctor)",
+          "input": 58,
+          "cached_input": 6,
+          "output": 221,
+          "options": "reasoning_effort low·medium·high, temperature 0~2",
+          "daily_limit_outside_session": 3000
+        },
+        {
+          "model": "openai/gpt-6.1-sol",
+          "input": 3045,
+          "cached_input": 152,
+          "output": 15225,
+          "options": "reasoning_effort none·low·medium·high·xhigh (temperature 지정 불가)",
+          "daily_limit_outside_session": 100
+        },
+        {
+          "model": "openai/gpt-6-luna",
+          "input": 152,
+          "cached_input": 15,
+          "output": 761,
+          "options": "gpt-6.1-sol과 같음",
+          "daily_limit_outside_session": 500
+        }
+      ],
+      "notes": [
+        "진료 세션 안(공개 샘플 세션, 샘플 검증, 공식 평가)에서는 gpt-oss-20b만 사용 가능, 다른 모델 지정 시 MODEL_NOT_ALLOWED",
+        "제출 코드가 실행 중 gpt-6.1-sol·gpt-6-luna를 부를 수 없음",
+        "비용은 팀 개발 크레딧에서 차감(gpt-6.1-sol은 gpt-oss-20b보다 수십 배 비쌈)",
+        "세션 밖 일일 한도는 KST 자정 초기화. 진료 세션 안 Doctor 호출은 이 한도와 무관하게 증례당 200회·토큰 한도만 적용"
+      ]
+    },
+    "reference_benchmarks": {
+      "desc": "가상 환자 초진 과제와 형식이 비슷한 외부 공개 데이터셋 3개(모두 영어, 이미지 없음). 대회 평가 증례가 아니며 형식도 다름",
+      "datasets": [
+        {
+          "name": "AgentClinic-MedQA",
+          "similar_stage": "문진·신체진찰·검사·진단 전체",
+          "size": "증례 215건",
+          "license": "MIT"
+        },
+        {
+          "name": "DDXPlus",
+          "similar_stage": "문진(한 번에 하나씩 질문)",
+          "size": "합성 환자 약 129만 명, 질환 49종",
+          "license": "CC BY 4.0"
+        },
+        {
+          "name": "ACI-Bench",
+          "similar_stage": "진료 대화를 진료 기록으로 정리",
+          "size": "대화-기록 쌍 207건",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "download": "ZIP 180.1MB",
+      "sha256": "a2b4dbc6a2bc177a54cf7c7f1a4e15f94625bfd335738737b575c6832a1060a7",
+      "note": "ZIP 안 README에 파일 구성, 대회 단계 대응, 출처·인용. 사용·변환 시 참가 규칙대로 출처와 처리 과정 명시, 재배포 시 라이선스·인용 유지"
+    },
+    "guideline_library": {
+      "desc": "국내외 진료지침·권고문·질환 개요 문서 15,904개(영어 14,398 · 한국어 1,506)를 Markdown으로 정리. 문서마다 맨 위에 제목, 발행기관, 연도, 언어, 출처 주소, 라이선스. 전체 목록은 catalog.csv, catalog.xlsx",
+      "downloads": {
+        "full_zip": "192.6MB",
+        "catalog_xlsx": "1.1MB"
+      },
+      "sha256": "ef58c2f4369750af382f2706dcc1c9c7a85e3a93c261d880f7470d695eaf30d5",
+      "runtime_path": "샘플 검증·공식 평가 컨테이너에 /opt/nova/guidelines 읽기 전용 탑재, 환경변수 NOVA_GUIDELINES_DIR. 코드 ZIP에 넣을 필요 없음",
+      "example_code": "import os\nfrom pathlib import Path\n\n# 대회 서버에서는 NOVA_GUIDELINES_DIR, 내 컴퓨터에서는 ZIP을 푼 폴더\nroot = Path(os.environ.get(\"NOVA_GUIDELINES_DIR\", \"./guidelines\"))\nfor path in sorted(root.glob(\"KR_*/*.md\"))[:3]:\n    print(path.name, path.read_text(encoding=\"utf-8\")[:80])",
+      "license_note": "대회 목적의 비상업적 이용에 한함. 출처·라이선스 유지. 번역·요약·재구성본은 배포 불가인 문서가 많음(CC BY-ND·BY-NC-ND, 공공누리 제4유형 등). 문서별 조건은 README.md 확인. 의료 정보 정확성 미보증"
+    },
+    "interaction_api": {
+      "auth": "Authorization: Bearer <token>. 공개 샘플은 개인 개발 키, 공식 실행은 서버가 발급한 실행 토큰. 공식 실행 환경에서는 SDK에 세션과 실행 토큰 제공",
+      "actions": [
+        {
+          "action": "SAY",
+          "sdk": "client.say(text)",
+          "rule": "환자에게 질문·설명·공감 · 30자 이하 · 1턴"
+        },
+        {
+          "action": "EXAM",
+          "sdk": "client.exam(text)",
+          "rule": "진찰 동작 하나를 문장으로 · 30자 이하 · 1턴"
+        },
+        {
+          "action": "TEST",
+          "sdk": "client.test(text)",
+          "rule": "혈액·영상 검사 하나를 문장으로 · 30자 이하 · 1턴 · 본선만"
+        },
+        {
+          "action": "DIAGNOSE",
+          "sdk": "client.diagnose(note, diagnosis)",
+          "rule": "S·O·A·P 초진 기록 + 주진단 하나 · 0턴 · 종료"
+        }
+      ],
+      "rules": [
+        "질문·설명은 NFC 정규화 후 공백·문장부호·줄바꿈 포함 30 코드 포인트까지",
+        "환자는 20자 안팎으로 짧게 답하며, 답변 길이로 거절하지 않음",
+        "최종 기록에는 대화 길이 한도 미적용",
+        "증례별 최대 50턴이며 50번째 응답 이후에도 제한 시간 안에 DIAGNOSE로 종료 가능"
+      ],
+      "request_example": {
+        "method": "POST",
+        "path": "/v1/session/actions",
+        "headers": {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer <NOVA_RUN_TOKEN>"
+        },
+        "body": {
+          "request_id": "고유한 요청 ID",
+          "action": "SAY",
+          "content": "언제부터 아프셨나요?"
+        }
+      },
+      "retry_and_exam_notes": [
+        "동일 요청 재시도 시 같은 request_id와 내용 사용",
+        "SAY·EXAM·TEST는 content, DIAGNOSE는 note와 diagnosis 전송",
+        "진찰 목록 미제공. EXAM에 '복부 청진하겠습니다', '머피 징후 확인할게요'처럼 동작 하나를 적으면 결과 한 줄을 받음",
+        "여러 진찰 묶음('복부 검진 다 해 주세요')이나 결과로 고르게 하는 요청('이상 소견만 알려 주세요')은 EXAM_NOT_SPECIFIC",
+        "신체진찰이 아닌 요청이나 존재하지 않는 진찰은 EXAM_NOT_RECOGNIZED. 답은 없지만 1턴 사용",
+        "응답의 turns_remaining으로 남은 턴 확인"
+      ],
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/v1/sample/cases",
+          "use": "공개 샘플 목록"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/sample/sessions",
+          "use": "request_id, case_id로 샘플 시작"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/sample/sessions/{id}/actions",
+          "use": "개발 샘플 행동"
+        },
+        {
+          "method": "GET",
+          "path": "/v1/session",
+          "use": "공식 실행 세션·남은 턴 확인"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/session/actions",
+          "use": "공식 실행 행동·최종 기록"
+        },
+        {
+          "method": "POST",
+          "path": "/v1/chat/completions",
+          "use": "지정 예선 Doctor 모델 호출(messages, max_tokens, 선택 reasoning_effort·temperature)"
+        }
+      ]
+    },
+    "medical_record_guide": {
+      "overview": "진료 종료 시 S·O·A·P 칸으로 나눈 초진 기록과 주진단 1개를 DIAGNOSE로 함께 제출. 칸은 고정, 칸 안은 자유 서술. 쓸 내용이 없는 칸은 빈 문자열",
+      "fields": {
+        "S": {
+          "cc": "주호소 — C.C : 인후통, Onset : 내원 1일 전, 통증이면 통증평가 : NRS 6점, 부위, 양상, 기간",
+          "hpi": "현병력 — P.I: 시작, 경과, 양상, 악화·완화 요인, 동반 증상, 이전 진료, 내원 경위를 '~하여 내원함'처럼 간결하게",
+          "pmh": "과거력·약물·알레르기 — DM / HTN (-/-), previous stroke (-), Tbc / hepatitis (-/-), Op. Hx (-), Medicine history, Allergy (-)처럼 항목별 (+)/(-)",
+          "fh": "가족력 — DM / HTN (-/-), Stroke (-), 그 밖의 확인한 가족 병력",
+          "sh": "사회력 — Smoking (-) p/d yrs, Alcohol (+) 2회/주, 직업 등",
+          "ros": "계통 문진 — Fever/Chill (-/-), Chest pain (-), Headache (+)처럼 (+)/(-) 목록. (-)도 적어야 확인한 것으로 봄"
+        },
+        "O": {
+          "exam": "진찰 소견 — V/S, H/E/E/N/T, Chest : Clear, RHB, Abdomen : bowel sound, tenderness (-)처럼 부위별 소견과 결과를 받은 턴 번호",
+          "tests": "검사 결과 — 받은 검사 결과와 턴 번호(본선). 예선은 비워 둠"
+        },
+        "A": {
+          "diagnosis": "주진단 — 진단명 하나. 기록과 별도로 diagnosis 값으로도 보냄",
+          "evidence": "근거 — #1. 주진단 다음 줄에 - 근거 : 수집한 사실과 그 해석",
+          "differential": "감별진단 — r/o 진단명 : 이유를 한 줄씩"
+        },
+        "P": {
+          "tests": "추가 검사 — 필요한 검사와 이유. 예선의 검사 평가는 이 칸으로 함",
+          "treatment": "치료 — 약물·처치 계획",
+          "disposition": "처치 결정 — 귀가, 외래 추적, 의뢰, 응급 처치 등",
+          "follow_up": "추적 — 재진 시점과 바로 다시 와야 하는 경고 증상",
+          "education": "환자 교육 — 안내할 내용. 실제 설명은 진료 중 SAY로 해야 대화 평가에 반영"
+        }
+      },
+      "submit_example_code": "from nova_sdk import empty_record\n\nnote = empty_record()  # 모든 칸이 빈 문자열인 틀\nnote['S']['cc'] = 'C.C : 인후통\\nOnset : 내원 1일 전\\n통증평가 : NRS 4점, 부위 목, 양상 따끔거림'\nnote['S']['ros'] = 'Fever/Chill (+/-) Cough (+)\\nDyspnea (-)'\nnote['O']['exam'] = 'V/S : BT 37.3℃ (턴 3)\\nH/E/E/N/T : 인두 발적 (+) (턴 4)'\nnote['A']['evidence'] = '#1. 급성 인두염\\n- 근거 : 1일 전 시작된 인후통, 인두 발적'\nnote['P']['disposition'] = '외래 경과 관찰'\nclient.diagnose(note=note, diagnosis='급성 인두염')",
+      "http_format": "{\"action\": \"DIAGNOSE\", \"request_id\": ..., \"note\": {\"S\": {...}, \"O\": {...}, \"A\": {...}, \"P\": {...}}, \"diagnosis\": \"...\"}. 칸이 하나라도 빠지거나 다른 칸이 있으면 INVALID_RECORD_FIELDS로 거절, 턴은 쓰지 않음",
+      "record_only_confirmed_facts": {
+        "없음·음성": "실제 질문·확인 또는 제공된 결과가 있을 때만 사용",
+        "미확인": "아직 질문하거나 정보를 얻지 못함. 항목형 칸에서는 Allergy ( )처럼 괄호를 비워 둠",
+        "미시행": "해당 진찰·검사를 수행하지 않음",
+        "계획": "앞으로 할 일. 이미 시행한 결과처럼 적지 말 것"
+      },
+      "scoring_notes": [
+        "물어보거나 진찰한 내용을 S·O 칸에 기록까지 해야 가장 높게 인정",
+        "물어보지 않은 내용을 적어도 인정되지 않고, 확인한 내용과 다르게 적으면 감점",
+        "기록에 교육 계획을 쓰는 것과 환자에게 실제로 설명하는 것은 다름",
+        "내부 사고 과정 전문은 불필요, 사실과 판단을 연결하는 간결한 근거를 쓸 것"
+      ],
+      "size_limits": "기록 전체 UTF-8 100,000바이트, 주진단 500바이트. 칸별 분량 제한 없음",
+      "examples": [
+        {
+          "title": "문진·진찰 내용을 칸에 나눠 적기",
+          "context": "환자가 '어제부터 목이 아파요', '기침도 조금 나요'라고 답함. 3턴에 체온 37.3℃, 4턴에 인두 발적 확인. 약물·알레르기와 위험 증상은 아직 미확인",
+          "record": "[S] 주호소: C.C : 인후통\n          Onset : 내원 1일 전\n          통증평가 : 도구 NRS, 점수·양상 미확인\n[S] 현병력: 내원 1일 전 시작된 인후통으로 내원함. 기침 조금 동반. 악화·완화 요인 미확인.\n[S] 과거력·약물·알레르기: DM / HTN ( / )  Medicine history ( )  Allergy ( )\n[S] 계통 문진: Cough (+)  Fever/Chill ( / )  Dyspnea ( )\n[O] 진찰 소견: V/S : BT 37.3℃ (턴 3), 나머지 미측정\n          H/E/E/N/T : 인두 발적 (+) (턴 4)\n[A] 주진단: 급성 인두염\n[A] 근거: #1. 급성 인두염\n          - 근거 : 1일 전 시작된 인후통, 인두 발적\n[A] 감별진단: r/o 세균성 인두염 : 편도 삼출물·경부 림프절 미확인\n[P] 추가 검사: 위험 징후 확인 후 필요 시 판단\n[P] 추적: 추가 문진과 진찰 결과에 따라 결정\n(빈 칸은 생략해 표시함, ( )는 아직 확인하지 않은 항목)",
+          "note": "미확인 정보를 남기는 방법을 보여 주는 예시이며, 필요한 질문을 충분히 수행했다는 의미는 아님"
+        },
+        {
+          "title": "본선 형식 예시: 검사 값·판단·계획 구분",
+          "context": "피로와 어지럼, 과다 월경 병력 확인. 9턴에 받은 검사 결과: Hb 9.8g/dL (참고 12.0–16.0), MCV 72fL (참고 80–100), ferritin 8ng/mL (참고 15–150)",
+          "record": "[S] 주호소: C.C : 피로, 어지럼\n[S] 현병력: 과다 월경 있어 왔으며 피로와 어지럼으로 내원함. 기간·정도와 다른 출혈 증상은 미확인.\n[O] 검사 결과: Hb 9.8g/dL (L), MCV 72fL (L), ferritin 8ng/mL (L) (턴 9)\n[A] 주진단: 철결핍성 빈혈\n[A] 근거: #1. 철결핍성 빈혈\n          - 근거 : 소구성 빈혈, ferritin 감소, 과다 월경\n[A] 감별진단: r/o 다른 출혈 원인 : 위장관 출혈 증상 추가 확인 필요\n[P] 추가 검사: 출혈 양상에 따른 추가 평가\n[P] 추적: 결과에 따라 관리·추적 계획 결정\n(빈 칸은 생략해 표시함)",
+          "note": "수치·단위·참고범위는 환경이 제공한 것을 그대로 기록. 증례에 없는 값을 정상이라고 채우거나 추정 원인을 확정 사실로 쓰지 않음"
+        }
+      ],
+      "examples_disclaimer": "칸 사용법과 사실·판단·계획 구분을 설명하기 위한 가상 예시이며 실제 대회 증례나 정답·만점 기록이 아님"
+    },
+    "code_submission_contract": {
+      "structure": [
+        "submission.zip",
+        "├── run.py",
+        "├── requirements.txt",
+        "└── nova_sdk.py"
+      ],
+      "zip_limits": "최대 50,000,000바이트, 해제 후 500,000,000바이트, 파일 5,000개. 암호화·심볼릭 링크·경로 이동·중복 경로 포함 시 반려. 서버가 표준 실행 이미지를 만들므로 Dockerfile 제출 안 함",
+      "dependencies": [
+        "requirements.txt에 PyPI(pypi.org) 패키지를 name==version으로 한 줄씩",
+        "서버는 제출 버전 첫 평가 시 PyPI에서 미리 빌드된 휠(.whl)을 받아 설치하고 그 이미지를 이후 평가에 사용",
+        "3일 넘게 평가에 쓰이지 않은 이미지는 삭제, 다음 평가 때 같은 고정 버전으로 재빌드",
+        "URL·Git 주소, 다른 패키지 저장소(예: download.pytorch.org), 소스만 배포되는 패키지(예: flash-attn)는 설치 불가"
+      ],
+      "runtime": [
+        "실행 중 인터넷 차단. Hugging Face 가중치, nltk·spaCy 데이터 등 첫 사용 시 다운로드되는 자료는 실패하므로 ZIP에 넣고(본선은 모델 ZIP) 로컬 경로에서 읽을 것",
+        "시작 패키지의 local.Dockerfile로 서버와 같은 빌드 및 인터넷 없는 준비 단계 미리 확인 가능",
+        "증례마다 새 실행 상태 제공, 다른 증례의 캐시·파일·통계 이어서 사용 불가"
+      ],
+      "preliminary_doctor_api": [
+        "증례마다 지정 Doctor API(client.chat())를 최소 1회 호출, 호출 없는 증례는 0점",
+        "증례마다 최대 200회, 입력 500,000·출력 100,000토큰",
+        "client.chat(messages, max_tokens=2048, reasoning_effort=\"low\")처럼 호출마다 reasoning_effort low·medium·high 선택. 높을수록 출력 토큰·비용 증가(효율 점수 반영), 추론 토큰도 max_tokens에 포함되므로 high에는 넉넉한 max_tokens 필요",
+        "temperature 0~2 지정 가능(예: 0.7). 운영진 측정에서 0으로 해도 매번 같은 답이 나오지 않았고, 낮출수록 빈 답이 늘었음. 둘 다 미지정 시 모델 기본값",
+        "단순 연결 예제의 출력을 고정 답안으로 쓰지 말고 문진·진찰 결과에 따라 판단하도록 구현"
+      ]
+    },
+    "final_model_registration": {
+      "desc": "본선 참가팀은 코드 ZIP과 별도로 모델 ZIP(최대 32GB)을 등록하고 PPT/PPTX 첨부. 가중치·토크나이저·설정·어댑터를 모델 ZIP 루트에 포함. 한 번 등록한 모델은 이후 코드 버전에서 재선택 가능",
+      "example_code": "import os\n\nmodel_dir = os.environ[\"NOVA_MODEL_DIR\"]\n# prepare()에서 이 로컬 디렉터리의 모델·토크나이저를 로드합니다.\n# consult()에서는 준비된 참가자 모델로 추론합니다.",
+      "notes": [
+        "서버가 선택한 모델을 읽기 전용 경로에 연결",
+        "본선 에이전트는 직접 로드한 모델을 사용하며 client.chat()을 사용하지 않음",
+        "실행 중 모델 다운로드나 GPU 두 장 결합 불가. A6000 48GB급 GPU 한 장에 실행 메모리까지 포함해 로드되어야 함",
+        "업로드 화면은 파일 해시 계산 후 분할 전송. 중단 시 같은 브라우저에서 같은 파일을 다시 선택해 재개. 파일 이름이 같아도 내용이 다르면 새 모델 자산으로 등록"
+      ]
+    },
+    "troubleshooting": [
+      {
+        "status": "로그인 메일이 오지 않음",
+        "check": "등록 이메일·스팸함과 메일 서비스 상태 확인"
+      },
+      {
+        "status": "INVALID_API_RESPONSE (HTTP 403, error code: 1010)",
+        "check": "Cloudflare가 Python 기본 User-Agent(Python-urllib) 요청을 차단. nova_sdk.py 1.0.1 이상 사용하거나 요청 헤더에 'User-Agent': 'nova-sdk/1.0.1' 추가"
+      },
+      {
+        "status": "CONTENT_TOO_LONG · EMPTY_CONTENT",
+        "check": "NFC 30자 제한과 빈 내용 확인. SAY·EXAM은 1턴 사용. SDK는 30자 초과를 전송 전에 막음"
+      },
+      {
+        "status": "EXAM_NOT_SPECIFIC",
+        "check": "진찰 동작 하나만 구체적으로. 답은 없지만 1턴 사용"
+      },
+      {
+        "status": "TEST_NOT_SPECIFIC",
+        "check": "검사 하나만 구체적으로(본선). 턴 미사용"
+      },
+      {
+        "status": "EXAM_NOT_RECOGNIZED",
+        "check": "신체진찰이 아닌 요청이거나 존재하지 않는 진찰. 답은 없지만 1턴 사용"
+      },
+      {
+        "status": "TEST_NOT_OFFERED",
+        "check": "대회에서 제공하지 않는 검사(본선). 턴 미사용"
+      },
+      {
+        "status": "ACTION_NOT_AVAILABLE",
+        "check": "예선에서는 TEST 불가. 턴 미사용"
+      },
+      {
+        "status": "PROVIDER_RESPONSE_INVALID · PATIENT_RESPONSE_INVALID · EXAMINER_RESPONSE_INVALID",
+        "check": "Doctor 빈 답 또는 가상 환자·진찰 판정 모델 형식 오류. 요금·턴 미사용, 새 요청으로 재전송(기본 에이전트 참고). 공식 평가 중에도 동일. Doctor 빈 답은 증례당 200회에는 포함"
+      },
+      {
+        "status": "MODEL_NOT_ALLOWED",
+        "check": "진료 세션 안에서 gpt-oss-20b 외 모델 지정, 또는 쓸 수 없는 모델 이름"
+      },
+      {
+        "status": "MODEL_CALL_LIMIT · MODEL_TOKEN_BUDGET",
+        "check": "증례당 200회 또는 토큰 한도 소진 → 지금까지 내용으로 DIAGNOSE. 세션 밖이면 팀 일일 한도 소진(KST 자정 초기화)"
+      },
+      {
+        "status": "PROVIDER_UNAVAILABLE",
+        "check": "모델 서비스 일시 장애 또는 Doctor가 180초 안에 답을 시작하지 못함(reasoning_effort 높고 출력이 길면 발생 쉬움). 잠시 뒤 같은 request_id로 재전송. 재시도 없이 멈추면 실행 실패"
+      },
+      {
+        "status": "REQUEST_PENDING",
+        "check": "같은 request_id 처리 중(503) 또는 다른 Doctor 호출 진행 중(409). 같은 request_id로 재전송하면 완료된 답 수신. 클라이언트 대기 시간은 서버 한도(180초)보다 길게(SDK 기본 240초)"
+      },
+      {
+        "status": "SAMPLE_VALIDATION_FAILED",
+        "check": "공개 샘플 중 실행 실패·기록 미제출 증례 존재. 제출 상세에서 증례별 사유(실행 오류·시간 초과·메모리 초과·기록 미제출·Doctor 미호출)와 stderr 마지막 부분 확인. 리더보드 평가는 사유만 표시. 개발 키트·local.Dockerfile로 재현"
+      },
+      {
+        "status": "서버 장애 (운영진이 확인)",
+        "check": "평가 서버 쪽 문제. 운영진이 같은 제출을 재실행하며 일일 평가 횟수 미차감. 고칠 코드 없음"
+      },
+      {
+        "status": "DEPENDENCY_DOWNLOAD_FAILED",
+        "check": "패키지·버전이 PyPI에 휠로 있는지 확인. local.Dockerfile로 재현 가능"
+      },
+      {
+        "status": "DEPENDENCY_BUILD_FAILED",
+        "check": "휠 설치 실패. 패키지 간 버전 충돌 확인"
+      },
+      {
+        "status": "DEPENDENCY_DOWNLOAD_TOO_LARGE · BUILD_TIMEOUT",
+        "check": "의존성 용량(휠 합계 8GB) 또는 빌드 시간(20분) 초과. 불필요한 패키지 제거"
+      },
+      {
+        "status": "빌드·검증 실패",
+        "check": "ZIP 루트의 필수 파일과 SDK 사용법 확인"
+      },
+      {
+        "status": "리더보드 제출 불가",
+        "check": "접수 기간과 팀의 당일 잔여 횟수 확인. 샘플 검증은 필수 아니지만 먼저 하면 실행 실패로 공식 평가 횟수를 잃는 일을 줄일 수 있음"
+      },
+      {
+        "status": "서비스 장애·정산 대기",
+        "check": "임의의 점수·비용으로 대체하지 않음. 처리 상태 재확인"
+      }
+    ],
+    "support": "운영 문의 시 팀명, 제출 버전, 표준 오류 코드를 알려 줄 것 — aisnubh@gmail.com"
+  }
+}

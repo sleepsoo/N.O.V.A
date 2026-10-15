@@ -1,0 +1,484 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "안녕하세요, 걱정되셨죠. 아이가 다른 불편한 데는요?",
+      "effective_content": "아이가 다른 불편한 데는요?",
+      "response": {
+        "status": "OK",
+        "content": "밤에 깨는 일은 거의 없고, 깊게 잘 잔다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "안녕하세요, 걱정되셨죠. 아이가 다른 불편한 데는요?"
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "예전에 잰 키 기록이 있나요?",
+      "effective_content": "예전에 잰 키 기록이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "두 살 때 키 163cm, 네 살 때 96cm이었어요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "예전에 잰 키 기록이 있나요?"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "부모님 키는 각각 어떻게 되세요?",
+      "effective_content": "부모님 키는 각각 어떻게 되세요?",
+      "response": {
+        "status": "OK",
+        "content": "아빠는 118cm, 엄마는 165cm예요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "부모님 키는 각각 어떻게 되세요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "부모님 중 늦게 키가 큰 분 있나요?",
+      "effective_content": "부모님 중 늦게 키가 큰 분 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아빠는 어릴 때 키가 작아서 할머니가 걱정했는데, 고등학교에 들어가서 갑자기 키가 많이 컸다고 해요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "부모님 중 늦게 키가 큰 분 있나요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "음모나 고환 변화가 있었나요?",
+      "effective_content": "음모나 고환 변화가 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "음모나 고환 크기 변화, 가슴이 발달하는 증상은 없어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "음모나 고환 변화가 있었나요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "최근 살이 빠지거나 찌진 않았나요?",
+      "effective_content": "최근 살이 빠지거나 찌진 않았나요?",
+      "response": {
+        "status": "OK",
+        "content": "최근 살이 빠지거나 찌진 적 없어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "최근 살이 빠지거나 찌진 않았나요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "잘 지치거나 변비, 추위 타나요?",
+      "effective_content": "잘 지치거나 변비, 추위 타나요?",
+      "response": {
+        "status": "OK",
+        "content": "피곤해요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "잘 지치거나 변비, 추위 타나요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "두통이나 구토, 시야 이상은요?",
+      "effective_content": "두통이나 구토, 시야 이상은요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "두통이나 구토, 시야 이상은요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "배만 나오거나 얼굴이 둥글어졌나요?",
+      "effective_content": "배만 나오거나 얼굴이 둥글어졌나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "배만 나오거나 얼굴이 둥글어졌나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "1년간 평균 월간 키 증가가 1cm 이하인가요?",
+      "effective_content": "1년간 평균 월간 키 증가가 1cm 이하인가요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 1년 동안 5cm 자랐어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "1년간 평균 월간 키 증가가 1cm 이하인가요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+      "effective_content": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "천식이나 장, 콩팥 질환은 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "천식이나 장, 콩팥 질환 들은 적 있나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "스테로이드나 한약 먹은 적 있나요?",
+      "effective_content": "스테로이드나 한약 먹은 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 스테로이드제나 한약은 먹지 않았어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "스테로이드나 한약 먹은 적 있나요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "임신이나 출산 때 문제가 있었나요?",
+      "effective_content": "임신이나 출산 때 문제가 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "임신 중이나 출생 과정에서 특별한 문제는 없었어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "임신이나 출산 때 문제가 있었나요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "말이나 걷기는 또래만큼 했나요?",
+      "effective_content": "말이나 걷기는 또래만큼 했나요?",
+      "response": {
+        "status": "OK",
+        "content": "말도 잘하고, 걷기도 또래와 비슷해요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "말이나 걷기는 또래만큼 했나요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "잠을 못 자고 스트레스를 많이 받는다고 느끼시나요?",
+      "effective_content": "잠을 못 자고 스트레스를 많이 받는다고 느끼시나요?",
+      "response": {
+        "status": "OK",
+        "content": "밤에 깨는 일은 거의 없고, 깊게 잘 잔다.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "잠을 못 자고 스트레스를 많이 받는다고 느끼시나요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "가슴이 답답하거나 호흡이 힘드시나요?",
+      "effective_content": "가슴이 답답하거나 호흡이 힘드시나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "가슴이 답답하거나 호흡이 힘드시나요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "가족 중 키가 작거나 유전병 있나요?",
+      "effective_content": "가족 중 키가 작거나 유전병 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아빠는 어릴 때 키가 작았고, 가족 중 유전 질환이나 호르몬 문제가 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "가족 중 키가 작거나 유전병 있나요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "어머님이 가장 걱정되시는 게 뭐예요?",
+      "effective_content": "어머님이 가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "키가 작아서 큰 병이 있을까 걱정이 많아요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "어머님이 가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "EXAM",
+      "content": "신체 계측하겠습니다",
+      "effective_content": "r04",
+      "response": {
+        "status": "OK",
+        "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "EXAM",
+      "content": "성장도표 백분위수 확인하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "EXAM",
+      "content": "신체 비율 평가하겠습니다",
+      "effective_content": "r07",
+      "response": {
+        "status": "OK",
+        "result": "상·하절 비율 정상, 양팔간격 불균형(-)",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "사춘기 성숙도 평가하겠습니다",
+      "effective_content": "r18",
+      "response": {
+        "status": "OK",
+        "result": "Tanner 1기, 고환 2mL/2mL",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "안면 기형 소견 시진하겠습니다",
+      "effective_content": "r11",
+      "response": {
+        "status": "OK",
+        "result": "안면 기형(-), 귀 위치 이상(-/-)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "비대(-), 결절(-), 압통(-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "자주색 선조 시진하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "자주색 선조(-), 색소침착(-), 중심성 비만(-), 달덩이얼굴(-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "SAY",
+      "content": "걱정 많으셨죠, 가족성 저신장 가능해요.",
+      "effective_content": "걱정 많으셨죠, 가족성 저신장 가능해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 26,
+        "turns_remaining": 24
+      },
+      "payload": {
+        "content": "걱정 많으셨죠, 가족성 저신장 가능해요."
+      }
+    },
+    {
+      "turn": 27,
+      "action": "SAY",
+      "content": "피로에 힘들어하고 언어도 정상이에요.",
+      "effective_content": "피로에 힘들어하고 언어도 정상이에요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 27,
+        "turns_remaining": 23
+      },
+      "payload": {
+        "content": "피로에 힘들어하고 언어도 정상이에요."
+      }
+    },
+    {
+      "turn": 28,
+      "action": "SAY",
+      "content": "걱정하신 큰 병보다 가족성 저신장 가능성이 높아요.",
+      "effective_content": "걱정하신 큰 병보다 가족성 저신장 가능성이 높아요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 28,
+        "turns_remaining": 22
+      },
+      "payload": {
+        "content": "걱정하신 큰 병보다 가족성 저신장 가능성이 높아요."
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "골연령, 갑상선, 성장호르몬 검사를 할게요.",
+      "effective_content": "골연령, 갑상선, 성장호르몬 검사를 할게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 29,
+        "turns_remaining": 21
+      },
+      "payload": {
+        "content": "골연령, 갑상선, 성장호르몬 검사를 할게요."
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "두통·구토·시야 변화·목 거름·발진이면 바로 오세요.",
+      "effective_content": "두통·구토·시야 변화·목 거름·발진이면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      },
+      "payload": {
+        "content": "두통·구토·시야 변화·목 거름·발진이면 바로 오세요."
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "6개월마다 키를 재서 성장 곡선을 봐요.",
+      "effective_content": "6개월마다 키를 재서 성장 곡선을 봐요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "6개월마다 키를 재서 성장 곡선을 봐요."
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "더 궁금하신 점 있으세요?",
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도예요.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "더 궁금하신 점 있으세요?"
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "두통이 있으면 바로 오세요.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요."
+      }
+    },
+    {
+      "turn": 33,
+      "action": "DIAGNOSE",
+      "diagnosis": "가족성 저신장 (Familial short stature)"
+    }
+  ]
+}

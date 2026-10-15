@@ -1,0 +1,586 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "식사량은 예전과 비교해 어떠세요?",
+      "effective_content": "식사량은 예전과 비교해 어떠세요?",
+      "response": {
+        "status": "OK",
+        "content": "식사량이 예전보다 늘어난 것 같아요.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "식사량은 예전과 비교해 어떠세요?"
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "더위를 예전보다 많이 타세요?",
+      "effective_content": "더위를 예전보다 많이 타세요?",
+      "response": {
+        "status": "OK",
+        "content": "요즘 들어 더위를 많이 타는 것 같아요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "더위를 예전보다 많이 타세요?"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "가슴이 두근거릴 때가 있나요?",
+      "effective_content": "가슴이 두근거릴 때가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거려요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "가슴이 두근거릴 때가 있나요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "손이 떨리세요?",
+      "effective_content": "손이 떨리세요?",
+      "response": {
+        "status": "OK",
+        "content": "손이 떨리는 것도 느껴진다.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "손이 떨리세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "대변 횟수나 모양이 변했나요?",
+      "effective_content": "대변 횟수나 모양이 변했나요?",
+      "response": {
+        "status": "OK",
+        "content": "변이 묽은 편이고, 설사까지는 아니지만 예전보다 변이 부드러워졌어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "대변 횟수나 모양이 변했나요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "물을 예전보다 많이 마시나요?",
+      "effective_content": "물을 예전보다 많이 마시나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "물을 예전보다 많이 마시나요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨 있으세요?",
+      "effective_content": "고혈압이나 당뇨 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨 있으세요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "눈이 뻑뻑하고 가끔 충혈되는 느낌이 있어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "다른 지병이 있으세요?",
+      "effective_content": "다른 지병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "다른 지병이 있으세요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "드시는 약이나 영양제 있으세요?",
+      "effective_content": "드시는 약이나 영양제 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "복용 중인 약이나 건강보조식품도 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "드시는 약이나 영양제 있으세요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "부모님이나 형제분 앓는 병 있나요?",
+      "effective_content": "부모님이나 형제분 앓는 병 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "어머니가 갑상샘 기능저하증이 있어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "부모님이나 형제분 앓는 병 있나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "담배는 피우세요?",
+      "effective_content": "담배는 피우세요?",
+      "response": {
+        "status": "OK",
+        "content": "담배는 피우지 않아요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "담배는 피우세요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "술은 얼마나 드세요?",
+      "effective_content": "술은 얼마나 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "한 달에 한두 번 가볍게 마셔요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "술은 얼마나 드세요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "요즘 스트레스 받는 일 있으세요?",
+      "effective_content": "요즘 스트레스 받는 일 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "최근에 특별히 스트레스를 많이 받은 일은 없지만, 회사 일이 바빠서 피곤한 건 있었다.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "요즘 스트레스 받는 일 있으세요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "운동량이 늘었나요?",
+      "effective_content": "운동량이 늘었나요?",
+      "response": {
+        "status": "OK",
+        "content": "최근에 운동을 더 하거나 활동량이 늘어난 일은 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "운동량이 늘었나요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "생리 주기나 양이 변했나요?",
+      "effective_content": "생리 주기나 양이 변했나요?",
+      "response": {
+        "status": "OK",
+        "content": "생리 주기가 두 달 동안 짧아지고 양이 많이 줄었어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "생리 주기나 양이 변했나요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "혹시 임신 가능성은 있으세요?",
+      "effective_content": "혹시 임신 가능성은 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "임신 가능성은 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "혹시 임신 가능성은 있으세요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "요즘 기분이 많이 가라앉나요?",
+      "effective_content": "요즘 기분이 많이 가라앉나요?",
+      "response": {
+        "status": "OK",
+        "content": "기분이 가라앉거나 우울하지는 않아요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "요즘 기분이 많이 가라앉나요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "즐겁던 일에 흥미가 줄었나요?",
+      "effective_content": "즐겁던 일에 흥미가 줄었나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "즐겁던 일에 흥미가 줄었나요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "혹시 죽고 싶은 생각이 드신 적 있나요?",
+      "effective_content": "혹시 죽고 싶은 생각이 드신 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "죽고 싶다는 생각은 한 적 없어요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "혹시 죽고 싶은 생각이 드신 적 있나요?"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "구체적으로 방법을 생각해 보셨나요?",
+      "effective_content": "구체적으로 방법을 생각해 보셨나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "구체적으로 방법을 생각해 보셨나요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "검사와 치료가 궁금해요.",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "갑상선 안징후 검사하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "요골동맥 맥박 촉진하겠습니다",
+      "effective_content": "r04",
+      "response": {
+        "status": "OK",
+        "result": "102회/분, 규칙적, 강하고 빠름",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "피부 온도·발한 촉진하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "자세성 떨림 확인하겠습니다",
+      "effective_content": "r21",
+      "response": {
+        "status": "OK",
+        "result": "자세성 떨림(+/+)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "갑상선 잡음 청진하겠습니다",
+      "effective_content": "r11",
+      "response": {
+        "status": "OK",
+        "result": "잡음(+/+)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "결막·공막 시진하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "창백(-/-), 충혈(-/-), 황달(-/-)",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 지남력 3/3점",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "EXAM",
+      "content": "기분·정동 평가하겠습니다",
+      "refused": "EXAM_NOT_RECOGNIZED"
+    },
+    {
+      "turn": 33,
+      "action": "EXAM",
+      "content": "심부건반사 검사하겠습니다",
+      "effective_content": "r20",
+      "response": {
+        "status": "OK",
+        "result": "슬개건 3+/3+, 아킬레스건 2+/2+",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "그레이브스병으로 인한 갑상선 항진의 가능성이 큽니다",
+      "effective_content": "그레이브스병으로 인한 갑상선 항진의 가능성이 큽니다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "그레이브스병으로 인한 갑상선 항진의 가능성이 큽니다"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "호르몬이 많아 체중이 줄고 가슴이 두근거려요",
+      "effective_content": "호르몬이 많아 체중이 줄고 가슴이 두근거려요",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거리는 증상도 자주 있어요.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "호르몬이 많아 체중이 줄고 가슴이 두근거려요"
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "검사 결과를 확인해 정확한 진단을 노력할 거예요",
+      "effective_content": "검사 결과를 확인해 정확한 진단을 노력할 거예요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "검사 결과를 확인해 정확한 진단을 노력할 거예요"
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "항갑상샘제를 쓰면 드물게 고열이 올 수 있어요",
+      "effective_content": "항갑상샘제를 쓰면 드물게 고열이 올 수 있어요",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "항갑상샘제를 쓰면 드물게 고열이 올 수 있어요"
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요",
+      "effective_content": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요"
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "밤에도 땀이 많이 나서 잠옷이 젖을 때가 있어요.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요."
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "1~2주 뒤 결과 보러 다시 오세요",
+      "effective_content": "1~2주 뒤 결과 보러 다시 오세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "1~2주 뒤 결과 보러 다시 오세요"
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "더 궁금하신 점 있으세요?",
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "손이 떨리는 것도 느껴져요.",
+        "turn": 41,
+        "turns_remaining": 9
+      },
+      "payload": {
+        "content": "더 궁금하신 점 있으세요?"
+      }
+    },
+    {
+      "turn": 41,
+      "action": "DIAGNOSE",
+      "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)"
+    }
+  ]
+}

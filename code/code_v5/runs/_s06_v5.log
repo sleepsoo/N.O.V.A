@@ -1,0 +1,93 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  18.3s] llm[intake] low out=325 finish=stop 18.2s
+[  18.3s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로', 'request': '', 'categories': ['fatigue', 'urinary', 'dm'], 'empathy': '정말 힘드셨군요.', 'answered': []} diffs=['형이상성당뇨병', '호흡기 감염에 의한 약간의 고혈당', '신우신염 또는 요로 감염', '탈수로 인한 전해질 불균형', '대사성 산증(예: 열상대사 위축)']
+[  18.3s] checklist: 58 items, covered=['hpi_onset']
+[  22.9s] turn 1 SAY: 정말 힘드셨군요. 최근 체중 변화가 있나요? -> 삼 키로그람 정도 빠졌어요.
+[  29.2s] turn 2 SAY: 추위를 예전보다 많이 타세요? -> 더위나 추위를 타는 것은 예전과 같아요.
+[  33.4s] turn 3 SAY: 조금만 움직여도 숨이 차나요? -> 숨이 찬 적은 없어요.
+[  37.9s] turn 4 SAY: 변이 검거나 피가 섞인 적 있나요? -> 그런 건 없어요.
+[  43.9s] turn 5 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압이 있어요, 하루 한 알 먹고 있어요.
+[  54.8s] turn 6 SAY: 다른 지병이 있으세요? -> 소변도 자주 마려워요.
+[  59.3s] turn 7 SAY: 드시는 약이나 영양제 있으세요? -> 혈압약 하루 한 알 먹고 있어요.
+[  67.7s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 당뇨 때문에 투석이 될까 걱정돼요.
+[  95.7s] llm[plan_q] low out=564 finish=stop 27.9s
+[  99.2s] turn 9 SAY: 배변이 원활하신가요? -> 그런 건 없어요.
+[ 102.2s] turn 10 SAY: 다리 부기가 있나요? -> 그런 건 없어요.
+[ 111.6s] turn 11 SAY: 증세가 점점 심해지나요? -> 두세 달 전부터 몸이 피곤하고 목이 말라요.
+[ 115.4s] turn 12 SAY: 이전에도 같은 증세로 진료받으셨어요? -> 그런 건 없어요.
+[ 119.3s] turn 13 SAY: 담배를 피우시나요? -> 담배는 피운 적 없어요.
+[ 123.5s] turn 14 SAY: 술을 자주 드시나요? -> 술은 거의 마시지 않아요.
+[ 126.8s] turn 15 SAY: 요즘 기분이 우울하시나요? -> 그런 건 없어요.
+[ 141.7s] llm[plan_q] low out=290 finish=stop 14.9s
+[ 144.7s] turn 16 SAY: 잠은 잘 주무세요? -> 그런 건 없어요.
+[ 150.0s] turn 17 SAY: 목이 자주 말라요? -> 두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.
+[ 154.5s] turn 18 SAY: 부모님이나 형제분 앓는 병 있나요? -> 아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.
+[ 161.1s] turn 19 SAY: 과거에 혈당이 높다고 들으셨나요? -> 이 년 전 건강검진에서 혈당이 조금 높다고 해서 운동하라는 말을 들었는데, 그 뒤로 다시 검사하지는 않았다.
+[ 166.2s] turn 20 SAY: 소변에 분비물이 늘거나 냄새가 나나요? -> 그런 건 없어요.
+[ 172.8s] turn 21 SAY: 옆구리나 허리에 통증이 있나요? -> 그런 건 없어요.
+[ 176.7s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.
+[ 176.7s] interview done: asked=22 covered=6 uncovered_p1=[]
+[ 184.3s] llm[exams] low out=165 finish=stop 7.6s
+[ 184.3s] exams plan: ['general', 'conj', 'thyroid', 'heart', 'lung', 'periph', 'abd_palp', 'cva', 'fundus', 'sensory', 'orthostatic']
+[ 184.3s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 184.3s] turn 24 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 184.3s] turn 25 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 184.3s] turn 26 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 184.3s] turn 27 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 184.3s] turn 28 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 184.3s] turn 29 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 193.2s] turn 30 EXAM: 늑척추각 압통 확인하겠습니다 -> 압통(-/-)
+[ 193.2s] turn 31 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 208.6s] turn 32 EXAM REFUSED EXAM_NOT_SPECIFIC: 사지 감각 검사하겠습니다
+[ 208.6s] turn 33 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 4mmHg, 어지럼(-)
+[ 459.0s] llm[facts] medium out=5340 finish=stop 250.4s
+[ 459.0s] fact key demoted: ros.Hematochezia turn 4
+[ 459.0s] fact key demoted: ros.Constipation turn 9
+[ 459.0s] fact key demoted: ros.Constipation turn 9
+[ 459.0s] facts: 28
+[ 522.3s] llm[dx] medium out=1356 finish=stop 63.3s
+[ 522.3s] guidelines[plan-mgmt]: 2019 Clinical Practice Guidelines for Type 2 Diabetes Mellitus in Korea (KR_EuropePMC, 2019)
+[ 522.3s] guidelines[plan-ovw]: 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021)
+[ 522.3s] guidelines[plan-edu]: 당뇨병 (KR_HealthInfo, 2026)
+[ 554.2s] llm[plan_say] low out=662 finish=stop 31.9s
+[ 648.7s] llm[say_fix] low out=1993 finish=stop 94.5s
+[ 648.7s] say fixes: ['warning', 'followup']
+[ 652.9s] turn 34 SAY: 당뇨 가능성이 높아 보입니다 -> 네, 알겠습니다.
+[ 657.5s] turn 35 SAY: 갈증·다뇨 증세가 혈당 상승과 연관되어 있어요 -> 네, 알겠습니다.
+[ 661.5s] turn 36 SAY: 투석 우려가 크지만, 신장 기능이 아직 양호해요 -> 네, 알겠습니다.
+[ 665.0s] turn 37 SAY: 경구 혈당강하제는 검사가 끝난 뒤에 시작을 고려합니다 -> 네, 알겠습니다.
+[ 668.4s] turn 38 SAY: 심한 갈증·구토·복통·의식 흐림 시 바로 오세요. -> 네, 알겠습니다.
+[ 675.7s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 소변이 자주 와서 낮에 열 번 넘게 화장실에 가요.
+[ 677.9s] turn 40 SAY: 1~2주 뒤 결과 보러 다시 오세요. -> 네, 알겠습니다.
+[ 686.9s] turn 41 SAY: 더 궁금하신 점 있으세요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 걱정돼요.
+[ 699.9s] llm[S-narr] low out=265 finish=stop 13.0s
+[ 699.9s] summary: turns=41 counts={'say': 30, 'exam': 10, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 22} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 15452, 'doctor_output_tokens': 10960, 'elapsed_s': 699.8} dx=제2형 당뇨병 (Type 2 Diabetes Mellitus)
+S06 gpt-oss-20b: total=48 정보수집=12 진단추론=10 검사·추적=0 안전=10 의사소통=8 효율=8 dx5=4
+- missed_key_questions: ['다뇨 빈도', '야간뇨 빈도', '시야 흐림', '질 가려움·분비물', '발 저림·상처', '삼색기능 검사', '오르정기적 가정', '저혈당 경고', '운동·식이 계획 구체화']
+- missed_key_exams: ['피부 흑색극세포증(ACANthosis)', '발 감각검사(Monofilament)', '외음부 시진', '외과/초음파 검사를 통한 신장/요도 검출']
+- top_improvements: ['1) 핵심 병력 항목 포괄적 수집 및 기록', '2) 필수 검사(공복 혈당, HbA1c, 신기능, 소변 검사 등) 주문 및 추적 일정 수립', '3) 환자에게 진단 결과와 위험 요소를 이해하기 쉬운 언어로 설명 및 교육', '4) 외래 진료 시 불필요한 질문 최소화 및 차례대로 진단적 접근 수행', '5) 환자 교육 시 구체적 생활습관 개선 지침(식단, 운동, 체중 감량 목표) 제공']
+{
+ "turns": 41,
+ "say": 30,
+ "exam": 10,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 9,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 9,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 15452,
+ "doctor_output_tokens": 10960,
+ "sim_calls": 32,
+ "seconds": 699.9,
+ "diagnosis": "제2형 당뇨병 (Type 2 Diabetes Mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 48,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v5/runs/sim-S06-v5

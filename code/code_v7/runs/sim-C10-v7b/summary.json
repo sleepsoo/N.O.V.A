@@ -1,0 +1,427 @@
+{
+  "case_id": "C10",
+  "alias": "C10",
+  "turns": 42,
+  "say": 31,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 18884,
+  "doctor_output_tokens": 11795,
+  "seconds": 758.2,
+  "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "체중 감소",
+    "request": "",
+    "categories": [
+      "weight_loss",
+      "fatigue"
+    ],
+    "empathy": "불안스러우셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "그레이브스병이 의심돼요",
+    "면역 이상으로 갑상샘 호르몬이 많아 살이 빠졌어요",
+    "걱정이 많으시군요, 검사를 통해 확인해요",
+    "항갑상샘제를 복용하면 심장 두근거림이 줄어요",
+    "두근거림 약 전에 천식·심장병 있으면 알려 주세요.",
+    "숨참·불규칙한 맥·고열·혼란 시 바로 오세요",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "1~2주 뒤 결과로 다시 와 주세요",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 784,
+      "out": 206,
+      "finish": "stop",
+      "sec": 10.2
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2990,
+      "out": 461,
+      "finish": "stop",
+      "sec": 20.3
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3234,
+      "out": 565,
+      "finish": "stop",
+      "sec": 28.1
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1075,
+      "out": 95,
+      "finish": "stop",
+      "sec": 4.5
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1597,
+      "out": 7714,
+      "finish": "stop",
+      "sec": 351.8
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2609,
+      "out": 1993,
+      "finish": "stop",
+      "sec": 88.0
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 4404,
+      "out": 502,
+      "finish": "stop",
+      "sec": 22.2
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2191,
+      "out": 259,
+      "finish": "stop",
+      "sec": 11.7
+    }
+  ],
+  "phase_times": {
+    "intake": 10.2,
+    "interview": 171.8,
+    "examine": 58.2,
+    "facts": 351.8,
+    "dx": 88.1,
+    "plan_say": 22.2,
+    "explain": 44.0,
+    "S": 11.7
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "연령",
+      "pol": "+",
+      "detail": "",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여성",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "신장",
+      "pol": "+",
+      "detail": "",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "현재 체중",
+      "pol": "+",
+      "detail": "49kg",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이전 체중",
+      "pol": "+",
+      "detail": "56kg",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 감소",
+      "pol": "+",
+      "detail": "3개월 7kg",
+      "id": "F6"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "식사량 증가",
+      "pol": "+",
+      "detail": "증가",
+      "id": "F7"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "열감 증대",
+      "pol": "+",
+      "detail": "이전보다",
+      "id": "F8"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "ros.Palpitation",
+      "label": "가슴 두근거림",
+      "pol": "+",
+      "detail": "자주",
+      "id": "F9"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "other",
+      "label": "손떨림",
+      "pol": "+",
+      "detail": "감지",
+      "id": "F10"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Chest pain",
+      "label": "가슴 통증",
+      "pol": "-",
+      "detail": "",
+      "id": "F11"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "변 부드러워짐",
+      "pol": "+",
+      "detail": "부드러워짐",
+      "id": "F12"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "물 섭취",
+      "pol": "-",
+      "detail": "",
+      "id": "F13"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "큰 병 우려",
+      "pol": "+",
+      "detail": "",
+      "id": "F14"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "열",
+      "pol": "-",
+      "detail": "",
+      "id": "F15"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "소변량 증가",
+      "pol": "+",
+      "detail": "약간",
+      "id": "F16"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "other",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "",
+      "id": "F17"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "other",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "",
+      "id": "F18"
+    },
+    {
+      "turn": 13,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "",
+      "id": "F19"
+    },
+    {
+      "turn": 14,
+      "sec": "sh",
+      "key": "other",
+      "label": "술 섭취",
+      "pol": "+",
+      "detail": "한 달에 1~2회 가볍게",
+      "id": "F20"
+    },
+    {
+      "turn": 15,
+      "sec": "pmh",
+      "key": "other",
+      "label": "만성질환",
+      "pol": "-",
+      "detail": "",
+      "id": "F21"
+    },
+    {
+      "turn": 16,
+      "sec": "women",
+      "key": "other",
+      "label": "임신 가능성",
+      "pol": "-",
+      "detail": "",
+      "id": "F22"
+    },
+    {
+      "turn": 17,
+      "sec": "meds",
+      "key": "other",
+      "label": "약/영양제 복용",
+      "pol": "-",
+      "detail": "",
+      "id": "F23"
+    },
+    {
+      "turn": 18,
+      "sec": "fh",
+      "key": "other",
+      "label": "갑상샘 기능저하증",
+      "pol": "+",
+      "detail": "약 복용 중",
+      "id": "F24"
+    },
+    {
+      "turn": 19,
+      "sec": "psych",
+      "key": "other",
+      "label": "우울",
+      "pol": "-",
+      "detail": "",
+      "id": "F25"
+    },
+    {
+      "turn": 20,
+      "sec": "women",
+      "key": "other",
+      "label": "생리량 감소",
+      "pol": "+",
+      "detail": "주기 짧음",
+      "id": "F26"
+    },
+    {
+      "turn": 21,
+      "sec": "psych",
+      "key": "other",
+      "label": "수면 부족",
+      "pol": "+",
+      "detail": "",
+      "id": "F27"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "검사·치료 기대",
+      "pol": "+",
+      "detail": "",
+      "id": "F28"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "08189bbc719279f3ceb5bf828def0467e7d90028371637f74259050bd757a475",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "불안스러우셨겠어요. 식사량은 예전과 비교해 어떠세요?",
+      "effective": "식사량은 예전과 비교해 어떠세요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C10",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 35,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 8,
+  "sim_doctor_calls": 8,
+  "sim_doctor_input_tokens": 18884,
+  "sim_doctor_output_tokens": 11795,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v7/run.py"
+}

@@ -1,0 +1,39 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  13.5s] llm[intake] low out=306 finish=stop 13.3s
+[  13.5s] intake: {'age': 62, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '불면 (수면제 처방 원함)', 'request': '수면제 처방', 'categories': ['substance', 'insomnia', 'fatigue'], 'empathy': '걱정이셨겠어요.', 'answered': []} diffs=['게르니케 기억상실증', '우울성불면증', '갑상선기능저하', '만성피로증후군', '신경성통증']
+[  13.5s] intake_v8 llm items: {'discriminators': [{'q': '어제 밤 몇 번씩 잠에서 깨셨나요?', 'label': '수면패턴', 'sys': 'sleep'}, {'q': '평소에 에너지 수준이 낮으셨나요?', 'label': '피로감', 'sys': 'psy'}, {'q': '최근 감정상태가 안 좋으셨나요?', 'label': '우울감', 'sys': 'psy'}, {'q': '일상 생활에서 반복적 스트레스를 느끼시나요?', 'label': '스트레스', 'sys': 'psy'}, {'q': '혈당 수치를 측정해 보셨나요?', 'label': '혈당', 'sys': 'endo'}], 'contra': [{'q': '갑상선 질환이 있었나요?', 'label': '갑상선', 'sys': 'gen'}, {'q': '약물 부작용이 있으셨나요?', 'label': '약물', 'sys': 'gen'}]}
+[  13.5s] llm contra rejected (off_system:neck/ok): 갑상선 질환이 있었나요?
+[  13.5s] llm discriminators dropped (bank category): ['어제 밤 몇 번씩 잠에서 깨셨나요?', '평소에 에너지 수준이 낮으셨나요?', '최근 감정상태가 안 좋으셨나요?', '일상 생활에서 반복적 스트레스를 느끼시나요?', '혈당 수치를 측정해 보셨나요?']
+[  22.3s] turn 1 SAY: 안녕하세요, 걱정이셨겠어요. 잠 말고 불편한 데는요? -> 수면제를 안 먹으면 밤새 뒤척이고 온몸이 불안해요.
+[  22.3s] cpx: main=substance bank=True chosen=['hpi_onset', 'sb_name', 'sb_dose_now', 'sb_tol', 'sb_withdraw', 'sb_cutdown', 'sb_seizure', 'sb_sources', 'sb_other', 'sb_last', 'ps_mood_si', 'sb_meds2', 'hx_admit_op', 'hx_allergy', 'fh_open', 'sh_alc_smoke', 'ice'] backlog=['sb_blackout', 'sb_family', 'in_day', 'ft_weight', 'ft_sleep', 'hx_htn_dm', 'sh_caffeine', 'sb_drive', 'llm_contra1', 'sh_job']
+[  28.3s] turn 2 SAY: 언제부터 잠을 못 주무셨어요? -> 일곱 해 전부터 잠을 못 자서 힘들었어요.
+[  32.6s] turn 3 SAY: 드시는 수면제 이름과 용량을 아세요? -> 약 이름은 스틸녹스라고 적힌 것도 있고, 병원마다 졸피뎀 무슨 정이라고 적힌 것도 있는데 약사가 같은 약…
+[  38.5s] turn 4 SAY: 요즘 하루에 몇 알 드세요? -> 최근 일 년 사이에 서너 알씩 먹어요.
+[  48.4s] turn 5 SAY: 처음보다 양이 늘거나 효과가 줄었나요? -> 처음엔 반 알로 잠들었는데, 지금은 네 알도 두세 시간 뒤에 깨요.
+[  51.7s] turn 6 SAY: 약을 안 드시면 어떤 증상이 있나요? -> 수면제를 안 먹으면 밤새 뒤척이고 온몸이 불안해요.
+[  59.0s] turn 7 SAY: 줄이거나 끊어 보려 하신 적 있나요? -> 약을 줄여보려고 했지만, 잠을 못 자고 불안해서 결국 다시 먹게 된다.
+[  61.5s] turn 8 SAY: 끊었을 때 경련이나 헛것이 있었나요? -> 그런 건 없어요.
+[  67.0s] turn 9 SAY: 약은 어디서 처방받으세요? -> 최근에는 한 곳에서 원하는 만큼 약을 못 받아서 집 근처 내과, 신경과, 정신과 등 여러 병원을 다니며…
+[  74.3s] turn 10 SAY: 다른 수면제나 약국 약도 드세요? -> 약국에서 처방 없이 살 수 있는 수면유도제도 가끔 사서 같이 먹었어요.
+[  78.7s] turn 11 SAY: 마지막으로 언제 몇 알 드셨어요? -> 어젯밤에 네 알을 먹었어요.
+[  82.2s] turn 12 SAY: 기분이 가라앉거나 죽고 싶은 적 있나요? -> 그런 건 없어요.
+[  87.4s] turn 13 SAY: 그 밖에 드시는 약이 있나요? -> 암로디핀을 먹고 있어요.
+[  90.1s] turn 14 SAY: 입원이나 수술한 적 있으세요? -> 그런 건 없어요.
+[  93.8s] turn 15 SAY: 약 알레르기나 천식 있으세요? -> 그런 건 없어요.
+[  99.0s] turn 16 SAY: 부모님이나 형제분 앓는 병 있나요? -> 어머니는 치매로, 아버지는 심장병이었어요.
+[  99.0s] cpx follow-up skipped (guard) [fh_open] must=2 room=1
+[ 106.5s] turn 17 SAY: 술이나 담배는 하세요? -> 담배는 안 피워요. 술은 소주 한두 잔 정도만 마셔요.
+[ 114.0s] turn 18 SAY: 가장 걱정되거나 궁금한 게 뭐예요? -> 이렇게 계속 먹어도 괜찮은지, 건강에 큰 문제가 생기지 않을지 걱정된다.
+[ 114.0s] interview_v8 done: asked=17 items=24 missing_must=[]
+[ 114.0s] exams plan v8: ['vitals', 'mental', 'sedation', 'cognitive', 'heart', 'lung', 'orthostatic'] (total=7, backlog=['post_tremor', 'cerebellar', 'gait', 'skin_temp', 'nystagmus', 'dysarthria', 'romberg', 'insight', 'rest_tremor', 'conj', 'liver_spleen', 'thyroid', 'periph', 'abd_palp', 'cervical_ln', 'dtr', 'pretibial'])
+[ 114.0s] turn 19 EXAM: 활력징후 측정하겠습니다 -> 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C
+[ 114.0s] turn 20 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 114.0s] turn 21 EXAM: 주간 진정·불안 관찰하겠습니다 -> 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)
+[ 114.0s] turn 22 EXAM: 인지기능 선별검사 하겠습니다 -> MMSE-K 28/30점, 지연회상 2/3점
+[ 114.0s] turn 23 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 114.0s] turn 24 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 114.0s] turn 25 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 6mmHg, 어지럼(-)
+[ 321.4s] llm[facts] medium out=4477 finish=stop 207.4s
+[ 321.4s] facts: 30
+[ 321.4s] guidelines[dx]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)

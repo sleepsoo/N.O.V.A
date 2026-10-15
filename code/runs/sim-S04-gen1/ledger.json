@@ -1,0 +1,390 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "숨이 차 많이 힘드셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "호흡곤란, 기침·가래에 대해 자세히 말씀해 주세요",
+    "reply": "가래는 지금은 하루 종일 누렇고 끈적한 가래가 많이 나온다.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "작년처럼 입원해야 하는 건 아닌지 걱정이 된다.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "열이 조금 나고 춥다",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "열은 조금 나는 것 같고, 으슬으슬 춥기도 했다.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "숨찬 증상의 경과에 대해 자세히 말씀해 주세요",
+    "reply": "집 안에서 조금만 움직여도 숨이 차고, 화장실 가기만 해도 숨이 차요.",
+    "phase": "interview",
+    "qid": "hpi_course",
+    "label": "경과"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "누우면 숨이 더 차나요?",
+    "reply": "누우면 숨이 더 차서 베개를 하나 더 받치고 잤다.",
+    "phase": "interview",
+    "qid": "dy_orthop",
+    "label": "기좌호흡"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "다리가 붓나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "dy_edema",
+    "label": "부종"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "숨 쉴 때 쌕쌕 소리가 나나요?",
+    "reply": "숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.",
+    "phase": "interview",
+    "qid": "dy_wheeze",
+    "label": "천명"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "가슴 통증도 있나요?",
+    "reply": "가슴이 쥐어짜듯 아픈 적은 없어요.",
+    "phase": "interview",
+    "qid": "dy_chest",
+    "label": "흉통"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨가 있으세요?",
+    "reply": "고혈압이 있고, 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "다른 지병에 대해 자세히 말씀해 주세요",
+    "reply": "고혈압이 있어서 혈압약을 하루 한 알 먹고, 당뇨나 심장병, 결핵은 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "숨찬 증상이 갑자기 시작됐나요?",
+    "reply": "사흘 전부터 숨이 많이 차고 기침과 가래가 심해져서 병원에 오게 되었다.",
+    "phase": "interview",
+    "qid": "dy_onset",
+    "label": "발생"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "이전 호흡기 진료에 대해 자세히 말씀해 주세요",
+    "reply": "오 년 전에 폐 기능 검사 받고 만성 폐쇄성 폐질환이라 들었어요.",
+    "phase": "interview",
+    "qid": "hpi_prior",
+    "label": "이전 진료"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "자다가 숨이 차서 깬 적 있나요?",
+    "reply": "벌떡 일어나 앉은 적은 없어요.",
+    "phase": "interview",
+    "qid": "dy_pnd",
+    "label": "야간 호흡곤란"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "가래에 피가 섞인 적 있나요?",
+    "reply": "가래에 피가 섞여 나온 적은 없어요.",
+    "phase": "interview",
+    "qid": "cf_hemop",
+    "label": "객혈"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "흡연력에 대해 자세히 말씀해 주세요",
+    "reply": "스무 살부터 하루 한 갑씩 오십 년 가까이 피웠다.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "열이 난 경과에 대해 자세히 말씀해 주세요",
+    "reply": "열은 조금 나는 것 같고, 으슬으슬 춥기도 했다.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "콧물이나 목 아픔은 없으세요?",
+    "reply": "콧물 나고 목이 칼칼했어요.",
+    "phase": "interview",
+    "qid": "cf_uri",
+    "label": "상기도 증상"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "약 알레르기가 있으세요?",
+    "reply": "약 알레르기는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "숨이 차면서 의식이 흐려진 적 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "작년처럼 입원해야 하는 건 아닌지 걱정이 된다.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(+), 앉은 자세에서 입술 오므린 호흡(+), 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "흉곽 시진하겠습니다",
+    "reply": "전후:좌우 1:1.2 술통형 흉곽(+), 보조호흡근 사용(+) 경도, 늑간 함몰(-)",
+    "phase": "exam",
+    "qid": "chest_insp",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "호흡음 감소(+/+), 호기 연장(+), 호기성 천명음(+/+) 미만성, 수포음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "흉부 타진하겠습니다",
+    "reply": "양측 과공명음(+/+), 탁음(-/-)",
+    "phase": "exam",
+    "qid": "chest_perc",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 104회/분, S3(-), 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "경정맥 팽대 관찰하겠습니다",
+    "reply": "경정맥 팽창(-), 45도에서 JVP 3cm",
+    "phase": "exam",
+    "qid": "jvp",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "종아리 압통 확인하겠습니다",
+    "reply": "압통(-/-), 둘레 차이(-)",
+    "phase": "exam",
+    "qid": "calf",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "인두·편도 시진하겠습니다",
+    "reply": "인두·편도 시진 | 인두 점막 무색, 편도 부위 무홍반, 부종(-), 비대(-), 비강 점막 무색",
+    "phase": "exam",
+    "qid": "pharynx",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "만성폐쇄성폐질환 악화로 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "누런 가래와 쌕쌕거림이 심해졌어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_meaning",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "검사와 호흡 상태를 보고 입원을 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "엑스선으로 폐렴과 폐부종을 살펴요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "결과에 따라 흡입치료 등을 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "숨이 더 차면 바로 의료진에게 알려주세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment2",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "숨참 악화·입술 파래짐·흉통·혼란이면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "오늘 검사 뒤 호흡과 입원 필요성을 다시 봐요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "어제 밤에는 숨이 차서 잠을 거의 못 잤다",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "숨참 악화·입술 파래짐·흉통·혼란이면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_recheck",
+    "label": ""
+  }
+]

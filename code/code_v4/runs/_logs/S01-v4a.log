@@ -1,0 +1,94 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  15.0s] llm[intake] low out=310 finish=stop 14.9s
+[  15.0s] intake: {'age': 24, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '오른쪽 아랫배 통증', 'request': '', 'categories': ['gi', 'abd_pain'], 'empathy': '많이 걱정되셨겠어요.', 'answered': []} diffs=['충수염 (Appendicitis)', '장염 (Enteritis)', '복강내 파열 (Peritonitis)', '급성신장결석 (Kidney stone)', '복막염 (Periapendicitis)']
+[  15.0s] checklist: 45 items, covered=['hpi_onset']
+[  18.8s] turn 1 SAY: 많이 걱정되셨겠어요. -> 네, 알겠습니다.
+[  21.7s] turn 2 SAY: 오른쪽 아랫배 통증에 대해 자세히 말씀해 주세요 -> 걷거나 기침하면 오른쪽 아랫배가 울려서 더 아프다
+[  26.1s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 밤새 잠을 거의 못 잤어요.
+[  29.4s] turn 4 SAY: 잠에 대해 자세히 말씀해 주세요 -> 밤새 잠을 거의 못 잤어요.
+[  43.6s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 몸이 으슬으슬하고 열이 나서 삼십칠 도였어요.
+[  43.6s] v4 q rejected (dup): 열에 대해 자세히 말씀해 주세요
+[  43.6s] guidelines[iv]: 급성 충수염 (KR_HealthInfo, 2026)
+[  65.8s] llm[plan_v4] low out=436 finish=stop 22.1s
+[  65.8s] v4 plan q bad (too_long): 오른쪽 아랫배 통증이 언제 가장 심하며, 움직일 때 어떻게 변하나요?
+[  65.8s] v4 plan q bad (pair_geona): 배가 이유 없이 팽만하거나 답답함을 느꼈나요?
+[  65.8s] v4 plan: diffs=['충수염 (Appendicitis)', '장염 (Enteritis)', '복막염 (Peritonitis)', '급성신장결석 (Kidney stone)', '복강내 파열 (Peritonitis)'] qs=[('free', '배뇨 시 통증이 있나요?'), ('free', '최근에 삼키는 데 어려움이 있었나요?'), ('free', '이전 날 물을 많이 마셨나요?'), ('free', '최근 항문 출혈이 있었나요?'), ('free', '음식을 먹은 뒤 통증이 더 심해졌나요?'), ('free', '요로 결석을 과거에 진단받은 적이 있나요?')] exams=[('abd_perc', '복부 압통 장소 확인으로 충수염 여부 판단', 'high'), ('rebound', '복부 반발통은 경막염 가능성 시사', 'high'), ('psoas', '요근 압통은 충수염 확실성 점검', 'mid'), ('obturator', '폐쇄근 압통은 소화기관 염증 확인', 'mid')] thyroid=False
+[  71.3s] turn 6 SAY: 배뇨 시 통증이 있나요? -> 소변 볼 때 따갑거나 아프지 않고, 소변 색도 평소와 같아요.
+[  73.8s] turn 7 SAY: 최근에 삼키는 데 어려움이 있었나요? -> 그런 건 없어요.
+[  78.2s] turn 8 SAY: 평소 앓는 병이 있으세요? -> 그런 건 없어요.
+[  82.5s] turn 9 SAY: 드시는 약이 있으세요? -> 소화제 한 알만 먹었어요.
+[  89.7s] turn 10 SAY: 가족 중에 아픈 분이 있으세요? -> 아버지는 고혈압으로 약을 드시고 있어요.
+[  93.1s] turn 11 SAY: 이전 날 물을 많이 마셨나요? -> 그런 건 없어요.
+[  98.1s] turn 12 SAY: 최근 항문 출혈이 있었나요? -> 변에 피가 섞이거나 검은 변을 본 적은 없어요.
+[ 147.8s] turn 13 SAY: 음식을 먹은 뒤 통증이 더 심해졌나요? -> 저녁 먹고 한 시간 뒤에 아프기 시작했어요.
+[ 150.1s] turn 14 SAY: 요로 결석을 과거에 진단받은 적이 있나요? -> 그런 건 없어요.
+[ 163.9s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 통증이 점점 심해지고 있어요.
+[ 163.9s] v4 interview done: q=14 turn=15 left=25
+[ 163.9s] v4 exams plan (c8flex, budget 14): spec=['abd_perc', 'rebound'] order=['vitals', 'general', 'mental', 'conj', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'abd_perc', 'liver_spleen', 'abd_palp', 'rebound', 'periph'] backups=['psoas', 'obturator', 'bowel', 'cervical_ln', 'skin_turgor', 'murphy']
+[ 163.9s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 124/76mmHg, 98회/분 규칙적, 18회/분, 37.9°C
+[ 163.9s] turn 17 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)
+[ 163.9s] turn 18 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 163.9s] turn 19 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 203.9s] turn 20 EXAM: 갑상선 촉진하겠습니다 -> 갑상선 촉진 (Thyroid palpation) | 크기 정상, 질감 정상, 결절 없음
+[ 203.9s] turn 21 EXAM: 흉곽 시진하겠습니다 -> 전후:좌우 1:2, 보조호흡근 사용(-)
+[ 203.9s] turn 22 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 203.9s] turn 23 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 98회/분, 심잡음(-)
+[ 203.9s] turn 24 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-), 수술 반흔(-)
+[ 203.9s] turn 25 EXAM: 복부 타진하겠습니다 -> 고창음, 우하복부 타진 압통(+)
+[ 203.9s] turn 26 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 203.9s] turn 27 EXAM: 복부 촉진하겠습니다 -> 우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)
+[ 210.2s] turn 28 EXAM: 반발통 확인하겠습니다 -> 우하복부 반발압통(+)
+[ 210.2s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 210.2s] v4 exams done: ['vitals', 'general', 'mental', 'conj', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'abd_perc', 'liver_spleen', 'abd_palp', 'rebound', 'periph'] refused=[]
+[ 490.2s] llm[facts] medium out=5798 finish=stop 280.0s
+[ 490.2s] fact key demoted: ros.Abdominal pain turn 15
+[ 490.2s] facts: 21
+[ 490.2s] guidelines[dx]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 653.0s] llm[dx] medium out=3434 finish=stop 162.8s
+[ 653.0s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 697.8s] llm[plan_say4] low out=943 finish=stop 44.8s
+[ 697.8s] v4 lines: {'dx': '급성 충수염은 염증으로 인한 우하복부 통증이 특징이죠', 'options': '통증과 염증이 크게 가라앉으면 보존적 치료를 계속합니다', 'link': '우상복통이 어제부터 지속되며 점점 심해졌습니다', 'concern': '통증이 계속 심해지는 것이 걱정이십니다', 'tests': '정확히 확인하려고 피검사를 할게요.', 'caution': '', 'followup': '1~2주 뒤 결과 보고 다음 치료를 정해요.', 'warning': '숨참·흉통·의식 변화·고열 시 바로 오세요.', 'lifestyle': '목구멍을 해치지 않도록 부드러운 음식을 선택하세요'} musts=[] emergency=False checks=[{'drop': 'CBC 를 통해 면역반응, CRP 으로 염증 수준, CT 로 정확치단을 확인합니다', 'key': 'tests', 'why': 'too_long'}, {'drop': '약물을 복용할 때 심장에 부담이 가지 않도록 물을 충분히 마시세요', 'key': 'caution', 'why': 'too_long'}, {'drop': '재진 : 24시간 이내 통증 변화를 보고 확인합니다', 'key': 'followup', 'why': 'key'}, {'drop': '복벽 통증이 갑자기 심해지거나 발열이 상승하면 바로 오세요', 'key': 'warning', 'why': 'too_long'}, {'drop': '복통이 지속되면서 배가 부풀고, 소변이 거품이 난다면 바로 대응이 필요합니다', 'key': 'warning', 'why': 'too_long'}]
+[ 702.9s] turn 30 SAY: 급성 충수염은 염증으로 인한 우하복부 통증이 특징이죠 -> 네, 알겠습니다.
+[ 705.6s] turn 31 SAY: 통증과 염증이 크게 가라앉으면 보존적 치료를 계속합니다 -> 네, 알겠습니다.
+[ 710.3s] turn 32 SAY: 우상복통이 어제부터 지속되며 점점 심해졌습니다 -> 네, 알겠습니다.
+[ 714.5s] turn 33 SAY: 통증이 계속 심해지는 것이 걱정이십니다 -> 네, 알겠습니다.
+[ 719.7s] turn 34 SAY: 정확히 확인하려고 피검사를 할게요. -> 네, 알겠습니다.
+[ 723.9s] turn 35 SAY: 목구멍을 해치지 않도록 부드러운 음식을 선택하세요 -> 네, 알겠습니다.
+[ 739.9s] turn 36 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 네, 알겠습니다.
+[ 745.0s] turn 37 SAY: 1~2주 뒤 결과 보고 다음 치료를 정해요. -> 네, 알겠습니다.
+[ 748.8s] turn 38 SAY: 숨참·흉통·의식 변화·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 773.8s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 속이 메스껍고, 오늘 새벽에 한 번 토했어요
+[ 773.8s] v4 explain done: said=8 answers=0 final=True teach={'reply': '속이 메스껍고, 오늘 새벽에 한 번 토했어요'} turns_left=1 (start 11)
+[ 796.0s] llm[S-narr] low out=437 finish=stop 22.2s
+[ 796.0s] v4 S safety net: ['기타 증상: 몸이 으슬으슬하고 열이 나서 삼십칠 도였어', '최근 항문 출혈이 있었: 변에 피가 섞이거나 검은 변을']
+[ 796.0s] summary: turns=39 counts={'say': 25, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 6, 'doctor_ok_calls': 6, 'doctor_invalid': 0, 'doctor_input_tokens': 10711, 'doctor_output_tokens': 11358, 'elapsed_s': 795.9} dx=급성 충수염 (Acute appendicitis)
+S01 gpt-oss-20b: total=50.9 정보수집=4.9 진단추론=15 검사·추적=6 안전=15 의사소통=5 효율=5 dx5=5
+- missed_key_questions: ['어제 저녁 7시경 발병', '배꼽 주위 통증으로 시작', '자정 이후 우하복부로 이동', '지속적, 점점 악화', '통증 7/10', '방사통(-)', '다리 구부리면 완화', '식욕부진(+)', '오심(+)', '구토 1회', '토물에 피·담즙(-)', '설사(-)', '마지막 변 어제 아침 정상', '옆구리 통증(-)', '호흡기 증상(-)', '같은 음식 먹은 사람 배탈(-)', '이전 유사 복통(-)', '수술력·입원력(-)', '알레르기(-)', '형 충수절제술', '흡연 하루 반 갑 5년', '음주 주 1회', '수술 여부·입원 기간·학회 일정 걱정']
+- missed_key_exams: ['장음 청진', '물음·리브션', '요근 징후', '늑척추각 압통', '서혜부·음낭 진찰']
+- top_improvements: ['1) 핵심 병력 항목을 체계적으로 한 번에 한 번 질문하고 추적 기록하기', '2) 환자 수준에 맞는 설명과 숫자 등 체감 정보를 제공하여 이해 확인 안내', '3) 필요한 검사와 영상 명시 및 시행 예정을 명확히 기록', '4) 중복·불필요한 질문 정리, 한 번에 하나씩 진행', '5) 재진 시점과 증상 과다 악화 시 대처 방법을 구체적으로 설명']
+{
+ "turns": 39,
+ "say": 25,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 6,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 6,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 10711,
+ "doctor_output_tokens": 11358,
+ "sim_calls": 28,
+ "seconds": 796.0,
+ "diagnosis": "급성 충수염 (Acute appendicitis)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 50.9,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-S01-v4a

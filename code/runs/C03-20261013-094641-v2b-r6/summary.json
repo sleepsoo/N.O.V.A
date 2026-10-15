@@ -1,0 +1,536 @@
+{
+  "case_id": "ef3649a9-330b-4e12-ad2d-fab94d019330",
+  "alias": "C03",
+  "turns": 44,
+  "say": 33,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 18004,
+  "doctor_output_tokens": 9083,
+  "seconds": 257.1,
+  "diagnosis": "체질성 성장지연 (Constitutional delay of growth and puberty)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "또래보다 작은 키",
+    "request": "",
+    "categories": [
+      "growth"
+    ],
+    "empathy": "걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "체질성 성장지연 가능성이 높아요.",
+    "대개 사춘기 뒤 또래만큼 자라요.",
+    "성장 시기가 늦어 키가 작아 보여요.",
+    "더 클 수 있지만 개인차가 있어요.",
+    "손 엑스선으로 뼈 나이를 확인해요.",
+    "피검사로 갑상샘·성장호르몬을 살펴요.",
+    "약은 검사 뒤 정하고, 식사와 잠을 챙겨요.",
+    "두통·구토·시야 변화·성장 급감은 바로 오세요.",
+    "1~2주 뒤 결과를 보고, 3~6개월마다 키를 재요.",
+    "더 궁금하신 점 있으세요?",
+    "뼈 나이와 피검사로 원인을 살펴봐요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 806,
+      "out": 204,
+      "finish": "stop",
+      "sec": 2.5
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2525,
+      "out": 847,
+      "finish": "stop",
+      "sec": 9.6
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2713,
+      "out": 867,
+      "finish": "stop",
+      "sec": 10.2
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 972,
+      "out": 228,
+      "finish": "stop",
+      "sec": 4.0
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1905,
+      "out": 2331,
+      "finish": "stop",
+      "sec": 16.8
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2891,
+      "out": 2256,
+      "finish": "stop",
+      "sec": 21.8
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2937,
+      "out": 1509,
+      "finish": "stop",
+      "sec": 15.0
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3255,
+      "out": 841,
+      "finish": "stop",
+      "sec": 9.0
+    }
+  ],
+  "phase_times": {
+    "intake": 2.5,
+    "interview": 91.9,
+    "examine": 64.7,
+    "facts": 16.8,
+    "dx": 21.8,
+    "plan_say": 15.0,
+    "explain": 35.3,
+    "S": 9.0
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "아동 이름",
+      "pol": "?",
+      "detail": "김도현",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이·성별",
+      "pol": "?",
+      "detail": "6세 남아",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자",
+      "pol": "?",
+      "detail": "모 김지영, 37세",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "또래 대비 키",
+      "pol": "?",
+      "detail": "또래보다 많이 작아 보임",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "어린이집 비교",
+      "pol": "?",
+      "detail": "같은 반보다 키가 작아 보임",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 걱정",
+      "pol": "?",
+      "detail": "키가 또래보다 작은 점",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "작다는 말 들은 때",
+      "pol": "?",
+      "detail": "1년 전부터",
+      "id": "F7"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "최근 키 성장",
+      "pol": "?",
+      "detail": "최근 6개월~1년 별로 안 큼",
+      "id": "F8"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "1년 전 키",
+      "pol": "?",
+      "detail": "100cm",
+      "id": "F9"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "현재 키",
+      "pol": "?",
+      "detail": "약 105cm",
+      "id": "F10"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "연간 키 증가",
+      "pol": "?",
+      "detail": "1년간 약 5cm",
+      "id": "F11"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "1년 전 체중",
+      "pol": "?",
+      "detail": "15kg",
+      "id": "F12"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "현재 체중",
+      "pol": "?",
+      "detail": "16.5kg",
+      "id": "F13"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "연간 체중 증가",
+      "pol": "?",
+      "detail": "1년간 1.5kg",
+      "id": "F14"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "작다는 말 들은 때",
+      "pol": "?",
+      "detail": "1년 전부터",
+      "id": "F15"
+    },
+    {
+      "turn": 2,
+      "sec": "peds",
+      "key": "other",
+      "label": "키 기록",
+      "pol": "+",
+      "detail": "집에 검진 수첩 있음",
+      "id": "F16"
+    },
+    {
+      "turn": 3,
+      "sec": "peds",
+      "key": "other",
+      "label": "2세 키",
+      "pol": "?",
+      "detail": "83cm",
+      "id": "F17"
+    },
+    {
+      "turn": 3,
+      "sec": "peds",
+      "key": "other",
+      "label": "4세 키",
+      "pol": "?",
+      "detail": "96cm",
+      "id": "F18"
+    },
+    {
+      "turn": 4,
+      "sec": "fh",
+      "key": "other",
+      "label": "아버지 키",
+      "pol": "?",
+      "detail": "178cm",
+      "id": "F19"
+    },
+    {
+      "turn": 4,
+      "sec": "fh",
+      "key": "other",
+      "label": "어머니 키",
+      "pol": "?",
+      "detail": "165cm",
+      "id": "F20"
+    },
+    {
+      "turn": 5,
+      "sec": "fh",
+      "key": "other",
+      "label": "아버지 성장 시기",
+      "pol": "?",
+      "detail": "고등학교 때 많이 큼",
+      "id": "F21"
+    },
+    {
+      "turn": 6,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 중 작은 사람",
+      "pol": "-",
+      "detail": "아빠 외엔 없음",
+      "id": "F22"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "other",
+      "label": "천식 병력",
+      "pol": "-",
+      "detail": "들은 적 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "other",
+      "label": "장 질환 병력",
+      "pol": "-",
+      "detail": "들은 적 없음",
+      "id": "F24"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "other",
+      "label": "콩팥 질환 병력",
+      "pol": "-",
+      "detail": "들은 적 없음",
+      "id": "F25"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 걱정",
+      "pol": "?",
+      "detail": "키가 작아 큰 병일까 걱정",
+      "id": "F26"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "스테로이드 복용",
+      "pol": "-",
+      "detail": "먹은 적 없음",
+      "id": "F27"
+    },
+    {
+      "turn": 10,
+      "sec": "peds",
+      "key": "other",
+      "label": "고환 크기 변화",
+      "pol": "-",
+      "detail": "변화 없음",
+      "id": "F28"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "ros.Constipation",
+      "label": "변비",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F29"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "ros.Headache",
+      "label": "두통",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F30"
+    },
+    {
+      "turn": 13,
+      "sec": "peds",
+      "key": "other",
+      "label": "임신·출산 문제",
+      "pol": "-",
+      "detail": "별문제 없었음",
+      "id": "F31"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "발달",
+      "pol": "?",
+      "detail": "말·걷기 또래와 비슷",
+      "id": "F32"
+    },
+    {
+      "turn": 15,
+      "sec": "peds",
+      "key": "other",
+      "label": "식사",
+      "pol": "?",
+      "detail": "하루 세 끼 잘 먹음",
+      "id": "F33"
+    },
+    {
+      "turn": 16,
+      "sec": "peds",
+      "key": "other",
+      "label": "급격한 체중 감소",
+      "pol": "-",
+      "detail": "갑자기 빠지지 않음",
+      "id": "F34"
+    },
+    {
+      "turn": 16,
+      "sec": "peds",
+      "key": "other",
+      "label": "급격한 체중 증가",
+      "pol": "-",
+      "detail": "갑자기 찌지 않음",
+      "id": "F35"
+    },
+    {
+      "turn": 17,
+      "sec": "peds",
+      "key": "other",
+      "label": "출생 체중",
+      "pol": "?",
+      "detail": "3.2킬로그램",
+      "id": "F36"
+    },
+    {
+      "turn": 18,
+      "sec": "peds",
+      "key": "other",
+      "label": "신생아 황달",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F37"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원력",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F38"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "other",
+      "label": "큰 병력",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F39"
+    },
+    {
+      "turn": 20,
+      "sec": "meds",
+      "key": "other",
+      "label": "한약 복용",
+      "pol": "-",
+      "detail": "안 먹음",
+      "id": "F40"
+    },
+    {
+      "turn": 20,
+      "sec": "meds",
+      "key": "other",
+      "label": "영양제 복용",
+      "pol": "-",
+      "detail": "안 먹음",
+      "id": "F41"
+    },
+    {
+      "turn": 21,
+      "sec": "peds",
+      "key": "other",
+      "label": "우유 섭취",
+      "pol": "?",
+      "detail": "하루 한두 잔",
+      "id": "F42"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 기대",
+      "pol": "?",
+      "detail": "앞으로 키가 더 클 수 있는지",
+      "id": "F43"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "1848866f57477c809286e6367741956fa53f2dd01379b691bb6003cb1f34737c",
+    "score_status": "not_scored",
+    "turn": 44
+  },
+  "error": null,
+  "session_id": "3981f35d-d0db-4484-bac7-e2312adbe93c",
+  "api": "https://nova.snubhai.org"
+}

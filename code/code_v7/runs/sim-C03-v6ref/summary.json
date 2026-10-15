@@ -1,0 +1,398 @@
+{
+  "case_id": "C03",
+  "alias": "C03",
+  "turns": 42,
+  "say": 31,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 19299,
+  "doctor_output_tokens": 16736,
+  "seconds": 964.0,
+  "diagnosis": "가족성 저신장 (Familial short stature)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "키가 작음",
+    "request": "",
+    "categories": [
+      "growth"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "가족성 저신장은 유전 가능성이 높습니다",
+    "신장은 부모 신장과 유사합니다",
+    "키가 더 클 수도 있어요 확인이 필요합니다",
+    "성장 호르몬 필요 시 치료 링크가 있어요",
+    "숨참·불규칙한 맥·고열·혼동 시 바로 오세요",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "6개월 후 성장 곡선 확인으로 다시 오세요",
+    "손 엑스레이로 뼈 나이를 확인할게요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 870,
+      "out": 136,
+      "finish": "stop",
+      "sec": 6.6
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2507,
+      "out": 592,
+      "finish": "stop",
+      "sec": 26.4
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3118,
+      "out": 565,
+      "finish": "stop",
+      "sec": 26.4
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1132,
+      "out": 142,
+      "finish": "stop",
+      "sec": 7.4
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1730,
+      "out": 8000,
+      "finish": "length",
+      "sec": 369.5
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1752,
+      "out": 4385,
+      "finish": "stop",
+      "sec": 204.4
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2840,
+      "out": 1715,
+      "finish": "stop",
+      "sec": 80.0
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2668,
+      "out": 522,
+      "finish": "stop",
+      "sec": 23.6
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 210,
+      "out": 281,
+      "finish": "stop",
+      "sec": 12.5
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2472,
+      "out": 398,
+      "finish": "stop",
+      "sec": 18.2
+    }
+  ],
+  "phase_times": {
+    "intake": 6.7,
+    "interview": 181.6,
+    "examine": 23.9,
+    "facts": 573.9,
+    "dx": 80.0,
+    "plan_say": 36.2,
+    "explain": 43.3,
+    "S": 18.3
+  },
+  "findings": [
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "인지 시점",
+      "pol": "?",
+      "detail": "최근 육 개월에서 일 년 사이에 키가",
+      "id": "F1"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성장 기록",
+      "pol": "?",
+      "detail": "일 년 전에는 백 센티미터였고 지금은",
+      "id": "F2"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "과거 계측치",
+      "pol": "?",
+      "detail": "두 살 때 키는 팔십삼 센티미터, 네",
+      "id": "F3"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "부모 키",
+      "pol": "?",
+      "detail": "아빠는 백칠십팔, 엄마는 백육십오 센",
+      "id": "F4"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "부모 사춘기",
+      "pol": "?",
+      "detail": "아빠가 어릴 때 키가 작아서 할머니가",
+      "id": "F5"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "저신장·유전 가족력",
+      "pol": "?",
+      "detail": "아빠 말고는 엄마 쪽, 아빠 쪽 모두",
+      "id": "F6"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "만성질환",
+      "pol": "-",
+      "detail": "천식이나 장, 콩팥 질환 들은 적 없",
+      "id": "F7"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 걱정",
+      "pol": "?",
+      "detail": "키가 작아서 큰 병이 있을까 걱정돼요",
+      "id": "F8"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "스테로이드",
+      "pol": "?",
+      "detail": "스테로이드나 한약은 안 먹었어요.",
+      "id": "F9"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "사춘기 징후",
+      "pol": "-",
+      "detail": "그런 건 없어요.",
+      "id": "F10"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "갑상선저하 증상",
+      "pol": "-",
+      "detail": "그런 건 없어요.",
+      "id": "F11"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "쿠싱 양상",
+      "pol": "-",
+      "detail": "그런 건 없어요.",
+      "id": "F12"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "출생 체격",
+      "pol": "?",
+      "detail": "태어날 때 키는 오십 센티미터, 몸무",
+      "id": "F13"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "other",
+      "label": "주산기",
+      "pol": "-",
+      "detail": "임신 중이나 출산 과정에서 특별한 문",
+      "id": "F14"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "입원·큰 병",
+      "pol": "-",
+      "detail": "입원하거나 큰 병을 앓은 적도 없었어",
+      "id": "F15"
+    },
+    {
+      "turn": 16,
+      "sec": "hpi",
+      "key": "other",
+      "label": "두개내 병변",
+      "pol": "-",
+      "detail": "그런 건 없어요.",
+      "id": "F16"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 변화",
+      "pol": "-",
+      "detail": "그런 건 없어요.",
+      "id": "F17"
+    },
+    {
+      "turn": 18,
+      "sec": "hpi",
+      "key": "other",
+      "label": "우유·간식",
+      "pol": "?",
+      "detail": "우유도 하루 한두 잔씩 마신다.",
+      "id": "F18"
+    },
+    {
+      "turn": 19,
+      "sec": "hpi",
+      "key": "other",
+      "label": "발달",
+      "pol": "?",
+      "detail": "언어, 운동, 사회성 모두 또래와 비",
+      "id": "F19"
+    },
+    {
+      "turn": 20,
+      "sec": "hpi",
+      "key": "other",
+      "label": "식사",
+      "pol": "?",
+      "detail": "식사는 평소 잘 먹는 편이에요.",
+      "id": "F20"
+    },
+    {
+      "turn": 21,
+      "sec": "hpi",
+      "key": "other",
+      "label": "활동",
+      "pol": "?",
+      "detail": "평소에도 운동이나 신체 활동을 활발하",
+      "id": "F21"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 궁금증",
+      "pol": "?",
+      "detail": "도현이가 앞으로 키가 더 클 수 있는",
+      "id": "F22"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "6b5578ff41c6fcc080d5d84b327128a4c7a3be51412a5f5119380c55a1894240",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 걱정되셨겠어요. 언제부터 작다는 말을 들었나요?",
+      "effective": "언제부터 작다는 말을 들었나요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 33,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 10,
+  "sim_doctor_calls": 10,
+  "sim_doctor_input_tokens": 19299,
+  "sim_doctor_output_tokens": 16736,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v6/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 69,
+  "grade_scores": {
+    "정보수집": 23,
+    "진단추론": 5,
+    "검사·추적": 4,
+    "안전": 15,
+    "의사소통": 10,
+    "효율": 12
+  }
+}

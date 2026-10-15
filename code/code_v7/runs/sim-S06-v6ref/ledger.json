@@ -1,0 +1,391 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "정말 힘드시겠어요. 최근 체중 변화가 있나요?",
+    "reply": "몸무게가 삼 키로그람 정도 빠졌어요.",
+    "phase": "first",
+    "qid": "ft_weight",
+    "label": "체중 변화"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "추위를 예전보다 많이 타세요?",
+    "reply": "더위나 추위를 타는 것은 예전과 같아요.",
+    "phase": "interview",
+    "qid": "ft_cold",
+    "label": "추위 민감"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "조금만 움직여도 숨이 차나요?",
+    "reply": "가슴이 아프거나 숨이 찬 적은 없어요.",
+    "phase": "interview",
+    "qid": "ft_dyspnea",
+    "label": "운동 시 호흡곤란"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "변이 검거나 피가 섞인 적 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ft_bleed",
+    "label": "출혈"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "고혈압이 있어요. 혈압약 하루 한 알 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "고혈압이 있어요. 혈압약 하루 한 알 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "아버지처럼 당뇨 때문에 투석을 하게 될까 봐 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "소변을 자주 보시나요?",
+    "reply": "낮에 열 번 넘게, 밤에 두세 번 깨서 소변을 보요.",
+    "phase": "interview",
+    "qid": "dm_polyuria",
+    "label": "다뇨"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "목이 자주 마르시나요?",
+    "reply": "두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.",
+    "phase": "interview",
+    "qid": "dm_thirst",
+    "label": "다음"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "가장 최근에 물을 많이 마셨나요?",
+    "reply": "두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.",
+    "phase": "interview",
+    "qid": "ur_freq",
+    "label": "빈뇨·절박"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "배뇨 시 통증이나 불편함을 느끼시나요?",
+    "reply": "소변볼 때 아프거나 따갑지는 않고, 소변 색이 붉은 적도 없어요.",
+    "phase": "interview",
+    "qid": "ur_dysuria",
+    "label": "배뇨통"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "담배를 피우시나요?",
+    "reply": "담배는 피운 적 없어요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "술은 얼마나 드시나요?",
+    "reply": "술은 거의 마시지 않는다.",
+    "phase": "interview",
+    "qid": "sh_alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "요즘 기분이 많이 가라앉나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ps_mood",
+    "label": "우울"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "잠은 잘 주무세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ps_sleep",
+    "label": "수면"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "가족 중에 당뇨가 있는 분이 있나요?",
+    "reply": "아버지와 어머니 당뇨병이 있었어요.",
+    "phase": "interview",
+    "qid": "dm_fh",
+    "label": "당뇨 가족력"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "평소에 운동은 얼마나 하세요?",
+    "reply": "운동은 거의 하지 않아요.",
+    "phase": "interview",
+    "qid": "sh_exercise",
+    "label": "운동·활동"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "얼굴이나 다리에 붓는 증상이 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ft_edema",
+    "label": "부종"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "과거에 방광염이나 결석이 있었나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ur_history",
+    "label": "재발력"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "입맛이 갑자기 좋아지거나 싫어지셨나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ps_appetite",
+    "label": "식욕"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "최근에 불안하거나 초조하신 적이 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ps_anxiety",
+    "label": "불안"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 비만 체형, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 황달(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "안저 검사하겠습니다",
+    "reply": "미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상",
+    "phase": "exam",
+    "qid": "fundus",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "사지 감각 검사하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_SPECIFIC",
+    "qid": "sensory",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "늑척추각 압통 확인하겠습니다",
+    "reply": "압통(-/-)",
+    "phase": "exam",
+    "qid": "cva",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 4mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "혈당이 높은 당뇨병이 의심돼요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "공복 혈당과 당화혈색소를 검사할게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "식사 조절과 운동이 치료의 기본이에요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "단 음료와 야식부터 줄여 보세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "의식이 흐리거나 심하게 토하면 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보러 다시 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "심한 갈증·구토·복통·의식 흐림 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "reply": "낮에 열 번 넘게 화장실에 가고 밤에도 두세 번 깨서 소변을 본다",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

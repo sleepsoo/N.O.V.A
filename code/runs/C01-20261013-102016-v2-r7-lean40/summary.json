@@ -1,0 +1,395 @@
+{
+  "case_id": "4fa07144-04e5-4116-a18e-88d8a90cc21a",
+  "alias": "C01",
+  "turns": 40,
+  "say": 30,
+  "exam": 10,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 20,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 17004,
+  "doctor_output_tokens": 7571,
+  "seconds": 205.8,
+  "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "진정수면제 사용장애 가능성이 높아요.",
+    "갑자기 끊지 않고 확인 후 단계적으로 줄입니다.",
+    "처방·소변·혈액검사로 약과 몸 상태를 살펴요.",
+    "급중단·운전 피하고 경련·환각·혼동 땐 즉시 오세요.",
+    "1~2주 뒤 재진해요; 낮잠·오후 카페인은 피하세요.",
+    "오늘 끊진 않고, 확인한 최소량만 1~2주분 드려요.",
+    "수면 습관 교정과 인지행동치료도 같이 해요.",
+    "경련·혼동·환각·심한 불안이 오면 바로 오세요.",
+    "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "줄이는 동안 잠깐 잠이 나빠져도 대개 회복돼요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 628,
+      "out": 108,
+      "finish": "stop",
+      "sec": 2.1
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2858,
+      "out": 475,
+      "finish": "stop",
+      "sec": 5.1
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3105,
+      "out": 485,
+      "finish": "stop",
+      "sec": 6.1
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1011,
+      "out": 279,
+      "finish": "stop",
+      "sec": 3.9
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1663,
+      "out": 1495,
+      "finish": "stop",
+      "sec": 14.4
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2215,
+      "out": 2182,
+      "finish": "stop",
+      "sec": 21.0
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3063,
+      "out": 1945,
+      "finish": "stop",
+      "sec": 16.9
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2461,
+      "out": 602,
+      "finish": "stop",
+      "sec": 7.0
+    }
+  ],
+  "phase_times": {
+    "intake": 2.1,
+    "interview": 79.8,
+    "examine": 32.6,
+    "facts": 14.4,
+    "dx": 21.0,
+    "plan_say": 16.9,
+    "explain": 31.8,
+    "S": 7.0
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "박선희",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "62세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "여자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면 곤란",
+      "pol": "+",
+      "detail": "잠을 잘 못 잠",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "ice",
+      "key": "other",
+      "label": "수면제 처방 요청",
+      "pol": "+",
+      "detail": "수면제 처방 원함",
+      "id": "F5"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면 곤란 기간",
+      "pol": "?",
+      "detail": "7년 전부터",
+      "id": "F6"
+    },
+    {
+      "turn": 2,
+      "sec": "meds",
+      "key": "other",
+      "label": "졸피뎀 용량",
+      "pol": "?",
+      "detail": "한 알 10mg",
+      "id": "F7"
+    },
+    {
+      "turn": 3,
+      "sec": "meds",
+      "key": "other",
+      "label": "졸피뎀 복용 기간",
+      "pol": "?",
+      "detail": "7년 전부터",
+      "id": "F8"
+    },
+    {
+      "turn": 4,
+      "sec": "meds",
+      "key": "other",
+      "label": "현재 복용량",
+      "pol": "?",
+      "detail": "밤 6알, 낮 가끔 1알",
+      "id": "F9"
+    },
+    {
+      "turn": 5,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용 시간",
+      "pol": "?",
+      "detail": "밤11시·새벽2~3시, 가끔 낮",
+      "id": "F10"
+    },
+    {
+      "turn": 6,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용량 변화",
+      "pol": "?",
+      "detail": "반 알에서 6알",
+      "id": "F11"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "미복용 시 증상",
+      "pol": "?",
+      "detail": "밤새 잠을 못 잠",
+      "id": "F12"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "주요 걱정",
+      "pol": "?",
+      "detail": "약 없이는 잠 못 잘까 봐",
+      "id": "F13"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "감량·중단 시도",
+      "pol": "?",
+      "detail": "여러 번 시도 후 다시 복용",
+      "id": "F14"
+    },
+    {
+      "turn": 10,
+      "sec": "meds",
+      "key": "other",
+      "label": "처방처",
+      "pol": "?",
+      "detail": "동네 내과·신경과·정신과",
+      "id": "F15"
+    },
+    {
+      "turn": 11,
+      "sec": "meds",
+      "key": "other",
+      "label": "약국 수면유도제",
+      "pol": "+",
+      "detail": "가끔 복용",
+      "id": "F16"
+    },
+    {
+      "turn": 12,
+      "sec": "meds",
+      "key": "other",
+      "label": "마지막 복용",
+      "pol": "?",
+      "detail": "어젯밤 새벽에 2알",
+      "id": "F17"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "경련",
+      "pol": "-",
+      "detail": "경련한 적 없음",
+      "id": "F18"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "other",
+      "label": "복용 후 기억 단절",
+      "pol": "+",
+      "detail": "먹고 나서 기억 안 나기도 함",
+      "id": "F19"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가족의 약 걱정",
+      "pol": "+",
+      "detail": "남편과 딸이 걱정",
+      "id": "F20"
+    },
+    {
+      "turn": 16,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "있음",
+      "id": "F21"
+    },
+    {
+      "turn": 16,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F22"
+    },
+    {
+      "turn": 17,
+      "sec": "pmh",
+      "key": "other",
+      "label": "기타 지병",
+      "pol": "-",
+      "detail": "고혈압 외 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 18,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용약",
+      "pol": "?",
+      "detail": "졸피뎀, 암로디핀",
+      "id": "F24"
+    },
+    {
+      "turn": 19,
+      "sec": "fh",
+      "key": "other",
+      "label": "어머니 병력",
+      "pol": "?",
+      "detail": "치매",
+      "id": "F25"
+    },
+    {
+      "turn": 19,
+      "sec": "fh",
+      "key": "other",
+      "label": "아버지 병력",
+      "pol": "?",
+      "detail": "심장병",
+      "id": "F26"
+    },
+    {
+      "turn": 20,
+      "sec": "ice",
+      "key": "other",
+      "label": "기대 사항",
+      "pol": "?",
+      "detail": "수면제 줄일 수 있을지",
+      "id": "F27"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "b1a6a0adf6a1c878aad4c41f12338def4cb6b66e333ffd4eeec607f3f5e9359b",
+    "score_status": "not_scored",
+    "turn": 40
+  },
+  "error": null,
+  "session_id": "f26b86d1-0cea-45b9-9c60-728cdb0acc68",
+  "api": "https://nova.snubhai.org"
+}

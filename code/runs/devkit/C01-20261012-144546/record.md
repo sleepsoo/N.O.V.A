@@ -1,0 +1,132 @@
+# C01 제출 기록 (로컬)
+
+## [S] 주호소
+
+```
+C.C : 수면장애
+Onset : 일곱 해 전부터요
+```
+
+## [S] 현병력
+
+```
+62세 여자. 저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다
+onset : 일곱 해 전부터요. course : 네, 점점 심해졌어요.. impact : 모든 게 방해돼요.
+문진상 Palpitation(+) / 호흡곤란, Chest pain, 배변 변화(-)
+걱정·기대 : 약량이 늘어나는 거요.; 약량 줄이길 원해요
+위 증상으로 내원함.
+```
+
+## [S] 과거력·약물·알레르기
+
+```
+DM / HTN (+/+)
+previous stroke ()
+Tbc / hepatitis (-/-)
+heart disease ()  dyslipidemia ()
+Op. Hx (-)
+Medicine history : 암로디핀 먹고 있어요.
+Allergy (-)
+Others : 예, 고혈압이 있어요.
+```
+
+## [S] 가족력
+
+```
+DM / HTN (/)
+Stroke ()
+Others : 유사 질환(+, 아버지는 심장병이었어요.)
+```
+
+## [S] 사회력
+
+```
+Smoking (+)
+Alcohol (+) 주말에 한두 잔 정도요.
+Others : 직업 : 가정주부예요
+```
+
+## [S] 계통 문진
+
+```
+General weakness ()  Fatigue ()
+Headache ()  Dizziness ()
+Chest pain (-)  Palpitation (+)
+Fever/Chill/Cough/Sputum/Rhinorrhea (////)
+Abdominal pain ()  Melena ()  Hematochezia ()  Hematemesis ()
+Anorexia/Nausea/Vomiting/Diarrhea/Constipation (////)
+Others : 호흡곤란(-), 배변 변화(-)
+```
+
+## [O] 진찰 소견
+
+```
+V/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보)
+```
+
+## [O] 검사 결과
+
+```
+(없음)
+```
+
+## [A] 근거
+
+```
+#1. 위식도 역류성 질환 (Gastroesophageal Reflux Disease)
+- 근거 : 7년간 지속된 수면 어려움(불면증); 수면 중 자주 기침; 아침 두통; 심장 두근거림 및 불안감; 고혈압 및 담배·음주가 있는 위험요인
+```
+
+## [A] 감별진단
+
+```
+r/o 불안성 불면증(정신과적 원인에 의한 만성 불면증) (Chronic insomnia due to generalized anxiety disorder) : 추가 검사로 감별 필요
+r/o 수면 무호흡증 : 추가 검사로 감별 필요
+r/o 불안성 주간 수면 장애 : 추가 검사로 감별 필요
+r/o 심장성 부정맥 : 추가 검사로 감별 필요
+```
+
+## [P] 추가 검사
+
+```
+- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가
+- 주진단 확인을 위한 표적 검사 : 감별진단 배제
+```
+
+## [P] 치료
+
+```
+- 검사 결과 확인 후 원인에 맞는 치료 시작 고려
+- 금기 확인 후 증상 조절
+```
+
+## [P] 처치 결정
+
+```
+- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C
+- 급성 위험 징후 없어 외래 추적
+```
+
+## [P] 추적
+
+```
+- 1~2주 후 검사 결과 확인 위해 재진
+- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시
+```
+
+## [P] 환자 교육
+
+```
+진료 중 설명함:
+- 위식도 역류성 질환 가능성이 높아 보여요.
+- 검사 후 치료를 정하고, 심해지면 바로 오세요.
+추가 교육 계획:
+- 진단 가능성과 검사 필요성 설명
+- 경고 증상 시 즉시 내원 안내
+```
+
+## 주진단
+
+```
+위식도 역류성 질환 (Gastroesophageal Reflux Disease)
+```

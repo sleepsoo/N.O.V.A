@@ -1,0 +1,69 @@
+{
+  "checklist": {
+    "history_total": 22,
+    "history_done": 21,
+    "exam_total": 23,
+    "exam_done": 10
+  },
+  "scores": {
+    "정보수집": 20,
+    "진단추론": 15,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 13,
+    "효율": 20
+  },
+  "total": 100,
+  "diagnosis_5pt": 5,
+  "deductions": {
+    "정보수집": [
+      "목두께(경부 림프절 및 눈 근육 운동) 검사 미함"
+    ],
+    "진단추론": [],
+    "검사·추적": [],
+    "안전": [],
+    "의사소통": [
+      "의견 수집·필요성 설명·이해 확인 부족",
+      "복잡한 환자 의제에 대한 대화가 일방적"
+    ],
+    "효율": []
+  },
+  "missed_key_questions": [
+    "목 두꺼워지기/경부 림프절",
+    "신체 검사 시 외안근 운동 확인"
+  ],
+  "missed_key_exams": [
+    "외안근 운동",
+    "경부 림프절 촉진",
+    "흉곽 시진",
+    "폐 청진",
+    "심음 청진",
+    "복부 시진",
+    "장음 청진",
+    "복부 촉진",
+    "간·비장 촉진",
+    "사지 근력 검사",
+    "하지 말초 진찰",
+    "경골앞 점액부종"
+  ],
+  "record_errors": [],
+  "top_improvements": [
+    "전면적인 경부(림프절 포함) 및 눈근육 움직임 검사 추가",
+    "심장 문제 평가를 위해 청진 및 ECG 진행",
+    "다리 및 상지 근력 평가를 통해 운동 저하 확인",
+    "피부 및 손부위 대퇴부 부종 여부 파악",
+    "고혈압, 당뇨 선행 검사 포함"
+  ],
+  "usage": {
+    "prompt_tokens": 9847,
+    "total_tokens": 13250,
+    "completion_tokens": 3403,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "_calls": 1,
+  "_model": "openai/gpt-oss-20b",
+  "remote": false
+}

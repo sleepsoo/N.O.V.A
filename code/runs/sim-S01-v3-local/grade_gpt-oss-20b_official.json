@@ -1,0 +1,68 @@
+{
+  "checklist": {
+    "history_total": 50,
+    "history_done": 40,
+    "exam_total": 24,
+    "exam_done": 22
+  },
+  "scores": {
+    "정보수집": 21,
+    "진단추론": 5,
+    "검사·추적": 5,
+    "안전": 12,
+    "의사소통": 10,
+    "효율": 12
+  },
+  "total": 65,
+  "diagnosis_5pt": 5,
+  "deductions": {
+    "정보수집": [
+      "환자에게 배의 시작 시각(시간)을 상세히 묻지 않아 초기 5시간 이동 패턴에 대한 명확한 타임라인이 부족"
+    ],
+    "진단추론": [
+      "추가적인 알레르기 정보와 과거 항생제 사용 내역을 면밀히 확인하지 않음"
+    ],
+    "검사·추적": [
+      "CBC, CRP, 소변검사, 혈액전해질, 골반 초음파 등 확진을 위한 필수 혈중·영상검사를 제안하지 않음"
+    ],
+    "안전": [
+      "초기 관리로 항생제 시작 및 금식 계획을 명시하지 않아 잠재적 감염 진행 위험이 감소함"
+    ],
+    "의사소통": [
+      "환자와의 대화가 지나치게 반복적이며 핵심 점검사항(예: 탈장 여부, 고환통)에 대한 직접 확인이 부족"
+    ],
+    "효율": [
+      "전체 대화가 41턴에 걸쳐 불필요한 반복문과 중복 질문이 많아 모델 사용량과 의료 리소스 낭비가 가중됨"
+    ]
+  },
+  "missed_key_questions": [
+    "배의 정확한 시작 시각",
+    "요로 결석 위험 평가(배뇨 빈도, 통증), 소변 색 및 성분"
+  ],
+  "missed_key_exams": [
+    "직장 내시경(디지털 직장 검사)",
+    "서혜부·음낭 검진"
+  ],
+  "record_errors": [
+    "검사 항목(CT, CBC 등)에 대한 구체적 요청이 없음"
+  ],
+  "top_improvements": [
+    "1) History‑Gathering: 정확한 도착 시점과 전부 및 5시간 브레이크 점을 명확히 물어 내용 정리",
+    "2) Expansion of Physical Examination: 직장 점검 및 서혜부·음낭 검진 포함",
+    "3) Plan‑Based Testing: CBC, CRP, 소변검사, 초음파/CT 분명히 기록",
+    "4) Clear Safety Protocol: 금식, 항생제 처방, 초기 통증 관리지침 포함",
+    "5) Efficient Dialogue: 1–2 턴에 하나의 핵심 질문에 집중하여 중복을 최소화"
+  ],
+  "usage": {
+    "prompt_tokens": 8067,
+    "total_tokens": 9583,
+    "completion_tokens": 1516,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "_calls": 1,
+  "_model": "openai/gpt-oss-20b",
+  "remote": false
+}

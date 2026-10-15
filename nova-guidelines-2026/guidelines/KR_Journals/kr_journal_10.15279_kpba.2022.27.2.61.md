@@ -1,0 +1,255 @@
+---
+title: "췌장주변저류액의 내시경 치료 임상진료지침"
+organization: "Korean Society of Gastrointestinal Endoscopy"
+year: "2022"
+language: en
+source_url: "https://www.kjpbt.org/journal/view.php?doi=10.15279/kpba.2022.27.2.61"
+license: "CC BY-NC"
+---
+# 췌장주변저류액의 내시경 치료 임상진료지침
+
+*Clinical Practice Guidelines for the Endoscopic Management of Peripancreatic Fluid Collections*
+
+## Abstract
+
+가성낭종과 같은 췌장주변저류액의 내시경 치료는 표준치료로 인정받고 있으며, 최근에 초음파 내시경 중재술을 이용한 치료의 효과 및 안전성은 충분히 증명되었다. 이에 우리나라 상황에 맞는 임상진료지침이 필요하다. 이 진료지침은 국내에서 처음으로 만들어진 췌장주변저류액의 내시경 치료에 관한 임상진료지침으로 환자를 진단하고 적절한 치료를 제공하는 데 사용될 것으로 기대된다.
+
+## INTRODUCTION
+
+Eighty percent of cases of acute pancreatitis are conservatively managed without complications, but the remaining 20% may progress to moderate or severe acute necrotizing pancreatitis. Most local complications of acute pancreatitis involve peripancreatic fluid collections (PFCs), which the 2012 revised Atlanta classification subdivided into acute peripancreatic fluid collections (APFC), acute necrotic collection (ANC), pancreatic pseudocysts, and walled-off necrosis (WON). Each of these was further subdivided into infectious and non-infectious types.
+
+Traditionally, endoscopic, percutaneous, or surgical treatment has been applied to the PFC, depending on the patient’s condition, treatment environment, and the clinician’s experience and skill level. Recently, as endoscopic ultrasonography (EUS)-guided intervention has been introduced and developed, it has gradually become a standard treatment for PFCs. However, it is difficult to popularize the procedure in Korea because of restrictions on insurance claims regarding the use of endoscopic accessories, as well as the lack of standardized Korean clinical practice guidelines. Korean endoscopists refer to overseas clinical practice guidelines or review individual domestic studies to obtain treatment protocols. Therefore, in this study, domestic and international studies on PFCs were systematically reviewed to develop recommendations to which clinicians can refer to treat domestic patients. These guidelines provide the definition, diagnosis, and treatment of PFCs, and should be continuously supplemented and revised using the results of new studies and the experiences and advice of additional clinicians.
+
+## MAIN BODY
+
+### 1. Formation of committee members and stakeholder involvement
+
+The Clinical Practice Guidelines Steering Committee was formed in November 2017. This committee established a strategy for developing medical guidelines, appointed a chairman, and reviewed and approved project-related budgets. The recommendations were reviewed and final guidelines were approved and published. Stakeholder participation and editorial independence were evaluated and appropriate revisions were made. The review and publication of the final guidelines was approved by the Clinical Practice Guidelines Steering Committee in February 2020.
+
+The Clinical Practice Guideline Steering Committee formed the Korean Society of Gastrointestinal Endoscopy (KSGE) Task Force (TF) on Clinical Practice Guidelines, a multidisciplinary team to oversee the development of the guidelines. A gastrointestinal specialist from the KSGE was selected as the chairman of the development committee, and other specialists recommended by the KSGE and the Korean Pancreatobiliary Association also participated (Table 1). An expert (Miyoung Choi) on the methodology for developing clinical practice guidelines from the National Evidence-based Healthcare Collaborating Agency (NECA), also participated. The development committee selected the key questions, searched the literature, and wrote and revised the draft of the guidelines.
+
+### 2. Process of developing treatment guidelines and selection of key questions
+
+The treatment guideline development process was composed of three parts: planning, development, and finalization, which were divided into 12 stages. Planning stages included: selection of treatment guideline topics (stage 1), composition of development groups (stage 2), review of existing guidelines (stage 3), establishing a development plan (stage 4), and setting up key questions (stage 5). Development stages included: searching, evaluating, and integrating evidence (stages 6-8); these stages were followed by preparing recommendations and determining the recommendation grade (stage 9), and coming to an agreement (stage 10). In the finalization stages, the final version was externally reviewed and published (stages 11-12).
+
+The development committee held a total of eight meetings beginning on May 1, 2018, as well as two workshops to establish the methodology for clinical guideline development and to review the development process. Participants were trained on development methodology, gathering evidence, and how to assign recommendation grades, as well as methods for achieving consensus (trainings occurred on March 12, 2018, and November 10, 2018). The development committee decided to proceed in a de novo manner, and developed the guidelines via a number of online and in-person meetings.
+
+The development committee used medical guidelines developed in other countries, including the USA and Europe, to select about 20 topics. These topics were reviewed over several meetings, and the final set was selected based on clinical importance and relevance to domestic medical conditions. To derive key questions (KQ) to be included in the guidelines, members prioritized the 15 that addressed patient population (P), intervention (I), comparative intervention (comparator, C), and intervention results (outcome, O) (Table 2).
+
+### 3. Literature search and selection
+
+In August of 2018, a literature search was conducted on the KQs using MEDLINE, EMBASE, Cochrane Library, KoreaMed, and Guideline International Network. The search words included index words related to PFCs (“pancreas” OR “pancreatic” OR “peripancreatic” OR “pancreatitis) AND (“fluid” OR “pseudocyst” OR “walled-off” OR “necrosis” OR “necrotic” OR “collections”) and those on drainage (“endoscopy” OR “endoscopic” OR “percutaneous” OR “surgical” OR “EUS” OR “endosonographic” OR “transmural”) AND (“drainage” OR “management” OR “intervention” OR “FNA”), which were adjusted and combined in various ways depending on the KQ. The literature search was conducted by Miyoung Choi, and duplicate documents resulting from cross-searching between researchers were excluded. Exclusion criteria included studies that were not conducted on humans, were not related to the KQs, did not perform interventions or comparative interventions related to the KQs, were reviews, had published abstracts only, were not published in Korean or English, and whose original text was not available. When the subjects of two studies overlapped, the one with fewer subjects was excluded. Excluding duplicates, there was a total of 656 documents that had been published since 2010. Two members of the development committee were assigned for each document, and studies were independently selected according to the selection and exclusion criteria. First, the titles and abstracts of the studies were reviewed to exclude those that were not suitable for guideline development. Then, the full text of each of these studies was reviewed for final selection. When the two committee members disagreed, they negotiated on the final decision; if the negotiation failed, the team leader of the development committee made the final decision. In this manner, 138 documents were selected. A brief summary of the literature search process is presented in Fig. 1.
+
+### 4. Evidence assessment and formulating recommendations
+
+A systematic and consistent evaluation method was used to determine the validity of the selected studies to be used for evidence for each KQ. During this process, outside experts were invited to present a workshop to improve the committee’s understanding of the decision-making process and how to successfully reach an agreement on the evaluation criteria. For the selected papers, the risk of bias method for randomization studies was used to evaluate the degree of bias, and the Newcastle-Ottawa assessment scale was used for non-randomization studies. The QUADAS tool was used to evaluate diagnostic studies. The Grading of Recommendations Assessment, Development and Evaluation (GRADE) method was used to determine the evidence summary. Randomization studies were based on a high level of evidence, and observational studies were based on a low level of evidence. However, other factors that affected each study, such as consistency, directness, accuracy, and publication bias, were considered to raise or lower the quality. Thus, the levels of evidence were divided into four levels: high, moderate, low, and very low.
+
+Recommendations were classified into strong and weak grades, based on factors such as the balance between desirable and undesirable effects, quality of evidence, value, and preference. The strong grade is recommended to most patients because the intervention implemented is expected to bring more desirable than undesirable effects, higher quality of evidence, and higher value and preference in comparison to other interventions. Weak grade is recommended to a large number of patients because the intervention implemented is expected to produce a relatively small effect size, or the intervention has weak evidence but a desirable effect. At the weak recommendation grade, other interventions may be selected in certain patients depending on the values or preferences of the medical staff. The selected KQs are summarized in Table 2, and the recommendations, grades, and levels of evidence are summarized in Table 3.
+
+### 5. Review and approval
+
+The guidelines were evaluated by KSGE executives, the Insurance Policy Committee of the Gastroenterology-Related Associations, and the Quality Management Committee of the Korean Pancreatobiliary Association. A public hearing for external review was held November 15-17, 2019 at KSGE Days 2019 (Fall Conference, Korean Society of Gastrointestinal Endoscopy), in which gastroenterology and endoscopy specialists from all over the country participated. The final treatment guidelines were supplemented to reflect the results of the draft evaluation and public hearing. In addition, for an external review of the guidelines, a modified eDelphi mechanism process employing an online platform was then used by 27 expert panels to produce an evidence-based consensus. This consensus consisted of two main rounds of web-based voting using a custom-built online voting platform. Each guideline was scored using a 5-point scale with updated iterations of the statements and evaluative text based on feedback after each round. The statements that earned at least 2/3 votes of “agree” or “agree strongly” (as points 4 or 5) were accepted as final statements and recommendations. The statements that did not achieved less than 2/3 votes were entered into the second round of voting after appropriate revision based on discussions during the eDelphi mechanism process. After two rounds of voting, the revised statements and recommendations earned “agree” or “agree strongly” for more than 2/3 of votes.
+
+### 6. Distribution and revision of the treatment guidelines
+
+These clinical practice guidelines will be jointly published in Clinical Endoscopy, the Korean Journal of Gastroenterology, the Korean Journal of Pancreas and Biliary Tract, Gut and Liver, posted on the KSGE website, and registered in the Korean Medical Guideline Information Center. However, database registration alone may be insufficient for the distribution of the guidelines to endoscopic doctors. Thus, KSGE plans to distribute the guidelines in various formats, such as E-mail, and actively promote them through academic conferences, seminars, and workshops related to the fields of gastroenterology. Since the current guidelines are still in development, they may still be reviewed for revision when significant studies are published.
+
+### 7. Limitations of the treatment guidelines
+
+Insufficient domestic evidence and limited insurance benefits are the main limitations of these guidelines. Because of a lack of domestic data, studies and guidelines from abroad must be used. However, epidemiological characteristics and clinical features of acute pancreatitis and its complications in other countries may be different from those in Korea. Therefore, it may be difficult to accept foreign data because the treatment environment and insurance standards are different. Moreover, these clinical practice guidelines are not intended to represent the absolute standard of care for treating patients in actual clinical practice; rather, they are intended to help clinicians in charge of treating pancreatitis and PFCs make treatment decisions based on the scientific evidence discovered to date. These clinical practice guidelines should not be used to restrict the medical practices of doctors, nor should they be used as examination criteria for health insurance or for legal judgment on the treatments performed on specific patients.
+
+### 8. Editorial independence
+
+These clinical practice guidelines were selected as a project for, and received financial support from, the KSGE; however, the organization did not affect the process of developing the guidelines. In addition, none of the members of the KSGE who participated in the clinical practice guideline development process had any potential conflicts of interest.
+
+## RECOMMENDATIONS
+
+KQ1. What are the types of PFCs?
+
+There are four different types of PFCs: APFC, pancreatic pseudocyst, ANC, and WON.
+
+(Recommendation grade: strong, evidence level: high)
+
+The revised Atlanta classification for types of PFCs was published in 2012 and has been used in most studies and guidelines. Depending on the type, acute pancreatitis is classified into interstitial edematous pancreatitis and necrotizing pancreatitis, which may have local complications. The types of PFCs as local complications of acute pancreatitis are defined as follows.
+
+### 1. Acute peripancreatic fluid collections (APFCs)
+
+APFCs refers to the fluids that accumulate around the pancreas in interstitial edematous pancreatitis without peripancreatic necrosis. The term usually refers to PFCs without pseudocysts within 4 weeks of onset of interstitial edematous pancreatitis. On computed tomography (CT), the fluid density is uniform and located within the normal peripancreatic fascia surface, and there is no clear wall surrounding the fluid (Fig. 2). APFCs are not usually subject to drainage because infection does not generally occur and most of them improve on their own.
+
+### 2. Pancreatic pseudocysts
+
+Pancreatic pseudocysts refer to clear fluid collections surrounded by inflammatory walls that usually appear 4 weeks after the onset of acute interstitial edematous pancreatitis. They are usually located outside the pancreas and do not show necrosis. On CT, they have a noticeable round or oval shape with uniform density, do not contain solid components, and are completely surrounded by a single wall (Fig. 3). The pseudocyst is the primary target for drainage treatment. Details on this will be discussed later.
+
+### 3. Acute necrotic collection (ANC)
+
+ANC refers to a state in acute necrotizing pancreatitis in which various amounts of fluid and necrotic tissue accumulate, and necrosis may occur in the pancreatic parenchyma or even in the peripancreatic tissue. CT reveals nonuniform and nonenhanced parts at various locations inside or outside the pancreas, and the walls surrounding the necrotic tissue are not visible (Fig. 4). ANC usually occurs within 4 weeks of the onset of necrotizing pancreatitis. Because there is no wall surrounding the necrosis, ANCs are not subject to drainage.
+
+### 4. Walled-off necrosis (WON)
+
+WON refers to a collection of necrotic tissue surrounded by well matured walls inside or outside the pancreas that usually develops four weeks after the onset of necrotizing pancreatitis. On CT, nonenhanced tissue with nonuniform density may appear completely surrounded by walls and may be septated (Fig. 5). WON is subject to drainage if necessary. This will be discussed in detail later.
+
+KQ2. What are the indications for the treatment of PFCs?
+
+For pseudocysts and WON with symptoms or accompanied by infection, drainage, rather than conservative treatment, is strongly recommended.
+
+(Recommendation grade: strong, evidence level: moderate)
+
+Most APFCs improve on their own and require no intervention. Because APFCs and ANCs occur within 4 weeks of the onset of pancreatitis, the walls are generally not mature enough to require an intervention. Therefore, if possible, drainage should be performed after 4 weeks when the walls are sufficiently mature and the boundaries are clear. This can reduce complications that may occur after drainage. In a study of 242 patients, the longer the period from pancreatitis to drainage, the lower the mortality rate (days 0-14: 56%, days 14-29: 26%, more than 29 days: 15%, p<0.001). In the past, treatment such as drainage or surgery was indicated if PFCs and ANCs were larger than 6 cm. Currently, however, treatment is not determined solely based on the size of the pseudocyst and WON.
+
+Drainage should be considered if symptoms such as uncontrolled abdominal pain, loss of appetite, weight loss, or fever without other symptoms occur in patients with PFCs. As mentioned above, the procedure is not determined solely by the size of the fluid collections. If the fluid collections around the pancreas continue to grow in size, drainage can be attempted; however, if there are no symptoms, the fluid collections need only be monitored. Complications associated with PFCs include bleeding, infection or rupture of the fluid collections, and obstruction of the gastrointestinal or biliary tracts. Thus, it is important to determine the appropriate situation in which to perform drainage to minimize complications. To drain the PFCs, the walls of the cyst must be well matured, which usually takes approximately 4-6 weeks after the onset of pancreatitis. Moreover, it has been reported that drainage delayed for more than 8 weeks leads to an increased risk of complications. Similarly, drainage for WON should be considered if it is infected or the infection is followed by gastrointestinal and biliary tract obstruction. Drainage should also be considered if relevant symptoms persist.
+
+In general, infected PFCs require intervention; however, if the patient is clinically stable, antibiotics can be used along with close observation. In the early stages of pancreatitis, it is often difficult to determine whether there is an infection in the pancreas because of a severe inflammatory reaction caused by pancreatitis itself, but clinical distinction becomes possible after 2-4 weeks.
+
+KQ3. What radiological tests are needed to make treatment decisions?
+
+For an accurate diagnosis of the PFCs before the procedure, it is recommended that CT and magnetic resonance cholangiopancreatography (MRCP) are performed to verify the location and size of the fluid collections, the surrounding blood vessels, and the anatomy of the surrounding organs.
+
+(Recommendation grade: strong, evidence level: moderate)
+
+CT and MRCP are essential for planning the drainage procedures for PFCs. PFCs mainly occur on the dorsal side of the stomach or duodenum or toward the paracolic gutter, but may also occur in the mediastinum, liver, or pelvis, or around the spleen or kidneys. Therefore, CT or MRCP is absolutely necessary prior to drainage to accurately identify the anatomical location of the lesion. MRCP is the preferred procedure because it is known to be more advantageous than CT in determining whether there is a solid substance in the fluid collections. However, it may be helpful to perform EUS before the procedure to verify whether endoscopic drainage is feasible and whether there are blood vessels in the path from the gastrointestinal tract to the fluid collections.
+
+KQ4. What are the types of the treatment for PFCs?
+
+PFCs can be drained using endoscopic, percutaneous, or surgical methods. If the fluid collections are adjacent to the stomach and duodenum, endoscopic treatment is recommended.
+
+(Recommended grade: moderate, evidence level: low)
+
+Drainage of the PFC can be surgically, percutaneously, or endoscopically performed. Surgical drainage has traditionally been an effective treatment method for pseudocysts with a success rate of 91-97%. Endoscopic, rather than surgical drainage, has become the preferred initial treatment for PFCs. However, in direct comparative studies on treatment outcomes published to date, there has been no significant difference in the success and complication rates between the two procedures.
+
+Percutaneous drainage involves using ultrasound or fluoroscopy to observe the fluid collection around the pancreas and draining the fluid collections by inserting an 8-23 Fr drainage tube through the retroperitoneum or peritoneum. Few studies have directly compared endoscopic and percutaneous drainage. In a retrospective study of 81 patients with pseudocysts, there was no significant difference in the treatment success and complication rates between endoscopic and percutaneous drainage. However, percutaneous drainage often requires repeated procedures, a relatively longer hospitalization period, and additional abdominal imaging tests to evaluate the appropriateness of the procedure. Additionally, it is important to note that persistent percutaneous fistula is likely to occur after percutaneous drainage.
+
+Endoscopic drainage should be primarily considered for PFCs that are adjacent to the stomach or duodenum. If endoscopic access is impossible, percutaneous drainage may be considered. Surgical treatment should be considered if there is no improvement from the endoscopic or percutaneous drainage or if there are complications, such as bleeding into the fluid collections. A multidisciplinary discussion may be useful for selecting an appropriate drainage method.
+
+KQ5. How is the endoscopic treatment for PFCs conducted?
+
+Endoscopic treatment for PFCs includes transmural and transpapillary drainage. EUS is recommended when performing transmural drainage.
+
+(Recommendation grade: strong, evidence level: moderate)
+
+### 1. Types of drainage
+
+The following should be evaluated when performing endoscopic drainage of PFCs: the location and size of the fluid collections, communication with the pancreatic duct (PD), disruption of the PD, and the degree of floating materials inside the cyst. There are two methods for endoscopic drainage in general: transmural drainage and transpapillary drainage. These methods can also be used together.
+
+### 2. Endoscopic transmural drainage
+
+For endoscopic transmural drainage (ETD), a gastroscope or duodenoscope is used. Drainage is performed by blind puncture of the area where the fluid collections protrude into the stomach or duodenal wall. The most protruding area shown on the endoscopic images is punctured to efficiently form and dilate the fistula between the fluid collections and the gastrointestinal tract. After fluid collections are located, a needle knife is used for blind puncture. A small amount of contrast agent is administered into the fluid collections, and fluoroscopy is used to evaluate whether the puncture is appropriate. After the puncture, aspiration is attempted in order to verify whether the needle knife was properly inserted, and the characteristics of the aspirated fluid collection are then identified. A 0.025 or 0.035-inch guidewire is inserted into the needle knife and a cystotome or a balloon catheter for dilatation is inserted to dilate the puncture site, followed by the insertion of a stent or naso-cystic drainage tube. According to reports over the past 20 years, ETD for PFCs has a high treatment success rate of 70-100%. The incidence of complications has been reported to be 2-40%, and these mainly included bleeding, perforation, infection, and stent dysfunction and migration. However, in 42-48% of PFC cases, it was difficult to efficiently perform ETD because the fluid collections did not protrude into the gastrointestinal tract. In addition, ETD poses a risk of blind puncture causing injury to blood vessels in the puncture site. In particular, if the patient has portal hypertension, there is a risk of bleeding because of injury to collateral vessels.
+
+### 3. Endoscopic ultrasound-guided transmural drainage (EUS-TD)
+
+The advantage of EUS-TD is that the most ideal puncture location can be identified in advance. In the past, PFCs that did not protrude into the gastrointestinal tract were considered contraindicated to ETD, but EUS-guided endoscopic treatment was used in such cases. Because EUS uses Doppler to identify blood vessels intruding into the puncture site, the risk of bleeding can be reduced. In addition, EUS is conducted in a location where the distance between the gastrointestinal wall and the fluid collections is the closest, which facilitates the puncturing procedure. Moreover, EUS helps clinicians to select an appropriate treatment method because it is possible to directly verify the amount of necrotic substances in the cyst. The general procedures are as follows: after puncturing with a 19-gauge needle, the stylet is removed and a 0.025-or 0.035-inch guidewire is inserted into the lesion through the needle. Subsequently, the fistula is dilated and a stent is inserted in the same manner as in ETD.
+
+### 4. Transpapillary pancreatic duct drainage (TPDD)
+
+In general, TPDD can be performed when the size of the pseudocyst is <5 cm and the main PD and the PFC are connected. TPDD can be used even when the PFC is far from the gastrointestinal tract or when transmural drainage is difficult because of underlying diseases, such as severe coagulation disorders. The procedure involves cannulating the PD through the major or minor papilla and inserting a guidewire into the PD. Then, a sphincterotomy of the PD is performed, and transpapillary pancreatic stents are directly inserted into the PFC or across the leak point of the PD.
+
+TPDD has a lower risk of complications, such as bleeding and perforation, compared to transmural drainage. However, it may cause damage to the normal PD, and there is a risk of developing pancreatitis by endoscopic retrograde cholangiopancreatography (ERCP). TPDD showed a lower success rate (42-49%) compared to transmural drainage because of failure of selective cannulation of the PD or complete PD disconnection. There are even cases in which ERCP is not possible because of the anatomical change in the gastrointestinal tract from the PFC. A recently published meta-analysis showed that additional TPDD has no benefit when ETD is successful, and concluded that use of TPDD should be limited.
+
+### 5. Comparison between ETD and EUS-TD
+
+The major advantage of EUS-TD is that it can treat PFCs that do not protrude into the gastrointestinal tract. In addition, Doppler can be used to identify blood vessels between the fluid collections and the gastrointestinal tract, which helps to avoid blood vessel damage. According to a prospective comparison study in which pseudocyst treatment outcomes were compared in 53 patients who underwent ETD and 46 patients who underwent EUS-TD, no significant difference was reported between the two methods in initial treatment success rate (94% vs. 93%), long-term treatment success rate (91% vs. 84%), or the incidence of complications (18% vs. 19%). However, because ETD was performed only in patients with pseudocysts protruding into the gastrointestinal tract and who did not have portal hypertension, it is difficult to directly compare the two treatment outcomes. In a randomized comparative study conducted in Korea, ETD was performed on PFCs that protruded into the gastrointestinal tract, while EUS-TD was performed on PFCs that did not protrude, after marking the puncture site in advance using EUS. The results showed that the success rate of EUS-TD was 94%, which was superior to that of ETD (72%, p=0.039). Moreover, when EUS was used for the patients for whom ETD was unsuccessful, drainage was successful in all patients. Another randomized comparative study directly compared the treatment outcomes of ETD and EUS-TD, and it also determined that the treatment success rate of EUS-TD was superior to that of ETD (100.0% vs. 33.3%, p<0.001). In that study, two patients who underwent ETD developed severe bleeding after the procedure and one patient died. Therefore, EUS-TD is preferentially recommended over ETD for the treatment of PFCs.
+
+KQ6. What types of stents are used in endoscopic drainage?
+
+Both plastic and metal stents are used for the endoscopic drainage of PFCs. The most commonly used plastic stents are double-pigtail stents, whereas the most commonly used metal stents are tube-shaped, selfexpandable stents that are specialized for drainage.
+
+(Recommendation grade: strong, evidence level: low)
+
+Plastic stents have traditionally been widely used for EUS-TD. Double pigtail plastic stents with 7 Fr diameters have been primarily been used. In recent years, fully covered self-expandable metal stents have gradually become more common. Tube-shaped metal stents, which are primarily used in ERCP, have also been used for EUS-TD. Metal stents specialized for pseudocyst drainage, which have large diameters and are flared at both ends, have recently been developed. These stents are classified according to the amount of force that brings the lumens together.
+
+KQ7. What are the advantages and disadvantages of plastic and metal stents?
+
+Plastic stents are more widely used because they are inexpensive and easy to remove, even after a long period of time. However, metal stents have the advantage of more efficient drainage and less stent obstruction due to their larger diameters. In addition, when a metal stent is inserted, fewer accessories are required, resulting in a shorter duration for the procedure.
+
+(Recommendation grade: weak, evidence level: low)
+
+Until recently, plastic stents have been most extensively used in EUS-TD procedures. The advantages of plastic stents are that they are inexpensive and can be easily removed, even after being held in place for a long period of time. However because plastic stents have small diameters, the drainage may not be sufficient, and there is a risk of infection within the PFC. Thus, multiple plastic stents or a nasal drainage tube must be inserted during the procedure. When inserting multiple stents, however, more than two guidewires must be used, and the procedure takes longer. Moreover, it can be difficult, even for experts, to insert multiple plastic stents in one procedure.
+
+Metal stents have larger diameters (8-16 mm) than plastic stents; therefore, they are more effective in draining fluid collections and have a lower risk of obstruction. Multiple plastic stents often must be inserted for sufficient drainage. Moreover, metal stents make it possible to reduce the steps required for the drainage procedure as well as the number of accessories required for each step, thus resulting in shorter procedure duration. For this purpose, a process of expanding the fistula with a dilating balloon catheter and inserting multiple guidewires is necessary. Metal stents, particularly those equipped with electric cautery devices, do not require any accessory devices or multiple insertions, which are often required with plastic stents.
+
+KQ8. What accessories are used in endoscopic treatment?
+
+For EUS-TD, a needle for the EUS-guided fine needle aspiration, guidewire, bougie, needle knife, cystotome, and balloon dilatator are used. These instruments are recommended for use in an appropriate combination depending on the preference, experience, and ability of the practitioner.
+
+(Recommendation grade: weak, evidence level: low)
+
+The accessories specialized for EUS-TD make it possible even for inexperienced endoscopists to safely perform the procedure. However, there are still few accessories specialized exclusively for EUS-TD; most of them are used in ERCP as well. The needle for EUS-guided fine needle aspiration (EUS-FNA) is used for puncture, and the guidewire for ERCP, with a diameter of 0.025 or 0.035 inches, is also used. To insert the stent, the fistula must be dilated through the puncture site. For this, a cystotome, needle knife, bougie, or dilating balloon catheter are used. Therefore, for safe and effective drainage, it is essential to develop accessories specialized for EUS-TD in the future.
+
+KQ9. Is it necessary to insert an additional nasocystic (nasal) drainage tube after stent insertion?
+
+It is recommended that a naso-cystic tube be inserted only when the size of the PFC is larger than 10 cm or when the PFC is infected.
+
+(Recommendation grade: weak, evidence level: low)
+
+The utility of the naso-cystic tube in the drainage of PFCs has primarily been studied in the context of WON treatment. After the drainage is performed, the inside of the WON is continuously cleansed using a naso-cystic tube; in some cases, antibiotics are mixed with the washing solution (bacitracin 25,000 units/1 L of saline). Such procedures are conducted to prevent infection that may occur after drainage, shorten the time of the treatment, and reduce the number of endoscopies. The naso-cystic tube procedure can be used to verify the amount of drainage and the characteristics of the fluid being drained, both of which are helpful in selecting an appropriate treatment. In most studies, 500-1,000 mL of normal saline per day was used to wash the naso-cystic tube, and there were usually no complications.
+
+To date, there have been no randomized comparative studies on the effects of the naso-cystic tube. In a multicenter study involving a total of 68 patients with WON in which the naso-cystic tube was inserted with a metal stent, there was no difference in treatment effects between 22 patients with a normal saline wash for 2-3 days and 46 patients without it (99% vs. 95.6%, p=0.59).
+
+The naso-cystic tube is not usually inserted during EUS-TD or ETD. However, for treating infected PFCs, it may be necessary to wash and drain using normal saline through the naso-cystic tube. In a prospective study published by Puri et al., a total of 40 patients with PFCs were treated with a 10 Fr plastic stent and a naso-cystic tube. After an average of 13 days of treatment, the naso-cystic tube was removed. The results showed a treatment success rate of 97.5% and complication incidence of 2.5%, thus suggesting that the naso-cystic tube was helpful in treating pseudocysts.
+
+In a retrospective study published in 2013, when a naso-cystic tube was inserted with a plastic stent and normal saline was washed through the tube for 2-3 days, the treatment success rate was superior (85% vs. 63%, p=0.03) to the group without the naso-cystic tube. In addition, in a randomized comparative study involving pseudocysts >10 cm, the infection rate, hospital stay, and treatment period were significantly reduced when the naso-cystic tube was inserted. The effectiveness of saline irrigation in the infected PFCs did not clearly verified, but it is able to anticipate the effectiveness of irrigation with the result of the study on the percutaneous drainage with saline lavage indirectly. Sleeman et al.. conducted study with 63 patients with infected pancreatic necrosis to estimate the effect of percutaneous catheter drainage with the saline lavage in PFCs and 75% of patients were successfully treated. Thus, the naso-cystic tube insertion and/or saline irrigation would be considered for treating large or severe infected PFCs.
+
+KQ10. Is the additional transpapillary PD drainage through ERCP necessary?
+
+Inserting a PD stent using ERCP is recommended in the treatment of PFCs when there is leakage of pancreatic fluid and partial rupture of the PD.
+
+(Recommendation grade: weak, evidence level: low)
+
+For treating the PFC, the PD drainage tube should be used when there is persistent leakage. Most studies published to date are small-scale studies in which the treatment effect of the drainage tube is 50-88%. To perform selective PD cannulation through the major or minor papilla using ERCP, a guidewire is inserted into the pancreatic duct. Then, a pancreatic sphincterotomy is performed, and a pancreatic stent is inserted across the leak point of the PD.
+
+In a study comparing the treatment effect of PD stent insertion as per the degree of PD rupture, the treatment effect of the insertion of a pancreatic stent showed a lower success rate for a complete rupture of the PD than for a partial rupture (20% vs. 92%, p=0.001).
+
+KQ11. When and how should follow-up be performed after endoscopic treatment?
+
+CT is recommended as a follow-up imaging method after the endoscopic drainage of PFCs. If there are no specific complications after the procedure, imaging tests to verify the resolution of the PFC are performed 4 to 8 weeks after drainage; however, with only partial improvement, follow-up examinations every 2 to 4 weeks are recommended.
+
+(Recommendation grade: strong, evidence level: moderate)
+
+CT or MRCP can be considered for the imaging test for PFCs. CT is useful for post-treatment evaluation and for determining the severity and prognosis of pancreatitis. MRCP is superior to CT if it is necessary to evaluate whether there is a connection between the PFC and the PD, or to determine the amount of solid material remaining in the fluid collection. EUS can also be helpful for initial evaluation after the procedure. However, some air entering cavity after drainage can be obstacle to accuate evaluation.
+
+According to Guo et al., follow-up imaging tests are recommended, on average, on the 12th day after the procedure, but can be appropriately performed between 3 and 30 days, depending on the clinical features. In particular, for lumen apposing metallic stents (LAMS), careful follow-up is necessary because there is a risk of complications related to stent migration during the procedure. Imaging tests to confirm the resolution of PFCs are conducted 4-8 weeks after drainage; however, if the PFC has not completely improved, follow-up every 2-4 weeks is recommended.
+
+KQ12. Is it necessary to remove the inserted stent and, if so, when?
+
+It is recommended that the inserted stent be removed when the complete resolution of the PFC is confirmed by the follow-up imaging.
+
+(Recommendation grade: strong, evidence level: moderate)
+
+There are no criteria for the duration of appropriate stent placement after endoscopic drainage of PFCs. It can be left the conventional double-pigtail plastic stents in the stomach for transluminal drainage of PFC, in patient with disrupted or disconnected pancreatic duct. However, if the follow-up imaging confirms that the PFC is completely resolved, removal of the inserted stent is recommended. For PFCs without disruption of the PD, the stent needs to be removed if imaging confirms the disappearance of lesions. However, infected or necrotic PFCs have high viscosity and may not be able to be quickly drained, so they require long-term stent placement. A number of complications related to stent procedures have been reported in treating PFCs. If stent placement is prolonged, the stent may migrate into the intestine or abdominal cavity. Therefore, it is necessary to confirm the status or location of the stent or the loss of the PFC around the pancreas through regular imaging, as well as to determine the time of removal. It is usually recommended to remove the transluminal drainage stent either LAMS or double-pigtail plastic stents after 4 weeks. There is a relatively low risk associated with removal procedures. However, because the long-term stent patency and stability in this regard are yet unknown, additional studies are required.
+
+KQ13. What types of complications are associated with endoscopic treatment?
+
+Clinicians should be fully aware of the risks of infection, bleeding, perforation, stent migration, and complications related to the use of sedatives in the endoscopic treatment of PFCs.
+
+(Recommendation grade: strong, evidence level: moderate)
+
+Complications associated with endoscopic drainage of PFCs have been reported in 5-20% of cases. Infection, bleeding, perforation, stent migration, injury to the PD, and complications related to the use of sedatives may occur. Pancreatitis might also occur if ERCP is conducted along with the drainage procedure. In a study of 148 patients who underwent EUS-TD, eight cases of complications (5.4%) were reported, including two perforations, four infections, one bleeding, and one stent migration. Another study reported a complication rate of 18%.
+
+PFC infections that occur after drainage are mostly caused by clogged stents and insufficient drainage, or when multiple fluid collections are present or there are undrained regions. If a secondary infection develops or the existing infection worsens, endoscopic treatment should be repeated to verify that the stent is not clogged. If the stent is the cause of the infection, it should be removed and replaced, or an additional plastic stent should be inserted. In some cases, additional drainage may be performed through other routes, such as percutaneous drainage.
+
+Bleeding can occur in up to 20% of cases, but it is is more common when a LAMS is inserted. CT angiography is recommended if bleeding is suspected, because it may be caused by a pseudoaneurysm from arterial damage during the stent insertion. If a pseudoaneurysm is identified, angiographic embolization should be performed immediately. In some cases, venous bleeding in the PFC or bleeding in fistulas may occur. In most cases, bleeding stops spontaneously or can be stopped endoscopically. Most venous bleeding is mild and relatively easy to stop; however, it can be severe if it comes from the splenic vein, portal vein, or varices. Severe venous bleeding is difficult to stop through angiography; therefore, a multidisciplinary approach, as octreotide administration or surgery may be required. For massive bleeding that occurs during the procedure, hemostasis using a balloon tamponade should be attempted first, and additional treatments, such as radiological intervention and surgery, should be considered if necessary.
+
+Drainage-related perforation has been reported with a frequency of ~5% and can occur during or after the procedure. If perforation from a stent is detected during the procedure, an esophageal stent or a fully covered self-expendable metal stent with a large diameter, such as a LAMS, should immediately be inserted. The primary reason for the few instances of pneumoperitoneum reported is that the air in the digestive tract leaks because of the temporary separation between the digestive tract and the fluid collections during the drainage procedure, but most of it disappears on its own.
+
+To date, there have been no randomized controlled studies on the use of prophylactic antibiotics, and there have been no high-quality studies on the type of antibiotics that should be used. However, because drainage is a process that creates an artificial fistula in the gastrointestinal tract, internal organs are exposed to a contaminated environment, so infection after the procedure is one of the most common complications. Accordingly, the administration of prophylactic antibiotics is recommended by both European and US guidelines. Most existing studies are focused on preventing infection of necrotic tissues in acute pancreatitis. Various antibiotics have been used, but most studies have used high-dose second- or third-generation cephalosporins or carbapenems. Although the evidence is insufficient, it seems that it will be helpful to use these types of antibiotic before the drainage procedure. There is no research on how long the antibiotics should be administered, but the general recommendation is for 3-5 days after the procedure.
+
+KQ14. What competencies should a clinician performing endoscopic treatment have?
+
+The ability to perform appropriate endoscopic treatment for PFCs requires many observations of the procedure, and it is recommended that the procedure be performed at least 5 to 10 times under the supervision of an experienced endoscopist.
+
+(Recommendation grade: weak, evidence level: low)
+
+Appropriate skills must be acquired to properly perform EUS-TD. These techniques can be learned by observing live procedures. Ideally, these observations would occur at an institution with substantial accumulated experience in performing these procedures. The Asian EUS group reported that doctors who wanted to implement EUS were able to efficiently acquire knowledge and skills by participating in well-designed training programs. The use of a porcine model for EUS-TD has also been reported to be helpful for skill acquisition. After sufficient practice with the porcine model, the procedure should be performed 5-10 times on patients under the supervision of an experienced endoscopy specialist. However, there is not strong evidence for the appropriate number of supervised procedures. One study reported that the success rate of drainage improved after EUS-TD was performed 20 times, and the period for improvement of fluid collections after drainage was reduced. Another study reported that the duration of the procedure was significantly reduced after it was performed 25 times. However, these studies were conducted when EUS-TD was first introduced. At that time, EUS-related procedures were not widely used, and appropriate techniques had not been established. Currently, the techniques for EUS-TD are standardized to some extent. According to the current standards, if a practitioner who is skilled in ERCP performs 5-10 procedures under the supervision of an experienced endoscopist, practitioner can perform the procedure alone. However, since there are individual differences in the time required to become skilled in the actual technique, customized evaluation is needed.
+
+KQ15. What is the appropriate environment for an institution where endoscopic treatment is performed?
+
+It is recommended that endoscopic treatment for PFCs be performed in an institution capable of radiological intervention and emergency surgery in order to manage complications.
+
+(Recommendation grade: strong, evidence level: low)
+
+EUS-TD is often performed by pancreas and biliary tract specialists who are skilled in procedures such as ERCP and EUS-FNA. Because EUS-TD requires accessories used in ERCP, radiologists, as well as nurses and other assistants, should have extensive experience with ERCP. Moreover, it is essential to have an EUS system and a linear echoendoscope to perform the procedure. EUS-TD is generally performed in an ERCP room because fluoroscopy is usually used during the procedure. With the recent development of an electrocautery-enhanced LAMS, EUS-TD is possible without fluoroscopy; however, since it may still be required for a safe procedure, it is recommended that EUS-TD be performed in an ERCP room.
+
+EUS-TD is a relatively safe procedure; the incidence of complications has been reported to vary from 0% to 34%. As mentioned earlier, complications include bleeding, infection, and perforation. In rare cases, life-threatening complications can occur. Bleeding is usually attributed to iatrogenic fistula formation or damage to blood vessels during stent insertion. When severe bleeding occurs, hemostasis by immediate vascular embolization may be necessary. Perforation can occur when the transmural route is lost during the stent insertion process. With the recent development of sutures that use endoscopic clips, in some cases, perforations can be sutured and treated with endoscopic treatment only. However, there are still cases that require surgical treatment. Therefore, it is recommended that EUS-TD be performed in an institution capable of radiologic intervention and emergency surgery so that complications can be properly managed.
+
+## CONCLUSION
+
+Endoscopic treatment of PFCs is recognized as a standard treatment because of its lower cost, shorter hospital stay, and faster recovery rate than surgical treatment. In recent years, interventions using EUS have been introduced for the treatment of PFCs, and their safety and efficacy have continued to evolve. Accordingly, clinical guidelines suitable for the circumstances in our country should be prepared. These clinical practice guidelines are expected to be used for diagnosing and providing appropriate treatment for patients with PFCs.

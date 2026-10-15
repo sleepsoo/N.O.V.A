@@ -1,0 +1,472 @@
+{
+  "case_id": "S06",
+  "alias": "S06",
+  "turns": 42,
+  "say": 31,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 17648,
+  "doctor_output_tokens": 6996,
+  "seconds": 318.1,
+  "diagnosis": "제2형 당뇨병 (Type 2 diabetes mellitus)",
+  "accepted_diagnoses": [
+    "2형 당뇨병 (Type 2 diabetes mellitus)",
+    "제2형 당뇨병",
+    "당뇨병"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 56,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "피로와 갈증, 잦은 소변",
+    "request": "",
+    "categories": [
+      "dm",
+      "fatigue",
+      "urinary"
+    ],
+    "empathy": "많이 힘드셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "제2형 당뇨병 가능성이 높아 보여요.",
+    "혈당이 높으면 갈증과 잦은 소변이 생겨요.",
+    "당뇨 조절은 신장 손상 위험을 낮춰요.",
+    "공복혈당과 당화혈색소로 진단을 확인해요.",
+    "신장 기능과 소변 알부민도 검사해요.",
+    "신장 기능 확인 후 경구 혈당강하제를 고려해요.",
+    "심한 갈증·구토·숨참·혼란이면 바로 오세요.",
+    "1~2주 뒤 결과를 보고, 단 음료를 줄이세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 650,
+      "out": 195,
+      "finish": "stop",
+      "sec": 4.3
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3075,
+      "out": 646,
+      "finish": "stop",
+      "sec": 7.9
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3303,
+      "out": 571,
+      "finish": "stop",
+      "sec": 7.0
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1019,
+      "out": 78,
+      "finish": "stop",
+      "sec": 2.3
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1797,
+      "out": 1575,
+      "finish": "stop",
+      "sec": 15.6
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2327,
+      "out": 1491,
+      "finish": "stop",
+      "sec": 17.7
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2790,
+      "out": 1621,
+      "finish": "stop",
+      "sec": 15.8
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2687,
+      "out": 819,
+      "finish": "stop",
+      "sec": 8.8
+    }
+  ],
+  "phase_times": {
+    "intake": 4.3,
+    "interview": 148.1,
+    "examine": 69.6,
+    "facts": 15.6,
+    "dx": 17.7,
+    "plan_say": 15.8,
+    "explain": 38.3,
+    "S": 8.8
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "오미경",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "쉰여섯 살",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "women",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "여자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "ros",
+      "key": "ros.Fatigue",
+      "label": "피로",
+      "pol": "+",
+      "detail": "두세 달 전부터",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "갈증",
+      "pol": "+",
+      "detail": "두세 달 전부터",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "잦은 소변",
+      "pol": "+",
+      "detail": "화장실 자주 감",
+      "id": "F6"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "잦은 소변",
+      "pol": "+",
+      "detail": "낮 열 번 넘게, 밤 두세 번",
+      "id": "F7"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "갈증",
+      "pol": "+",
+      "detail": "두세 달 전부터, 물 하루 2리터 넘게",
+      "id": "F8"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 감소",
+      "pol": "+",
+      "detail": "삼 키로그람 정도",
+      "id": "F9"
+    },
+    {
+      "turn": 4,
+      "sec": "pmh",
+      "key": "other",
+      "label": "혈당 상승",
+      "pol": "+",
+      "detail": "이 년 전 조금 높다고 들음",
+      "id": "F10"
+    },
+    {
+      "turn": 5,
+      "sec": "fh",
+      "key": "fh.DM",
+      "label": "부친 당뇨",
+      "pol": "+",
+      "detail": "당뇨병",
+      "id": "F11"
+    },
+    {
+      "turn": 5,
+      "sec": "fh",
+      "key": "fh.DM",
+      "label": "모친 당뇨",
+      "pol": "+",
+      "detail": "당뇨병",
+      "id": "F12"
+    },
+    {
+      "turn": 6,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "",
+      "id": "F13"
+    },
+    {
+      "turn": 6,
+      "sec": "meds",
+      "key": "other",
+      "label": "혈압약",
+      "pol": "+",
+      "detail": "하루 한 알",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "",
+      "id": "F15"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "혈압약",
+      "pol": "+",
+      "detail": "하루 한 알",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "투석 걱정",
+      "pol": "+",
+      "detail": "아버지처럼 당뇨로 투석 걱정",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "피로·갈증 경과",
+      "pol": "?",
+      "detail": "두세 달 전부터",
+      "id": "F18"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이전 진료",
+      "pol": "?",
+      "detail": "두세 달 전부터 증상으로 내원",
+      "id": "F19"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "시야 흐림",
+      "pol": "+",
+      "detail": "눈 침침, 글씨 흐릿할 때",
+      "id": "F20"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "other",
+      "label": "배뇨통",
+      "pol": "-",
+      "detail": "아프거나 따갑지 않음",
+      "id": "F21"
+    },
+    {
+      "turn": 13,
+      "sec": "ros",
+      "key": "other",
+      "label": "열",
+      "pol": "-",
+      "detail": "",
+      "id": "F22"
+    },
+    {
+      "turn": 13,
+      "sec": "ros",
+      "key": "other",
+      "label": "오한",
+      "pol": "-",
+      "detail": "",
+      "id": "F23"
+    },
+    {
+      "turn": 14,
+      "sec": "ros",
+      "key": "other",
+      "label": "손떨림",
+      "pol": "-",
+      "detail": "",
+      "id": "F24"
+    },
+    {
+      "turn": 14,
+      "sec": "ros",
+      "key": "other",
+      "label": "심계항진",
+      "pol": "-",
+      "detail": "",
+      "id": "F25"
+    },
+    {
+      "turn": 15,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "sh",
+      "key": "other",
+      "label": "음주",
+      "pol": "-",
+      "detail": "",
+      "id": "F27"
+    },
+    {
+      "turn": 17,
+      "sec": "psych",
+      "key": "other",
+      "label": "기분 저하",
+      "pol": "-",
+      "detail": "",
+      "id": "F28"
+    },
+    {
+      "turn": 18,
+      "sec": "ros",
+      "key": "other",
+      "label": "혈뇨",
+      "pol": "-",
+      "detail": "소변 색 붉은 적 없음",
+      "id": "F29"
+    },
+    {
+      "turn": 19,
+      "sec": "ros",
+      "key": "other",
+      "label": "옆구리·허리 통증",
+      "pol": "-",
+      "detail": "",
+      "id": "F30"
+    },
+    {
+      "turn": 20,
+      "sec": "pmh",
+      "key": "other",
+      "label": "방광염·결석 과거력",
+      "pol": "-",
+      "detail": "",
+      "id": "F31"
+    },
+    {
+      "turn": 21,
+      "sec": "hpi",
+      "key": "other",
+      "label": "단 음료",
+      "pol": "+",
+      "detail": "당겨서 요즘 자주 마심",
+      "id": "F32"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "투석 걱정",
+      "pol": "+",
+      "detail": "아버지처럼 당뇨로 투석 걱정",
+      "id": "F33"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "8311b29d98947a64790ca7c4f19e9a83741ade7100d3b9c64221e4c5dd058f2f",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 힘드셨겠어요. 소변을 자주 보세요?",
+      "effective": "소변을 자주 보세요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S06",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 35,
+  "luna_calls": 9,
+  "sim_doctor_calls": 8,
+  "sim_doctor_input_tokens": 17648,
+  "sim_doctor_output_tokens": 6996,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v2c/run.py",
+  "grade_total": 55,
+  "grade_scores": {
+    "정보수집": 11,
+    "진단추론": 12,
+    "검사·추적": 7,
+    "안전": 11,
+    "의사소통": 6,
+    "효율": 8
+  }
+}

@@ -1,0 +1,367 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "아프시겠어요.",
+    "reply": "네, 아파요.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "귀통증에 대해 자세히 말씀해 주세요",
+    "reply": "오른쪽 귀가 아파요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "오줌은 평소처럼 기저귀가 젖고, 마지막으로 오줌 싼 건 두 시간 전이에요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "소변에 대해 자세히 말씀해 주세요",
+    "reply": "오줌은 평소처럼 기저귀가 젖고, 마지막으로 오줌 싼 건 두 시간 전이에요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "열이 내리면 평소처럼 장난감을 가지고 놀아요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "귀에서 물이 흐르나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "열이 자주 있나요?",
+    "reply": "열이 나기 시작했고, 삼십팔 도까지 올랐어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "입원한 적 있나요?",
+    "reply": "입원한 적 없어요.",
+    "phase": "interview",
+    "qid": "p_illness",
+    "label": "과거력"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "먹는 약이 있나요?",
+    "reply": "평소 먹는 약은 없어요.",
+    "phase": "interview",
+    "qid": "p_meds",
+    "label": "복용약"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "가족 중에 아픈 분이 있나요?",
+    "reply": "아빠는 비염이 있어요.",
+    "phase": "interview",
+    "qid": "p_fh",
+    "label": "가족력"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "입맛이 없었나요?",
+    "reply": "밥은 평소의 반 정도만 먹고, 우유는 잘 마신다.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "귀가 아픈 걸 더 악화시키는 동작이 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "요즘 귀에 물이 닿았나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "어린이집 생활은 어떤가요?",
+    "reply": "평일에 어린이집에 다녀요.",
+    "phase": "interview",
+    "qid": "p_daycare",
+    "label": "사회력"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "열이 계속 나서 뇌수막염 같은 큰 병이 아닌지 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 16,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 연령에 맞는 반응, 보호자 알아봄(+)",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 눈곱(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "고막 시진하겠습니다",
+    "reply": "우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)",
+    "phase": "exam",
+    "qid": "ear",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "부비동 압통 확인하겠습니다",
+    "reply": "부비동 압통(-)",
+    "phase": "exam",
+    "qid": "sinus",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "인두·편도 시진하겠습니다",
+    "reply": "인두 경도 발적(+), 편도 비대 1도, 삼출물(-)",
+    "phase": "exam",
+    "qid": "pharynx",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "흉곽 시진하겠습니다",
+    "reply": "흉곽 함몰(-), 보조호흡근 사용(-), 비익 확장(-)",
+    "phase": "exam",
+    "qid": "chest_insp",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 128회/분, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "복부 시진 (Abdominal inspection) | 복부 무통, 복부 모양 정상, 복부 소리 정상",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "간·비장 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "liver_spleen",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_SPECIFIC",
+    "qid": "periph",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "급성 중이염 가능성이 높아 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "개선되는 지 관찰·48h 후 재진이 적절해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_options",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "말씀하신 증상들이 이 병과 잘 맞아요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_link",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "뇌수막염은 귀통증이 아니라 두통·경련이 주요 신호예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "고막 진찰은 귀를 확인해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "해열진통제는 과다 복용 시 간에 부담을 줄 수 있어요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_caution",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "2~3일 뒤 귀 상태를 다시 볼게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "고열·귀통증·귀뒤 부위 붓기·목 뻣뻣함면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "귀 뒤 부위 붓기",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  }
+]

@@ -1,0 +1,607 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "잠 못 자서 고생이시네요. 언제부터 그러셨어요?",
+      "effective_content": "언제부터 그러셨어요?",
+      "response": {
+        "status": "OK",
+        "content": "일곱 해 전부터 잠을 잘 못 자서 힘들었어요.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "잠 못 자서 고생이시네요. 언제부터 그러셨어요?"
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "드시는 약 이름과 용량을 아세요?",
+      "effective_content": "드시는 약 이름과 용량을 아세요?",
+      "response": {
+        "status": "OK",
+        "content": "약 이름은 스틸녹스라고 적힌 것도 있고, 병원마다 졸피뎀 무슨 정이라고 적힌 것도 있는데 약사가 같은 약…",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "드시는 약 이름과 용량을 아세요?"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "그 약은 언제부터 드셨어요?",
+      "effective_content": "그 약은 언제부터 드셨어요?",
+      "response": {
+        "status": "OK",
+        "content": "그때부터 동네 내과에서 수면제를 받아 먹기 시작했어요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "그 약은 언제부터 드셨어요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "요즘 하루에 몇 알 드세요?",
+      "effective_content": "요즘 하루에 몇 알 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "요즘은 네 알을 먹고도 두세 시간 뒤에 깨서 다시 한두 알을 더 먹는 일이 많아졌다.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "요즘 하루에 몇 알 드세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "하루 중 언제 언제 드세요?",
+      "effective_content": "하루 중 언제 언제 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "밤 열한 시쯤 한 번, 새벽 두세 시쯤 한 번 더",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "하루 중 언제 언제 드세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "약을 안 드시면 어떤 증상이 있나요?",
+      "effective_content": "약을 안 드시면 어떤 증상이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "수면제를 안 먹으면 밤새 뒤척이고 온몸이 불안해요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "약을 안 드시면 어떤 증상이 있나요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "건강에 큰 문제가 생기지 않을지 걱정돼요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "감량을 시도한 적 있나요?",
+      "effective_content": "감량을 시도한 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "여러 번 실패했어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "감량을 시도한 적 있나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "다른 수면제나 약국에서 구입한 약 드셨나요?",
+      "effective_content": "다른 수면제나 약국에서 구입한 약 드셨나요?",
+      "response": {
+        "status": "OK",
+        "content": "약국에서 처방 없이 살 수 있는 수면유도제도 가끔 사서 같이 먹었어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "다른 수면제나 약국에서 구입한 약 드셨나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "마지막으로 언제 복용 마쳤나요?",
+      "effective_content": "마지막으로 언제 복용 마쳤나요?",
+      "response": {
+        "status": "OK",
+        "content": "어젯밤에도 자기 전에 네 알을 먹고 새벽에 깨서 두 알을 더 먹었다.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "마지막으로 언제 복용 마쳤나요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "약을 끊었을 때 경련한 적 있나요?",
+      "effective_content": "약을 끊었을 때 경련한 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "약을 끊었을 때 경련한 적 있나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "약 드신 뒤 기억이 끊긴 적 있나요?",
+      "effective_content": "약 드신 뒤 기억이 끊긴 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "가끔은 약을 먹고 난 뒤 기억이 잘 안 나는 경우도 있었어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "약 드신 뒤 기억이 끊긴 적 있나요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "가족들이 약 문제로 걱정하나요?",
+      "effective_content": "가족들이 약 문제로 걱정하나요?",
+      "response": {
+        "status": "OK",
+        "content": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨려요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "가족들이 약 문제로 걱정하나요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨 있으세요?",
+      "effective_content": "고혈압이나 당뇨 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨 있으세요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "드시는 약이나 영양제 있으세요?",
+      "effective_content": "드시는 약이나 영양제 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "암로디핀을 먹고 있어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "드시는 약이나 영양제 있으세요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "담배는 피우세요?",
+      "effective_content": "담배는 피우세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "담배는 피우세요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "다른 지병이 있으세요?",
+      "effective_content": "다른 지병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "다른 지병이 있으세요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "부모님이나 형제분 앓는 병 있나요?",
+      "effective_content": "부모님이나 형제분 앓는 병 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지는 심장병으로 돌아가셨습니다.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "부모님이나 형제분 앓는 병 있나요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "술은 얼마나 드세요?",
+      "effective_content": "술은 얼마나 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "한두 잔 정도만 마셔요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "술은 얼마나 드세요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "커피는 하루 몇 잔 드세요?",
+      "effective_content": "커피는 하루 몇 잔 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "하루에 한두 잔이에요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "커피는 하루 몇 잔 드세요?"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "요즘 스트레스 받는 일 있으세요?",
+      "effective_content": "요즘 스트레스 받는 일 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "가족들과 갈등이 있었어요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "요즘 스트레스 받는 일 있으세요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "약을 줄이고 싶지만, 잠을 못 잘까 봐 두렵다.",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 정상 체형, 안절부절(+)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "기립성 혈압 측정하겠습니다",
+      "effective_content": "r04",
+      "response": {
+        "status": "OK",
+        "result": "수축기 강하 6mmHg, 어지럼(-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 지남력 3/3점",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "주간 진정·불안 관찰하겠습니다",
+      "effective_content": "r07",
+      "response": {
+        "status": "OK",
+        "result": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "피부 온도·발한 촉진하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "온난, 발한(-), 손바닥 습윤(-/-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적, 심잡음(-)",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "인지기능 선별검사 하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "MMSE-K 28/30점, 지연회상 2/3점",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "EXAM",
+      "content": "자세성 떨림 확인하겠습니다",
+      "effective_content": "r20",
+      "response": {
+        "status": "OK",
+        "result": "자세성 떨림(-/-)",
+        "turn": 32,
+        "turns_remaining": 18
+      }
+    },
+    {
+      "turn": 33,
+      "action": "EXAM",
+      "content": "병식 평가하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "병식 부분적",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "수면제 사용 장애가 보여요",
+      "effective_content": "수면제 사용 장애가 보여요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "수면제 사용 장애가 보여요"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "피검사로 혈액·소변·갑상선 확인해요",
+      "effective_content": "피검사로 혈액·소변·갑상선 확인해요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "피검사로 혈액·소변·갑상선 확인해요"
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "오늘 바로 끊지 않고 천천히 줄여요.",
+      "effective_content": "오늘 바로 끊지 않고 천천히 줄여요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "오늘 바로 끊지 않고 천천히 줄여요."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "졸릴 땐 운전 말고 술·약국 수면제도 피하세요.",
+      "effective_content": "졸릴 땐 운전 말고 술·약국 수면제도 피하세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "졸릴 땐 운전 말고 술·약국 수면제도 피하세요."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "수면 습관 교정과 인지행동치료도 같이 해요.",
+      "effective_content": "수면 습관 교정과 인지행동치료도 같이 해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "수면 습관 교정과 인지행동치료도 같이 해요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "흥분·불안이 심하면 바로 연락하세요",
+      "effective_content": "흥분·불안이 심하면 바로 연락하세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "흥분·불안이 심하면 바로 연락하세요"
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "식은땀이 나고 가슴이 두근거려요.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요."
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "1~2주 후 결과 보러 다시 오세요",
+      "effective_content": "1~2주 후 결과 보러 다시 오세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 41,
+        "turns_remaining": 9
+      },
+      "payload": {
+        "content": "1~2주 후 결과 보러 다시 오세요"
+      }
+    },
+    {
+      "turn": 42,
+      "action": "SAY",
+      "content": "더 궁금하신 점 있으세요?",
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "식은땀이 나고 가슴이 두근거려요.",
+        "turn": 42,
+        "turns_remaining": 8
+      },
+      "payload": {
+        "content": "더 궁금하신 점 있으세요?"
+      }
+    },
+    {
+      "turn": 42,
+      "action": "DIAGNOSE",
+      "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)"
+    }
+  ]
+}

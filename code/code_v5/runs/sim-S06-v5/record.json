@@ -1,0 +1,26 @@
+{
+  "S": {
+    "cc": "C.C : 피로·목말라(당뇨 우려)\nOnset : 두세 달 전\n통증평가 : 해당 없음",
+    "hpi": "오미경, 여성, 두세 달 전부터 피로와 지속적인 목말라가 시작되어 급격한 체중 감소(3kg)와 자주 요량증가를 동반함.\n2리터 이상의 물을 일부러 섭취하며 일상에 지장이 있다고 함.\n고혈압 약 1일 1알을 복용 중이며, 과거 혈당 상승 병력이 있어 당뇨 우려와 투석 위험을 걱정해 내원함.",
+    "pmh": "DM / HTN ( /+)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 고혈압약 1일 1알\nAllergy ( )\nOthers : 고혈압 (+)",
+    "fh": "DM / HTN (+/ )\nStroke ( )\nOthers : 부모 당뇨 (+)",
+    "sh": "Smoking (-)\nAlcohol (-)\nOthers : 담배 흡연 (-), 음주 (-)",
+    "ros": "General weakness ( )  Fatigue (+)\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 음기대 매복된 소변량 증대(자주) (+), 숨차지않음(-), 변혈없음(-), 변비없음(-), 다리부기없음(-), 소변분비물없음(-), 옆구리통증없음(-)"
+  },
+  "O": {
+    "exam": "V/S : BP 146/88 mmHg, PR 82 회/분, RR 16 회/분, BT 36.6°C (시작 정보) / 기립성 혈압 측정 : 수축기 강하 4mmHg, 어지럼(-) (턴 33)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 비만 체형, 안절부절(-) (턴 23)\nH/E/E/N/T : 결막·공막 시진 : 창백(-/-), 충혈(-/-), 황달(-/-) (턴 24). 안저 검사 : 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상 (턴 31)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 25)\nChest : 심음 청진 : S1·S2 명료, 규칙적, 심잡음(-) (턴 26). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 27)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-) (턴 29). 늑척추각 압통 확인 : 압통(-/-) (턴 30)\nExtremities : 하지 말초 진찰 : 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-) (턴 28)",
+    "tests": ""
+  },
+  "A": {
+    "evidence": "#1. 제2형 당뇨병 (Type 2 Diabetes Mellitus)\n- 근거 : 2~3개월간 피로와 목말라 지속, 물 2리터 소비 (시작 정보)\n- 근거 : 체중 3kg 감소 (턴 1)\n- 근거 : 고혈압 약 복용 이력 (턴 5)\n- 근거 : 가족력 높은 당뇨 (턴 12)\n- 근거 : 2년 전 혈당 상승 기록 (턴 19)\n- 근거 : 뇨량 증가, 목말라 지속는 당뇨의 대표적 증상 (시작 정보; 턴 6)\n- 근거 : 전반적 외관 두통 등 비특이적 소견 없음 (턴 23, 24, 25, 26, 27, 28)",
+    "differential": "r/o 요로 감염(신우신염 등) : 소변 분비 증상 없음, 요통 없음, 무증상일 경우 발생 가능 (시작 정보; 턴 6, 20, 21). 감별 검사 : 소변 배양 및 감염 마커 (CRP) 검사\nr/o 갑상선 기능저하증 : 비대 없음 및 호르몬 기능이 불확실 (턴 25). 감별 검사 : TSH·T4 혈액 검사\nr/o 고혈당 관련 부정맥 : 혈압 상승과 혼합, 심잡음 없음 (턴 5, 26). 감별 검사 : 심전도(ECG) 및 혈당 조절"
+  },
+  "P": {
+    "tests": "- HbA1c : 당뇨 진단 및 관리 목표 확인\n- 공복혈당 : 추가 혈당 확인\n- 크레아티닌·eGFR : 신장 기능 평가 및 투석 위험 평가\n- 소변 알부민 : 신장 손상 징후 확인\n- TFT : 갑상선 기능 이상 배제",
+    "treatment": "- 식사·운동 요법\n- 결과 확인 후 경구 혈당강하제 시작 고려(eGFR 확인)\n- 새 약 시작 전 금기·약물 알레르기·상호작용 확인",
+    "disposition": "- 활력징후 대체로 안정(혈압 상승) : BP 146/88 mmHg, PR 82 회/분, RR 16 회/분, BT 36.6°C → 현재 외래 추적이 적절하며 활력징후 불안정·증상 급격한 악화 시 입원 고려",
+    "follow_up": "- 즉시 내원 : 심한 갈증·구토·의식 저하(고혈당 응급)",
+    "education": "진료 중 설명함:\n- 당뇨 가능성이 높아 보입니다\n- 갈증·다뇨 증세가 혈당 상승과 연관되어 있어요\n- 투석 우려가 크지만, 신장 기능이 아직 양호해요\n- 경구 혈당강하제는 검사가 끝난 뒤에 시작을 고려합니다\n- 심한 갈증·구토·복통·의식 흐림 시 바로 오세요.\n- 바로 오셔야 할 증상 하나를 말씀해 보세요.\n- 1~2주 뒤 결과 보러 다시 오세요.\n다음 방문 시 교육 예정 : 당뇨는 혈당 상승으로 발생하며, 관리가 중요합니다; 고혈당이 지속되면 신장·망막·신경 손상 위험이 높아집니다\n참고 지침 : 2019 Clinical Practice Guidelines for Type 2 Diabetes Mellitus in Korea (KR_EuropePMC, 2019); 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021); 당뇨병 (KR_HealthInfo, 2026)"
+  },
+  "diagnosis": "제2형 당뇨병 (Type 2 Diabetes Mellitus)"
+}

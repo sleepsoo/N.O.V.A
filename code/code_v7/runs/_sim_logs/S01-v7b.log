@@ -1,0 +1,88 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  14.0s] llm[intake] low out=285 finish=stop 13.8s
+[  14.0s] intake: {'age': 24, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '오른쪽 아랫배 통증', 'request': '', 'categories': ['abd_pain', 'gi', 'insomnia'], 'empathy': '불편함이 심하셨겠어요.', 'answered': []} diffs=['급성 충수염', '발장염', '원장선염', '근육 골절', '계통성 전신염']
+[  14.0s] checklist: 61 items, covered=['hpi_onset', 'ps_sleep']
+[  21.4s] turn 1 SAY: 불편함이 심하셨겠어요. 배 어디가 아프세요? -> 오른쪽 아랫배가 더 아파요.
+[  27.3s] turn 2 SAY: 어떻게 아프세요? -> 걷거나 기침하면 오른쪽 아랫배가 울려서 더 아프다
+[  30.2s] turn 3 SAY: 0~10점이면 몇 점이에요? -> 십 점 중에 칠 점 정도예요
+[  44.3s] turn 4 SAY: 식사와 관련해 달라지나요? -> 배가 아프기 시작한 건 어제 저녁 일곱 시쯤, 저녁을 먹고 한 시간쯤 지나서였어요.
+[  49.2s] turn 5 SAY: 메스껍거나 토하세요? -> 속이 메스껍고, 새벽에 한 번 토했어요.
+[  53.8s] turn 6 SAY: 설사나 변비가 있나요? -> 그 뒤로 대변은 보지 않았고, 설사는 없었다.
+[  59.8s] turn 7 SAY: 변이 검거나 피가 섞이나요? -> 변에 피가 섞이거나 검은 변을 본 적은 없어요.
+[  66.5s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 맹장염이 아닌지 걱정이 돼요.
+[  66.5s] guidelines[iv]: 급성 충수염 (KR_HealthInfo, 2026)
+[  80.0s] llm[plan_q] low out=300 finish=stop 13.4s
+[  83.8s] turn 9 SAY: 열이 나지는 않나요? -> 삼십칠 도예요.
+[  87.6s] turn 10 SAY: 통증이 점점 심해지고 있나요? -> 통증은 계속 있고, 점점 심해지고 있어요.
+[  98.3s] turn 11 SAY: 일상생활에 지장이 있나요? -> 밤새 잠을 거의 못 잤어요.
+[ 106.1s] turn 12 SAY: 이런 문제가 생겼을 때 진료받은 적 있나요? -> 지금까지 큰 병을 앓거나 입원한 적이 없고, 수술을 받은 적도 없어요.
+[ 114.1s] turn 13 SAY: 담배는 피우세요? -> 하루 반 갑 정도, 오 년째 피워요.
+[ 120.9s] turn 14 SAY: 술은 얼마나 드세요? -> 일주일에 한 번 정도 맥주 두세 잔 마셔요.
+[ 139.8s] llm[plan_q] low out=365 finish=stop 18.9s
+[ 142.2s] turn 15 SAY: 커피는 하루 몇 잔 드세요? -> 그런 건 없어요.
+[ 144.1s] turn 16 SAY: 요즘 기분이 많이 가라앉나요? -> 네, 알겠습니다.
+[ 154.8s] turn 17 SAY: 진통제나 술을 자주 드세요? -> 진통제는 먹지 않았고, 술은 일주일에 한 번 정도
+[ 163.0s] turn 18 SAY: 드시는 약이나 영양제가 있나요? -> 평소 먹는 약은 없고, 어제 먹은 소화제 한 알이 전부예요.
+[ 166.8s] turn 19 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압, 당뇨는 없어요.
+[ 174.5s] turn 20 SAY: 부모님이나 형제분이 앓는 병 있나요? -> 아버지는 고혈압으로 약을 드시고 있어요.
+[ 181.4s] turn 21 SAY: 다른 지병이 있으세요? -> 고혈압, 당뇨는 없어요.
+[ 183.7s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 그런 건 없어요.
+[ 183.7s] interview done: asked=22 covered=8 uncovered_p1=[]
+[ 186.7s] llm[exams] low out=65 finish=stop 3.1s
+[ 186.7s] exams plan: ['vitals', 'general', 'mental', 'sedation', 'abd_insp', 'bowel', 'abd_palp', 'rebound', 'murphy', 'mcburney', 'abd_perc']
+[ 186.7s] turn 23 EXAM: 활력징후 측정하겠습니다 -> 124/76mmHg, 98회/분 규칙적, 18회/분, 37.9°C
+[ 186.7s] turn 24 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)
+[ 186.7s] turn 25 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 193.4s] turn 26 EXAM REFUSED EXAM_NOT_RECOGNIZED: 주간 진정·불안 관찰하겠습니다
+[ 193.4s] turn 27 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-), 수술 반흔(-)
+[ 193.4s] turn 28 EXAM: 장음 청진하겠습니다 -> 감소 4회/분, 금속성음(-)
+[ 193.4s] turn 29 EXAM: 복부 촉진하겠습니다 -> 우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)
+[ 198.1s] turn 30 EXAM: 반발통 확인하겠습니다 -> 우하복부 반발압통(+)
+[ 204.0s] turn 31 EXAM: 머피 징후 확인하겠습니다 -> 머피 징후(-)
+[ 209.1s] turn 32 EXAM: 맥버니 압통 확인하겠습니다 -> 맥버니점 압통(+)
+[ 209.1s] turn 33 EXAM: 복부 타진하겠습니다 -> 고창음, 우하복부 타진 압통(+)
+[ 430.5s] llm[facts] medium out=4805 finish=stop 221.5s
+[ 430.6s] facts: 27
+[ 430.6s] guidelines[dx]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 493.8s] llm[dx] medium out=1345 finish=stop 63.2s
+[ 493.8s] guidelines[plan-mgmt]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 515.9s] llm[plan_say] low out=489 finish=stop 22.1s
+[ 515.9s] say fixes: ['warning']
+[ 515.9s] v7 emergency escalate: red=['근성방어', '반발통'] text=False dept=외과
+[ 515.9s] SAY emergency: 2~3일 뒤 결과를 보고 다시 오시면 됩니다 → 오늘 바로 응급실로 가셔야 해요.
+[ 521.2s] turn 34 SAY: 지금은 급성 충수염 가능성이 높아요 -> 네, 알겠습니다.
+[ 526.6s] turn 35 SAY: 통증이 오른쪽 아랫배에 집중되고 기침·걷기 시 악화해요 -> 걷거나 기침하면 오른쪽 아랫배가 울려서 더 아프다.
+[ 529.0s] turn 36 SAY: 피검사로 백혈구·염증수치가 위증인지 확인해요 -> 네, 알겠습니다.
+[ 531.1s] turn 37 SAY: 항생제와 진통제를 필요 시 시작할 예정이에요 -> 네, 알겠습니다.
+[ 534.6s] turn 38 SAY: 오늘 바로 응급실로 가셔야 해요. -> 네, 알겠습니다.
+[ 537.1s] turn 39 SAY: 숨참·흉통·의식 변화·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 544.2s] turn 40 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 열이 삼십칠 점 팔 도예요.
+[ 549.1s] turn 41 SAY: 더 궁금하신 점 있으세요? -> 가만히 누워서 오른쪽 다리를 조금 구부리면 덜 아프다.
+[ 569.6s] llm[S-narr] low out=464 finish=stop 20.5s
+[ 569.6s] v7 emergency escalate: red=['근성방어', '반발통'] text=False dept=외과
+[ 569.6s] summary: turns=41 counts={'say': 30, 'exam': 10, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 22} budget={'doctor_calls': 8, 'doctor_ok_calls': 8, 'doctor_invalid': 0, 'doctor_input_tokens': 16518, 'doctor_output_tokens': 8118, 'elapsed_s': 569.5} dx=급성 충수염 (Acute Appendicitis)
+{
+ "turns": 41,
+ "say": 30,
+ "exam": 10,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 8,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 8,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 16518,
+ "doctor_output_tokens": 8118,
+ "sim_calls": 34,
+ "seconds": 569.6,
+ "diagnosis": "급성 충수염 (Acute Appendicitis)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": null,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-S01-v7b

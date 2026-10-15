@@ -1,0 +1,333 @@
+{
+  "case_id": "C03",
+  "alias": "C03",
+  "turns": 47,
+  "say": 38,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 11,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 19129,
+  "doctor_output_tokens": 19576,
+  "seconds": 1190.6,
+  "diagnosis": "가족성 성장 지연 (Familial short stature)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "가족성 성장 지연",
+      "diagnosis_en": "Familial short stature",
+      "confidence": 0.8,
+      "_effort": "high"
+    },
+    {
+      "diagnosis_ko": "가족성 성장 지연",
+      "diagnosis_en": "Familial short stature",
+      "confidence": 0.92,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "cc": "키 성장 지연",
+    "categories": [
+      "growth",
+      "weight"
+    ],
+    "answered": [
+      "onset",
+      "course"
+    ],
+    "empathy": "키가 작아 걱정 많이 되셨겠어요."
+  },
+  "explained": [
+    "유전적 요인 때문에 생긴 가족성 성장 지연이 의심돼요.",
+    "혈액 검사로 확인할게요.",
+    "생장 호르몬 치료로 치료할 수 있어요.",
+    "두통, 시야 변화가 있으면 바로 오세요.",
+    "규칙적인 식사와 운동을 하세요.",
+    "다양한 검사를 통해 성장 가능성을 확인해 드릴게요.",
+    "더 궁금한 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 651,
+      "out": 71,
+      "finish": "stop",
+      "sec": 2.4
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1091,
+      "out": 2364,
+      "finish": "stop",
+      "sec": 75.4
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1369,
+      "out": 1260,
+      "finish": "stop",
+      "sec": 38.6
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2774,
+      "out": 390,
+      "finish": "stop",
+      "sec": 13.2
+    },
+    {
+      "tag": "dx1-high",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1765,
+      "out": 3622,
+      "finish": "stop",
+      "sec": 110.2
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1765,
+      "out": 901,
+      "finish": "stop",
+      "sec": 26.7
+    },
+    {
+      "tag": "plan",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1839,
+      "out": 4253,
+      "finish": "stop",
+      "sec": 233.8
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2256,
+      "out": 1115,
+      "finish": "stop",
+      "sec": 29.7
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2110,
+      "out": 3023,
+      "finish": "stop",
+      "sec": 87.6
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1314,
+      "out": 1368,
+      "finish": "stop",
+      "sec": 36.9
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2195,
+      "out": 1209,
+      "finish": "stop",
+      "sec": 32.0
+    }
+  ],
+  "phase_times": {
+    "structure": 2.4,
+    "interview": 192.6,
+    "examine": 29.2,
+    "diagnose_vote": 136.9,
+    "plan": 628.1,
+    "explain": 44.8,
+    "S": 124.4,
+    "S-verify": 0.0,
+    "A": 32.1
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.course",
+      "pol": "?",
+      "detail": "아니요, 별로 심해지지 않았어요"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.prior_visit",
+      "pol": "?",
+      "detail": "아니요"
+    },
+    {
+      "turn": 4,
+      "key": "peds.성장 기록",
+      "pol": "+",
+      "detail": "있었어요"
+    },
+    {
+      "turn": 6,
+      "key": "fh.father_height",
+      "pol": "+",
+      "detail": "아빠는 백흔이십팔센티미터예요."
+    },
+    {
+      "turn": 11,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "네"
+    },
+    {
+      "turn": 12,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "네, 자연분만이었어요"
+    },
+    {
+      "turn": 13,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "네"
+    },
+    {
+      "turn": 14,
+      "key": "peds.신생아기",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 15,
+      "key": "peds.발달",
+      "pol": "+",
+      "detail": "네"
+    },
+    {
+      "turn": 16,
+      "key": "peds.예방접종",
+      "pol": "+",
+      "detail": "네"
+    },
+    {
+      "turn": 17,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 18,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 19,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 20,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 21,
+      "key": "fh.similar",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 22,
+      "key": "sh.home",
+      "pol": "+",
+      "detail": "어렵게 지내요."
+    },
+    {
+      "turn": 23,
+      "key": "ros.Fever",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 23,
+      "key": "ros.Chill",
+      "pol": "-",
+      "detail": ""
+    },
+    {
+      "turn": 24,
+      "key": "ros.Anorexia",
+      "pol": "+",
+      "detail": ""
+    },
+    {
+      "turn": 25,
+      "key": "peds.영양",
+      "pol": "+",
+      "detail": "한 두 잔 정도요."
+    },
+    {
+      "turn": 26,
+      "key": "ros.Sleep disturbance",
+      "pol": "+",
+      "detail": ""
+    },
+    {
+      "turn": 27,
+      "key": "peds.수면·활동",
+      "pol": "+",
+      "detail": "네, 잘 뛰어요."
+    },
+    {
+      "turn": 30,
+      "key": "ice.concern",
+      "pol": "?",
+      "detail": "아들이 키가 작아서요"
+    },
+    {
+      "turn": 31,
+      "key": "ice.expectation",
+      "pol": "?",
+      "detail": "키가 더 클 수 있을까?"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "976f0ecac40a4fac4fd374133b28ec56d0b7348094342f1c9d4d7b14186cd8e4",
+    "score_status": "not_scored",
+    "turn": 47
+  },
+  "error": null,
+  "mode": "hybrid",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_calls": 47
+}

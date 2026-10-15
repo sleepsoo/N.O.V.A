@@ -1,0 +1,885 @@
+{
+  "session_id": "b26169c8-763e-4f4e-bbe2-f139334dbcf4",
+  "status": "completed",
+  "turns_remaining": 6,
+  "initial": {
+    "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+    "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+  },
+  "available_actions": [
+    "SAY",
+    "EXAM",
+    "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T09:08:28.120552+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+    {
+      "id": "7a949d94-9127-4f2c-8a5d-edb6c6519fa3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "잠을 못 주무셔서 많이 힘드셨겠어요.",
+        "request_id": "f9f54f19-37b5-403a-9e1e-ec90a7c85eb6"
+      },
+      "effective_content": "잠을 못 주무셔서 많이 힘드셨겠어요.",
+      "response": {
+        "turn": 1,
+        "status": "OK",
+        "content": "네, 잠을 못 자서 너무 힘들어요.",
+        "turns_remaining": 49
+      },
+      "http_status": 200,
+      "turn": 1
+    },
+    {
+      "id": "903b2300-9adf-42ef-980d-946807c6f91a",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "언제부터 그러셨어요?",
+        "request_id": "b07955ea-75c2-4a6c-97b2-b1fcd653e2b4"
+      },
+      "effective_content": "언제부터 그러셨어요?",
+      "response": {
+        "turn": 2,
+        "status": "OK",
+        "content": "7년 전부터 잠을 못 잤어요.",
+        "turns_remaining": 48
+      },
+      "http_status": 200,
+      "turn": 2
+    },
+    {
+      "id": "0f44d78c-0c5a-4810-af86-f52b427fed43",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "그 뒤로 점점 심해지고 있나요?",
+        "request_id": "707aa095-9dd5-4ee1-926b-26d6dc5e5b9e"
+      },
+      "effective_content": "그 뒤로 점점 심해지고 있나요?",
+      "response": {
+        "turn": 3,
+        "status": "OK",
+        "content": "네, 점점 더 심해지고 있어요.",
+        "turns_remaining": 47
+      },
+      "http_status": 200,
+      "turn": 3
+    },
+    {
+      "id": "59acc3ae-5bb7-44da-9966-c6a616b2a4cf",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "일상생활에 지장이 얼마나 있으세요?",
+        "request_id": "386a0b8a-0fdb-4ba4-b22d-d66d191b9803"
+      },
+      "effective_content": "일상생활에 지장이 얼마나 있으세요?",
+      "response": {
+        "turn": 4,
+        "status": "OK",
+        "content": "낮에 졸려 집안일하다 잠들어요.",
+        "turns_remaining": 46
+      },
+      "http_status": 200,
+      "turn": 4
+    },
+    {
+      "id": "bdd7dc9f-8d2f-4fe5-92d3-77b658ef4f7e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "드시는 약 이름과 용량을 아세요?",
+        "request_id": "ff00f33e-b651-469c-8032-ada594695b0e"
+      },
+      "effective_content": "드시는 약 이름과 용량을 아세요?",
+      "response": {
+        "turn": 5,
+        "status": "OK",
+        "content": "졸피뎀, 한 알에 10mg이에요.",
+        "turns_remaining": 45
+      },
+      "http_status": 200,
+      "turn": 5
+    },
+    {
+      "id": "792066df-98a0-429a-8bd8-f7529b4f746a",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "지금 하루에 몇 알 드세요?",
+        "request_id": "78c8e51f-2908-4527-8184-524ac7a98556"
+      },
+      "effective_content": "지금 하루에 몇 알 드세요?",
+      "response": {
+        "turn": 6,
+        "status": "OK",
+        "content": "하루 5~6알, 가끔 7알요.",
+        "turns_remaining": 44
+      },
+      "http_status": 200,
+      "turn": 6
+    },
+    {
+      "id": "4ecb566b-6052-4bcd-abb8-af3cfd69b54e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "하루 중 언제 언제 드세요?",
+        "request_id": "0da5cac8-8378-4327-b332-a9e55ef57a95"
+      },
+      "effective_content": "하루 중 언제 언제 드세요?",
+      "response": {
+        "turn": 7,
+        "status": "OK",
+        "content": "밤11시, 새벽2~3시, 가끔 낮요.",
+        "turns_remaining": 43
+      },
+      "http_status": 200,
+      "turn": 7
+    },
+    {
+      "id": "e2395891-dc27-4e91-8f79-94d0cf5a6783",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "처음보다 약 양이 늘었나요?",
+        "request_id": "c126c31b-5c71-4f79-b3d1-b16e57e1c3d1"
+      },
+      "effective_content": "처음보다 약 양이 늘었나요?",
+      "response": {
+        "turn": 8,
+        "status": "OK",
+        "content": "네, 반 알에서 서너 알로 늘었어요.",
+        "turns_remaining": 42
+      },
+      "http_status": 200,
+      "turn": 8
+    },
+    {
+      "id": "f6089029-c19a-4a77-b9a1-e815fb1104d3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "약을 안 드시면 어떤 증상이 있나요?",
+        "request_id": "4609365e-e518-4ec0-abd9-0ec12b7381bc"
+      },
+      "effective_content": "약을 안 드시면 어떤 증상이 있나요?",
+      "response": {
+        "turn": 9,
+        "status": "OK",
+        "content": "밤새 못 자고 온몸이 불안해요.",
+        "turns_remaining": 41
+      },
+      "http_status": 200,
+      "turn": 9
+    },
+    {
+      "id": "fff52258-16b5-4937-b112-6208ebf0e045",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "잠드는 데 오래 걸리세요?",
+        "request_id": "61b6ce76-214f-41bf-baa0-48307bd37b3c"
+      },
+      "effective_content": "잠드는 데 오래 걸리세요?",
+      "response": {
+        "turn": 10,
+        "status": "OK",
+        "content": "네, 약 없이는 밤새 못 자요.",
+        "turns_remaining": 40
+      },
+      "http_status": 200,
+      "turn": 10
+    },
+    {
+      "id": "58b246ec-17f4-4a26-a90f-2f181411a5cd",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "줄이거나 끊어 보려 하신 적 있나요?",
+        "request_id": "3ddd690f-2dd2-478b-bfa4-3f743d98aeaf"
+      },
+      "effective_content": "줄이거나 끊어 보려 하신 적 있나요?",
+      "response": {
+        "turn": 11,
+        "status": "OK",
+        "content": "네, 여러 번 시도했지만 실패했어요.",
+        "turns_remaining": 39
+      },
+      "http_status": 200,
+      "turn": 11
+    },
+    {
+      "id": "172446a5-01f4-42b4-966f-e82fbae1b55c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "자다가 자주 깨세요?",
+        "request_id": "4b2fc30d-159d-49e1-920a-5c843dc7f5b5"
+      },
+      "effective_content": "자다가 자주 깨세요?",
+      "response": {
+        "turn": 12,
+        "status": "OK",
+        "content": "네, 두세 시간 뒤에 깨요.",
+        "turns_remaining": 38
+      },
+      "http_status": 200,
+      "turn": 12
+    },
+    {
+      "id": "542b684d-1d26-489a-985f-727d9627c0b6",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "낮에 졸리거나 멍하세요?",
+        "request_id": "b417019a-6f59-49dd-8be4-d2fd2407982c"
+      },
+      "effective_content": "낮에 졸리거나 멍하세요?",
+      "response": {
+        "turn": 13,
+        "status": "OK",
+        "content": "네, 낮에 졸리고 멍해요.",
+        "turns_remaining": 37
+      },
+      "http_status": 200,
+      "turn": 13
+    },
+    {
+      "id": "6c4d776a-09ff-471b-833a-0480757684d5",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "많이 피곤하거나 기운 없으세요?",
+        "request_id": "601586c6-ff4d-41a3-8b9c-fc025b10d8ab"
+      },
+      "effective_content": "많이 피곤하거나 기운 없으세요?",
+      "response": {
+        "turn": 14,
+        "status": "OK",
+        "content": "네, 낮에 피곤하고 기운이 없어요.",
+        "turns_remaining": 36
+      },
+      "http_status": 200,
+      "turn": 14
+    },
+    {
+      "id": "30126100-c26d-48e3-b15c-9f000eec4a4e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가슴 두근거림 있으세요?",
+        "request_id": "b9082d89-aa90-43eb-b882-05da207fbe91"
+      },
+      "effective_content": "가슴 두근거림 있으세요?",
+      "response": {
+        "turn": 15,
+        "status": "OK",
+        "content": "약 안 먹으면 가슴이 두근거려요.",
+        "turns_remaining": 35
+      },
+      "http_status": 200,
+      "turn": 15
+    },
+    {
+      "id": "d1d53bd8-bf8c-43c9-b4f7-873966c95b54",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "두통 있으세요?",
+        "request_id": "aee58a73-3465-419a-a45f-e040813e14b5"
+      },
+      "effective_content": "두통 있으세요?",
+      "response": {
+        "turn": 16,
+        "status": "OK",
+        "content": "약 안 먹으면 머리가 아파요.",
+        "turns_remaining": 34
+      },
+      "http_status": 200,
+      "turn": 16
+    },
+    {
+      "id": "d8b0167b-dc46-4c52-972e-df81179fc03a",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "어지러운 적 있으세요?",
+        "request_id": "46c2a7e0-4f8f-47f8-8f2e-729de7be770b"
+      },
+      "effective_content": "어지러운 적 있으세요?",
+      "response": {
+        "turn": 17,
+        "status": "OK",
+        "content": "아니요, 어지럽지는 않아요.",
+        "turns_remaining": 33
+      },
+      "http_status": 200,
+      "turn": 17
+    },
+    {
+      "id": "0c45c9ef-f2e2-48cd-8db2-2920ea09ce40",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "입맛은 어떠세요?",
+        "request_id": "1037130e-364d-4fd4-b5c1-bf5fc6f99e00"
+      },
+      "effective_content": "입맛은 어떠세요?",
+      "response": {
+        "turn": 18,
+        "status": "OK",
+        "content": "입맛은 괜찮아요.",
+        "turns_remaining": 32
+      },
+      "http_status": 200,
+      "turn": 18
+    },
+    {
+      "id": "a8699d75-27be-4373-8eb0-7adbd746ecd6",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "고혈압이나 당뇨 있으세요?",
+        "request_id": "64a095fa-9ceb-4609-ab04-68554bde1c30"
+      },
+      "effective_content": "고혈압이나 당뇨 있으세요?",
+      "response": {
+        "turn": 19,
+        "status": "OK",
+        "content": "고혈압 있어요. 당뇨는 없어요.",
+        "turns_remaining": 31
+      },
+      "http_status": 200,
+      "turn": 19
+    },
+    {
+      "id": "d6cc716f-968b-4d6f-833c-c9fa3a245a16",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "다른 지병이나 수술받은 적 있으세요?",
+        "request_id": "57a25f4c-9ca8-45d7-83c2-67dcec517ee4"
+      },
+      "effective_content": "다른 지병이나 수술받은 적 있으세요?",
+      "response": {
+        "turn": 20,
+        "status": "OK",
+        "content": "다른 지병이나 수술은 없어요.",
+        "turns_remaining": 30
+      },
+      "http_status": 200,
+      "turn": 20
+    },
+    {
+      "id": "b4ba76cb-0654-48a3-af1f-e1a6e129ce59",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "부모님이나 형제분 앓는 병 있나요?",
+        "request_id": "35f6624c-4e43-4b67-a4bf-21d59fd1613f"
+      },
+      "effective_content": "부모님이나 형제분 앓는 병 있나요?",
+      "response": {
+        "turn": 21,
+        "status": "OK",
+        "content": "어머니 치매, 아버지 심장병이요.",
+        "turns_remaining": 29
+      },
+      "http_status": 200,
+      "turn": 21
+    },
+    {
+      "id": "f0eb7374-9e0b-4f20-a445-516893f7c6d9",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "담배는 피우세요?",
+        "request_id": "c3b1f917-3aa7-419e-9bbe-37789a04d6a7"
+      },
+      "effective_content": "담배는 피우세요?",
+      "response": {
+        "turn": 22,
+        "status": "OK",
+        "content": "평생 피운 적 없어요.",
+        "turns_remaining": 28
+      },
+      "http_status": 200,
+      "turn": 22
+    },
+    {
+      "id": "75c2590b-7b9e-447a-bb5c-7aab5361ddcd",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "최근 체중 변화 있으세요?",
+        "request_id": "6f24516c-ab19-4a7a-9ee8-84ef9f9dc05b"
+      },
+      "effective_content": "최근 체중 변화 있으세요?",
+      "response": {
+        "turn": 23,
+        "status": "OK",
+        "content": "아니요, 체중은 비슷해요.",
+        "turns_remaining": 27
+      },
+      "http_status": 200,
+      "turn": 23
+    },
+    {
+      "id": "0d633453-3635-4fbb-b5db-32236d82a2b4",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가장 걱정되는 게 뭐예요?",
+        "request_id": "9b6734d2-7c1a-401c-9f1d-4b7cbe36ebcd"
+      },
+      "effective_content": "가장 걱정되는 게 뭐예요?",
+      "response": {
+        "turn": 24,
+        "status": "OK",
+        "content": "약 줄이면 잠을 못 잘까 두려워요.",
+        "turns_remaining": 26
+      },
+      "http_status": 200,
+      "turn": 24
+    },
+    {
+      "id": "9290b860-f6a9-45e3-bbc7-fda6a911dfd0",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "오늘 바라시는 게 있으세요?",
+        "request_id": "7671ed74-4a0c-4417-a214-8b3502c6a931"
+      },
+      "effective_content": "오늘 바라시는 게 있으세요?",
+      "response": {
+        "turn": 25,
+        "status": "OK",
+        "content": "일단 수면제를 처방받고 싶어요.",
+        "turns_remaining": 25
+      },
+      "http_status": 200,
+      "turn": 25
+    },
+    {
+      "id": "8b128712-4fc8-4d21-a605-6bbb8b570136",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "활력징후 측정하겠습니다",
+        "request_id": "d5ae211c-2a42-4509-8712-a5746a17818d"
+      },
+      "effective_content": "gen_vital_signs",
+      "response": {
+        "turn": 26,
+        "result": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+        "status": "OK",
+        "turns_remaining": 24
+      },
+      "http_status": 200,
+      "turn": 26
+    },
+    {
+      "id": "1fa1456c-9ee3-4d8b-9a7d-9e2a84b64bda",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "전반적 외관 시진하겠습니다",
+        "request_id": "f318d0b0-d1f4-4067-846a-5bbba27747f3"
+      },
+      "effective_content": "gen_general_appearance",
+      "response": {
+        "turn": 27,
+        "result": "급성 병색(-), 정상 체형, 안절부절(+)",
+        "status": "OK",
+        "turns_remaining": 23
+      },
+      "http_status": 200,
+      "turn": 27
+    },
+    {
+      "id": "4004f0d1-30a9-491a-bcf4-5b1e4460f8bf",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "의식·지남력 평가하겠습니다",
+        "request_id": "7f0710d6-e6c3-4c57-9223-3bb8f8105c25"
+      },
+      "effective_content": "gen_mental_status",
+      "response": {
+        "turn": 28,
+        "result": "명료, 지남력 3/3점",
+        "status": "OK",
+        "turns_remaining": 22
+      },
+      "http_status": 200,
+      "turn": 28
+    },
+    {
+      "id": "3ee8535c-a20c-490f-ba86-a9707a1e70e9",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "주간 진정·불안 관찰하겠습니다",
+        "request_id": "74c49417-9f71-4692-81d9-b3d0b8e7332c"
+      },
+      "effective_content": "c00_sedation_anxiety",
+      "response": {
+        "turn": 29,
+        "result": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+        "status": "OK",
+        "turns_remaining": 21
+      },
+      "http_status": 200,
+      "turn": 29
+    },
+    {
+      "id": "a97d208a-0aec-4e29-9241-50dd2e1fd17f",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "인지기능 선별검사 하겠습니다",
+        "request_id": "f57f1d94-42e2-477b-9c77-8736ec16f5d6"
+      },
+      "effective_content": "gen_cognitive_screening",
+      "response": {
+        "turn": 30,
+        "result": "MMSE-K 28/30점, 지연회상 2/3점",
+        "status": "OK",
+        "turns_remaining": 20
+      },
+      "http_status": 200,
+      "turn": 30
+    },
+    {
+      "id": "03ab622c-2c66-41cb-a7bd-b871b47a3ba8",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "기립성 혈압 측정하겠습니다",
+        "request_id": "04ee1afa-33cf-42b1-a7d6-86c089afbe2c"
+      },
+      "effective_content": "gen_orthostatic_bp",
+      "response": {
+        "turn": 31,
+        "result": "수축기 강하 6mmHg, 어지럼(-)",
+        "status": "OK",
+        "turns_remaining": 19
+      },
+      "http_status": 200,
+      "turn": 31
+    },
+    {
+      "id": "946d36fa-4342-446c-98e5-1781c32c6642",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "자세성 떨림 확인하겠습니다",
+        "request_id": "c7804f5d-7cab-481f-ab8b-824e60a37c9c"
+      },
+      "effective_content": "bex_postural_tremor",
+      "response": {
+        "turn": 32,
+        "result": "자세성 떨림(-/-)",
+        "status": "OK",
+        "turns_remaining": 18
+      },
+      "http_status": 200,
+      "turn": 32
+    },
+    {
+      "id": "95a1c42c-2d5f-4914-9e17-b5fee89a1f77",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "피부 온도·발한 촉진하겠습니다",
+        "request_id": "bbe98d75-4dae-4f5f-9e5f-098ae0e8c7bf"
+      },
+      "effective_content": "gen_skin_palpation",
+      "response": {
+        "turn": 33,
+        "result": "온난, 발한(-), 손바닥 습윤(-/-)",
+        "status": "OK",
+        "turns_remaining": 17
+      },
+      "http_status": 200,
+      "turn": 33
+    },
+    {
+      "id": "48ee05ee-8768-481c-b70e-72d30c798ddf",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "보행 관찰하겠습니다",
+        "request_id": "f66ee943-875f-4925-a5bd-daf189c26f4d"
+      },
+      "effective_content": "bex_gait",
+      "response": {
+        "turn": 34,
+        "result": "보폭 정상, 절뚝임(-), 불균형(-)",
+        "status": "OK",
+        "turns_remaining": 16
+      },
+      "http_status": 200,
+      "turn": 34
+    },
+    {
+      "id": "ee0d2f15-6f17-4e61-95a7-ca22ba54e1d2",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "소뇌 협조운동 검사하겠습니다",
+        "request_id": "a5f3540c-0b91-4205-a8fe-337675d7570b"
+      },
+      "effective_content": "bex_cerebellar_coordination",
+      "response": {
+        "turn": 35,
+        "result": "겨냥이상(-/-), 실조(-/-)",
+        "status": "OK",
+        "turns_remaining": 15
+      },
+      "http_status": 200,
+      "turn": 35
+    },
+    {
+      "id": "e6ea16a4-00b2-44b0-abdf-d1d2f8ec5c33",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "구음장애 확인하겠습니다",
+        "request_id": "dd92dc62-35b9-4f06-9b72-aa10253bf648"
+      },
+      "effective_content": "hn_dysarthria",
+      "response": {
+        "turn": 36,
+        "result": "구음장애(-), 발음 명료",
+        "status": "OK",
+        "turns_remaining": 14
+      },
+      "http_status": 200,
+      "turn": 36
+    },
+    {
+      "id": "094bee29-740d-4116-9f72-e4d27340a9a8",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "진단 미정 가능성이 높아 보여요.",
+        "request_id": "47d16a03-bfa3-48c6-8c30-3e683ababbff"
+      },
+      "effective_content": "진단 미정 가능성이 높아 보여요.",
+      "response": {
+        "turn": 37,
+        "status": "OK",
+        "content": "그럼 약은 계속 먹어도 괜찮나요?",
+        "turns_remaining": 13
+      },
+      "http_status": 200,
+      "turn": 37
+    },
+    {
+      "id": "616b5999-3529-4425-9074-36d6255c7427",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "약마다 달라 계속 드셔도 된다고 단정할 수 없어요.",
+        "request_id": "2e543cf4-f29f-43db-a03f-5fb7f30f6259"
+      },
+      "effective_content": "약마다 달라 계속 드셔도 된다고 단정할 수 없어요.",
+      "response": {
+        "turn": 38,
+        "status": "OK",
+        "content": "그럼 약을 어떻게 줄여야 할까요?",
+        "turns_remaining": 12
+      },
+      "http_status": 200,
+      "turn": 38
+    },
+    {
+      "id": "219aecd8-0442-442b-bc3e-2f510a89e2d2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "정확히 확인하려고 피검사를 할게요.",
+        "request_id": "7c12dd04-5993-4751-8e99-6a0138020dd0"
+      },
+      "effective_content": "정확히 확인하려고 피검사를 할게요.",
+      "response": {
+        "turn": 39,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 11
+      },
+      "http_status": 200,
+      "turn": 39
+    },
+    {
+      "id": "e36ee162-b55a-4223-b4e2-8854a39955c8",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "검사 결과를 보고 치료를 정할게요.",
+        "request_id": "291afc0f-777a-4bd9-a429-f8e5b97f447f"
+      },
+      "effective_content": "검사 결과를 보고 치료를 정할게요.",
+      "response": {
+        "turn": 40,
+        "status": "OK",
+        "content": "네, 알겠어요.",
+        "turns_remaining": 10
+      },
+      "http_status": 200,
+      "turn": 40
+    },
+    {
+      "id": "afb193c8-3897-4556-afd4-3336b3a7ec8b",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+        "request_id": "64c1254c-76a3-4042-a09d-a3d68def44f8"
+      },
+      "effective_content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+      "response": {
+        "turn": 41,
+        "status": "OK",
+        "content": "네, 그러면 바로 올게요.",
+        "turns_remaining": 9
+      },
+      "http_status": 200,
+      "turn": 41
+    },
+    {
+      "id": "a78c3eba-8bad-47ac-bc9f-28e087f52522",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+        "request_id": "c6b73eee-045f-4d87-945a-c97f78e9a957"
+      },
+      "effective_content": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+      "response": {
+        "turn": 42,
+        "status": "OK",
+        "content": "네, 그때 다시 올게요.",
+        "turns_remaining": 8
+      },
+      "http_status": 200,
+      "turn": 42
+    },
+    {
+      "id": "734b8b2f-edf5-40aa-b4e7-4c845a6c415f",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "더 궁금하신 점 있으세요?",
+        "request_id": "ee73179d-4d94-4dc0-a2ff-2f7b7064f36e"
+      },
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "turn": 43,
+        "status": "OK",
+        "content": "수면제 말고 다른 방법은 없나요?",
+        "turns_remaining": 7
+      },
+      "http_status": 200,
+      "turn": 43
+    },
+    {
+      "id": "d8a3d71a-4469-44a9-a5be-bdb5c57a271f",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "수면제 외에도 수면 습관을 조절하는 방법이 있어요.",
+        "request_id": "36ce3ba5-f907-499c-aa5e-869f4b8c9e97"
+      },
+      "effective_content": "수면제 외에도 수면 습관을 조절하는 방법이 있어요.",
+      "response": {
+        "turn": 44,
+        "status": "OK",
+        "content": "네, 해보고 싶어요.",
+        "turns_remaining": 6
+      },
+      "http_status": 200,
+      "turn": 44
+    },
+    {
+      "id": "b48ef5e1-99ca-4ea1-ae90-6939ce121645",
+      "action": "DIAGNOSE",
+      "payload": {
+        "note": {
+          "A": {
+            "evidence": "#1. 진단 미정\n- 근거 : 불면",
+            "differential": ""
+          },
+          "O": {
+            "exam": "V/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보) / 활력징후 측정 : 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C (턴 26) / 기립성 혈압 측정 : 수축기 강하 6mmHg, 어지럼(-) (턴 31)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 정상 체형, 안절부절(+) (턴 27). 의식·지남력 평가 : 명료, 지남력 3/3점 (턴 28). 주간 진정·불안 관찰 : 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-) (턴 29)\nSkin : 피부 온도·발한 촉진 : 온난, 발한(-), 손바닥 습윤(-/-) (턴 33)\nNeuro : 인지기능 선별검사 : MMSE-K 28/30점, 지연회상 2/3점 (턴 30). 자세성 떨림 확인 : 자세성 떨림(-/-) (턴 32). 보행 관찰 : 보폭 정상, 절뚝임(-), 불균형(-) (턴 34). 소뇌 협조운동 검사 : 겨냥이상(-/-), 실조(-/-) (턴 35). 구음장애 확인 : 구음장애(-), 발음 명료 (턴 36)",
+            "tests": ""
+          },
+          "P": {
+            "tests": "- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가\n- 주진단 확인을 위한 표적 검사 : 감별진단 배제",
+            "education": "진료 중 설명함:\n- 진단 미정 가능성이 높아 보여요.\n- 약마다 달라 계속 드셔도 된다고 단정할 수 없어요.\n- 정확히 확인하려고 피검사를 할게요.\n- 검사 결과를 보고 치료를 정할게요.\n- 숨참·흉통·의식 변화·고열 시 바로 오세요.\n- 1~2주 뒤 결과 보고 다음 치료를 정해요.\n- 수면제 외에도 수면 습관을 조절하는 방법이 있어요.\n다음 방문 시 교육 예정 : 경고 증상 시 즉시 내원 안내",
+            "follow_up": "- 1~2주 후 검사 결과 확인 위해 재진\n- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시",
+            "treatment": "- 검사 결과 확인 후 원인에 맞는 치료 시작 고려\n- 금기 확인 후 증상 조절",
+            "disposition": "- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 급성 위험 징후 없어 외래 추적"
+          },
+          "S": {
+            "cc": "C.C : 불면\nOnset : 7년 전부터 잠을 못 잤어요.",
+            "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 유사 질환(+, 어머니 치매, 아버지 심장병이요)",
+            "sh": "Smoking (-)\nAlcohol ( )",
+            "hpi": "62세 여자. 저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다\nonset : 7년 전부터 잠을 못 잤어요.. course : 네, 점점 더 심해지고 있어요.. impact : 낮에 졸려 집안일하다 잠들어요.\n문진상 Fatigue, General weakness, Dizziness, 체중 변화(-)\n걱정·기대 : 약 줄이면 잠을 못 잘까 두려워요.; 일단 수면제를 처방받고 싶어요.\n위 증상으로 내원함.",
+            "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history :\nAllergy ( )\nOthers : 기타 지병(-)",
+            "ros": "General weakness (-)  Fatigue (-)\nHeadache ( )  Dizziness (-)\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 식욕 : 입맛은 괜찮아요., 체중 변화(-)"
+          }
+        },
+        "action": "DIAGNOSE",
+        "diagnosis": "진단 미정",
+        "request_id": "6bb59714-78aa-4534-b7dd-7c9f655180ca"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 44,
+        "status": "completed",
+        "score_status": "not_scored",
+        "record_digest": "d27aba394fc25166c0a0b1fa33e794e191b970e92daa992b7e08111123a6af87"
+      },
+      "http_status": 200,
+      "turn": 44
+    }
+  ],
+  "note": "[S] 주호소 (CC)\nC.C : 불면\nOnset : 7년 전부터 잠을 못 잤어요.\n\n[S] 현병력 (HPI)\n62세 여자. 저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다\nonset : 7년 전부터 잠을 못 잤어요.. course : 네, 점점 더 심해지고 있어요.. impact : 낮에 졸려 집안일하다 잠들어요.\n문진상 Fatigue, General weakness, Dizziness, 체중 변화(-)\n걱정·기대 : 약 줄이면 잠을 못 잘까 두려워요.; 일단 수면제를 처방받고 싶어요.\n위 증상으로 내원함.\n\n[S] 과거력·약물·알레르기 (PMH)\nDM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history :\nAllergy ( )\nOthers : 기타 지병(-)\n\n[S] 가족력 (FH)\nDM / HTN ( / )\nStroke ( )\nOthers : 유사 질환(+, 어머니 치매, 아버지 심장병이요)\n\n[S] 사회력 (SH)\nSmoking (-)\nAlcohol ( )\n\n[S] 계통 문진 (ROS)\nGeneral weakness (-)  Fatigue (-)\nHeadache ( )  Dizziness (-)\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 식욕 : 입맛은 괜찮아요., 체중 변화(-)\n\n[O] 진찰 소견\nV/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보) / 활력징후 측정 : 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C (턴 26) / 기립성 혈압 측정 : 수축기 강하 6mmHg, 어지럼(-) (턴 31)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 정상 체형, 안절부절(+) (턴 27). 의식·지남력 평가 : 명료, 지남력 3/3점 (턴 28). 주간 진정·불안 관찰 : 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-) (턴 29)\nSkin : 피부 온도·발한 촉진 : 온난, 발한(-), 손바닥 습윤(-/-) (턴 33)\nNeuro : 인지기능 선별검사 : MMSE-K 28/30점, 지연회상 2/3점 (턴 30). 자세성 떨림 확인 : 자세성 떨림(-/-) (턴 32). 보행 관찰 : 보폭 정상, 절뚝임(-), 불균형(-) (턴 34). 소뇌 협조운동 검사 : 겨냥이상(-/-), 실조(-/-) (턴 35). 구음장애 확인 : 구음장애(-), 발음 명료 (턴 36)\n\n[O] 검사 결과\n\n\n[A] 주진단\n진단 미정\n\n[A] 근거\n#1. 진단 미정\n- 근거 : 불면\n\n[A] 감별진단\n\n\n[P] 추가 검사\n- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가\n- 주진단 확인을 위한 표적 검사 : 감별진단 배제\n\n[P] 치료\n- 검사 결과 확인 후 원인에 맞는 치료 시작 고려\n- 금기 확인 후 증상 조절\n\n[P] 처치 결정\n- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 급성 위험 징후 없어 외래 추적\n\n[P] 추적\n- 1~2주 후 검사 결과 확인 위해 재진\n- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시\n\n[P] 환자 교육\n진료 중 설명함:\n- 진단 미정 가능성이 높아 보여요.\n- 약마다 달라 계속 드셔도 된다고 단정할 수 없어요.\n- 정확히 확인하려고 피검사를 할게요.\n- 검사 결과를 보고 치료를 정할게요.\n- 숨참·흉통·의식 변화·고열 시 바로 오세요.\n- 1~2주 뒤 결과 보고 다음 치료를 정해요.\n- 수면제 외에도 수면 습관을 조절하는 방법이 있어요.\n다음 방문 시 교육 예정 : 경고 증상 시 즉시 내원 안내\n\n",
+  "record": {
+    "A": {
+      "evidence": "#1. 진단 미정\n- 근거 : 불면",
+      "differential": ""
+    },
+    "O": {
+      "exam": "V/S : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C (시작 정보) / 활력징후 측정 : 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C (턴 26) / 기립성 혈압 측정 : 수축기 강하 6mmHg, 어지럼(-) (턴 31)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 정상 체형, 안절부절(+) (턴 27). 의식·지남력 평가 : 명료, 지남력 3/3점 (턴 28). 주간 진정·불안 관찰 : 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-) (턴 29)\nSkin : 피부 온도·발한 촉진 : 온난, 발한(-), 손바닥 습윤(-/-) (턴 33)\nNeuro : 인지기능 선별검사 : MMSE-K 28/30점, 지연회상 2/3점 (턴 30). 자세성 떨림 확인 : 자세성 떨림(-/-) (턴 32). 보행 관찰 : 보폭 정상, 절뚝임(-), 불균형(-) (턴 34). 소뇌 협조운동 검사 : 겨냥이상(-/-), 실조(-/-) (턴 35). 구음장애 확인 : 구음장애(-), 발음 명료 (턴 36)",
+      "tests": ""
+    },
+    "P": {
+      "tests": "- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가\n- 주진단 확인을 위한 표적 검사 : 감별진단 배제",
+      "education": "진료 중 설명함:\n- 진단 미정 가능성이 높아 보여요.\n- 약마다 달라 계속 드셔도 된다고 단정할 수 없어요.\n- 정확히 확인하려고 피검사를 할게요.\n- 검사 결과를 보고 치료를 정할게요.\n- 숨참·흉통·의식 변화·고열 시 바로 오세요.\n- 1~2주 뒤 결과 보고 다음 치료를 정해요.\n- 수면제 외에도 수면 습관을 조절하는 방법이 있어요.\n다음 방문 시 교육 예정 : 경고 증상 시 즉시 내원 안내",
+      "follow_up": "- 1~2주 후 검사 결과 확인 위해 재진\n- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시",
+      "treatment": "- 검사 결과 확인 후 원인에 맞는 치료 시작 고려\n- 금기 확인 후 증상 조절",
+      "disposition": "- 활력징후 대체로 안정 : BP 128/78 mmHg, PR 76 회/분, RR 18 회/분, BT 36.6°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 급성 위험 징후 없어 외래 추적"
+    },
+    "S": {
+      "cc": "C.C : 불면\nOnset : 7년 전부터 잠을 못 잤어요.",
+      "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 유사 질환(+, 어머니 치매, 아버지 심장병이요)",
+      "sh": "Smoking (-)\nAlcohol ( )",
+      "hpi": "62세 여자. 저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다\nonset : 7년 전부터 잠을 못 잤어요.. course : 네, 점점 더 심해지고 있어요.. impact : 낮에 졸려 집안일하다 잠들어요.\n문진상 Fatigue, General weakness, Dizziness, 체중 변화(-)\n걱정·기대 : 약 줄이면 잠을 못 잘까 두려워요.; 일단 수면제를 처방받고 싶어요.\n위 증상으로 내원함.",
+      "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history :\nAllergy ( )\nOthers : 기타 지병(-)",
+      "ros": "General weakness (-)  Fatigue (-)\nHeadache ( )  Dizziness (-)\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 식욕 : 입맛은 괜찮아요., 체중 변화(-)"
+    }
+  },
+  "diagnosis": "진단 미정",
+  "score": {
+    "status": "not_scored",
+    "total": null,
+    "components": {}
+  }
+}

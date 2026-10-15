@@ -1,0 +1,400 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 언제부터 작다는 말을 들었나요?",
+    "reply": "두 살 무렵부터 들었어요.",
+    "phase": "first",
+    "qid": "gr_noticed",
+    "label": "인지 시점"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "예전에 잰 키 기록이 있나요?",
+    "reply": "네, 집에 영유아 검진 수첩 있어요.",
+    "phase": "interview",
+    "qid": "gr_record",
+    "label": "성장 기록"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "두 살, 네 살 때 키는 얼마였나요?",
+    "reply": "두 살 83cm, 네 살 96cm요.",
+    "phase": "interview",
+    "qid": "gr_values",
+    "label": "과거 계측치"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "부모님 키는 각각 어떻게 되세요?",
+    "reply": "아빠 178, 엄마 165cm예요.",
+    "phase": "interview",
+    "qid": "gr_parents",
+    "label": "부모 키"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "부모님 중 늦게 키가 큰 분 있나요?",
+    "reply": "아빠가 고등학교 때 많이 컸어요.",
+    "phase": "interview",
+    "qid": "gr_late",
+    "label": "부모 사춘기"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "가족 중 키가 작거나 유전병 있나요?",
+    "reply": "키가 작거나 유전병 있는 분 없어요.",
+    "phase": "interview",
+    "qid": "gr_fh",
+    "label": "저신장·유전 가족력"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+    "reply": "아니요, 그런 병은 들은 적 없어요.",
+    "phase": "interview",
+    "qid": "gr_chronic",
+    "label": "만성질환"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "스테로이드 약을 먹은 적 있나요?",
+    "reply": "아니요, 먹은 적 없어요.",
+    "phase": "interview",
+    "qid": "gr_steroid",
+    "label": "스테로이드"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "음모가 난 적이 있나요?",
+    "reply": "아니요, 아직 없어요.",
+    "phase": "interview",
+    "qid": "gr_puberty",
+    "label": "사춘기 징후"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "변비가 자주 있나요?",
+    "reply": "아니요, 변비는 없어요.",
+    "phase": "interview",
+    "qid": "gr_hypo",
+    "label": "갑상선저하 증상"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "두통이 자주 있나요?",
+    "reply": "아니요, 두통은 없어요.",
+    "phase": "interview",
+    "qid": "gr_ich",
+    "label": "두개내 병변"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "걷기 시작한 시기는 언제인가요?",
+    "reply": "돌 무렵부터 걸었어요.",
+    "phase": "interview",
+    "qid": "p_develop",
+    "label": "발달"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "입원한 적이 있나요?",
+    "reply": "아니요, 입원한 적 없어요.",
+    "phase": "interview",
+    "qid": "p_illness",
+    "label": "입원·큰 병"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "최근 살이 빠지거나 찌진 않았나요?",
+    "reply": "갑자기 빠지거나 찌진 않았어요.",
+    "phase": "interview",
+    "qid": "gr_weight",
+    "label": "체중 변화"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "얼굴이 예전보다 둥글어졌나요?",
+    "reply": "아니요, 그런 변화는 없어요.",
+    "phase": "interview",
+    "qid": "gr_cushing",
+    "label": "쿠싱 양상"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "임신 중 특별한 문제가 있었나요?",
+    "reply": "아니요, 특별한 문제 없었어요.",
+    "phase": "interview",
+    "qid": "p_perinatal",
+    "label": "주산기"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "현재 먹는 약이 있나요?",
+    "reply": "아니요, 먹는 약은 없어요.",
+    "phase": "interview",
+    "qid": "p_meds",
+    "label": "약·한약·보조제"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "밥은 잘 먹는 편인가요?",
+    "reply": "네, 하루 세 끼 잘 먹어요.",
+    "phase": "interview",
+    "qid": "p_diet",
+    "label": "식사"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "우유를 하루에 얼마나 마시나요?",
+    "reply": "하루에 한두 잔 마셔요.",
+    "phase": "interview",
+    "qid": "gr_milk",
+    "label": "우유·간식"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "가족 중 앓는 병 있는 분 있나요?",
+    "reply": "아니요, 특별한 병은 없어요.",
+    "phase": "interview",
+    "qid": "p_fh",
+    "label": "가족력"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "어머님이 가장 걱정되시는 게 뭐예요?",
+    "reply": "키가 작아서 큰 병일까 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "보호자 걱정"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "앞으로 키가 더 클 수 있을까요?",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "보호자 궁금증"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 또래보다 작은 키, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "phase": "exam",
+    "qid": "anthro",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "성장도표 백분위수 확인하겠습니다",
+    "reply": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+    "phase": "exam",
+    "qid": "growth_chart",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "성장 속도·중간부모키 산출하겠습니다",
+    "reply": "성장속도 5cm/년, 중간부모키 178cm",
+    "phase": "exam",
+    "qid": "growth_vel",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "신체 비율 평가하겠습니다",
+    "reply": "상·하절 비율 정상, 양팔간격 불균형(-)",
+    "phase": "exam",
+    "qid": "body_prop",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "사춘기 성숙도 평가하겠습니다",
+    "reply": "Tanner 1기, 고환 2mL/2mL",
+    "phase": "exam",
+    "qid": "tanner",
+    "label": "",
+    "system": "Genitalia"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "안면 기형 소견 시진하겠습니다",
+    "reply": "안면 기형(-), 귀 위치 이상(-/-)",
+    "phase": "exam",
+    "qid": "dysmorph",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 황달(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "체질성 성장지연 가능성이 높아 보여요.",
+    "reply": "네, 선생님.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "뼈 성숙과 사춘기가 늦어 천천히 클 수 있어요.",
+    "reply": "네, 앞으로 더 클 수 있군요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "더 클지는 성장곡선과 뼈 나이로 판단해요.",
+    "reply": "네, 선생님.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "손 엑스레이와 수첩으로 성장 추세를 봐요.",
+    "reply": "네, 수첩 가져올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "피·소변검사로 호르몬·빈혈·염증·장질환을 봐요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "약은 검사 뒤 판단하고 식사·수면·운동을 유지해요.",
+    "reply": "네, 잘 챙길게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "키 성장 급감·두통·구토·시야 이상은 바로 오세요.",
+    "reply": "네, 그러면 바로 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과를 보고, 3~6개월마다 키를 재요.",
+    "reply": "네, 일정 맞춰 다시 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "검사는 아이가 많이 힘들까요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "뼈 나이와 피·소변검사로 원인을 봐요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  }
+]

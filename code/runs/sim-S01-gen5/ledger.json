@@ -1,0 +1,309 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 아프고 걱정되셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "복통에 대해 자세히 말씀해 주세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "혹시 맹장염이 아닌지 걱정이 돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "몸이 으슬으슬하고 열이 나요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "몸이 으슬으슬하고 열이 나요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "식사와 복통의 관계에 대해 자세히 말씀해 주세요",
+    "reply": "저녁 일곱 시쯤 먹고 한 시간 뒤에 아프기 시작했어요.",
+    "phase": "interview",
+    "qid": "ap_meal",
+    "label": "식사 연관"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "메스꺼움과 구토에 대해 자세히 말씀해 주세요",
+    "reply": "속이 메스껍고 새벽에 한 번 토했어요.",
+    "phase": "interview",
+    "qid": "ap_nv",
+    "label": "구역·구토"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "변이 검거나 피가 섞여 나오나요?",
+    "reply": "변에 피가 섞이거나 검은 변을 본 적은 없어요.",
+    "phase": "interview",
+    "qid": "ap_blood",
+    "label": "위장관 출혈"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "소변 볼 때 아프거나 피가 나오나요?",
+    "reply": "소변 볼 때 따갑거나 아프지 않고, 색도 평소와 같아요.",
+    "phase": "interview",
+    "qid": "ap_urine",
+    "label": "비뇨기"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨가 있으세요?",
+    "reply": "고혈압, 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+    "reply": "평소 먹는 약은 없고, 어제 먹은 소화제 한 알이 전부예요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "약 알레르기가 있으세요?",
+    "reply": "약 알레르기나 음식 알레르기는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "복통이 어떤 양상인지 자세히 말씀해 주세요",
+    "reply": "오른쪽 아랫배가 더 아프고, 밤새 잠을 못 잤어요.",
+    "phase": "interview",
+    "qid": "ap_char",
+    "label": "양상"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "복통이 0~10점 중 몇 점인가요?",
+    "reply": "지금 아픈 정도는 십 점 중에 칠 점 정도예요.",
+    "phase": "interview",
+    "qid": "ap_nrs",
+    "label": "강도"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "걷거나 기침할 때 배가 더 아픈가요?",
+    "reply": "걷거나 기침하면 오른쪽 아랫배가 울려서 더 아프다.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "수술을 해야 하는지 궁금해요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "편평, 팽만(-), 수술 반흔(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "장음 청진하겠습니다",
+    "reply": "감소 4회/분, 금속성음(-)",
+    "phase": "exam",
+    "qid": "bowel",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "복부 타진하겠습니다",
+    "reply": "고창음, 우하복부 타진 압통(+)",
+    "phase": "exam",
+    "qid": "abd_perc",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "맥버니 압통 확인하겠습니다",
+    "reply": "맥버니점 압통(+)",
+    "phase": "exam",
+    "qid": "mcburney",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "반발통 확인하겠습니다",
+    "reply": "우하복부 반발압통(+)",
+    "phase": "exam",
+    "qid": "rebound",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "요근 징후 확인하겠습니다",
+    "reply": "우측 요근 징후(+)",
+    "phase": "exam",
+    "qid": "psoas",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "로브싱 징후 확인하겠습니다",
+    "reply": "로브싱 징후(+)",
+    "phase": "exam",
+    "qid": "rovsing",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "늑척추각 압통 확인하겠습니다",
+    "reply": "늑척추각 압통(-/-)",
+    "phase": "exam",
+    "qid": "cva",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "급성 충수염으로 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "복부 촬영으로 충수 염증과 다른 원인을 확인해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "금식·수액 후 외과와 수술 여부를 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "통증 악화·고열·반복 구토·실신하면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "오늘 응급실에서 외과 진료와 검사를 받으세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "통증은 계속 있고, 시간이 갈수록 점점 심해지고 있어요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  }
+]

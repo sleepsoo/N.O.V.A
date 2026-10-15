@@ -1,0 +1,708 @@
+{
+ "case": "C01",
+ "plan": "c01b",
+ "session_id": "6174c4a8-a5b8-4b42-b7c2-cd5d69b1acf4",
+ "initial": {
+  "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+  "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+ },
+ "log": [
+  {
+   "i": 1,
+   "action": "SAY",
+   "content": "다른 불편한 증상은 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "낮에도 졸리고 멍해요.",
+    "turn": 1,
+    "turns_remaining": 49
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 2,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "기억력도 떨어진 것 같아요.",
+    "turn": 2,
+    "turns_remaining": 48
+   },
+   "sec": 3.7
+  },
+  {
+   "i": 3,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "집중도 잘 안 돼요.",
+    "turn": 3,
+    "turns_remaining": 47
+   },
+   "sec": 3.5
+  },
+  {
+   "i": 4,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "짜증도 늘었어요.",
+    "turn": 4,
+    "turns_remaining": 46
+   },
+   "sec": 3.9
+  },
+  {
+   "i": 5,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약 안 먹으면 손이 떨려요.",
+    "turn": 5,
+    "turns_remaining": 45
+   },
+   "sec": 4.9
+  },
+  {
+   "i": 6,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약 안 먹으면 식은땀이 나요.",
+    "turn": 6,
+    "turns_remaining": 44
+   },
+   "sec": 3.8
+  },
+  {
+   "i": 7,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약 안 먹으면 가슴이 두근거려요.",
+    "turn": 7,
+    "turns_remaining": 43
+   },
+   "sec": 6.9
+  },
+  {
+   "i": 8,
+   "action": "SAY",
+   "content": "두통이나 어지럼은 없으세요?",
+   "tag": "pair_neg",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약 안 먹으면 머리가 아파요.",
+    "turn": 8,
+    "turns_remaining": 42
+   },
+   "sec": 3.6
+  },
+  {
+   "i": 9,
+   "action": "SAY",
+   "content": "두통, 어지럼, 구토는 없으세요?",
+   "tag": "triple_neg",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약 안 먹으면 머리가 아파요.",
+    "turn": 9,
+    "turns_remaining": 41
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 10,
+   "action": "SAY",
+   "content": "수술이나 입원한 적 있으세요?",
+   "tag": "pair_na",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "수술도 입원도 한 적 없어요.",
+    "turn": 10,
+    "turns_remaining": 40
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 11,
+   "action": "SAY",
+   "content": "가족 중 다른 아픈 분도 있나요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "어머니가 치매로 돌아가셨어요.",
+    "turn": 11,
+    "turns_remaining": 39
+   },
+   "sec": 4.5
+  },
+  {
+   "i": 12,
+   "action": "SAY",
+   "content": "가족 중 또 아픈 분 있나요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아버지가 심장병으로 돌아가셨어요.",
+    "turn": 12,
+    "turns_remaining": 38
+   },
+   "sec": 3.3
+  },
+  {
+   "i": 13,
+   "action": "SAY",
+   "content": "누구와 사시고 무슨 일 하세요?",
+   "tag": "probe_compound",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "남편과 둘이 살아요.",
+    "turn": 13,
+    "turns_remaining": 37
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 14,
+   "action": "SAY",
+   "content": "누구와 사세요, 무슨 일 하세요?",
+   "tag": "probe_twoq",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "남편과 둘이 살아요.",
+    "turn": 14,
+    "turns_remaining": 36
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 15,
+   "action": "SAY",
+   "content": "가족 관계는 어떠세요?",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약 때문에 남편과 딸과 갈등이 있어요.",
+    "turn": 15,
+    "turns_remaining": 35
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 16,
+   "action": "SAY",
+   "content": "약 줄이려고 해 보신 적 있어요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "여러 번 줄이려다 실패했어요.",
+    "turn": 16,
+    "turns_remaining": 34
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 17,
+   "action": "SAY",
+   "content": "그때 어떠셨어요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "잠이 안 오고 불안해서 다시 먹었어요.",
+    "turn": 17,
+    "turns_remaining": 33
+   },
+   "sec": 3.1
+  },
+  {
+   "i": 18,
+   "action": "SAY",
+   "content": "또 어떤 증상이 있었어요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "손이 떨렸어요.",
+    "turn": 18,
+    "turns_remaining": 32
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 19,
+   "action": "SAY",
+   "content": "약이 떨어질까 봐 걱정되세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 불안해서 여분을 챙겨둬요.",
+    "turn": 19,
+    "turns_remaining": 31
+   },
+   "sec": 3.5
+  },
+  {
+   "i": 20,
+   "action": "SAY",
+   "content": "가장 궁금하신 게 뭐예요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "수면제를 줄일 수 있을까요?",
+    "turn": 20,
+    "turns_remaining": 30
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 21,
+   "action": "SAY",
+   "content": "또 궁금하신 건요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "계속 먹어도 괜찮을까요?",
+    "turn": 21,
+    "turns_remaining": 29
+   },
+   "sec": 2.9
+  }
+ ],
+ "diagnose": {
+  "error": "FINAL_RECORD_REQUIRED"
+ },
+ "session": {
+  "session_id": "6174c4a8-a5b8-4b42-b7c2-cd5d69b1acf4",
+  "status": "active",
+  "turns_remaining": 29,
+  "initial": {
+   "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+   "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+  },
+  "available_actions": [
+   "SAY",
+   "EXAM",
+   "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T11:07:06.298650+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+   {
+    "id": "10eae299-8373-4852-b935-ed814972e2e7",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "다른 불편한 증상은 없으세요?",
+     "request_id": "96dd4210-bd3c-4b83-9518-325ec9a905ed"
+    },
+    "effective_content": "다른 불편한 증상은 없으세요?",
+    "response": {
+     "turn": 1,
+     "status": "OK",
+     "content": "낮에도 졸리고 멍해요.",
+     "turns_remaining": 49
+    },
+    "http_status": 200,
+    "turn": 1
+   },
+   {
+    "id": "1f6f4aea-bf36-43b7-b055-82178eca89aa",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "8298455f-3cc8-468a-93a6-7423347337a6"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 2,
+     "status": "OK",
+     "content": "기억력도 떨어진 것 같아요.",
+     "turns_remaining": 48
+    },
+    "http_status": 200,
+    "turn": 2
+   },
+   {
+    "id": "9ebf5601-65ae-46f0-ab47-f7d69e379072",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "18c2aa13-bcdf-4264-87ba-05ab895d8727"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 3,
+     "status": "OK",
+     "content": "집중도 잘 안 돼요.",
+     "turns_remaining": 47
+    },
+    "http_status": 200,
+    "turn": 3
+   },
+   {
+    "id": "739100e2-8479-47da-92da-59d468a2bba9",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "3c876f4c-ee2b-43bd-a360-b721aeb32dad"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 4,
+     "status": "OK",
+     "content": "짜증도 늘었어요.",
+     "turns_remaining": 46
+    },
+    "http_status": 200,
+    "turn": 4
+   },
+   {
+    "id": "b6739d2a-ba1d-4b57-bc2d-8baa43d48df0",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "989dd8bb-0132-4254-8735-2a4c341c98d4"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 5,
+     "status": "OK",
+     "content": "약 안 먹으면 손이 떨려요.",
+     "turns_remaining": 45
+    },
+    "http_status": 200,
+    "turn": 5
+   },
+   {
+    "id": "7e9913de-6110-4b11-a28c-65cb28abad7e",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "d5679394-7264-4d9f-b73b-79ce453d40e5"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 6,
+     "status": "OK",
+     "content": "약 안 먹으면 식은땀이 나요.",
+     "turns_remaining": 44
+    },
+    "http_status": 200,
+    "turn": 6
+   },
+   {
+    "id": "4f06bed1-b4de-4c35-859d-bdcb7ba861fb",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "bac6d8b4-4ce4-4565-92db-af2eff36d668"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 7,
+     "status": "OK",
+     "content": "약 안 먹으면 가슴이 두근거려요.",
+     "turns_remaining": 43
+    },
+    "http_status": 200,
+    "turn": 7
+   },
+   {
+    "id": "174d4ffe-bf57-459e-9c42-be44aab2738b",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "두통이나 어지럼은 없으세요?",
+     "request_id": "6beb1113-e242-4a65-b264-371fb5698853"
+    },
+    "effective_content": "두통이나 어지럼은 없으세요?",
+    "response": {
+     "turn": 8,
+     "status": "OK",
+     "content": "약 안 먹으면 머리가 아파요.",
+     "turns_remaining": 42
+    },
+    "http_status": 200,
+    "turn": 8
+   },
+   {
+    "id": "d1405e6d-35dc-49ae-8beb-ef54e15b362d",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "두통, 어지럼, 구토는 없으세요?",
+     "request_id": "b455b427-36de-48b0-88b7-e590c6a4269e"
+    },
+    "effective_content": "두통, 어지럼, 구토는 없으세요?",
+    "response": {
+     "turn": 9,
+     "status": "OK",
+     "content": "약 안 먹으면 머리가 아파요.",
+     "turns_remaining": 41
+    },
+    "http_status": 200,
+    "turn": 9
+   },
+   {
+    "id": "28230a13-b790-49d7-aaf4-4f4adb524275",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "수술이나 입원한 적 있으세요?",
+     "request_id": "b81effe0-607d-4933-9f2b-59a54c8abdd9"
+    },
+    "effective_content": "수술이나 입원한 적 있으세요?",
+    "response": {
+     "turn": 10,
+     "status": "OK",
+     "content": "수술도 입원도 한 적 없어요.",
+     "turns_remaining": 40
+    },
+    "http_status": 200,
+    "turn": 10
+   },
+   {
+    "id": "f005c07b-fc65-4138-a74a-d45e448bf214",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 중 다른 아픈 분도 있나요?",
+     "request_id": "9ea36c77-a85d-4de6-87d0-32c4925e05d7"
+    },
+    "effective_content": "가족 중 다른 아픈 분도 있나요?",
+    "response": {
+     "turn": 11,
+     "status": "OK",
+     "content": "어머니가 치매로 돌아가셨어요.",
+     "turns_remaining": 39
+    },
+    "http_status": 200,
+    "turn": 11
+   },
+   {
+    "id": "37b1fdf3-b5f3-4d6d-aad2-1bb610d0d2df",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 중 또 아픈 분 있나요?",
+     "request_id": "40cf1e1e-7302-46c1-8638-133f4989f181"
+    },
+    "effective_content": "가족 중 또 아픈 분 있나요?",
+    "response": {
+     "turn": 12,
+     "status": "OK",
+     "content": "아버지가 심장병으로 돌아가셨어요.",
+     "turns_remaining": 38
+    },
+    "http_status": 200,
+    "turn": 12
+   },
+   {
+    "id": "08a8fd20-61c2-4b58-bae6-daa67b9dfa7a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "누구와 사시고 무슨 일 하세요?",
+     "request_id": "1a2de758-3f66-431e-8f0a-e3a360a5be01"
+    },
+    "effective_content": "누구와 사시고",
+    "response": {
+     "turn": 13,
+     "status": "OK",
+     "content": "남편과 둘이 살아요.",
+     "turns_remaining": 37
+    },
+    "http_status": 200,
+    "turn": 13
+   },
+   {
+    "id": "45792701-95bb-460c-8ff2-6a03cd62f6c3",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "누구와 사세요, 무슨 일 하세요?",
+     "request_id": "973331c0-79c9-4fcd-a4d9-00e68a47d1ec"
+    },
+    "effective_content": "누구와 사세요",
+    "response": {
+     "turn": 14,
+     "status": "OK",
+     "content": "남편과 둘이 살아요.",
+     "turns_remaining": 36
+    },
+    "http_status": 200,
+    "turn": 14
+   },
+   {
+    "id": "25ab7f9a-0d89-46e8-9ebc-a8affd174720",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 관계는 어떠세요?",
+     "request_id": "50c91414-7bd6-4dc0-b08a-10189bc47875"
+    },
+    "effective_content": "가족 관계는 어떠세요?",
+    "response": {
+     "turn": 15,
+     "status": "OK",
+     "content": "약 때문에 남편과 딸과 갈등이 있어요.",
+     "turns_remaining": 35
+    },
+    "http_status": 200,
+    "turn": 15
+   },
+   {
+    "id": "79a0fcac-7b0d-45a8-824f-f078c95a9942",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "약 줄이려고 해 보신 적 있어요?",
+     "request_id": "3f806df7-0373-4254-8835-3df07d329596"
+    },
+    "effective_content": "약 줄이려고 해 보신 적 있어요?",
+    "response": {
+     "turn": 16,
+     "status": "OK",
+     "content": "여러 번 줄이려다 실패했어요.",
+     "turns_remaining": 34
+    },
+    "http_status": 200,
+    "turn": 16
+   },
+   {
+    "id": "e1888aa9-05ef-4061-8068-11b62d9b2580",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그때 어떠셨어요?",
+     "request_id": "7d84f1e5-e414-4d89-a38f-7ae7a597d3f8"
+    },
+    "effective_content": "그때 어떠셨어요?",
+    "response": {
+     "turn": 17,
+     "status": "OK",
+     "content": "잠이 안 오고 불안해서 다시 먹었어요.",
+     "turns_remaining": 33
+    },
+    "http_status": 200,
+    "turn": 17
+   },
+   {
+    "id": "ee17c058-c774-4161-92f3-6b8e82c8409a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "또 어떤 증상이 있었어요?",
+     "request_id": "d4244aa3-4441-42ff-9081-d402c709df57"
+    },
+    "effective_content": "또 어떤 증상이 있었어요?",
+    "response": {
+     "turn": 18,
+     "status": "OK",
+     "content": "손이 떨렸어요.",
+     "turns_remaining": 32
+    },
+    "http_status": 200,
+    "turn": 18
+   },
+   {
+    "id": "64bf1b22-108d-4e16-95b8-47f535be5cb6",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "약이 떨어질까 봐 걱정되세요?",
+     "request_id": "9d0d6803-05a2-460e-b967-6aacd8a31658"
+    },
+    "effective_content": "약이 떨어질까 봐 걱정되세요?",
+    "response": {
+     "turn": 19,
+     "status": "OK",
+     "content": "네, 불안해서 여분을 챙겨둬요.",
+     "turns_remaining": 31
+    },
+    "http_status": 200,
+    "turn": 19
+   },
+   {
+    "id": "d723afec-c054-43c0-aad2-fbaed9d57786",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가장 궁금하신 게 뭐예요?",
+     "request_id": "4f76d202-f47e-4541-9bb7-db74fd246a2a"
+    },
+    "effective_content": "가장 궁금하신 게 뭐예요?",
+    "response": {
+     "turn": 20,
+     "status": "OK",
+     "content": "수면제를 줄일 수 있을까요?",
+     "turns_remaining": 30
+    },
+    "http_status": 200,
+    "turn": 20
+   },
+   {
+    "id": "76b94bb1-afe5-42c6-a12c-ce55a3e2ac0c",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "또 궁금하신 건요?",
+     "request_id": "097d29fb-7b06-493c-9dc5-e3e77ee8072c"
+    },
+    "effective_content": "또 궁금하신 건요?",
+    "response": {
+     "turn": 21,
+     "status": "OK",
+     "content": "계속 먹어도 괜찮을까요?",
+     "turns_remaining": 29
+    },
+    "http_status": 200,
+    "turn": 21
+   }
+  ],
+  "note": "",
+  "record": {},
+  "diagnosis": "",
+  "score": null
+ }
+}

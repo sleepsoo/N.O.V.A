@@ -1,0 +1,320 @@
+{
+  "case_id": "S03",
+  "alias": "S03",
+  "turns": 38,
+  "say": 22,
+  "exam": 16,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 11,
+  "skipped_invalid": 0,
+  "doctor_calls": 6,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 10613,
+  "doctor_output_tokens": 9106,
+  "seconds": 714.2,
+  "diagnosis": "급성 전이성 중이염 (Acute Otitis Media)",
+  "accepted_diagnoses": [
+    "우측 급성 중이염 (Acute otitis media, right)",
+    "급성 중이염",
+    "Acute otitis media"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 3,
+    "sex": "F",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "귀통증",
+    "request": "",
+    "categories": [
+      "p_fever",
+      "insomnia"
+    ],
+    "empathy": "걱정이 많으시겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "급성 중이염이 귀 안쪽 염증이예요",
+    "열과 통증은 해열진통제로 조절해요.",
+    "귀 안쪽 돔이 부풀어서 아프게 만들어요",
+    "고막 시진이 진단에 가장 사용돼요",
+    "항생제 복용 시 약물 복용을 주의하세요",
+    "집에 담배 피우지 마세요",
+    "2~3일 뒤 귀 상태를 다시 볼게요.",
+    "귀 뒤 붓기·고열 지속·구토면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 740,
+      "out": 400,
+      "finish": "stop",
+      "sec": 21.5
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2689,
+      "out": 283,
+      "finish": "stop",
+      "sec": 12.8
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1109,
+      "out": 5087,
+      "finish": "stop",
+      "sec": 241.8
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2318,
+      "out": 2492,
+      "finish": "stop",
+      "sec": 116.0
+    },
+    {
+      "tag": "plan_say4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2152,
+      "out": 552,
+      "finish": "stop",
+      "sec": 27.7
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1605,
+      "out": 292,
+      "finish": "stop",
+      "sec": 13.0
+    }
+  ],
+  "phase_times": {
+    "intake": 21.5,
+    "interview": 69.4,
+    "examine": 162.8,
+    "facts": 241.8,
+    "dx": 116.0,
+    "plan_say": 27.7,
+    "explain": 61.8,
+    "effective": 0.0,
+    "S": 13.1
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "환자명",
+      "pol": "?",
+      "detail": "이하은",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "연령",
+      "pol": "?",
+      "detail": "3세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "여자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자명",
+      "pol": "?",
+      "detail": "박수진",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자나이",
+      "pol": "?",
+      "detail": "34세",
+      "id": "F5"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "귀통증",
+      "pol": "?",
+      "detail": "귀잡아당김·울음",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "기타증상",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F7"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "고름·진물",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F8"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Anorexia",
+      "label": "식욕감소",
+      "pol": "+",
+      "detail": "반량식사",
+      "id": "F9"
+    },
+    {
+      "turn": 6,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원이력",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F10"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "약물복용",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F11"
+    },
+    {
+      "turn": 8,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족질환",
+      "pol": "+",
+      "detail": "비염",
+      "id": "F12"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "어린이집",
+      "pol": "+",
+      "detail": "평일",
+      "id": "F13"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "제생이력",
+      "pol": "+",
+      "detail": "문제없음",
+      "id": "F14"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "발달상태",
+      "pol": "+",
+      "detail": "정상",
+      "id": "F15"
+    },
+    {
+      "turn": 12,
+      "sec": "ice",
+      "key": "other",
+      "label": "항생제복용",
+      "pol": "?",
+      "detail": "궁금어",
+      "id": "F16"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "5ff7d0770889c81de05a8f583593562f27e729e1df2e83a31ef4697b3f0033a1",
+    "score_status": "not_scored",
+    "turn": 38
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "귀 아파서 울었어요."
+  },
+  "exam_plan": [
+    "vitals",
+    "general",
+    "mental",
+    "skin_rash",
+    "conj",
+    "ear",
+    "pharynx",
+    "cervical_ln",
+    "thyroid",
+    "chest_insp",
+    "lung",
+    "heart",
+    "abd_insp",
+    "liver_spleen",
+    "abd_palp",
+    "periph"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 31,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 6,
+  "sim_doctor_calls": 6,
+  "sim_doctor_input_tokens": 10613,
+  "sim_doctor_output_tokens": 9106,
+  "sim_turns": 38,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 61,
+  "grade_scores": {
+    "정보수집": 10,
+    "진단추론": 14,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 8,
+    "효율": 4
+  }
+}

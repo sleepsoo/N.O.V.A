@@ -1,0 +1,550 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많이 힘드셨겠어요.",
+      "effective_content": "많이 힘드셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많이 힘드셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "호흡곤란, 기침·가래에 대해 자세히 말씀해 주세요",
+      "effective_content": "호흡곤란, 기침·가래에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "사흘 전부터 기침이 부쩍 늘었어요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "호흡곤란, 기침·가래에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "작년처럼 입원해야 하는 건 아닌지 걱정이 돼요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "열은 조금 나는 것 같고, 으슬으슬 춥기도 했어요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "그 밖에 또 불편한 건 없으세요?",
+      "effective_content": "그 밖에 또 불편한 건 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "그 밖에 또 불편한 건 없으세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "숨찬 증상이 시작된 양상에 대해 자세히 말씀해 주세요",
+      "effective_content": "숨찬 증상이 시작된 양상에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "사흘 전부터 숨이 많이 차고 기침과 가래가 심해져서 병원에 오게 되었다.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "숨찬 증상이 시작된 양상에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "누우면 숨이 더 차나요?",
+      "effective_content": "누우면 숨이 더 차나요?",
+      "response": {
+        "status": "OK",
+        "content": "누우면 숨이 더 차서 베개를 하나 더 받치고 잤어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "누우면 숨이 더 차나요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "다리가 붓나요?",
+      "effective_content": "다리가 붓나요?",
+      "response": {
+        "status": "OK",
+        "content": "다리가 붓거나 몸무게가 갑자기 는 것은 없어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "다리가 붓나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "가슴 통증도 있나요?",
+      "effective_content": "가슴 통증도 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 쥐어짜듯 아픈 적은 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "가슴 통증도 있나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨가 있으세요?",
+      "effective_content": "고혈압이나 당뇨가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어요, 당뇨는 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨가 있으세요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "다른 지병에 대해 자세히 말씀해 주세요",
+      "effective_content": "다른 지병에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어서 혈압약을 하루 한 알 먹어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "다른 지병에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "담배 피우신 경험에 대해 자세히 말씀해 주세요",
+      "effective_content": "담배 피우신 경험에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "스무 살부터 하루 한 갑씩 오십 년 가까이 피웠어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "담배 피우신 경험에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "가래의 색과 양에 대해 자세히 말씀해 주세요",
+      "effective_content": "가래의 색과 양에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "하루 종일 누렇고 끈적한 가래가 많이 나요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "가래의 색과 양에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "이전 호흡기 질환에 대해 자세히 말씀해 주세요",
+      "effective_content": "이전 호흡기 질환에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "만성 폐쇄성 폐질환이라고 했어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "이전 호흡기 질환에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "열이 몇 도까지 올랐나요?",
+      "effective_content": "열이 몇 도까지 올랐나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "열이 몇 도까지 올랐나요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "가래에 피가 섞인 적 있나요?",
+      "effective_content": "가래에 피가 섞인 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "가래에 피가 섞여 나온 적은 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "가래에 피가 섞인 적 있나요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "한쪽 다리가 붓거나 아픈가요?",
+      "effective_content": "한쪽 다리가 붓거나 아픈가요?",
+      "response": {
+        "status": "OK",
+        "content": "다리 부기 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "한쪽 다리가 붓거나 아픈가요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "폐 질환 치료에 대해 자세히 말씀해 주세요",
+      "effective_content": "폐 질환 치료에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "흡입기를 하루에 너덧 번씩 쓰는데도 별로 나아지지 않아요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "폐 질환 치료에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "자다가 숨이 차서 깬 적 있나요?",
+      "effective_content": "자다가 숨이 차서 깬 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "벌떡 일어나 앉은 적은 없어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "자다가 숨이 차서 깬 적 있나요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "주변 환자 접촉에 대해 자세히 말씀해 주세요",
+      "effective_content": "주변 환자 접촉에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "손주한테 감기 옮겨서 콧물 나고 목이 칼칼했어요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "주변 환자 접촉에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "흡입기를 더 세게 바꿔야 하는지 궁금해요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "산소포화도 측정하겠습니다",
+      "effective_content": "r04",
+      "response": {
+        "status": "OK",
+        "result": "SpO2 89%(실내 공기)",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r11",
+      "response": {
+        "status": "OK",
+        "result": "호흡음 감소(+/+), 호기 연장(+), 호기성 천명음(+/+) 미만성, 수포음(-/-)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "흉곽 시진하겠습니다",
+      "effective_content": "r09",
+      "response": {
+        "status": "OK",
+        "result": "전후:좌우 1:1.2 술통형 흉곽(+), 보조호흡근 사용(+) 경도, 늑간 함몰(-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "흉부 타진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "양측 과공명음(+/+), 탁음(-/-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "촉각 진탕 확인하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "촉각 진탕(-)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r12",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적 104회/분, S3(-), 심잡음(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "경정맥 팽대 관찰하겠습니다",
+      "effective_content": "r07",
+      "response": {
+        "status": "OK",
+        "result": "경정맥 팽창(-), 45도에서 JVP 3cm",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "하지 말초 진찰하겠습니다",
+      "effective_content": "r17",
+      "response": {
+        "status": "OK",
+        "result": "족배동맥(+/+), 함요부종(-/-)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "종아리 압통 확인하겠습니다",
+      "effective_content": "r18",
+      "response": {
+        "status": "OK",
+        "result": "압통(-/-), 둘레 차이(-)",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(+), 앉은 자세에서 입술 오므린 호흡(+), 안절부절(-)",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "만성 폐질환이 급격히 나빠진 것으로 보여요.",
+      "effective_content": "만성 폐질환이 급격히 나빠진 것으로 보여요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "만성 폐질환이 급격히 나빠진 것으로 보여요."
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "혈액가스와 흉부 사진으로 산소와 폐렴을 살펴요.",
+      "effective_content": "혈액가스와 흉부 사진으로 산소와 폐렴을 살펴요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "혈액가스와 흉부 사진으로 산소와 폐렴을 살펴요."
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "산소와 기관지 흡입제로 숨길을 넓히는 치료를 해요.",
+      "effective_content": "산소와 기관지 흡입제로 숨길을 넓히는 치료를 해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "산소와 기관지 흡입제로 숨길을 넓히는 치료를 해요."
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "숨참·입술색 변화·흉통·졸림이면 바로 알리세요.",
+      "effective_content": "숨참·입술색 변화·흉통·졸림이면 바로 알리세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "숨참·입술색 변화·흉통·졸림이면 바로 알리세요."
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "오늘 응급실에서 치료와 입원 필요성을 확인해요.",
+      "effective_content": "오늘 응급실에서 치료와 입원 필요성을 확인해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "오늘 응급실에서 치료와 입원 필요성을 확인해요."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "열이 조금 나고 으슬으슬 춥기도 해요.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?"
+      }
+    },
+    {
+      "turn": 38,
+      "action": "DIAGNOSE",
+      "diagnosis": "만성폐쇄성폐질환 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)"
+    }
+  ]
+}

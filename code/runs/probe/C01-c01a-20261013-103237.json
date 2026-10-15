@@ -1,0 +1,1218 @@
+{
+ "case": "C01",
+ "plan": "c01a",
+ "session_id": "dcf4eb6f-98a2-48b8-a0e2-9efae694eb8d",
+ "initial": {
+  "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+  "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+ },
+ "log": [
+  {
+   "i": 1,
+   "action": "SAY",
+   "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "7년 전부터 잠들기 힘들었어요.",
+    "turn": 1,
+    "turns_remaining": 49
+   },
+   "sec": 3.9
+  },
+  {
+   "i": 2,
+   "action": "SAY",
+   "content": "그 밖에 달라진 점을 다 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 2,
+    "turns_remaining": 48
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 3,
+   "action": "SAY",
+   "content": "다른 불편한 증상은 없으세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "낮에도 많이 졸려요.",
+    "turn": 3,
+    "turns_remaining": 47
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 4,
+   "action": "SAY",
+   "content": "평소 건강은 어떠셨어요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "고혈압으로 약 먹고 있어요.",
+    "turn": 4,
+    "turns_remaining": 46
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 5,
+   "action": "SAY",
+   "content": "드시는 약을 전부 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 5,
+    "turns_remaining": 45
+   },
+   "sec": 3.3
+  },
+  {
+   "i": 6,
+   "action": "SAY",
+   "content": "가족 중 아픈 분이 있으세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "어머니가 치매로 돌아가셨어요.",
+    "turn": 6,
+    "turns_remaining": 44
+   },
+   "sec": 5.3
+  },
+  {
+   "i": 7,
+   "action": "SAY",
+   "content": "하루 일과를 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "집안일하고 낮엔 멍하게 지내요.",
+    "turn": 7,
+    "turns_remaining": 43
+   },
+   "sec": 3.5
+  },
+  {
+   "i": 8,
+   "action": "SAY",
+   "content": "술·담배·커피는 어떠세요?",
+   "tag": "open_bundle",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "명절에 소주 한두 잔 마셔요.",
+    "turn": 8,
+    "turns_remaining": 42
+   },
+   "sec": 5.0
+  },
+  {
+   "i": 9,
+   "action": "SAY",
+   "content": "수면제 드신 경과를 다 말씀해 주세요",
+   "tag": "open_all",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 9,
+    "turns_remaining": 41
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 10,
+   "action": "SAY",
+   "content": "잠에 대해 자세히 말씀해 주세요",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네 알 먹어도 두세 시간 뒤 깨요.",
+    "turn": 10,
+    "turns_remaining": 40
+   },
+   "sec": 3.7
+  },
+  {
+   "i": 11,
+   "action": "SAY",
+   "content": "약을 끊으면 어떻게 되세요?",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "잠 못 자고 불안하고 손이 떨려요.",
+    "turn": 11,
+    "turns_remaining": 39
+   },
+   "sec": 4.9
+  },
+  {
+   "i": 12,
+   "action": "SAY",
+   "content": "생활에 어떤 영향이 있었어요?",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "집안일하다 깜빡 잠들곤 해요.",
+    "turn": 12,
+    "turns_remaining": 38
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 13,
+   "action": "SAY",
+   "content": "힘드셨겠어요. 낮에 졸리세요?",
+   "tag": "probe_prefix",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 낮에 많이 졸려요.",
+    "turn": 13,
+    "turns_remaining": 37
+   },
+   "sec": 3.5
+  },
+  {
+   "i": 14,
+   "action": "SAY",
+   "content": "몇 시에 자고 몇 시에 깨세요?",
+   "tag": "probe_compound",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "밤 열한 시쯤 누워요.",
+    "turn": 14,
+    "turns_remaining": 36
+   },
+   "sec": 4.6
+  },
+  {
+   "i": 15,
+   "action": "SAY",
+   "content": "언제 드세요? 얼마나 드세요?",
+   "tag": "probe_twoq",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "밤 열한 시랑 새벽 두세 시요.",
+    "turn": 15,
+    "turns_remaining": 35
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 16,
+   "action": "SAY",
+   "content": "수면제 몇 알 드세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "자기 전 네 알, 깨면 한두 알요.",
+    "turn": 16,
+    "turns_remaining": 34
+   },
+   "sec": 5.0
+  },
+  {
+   "i": 17,
+   "action": "SAY",
+   "content": "여러 병원에서 처방받으세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 여러 병원에서 받아요.",
+    "turn": 17,
+    "turns_remaining": 33
+   },
+   "sec": 3.6
+  },
+  {
+   "i": 18,
+   "action": "SAY",
+   "content": "고혈압 있으세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 5년째 약 먹고 있어요.",
+    "turn": 18,
+    "turns_remaining": 32
+   },
+   "sec": 5.9
+  },
+  {
+   "i": 19,
+   "action": "SAY",
+   "content": "담배 피우세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아니요, 평생 안 피웠어요.",
+    "turn": 19,
+    "turns_remaining": 31
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 20,
+   "action": "SAY",
+   "content": "기억이 안 나는 적이 있으세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 약 먹고 기억 안 날 때 있어요.",
+    "turn": 20,
+    "turns_remaining": 30
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 21,
+   "action": "EXAM",
+   "content": "보행 관찰하겠습니다",
+   "tag": "exam_in",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "보폭 정상, 절뚝임(-), 불균형(-)",
+    "turn": 21,
+    "turns_remaining": 29
+   },
+   "sec": 4.3
+  },
+  {
+   "i": 22,
+   "action": "EXAM",
+   "content": "경부 림프절 촉진하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "경부 림프절 비대(-/-), 압통(-/-)",
+    "turn": 22,
+    "turns_remaining": 28
+   },
+   "sec": 3.7
+  },
+  {
+   "i": 23,
+   "action": "EXAM",
+   "content": "심부건반사 확인하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "이두근·삼두근·상완요골근·슬개건·아킬레스건 반사 2+/2+, 좌우 대칭",
+    "turn": 23,
+    "turns_remaining": 27
+   },
+   "sec": 3.3
+  },
+  {
+   "i": 24,
+   "action": "EXAM",
+   "content": "외안근 운동 확인하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "양안 외안근 운동 전 방향 정상, 복시(-)",
+    "turn": 24,
+    "turns_remaining": 26
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 25,
+   "action": "EXAM",
+   "content": "갑상선 잡음 청진하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "갑상선 잡음(-/-)",
+    "turn": 25,
+    "turns_remaining": 25
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 26,
+   "action": "EXAM",
+   "content": "걸음걸이 보겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "보폭 정상, 절뚝임(-), 불균형(-)",
+    "turn": 26,
+    "turns_remaining": 24
+   },
+   "sec": 2.4
+  },
+  {
+   "i": 27,
+   "action": "EXAM",
+   "content": "눈 감고 서 계셔 보세요",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "개안 시 안정, 폐안 시 흔들림(-)",
+    "turn": 27,
+    "turns_remaining": 23
+   },
+   "sec": 2.4
+  },
+  {
+   "i": 28,
+   "action": "EXAM",
+   "content": "손가락으로 코를 짚어 보세요",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "겨냥이상(-/-), 실조(-/-)",
+    "turn": 28,
+    "turns_remaining": 22
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 29,
+   "action": "EXAM",
+   "content": "기억력 검사하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "MMSE-K 28/30점, 지연회상 2/3점",
+    "turn": 29,
+    "turns_remaining": 21
+   },
+   "sec": 3.6
+  },
+  {
+   "i": 30,
+   "action": "EXAM",
+   "content": "손 떨림 보겠습니다",
+   "tag": "exam_var",
+   "ok": false,
+   "code": "EXAM_NOT_SPECIFIC",
+   "http": 422,
+   "sec": 3.6
+  },
+  {
+   "i": 31,
+   "action": "EXAM",
+   "content": "누웠다 일어서서 혈압 재겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "수축기 강하 6mmHg, 어지럼(-)",
+    "turn": 31,
+    "turns_remaining": 19
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 32,
+   "action": "EXAM",
+   "content": "병식 평가하겠습니다",
+   "tag": "exam_in",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "병식 부분적",
+    "turn": 32,
+    "turns_remaining": 18
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 33,
+   "action": "SAY",
+   "content": "수면제 의존이 생긴 것으로 보여요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약을 줄일 수 있을까요?",
+    "turn": 33,
+    "turns_remaining": 17
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 34,
+   "action": "SAY",
+   "content": "천천히 줄이면 끊을 수 있어요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "잠 못 잘까 봐 두려워요.",
+    "turn": 34,
+    "turns_remaining": 16
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 35,
+   "action": "SAY",
+   "content": "궁금하신 점 있으세요?",
+   "tag": "explain_q",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "수면제 말고 다른 방법도 있나요?",
+    "turn": 35,
+    "turns_remaining": 15
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 36,
+   "action": "SAY",
+   "content": "갑자기 끊으면 위험해서 천천히 줄여요",
+   "tag": "explain_answer",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 천천히 줄여볼게요.",
+    "turn": 36,
+    "turns_remaining": 14
+   },
+   "sec": 3.1
+  },
+  {
+   "i": 37,
+   "action": "SAY",
+   "content": "이해되셨어요? 한번 말해 보시겠어요?",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 이해했어요.",
+    "turn": 37,
+    "turns_remaining": 13
+   },
+   "sec": 3.3
+  }
+ ],
+ "diagnose": {
+  "error": "FINAL_RECORD_REQUIRED"
+ },
+ "session": {
+  "session_id": "dcf4eb6f-98a2-48b8-a0e2-9efae694eb8d",
+  "status": "active",
+  "turns_remaining": 13,
+  "initial": {
+   "opening": "저는 박선희이고, 예순두 살 여자이다. 잠을 잘 못 자서 병원에 왔다. 수면제를 처방해 달라고 왔다.",
+   "vital_signs": "혈압 : 128/78 mmHg\n맥박 : 76 회/분\n호흡 : 18 회/분\n체온 : 36.6°C"
+  },
+  "available_actions": [
+   "SAY",
+   "EXAM",
+   "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T11:00:25.424186+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+   {
+    "id": "662612b9-c45c-4377-9ab2-d656d59450c8",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+     "request_id": "c8e7e6d1-b7cd-4f41-956a-973dacbcdeeb"
+    },
+    "effective_content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+    "response": {
+     "turn": 1,
+     "status": "OK",
+     "content": "7년 전부터 잠들기 힘들었어요.",
+     "turns_remaining": 49
+    },
+    "http_status": 200,
+    "turn": 1
+   },
+   {
+    "id": "2872d3ca-da7e-4b54-8227-6ec7efdd1750",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 달라진 점을 다 말씀해 주세요",
+     "request_id": "c83a115c-d731-4527-abfe-0c4f6fd93ce4"
+    },
+    "effective_content": "그 밖에 달라진 점을 다 말씀해 주세요",
+    "response": {
+     "turn": 2,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 48
+    },
+    "http_status": 200,
+    "turn": 2
+   },
+   {
+    "id": "e53bb8b2-b4dc-4860-b019-91b93b1fc148",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "다른 불편한 증상은 없으세요?",
+     "request_id": "77c50032-244f-40fa-bc7a-58fc8d4da9f0"
+    },
+    "effective_content": "다른 불편한 증상은 없으세요?",
+    "response": {
+     "turn": 3,
+     "status": "OK",
+     "content": "낮에도 많이 졸려요.",
+     "turns_remaining": 47
+    },
+    "http_status": 200,
+    "turn": 3
+   },
+   {
+    "id": "e7342eb9-7d7d-4f16-98e6-5d8c208bbcc3",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "평소 건강은 어떠셨어요?",
+     "request_id": "be989d27-b1e6-4930-a657-ea9e10832150"
+    },
+    "effective_content": "평소 건강은 어떠셨어요?",
+    "response": {
+     "turn": 4,
+     "status": "OK",
+     "content": "고혈압으로 약 먹고 있어요.",
+     "turns_remaining": 46
+    },
+    "http_status": 200,
+    "turn": 4
+   },
+   {
+    "id": "9c6e4d00-6d8c-4774-bd73-ec3c13dd9f10",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "드시는 약을 전부 말씀해 주세요",
+     "request_id": "da94bbbe-f2ea-4bd6-b390-248b706c55e0"
+    },
+    "effective_content": "드시는 약을 전부 말씀해 주세요",
+    "response": {
+     "turn": 5,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 45
+    },
+    "http_status": 200,
+    "turn": 5
+   },
+   {
+    "id": "ce1a8f99-3f63-44db-83aa-0c3931c80865",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 중 아픈 분이 있으세요?",
+     "request_id": "de3eb18e-5bb3-4ed3-8965-f13a31b8edc6"
+    },
+    "effective_content": "가족 중 아픈 분이 있으세요?",
+    "response": {
+     "turn": 6,
+     "status": "OK",
+     "content": "어머니가 치매로 돌아가셨어요.",
+     "turns_remaining": 44
+    },
+    "http_status": 200,
+    "turn": 6
+   },
+   {
+    "id": "ac62af01-e43d-4192-a419-ac89de9ab9cb",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "하루 일과를 말씀해 주세요",
+     "request_id": "cc6225f7-e75a-40ee-b7fd-5d93d7137113"
+    },
+    "effective_content": "하루 일과를 말씀해 주세요",
+    "response": {
+     "turn": 7,
+     "status": "OK",
+     "content": "집안일하고 낮엔 멍하게 지내요.",
+     "turns_remaining": 43
+    },
+    "http_status": 200,
+    "turn": 7
+   },
+   {
+    "id": "7e2b7980-1078-40bf-be9c-98cdbbe59f3a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "술·담배·커피는 어떠세요?",
+     "request_id": "7d571847-746b-42d5-a11f-594a364ba544"
+    },
+    "effective_content": "술·담배·커피는 어떠세요?",
+    "response": {
+     "turn": 8,
+     "status": "OK",
+     "content": "명절에 소주 한두 잔 마셔요.",
+     "turns_remaining": 42
+    },
+    "http_status": 200,
+    "turn": 8
+   },
+   {
+    "id": "043a3e1a-f2c1-4a11-a232-c17e03b8db54",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "수면제 드신 경과를 다 말씀해 주세요",
+     "request_id": "86274d15-4010-479c-ad9d-1811a845a2fd"
+    },
+    "effective_content": "수면제 드신 경과를 다 말씀해 주세요",
+    "response": {
+     "turn": 9,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 41
+    },
+    "http_status": 200,
+    "turn": 9
+   },
+   {
+    "id": "a9a930be-bba9-44f0-871a-b1e7aa23e14c",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "잠에 대해 자세히 말씀해 주세요",
+     "request_id": "a109de65-bd27-4723-8dbf-f7a4bfc5f71f"
+    },
+    "effective_content": "잠에 대해 자세히 말씀해 주세요",
+    "response": {
+     "turn": 10,
+     "status": "OK",
+     "content": "네 알 먹어도 두세 시간 뒤 깨요.",
+     "turns_remaining": 40
+    },
+    "http_status": 200,
+    "turn": 10
+   },
+   {
+    "id": "64163214-7466-4423-b734-8236eee05001",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "약을 끊으면 어떻게 되세요?",
+     "request_id": "df27fbc8-91c4-4e9b-b1ba-78368077aba1"
+    },
+    "effective_content": "약을 끊으면 어떻게 되세요?",
+    "response": {
+     "turn": 11,
+     "status": "OK",
+     "content": "잠 못 자고 불안하고 손이 떨려요.",
+     "turns_remaining": 39
+    },
+    "http_status": 200,
+    "turn": 11
+   },
+   {
+    "id": "123f1746-3cd2-4c3e-a258-1cf2db9ec08c",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "생활에 어떤 영향이 있었어요?",
+     "request_id": "c46bade3-18ff-435c-91d1-bae071bff026"
+    },
+    "effective_content": "생활에 어떤 영향이 있었어요?",
+    "response": {
+     "turn": 12,
+     "status": "OK",
+     "content": "집안일하다 깜빡 잠들곤 해요.",
+     "turns_remaining": 38
+    },
+    "http_status": 200,
+    "turn": 12
+   },
+   {
+    "id": "df0ec188-6e4b-4b22-b6af-b48f914c7b68",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "힘드셨겠어요. 낮에 졸리세요?",
+     "request_id": "79f81863-5e07-431a-9568-f50bd982d72f"
+    },
+    "effective_content": "낮에 졸리세요?",
+    "response": {
+     "turn": 13,
+     "status": "OK",
+     "content": "네, 낮에 많이 졸려요.",
+     "turns_remaining": 37
+    },
+    "http_status": 200,
+    "turn": 13
+   },
+   {
+    "id": "118d3f70-8697-4376-89b8-18b03a4d1509",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "몇 시에 자고 몇 시에 깨세요?",
+     "request_id": "bc4054ea-7ecd-4123-b489-3e8eea11e90a"
+    },
+    "effective_content": "몇 시에 자고",
+    "response": {
+     "turn": 14,
+     "status": "OK",
+     "content": "밤 열한 시쯤 누워요.",
+     "turns_remaining": 36
+    },
+    "http_status": 200,
+    "turn": 14
+   },
+   {
+    "id": "c2a907cc-c150-436f-a642-5630038a63fb",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "언제 드세요? 얼마나 드세요?",
+     "request_id": "f7130dfb-45f4-4c94-a8a2-1f0dc91284b3"
+    },
+    "effective_content": "언제 드세요?",
+    "response": {
+     "turn": 15,
+     "status": "OK",
+     "content": "밤 열한 시랑 새벽 두세 시요.",
+     "turns_remaining": 35
+    },
+    "http_status": 200,
+    "turn": 15
+   },
+   {
+    "id": "bee122a1-1f70-4307-9532-b40b53644d56",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "수면제 몇 알 드세요?",
+     "request_id": "a3bbcf89-9622-4e9f-9af1-13d14a9905b9"
+    },
+    "effective_content": "수면제 몇 알 드세요?",
+    "response": {
+     "turn": 16,
+     "status": "OK",
+     "content": "자기 전 네 알, 깨면 한두 알요.",
+     "turns_remaining": 34
+    },
+    "http_status": 200,
+    "turn": 16
+   },
+   {
+    "id": "751e09c3-efae-421c-a8d2-8a26d44f9345",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "여러 병원에서 처방받으세요?",
+     "request_id": "04a7fc98-2afc-4377-842f-690a55ee1ca2"
+    },
+    "effective_content": "여러 병원에서 처방받으세요?",
+    "response": {
+     "turn": 17,
+     "status": "OK",
+     "content": "네, 여러 병원에서 받아요.",
+     "turns_remaining": 33
+    },
+    "http_status": 200,
+    "turn": 17
+   },
+   {
+    "id": "7604d5ce-82b9-436c-b1a7-507494ab88a0",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "고혈압 있으세요?",
+     "request_id": "e48c966f-7a45-4f6e-b0f1-14591c703369"
+    },
+    "effective_content": "고혈압 있으세요?",
+    "response": {
+     "turn": 18,
+     "status": "OK",
+     "content": "네, 5년째 약 먹고 있어요.",
+     "turns_remaining": 32
+    },
+    "http_status": 200,
+    "turn": 18
+   },
+   {
+    "id": "e659d43d-6934-490b-8ca9-f49acfa645d9",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "담배 피우세요?",
+     "request_id": "abae4375-ddce-4f4d-892f-2507cc0d8558"
+    },
+    "effective_content": "담배 피우세요?",
+    "response": {
+     "turn": 19,
+     "status": "OK",
+     "content": "아니요, 평생 안 피웠어요.",
+     "turns_remaining": 31
+    },
+    "http_status": 200,
+    "turn": 19
+   },
+   {
+    "id": "14bb0100-6e5c-416e-b92d-399f83e1ec4a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "기억이 안 나는 적이 있으세요?",
+     "request_id": "b0fd2c76-b3fd-49ac-84fd-fa3d9c114ee2"
+    },
+    "effective_content": "기억이 안 나는 적이 있으세요?",
+    "response": {
+     "turn": 20,
+     "status": "OK",
+     "content": "네, 약 먹고 기억 안 날 때 있어요.",
+     "turns_remaining": 30
+    },
+    "http_status": 200,
+    "turn": 20
+   },
+   {
+    "id": "7cc2d9d4-e5c1-45b1-8e44-7b6d2000210b",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "보행 관찰하겠습니다",
+     "request_id": "0eec2557-b431-41ef-8e42-e4179a6c8378"
+    },
+    "effective_content": "bex_gait",
+    "response": {
+     "turn": 21,
+     "result": "보폭 정상, 절뚝임(-), 불균형(-)",
+     "status": "OK",
+     "turns_remaining": 29
+    },
+    "http_status": 200,
+    "turn": 21
+   },
+   {
+    "id": "13f19524-00bd-4179-9a21-3bd9b5b88488",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "경부 림프절 촉진하겠습니다",
+     "request_id": "0f7ad80a-984e-403f-b969-a841179f79ec"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 22,
+     "result": "경부 림프절 비대(-/-), 압통(-/-)",
+     "status": "OK",
+     "turns_remaining": 28
+    },
+    "http_status": 200,
+    "turn": 22
+   },
+   {
+    "id": "f818f999-640e-4668-b136-06cf52bf6c30",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "심부건반사 확인하겠습니다",
+     "request_id": "e822c52f-6c72-48d9-a472-e3ab24c261db"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 23,
+     "result": "이두근·삼두근·상완요골근·슬개건·아킬레스건 반사 2+/2+, 좌우 대칭",
+     "status": "OK",
+     "turns_remaining": 27
+    },
+    "http_status": 200,
+    "turn": 23
+   },
+   {
+    "id": "81f518d8-6024-4960-818b-06f55b950fde",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "외안근 운동 확인하겠습니다",
+     "request_id": "470d8fed-03e5-48d3-9633-4f20e2d22d23"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 24,
+     "result": "양안 외안근 운동 전 방향 정상, 복시(-)",
+     "status": "OK",
+     "turns_remaining": 26
+    },
+    "http_status": 200,
+    "turn": 24
+   },
+   {
+    "id": "e82f401a-8806-4870-b053-299b14d163f1",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "갑상선 잡음 청진하겠습니다",
+     "request_id": "6a842f2e-93a0-4470-babc-2099d656f379"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 25,
+     "result": "갑상선 잡음(-/-)",
+     "status": "OK",
+     "turns_remaining": 25
+    },
+    "http_status": 200,
+    "turn": 25
+   },
+   {
+    "id": "ccc01587-b5fd-4ef1-ad06-25361fcaf001",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "걸음걸이 보겠습니다",
+     "request_id": "b813c3ed-e49b-461b-b97a-fdd63428c459"
+    },
+    "effective_content": "bex_gait",
+    "response": {
+     "turn": 26,
+     "result": "보폭 정상, 절뚝임(-), 불균형(-)",
+     "status": "OK",
+     "turns_remaining": 24
+    },
+    "http_status": 200,
+    "turn": 26
+   },
+   {
+    "id": "91726ad5-1231-4ea7-b35b-00c1bfb77741",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "눈 감고 서 계셔 보세요",
+     "request_id": "f0d660bc-acfe-4fcf-a437-472fd8608bff"
+    },
+    "effective_content": "bex_romberg",
+    "response": {
+     "turn": 27,
+     "result": "개안 시 안정, 폐안 시 흔들림(-)",
+     "status": "OK",
+     "turns_remaining": 23
+    },
+    "http_status": 200,
+    "turn": 27
+   },
+   {
+    "id": "a3bb7bcb-d054-4b0f-bc73-6d62fd8bc373",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "손가락으로 코를 짚어 보세요",
+     "request_id": "be58dc2b-5053-49ad-bcd7-75fb77c12ba9"
+    },
+    "effective_content": "bex_cerebellar_coordination",
+    "response": {
+     "turn": 28,
+     "result": "겨냥이상(-/-), 실조(-/-)",
+     "status": "OK",
+     "turns_remaining": 22
+    },
+    "http_status": 200,
+    "turn": 28
+   },
+   {
+    "id": "9ccae259-461e-4c86-9896-37e092ff10e7",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "기억력 검사하겠습니다",
+     "request_id": "2db147a6-153e-43ef-a708-3952743cd4ae"
+    },
+    "effective_content": "gen_cognitive_screening",
+    "response": {
+     "turn": 29,
+     "result": "MMSE-K 28/30점, 지연회상 2/3점",
+     "status": "OK",
+     "turns_remaining": 21
+    },
+    "http_status": 200,
+    "turn": 29
+   },
+   {
+    "id": "e3de7c33-c18e-42d7-9d53-2af4889f8b60",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "손 떨림 보겠습니다",
+     "request_id": "5b0c108d-4e8f-40b0-afc7-7d1b35778dcd"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 30,
+     "error": {
+      "code": "EXAM_NOT_SPECIFIC",
+      "message": "Request one specific examination maneuver."
+     },
+     "turns_remaining": 20
+    },
+    "http_status": 422,
+    "turn": 30
+   },
+   {
+    "id": "814ed2a8-f8e0-4d26-8a8b-215f79c2a4e4",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "누웠다 일어서서 혈압 재겠습니다",
+     "request_id": "e82246f2-1eb3-4b72-8fe8-3499a13efdb0"
+    },
+    "effective_content": "gen_orthostatic_bp",
+    "response": {
+     "turn": 31,
+     "result": "수축기 강하 6mmHg, 어지럼(-)",
+     "status": "OK",
+     "turns_remaining": 19
+    },
+    "http_status": 200,
+    "turn": 31
+   },
+   {
+    "id": "f1c51194-a104-47ac-89f8-fa812e00eb6b",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "병식 평가하겠습니다",
+     "request_id": "6d0686ca-01f8-4aba-8c69-897d7985752f"
+    },
+    "effective_content": "c00_insight",
+    "response": {
+     "turn": 32,
+     "result": "병식 부분적",
+     "status": "OK",
+     "turns_remaining": 18
+    },
+    "http_status": 200,
+    "turn": 32
+   },
+   {
+    "id": "a782f069-73f8-4b69-8d69-b4082db28fa5",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "수면제 의존이 생긴 것으로 보여요",
+     "request_id": "e9b98004-c277-49a5-bf6e-fb348c3b2f31"
+    },
+    "effective_content": "수면제 의존이 생긴 것으로 보여요",
+    "response": {
+     "turn": 33,
+     "status": "OK",
+     "content": "약을 줄일 수 있을까요?",
+     "turns_remaining": 17
+    },
+    "http_status": 200,
+    "turn": 33
+   },
+   {
+    "id": "55439cc8-e3fb-4795-b734-8534d284e08e",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "천천히 줄이면 끊을 수 있어요",
+     "request_id": "f074e7cc-8fe9-405a-aff7-1b66ff9a719d"
+    },
+    "effective_content": "천천히 줄이면 끊을 수 있어요",
+    "response": {
+     "turn": 34,
+     "status": "OK",
+     "content": "잠 못 잘까 봐 두려워요.",
+     "turns_remaining": 16
+    },
+    "http_status": 200,
+    "turn": 34
+   },
+   {
+    "id": "8a7dce8d-9519-432a-bd49-0e36eb700e9e",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "궁금하신 점 있으세요?",
+     "request_id": "f4573738-f3b9-4538-ae23-b228084ad4f2"
+    },
+    "effective_content": "궁금하신 점 있으세요?",
+    "response": {
+     "turn": 35,
+     "status": "OK",
+     "content": "수면제 말고 다른 방법도 있나요?",
+     "turns_remaining": 15
+    },
+    "http_status": 200,
+    "turn": 35
+   },
+   {
+    "id": "51dcec93-8463-4f8d-bb7b-70d0db004fd1",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "갑자기 끊으면 위험해서 천천히 줄여요",
+     "request_id": "a97977f6-4666-422c-a31e-ef559bf8993b"
+    },
+    "effective_content": "갑자기 끊으면 위험해서 천천히 줄여요",
+    "response": {
+     "turn": 36,
+     "status": "OK",
+     "content": "네, 천천히 줄여볼게요.",
+     "turns_remaining": 14
+    },
+    "http_status": 200,
+    "turn": 36
+   },
+   {
+    "id": "0d5f5ff4-b1cd-4c87-ba74-a35c510b8332",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "이해되셨어요? 한번 말해 보시겠어요?",
+     "request_id": "9b7af638-5e5a-4f10-8a86-c0ffc27da324"
+    },
+    "effective_content": "이해되셨어요?",
+    "response": {
+     "turn": 37,
+     "status": "OK",
+     "content": "네, 이해했어요.",
+     "turns_remaining": 13
+    },
+    "http_status": 200,
+    "turn": 37
+   }
+  ],
+  "note": "",
+  "record": {},
+  "diagnosis": "",
+  "score": null
+ }
+}

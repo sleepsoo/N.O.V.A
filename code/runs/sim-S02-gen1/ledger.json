@@ -1,0 +1,383 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 힘드셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "잦아진 두통에 대해 자세히 말씀해 주세요",
+    "reply": "한 번 아프면 하루, 길면 이틀까지 간다.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "두통이 자주 와서 뇌에 혹이 있거나 뇌출혈 같은 큰 병이 아닌지 걱정돼요",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "두통 부위에 대해 자세히 말씀해 주세요",
+    "reply": "주로 왼쪽 관자놀이와 눈 뒤쪽이 아프고 가끔 오른쪽도 아프다.",
+    "phase": "interview",
+    "qid": "ha_site",
+    "label": "부위"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "진통제 사용에 대해 자세히 말씀해 주세요",
+    "reply": "이부프로펜을 한 달에 다섯~여섯 번 먹고, 먹으면 반쯤 나아져요.",
+    "phase": "interview",
+    "qid": "ha_analgesic",
+    "label": "진통제 사용"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "갑자기 시작된 평생 최악의 두통인가요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ha_onset",
+    "label": "발생 양상"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "팔다리 힘 빠짐이나 말 어눌함은 없으세요?",
+    "reply": "팔다리 힘 빠짐이나 말 어눌함은 없어요.",
+    "phase": "interview",
+    "qid": "ha_neuro",
+    "label": "신경 증상"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "열이나 목 뻣뻣함은 없으세요?",
+    "reply": "열이 나거나 목이 뻣뻣한 적은 없어요.",
+    "phase": "interview",
+    "qid": "ha_fever",
+    "label": "발열·경부강직"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "혹시 임신 가능성은 있으세요?",
+    "reply": "임신 가능성은 없어요.",
+    "phase": "interview",
+    "qid": "wm_preg",
+    "label": "임신 가능성"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "메스꺼움이나 구토는 있으세요?",
+    "reply": "속이 메스껍고 토할 때도 있어요.",
+    "phase": "interview",
+    "qid": "ha_nv",
+    "label": "구역·구토"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "구토는 어떠세요?",
+    "reply": "속이 메스껍고 토할 때도 있어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨가 있으세요?",
+    "reply": "고혈압, 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+    "reply": "진통제(이부프로펜) 한 달에 다섯~여섯 번 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "가족 병력에 대해 자세히 말씀해 주세요",
+    "reply": "어머니도 젊을 때부터 편두통이 있으셨다고 한다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "다른 지병에 대해 자세히 말씀해 주세요",
+    "reply": "과거에 큰 병을 앓은 적은 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "두통 전에 눈앞이 번쩍인 적 있나요?",
+    "reply": "두통 전에 눈앞에 번쩍이는 빛이 보인 적은 없어요.",
+    "phase": "interview",
+    "qid": "ha_aura",
+    "label": "전조·시야"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "담배를 피우세요?",
+    "reply": "담배는 피우지 않는다.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "두통이 이렇게 자주 오니까 혹시 뇌에 혹이 있거나 뇌출혈 같은 큰 병이 아닌지 걱정이 된다.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "안저 검사하겠습니다",
+    "reply": "시신경유두 경계 명확(+/+), 유두부종(-/-), 출혈(-/-)",
+    "phase": "exam",
+    "qid": "fundus",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "사지 근력 검사하겠습니다",
+    "reply": "상지 Gr.5/Gr.5, 하지 Gr.5/Gr.5",
+    "phase": "exam",
+    "qid": "power",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "동공 대광반사 확인하겠습니다",
+    "reply": "동공 3mm/3mm 동일, 직접·간접 대광반사(+/+)",
+    "phase": "exam",
+    "qid": "pupil",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "외안근 운동 검사하겠습니다",
+    "reply": "6방향 제한(-/-), 복시(-), 안구진탕(-)",
+    "phase": "exam",
+    "qid": "eom",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "대면 시야 검사하겠습니다",
+    "reply": "시야 결손(-/-)",
+    "phase": "exam",
+    "qid": "vfield",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "사지 감각 검사하겠습니다",
+    "reply": "통각·촉각 저하(-/-)",
+    "phase": "exam",
+    "qid": "sensory",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "심부건반사 검사하겠습니다",
+    "reply": "이두건 2+/2+, 슬개건 2+/2+, 바빈스키 징후(-/-)",
+    "phase": "exam",
+    "qid": "dtr",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "소뇌 협조운동 검사하겠습니다",
+    "reply": "겨냥이상(-/-), 실조(-/-)",
+    "phase": "exam",
+    "qid": "cerebellar",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "보행 관찰하겠습니다",
+    "reply": "보폭 정상, 절뚝임(-), 불균형(-), 일자보행 정상",
+    "phase": "exam",
+    "qid": "gait",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "경부 강직 확인하겠습니다",
+    "reply": "경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)",
+    "phase": "exam",
+    "qid": "neck_stiff",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "무조짐 편두통으로 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "메스꺼움과 구토가 동반돼 편두통 양상이에요.",
+    "reply": "두통이 시작되면 속이 메스껍고 토할 때도 있어요.",
+    "phase": "explain",
+    "qid": "x_meaning",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "진찰은 정상이고 위험 신호도 없어 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "신경 진찰은 현재 정상인지 확인해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "빈도와 일 지장을 보고 치료를 함께 정해요.",
+    "reply": "최근 석 달 동안 한 달에 네다섯 번 정도 아프고, 잠을 다섯 시간 정도밖에 못 잽니다.",
+    "phase": "explain",
+    "qid": "x_treatment",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "약을 자주 먹으면 두통이 잦아질 수 있어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment2",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "벼락두통·마비·말 어눌함·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "4~8주 뒤 두통일기와 치료 효과를 확인해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "벼락두통·마비·말 어눌함·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_recheck",
+    "label": ""
+  }
+]

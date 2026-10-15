@@ -1,0 +1,367 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "체중 감소에 대해 자세히 말씀해 주세요",
+    "reply": "최근 3개월에 7kg 빠졌어요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "가슴이 두근거리는 증상도 자주 있어요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "두근거림에 대해 자세히 말씀해 주세요",
+    "reply": "가슴이 두근거려요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "매일 피로감이 심해요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "피로에 대해 자세히 말씀해 주세요",
+    "reply": "피로감도 심해서 아침에 일어나기 힘들고, 낮에도 쉽게 지친다.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "혹시 임신 가능성은 있으세요?",
+    "reply": "임신 가능성은 없어요.",
+    "phase": "interview",
+    "qid": "wm_preg",
+    "label": "안전"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "천식 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "안전"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "가만히 있어도 숨이 차세요?",
+    "reply": "가만히 있을 때는 괜찮아요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "안전"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "금방 전을 때 땀이 많이 나나요?",
+    "reply": "사무실에서도 땀이 많이 나요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "최근 열이 있었나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "평소 앓는 병이 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "과거력"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "드시는 약이 있으세요?",
+    "reply": "복용 중인 약이나 건강보조식품도 없어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "가족 중에 아픈 분이 있으세요?",
+    "reply": "어머니가 갑상샘 기능저하증으로 약을 드시고 계신다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "가족력"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "가슴이 두근거리는 증상이 언제부터 시작됐나요?",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 16,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "요골동맥 맥박 촉진하겠습니다",
+    "reply": "102회/분, 규칙적, 강하고 빠름",
+    "phase": "exam",
+    "qid": "radial",
+    "label": "",
+    "system": "Pulse"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "피부 발진 시진하겠습니다",
+    "reply": "피부 발진 없음(-/-)",
+    "phase": "exam",
+    "qid": "skin_rash",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 황달(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "편평, 팽만(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "간·비장 촉진하겠습니다",
+    "reply": "간 늑골연하 촉지(-), 비장 촉지(-)",
+    "phase": "exam",
+    "qid": "liver_spleen",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "갑상샘 호르몬 과다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "치료하면 대부분 좋아지는 병이에요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_options",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "말씀하신 증상들이 이 병과 잘 맞아요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_link",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "가슴이 두근거리는 증상, 체중 감소가 걱정됩니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "피검사·갑상선 초음파·심전도를 할게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "약 먹다 열·목 아프면 멈추고 바로 연락주세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_caution",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보고 약을 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "계단 오르거나 빨리 걸을 때 숨이 차요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  }
+]

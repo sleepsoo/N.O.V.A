@@ -1,0 +1,462 @@
+{
+  "case_id": "C10",
+  "alias": "C10",
+  "turns": 33,
+  "say": 25,
+  "exam": 8,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 17,
+  "skipped_invalid": 0,
+  "doctor_calls": 7,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 15115,
+  "doctor_output_tokens": 13460,
+  "seconds": 786.3,
+  "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "체중 감소",
+    "request": "",
+    "categories": [
+      "weight_loss",
+      "fatigue",
+      "mood"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": [],
+    "empathy_short": "걱정되셨죠."
+  },
+  "explained": [
+    "많이 걱정되셨죠, 그레이브스병 가능성이 있어요.",
+    "면역이 잘못돼서 호르몬이 많아 살이 빠지고 떨려요.",
+    "걱정하신 큰 병보다 갑상샘항진증 가능성이 높아요.",
+    "피검사·초음파 를 2주 뒤 결과 보고 와요.",
+    "열·목 아픔·숨참·심한 두근거림 땐 바로 오세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 7000,
+      "in": 1088,
+      "out": 126,
+      "finish": "stop",
+      "sec": 5.7
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1792,
+      "out": 5735,
+      "finish": "stop",
+      "sec": 271.5
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2422,
+      "out": 3049,
+      "finish": "stop",
+      "sec": 144.5
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2444,
+      "out": 2033,
+      "finish": "stop",
+      "sec": 92.2
+    },
+    {
+      "tag": "plan_p",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 3660,
+      "out": 1322,
+      "finish": "stop",
+      "sec": 63.0
+    },
+    {
+      "tag": "say_v8",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1226,
+      "out": 744,
+      "finish": "stop",
+      "sec": 37.2
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2483,
+      "out": 451,
+      "finish": "stop",
+      "sec": 20.8
+    }
+  ],
+  "phase_times": {
+    "intake": 5.7,
+    "interview": 109.9,
+    "examine": 5.3,
+    "facts": 271.5,
+    "dx": 236.7,
+    "plan_say": 100.3,
+    "explain": 32.4,
+    "S": 20.8
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "연령",
+      "pol": "+",
+      "detail": "32세",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여자",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키",
+      "pol": "+",
+      "detail": "",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "현재 체중",
+      "pol": "+",
+      "detail": "49kg",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 감소",
+      "pol": "+",
+      "detail": "7kg(3개월)",
+      "id": "F5"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "other",
+      "label": "손떨림",
+      "pol": "+",
+      "detail": "손 떨림 있음",
+      "id": "F6"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "other",
+      "label": "식사량 증가",
+      "pol": "+",
+      "detail": "식사량 증가",
+      "id": "F7"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "other",
+      "label": "식욕 증가",
+      "pol": "+",
+      "detail": "식욕 증가",
+      "id": "F8"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "더위 불내성",
+      "pol": "+",
+      "detail": "더위 불내성 있음",
+      "id": "F9"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "ros.Palpitation",
+      "label": "가슴 두근거림",
+      "pol": "+",
+      "detail": "가슴 두근거림",
+      "id": "F10"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "배변 횟수 증가",
+      "pol": "+",
+      "detail": "배변 2~3회",
+      "id": "F11"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "변 양상 변화",
+      "pol": "+",
+      "detail": "변이 묽음",
+      "id": "F12"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "소변량 증가",
+      "pol": "+",
+      "detail": "소변량 약간 증가",
+      "id": "F13"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "안구 돌출",
+      "pol": "+",
+      "detail": "안구 돌출",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "안구 건조",
+      "pol": "+",
+      "detail": "눈 건조",
+      "id": "F15"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "목 부음",
+      "pol": "+",
+      "detail": "목 부음",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "목 혹 없음",
+      "pol": "-",
+      "detail": "목 혹 없음",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "women",
+      "key": "other",
+      "label": "생리량 감소",
+      "pol": "+",
+      "detail": "생리량 감소",
+      "id": "F18"
+    },
+    {
+      "turn": 9,
+      "sec": "women",
+      "key": "other",
+      "label": "생리기간 단축",
+      "pol": "+",
+      "detail": "생리기간 단축",
+      "id": "F19"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "복통 없음",
+      "pol": "-",
+      "detail": "복통 없음",
+      "id": "F20"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "구토 없음",
+      "pol": "-",
+      "detail": "구토 없음",
+      "id": "F21"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "호흡곤란",
+      "pol": "+",
+      "detail": "숨 차 있음",
+      "id": "F22"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "other",
+      "label": "갑상선 질환 없음",
+      "pol": "-",
+      "detail": "갑상선 질환 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 13,
+      "sec": "pmh",
+      "key": "other",
+      "label": "천식 없음",
+      "pol": "-",
+      "detail": "천식 없음",
+      "id": "F24"
+    },
+    {
+      "turn": 14,
+      "sec": "meds",
+      "key": "other",
+      "label": "약 복용 없음",
+      "pol": "-",
+      "detail": "약 복용 없음",
+      "id": "F25"
+    },
+    {
+      "turn": 14,
+      "sec": "meds",
+      "key": "other",
+      "label": "영양제 없음",
+      "pol": "-",
+      "detail": "영양제 없음",
+      "id": "F26"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 갑상선 기능저하",
+      "pol": "+",
+      "detail": "어머니 갑상샘 기능저하",
+      "id": "F27"
+    },
+    {
+      "turn": 16,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연 없음",
+      "pol": "-",
+      "detail": "흡연 없음",
+      "id": "F28"
+    },
+    {
+      "turn": 16,
+      "sec": "sh",
+      "key": "sh.alcohol",
+      "label": "음주 있음",
+      "pol": "+",
+      "detail": "음주 1~2회/월",
+      "id": "F29"
+    },
+    {
+      "turn": 17,
+      "sec": "women",
+      "key": "other",
+      "label": "임신 가능성 없음",
+      "pol": "-",
+      "detail": "임신 가능성 없음",
+      "id": "F30"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "복통",
+      "pol": "-",
+      "detail": "",
+      "id": "F31"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "-",
+      "detail": "",
+      "id": "F32"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "ros.Chest pain",
+      "label": "흉통",
+      "pol": "+",
+      "detail": "가슴이 두근거리고 숨이 차요.",
+      "id": "F33"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "286976d23e2597ec47e0317e07bf86ccb823c77d091d06aa2b4fb04fbdaf64ed",
+    "score_status": "not_scored",
+    "turn": 33
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "안녕하세요, 걱정되셨죠. 다른 불편한 데는요?",
+      "effective": "다른 불편한 데는요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C10",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 26,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 7,
+  "sim_doctor_calls": 7,
+  "sim_doctor_input_tokens": 15115,
+  "sim_doctor_output_tokens": 13460,
+  "sim_turns": 33,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v8/run.py"
+}

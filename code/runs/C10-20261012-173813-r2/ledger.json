@@ -1,0 +1,443 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "체중 감소가 걱정이시겠어요.",
+    "reply": "네, 큰 병일까 봐 걱정돼요.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "그 뒤로 점점 심해지고 있나요?",
+    "reply": "네, 계속 살이 빠지고 있어요.",
+    "phase": "hpi",
+    "qid": "course",
+    "label": "경과"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "일상생활에 지장이 얼마나 있으세요?",
+    "reply": "쉽게 지쳐서 계단 오르기도 힘들어요.",
+    "phase": "hpi",
+    "qid": "impact",
+    "label": "일상 지장"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "이 문제로 진료받은 적 있으세요?",
+    "reply": "아니요, 이번이 처음이에요.",
+    "phase": "hpi",
+    "qid": "prior_care",
+    "label": "이전 진료"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "식사량은 예전과 비교해 어떠세요?",
+    "reply": "예전보다 더 많이 먹어요.",
+    "phase": "bundle",
+    "qid": "wt_intake",
+    "label": "식사량"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "더위나 추위를 많이 타세요?",
+    "reply": "요즘 더위를 많이 타요.",
+    "phase": "bundle",
+    "qid": "wt_heat",
+    "label": "더위/추위 민감"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "땀이 많아지셨나요?",
+    "reply": "네, 밤엔 잠옷이 젖기도 해요.",
+    "phase": "bundle",
+    "qid": "wt_sweat",
+    "label": "발한"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "손이 떨리세요?",
+    "reply": "네, 잔 들거나 글씨 쓸 때 떨려요.",
+    "phase": "bundle",
+    "qid": "wt_tremor",
+    "label": "손떨림"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "물을 많이 드시거나 갈증 나세요?",
+    "reply": "아니요, 갈증도 별로 없어요.",
+    "phase": "bundle",
+    "qid": "wt_thirst",
+    "label": "다음/갈증"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "밤에 식은땀 나세요?",
+    "reply": "네, 밤에 잠옷이 젖을 만큼 나요.",
+    "phase": "bundle",
+    "qid": "wt_night",
+    "label": "야간 발한"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "당뇨나 고혈압 있으세요?",
+    "reply": "아니요, 둘 다 없어요.",
+    "phase": "history",
+    "qid": "pmh_dm_htn",
+    "label": "DM/HTN"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "다른 지병 있으세요?",
+    "reply": "아니요, 다른 지병도 없어요.",
+    "phase": "history",
+    "qid": "pmh_other",
+    "label": "기타 지병"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "결핵이나 간염 앓은 적 있으세요?",
+    "reply": "아니요, 둘 다 앓은 적 없어요.",
+    "phase": "history",
+    "qid": "pmh_tb_hep",
+    "label": "Tbc/hepatitis"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "수술받으신 적 있으세요?",
+    "reply": "아니요, 수술받은 적 없어요.",
+    "phase": "history",
+    "qid": "pmh_op",
+    "label": "Op. Hx"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "지금 드시는 약 있으세요?",
+    "reply": "아니요, 먹는 약은 없어요.",
+    "phase": "history",
+    "qid": "meds",
+    "label": "Medicine history"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "약 알레르기 있으세요?",
+    "reply": "아니요, 약 알레르기는 없어요.",
+    "phase": "history",
+    "qid": "allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "생리 양이나 기간이 변했나요?",
+    "reply": "두 달째 양이 줄고 기간도 짧아요.",
+    "phase": "history",
+    "qid": "wm_change",
+    "label": "월경 변화"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "마지막 생리는 언제였어요?",
+    "reply": "2주 전쯤 시작했어요.",
+    "phase": "history",
+    "qid": "wm_preg",
+    "label": "LMP"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "가족 중 비슷한 병 있는 분 계세요?",
+    "reply": "어머니가 갑상샘 기능저하증이세요.",
+    "phase": "history",
+    "qid": "fh_similar",
+    "label": "FH 유사 질환"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "가족 중 당뇨나 고혈압 있으세요?",
+    "reply": "아버지 고혈압, 할머니 당뇨요.",
+    "phase": "history",
+    "qid": "fh_dm_htn",
+    "label": "FH DM/HTN"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "담배 피우세요?",
+    "reply": "아니요, 담배는 안 피워요.",
+    "phase": "history",
+    "qid": "smoking",
+    "label": "Smoking"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "술은 얼마나 드세요?",
+    "reply": "한 달에 한두 번 가볍게 마셔요.",
+    "phase": "history",
+    "qid": "alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 23,
+    "kind": "SAY",
+    "text": "무슨 일 하세요?",
+    "reply": "사무실에서 일해요.",
+    "phase": "history",
+    "qid": "job",
+    "label": "직업"
+  },
+  {
+    "turn": 24,
+    "kind": "SAY",
+    "text": "가슴 두근거림 있으세요?",
+    "reply": "네, 가만히 있어도 자주 두근거려요.",
+    "phase": "ros",
+    "qid": "ros_palp",
+    "label": "Palpitation"
+  },
+  {
+    "turn": 25,
+    "kind": "SAY",
+    "text": "숨이 찬 적 있으세요?",
+    "reply": "네, 계단 오르거나 빨리 걸을 때요.",
+    "phase": "ros",
+    "qid": "ros_dyspnea",
+    "label": "Dyspnea"
+  },
+  {
+    "turn": 26,
+    "kind": "SAY",
+    "text": "가슴 아픈 적 있으세요?",
+    "reply": "아니요, 가슴이 아픈 적은 없어요.",
+    "phase": "ros",
+    "qid": "ros_chest",
+    "label": "Chest pain"
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "잠은 잘 주무세요?",
+    "reply": "아니요, 뒤척이다 새벽에 잠들어요.",
+    "phase": "ros",
+    "qid": "ros_sleep",
+    "label": "수면"
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "두통이 자주 있나요?",
+    "reply": "아니요, 두통은 거의 없어요.",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형"
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "시야가 흐려지나요?",
+    "reply": "아니요, 흐려지진 않아요.",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형"
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "가장 걱정되는 게 뭐예요?",
+    "reply": "큰 병일까 봐 가장 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "오늘 바라시는 게 있으세요?",
+    "reply": "원인을 알고 빨리 치료받고 싶어요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "기대(ICE)"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 34,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 35,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 36,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 37,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "누운 자세 138/72mmHg, 기립 1분 136/72mmHg, 기립 3분 136/70mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 38,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 39,
+    "kind": "EXAM",
+    "text": "갑상선 잡음 청진하겠습니다",
+    "reply": "잡음(+/+)",
+    "phase": "exam",
+    "qid": "thyroid_bruit",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 40,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(+/+)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "갑상선 기능 항진증이 의심돼요.",
+    "reply": "검사로 확인할 수 있나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "자가항체 자극 때문으로 보여요.",
+    "reply": "그게 무슨 뜻인가요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "갑상선 기능 검사, TRAb 항체검사로 확인할게요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 44,
+    "kind": "SAY",
+    "text": "검사 결과에 따른 치료로 치료할 수 있어요.",
+    "reply": "네, 치료받고 싶어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 45,
+    "kind": "SAY",
+    "text": "시야 변화가 있으면 바로 오세요.",
+    "reply": "네, 그러면 바로 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 46,
+    "kind": "SAY",
+    "text": "규칙적으로 먹고 충분히 잠을 자세요.",
+    "reply": "네, 그렇게 할게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 47,
+    "kind": "SAY",
+    "text": "더 궁금한 점 있으세요?",
+    "reply": "검사는 언제 받을 수 있나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 48,
+    "kind": "SAY",
+    "text": "검사 후 재진 때 설명드릴게요",
+    "reply": "네, 알겠어요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  }
+]

@@ -1,0 +1,363 @@
+{
+  "case_id": "S01",
+  "alias": "S01",
+  "turns": 39,
+  "say": 25,
+  "exam": 14,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 14,
+  "skipped_invalid": 0,
+  "doctor_calls": 6,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 10711,
+  "doctor_output_tokens": 11358,
+  "seconds": 796.0,
+  "diagnosis": "급성 충수염 (Acute appendicitis)",
+  "accepted_diagnoses": [
+    "급성 충수염 (Acute appendicitis)",
+    "급성 충수염",
+    "Acute appendicitis"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 24,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "오른쪽 아랫배 통증",
+    "request": "",
+    "categories": [
+      "gi",
+      "abd_pain"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "급성 충수염은 염증으로 인한 우하복부 통증이 특징이죠",
+    "통증과 염증이 크게 가라앉으면 보존적 치료를 계속합니다",
+    "우상복통이 어제부터 지속되며 점점 심해졌습니다",
+    "통증이 계속 심해지는 것이 걱정이십니다",
+    "정확히 확인하려고 피검사를 할게요.",
+    "목구멍을 해치지 않도록 부드러운 음식을 선택하세요",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "숨참·흉통·의식 변화·고열 시 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 748,
+      "out": 310,
+      "finish": "stop",
+      "sec": 14.9
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2642,
+      "out": 436,
+      "finish": "stop",
+      "sec": 22.1
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1227,
+      "out": 5798,
+      "finish": "stop",
+      "sec": 280.0
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2187,
+      "out": 3434,
+      "finish": "stop",
+      "sec": 162.8
+    },
+    {
+      "tag": "plan_say4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2132,
+      "out": 943,
+      "finish": "stop",
+      "sec": 44.8
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1775,
+      "out": 437,
+      "finish": "stop",
+      "sec": 22.2
+    }
+  ],
+  "phase_times": {
+    "intake": 14.9,
+    "interview": 148.9,
+    "examine": 46.3,
+    "facts": 280.0,
+    "dx": 162.8,
+    "plan_say": 44.8,
+    "explain": 76.0,
+    "effective": 0.0,
+    "S": 22.2
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "환자이름",
+      "pol": "+",
+      "detail": "정민수",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "24세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "남자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "ros.Abdominal pain",
+      "label": "배통증",
+      "pol": "+",
+      "detail": "어제 저녁부터",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "ros.Abdominal pain",
+      "label": "배꼽주변통증",
+      "pol": "+",
+      "detail": "배꼽주변",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "ros.Abdominal pain",
+      "label": "오른하복통",
+      "pol": "+",
+      "detail": "오른하복부",
+      "id": "F6"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "ros.Abdominal pain",
+      "label": "걷이·기침 악화",
+      "pol": "+",
+      "detail": "걷이·기침 악화",
+      "id": "F7"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면곤란",
+      "pol": "+",
+      "detail": "밤새 잠 못자",
+      "id": "F8"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "+",
+      "detail": "37도",
+      "id": "F9"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "배뇨통증 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F10"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "소변색 정상",
+      "pol": "+",
+      "detail": "평소와 같음",
+      "id": "F11"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "삼킴불편증 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F12"
+    },
+    {
+      "turn": 8,
+      "sec": "pmh",
+      "key": "other",
+      "label": "기타질환 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F13"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "소화제 복용",
+      "pol": "+",
+      "detail": "한 알",
+      "id": "F14"
+    },
+    {
+      "turn": 10,
+      "sec": "fh",
+      "key": "fh.HTN",
+      "label": "부모고혈압",
+      "pol": "+",
+      "detail": "아버지",
+      "id": "F15"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수분섭취 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "ros.Melena",
+      "label": "검은변 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F17"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "ros.Hematochezia",
+      "label": "피변 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F18"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "식후통증",
+      "pol": "+",
+      "detail": "저녁 1시간 후",
+      "id": "F19"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "other",
+      "label": "신장결석 부정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F20"
+    },
+    {
+      "turn": 15,
+      "sec": "ros",
+      "key": "other",
+      "label": "진행성통증",
+      "pol": "+",
+      "detail": "점점 심해짐",
+      "id": "F21"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "3cbbd59c1f26c60a1fd8c8eba7336241c20828e7be59db6009e5a45a7d662a9a",
+    "score_status": "not_scored",
+    "turn": 39
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "속이 메스껍고, 오늘 새벽에 한 번 토했어요"
+  },
+  "exam_plan": [
+    "vitals",
+    "general",
+    "mental",
+    "conj",
+    "thyroid",
+    "chest_insp",
+    "lung",
+    "heart",
+    "abd_insp",
+    "abd_perc",
+    "liver_spleen",
+    "abd_palp",
+    "rebound",
+    "periph"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 28,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 6,
+  "sim_doctor_calls": 6,
+  "sim_doctor_input_tokens": 10711,
+  "sim_doctor_output_tokens": 11358,
+  "sim_turns": 39,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 50.9,
+  "grade_scores": {
+    "정보수집": 4.9,
+    "진단추론": 15,
+    "검사·추적": 6,
+    "안전": 15,
+    "의사소통": 5,
+    "효율": 5
+  }
+}

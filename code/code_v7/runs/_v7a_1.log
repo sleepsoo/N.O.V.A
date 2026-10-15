@@ -1,0 +1,6 @@
+시작: ../공개 샘플데이터/C01 → ../code_v7/runs/_sim_logs/C01-v7a.log
+시작: ../공개 샘플데이터/C10 → ../code_v7/runs/_sim_logs/C10-v7a.log
+완료: ../공개 샘플데이터/C01 (exit 0)
+완료: ../공개 샘플데이터/C10 (exit 0)
+C01: 턴 42 거절 0 하나씩 0 절단 1 doctor local:8 luna 0 dx=수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder) hit=True grade=75
+C10: 턴 42 거절 0 하나씩 0 절단 1 doctor local:8 luna 0 dx=그레이브스병에 의한 갑상샘항진증 (Graves' disease) hit=True grade=86.3

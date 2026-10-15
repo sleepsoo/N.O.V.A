@@ -1,0 +1,79 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   3.5s] llm[intake] low out=206 finish=stop 3.4s
+[   3.5s] intake: {'age': 38, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '잦아진 두통 (원인 확인 원함)', 'request': '두통의 원인을 알고 싶음', 'categories': ['headache'], 'empathy': '많이 힘드셨겠어요.', 'answered': []} diffs=['긴장형 두통', '편두통', '약물과용 두통', '군발두통', '이차성 두통']
+[   3.5s] checklist: 38 items, covered=['hpi_onset']
+[  10.4s] turn 1 SAY: 많이 힘드셨겠어요. -> 네, 알겠습니다.
+[  21.5s] turn 2 SAY: 잦아진 두통에 대해 자세히 말씀해 주세요 -> 한 번 아프면 하루, 길면 이틀까지 간다.
+[  36.9s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 두통이 자주 와서 뇌에 혹이 있거나 뇌출혈 같은 큰 병이 아닌지 걱정돼요
+[  63.2s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 그런 건 없어요.
+[  76.4s] llm[plan_q3] low out=1032 finish=stop 13.3s
+[  82.7s] turn 5 SAY: 두통 부위에 대해 자세히 말씀해 주세요 -> 주로 왼쪽 관자놀이와 눈 뒤쪽이 아프고 가끔 오른쪽도 아프다.
+[  92.0s] turn 6 SAY: 진통제 사용에 대해 자세히 말씀해 주세요 -> 이부프로펜을 한 달에 다섯~여섯 번 먹고, 먹으면 반쯤 나아져요.
+[  98.8s] turn 7 SAY: 갑자기 시작된 평생 최악의 두통인가요? -> 그런 건 없어요.
+[ 108.6s] turn 8 SAY: 팔다리 힘 빠짐이나 말 어눌함은 없으세요? -> 팔다리 힘 빠짐이나 말 어눌함은 없어요.
+[ 113.1s] turn 9 SAY: 열이나 목 뻣뻣함은 없으세요? -> 열이 나거나 목이 뻣뻣한 적은 없어요.
+[ 117.4s] turn 10 SAY: 혹시 임신 가능성은 있으세요? -> 임신 가능성은 없어요.
+[ 130.5s] llm[plan_q3] low out=940 finish=stop 13.1s
+[ 139.2s] turn 11 SAY: 메스꺼움이나 구토는 있으세요? -> 속이 메스껍고 토할 때도 있어요.
+[ 145.7s] turn 12 SAY: 구토는 어떠세요? -> 속이 메스껍고 토할 때도 있어요.
+[ 150.7s] turn 13 SAY: 고혈압이나 당뇨가 있으세요? -> 고혈압, 당뇨는 없어요.
+[ 158.3s] turn 14 SAY: 드시는 약이나 영양제에 대해 자세히 말씀해 주세요 -> 진통제(이부프로펜) 한 달에 다섯~여섯 번 먹어요.
+[ 166.7s] turn 15 SAY: 가족 병력에 대해 자세히 말씀해 주세요 -> 어머니도 젊을 때부터 편두통이 있으셨다고 한다.
+[ 177.6s] llm[plan_q3] low out=801 finish=stop 10.9s
+[ 183.3s] turn 16 SAY: 다른 지병에 대해 자세히 말씀해 주세요 -> 과거에 큰 병을 앓은 적은 없어요.
+[ 191.9s] turn 17 SAY: 두통 전에 눈앞이 번쩍인 적 있나요? -> 두통 전에 눈앞에 번쩍이는 빛이 보인 적은 없어요.
+[ 195.0s] turn 18 SAY: 담배를 피우세요? -> 담배는 피우지 않는다.
+[ 205.3s] turn 19 SAY: 오늘 특히 궁금하신 게 있으세요? -> 두통이 이렇게 자주 오니까 혹시 뇌에 혹이 있거나 뇌출혈 같은 큰 병이 아닌지 걱정이 된다.
+[ 205.3s] v3 interview done: q=18 asked=15 covered=4 uncovered_p1=['ha_char', 'ha_nrs', 'ha_freq', 'ha_worst', 'sh_alcohol']
+[ 212.3s] llm[exams_gen] low out=605 finish=stop 7.0s
+[ 212.3s] v3 exams(gen) plan: [('fundus', '유두부종 등 두개내압 상승 소견을 확인해 이차성 두통을 평가한다.'), ('power', '국소 근력 저하가 있는지 확인해 뇌졸중 등 신경학적 원인을 평가한다.'), ('mental', '의식·지남력 이상은 중추신경계의 심각한 이차성 원인을 시사할 수 있다.'), ('pupil', '동공 비대칭이나 반응 이상 등 신경학적 이상을 확인한다.'), ('eom', '안구운동 장애나 복시 등 뇌신경 이상을 확인한다.'), ('vfield', '시야 결손 등 시각 경로 이상을 확인한다.'), ('sensory', '감각 비대칭 등 국소 신경학적 이상을 확인한다.'), ('dtr', '반사 비대칭이나 병적 반사 등 중추신경계 이상을 평가한다.'), ('cerebellar', '협조운동 이상이 있는지 확인해 후두와 등 중추신경계 병변을 평가한다.'), ('gait', '보행 이상은 소뇌·운동계 이상이나 두개내 병변을 시사할 수 있다.'), ('neck_stiff', '경부 강직 여부를 확인해 수막 자극 소견을 평가한다.'), ('general', '전반적 외관에서 중증 질환이나 급성 신경학적 이상을 시사하는 소견을 살핀다.')]
+[ 212.4s] turn 20 EXAM: 안저 검사하겠습니다 -> 시신경유두 경계 명확(+/+), 유두부종(-/-), 출혈(-/-)
+[ 212.4s] turn 21 EXAM: 사지 근력 검사하겠습니다 -> 상지 Gr.5/Gr.5, 하지 Gr.5/Gr.5
+[ 212.4s] turn 22 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 216.4s] turn 23 EXAM: 동공 대광반사 확인하겠습니다 -> 동공 3mm/3mm 동일, 직접·간접 대광반사(+/+)
+[ 218.3s] turn 24 EXAM: 외안근 운동 검사하겠습니다 -> 6방향 제한(-/-), 복시(-), 안구진탕(-)
+[ 220.5s] turn 25 EXAM: 대면 시야 검사하겠습니다 -> 시야 결손(-/-)
+[ 222.7s] turn 26 EXAM: 사지 감각 검사하겠습니다 -> 통각·촉각 저하(-/-)
+[ 225.0s] turn 27 EXAM: 심부건반사 검사하겠습니다 -> 이두건 2+/2+, 슬개건 2+/2+, 바빈스키 징후(-/-)
+[ 225.0s] turn 28 EXAM: 소뇌 협조운동 검사하겠습니다 -> 겨냥이상(-/-), 실조(-/-)
+[ 225.0s] turn 29 EXAM: 보행 관찰하겠습니다 -> 보폭 정상, 절뚝임(-), 불균형(-), 일자보행 정상
+[ 229.0s] turn 30 EXAM: 경부 강직 확인하겠습니다 -> 경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)
+[ 229.0s] turn 31 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 정상 체형, 안절부절(-)
+[ 243.5s] llm[facts] medium out=1617 finish=stop 14.5s
+[ 243.5s] facts: 30
+[ 269.4s] llm[dx] medium out=2342 finish=stop 25.9s
+[ 281.5s] llm[plan_say3] low out=1077 finish=stop 12.1s
+[ 281.5s] v3 lines: {'dx': '무조짐 편두통으로 보여요.', 'meaning': '메스꺼움과 구토가 동반돼 편두통 양상이에요.', 'concern': '진찰은 정상이고 위험 신호도 없어 보여요.', 'tests': '신경 진찰은 현재 정상인지 확인해요.', 'tests2': '두통일기와 약 복용을 살펴 원인을 좁혀요.', 'treatment': '빈도와 일 지장을 보고 치료를 함께 정해요.', 'treatment2': '약을 자주 먹으면 두통이 잦아질 수 있어요.', 'warning': '벼락두통·마비·말 어눌함·고열 시 바로 오세요.', 'followup': '4~8주 뒤 두통일기와 치료 효과를 확인해요.', 'lifestyle': '수면 시간을 일정하게 하고 음주를 줄여보세요.'} musts=[] checks=[{'drop': '최악의 두통·마비·말 어눌함·열·목 뻣뻣함이면 바로 오세요.', 'key': 'warning', 'why': 'too_long'}]
+[ 287.3s] turn 32 SAY: 무조짐 편두통으로 보여요. -> 네, 알겠습니다.
+[ 299.9s] turn 33 SAY: 메스꺼움과 구토가 동반돼 편두통 양상이에요. -> 두통이 시작되면 속이 메스껍고 토할 때도 있어요.
+[ 302.3s] turn 34 SAY: 진찰은 정상이고 위험 신호도 없어 보여요. -> 네, 알겠습니다.
+[ 304.8s] turn 35 SAY: 신경 진찰은 현재 정상인지 확인해요. -> 네, 알겠습니다.
+[ 323.4s] turn 36 SAY: 빈도와 일 지장을 보고 치료를 함께 정해요. -> 최근 석 달 동안 한 달에 네다섯 번 정도 아프고, 잠을 다섯 시간 정도밖에 못 잽니다.
+[ 327.0s] turn 37 SAY: 약을 자주 먹으면 두통이 잦아질 수 있어요. -> 네, 알겠습니다.
+[ 331.2s] turn 38 SAY: 벼락두통·마비·말 어눌함·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 334.6s] turn 39 SAY: 4~8주 뒤 두통일기와 치료 효과를 확인해요. -> 네, 알겠습니다.
+[ 351.5s] turn 40 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 그런 건 없어요.
+[ 356.3s] turn 41 SAY: 벼락두통·마비·말 어눌함·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 356.3s] v3 explain done: said=9 answers=0 teach={'reply': '그런 건 없어요.', 'ok': False} turns_left=9 (start 19)
+[ 366.8s] llm[S-narr] low out=913 finish=stop 10.6s
+[ 366.8s] summary: turns=41 counts={'say': 29, 'exam': 12, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 18, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 21195, 'doctor_output_tokens': 9533, 'elapsed_s': 366.8} dx=무조짐 편두통 (Migraine without aura)
+{
+ "turns": 41,
+ "say": 29,
+ "exam": 12,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 9,
+ "doctor_input_tokens": 21195,
+ "doctor_output_tokens": 9533,
+ "sim_calls": 35,
+ "seconds": 366.8,
+ "diagnosis": "무조짐 편두통 (Migraine without aura)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S02-gen1

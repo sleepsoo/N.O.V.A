@@ -1,0 +1,450 @@
+{
+  "case_id": "S01",
+  "alias": "S01",
+  "turns": 41,
+  "say": 29,
+  "exam": 12,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 21,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 19368,
+  "doctor_output_tokens": 8668,
+  "seconds": 728.3,
+  "diagnosis": "급성 충수염 (Acute Appendicitis)",
+  "accepted_diagnoses": [
+    "급성 충수염 (Acute appendicitis)",
+    "급성 충수염",
+    "Acute appendicitis"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 24,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "오른쪽 아랫배 통증",
+    "request": "",
+    "categories": [
+      "abd_pain",
+      "gi",
+      "insomnia"
+    ],
+    "empathy": "고통이 심하셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "정민수 님, 급성 충수염이 보입니다",
+    "CT복부는 염증이 있는지 확인합니다",
+    "항생제와 진통제로 통증과 감염을 관리해요",
+    "통증이 갑자기 심해지면·발열이 상승하면면 바로 오세요.",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 737,
+      "out": 265,
+      "finish": "stop",
+      "sec": 12.9
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2784,
+      "out": 389,
+      "finish": "stop",
+      "sec": 18.9
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2997,
+      "out": 217,
+      "finish": "stop",
+      "sec": 10.1
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3086,
+      "out": 237,
+      "finish": "stop",
+      "sec": 12.1
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 2560,
+      "out": 373,
+      "finish": "stop",
+      "sec": 17.3
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1529,
+      "out": 4131,
+      "finish": "stop",
+      "sec": 207.0
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1785,
+      "out": 2084,
+      "finish": "stop",
+      "sec": 108.7
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1710,
+      "out": 569,
+      "finish": "stop",
+      "sec": 29.8
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2180,
+      "out": 403,
+      "finish": "stop",
+      "sec": 20.1
+    }
+  ],
+  "phase_times": {
+    "intake": 12.9,
+    "interview": 159.2,
+    "examine": 155.3,
+    "facts": 207.0,
+    "dx": 108.7,
+    "plan_say": 29.8,
+    "explain": 35.4,
+    "effective": 0.0,
+    "S": 20.1
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "+",
+      "detail": "정민수",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "24세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "남성",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증 시작 시점",
+      "pol": "+",
+      "detail": "어제 저녁",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증 위치",
+      "pol": "+",
+      "detail": "전복(배꼽 주변), 이후 오른쪽 하복부",
+      "id": "F5"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "통증 악화 요인",
+      "pol": "+",
+      "detail": "걷기·기침 시 악화",
+      "id": "F6"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "통증 부위",
+      "pol": "+",
+      "detail": "오른쪽 하복부",
+      "id": "F7"
+    },
+    {
+      "turn": 3,
+      "sec": "ice",
+      "key": "other",
+      "label": "맹장염 우려",
+      "pol": "+",
+      "detail": "?",
+      "id": "F8"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면",
+      "pol": "+",
+      "detail": "?",
+      "id": "F9"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "통증 정도",
+      "pol": "+",
+      "detail": "7/10",
+      "id": "F10"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "식후 증상",
+      "pol": "+",
+      "detail": "한 시간 후 통증 발현",
+      "id": "F11"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "구토",
+      "pol": "+",
+      "detail": "1회",
+      "id": "F12"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "메스꺼움",
+      "pol": "+",
+      "detail": "있음",
+      "id": "F13"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "설사",
+      "pol": "-",
+      "detail": "?",
+      "id": "F14"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "변비",
+      "pol": "-",
+      "detail": "?",
+      "id": "F15"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "변혈",
+      "pol": "-",
+      "detail": "?",
+      "id": "F16"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "발열",
+      "pol": "+",
+      "detail": "37°C",
+      "id": "F17"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "?",
+      "id": "F18"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "?",
+      "id": "F19"
+    },
+    {
+      "turn": 13,
+      "sec": "pmh",
+      "key": "other",
+      "label": "과거 병력",
+      "pol": "-",
+      "detail": "?",
+      "id": "F20"
+    },
+    {
+      "turn": 14,
+      "sec": "meds",
+      "key": "other",
+      "label": "소화제",
+      "pol": "+",
+      "detail": "하루 1알",
+      "id": "F21"
+    },
+    {
+      "turn": 15,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "통증 부위 정확",
+      "pol": "+",
+      "detail": "오른쪽 하복부 한 군데",
+      "id": "F22"
+    },
+    {
+      "turn": 16,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 IBD/대장암",
+      "pol": "-",
+      "detail": "?",
+      "id": "F23"
+    },
+    {
+      "turn": 17,
+      "sec": "psych",
+      "key": "other",
+      "label": "우울증",
+      "pol": "-",
+      "detail": "?",
+      "id": "F24"
+    },
+    {
+      "turn": 19,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "+",
+      "detail": "하루 반갑, 5년",
+      "id": "F25"
+    },
+    {
+      "turn": 20,
+      "sec": "sh",
+      "key": "sh.alcohol",
+      "label": "음주",
+      "pol": "+",
+      "detail": "주 1회, 맥주 2~3잔",
+      "id": "F26"
+    },
+    {
+      "turn": 21,
+      "sec": "sh",
+      "key": "other",
+      "label": "카페인",
+      "pol": "-",
+      "detail": "?",
+      "id": "F27"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "추가 우려",
+      "pol": "+",
+      "detail": "?",
+      "id": "F28"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "75a76ec93b97fe4af9705b05c02e8247d283d683a48bc840705076bbf8545bf7",
+    "score_status": "not_scored",
+    "turn": 41
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "통증이 점점 심해지고 있어요.",
+    "ok": true
+  },
+  "exam_plan": [
+    "abd_insp",
+    "abd_palp",
+    "rebound",
+    "mcburney",
+    "psoas",
+    "obturator",
+    "heart",
+    "lung",
+    "abd_perc",
+    "spine",
+    "skin_temp",
+    "cva"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 38,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 9,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 19368,
+  "sim_doctor_output_tokens": 8668,
+  "sim_turns": 41,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 65,
+  "grade_scores": {
+    "정보수집": 21,
+    "진단추론": 5,
+    "검사·추적": 5,
+    "안전": 12,
+    "의사소통": 10,
+    "효율": 12
+  }
+}

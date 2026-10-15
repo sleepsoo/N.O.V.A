@@ -1,0 +1,553 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많은 걱정이 되셨겠어요.",
+      "effective_content": "많은 걱정이 되셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많은 걱정이 되셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "피로에 대해 자세히 말씀해 주세요",
+      "effective_content": "피로에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "두세 달 전부터 몸이 너무 피곤해요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "피로에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "눈이 침침하고 글씨가 흐릿해요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "눈 증상에 대해 자세히 말씀해 주세요",
+      "effective_content": "눈 증상에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "한 달 전부터 눈이 침침하고 글씨가 흐릿해요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "눈 증상에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "그 밖에 또 불편한 건 없으세요?",
+      "effective_content": "그 밖에 또 불편한 건 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "그 밖에 또 불편한 건 없으세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "천식 있으세요?",
+      "effective_content": "천식 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "천식 있으세요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "가만히 있어도 숨이 차세요?",
+      "effective_content": "가만히 있어도 숨이 차세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "가만히 있어도 숨이 차세요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "평소 앓는 병이 있으세요?",
+      "effective_content": "평소 앓는 병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어서 하루에 한 알씩 먹어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "평소 앓는 병이 있으세요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "드시는 약이 있으세요?",
+      "effective_content": "드시는 약이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어서 하루에 한 알씩 먹어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "드시는 약이 있으세요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "가족 중에 아픈 분이 있으세요?",
+      "effective_content": "가족 중에 아픈 분이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "가족 중에 아픈 분이 있으세요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "눈이 침침하신 이유에 대해 자세히 말씀해 주세요",
+      "effective_content": "눈이 침침하신 이유에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "한 달 전부터 눈이 침침하고 글씨가 흐릿해요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "눈이 침침하신 이유에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "최근 혈색소가 나빠지는 건 없으세요?",
+      "effective_content": "최근 혈색소가 나빠지는 건 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "최근 혈색소가 나빠지는 건 없으세요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "피부가 건조하시나요?",
+      "effective_content": "피부가 건조하시나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "피부가 건조하시나요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "비정상적인 소변 색이 보이시나요?",
+      "effective_content": "비정상적인 소변 색이 보이시나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "비정상적인 소변 색이 보이시나요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "당뇨가 맞다면 평생 약을 먹어야 하는지 궁금해요",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "146/88mmHg, 82회/분 규칙적, 16회/분, 36.6°C",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 비만 체형, 안절부절(-)",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 지남력 3/3점",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "EXAM",
+      "content": "결막·공막 시진하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "창백(-/-), 충혈(-/-), 황달(-/-)",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "EXAM",
+      "content": "동공 대광반사 확인하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "동공 대광반사 | 양측 반응 2+/2+",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "비대(-), 결절(-), 압통(-)",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "갑상선 잡음 청진하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "갑상선 잡음 청진 | 비음성(-)",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "경부 림프절 촉진하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "경부 림프절 2+/2+, 대칭, 무통, 비확대",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r12",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적, 심잡음(-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "복부 시진하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "복부 비만, 하복부 수술 반흔(+), 팽만(-)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "간·비장 촉진하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "압통(-), 종괴(-), 근성방어·강직(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "압통(-), 종괴(-), 근성방어·강직(-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "하지 말초 진찰하겠습니다",
+      "effective_content": "r21",
+      "response": {
+        "status": "OK",
+        "result": "족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "2형 당뇨병은 인슐린 저항성으로 인한 혈당 상승입니다",
+      "effective_content": "2형 당뇨병은 인슐린 저항성으로 인한 혈당 상승입니다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      },
+      "payload": {
+        "content": "2형 당뇨병은 인슐린 저항성으로 인한 혈당 상승입니다"
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "식사 조절과 운동이 치료의 기본이에요.",
+      "effective_content": "식사 조절과 운동이 치료의 기본이에요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "식사 조절과 운동이 치료의 기본이에요."
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "시야 흐림·다식·다뇨는 혈당 상승이 원인입니다",
+      "effective_content": "시야 흐림·다식·다뇨는 혈당 상승이 원인입니다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "시야 흐림·다식·다뇨는 혈당 상승이 원인입니다"
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "당뇨를 평생 약에 의존해야 하는지 신경쓰셨죠",
+      "effective_content": "당뇨를 평생 약에 의존해야 하는지 신경쓰셨죠",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "당뇨를 평생 약에 의존해야 하는지 신경쓰셨죠"
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "지질·신장·간 검사는 약 선택에 도움을 줍니다",
+      "effective_content": "지질·신장·간 검사는 약 선택에 도움을 줍니다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "지질·신장·간 검사는 약 선택에 도움을 줍니다"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "복용 시 식후 물을 충분히 마셔야 합니다",
+      "effective_content": "복용 시 식후 물을 충분히 마셔야 합니다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "복용 시 식후 물을 충분히 마셔야 합니다"
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?"
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "3개월 후 혈당·체중·시야 검사 결과를 함께 확인하세요",
+      "effective_content": "3개월 후 혈당·체중·시야 검사 결과를 함께 확인하세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "3개월 후 혈당·체중·시야 검사 결과를 함께 확인하세요"
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "고혈당으로 인한 구토·의식저하면 바로 오세요.",
+      "effective_content": "고혈당으로 인한 구토·의식저하면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "고혈당으로 인한 구토·의식저하면 바로 오세요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 39,
+      "action": "DIAGNOSE",
+      "diagnosis": "당뇨병 (Diabetes Mellitus)"
+    }
+  ]
+}

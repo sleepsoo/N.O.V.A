@@ -1,0 +1,211 @@
+{
+  "case_id": "4fa07144-04e5-4116-a18e-88d8a90cc21a",
+  "alias": "C01",
+  "turns": 44,
+  "say": 33,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 24,
+  "skipped_invalid": 0,
+  "doctor_calls": 4,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 3955,
+  "doctor_output_tokens": 869,
+  "seconds": 244.4,
+  "diagnosis": "진단 미정",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": false,
+  "dx_samples": [],
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "불면",
+    "categories": [
+      "drug",
+      "sleep"
+    ],
+    "answered": [],
+    "empathy": "잠을 못 주무셔서 많이 힘드셨겠어요."
+  },
+  "explained": [
+    "진단 미정 가능성이 높아 보여요.",
+    "약마다 달라 계속 드셔도 된다고 단정할 수 없어요.",
+    "정확히 확인하려고 피검사를 할게요.",
+    "검사 결과를 보고 치료를 정할게요.",
+    "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "더 궁금하신 점 있으세요?",
+    "수면제 외에도 수면 습관을 조절하는 방법이 있어요."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 534,
+      "out": 132,
+      "finish": "stop",
+      "sec": 2.9
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3000,
+      "out": 239,
+      "finish": "stop",
+      "sec": 3.6
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 167,
+      "out": 308,
+      "finish": "stop",
+      "sec": 4.6
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 254,
+      "out": 190,
+      "finish": "stop",
+      "sec": 3.6
+    }
+  ],
+  "phase_times": {
+    "structure": 2.9,
+    "interview": 135.4,
+    "examine": 54.3,
+    "diagnose_vote": 0.1,
+    "plan": 0.1,
+    "explain": 51.0,
+    "S": 0.3,
+    "S-verify": 0.0,
+    "A": 0.1
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.onset",
+      "pol": "?",
+      "detail": "7년 전부터 잠을 못 잤어요.",
+      "label": "Onset"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.course",
+      "pol": "?",
+      "detail": "네, 점점 더 심해지고 있어요.",
+      "label": "경과"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.impact",
+      "pol": "?",
+      "detail": "낮에 졸려 집안일하다 잠들어요.",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 14,
+      "key": "ros.Fatigue",
+      "pol": "-",
+      "detail": "",
+      "label": "Fatigue/Weakness"
+    },
+    {
+      "turn": 14,
+      "key": "ros.General weakness",
+      "pol": "-",
+      "detail": "",
+      "label": "Fatigue/Weakness"
+    },
+    {
+      "turn": 17,
+      "key": "ros.Dizziness",
+      "pol": "-",
+      "detail": "",
+      "label": "Dizziness"
+    },
+    {
+      "turn": 18,
+      "key": "ros.Appetite",
+      "pol": "?",
+      "detail": "입맛은 괜찮아요.",
+      "label": "Anorexia"
+    },
+    {
+      "turn": 20,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "",
+      "label": "기타 지병·수술"
+    },
+    {
+      "turn": 20,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "",
+      "label": "기타 지병·수술"
+    },
+    {
+      "turn": 21,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "어머니 치매, 아버지 심장병이요",
+      "label": "FH"
+    },
+    {
+      "turn": 22,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "",
+      "label": "Smoking"
+    },
+    {
+      "turn": 23,
+      "key": "ros.Weight change",
+      "pol": "-",
+      "detail": "",
+      "label": "체중 변화"
+    },
+    {
+      "turn": 24,
+      "key": "ice.concern",
+      "pol": "?",
+      "detail": "약 줄이면 잠을 못 잘까 두려워요.",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 25,
+      "key": "ice.expectation",
+      "pol": "?",
+      "detail": "일단 수면제를 처방받고 싶어요.",
+      "label": "기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "d27aba394fc25166c0a0b1fa33e794e191b970e92daa992b7e08111123a6af87",
+    "score_status": "not_scored",
+    "turn": 44
+  },
+  "error": null,
+  "session_id": "b26169c8-763e-4f4e-bbe2-f139334dbcf4",
+  "api": "https://nova.snubhai.org"
+}

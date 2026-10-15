@@ -1,0 +1,409 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 식사량은 예전과 비교해 어떠세요?",
+    "reply": "예전보다 더 많이 먹어요.",
+    "phase": "first",
+    "qid": "wl_intake",
+    "label": "식사량·식욕"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "더위를 예전보다 많이 타세요?",
+    "reply": "네, 예전보다 더위를 많이 타요.",
+    "phase": "interview",
+    "qid": "wl_heat",
+    "label": "더위 민감"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가슴이 두근거릴 때가 있나요?",
+    "reply": "네, 가만히 있어도 자주 두근거려요.",
+    "phase": "interview",
+    "qid": "wl_palp",
+    "label": "두근거림"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "손이 떨리세요?",
+    "reply": "네, 잔 들거나 글씨 쓸 때 떨려요.",
+    "phase": "interview",
+    "qid": "wl_tremor",
+    "label": "손떨림"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "대변 횟수나 모양이 변했나요?",
+    "reply": "하루 두세 번 보고, 더 묽어졌어요.",
+    "phase": "interview",
+    "qid": "wl_bowel",
+    "label": "배변 변화"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "물을 예전보다 많이 마시나요?",
+    "reply": "아니요, 예전이랑 비슷해요.",
+    "phase": "interview",
+    "qid": "wl_thirst",
+    "label": "다음"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "아니요, 둘 다 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "땀이 예전보다 많이 나세요?",
+    "reply": "네, 밤엔 잠옷이 젖기도 해요.",
+    "phase": "interview",
+    "qid": "wl_sweat",
+    "label": "발한"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "눈이 튀어나온 느낌이 드세요?",
+    "reply": "네, 예전보다 좀 튀어나온 것 같아요.",
+    "phase": "interview",
+    "qid": "wl_eye",
+    "label": "눈 증상"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "목 앞쪽이 부은 느낌이 드세요?",
+    "reply": "네, 전보다 조금 두꺼워진 것 같아요.",
+    "phase": "interview",
+    "qid": "wl_neck",
+    "label": "목 부음"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제가 있으세요?",
+    "reply": "아니요, 약이나 영양제 안 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "가족 중 갑상선 질환이 있나요?",
+    "reply": "어머니가 갑상샘 저하증이세요.",
+    "phase": "interview",
+    "qid": "wl_fh_thy",
+    "label": "갑상선 가족력"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "생리 주기나 양이 변했나요?",
+    "reply": "두 달간 양이 줄고 기간도 짧아졌어요.",
+    "phase": "interview",
+    "qid": "wm_cycle",
+    "label": "월경 변화"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "혹시 임신 가능성은 있으세요?",
+    "reply": "아니요, 몇 달간 성관계 없었어요.",
+    "phase": "interview",
+    "qid": "wm_preg",
+    "label": "임신 가능성"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "소변 보는 횟수가 늘었나요?",
+    "reply": "예전과 비슷하거나 조금 늘었어요.",
+    "phase": "interview",
+    "qid": "wl_urine",
+    "label": "소변 변화"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "계단 오를 때 다리에 힘이 빠지나요?",
+    "reply": "네, 계단 오르면 다리에 힘이 빠져요.",
+    "phase": "interview",
+    "qid": "wl_fatigue",
+    "label": "근력 저하"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "배가 아픈 적 있으세요?",
+    "reply": "아니요, 배는 안 아파요.",
+    "phase": "interview",
+    "qid": "wl_gi",
+    "label": "복통"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "아니요, 다른 지병은 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "부모님이나 형제분 앓는 병 있나요?",
+    "reply": "어머니는 갑상샘 저하증이세요.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "담배는 피우세요?",
+    "reply": "아니요, 담배 안 피워요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "혹시 큰 병일까 봐 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "어떤 검사를 받아야 할까요?",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "요골동맥 맥박 촉진하겠습니다",
+    "reply": "102회/분, 규칙적, 강하고 빠름",
+    "phase": "exam",
+    "qid": "radial",
+    "label": "",
+    "system": "Pulse"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(+/+)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "갑상선 잡음 청진하겠습니다",
+    "reply": "잡음(+/+)",
+    "phase": "exam",
+    "qid": "thyroid_bruit",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "경골앞 점액부종 확인하겠습니다",
+    "reply": "함요부종(-/-), 경골앞 비함요성 부종(-/-), 피부 비후(-/-)",
+    "phase": "exam",
+    "qid": "pretibial",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "심부건반사 검사하겠습니다",
+    "reply": "슬개건 3+/3+, 아킬레스건 2+/2+",
+    "phase": "exam",
+    "qid": "dtr",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "사지 근력 검사하겠습니다",
+    "reply": "상지 Gr.5/Gr.5, 하지 근위부 Gr.4/Gr.4",
+    "phase": "exam",
+    "qid": "power",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "그레이브스병으로 호르몬이 많은 상태 같아요.",
+    "reply": "치료하면 괜찮아질까요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "치료가 필요하지만 현재 급한 위험 징후는 없어요.",
+    "reply": "다행이네요. 치료받고 싶어요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "큰 병인지 걱정되실 텐데 검사로 확인해요.",
+    "reply": "네, 검사받고 싶어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "갑상샘 호르몬·항체 피검사로 원인을 봐요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "치료 전 심전도와 임신 여부, 혈구·간·혈당도 봐요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "금기 없으면 맥박약, 검사 뒤 갑상샘약 고려해요.",
+    "reply": "네, 치료받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "약 중 고열·인후통·황달이면 중단 후 연락하세요.",
+    "reply": "네, 그러면 약 끊고 연락할게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "1~2주 뒤 재진, 매달 검사하고 카페인 줄여요.",
+    "reply": "네, 커피 줄이고 재진할게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요.",
+    "reply": "네, 그러면 바로 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "치료하면 살도 다시 돌아올까요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 44,
+    "kind": "SAY",
+    "text": "치료로 조절될 수 있어 재발 여부를 살펴요.",
+    "reply": "네, 꾸준히 진료받을게요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  }
+]

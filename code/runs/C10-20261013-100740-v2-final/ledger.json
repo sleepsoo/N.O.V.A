@@ -1,0 +1,400 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 식사량은 예전과 비교해 어떠세요?",
+    "reply": "예전보다 더 많이 먹어요.",
+    "phase": "first",
+    "qid": "wl_intake",
+    "label": "식사량·식욕"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "더위를 예전보다 많이 타세요?",
+    "reply": "네, 예전보다 더위를 많이 타요.",
+    "phase": "interview",
+    "qid": "wl_heat",
+    "label": "더위 민감"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가슴이 두근거릴 때가 있나요?",
+    "reply": "네, 가만히 있어도 자주 두근거려요.",
+    "phase": "interview",
+    "qid": "wl_palp",
+    "label": "두근거림"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "손이 떨리세요?",
+    "reply": "네, 잔 들거나 글 쓸 때 떨려요.",
+    "phase": "interview",
+    "qid": "wl_tremor",
+    "label": "손떨림"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "대변 횟수나 모양이 변했나요?",
+    "reply": "하루 두세 번, 전보다 묽어요.",
+    "phase": "interview",
+    "qid": "wl_bowel",
+    "label": "배변 변화"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "물을 예전보다 많이 마시나요?",
+    "reply": "아니요, 예전과 비슷하게 마셔요.",
+    "phase": "interview",
+    "qid": "wl_thirst",
+    "label": "다음"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "아니요, 둘 다 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "혹시 큰 병일까 봐 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "특히 걱정되는 병이 있으세요?",
+    "reply": "혹시 암일까 봐 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_disease",
+    "label": "걱정 질환"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "땀이 많아지셨나요?",
+    "reply": "네, 밤에도 잠옷이 젖을 정도예요.",
+    "phase": "interview",
+    "qid": "wl_sweat",
+    "label": "발한"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "눈이 뻑뻑하거나 튀어나온 느낌이 있나요?",
+    "reply": "네, 뻑뻑하고 좀 튀어나온 듯해요.",
+    "phase": "interview",
+    "qid": "wl_eye",
+    "label": "눈 증상"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "목이 붓거나 혹이 만져지나요?",
+    "reply": "앞목이 두꺼워졌는데 혹은 없어요.",
+    "phase": "interview",
+    "qid": "wl_neck",
+    "label": "목 부음"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "계단을 오를 때 다리에 힘이 빠지나요?",
+    "reply": "네, 힘이 빠져서 힘들어요.",
+    "phase": "interview",
+    "qid": "wl_fatigue",
+    "label": "근력 저하"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제가 있으세요?",
+    "reply": "아니요, 약이나 영양제 안 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "가족 중 갑상선 질환이 있나요?",
+    "reply": "어머니가 갑상샘 저하증이세요.",
+    "phase": "interview",
+    "qid": "wl_fh_thy",
+    "label": "갑상선 가족력"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "생리 주기나 양이 변했나요?",
+    "reply": "두 달간 양이 줄고 짧아졌어요.",
+    "phase": "interview",
+    "qid": "wm_cycle",
+    "label": "월경 변화"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "술은 얼마나 드세요?",
+    "reply": "한 달에 한두 번 가볍게 마셔요.",
+    "phase": "interview",
+    "qid": "sh_alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "요즘 활동량이 늘었나요?",
+    "reply": "아니요, 평소와 비슷해요.",
+    "phase": "interview",
+    "qid": "wl_activity",
+    "label": "활동량"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "담배는 피우세요?",
+    "reply": "아니요, 담배는 안 피워요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "아니요, 다른 지병은 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "혹시 임신 가능성은 있으세요?",
+    "reply": "아니요, 몇 달간 성관계 없었어요.",
+    "phase": "interview",
+    "qid": "wm_preg",
+    "label": "임신 가능성"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "어떤 검사를 해야 하나요?",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "요골동맥 맥박 촉진하겠습니다",
+    "reply": "102회/분, 규칙적, 강하고 빠름",
+    "phase": "exam",
+    "qid": "radial",
+    "label": "",
+    "system": "Pulse"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(+/+)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "갑상선 잡음 청진하겠습니다",
+    "reply": "잡음(+/+)",
+    "phase": "exam",
+    "qid": "thyroid_bruit",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "심부건반사 검사하겠습니다",
+    "reply": "슬개건 3+/3+, 아킬레스건 2+/2+",
+    "phase": "exam",
+    "qid": "dtr",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "경골앞 점액부종 확인하겠습니다",
+    "reply": "함요부종(-/-), 경골앞 비함요성 부종(-/-), 피부 비후(-/-)",
+    "phase": "exam",
+    "qid": "pretibial",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "그레이브스병에 의한 항진증 가능성이 높아요.",
+    "reply": "검사로 확인할 수 있나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "호르몬이 많아 두근거리고 손이 떨려요.",
+    "reply": "아, 그래서 그런 거군요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "암인지 걱정되시지만 검사로 원인을 살펴요.",
+    "reply": "네, 원인을 빨리 알고 싶어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "임신·호르몬·항체·간·혈구 검사를 해요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "심전도·초음파·혈당도 확인해요.",
+    "reply": "네, 알겠어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "검사 뒤 약을 정하고 이상 시 연락해요.",
+    "reply": "네, 이상하면 연락할게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "고열·목아픔·황달·숨참이면 바로 오세요.",
+    "reply": "네, 그러면 바로 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 확인하고 카페인을 줄여요.",
+    "reply": "네, 커피 줄이고 다시 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "치료하면 살이 다시 돌아올까요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "치료하면 대부분 좋아지고 체중도 돌아와요.",
+    "reply": "네, 다행이네요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  }
+]

@@ -1,0 +1,94 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  21.5s] llm[intake] low out=400 finish=stop 21.5s
+[  21.6s] intake: {'age': 3, 'sex': 'F', 'pediatric': True, 'informant': '어머님', 'cc': '귀통증', 'request': '', 'categories': ['p_fever', 'insomnia'], 'empathy': '걱정이 많으시겠어요.', 'answered': []} diffs=['중이염 (Acute otitis media)', '감기·상부기도감염 (Upper respiratory infection)', '비인두염 (Pharyngitis)', '외이염 (Acute otitis externa)', '기관지염 (Bronchitis)']
+[  21.6s] checklist: 37 items, covered=['hpi_onset', 'p_sleep']
+[  23.1s] turn 1 SAY: 걱정이 많으시겠어요. -> 네, 알겠습니다.
+[  30.4s] turn 2 SAY: 귀통증에 대해 자세히 말씀해 주세요 -> 귀를 잡아당기고 울었어요. 고름이나 진물은 없었어요.
+[  42.7s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 그런 건 없어요.
+[  42.7s] guidelines[iv]: 중이염 (KR_HealthInfo, 2026)
+[  42.7s] guidelines[iv]: Guidelines for the Antibiotic Use in Adults with Acute Upper Respiratory Tract I (KR_EuropePMC, 2017)
+[  55.5s] llm[plan_v4] low out=283 finish=stop 12.8s
+[  55.5s] v4 plan q bad (too_long): 통증이 얼마나 심하고, 물을 마시거나 씹을 때 더 심해지나요?
+[  55.5s] v4 plan q bad (pair): 귀에 땀이나 물이 나오나요?
+[  55.6s] v4 plan: diffs=['중이염 (Acute otitis media)', '비인두염 (Pharyngitis)', '감기·상부기도감염 (Upper respiratory infection)', '외이염 (Acute otitis externa)'] qs=[('free', '귀에 난리 물이 나오나요?'), ('free', '집에서 음식을 먹기 힘들었나요?')] exams=[('ear', '고막 시진으로 농밀도 및 파열 여부 확인', 'high'), ('pharynx', '비인두염과 상부기도감염 배제', 'mid')] thyroid=False
+[  58.6s] turn 4 SAY: 귀에 난리 물이 나오나요? -> 고름이나 진물이 나오지 않아요.
+[  63.1s] turn 5 SAY: 집에서 음식을 먹기 힘들었나요? -> 밥은 반 정도만 먹었어요.
+[  66.8s] turn 6 SAY: 입원한 적 있나요? -> 입원한 적 없어요.
+[  70.3s] turn 7 SAY: 먹는 약이 있나요? -> 평소 먹는 약은 없어요.
+[  74.0s] turn 8 SAY: 가족 중에 아픈 분이 있나요? -> 아빠는 비염이 있어요.
+[  78.1s] turn 9 SAY: 어린이집 생활은 어떤가요? -> 평일에 어린이집에 다녀요.
+[  83.1s] turn 10 SAY: 출산 때 문제는 없었나요? -> 태어날 때 특별한 문제는 없었어요.
+[  86.9s] turn 11 SAY: 발달은 또래와 비슷했나요? -> 발달은 또래와 비슷해요.
+[  91.0s] turn 12 SAY: 오늘 특히 궁금하신 게 있으세요? -> 항생제 꼭 먹어야 하는지 궁금해요.
+[  91.0s] v4 interview done: q=11 turn=12 left=28
+[  91.0s] v4 exams plan (c8flex, budget 16): spec=['ear', 'pharynx', 'cervical_ln'] order=['vitals', 'general', 'mental', 'skin_rash', 'conj', 'ear', 'pharynx', 'cervical_ln', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] backups=['neck_stiff', 'cap_refill', 'cognitive', 'post_tremor', 'skin_temp', 'orthostatic']
+[  91.0s] turn 13 EXAM: 활력징후 측정하겠습니다 -> 96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C
+[  91.0s] turn 14 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)
+[  91.0s] turn 15 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 연령에 맞는 반응, 보호자 알아봄(+)
+[  91.0s] turn 16 EXAM: 피부 발진 시진하겠습니다 -> 발진(-), 점상출혈(-)
+[  91.0s] turn 17 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 눈곱(-/-)
+[  96.1s] turn 18 EXAM: 고막 시진하겠습니다 -> 우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)
+[  96.1s] turn 19 EXAM: 인두·편도 시진하겠습니다 -> 인두 경도 발적(+), 편도 비대 1도, 삼출물(-)
+[  96.2s] turn 20 EXAM: 경부 림프절 촉진하겠습니다 -> 우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)
+[ 130.3s] turn 21 EXAM: 갑상선 촉진하겠습니다 -> 갑상선 촉진 (Thyroid palpation) | 부드럽고, 크기 정상, 경계선 명확, 압통 없음
+[ 130.3s] turn 22 EXAM: 흉곽 시진하겠습니다 -> 흉곽 함몰(-), 보조호흡근 사용(-), 비익 확장(-)
+[ 130.3s] turn 23 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 130.3s] turn 24 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 128회/분, 심잡음(-)
+[ 171.2s] turn 25 EXAM: 복부 시진하겠습니다 -> 복부 시진 (Abdominal inspection) | 평평, 비대칭 없음, 색소 변색(-)
+[ 201.2s] turn 26 EXAM: 간·비장 촉진하겠습니다 -> 간·비장 촉지(-)
+[ 201.2s] turn 27 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)
+[ 253.8s] turn 28 EXAM: 하지 말초 진찰하겠습니다 -> 다리 맥박 정상(2+/2+), 대칭
+[ 253.8s] v4 exams done: ['vitals', 'general', 'mental', 'skin_rash', 'conj', 'ear', 'pharynx', 'cervical_ln', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] refused=[]
+[ 495.6s] llm[facts] medium out=5087 finish=stop 241.8s
+[ 495.6s] fact key demoted: pmh.op_hx turn 6
+[ 495.6s] facts: 16
+[ 495.6s] guidelines[dx]: 중이염 (KR_HealthInfo, 2026)
+[ 495.6s] guidelines[dx]: Guidelines for the Antibiotic Use in Adults with Acute Upper Respiratory Tract I (KR_EuropePMC, 2017)
+[ 611.7s] llm[dx] medium out=2492 finish=stop 116.0s
+[ 611.7s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: Korean Clinical Practice Guidelines: Otitis Media in Children (KR_EuropePMC, 2012)
+[ 639.4s] llm[plan_say4] low out=552 finish=stop 27.7s
+[ 639.4s] v4 lines: {'dx': '급성 중이염이 귀 안쪽 염증이예요', 'options': '열과 통증은 해열진통제로 조절해요.', 'link': '귀 안쪽 돔이 부풀어서 아프게 만들어요', 'concern': '', 'tests': '고막 시진이 진단에 가장 사용돼요', 'caution': '항생제 복용 시 약물 복용을 주의하세요', 'followup': '2~3일 뒤 귀 상태를 다시 볼게요.', 'warning': '귀 뒤 붓기·고열 지속·구토면 바로 오세요.', 'lifestyle': '집에 담배 피우지 마세요'} musts=[] emergency=False checks=[{'drop': '2세 미만·중증·양측이면 항생제, 그외 48~72시간 관찰 가능', 'key': 'options', 'why': 'too_long'}, {'drop': '항생제 꼭 먹어야 하나요?', 'key': 'concern', 'why': 'question'}, {'drop': '48~72시간 후 재진, 소화 잘 되는지 체크', 'key': 'followup', 'why': 'ending'}]
+[ 642.8s] turn 29 SAY: 급성 중이염이 귀 안쪽 염증이예요 -> 네, 알겠습니다.
+[ 647.9s] turn 30 SAY: 열과 통증은 해열진통제로 조절해요. -> 네, 알겠습니다.
+[ 654.3s] turn 31 SAY: 귀 안쪽 돔이 부풀어서 아프게 만들어요 -> 네, 알겠습니다.
+[ 658.0s] turn 32 SAY: 고막 시진이 진단에 가장 사용돼요 -> 네, 알겠습니다.
+[ 661.7s] turn 33 SAY: 항생제 복용 시 약물 복용을 주의하세요 -> 네, 알겠습니다.
+[ 667.0s] turn 34 SAY: 집에 담배 피우지 마세요 -> 네, 알겠습니다.
+[ 678.0s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 그런 건 없어요.
+[ 684.9s] turn 36 SAY: 2~3일 뒤 귀 상태를 다시 볼게요. -> 네, 알겠습니다.
+[ 687.7s] turn 37 SAY: 귀 뒤 붓기·고열 지속·구토면 바로 오세요. -> 네, 알겠습니다.
+[ 701.2s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 귀 아파서 울었어요.
+[ 701.2s] v4 explain done: said=8 answers=0 final=True teach={'reply': '귀 아파서 울었어요.'} turns_left=2 (start 12)
+[ 714.2s] llm[S-narr] low out=292 finish=stop 13.0s
+[ 714.2s] v4 S safety net: ['집에서 음식을 먹기 힘: 밥은 반 정도만 먹었어요.', '복용약: 평소 먹는 약은 없어요.', '사회력: 평일에 어린이집에 다녀요.', '출생력: 태어날 때 특별한 문제는 없었어요.']
+[ 714.2s] summary: turns=38 counts={'say': 22, 'exam': 16, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 11, 'truncated': 0} budget={'doctor_calls': 6, 'doctor_ok_calls': 6, 'doctor_invalid': 0, 'doctor_input_tokens': 10613, 'doctor_output_tokens': 9106, 'elapsed_s': 714.2} dx=급성 전이성 중이염 (Acute Otitis Media)
+S03 gpt-oss-20b: total=61 정보수집=10 진단추론=14 검사·추적=10 안전=15 의사소통=8 효율=4 dx5=5
+- missed_key_questions: ['가장 높은 체온과 언제 측정되었는가?', '약물 복용시간과 영상?', '청력 저하 여부?', '귀 내부에서 이물질이 들어 있는가?', '수분 섭취와 배뇨 빈도?', '구토·설사 여부?', '호흡곤란(천명음) 여부?', '목 관절 강직 및 두통?', '피부 발진 존재 여부?', '시력/청력 변화?']
+- missed_key_exams: ['유양돌기 촉진', '경부강직검사', '모세혈관 재충혈시간', '대천문 촉진', '피부발진 시진', '보행 관찰', '외이도 시진(외이도 부종 여부)', '이개 견인 압통', '신체 계측(신장·체중)']
+- top_improvements: ['1. 간단히 환자와 보호자에게 과거력·ROS를 5~7개의 핵심 항목으로 초점을 맞추어 덜 소폭의 질문으로 수집', '2. 중이염 평가를 위해 유양돌기 촉진과 목 강직을 필수적으로 수행하고 기록', '3. 항생제 사용 여부를 명확히 상담하고, 필요 시 투여시기와 증상경보를 제시', '4. 대화 중 “네, 알겠습니다” 같은 최소한의 귀결만이 아니라 이해 확인 질문 및 시행 계획을 구체적으로 전달', '5. 설명이 필요할 때마다 한 번에 한 개씩 전달해 불필요한 반복을 없애고, 총 턴수를 최소화']
+{
+ "turns": 38,
+ "say": 22,
+ "exam": 16,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 6,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 6,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 10613,
+ "doctor_output_tokens": 9106,
+ "sim_calls": 31,
+ "seconds": 714.2,
+ "diagnosis": "급성 전이성 중이염 (Acute Otitis Media)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 61,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-S03-v4b

@@ -1,0 +1,78 @@
+[   0.3s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   3.7s] llm[intake] low out=230 finish=stop 3.3s
+[   3.7s] intake: {'age': 62, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '불면 (수면제 처방 원함)', 'request': '수면제 처방', 'categories': ['substance', 'insomnia'], 'empathy': '잠 못 주무셔서 힘드셨겠어요.', 'answered': []} diffs=['불면장애', '우울·불안 관련 불면', '폐쇄성 수면무호흡증', '하지불안증후군', '약물·물질 관련 불면']
+[   3.7s] checklist: 52 items, covered=['ps_sleep']
+[   8.6s] turn 1 SAY: 잠 못 주무셔서 힘드셨겠어요. 언제부터 그러셨어요? -> 7년 전부터 잠을 잘 못 잤어요.
+[  14.8s] turn 2 SAY: 드시는 약 이름과 용량을 아세요? -> 졸피뎀이고 한 알에 10mg예요.
+[  18.5s] turn 3 SAY: 그 약은 언제부터 드셨어요? -> 7년 전부터 먹었어요.
+[  24.6s] turn 4 SAY: 요즘 하루에 몇 알 드세요? -> 하루 5~6알, 가끔 7알요.
+[  29.2s] turn 5 SAY: 하루 중 언제 언제 드세요? -> 밤11시, 새벽2~3시, 가끔 낮요.
+[  32.1s] turn 6 SAY: 처음보다 양이 늘었나요? -> 네, 반 알에서 서너 알로 늘었어요.
+[  35.7s] turn 7 SAY: 약을 안 드시면 어떤 증상이 있나요? -> 잠을 못 자고 불안해요.
+[  38.5s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 약 없이는 못 잘까 봐 두려워요.
+[  43.9s] llm[plan_q] low out=487 finish=stop 5.4s
+[  46.9s] turn 9 SAY: 약을 줄이거나 끊어 보려 하신 적 있나요? -> 네, 여러 번 시도했지만 실패했어요.
+[  51.4s] turn 10 SAY: 약은 어디서 처방받으세요? -> 여러 내과, 신경과, 정신과에서요.
+[  55.2s] turn 11 SAY: 다른 수면제나 약국 약도 드세요? -> 약국 수면유도제도 가끔 먹어요.
+[  58.9s] turn 12 SAY: 약 드신 뒤 기억이 끊긴 적 있나요? -> 네, 먹고 나서 기억이 안 나기도 해요.
+[  62.6s] turn 13 SAY: 가족들이 약 문제로 걱정하나요? -> 네, 남편과 딸이 걱정해요.
+[  65.2s] turn 14 SAY: 요즘 기분이 많이 가라앉나요? -> 많이 가라앉진 않아요.
+[  68.6s] turn 15 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압은 있고 당뇨는 없어요.
+[  78.1s] llm[plan_q] low out=684 finish=stop 9.6s
+[  81.2s] turn 16 SAY: 다른 지병이 있으세요? -> 아니요, 다른 지병은 없어요.
+[  84.3s] turn 17 SAY: 드시는 약이나 영양제 있으세요? -> 수면제랑 암로디핀 먹어요.
+[  87.6s] turn 18 SAY: 부모님이나 형제분 앓는 병 있나요? -> 어머니는 치매, 아버지는 심장병이요.
+[  90.8s] turn 19 SAY: 담배는 피우세요? -> 아니요, 평생 안 피웠어요.
+[  94.3s] turn 20 SAY: 술은 얼마나 드세요? -> 명절이나 모임 때 소주 한두 잔요.
+[  97.2s] turn 21 SAY: 커피는 하루 몇 잔 드세요? -> 하루에 한두 잔 마셔요.
+[  99.7s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 수면제를 줄일 수 있을까요?
+[  99.7s] interview done: asked=22 covered=8 uncovered_p1=[]
+[ 103.4s] llm[exams] low out=192 finish=stop 3.7s
+[ 103.4s] exams plan: ['general', 'mental', 'sedation', 'cognitive', 'orthostatic', 'post_tremor', 'skin_temp', 'heart', 'lung', 'abd_palp', 'conj']
+[ 106.8s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 정상 체형, 안절부절(+)
+[ 109.9s] turn 24 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 113.1s] turn 25 EXAM: 주간 진정·불안 관찰하겠습니다 -> 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)
+[ 116.4s] turn 26 EXAM: 인지기능 선별검사 하겠습니다 -> MMSE-K 28/30점, 지연회상 2/3점
+[ 120.2s] turn 27 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 6mmHg, 어지럼(-)
+[ 123.7s] turn 28 EXAM: 자세성 떨림 확인하겠습니다 -> 자세성 떨림(-/-)
+[ 126.7s] turn 29 EXAM: 피부 온도·발한 촉진하겠습니다 -> 온난, 발한(-), 손바닥 습윤(-/-)
+[ 129.6s] turn 30 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 133.4s] turn 31 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 136.3s] turn 32 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 140.0s] turn 33 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 156.3s] llm[facts] medium out=1689 finish=stop 16.3s
+[ 156.3s] facts: 29
+[ 184.7s] llm[dx] medium out=2769 finish=stop 28.3s
+[ 201.7s] llm[plan_say] low out=1741 finish=stop 17.0s
+[ 201.7s] say fixes: ['warning']
+[ 207.2s] turn 34 SAY: 수면제 사용장애 가능성이 높아요. -> 약을 줄일 수 있을까요?
+[ 209.7s] turn 35 SAY: 복용량 확인 뒤 감독하에 천천히 줄여요. -> 잠을 못 잘까 봐 걱정돼요.
+[ 212.4s] turn 36 SAY: 약이 늘고 기억이 끊기는 증상과 관련돼요. -> 약 때문에 그런 거군요.
+[ 215.1s] turn 37 SAY: 줄일 수 있지만 혼자 끊으면 위험해요. -> 네, 혼자 끊지 않을게요.
+[ 217.9s] turn 38 SAY: 처방 조회·소변·피검사로 약과 몸 상태를 봐요. -> 네, 검사받을게요.
+[ 221.0s] turn 39 SAY: 급히 끊지 말고 운전·술·약국약을 피하세요. -> 네, 조심할게요.
+[ 223.9s] turn 40 SAY: 1~2주 뒤 재진해요; 매일 같은 때 일어나세요. -> 네, 같은 시간에 일어날게요.
+[ 228.1s] turn 41 SAY: 수면 습관 교정과 인지행동치료도 같이 해요. -> 네, 같이 해볼게요.
+[ 231.8s] turn 42 SAY: 경련·혼동·환각·심한 불안이 오면 바로 오세요. -> 네, 바로 병원에 올게요.
+[ 237.1s] turn 43 SAY: 더 궁금하신 점 있으세요? -> 계속 먹으면 건강에 해로울까요?
+[ 239.6s] llm[answer] low out=106 finish=stop 2.5s
+[ 244.5s] turn 44 SAY: 오늘 계획대로 하며 같이 조절해 갈게요. -> 네, 함께 조절해 볼게요.
+[ 251.5s] llm[S-narr] low out=684 finish=stop 7.0s
+[ 251.6s] summary: turns=44 counts={'say': 33, 'exam': 11, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 18397, 'doctor_output_tokens': 8582, 'elapsed_s': 251.2} dx=수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)
+증례 C01 (4fa07144-04e5-4116-a18e-88d8a90cc21a) 시작
+세션: 30a55da6-3153-49e5-aeab-2a55a314a1be
+{
+ "turns": 44,
+ "say": 33,
+ "exam": 11,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "doctor_calls": 9,
+ "doctor_input_tokens": 18397,
+ "doctor_output_tokens": 8582,
+ "seconds": 251.3,
+ "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)",
+ "dx_hit": true,
+ "session_status": "completed"
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v2c/runs/C01-20261013-105743-v2c

@@ -1,0 +1,100 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  17.8s] llm[intake] low out=322 finish=stop 17.7s
+[  17.8s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로 (목말라, 화장실 자주)', 'request': '', 'categories': ['fatigue', 'urinary', 'dm'], 'empathy': '많은 걱정이 되셨겠어요.', 'answered': []} diffs=['당뇨병 (Diabetes Mellitus)', '갑상선기능항진증 (Hyperthyroidism)', '응급성 빈혈 (Anemia)', "부신피폭증 (Addison's disease)", '다중각성성 뇌혈관 충혈 (Multiple Sleep Apnea)']
+[  17.8s] checklist: 58 items, covered=['hpi_onset']
+[  20.1s] turn 1 SAY: 많은 걱정이 되셨겠어요. -> 네, 알겠습니다.
+[  28.3s] turn 2 SAY: 피로에 대해 자세히 말씀해 주세요 -> 두세 달 전부터 몸이 너무 피곤해요.
+[  33.8s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 눈이 침침하고 글씨가 흐릿해요.
+[  40.7s] turn 4 SAY: 눈 증상에 대해 자세히 말씀해 주세요 -> 한 달 전부터 눈이 침침하고 글씨가 흐릿해요.
+[  46.8s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.
+[  46.8s] guidelines[iv]: 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021)
+[  46.8s] guidelines[iv]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[  46.9s] guidelines[iv]: Korean clinical practice guidelines for the diagnosis of hereditary hemolytic an (KR_EuropePMC, 2022)
+[  75.9s] llm[plan_v4] low out=538 finish=stop 29.1s
+[  75.9s] v4 plan q bad (go_connect): 체중이 갑자기 감소하고 있나요?
+[  75.9s] v4 plan: diffs=['당뇨병 (Diabetes Mellitus)', '갑상선기능항진증 (Hyperthyroidism)', '응급성 빈혈 (Anemia)', "부신피폭증 (Addison's disease)", '수면무호흡증 (Obstructive Sleep Apnea)'] qs=[('free', '천식 있으세요?'), ('free', '가만히 있어도 숨이 차세요?'), ('free', '눈이 침침하신 이유에 대해 자세히 말씀해 주세요'), ('free', '최근 혈색소가 나빠지는 건 없으세요?'), ('free', '피부가 건조하시나요?'), ('free', '비정상적인 소변 색이 보이시나요?'), ('free', '최근 생리주기에 변화가 있나요?')] exams=[('eye_signs', '갑상선 안징후(유전적 변형) 체크', 'mid'), ('pupil', '주변 시야 변화(감지)', 'mid'), ('thyroid_bruit', '갑상선 잡음으로 항진 여부', 'high'), ('spider', '거미혈관종 확인(당뇨형상)', 'mid'), ('nail_pallor', '손톱 창백으로 빈혈 징후', 'mid')] thyroid=True
+[  79.1s] turn 6 SAY: 천식 있으세요? -> 그런 건 없어요.
+[  82.2s] turn 7 SAY: 가만히 있어도 숨이 차세요? -> 그런 건 없어요.
+[  82.2s] v4 q rejected (dup): 천식 있으세요?
+[  82.2s] v4 q rejected (dup): 가만히 있어도 숨이 차세요?
+[  90.9s] turn 8 SAY: 평소 앓는 병이 있으세요? -> 고혈압이 있어서 하루에 한 알씩 먹어요.
+[  95.9s] turn 9 SAY: 드시는 약이 있으세요? -> 고혈압이 있어서 하루에 한 알씩 먹어요.
+[ 100.1s] turn 10 SAY: 가족 중에 아픈 분이 있으세요? -> 아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.
+[ 106.0s] turn 11 SAY: 눈이 침침하신 이유에 대해 자세히 말씀해 주세요 -> 한 달 전부터 눈이 침침하고 글씨가 흐릿해요.
+[ 109.7s] turn 12 SAY: 최근 혈색소가 나빠지는 건 없으세요? -> 그런 건 없어요.
+[ 118.0s] turn 13 SAY: 피부가 건조하시나요? -> 그런 건 없어요.
+[ 121.4s] turn 14 SAY: 비정상적인 소변 색이 보이시나요? -> 그런 건 없어요.
+[ 127.7s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 당뇨가 맞다면 평생 약을 먹어야 하는지 궁금해요
+[ 127.7s] v4 interview done: q=14 turn=15 left=25
+[ 127.7s] v4 exam dropped (rule): eye_signs
+[ 127.8s] v4 exams plan (c8flex, budget 14): spec=['thyroid', 'thyroid_bruit', 'pupil', 'cervical_ln'] order=['vitals', 'general', 'mental', 'conj', 'pupil', 'thyroid', 'thyroid_bruit', 'cervical_ln', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] backups=['chest_insp', 'spider', 'nail_pallor', 'skin_temp', 'dtr', 'pretibial']
+[ 127.8s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 146/88mmHg, 82회/분 규칙적, 16회/분, 36.6°C
+[ 127.8s] turn 17 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 127.8s] turn 18 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 127.8s] turn 19 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 179.7s] turn 20 EXAM: 동공 대광반사 확인하겠습니다 -> 동공 대광반사 | 양측 반응 2+/2+
+[ 179.7s] turn 21 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 208.2s] turn 22 EXAM: 갑상선 잡음 청진하겠습니다 -> 갑상선 잡음 청진 | 비음성(-)
+[ 239.7s] turn 23 EXAM: 경부 림프절 촉진하겠습니다 -> 경부 림프절 2+/2+, 대칭, 무통, 비확대
+[ 239.7s] turn 24 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 239.7s] turn 25 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 239.7s] turn 26 EXAM: 복부 시진하겠습니다 -> 복부 비만, 하복부 수술 반흔(+), 팽만(-)
+[ 246.1s] turn 27 EXAM: 간·비장 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 246.1s] turn 28 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 246.1s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 246.1s] v4 exams done: ['vitals', 'general', 'mental', 'conj', 'pupil', 'thyroid', 'thyroid_bruit', 'cervical_ln', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] refused=[]
+[ 365.8s] llm[facts] medium out=2596 finish=stop 119.7s
+[ 365.8s] facts: 23
+[ 365.8s] guidelines[dx]: 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021)
+[ 365.8s] guidelines[dx]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[ 365.8s] guidelines[dx]: Korean clinical practice guidelines for the diagnosis of hereditary hemolytic an (KR_EuropePMC, 2022)
+[ 482.4s] llm[dx] medium out=2445 finish=stop 116.6s
+[ 482.4s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021)
+[ 482.4s] guidelines[plan-ovw-dx.fu/dx.fu.edu]: 2019 Clinical Practice Guidelines for Type 2 Diabetes Mellitus in Korea (KR_EuropePMC, 2019)
+[ 482.4s] guidelines[plan-edu-dx.fu/dx.fu.edu]: 당뇨병 (KR_HealthInfo, 2026)
+[ 495.3s] llm[plan_say4] low out=272 finish=stop 12.9s
+[ 553.4s] llm[plan_say4] low out=1242 finish=stop 58.1s
+[ 553.4s] v4 lines: {'dx': '2형 당뇨병은 인슐린 저항성으로 인한 혈당 상승입니다', 'options': '식사 조절과 운동이 치료의 기본이에요.', 'link': '시야 흐림·다식·다뇨는 혈당 상승이 원인입니다', 'concern': '당뇨를 평생 약에 의존해야 하는지 신경쓰셨죠', 'tests': '지질·신장·간 검사는 약 선택에 도움을 줍니다', 'caution': '복용 시 식후 물을 충분히 마셔야 합니다', 'followup': '3개월 후 혈당·체중·시야 검사 결과를 함께 확인하세요', 'warning': '고혈당으로 인한 구토·의식저하면 바로 오세요.', 'lifestyle': '규칙적인 운동·식사 시간을 유지하세요'} musts=[] emergency=False checks=[{'drop': '메트포르민은 소변 거소 발생·구강 건조가 생길 수 있으니 주의', 'key': 'options', 'why': 'too_long'}, {'drop': '약물·식이·운동을 병행하면 혈당 목표에 도달할 수 있습니다', 'key': 'options', 'why': 'too_long'}, {'drop': '공복혈당·HbA1c는 현재 혈당 상태를 가늠합니다', 'key': 'tests', 'why': 'english'}]
+[ 555.8s] turn 30 SAY: 2형 당뇨병은 인슐린 저항성으로 인한 혈당 상승입니다 -> 네, 알겠습니다.
+[ 558.3s] turn 31 SAY: 식사 조절과 운동이 치료의 기본이에요. -> 네, 알겠습니다.
+[ 561.5s] turn 32 SAY: 시야 흐림·다식·다뇨는 혈당 상승이 원인입니다 -> 네, 알겠습니다.
+[ 565.6s] turn 33 SAY: 당뇨를 평생 약에 의존해야 하는지 신경쓰셨죠 -> 네, 알겠습니다.
+[ 570.5s] turn 34 SAY: 지질·신장·간 검사는 약 선택에 도움을 줍니다 -> 네, 알겠습니다.
+[ 575.5s] turn 35 SAY: 복용 시 식후 물을 충분히 마셔야 합니다 -> 네, 알겠습니다.
+[ 583.2s] turn 36 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요
+[ 588.7s] turn 37 SAY: 3개월 후 혈당·체중·시야 검사 결과를 함께 확인하세요 -> 네, 알겠습니다.
+[ 593.0s] turn 38 SAY: 고혈당으로 인한 구토·의식저하면 바로 오세요. -> 네, 알겠습니다.
+[ 603.0s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요
+[ 603.0s] v4 explain done: said=8 answers=0 final=True teach={'reply': '소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요'} turns_left=1 (start 11)
+[ 626.2s] llm[S-narr] low out=495 finish=stop 23.2s
+[ 626.2s] summary: turns=39 counts={'say': 25, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 7, 'doctor_ok_calls': 7, 'doctor_invalid': 0, 'doctor_input_tokens': 14133, 'doctor_output_tokens': 7910, 'elapsed_s': 626.1} dx=당뇨병 (Diabetes Mellitus)
+S06 gpt-oss-20b: total=52 정보수집=12 진단추론=10 검사·추적=0 안전=15 의사소통=8 효율=7 dx5=3
+- missed_key_questions: ['하루에 물을 얼마나 마시고 있나요?', '하루 몇 번 화장실을 가나요?', '최근 3개월 동안 무게가 얼마나 변했나요?', '흡연 여부 및 음주량은 어떻게 되나요?', '현재 식사 양과 빈도는 무엇인가요?', '주요 운동/활동 수준은 어떻습니까?', '현재 복용 중인 모든 약(명칭·용량·기간)을 알려주십시오?', '갑상선 질환 혹은 과거 호흡기 질환이 있나요?', '전과 같은 증상이 있었나요?', '가족력 외에 고혈압 이외의 만성 질환이 있나요?']
+- missed_key_exams: ['Orthostatic BP', 'Mucous membrane/ skin turgor', 'Acanthosis nigricans', 'Fundoscopy', 'Foot inspection', 'Monofilament test', 'Vibration sense', 'Deep tendon reflex', 'External genital inspection']
+- top_improvements: ['1. Systematically capture all key history items—including polyuria, polydipsia, weight change, smoking/alcohol, diet, exercise, medication details, family history, and psychosocial concerns—using a structured ROS template.', '2. Perform the full set of required physical exams (orthostatic BP, mucous inspection, acanthosis nigricans, fundoscopy, foot neuro exam, monofilament, vibration, DTR, genital exam) and record findings in the chart.', '3. Provide a definitive diagnosis statement with disease type and certainty level, and link it explicitly to collected data.', '4. Create a clear, actionable order set for initial investigations (fasting glucose, HbA1c, lipid panel, creatinine/eGFR, urinalysis, TSH, fundoscopic referral, vaginal swab) and document it in the plan section.', '5. Use active learning techniques (e.g., teach–back, summarization) to confirm patient understanding and reduce repetitive statements; focus on concise, patient‑centered communication.']
+{
+ "turns": 39,
+ "say": 25,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 7,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 7,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 14133,
+ "doctor_output_tokens": 7910,
+ "sim_calls": 32,
+ "seconds": 626.2,
+ "diagnosis": "당뇨병 (Diabetes Mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 52,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-S06-v4c

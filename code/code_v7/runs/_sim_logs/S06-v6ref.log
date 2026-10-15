@@ -1,0 +1,100 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  11.7s] llm[intake] low out=252 finish=stop 11.6s
+[  11.7s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로, 땀샘 분비 증가, 잦은 배뇨', 'request': '', 'categories': ['fatigue', 'dm', 'urinary'], 'empathy': '정말 힘드시겠어요.', 'answered': []} diffs=['당뇨병(1형/2형)', '전분산성대사증', '감염성 질환(예: 감기, 재활성 감염)', '갑상선 기능저하증', '뇨독소증후군']
+[  11.7s] checklist: 58 items, covered=['hpi_onset']
+[  15.9s] turn 1 SAY: 정말 힘드시겠어요. 최근 체중 변화가 있나요? -> 몸무게가 삼 키로그람 정도 빠졌어요.
+[  21.1s] turn 2 SAY: 추위를 예전보다 많이 타세요? -> 더위나 추위를 타는 것은 예전과 같아요.
+[  26.6s] turn 3 SAY: 조금만 움직여도 숨이 차나요? -> 가슴이 아프거나 숨이 찬 적은 없어요.
+[  31.2s] turn 4 SAY: 변이 검거나 피가 섞인 적 있나요? -> 그런 건 없어요.
+[  37.3s] turn 5 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압이 있어요. 혈압약 하루 한 알 먹어요.
+[  41.8s] turn 6 SAY: 다른 지병이 있으세요? -> 고혈압이 있어요. 혈압약 하루 한 알 먹어요.
+[  48.9s] turn 7 SAY: 가장 걱정되시는 게 뭐예요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 걱정돼요.
+[  49.0s] guidelines[iv]: 당뇨병 Practical tip (KR_KoMGI, 2023)
+[  73.4s] llm[plan_q] low out=508 finish=stop 24.4s
+[  82.0s] turn 8 SAY: 소변을 자주 보시나요? -> 낮에 열 번 넘게, 밤에 두세 번 깨서 소변을 보요.
+[  87.9s] turn 9 SAY: 목이 자주 마르시나요? -> 두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.
+[  92.4s] turn 10 SAY: 가장 최근에 물을 많이 마셨나요? -> 두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.
+[  97.4s] turn 11 SAY: 배뇨 시 통증이나 불편함을 느끼시나요? -> 소변볼 때 아프거나 따갑지는 않고, 소변 색이 붉은 적도 없어요.
+[ 101.8s] turn 12 SAY: 담배를 피우시나요? -> 담배는 피운 적 없어요.
+[ 105.4s] turn 13 SAY: 술은 얼마나 드시나요? -> 술은 거의 마시지 않는다.
+[ 108.7s] turn 14 SAY: 요즘 기분이 많이 가라앉나요? -> 그런 건 없어요.
+[ 108.7s] guidelines[iv]: 당뇨병 Practical tip (KR_KoMGI, 2023)
+[ 108.7s] guidelines[iv]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)
+[ 132.4s] llm[plan_q] low out=506 finish=stop 23.7s
+[ 135.2s] turn 15 SAY: 잠은 잘 주무세요? -> 그런 건 없어요.
+[ 144.3s] turn 16 SAY: 가족 중에 당뇨가 있는 분이 있나요? -> 아버지와 어머니 당뇨병이 있었어요.
+[ 148.2s] turn 17 SAY: 평소에 운동은 얼마나 하세요? -> 운동은 거의 하지 않아요.
+[ 158.2s] turn 18 SAY: 얼굴이나 다리에 붓는 증상이 있나요? -> 그런 건 없어요.
+[ 161.7s] turn 19 SAY: 과거에 방광염이나 결석이 있었나요? -> 그런 건 없어요.
+[ 165.6s] turn 20 SAY: 입맛이 갑자기 좋아지거나 싫어지셨나요? -> 그런 건 없어요.
+[ 168.1s] turn 21 SAY: 최근에 불안하거나 초조하신 적이 있나요? -> 그런 건 없어요.
+[ 172.3s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.
+[ 172.3s] interview done: asked=22 covered=6 uncovered_p1=[]
+[ 175.7s] llm[exams] low out=79 finish=stop 3.4s
+[ 175.7s] exams plan: ['general', 'conj', 'thyroid', 'heart', 'lung', 'periph', 'abd_palp', 'fundus', 'sensory', 'cva', 'orthostatic']
+[ 175.7s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 175.7s] turn 24 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 175.7s] turn 25 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 175.7s] turn 26 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 175.7s] turn 27 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 175.7s] turn 28 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 175.7s] turn 29 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 175.7s] turn 30 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 189.3s] turn 31 EXAM REFUSED EXAM_NOT_SPECIFIC: 사지 감각 검사하겠습니다
+[ 193.7s] turn 32 EXAM: 늑척추각 압통 확인하겠습니다 -> 압통(-/-)
+[ 193.7s] turn 33 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 4mmHg, 어지럼(-)
+[ 344.0s] llm[facts] medium out=3283 finish=stop 150.3s
+[ 344.0s] fact key demoted: ros.Chill turn 2
+[ 344.0s] fact key demoted: ros.Hematochezia turn 4
+[ 344.0s] fact key demoted: pmh.DM turn 5
+[ 344.0s] fact key demoted: ros.Anorexia turn 20
+[ 344.0s] facts: 23
+[ 344.0s] guidelines[dx]: 당뇨병 Practical tip (KR_KoMGI, 2023)
+[ 344.0s] guidelines[dx]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)
+[ 450.9s] llm[dx] medium out=2346 finish=stop 106.9s
+[ 450.9s] guidelines[plan-mgmt]: 2019 Clinical Practice Guidelines for Type 2 Diabetes Mellitus in Korea (KR_EuropePMC, 2019)
+[ 450.9s] guidelines[plan-ovw]: 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021)
+[ 450.9s] guidelines[plan-edu]: 당뇨병 (KR_HealthInfo, 2026)
+[ 479.5s] llm[plan_say] low out=612 finish=stop 28.6s
+[ 508.8s] llm[plan_say] low out=634 finish=stop 29.3s
+[ 508.8s] say fixes: ['warning']
+[ 513.3s] turn 34 SAY: 혈당이 높은 당뇨병이 의심돼요. -> 네, 알겠습니다.
+[ 518.1s] turn 35 SAY: 공복 혈당과 당화혈색소를 검사할게요. -> 네, 알겠습니다.
+[ 520.4s] turn 36 SAY: 식사 조절과 운동이 치료의 기본이에요. -> 네, 알겠습니다.
+[ 525.3s] turn 37 SAY: 단 음료와 야식부터 줄여 보세요. -> 네, 알겠습니다.
+[ 527.6s] turn 38 SAY: 의식이 흐리거나 심하게 토하면 오세요. -> 네, 알겠습니다.
+[ 529.7s] turn 39 SAY: 1~2주 뒤 결과 보러 다시 오세요. -> 네, 알겠습니다.
+[ 534.4s] turn 40 SAY: 심한 갈증·구토·복통·의식 흐림 시 바로 오세요. -> 네, 알겠습니다.
+[ 542.1s] turn 41 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 낮에 열 번 넘게 화장실에 가고 밤에도 두세 번 깨서 소변을 본다
+[ 546.9s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.
+[ 560.8s] llm[S-narr] low out=294 finish=stop 14.0s
+[ 560.9s] summary: turns=42 counts={'say': 31, 'exam': 10, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 22} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 19278, 'doctor_output_tokens': 8514, 'elapsed_s': 560.8} dx=제2형 당뇨병 (Type 2 Diabetes Mellitus)
+S06 gpt-oss-20b: total=57.4 정보수집=10.4 진단추론=13 검사·추적=6 안전=13 의사소통=10 효율=15 dx5=5
+- missed_key_questions: ['시야·시력', '발 저림·발상대해', '외음부 가려움·분비물', '식이·칼로리·아침·야식', '고지혈증 여부', '주요 인슐린/약물 이력', '라미드(슐) 이력', '기저질환(스테로이드, 쿠싱증후군)']
+- missed_key_exams: ['피부 탄력·구강 점막(건조성 평가)', '흑색극세포증', '발 시진', '단섬유 감각 검사', '진동 감각 검사', '발정맥방출(판단)', '복부 검사(복부비만·경검사)', '위혈·심전도', '갑상선 기능검사', '외음부 분비물 검사']
+- top_improvements: ['1) 자세한 안과 질문(시력·망막) 과 미드-추적 안정성 증대', '2) 발 검사를 추가해 손상 위험 평가 및 예방', '3) 외음부 가려움·분비물에 대한 진단 저장 및 치료 계획', '4) 핵심 혈액검사(HbA1c, 공복혈당, 혈액화면) 즉시 시행과 결과 공유', '5) 환자 교육 강화(저혈당 관리, 당뇨 합병증 경고, 인슐린·메트포르민 교육)']
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 10,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 9,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 9,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 19278,
+ "doctor_output_tokens": 8514,
+ "sim_calls": 33,
+ "seconds": 560.9,
+ "diagnosis": "제2형 당뇨병 (Type 2 Diabetes Mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 57.4,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-S06-v6ref

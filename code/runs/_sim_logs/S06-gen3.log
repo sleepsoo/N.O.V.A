@@ -1,0 +1,83 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   4.5s] llm[intake] low out=233 finish=stop 4.5s
+[   4.5s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로, 갈증 및 빈뇨', 'request': '', 'categories': ['dm', 'fatigue', 'urinary'], 'empathy': '많이 불편하셨겠어요.', 'answered': []} diffs=['당뇨병', '요붕증', '원발성 다음증', '고칼슘혈증', '요로감염']
+[   4.5s] checklist: 58 items, covered=['hpi_onset']
+[   7.2s] turn 1 SAY: 많이 불편하셨겠어요. -> 네, 알겠습니다.
+[  22.6s] turn 2 SAY: 피로, 갈증 및 빈뇨에 대해 자세히 말씀해 주세요 -> 두세 달 전부터 피곤하고 목말라서 물 이리터 넘게 마시고, 낮에 열 번 넘게 화장실 가요.
+[  32.9s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.
+[  38.8s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.
+[  57.1s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 발이 저리거나 화끈거리는 증상은 없어요.
+[  70.2s] llm[plan_q3] low out=884 finish=stop 13.1s
+[  74.6s] turn 6 SAY: 체중 변화에 대해 자세히 말씀해 주세요 -> 몸무게가 삼 키로그람 정도 빠졌어요.
+[  81.2s] turn 7 SAY: 이전 혈당에 대해 자세히 말씀해 주세요 -> 이 년 전 건강검진에서 혈당이 조금 높다고 해서 운동하라는 말을 들었는데, 그 뒤로 다시 검사하지는 않았다.
+[  85.2s] turn 8 SAY: 고혈압이나 당뇨 진단을 받으신 적 있나요? -> 고혈압이 있어서 혈압약 하루 한 알 먹어요.
+[  88.9s] turn 9 SAY: 다른 지병에 대해 자세히 말씀해 주세요 -> 고혈압이 있어서 혈압약 하루 한 알 먹어요.
+[  92.7s] turn 10 SAY: 가족의 당뇨 병력에 대해 자세히 말씀해 주세요 -> 아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.
+[  97.6s] turn 11 SAY: 소변 볼 때 아프신가요? -> 아프거나 따갑지는 않아요.
+[ 101.9s] turn 12 SAY: 열이나 오한이 있으신가요? -> 그런 건 없어요.
+[ 115.1s] llm[plan_q3] low out=746 finish=stop 13.2s
+[ 118.5s] turn 13 SAY: 담배를 피우세요? -> 담배는 피운 적 없어요.
+[ 121.6s] turn 14 SAY: 술 드시는 양에 대해 자세히 말씀해 주세요 -> 술은 거의 마시지 않아요.
+[ 126.2s] turn 15 SAY: 기분 저하에 대해 자세히 말씀해 주세요 -> 그런 건 없어요.
+[ 130.8s] turn 16 SAY: 상처가 잘 낫지 않나요? -> 발에 상처가 나거나 잘 안 낫는 곳도 없어요.
+[ 144.8s] llm[plan_q3] low out=757 finish=stop 14.0s
+[ 149.9s] turn 17 SAY: 질 불편감에 대해 자세히 말씀해 주세요 -> 질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.
+[ 155.2s] turn 18 SAY: 식습관에 대해 자세히 말씀해 주세요 -> 밥과 면, 떡을 좋아하고 야식도 자주 먹어요.
+[ 159.0s] turn 19 SAY: 약 알레르기가 있으세요? -> 약 알레르기는 없어요.
+[ 161.8s] turn 20 SAY: 구토가 있으세요? -> 그런 건 없어요.
+[ 197.6s] turn 21 SAY: 오늘 특히 궁금하신 게 있으세요? -> 목이 말라서 물을 이 리터 넘게 마시게 되었다.
+[ 197.6s] v3 interview done: q=20 asked=15 covered=7 uncovered_p1=['dm_polyuria', 'dm_thirst', 'ps_sleep']
+[ 203.6s] llm[exams_gen] low out=525 finish=stop 5.9s
+[ 203.6s] v3 exams(gen) plan: [('general', '전반적 쇠약·체중 감소와 급성 중증 대사 이상을 시사하는 외관을 확인합니다.'), ('orthostatic', '다뇨로 인한 체액 부족과 기립성 저혈압 여부를 확인합니다.'), ('skin_turgor', '다뇨·갈증에 따른 탈수 소견을 평가합니다.'), ('acanthosis', '인슐린 저항성과 제2형 당뇨병 위험을 뒷받침하는 흑색가시세포증을 확인합니다.'), ('fundus', '흐린 시야와 관련된 당뇨망막병증 등 안저 이상을 확인합니다.'), ('genital', '가려움과 분비물 증가에 맞춰 외음부 칸디다증을 시진합니다.'), ('periph', '발의 궤양·혈류 이상 및 당뇨성 말초신경병증 소견을 확인합니다.'), ('cva', '빈뇨의 감별인 요로감염에서 상부 요로 침범을 시사하는 늑척추각 압통을 확인합니다.')]
+[ 203.6s] turn 22 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 203.6s] turn 23 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 4mmHg, 어지럼(-)
+[ 208.8s] turn 24 EXAM: 피부 긴장도 확인하겠습니다 -> 구강 점막 약간 건조(+), 피부 탄력 정상
+[ 217.8s] turn 25 EXAM: 흑색가시세포증 시진하겠습니다 -> 후경부·액와 흑색극세포증(+)
+[ 217.8s] turn 26 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 224.0s] turn 27 EXAM: 외부 생식기 시진하겠습니다 -> 외음부 발적(+) 경도, 흰색 분비물(+) 소량
+[ 224.0s] turn 28 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 231.9s] turn 29 EXAM: 늑척추각 압통 확인하겠습니다 -> 압통(-/-)
+[ 254.0s] llm[facts] medium out=2185 finish=stop 22.1s
+[ 254.0s] fact key demoted: ros.Fever turn 12
+[ 254.0s] fact key demoted: ros.Chill turn 12
+[ 254.0s] facts: 43
+[ 275.4s] llm[dx] medium out=1844 finish=stop 21.3s
+[ 291.3s] llm[plan_say3] low out=1384 finish=stop 15.9s
+[ 291.3s] v3 lines: {'dx': '제2형 당뇨병 가능성이 있어요', 'meaning': '갈증과 빈뇨는 혈당이 높을 때 생겨요', 'concern': '눈 침침함은 혈당 영향일 수 있어요', 'tests': '혈당과 당화혈색소로 당뇨를 살펴요', 'tests2': '소변검사로 감염과 케톤도 확인해요', 'treatment': '결과에 따라 식사운동과 약을 정해요', 'treatment2': '신장 기능 확인 뒤 약을 상의해요', 'warning': '구토·복통·숨참·의식저하면 바로 오세요', 'followup': '1~2주 뒤 결과와 치료를 상의해요', 'lifestyle': '야식을 줄이고 식후 걷기를 해보세요'} musts=[] checks=[]
+[ 295.6s] turn 30 SAY: 제2형 당뇨병 가능성이 있어요 -> 네, 알겠습니다.
+[ 300.2s] turn 31 SAY: 갈증과 빈뇨는 혈당이 높을 때 생겨요 -> 네, 알겠습니다.
+[ 303.5s] turn 32 SAY: 눈 침침함은 혈당 영향일 수 있어요 -> 네, 알겠습니다.
+[ 305.9s] turn 33 SAY: 혈당과 당화혈색소로 당뇨를 살펴요 -> 네, 알겠습니다.
+[ 310.3s] turn 34 SAY: 결과에 따라 식사운동과 약을 정해요 -> 네, 알겠습니다.
+[ 312.7s] turn 35 SAY: 신장 기능 확인 뒤 약을 상의해요 -> 네, 알겠습니다.
+[ 314.7s] turn 36 SAY: 구토·복통·숨참·의식저하면 바로 오세요 -> 네, 알겠습니다.
+[ 316.6s] turn 37 SAY: 1~2주 뒤 결과와 치료를 상의해요 -> 네, 알겠습니다.
+[ 322.5s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 그런 건 없어요.
+[ 324.4s] turn 39 SAY: 구토·복통·숨참도 생기면 바로 오세요. -> 네, 알겠습니다.
+[ 324.4s] v3 explain done: said=9 answers=0 teach={'reply': '그런 건 없어요.', 'ok': False} turns_left=11 (start 21)
+[ 335.7s] llm[S-narr] low out=885 finish=stop 11.2s
+[ 335.7s] summary: turns=39 counts={'say': 31, 'exam': 8, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 20, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 23579, 'doctor_output_tokens': 9443, 'elapsed_s': 335.7} dx=제2형 당뇨병 (Type 2 diabetes mellitus)
+S06 gpt-6-luna: total=54 정보수집=12 진단추론=12 검사·추적=7 안전=10 의사소통=5 효율=8 dx5=4
+- missed_key_questions: ['야간뇨 횟수와 혈뇨 여부', '단 음료 섭취 증가 여부', '식사량 유지 여부 및 체중 감소 시점·정도', '흉통·호흡곤란, 구역·복통 여부', '이상지질혈증 및 치료 여부, 고혈압 진단 기간', '임신성 당뇨, 폐경 시점, 수술력, 스테로이드 복용력', '언니의 당뇨 및 갑상샘 질환 가족력', '운동 여부, 직업·생활환경', '투석에 대한 걱정, 평생 약·인슐린·식이 제한에 관한 질문과 기대']
+- missed_key_exams: ['신체 계측(키·체중·BMI·허리둘레)', '의식·지남력 평가', '결막·공막 시진, 갑상선 촉진', '흉곽 시진, 폐·심장 청진', '복부 시진·촉진', '발 시진, 단섬유 감각·진동 감각·심부건반사 검사']
+- top_improvements: ['핵심 체크리스트를 따라 야간뇨·체중 및 식사 변화·임신성 당뇨·약물·가족력·생활습관·환자 걱정을 빠짐없이 질문하고 기록하기.', '신체 계측과 당뇨 초진의 핵심 진찰(발, 신경 감각, 갑상선, 심폐·복부)을 완수하고 결과를 남기기.', '환자의 투석 걱정과 인슐린·식이 질문에 직접 답하고, 검사 목적·치료 선택지·재진 시점·경고 증상을 이해하기 쉬운 말로 설명하기.', '제2형 당뇨병 의심을 검사로 확인하는 계획과 신장·망막 합병증 선별 및 추적 계획을 구체화하기.', '중복·우선순위가 낮은 질문을 줄이고 한 번에 필요한 정보를 체계적으로 확인해 턴과 토큰 사용을 줄이기.']
+{
+ "turns": 39,
+ "say": 31,
+ "exam": 8,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 10,
+ "doctor_input_tokens": 23579,
+ "doctor_output_tokens": 9443,
+ "sim_calls": 35,
+ "seconds": 335.7,
+ "diagnosis": "제2형 당뇨병 (Type 2 diabetes mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 54,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S06-gen3

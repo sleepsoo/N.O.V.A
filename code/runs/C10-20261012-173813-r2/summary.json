@@ -1,0 +1,423 @@
+{
+  "case_id": "35dd8b69-2531-454e-bb8c-fb8030293447",
+  "alias": "C10",
+  "turns": 48,
+  "say": 39,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 11,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 19740,
+  "doctor_output_tokens": 13824,
+  "seconds": 1697.6,
+  "diagnosis": "그레이브스병 (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "그레이브스병",
+      "diagnosis_en": "Graves' disease",
+      "confidence": 0.92,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "그레브스병",
+      "diagnosis_en": "Graves disease",
+      "confidence": 0.92,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "체중 감소",
+    "categories": [
+      "weight"
+    ],
+    "answered": [
+      "onset",
+      "course",
+      "impact"
+    ],
+    "empathy": "체중 감소가 걱정이시겠어요."
+  },
+  "explained": [
+    "갑상선 기능 항진증이 의심돼요.",
+    "자가항체 자극 때문으로 보여요.",
+    "갑상선 기능 검사, TRAb 항체검사로 확인할게요.",
+    "검사 결과에 따른 치료로 치료할 수 있어요.",
+    "시야 변화가 있으면 바로 오세요.",
+    "규칙적으로 먹고 충분히 잠을 자세요.",
+    "더 궁금한 점 있으세요?",
+    "검사 후 재진 때 설명드릴게요"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 577,
+      "out": 255,
+      "finish": "stop",
+      "sec": 25.4
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1435,
+      "out": 1881,
+      "finish": "stop",
+      "sec": 179.6
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2862,
+      "out": 794,
+      "finish": "stop",
+      "sec": 86.8
+    },
+    {
+      "tag": "dx1-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2051,
+      "out": 1197,
+      "finish": "stop",
+      "sec": 119.7
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2072,
+      "out": 1027,
+      "finish": "stop",
+      "sec": 86.5
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1898,
+      "out": 1845,
+      "finish": "stop",
+      "sec": 107.1
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2476,
+      "out": 1465,
+      "finish": "stop",
+      "sec": 72.0
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 555,
+      "out": 83,
+      "finish": "stop",
+      "sec": 4.4
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2130,
+      "out": 2089,
+      "finish": "stop",
+      "sec": 103.5
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1386,
+      "out": 1314,
+      "finish": "stop",
+      "sec": 65.0
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2298,
+      "out": 1874,
+      "finish": "stop",
+      "sec": 91.9
+    }
+  ],
+  "phase_times": {
+    "structure": 25.4,
+    "interview": 680.6,
+    "examine": 108.9,
+    "diagnose_vote": 416.2,
+    "plan": 107.1,
+    "explain": 98.9,
+    "S": 168.5,
+    "S-verify": 0.0,
+    "A": 91.9
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.course",
+      "pol": "+",
+      "detail": "계속 살이 빠져",
+      "label": "경과"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.impact",
+      "pol": "+",
+      "detail": "계단 오르기 힘듦",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.prior_visit",
+      "pol": "+",
+      "detail": "처음 진료",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 5,
+      "key": "ros.Appetite",
+      "pol": "+",
+      "detail": "많이 먹음",
+      "label": "식사량"
+    },
+    {
+      "turn": 6,
+      "key": "ros.Heat intolerance",
+      "pol": "+",
+      "detail": "더위 많이 타요",
+      "label": "더위/추위 민감"
+    },
+    {
+      "turn": 7,
+      "key": "ros.Sweating",
+      "pol": "+",
+      "detail": "밤 잠옷 젖음",
+      "label": "발한"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Tremor",
+      "pol": "+",
+      "detail": "손 떨림",
+      "label": "손떨림"
+    },
+    {
+      "turn": 9,
+      "key": "ros.Polydipsia",
+      "pol": "-",
+      "detail": "",
+      "label": "다음/갈증"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Night sweats",
+      "pol": "+",
+      "detail": "밤 식은땀",
+      "label": "야간 발한"
+    },
+    {
+      "turn": 11,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 11,
+      "key": "pmh.HTN",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 12,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "",
+      "label": "기타 지병"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.Tbc",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.hepatitis",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 14,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "",
+      "label": "Op. Hx"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": "",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 16,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": "",
+      "label": "Allergy"
+    },
+    {
+      "turn": 17,
+      "key": "ros.Menstrual change",
+      "pol": "+",
+      "detail": "양 줄고 기간 짧다",
+      "label": "월경 변화"
+    },
+    {
+      "turn": 18,
+      "key": "ros.LMP",
+      "pol": "+",
+      "detail": "2주 전",
+      "label": "LMP"
+    },
+    {
+      "turn": 19,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "어머니 갑상",
+      "label": "FH 유사 질환"
+    },
+    {
+      "turn": 20,
+      "key": "fh.DM",
+      "pol": "+",
+      "detail": "아버지 HTN, 할머니 DM",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 20,
+      "key": "fh.HTN",
+      "pol": "+",
+      "detail": "아버지 HTN, 할머니 DM",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 21,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "",
+      "label": "Smoking"
+    },
+    {
+      "turn": 22,
+      "key": "sh.alcohol",
+      "pol": "-",
+      "detail": "",
+      "label": "Alcohol"
+    },
+    {
+      "turn": 23,
+      "key": "sh.job",
+      "pol": "+",
+      "detail": "사무실 일",
+      "label": "직업"
+    },
+    {
+      "turn": 24,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "가슴 두근거림",
+      "label": "Palpitation"
+    },
+    {
+      "turn": 25,
+      "key": "ros.Dyspnea",
+      "pol": "+",
+      "detail": "계단 잔 걸 때",
+      "label": "Dyspnea"
+    },
+    {
+      "turn": 26,
+      "key": "ros.Chest pain",
+      "pol": "-",
+      "detail": "",
+      "label": "Chest pain"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Sleep",
+      "pol": "-",
+      "detail": "",
+      "label": "수면"
+    },
+    {
+      "turn": 28,
+      "key": "ros.Headache",
+      "pol": "-",
+      "detail": "",
+      "label": "적응형"
+    },
+    {
+      "turn": 29,
+      "key": "ros.other:시야",
+      "pol": "-",
+      "detail": "",
+      "label": "적응형"
+    },
+    {
+      "turn": 30,
+      "key": "ice.concern",
+      "pol": "+",
+      "detail": "큰 병일까",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 31,
+      "key": "ice.expectation",
+      "pol": "+",
+      "detail": "원인 알고 치료",
+      "label": "기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "e62880a4e3821a037a74a068d9dac598d77f5a657811df3b517370fd5bfbc5f2",
+    "score_status": "not_scored",
+    "turn": 48
+  },
+  "error": null,
+  "session_id": "616dbc76-0d44-4510-97c3-44818600d020",
+  "api": "https://nova.snubhai.org"
+}

@@ -1,0 +1,553 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많이 걱정되셨겠어요.",
+      "effective_content": "많이 걱정되셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많이 걱정되셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "체중 감소에 대해 자세히 말씀해 주세요",
+      "effective_content": "체중 감소에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "최근 3개월에 7kg 빠졌어요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "체중 감소에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거리는 증상도 자주 있어요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "두근거림에 대해 자세히 말씀해 주세요",
+      "effective_content": "두근거림에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거려요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "두근거림에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "그 밖에 또 불편한 건 없으세요?",
+      "effective_content": "그 밖에 또 불편한 건 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "매일 피로감이 심해요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "그 밖에 또 불편한 건 없으세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "피로에 대해 자세히 말씀해 주세요",
+      "effective_content": "피로에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "피로감도 심해서 아침에 일어나기 힘들고, 낮에도 쉽게 지친다.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "피로에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "혹시 임신 가능성은 있으세요?",
+      "effective_content": "혹시 임신 가능성은 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "임신 가능성은 없어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "혹시 임신 가능성은 있으세요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "천식 있으세요?",
+      "effective_content": "천식 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "천식 있으세요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "가만히 있어도 숨이 차세요?",
+      "effective_content": "가만히 있어도 숨이 차세요?",
+      "response": {
+        "status": "OK",
+        "content": "가만히 있을 때는 괜찮아요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "가만히 있어도 숨이 차세요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "금방 전을 때 땀이 많이 나나요?",
+      "effective_content": "금방 전을 때 땀이 많이 나나요?",
+      "response": {
+        "status": "OK",
+        "content": "사무실에서도 땀이 많이 나요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "금방 전을 때 땀이 많이 나나요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "최근 열이 있었나요?",
+      "effective_content": "최근 열이 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "최근 열이 있었나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "평소 앓는 병이 있으세요?",
+      "effective_content": "평소 앓는 병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "평소 앓는 병이 있으세요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "드시는 약이 있으세요?",
+      "effective_content": "드시는 약이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "복용 중인 약이나 건강보조식품도 없어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "드시는 약이 있으세요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "가족 중에 아픈 분이 있으세요?",
+      "effective_content": "가족 중에 아픈 분이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "어머니가 갑상샘 기능저하증으로 약을 드시고 계신다.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "가족 중에 아픈 분이 있으세요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거리는 증상이 언제부터 시작됐나요?",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 지남력 3/3점",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "EXAM",
+      "content": "요골동맥 맥박 촉진하겠습니다",
+      "effective_content": "r04",
+      "response": {
+        "status": "OK",
+        "result": "102회/분, 규칙적, 강하고 빠름",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "EXAM",
+      "content": "피부 발진 시진하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "피부 발진 없음(-/-)",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "EXAM",
+      "content": "결막·공막 시진하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "창백(-/-), 충혈(-/-), 황달(-/-)",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "갑상선 안징후 검사하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "복부 시진하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "편평, 팽만(-)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "간·비장 촉진하겠습니다",
+      "effective_content": "r18",
+      "response": {
+        "status": "OK",
+        "result": "간 늑골연하 촉지(-), 비장 촉지(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r17",
+      "response": {
+        "status": "OK",
+        "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "하지 말초 진찰하겠습니다",
+      "effective_content": "r22",
+      "response": {
+        "status": "OK",
+        "result": "족배동맥(+/+), 함요부종(-/-)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "갑상샘 호르몬 과다",
+      "effective_content": "갑상샘 호르몬 과다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      },
+      "payload": {
+        "content": "갑상샘 호르몬 과다"
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "치료하면 대부분 좋아지는 병이에요.",
+      "effective_content": "치료하면 대부분 좋아지는 병이에요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "치료하면 대부분 좋아지는 병이에요."
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "말씀하신 증상들이 이 병과 잘 맞아요.",
+      "effective_content": "말씀하신 증상들이 이 병과 잘 맞아요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "말씀하신 증상들이 이 병과 잘 맞아요."
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "가슴이 두근거리는 증상, 체중 감소가 걱정됩니다",
+      "effective_content": "가슴이 두근거리는 증상, 체중 감소가 걱정됩니다",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "가슴이 두근거리는 증상, 체중 감소가 걱정됩니다"
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "피검사·갑상선 초음파·심전도를 할게요.",
+      "effective_content": "피검사·갑상선 초음파·심전도를 할게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "피검사·갑상선 초음파·심전도를 할게요."
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "약 먹다 열·목 아프면 멈추고 바로 연락주세요.",
+      "effective_content": "약 먹다 열·목 아프면 멈추고 바로 연락주세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "약 먹다 열·목 아프면 멈추고 바로 연락주세요."
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?"
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "1~2주 뒤 결과 보고 약을 정해요.",
+      "effective_content": "1~2주 뒤 결과 보고 약을 정해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "1~2주 뒤 결과 보고 약을 정해요."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요.",
+      "effective_content": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "계단 오르거나 빨리 걸을 때 숨이 차요.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 39,
+      "action": "DIAGNOSE",
+      "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)"
+    }
+  ]
+}

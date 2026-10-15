@@ -1,0 +1,95 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  10.4s] llm[intake] low out=206 finish=stop 10.2s
+[  10.4s] intake: {'age': 32, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '체중 감소', 'request': '', 'categories': ['weight_loss', 'fatigue'], 'empathy': '불안스러우셨겠어요.', 'answered': []} diffs=['갑상선 기능 항진증', '위암·배외성 종양', '음식 섭취 부정적(음식 섭취 습관 변화)', '감염성 염증성 질환', '대사성 질환(당뇨, 인슐린 저항성)']
+[  10.4s] checklist: 61 items, covered=['ft_weight', 'hpi_onset']
+[  16.3s] turn 1 SAY: 불안스러우셨겠어요. 식사량은 예전과 비교해 어떠세요? -> 식사량이 예전보다 늘어난 것 같아요.
+[  20.8s] turn 2 SAY: 더위를 예전보다 많이 타세요? -> 요즘 들어 더위를 많이 타는 것 같아요.
+[  26.4s] turn 3 SAY: 가슴이 두근거릴 때가 있나요? -> 가슴이 두근거리는 증상도 자주 있어요.
+[  30.9s] turn 4 SAY: 손이 떨리세요? -> 손이 떨리는 것도 느껴져요.
+[  36.0s] turn 5 SAY: 가슴 통증이나 숨참은 없으세요? -> 가슴 통증은 없고 숨참도 없어요.
+[  43.1s] turn 6 SAY: 대변 횟수나 모양이 변했나요? -> 변이 묽은 편이고, 설사까지는 아니지만 예전보다 변이 부드러워졌어요.
+[  49.3s] turn 7 SAY: 물을 예전보다 많이 마시나요? -> 물은 많이 마시지 않아요.
+[  57.3s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 최근 살이 많이 빠지고 여러 증상이 함께 있어서 혹시 큰 병이 아닐까 걱정이 많아요.
+[  63.8s] turn 9 SAY: 특히 걱정되는 병이 있으세요? -> 최근 살이 많이 빠지고 여러 증상이 함께 있어서 혹시 큰 병이 아닐까 걱정이 많다.
+[  63.8s] guidelines[iv]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[  84.1s] llm[plan_q] low out=461 finish=stop 20.3s
+[  87.3s] turn 10 SAY: 최근 열이 난 적 있나요? -> 최근 열이 난 적 없어요.
+[  90.4s] turn 11 SAY: 소변 보는 횟수가 늘었나요? -> 소변량은 예전과 비슷하거나 약간 늘어난 것 같아요.
+[  94.5s] turn 12 SAY: 고혈압이나 당뇨 있으세요? -> 그런 건 없어요.
+[  98.0s] turn 13 SAY: 담배는 피우세요? -> 담배는 피우지 않아요.
+[ 102.4s] turn 14 SAY: 술은 얼마나 드세요? -> 한 달에 한두 번 가볍게 마셔요.
+[ 114.5s] turn 15 SAY: 다른 지병이 있으세요? -> 만성질환이 없어요.
+[ 118.4s] turn 16 SAY: 혹시 임신 가능성은 있으세요? -> 임신 가능성은 없어요.
+[ 118.4s] guidelines[iv]: 2017년 대한당뇨병학회 권고안: 인슐린 (KR_Journals, 2018)
+[ 146.5s] llm[plan_q] low out=565 finish=stop 28.1s
+[ 146.5s] q rejected (covered hpi_course): 증상이 점점 심해졌나요?
+[ 152.3s] turn 17 SAY: 드시는 약이나 영양제 있으세요? -> 복용 중인 약이나 건강보조식품도 없어요.
+[ 156.6s] turn 18 SAY: 부모님이나 형제분 앓는 병 있나요? -> 어머니가 갑상샘 기능저하증으로 약을 드시고 계셔요.
+[ 164.1s] turn 19 SAY: 요즘 기분이 많이 가라앉나요? -> 기분이 가라앉거나 우울하지는 않아요.
+[ 169.8s] turn 20 SAY: 생리 주기나 양이 변했나요? -> 생리량이 줄었고, 기간도 짧아졌어요.
+[ 174.7s] turn 21 SAY: 잠은 잘 주무세요? -> 잠도 잘 못 자는 편이에요.
+[ 182.2s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 검사와 치료가 궁금해요.
+[ 182.2s] interview done: asked=22 covered=12 uncovered_p1=[]
+[ 186.7s] llm[exams] low out=95 finish=stop 4.5s
+[ 186.7s] exams plan: ['vitals', 'general', 'orthostatic', 'radial', 'skin_temp', 'eye_signs', 'conj', 'thyroid', 'thyroid_bruit', 'post_tremor', 'dtr']
+[ 186.7s] turn 23 EXAM: 활력징후 측정하겠습니다 -> 138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C
+[ 186.7s] turn 24 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 마른 체형, 안절부절(+) 경도
+[ 230.5s] turn 25 EXAM: 기립성 혈압 측정하겠습니다 -> 기립성 혈압 측정 | 136/70 mmHg, 100회/분, 정상
+[ 230.5s] turn 26 EXAM: 요골동맥 맥박 촉진하겠습니다 -> 102회/분, 규칙적, 강하고 빠름
+[ 230.5s] turn 27 EXAM: 피부 온도·발한 촉진하겠습니다 -> 온난(+), 발한(+), 손바닥 습윤(+/+)
+[ 230.5s] turn 28 EXAM: 갑상선 안징후 검사하겠습니다 -> 돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)
+[ 230.5s] turn 29 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 230.5s] turn 30 EXAM: 갑상선 촉진하겠습니다 -> 양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)
+[ 230.5s] turn 31 EXAM: 갑상선 잡음 청진하겠습니다 -> 잡음(+/+)
+[ 235.6s] turn 32 EXAM: 자세성 떨림 확인하겠습니다 -> 자세성 떨림(+/+)
+[ 240.4s] turn 33 EXAM: 심부건반사 검사하겠습니다 -> 슬개건 3+/3+, 아킬레스건 2+/2+
+[ 592.2s] llm[facts] medium out=7714 finish=stop 351.8s
+[ 592.2s] fact key demoted: pmh.HTN turn 12
+[ 592.2s] fact key demoted: pmh.DM turn 12
+[ 592.2s] fact key demoted: sh.alcohol turn 14
+[ 592.2s] fact key demoted: pmh.HTN turn 12
+[ 592.2s] fact key demoted: pmh.DM turn 12
+[ 592.2s] facts: 28
+[ 592.2s] guidelines[dx]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[ 592.4s] guidelines[dx]: 2017년 대한당뇨병학회 권고안: 인슐린 (KR_Journals, 2018)
+[ 680.4s] llm[dx] medium out=1993 finish=stop 88.0s
+[ 680.4s] guidelines[plan-mgmt]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[ 680.4s] guidelines[plan-ovw]: 2025 갑상선기능항진증의 방사성요오드 치료에 대한 진료권고안 (KR_Societies, 2025)
+[ 680.4s] guidelines[plan-edu]: 갑상선기능항진증 (KR_HealthInfo, 2026)
+[ 702.5s] llm[plan_say] low out=502 finish=stop 22.2s
+[ 709.2s] turn 34 SAY: 그레이브스병이 의심돼요 -> 네, 알겠습니다.
+[ 713.2s] turn 35 SAY: 면역 이상으로 갑상샘 호르몬이 많아 살이 빠졌어요 -> 네, 알겠습니다.
+[ 717.0s] turn 36 SAY: 걱정이 많으시군요, 검사를 통해 확인해요 -> 네, 알겠습니다.
+[ 720.2s] turn 37 SAY: 항갑상샘제를 복용하면 심장 두근거림이 줄어요 -> 네, 알겠습니다.
+[ 724.8s] turn 38 SAY: 두근거림 약 전에 천식·심장병 있으면 알려 주세요. -> 가슴이 두근거리는 증상도 자주 있어요.
+[ 728.5s] turn 39 SAY: 숨참·불규칙한 맥·고열·혼란 시 바로 오세요 -> 네, 알겠습니다.
+[ 734.4s] turn 40 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 밤에도 땀이 많이 나서 잠옷이 젖을 때가 있다.
+[ 737.1s] turn 41 SAY: 1~2주 뒤 결과로 다시 와 주세요 -> 네, 알겠습니다.
+[ 746.5s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 손이 떨리는 것도 느껴진다.
+[ 758.2s] llm[S-narr] low out=259 finish=stop 11.7s
+[ 758.2s] summary: turns=42 counts={'say': 31, 'exam': 11, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22} budget={'doctor_calls': 8, 'doctor_ok_calls': 8, 'doctor_invalid': 0, 'doctor_input_tokens': 18884, 'doctor_output_tokens': 11795, 'elapsed_s': 758.1} dx=그레이브스병에 의한 갑상샘항진증 (Graves' disease)
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 11,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 8,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 8,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 18884,
+ "doctor_output_tokens": 11795,
+ "sim_calls": 35,
+ "seconds": 758.2,
+ "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": null,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-C10-v7b

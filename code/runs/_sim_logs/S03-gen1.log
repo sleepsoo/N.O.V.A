@@ -1,0 +1,77 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   3.7s] llm[intake] low out=214 finish=stop 3.7s
+[   3.7s] intake: {'age': 3, 'sex': 'F', 'pediatric': True, 'informant': '어머님', 'cc': '발열 및 오른쪽 귀 통증', 'request': '', 'categories': ['p_fever', 'insomnia'], 'empathy': '밤새 많이 힘드셨겠어요.', 'answered': []} diffs=['급성 중이염', '바이러스성 상기도 감염', '외이도염', '고막염', '유양돌기염']
+[   3.7s] checklist: 37 items, covered=['hpi_onset', 'p_sleep']
+[   9.1s] turn 1 SAY: 밤새 많이 힘드셨겠어요. -> 네, 알겠습니다.
+[  19.0s] turn 2 SAY: 아이 열에 대해 자세히 말씀해 주세요 -> 어제 낮부터 열이 나고, 밤엔 38.9도까지 올랐어요.
+[  30.9s] turn 3 SAY: 어머님이 가장 걱정되시는 게 뭐예요? -> 열이 계속 나서 뇌수막염 같은 큰 병이 아닌지 걱정돼요
+[  35.1s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 귀 아파요.
+[  46.2s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 열이 나면서 오른쪽 귀를 손으로 잡아당기고 '귀 아파'라고 하며 울었다.
+[  56.6s] llm[plan_q3] low out=828 finish=stop 10.5s
+[  66.4s] turn 6 SAY: 해열제 먹인 뒤 열 변화에 대해 자세히 말씀해 주세요. -> 해열제 먹으면 두세 시간 열이 내렸다가 다시 오른다.
+[  73.8s] turn 7 SAY: 먹는 양에 대해 자세히 말씀해 주세요. -> 그런 건 없어요.
+[  77.4s] turn 8 SAY: 기침이나 콧물은 있나요? -> 맑은 콧물과 가벼운 기침이 있었어요.
+[  82.8s] turn 9 SAY: 구토나 설사는 없나요? -> 토하지는 않았고, 설사도 없어요.
+[  89.8s] turn 10 SAY: 경련한 적 있나요? -> 경련은 없었어요.
+[  92.4s] turn 11 SAY: 귀 뒤가 붓거나 빨갛나요? -> 그런 건 없어요.
+[ 104.1s] llm[plan_q3] low out=899 finish=stop 11.6s
+[ 108.2s] turn 12 SAY: 많이 처지거나 깨우기 어렵나요? -> 그런 건 없어요.
+[ 112.5s] turn 13 SAY: 몸에 발진이 생겼나요? -> 몸에 발진은 없어요.
+[ 117.2s] turn 14 SAY: 약 알레르기가 있나요? -> 약 알레르기는 없어요.
+[ 130.0s] llm[plan_q3] low out=953 finish=stop 12.8s
+[ 139.9s] turn 15 SAY: 소변은 평소만큼 보나요? -> 오줌은 평소처럼 기저귀가 젖고, 마지막으로 오줌 싼 건 두 시간 전이다.
+[ 146.8s] turn 16 SAY: 귀 통증 양상에 대해 자세히 말씀해 주세요 -> 오른쪽 귀를 잡아당기고 '귀 아파'라고 울었어요.
+[ 150.5s] turn 17 SAY: 귀에서 진물이나 고름이 나오나요? -> 귀에서 고름이나 진물이 나온 적은 없어요.
+[ 158.3s] turn 18 SAY: 아픈 아이와 접촉한 일에 대해 자세히 말씀해 주세요 -> 어린이집에서 감기가 돌고 있었다.
+[ 168.1s] turn 19 SAY: 오늘 특히 궁금하신 게 있으세요? -> 뇌수막염 같은 큰 병이 아닌지 걱정돼요
+[ 168.1s] v3 interview done: q=18 asked=12 covered=2 uncovered_p1=['pf_max', 'pf_duration', 'hpi_course', 'p_perinatal', 'p_develop', 'p_vaccine', 'p_illness', 'p_meds', 'p_fh']
+[ 172.2s] llm[exams_gen] low out=341 finish=stop 4.0s
+[ 172.2s] v3 exams(gen) plan: [('general', '전신 상태와 독성 외관을 확인해 중증 감염 여부를 평가합니다.'), ('ear', '고막 팽륭·발적·삼출액을 확인해 급성 중이염을 평가하고, 고막염이나 천공 여부도 확인합니다.'), ('neck_stiff', '경부 강직 등 수막 자극 징후를 확인해 우려하는 수막염 가능성을 평가합니다.'), ('mental', '의식 저하나 반응 변화를 확인해 중추신경계 감염 등 중증 질환을 선별합니다.'), ('cervical_ln', '경부 림프절을 확인해 상기도 감염 소견을 평가합니다.'), ('nasal', '콧물과 비강 점막 소견을 확인해 동반 바이러스성 상기도 감염을 평가합니다.'), ('pharynx', '인두·편도 염증 소견을 확인해 발열의 동반 상기도 감염 원인을 평가합니다.'), ('periph', '귀 뒤의 압통·발적·부종을 확인해 유양돌기염을 배제합니다.'), ('skin_turgor', '탈수 소견을 확인해 발열 상황에서 수분 상태와 치료 안전성을 평가합니다.'), ('cap_refill', '말초 관류를 확인해 중증 탈수나 순환 저하 여부를 평가합니다.')]
+[ 172.2s] turn 20 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)
+[ 178.2s] turn 21 EXAM: 고막 시진하겠습니다 -> 우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)
+[ 182.2s] turn 22 EXAM: 경부 강직 확인하겠습니다 -> 경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)
+[ 182.2s] turn 23 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 연령에 맞는 반응, 보호자 알아봄(+)
+[ 182.2s] turn 24 EXAM: 경부 림프절 촉진하겠습니다 -> 우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)
+[ 182.2s] turn 25 EXAM: 비강 시진하겠습니다 -> 맑은 콧물(+), 비점막 부종 경도(+)
+[ 182.2s] turn 26 EXAM: 인두·편도 시진하겠습니다 -> 인두 경도 발적(+), 편도 비대 1도, 삼출물(-)
+[ 185.0s] turn 27 EXAM REFUSED EXAM_NOT_SPECIFIC: 하지 말초 진찰하겠습니다
+[ 193.8s] turn 28 EXAM: 피부 긴장도 확인하겠습니다 -> 피부 긴장도(피부 탄성) | 정상(짧은 끌림, 즉시 복귀)
+[ 196.8s] turn 29 EXAM: 모세혈관 재충혈 확인하겠습니다 -> 2초 미만
+[ 213.1s] llm[facts] medium out=1690 finish=stop 16.3s
+[ 213.1s] facts: 29
+[ 234.3s] llm[dx] medium out=1956 finish=stop 21.2s
+[ 246.3s] llm[plan_say3] low out=1121 finish=stop 12.0s
+[ 246.3s] v3 lines: {'dx': '오른쪽 급성 중이염으로 보여요.', 'meaning': '오른쪽 고막이 붓고 빨개 중이염 소견이에요.', 'concern': '진찰 소견은 큰 병보다 지금 진단 쪽에 더 맞아요.', 'tests': '고막 진찰로 중이염 소견을 확인했어요.', 'tests2': '추가 검사는 필요하지 않아 보여요.', 'treatment': '통증 조절 뒤 경과를 보며 치료를 정해요.', 'treatment2': '악화하거나 낫지 않으면 항생제를 상의해요.', 'warning': '귀뒤 붓기·처짐·목뻣뻣함·고열 지속 시 바로 오세요.', 'followup': '2~3일 뒤 귀 상태를 다시 볼게요.', 'lifestyle': '간접흡연을 피하고 물을 자주 먹여 주세요.'} musts=[] checks=[{'drop': '목이 뻣뻣하지 않고 또렷해 뇌수막염 소견은 적어 보여요.', 'key': 'concern', 'why': 'too_long'}]
+[ 253.7s] turn 30 SAY: 오른쪽 급성 중이염으로 보여요. -> 네, 알겠습니다.
+[ 257.6s] turn 31 SAY: 오른쪽 고막이 붓고 빨개 중이염 소견이에요. -> 네, 알겠습니다.
+[ 260.9s] turn 32 SAY: 진찰 소견은 큰 병보다 지금 진단 쪽에 더 맞아요. -> 네, 알겠습니다.
+[ 265.7s] turn 33 SAY: 고막 진찰로 중이염 소견을 확인했어요. -> 네, 알겠습니다.
+[ 269.3s] turn 34 SAY: 통증 조절 뒤 경과를 보며 치료를 정해요. -> 네, 알겠습니다.
+[ 272.6s] turn 35 SAY: 악화하거나 낫지 않으면 항생제를 상의해요. -> 네, 알겠습니다.
+[ 275.3s] turn 36 SAY: 귀뒤 붓기·처짐·목뻣뻣함·고열 지속 시 바로 오세요. -> 네, 알겠습니다.
+[ 281.2s] turn 37 SAY: 2~3일 뒤 귀 상태를 다시 볼게요. -> 네, 알겠습니다.
+[ 294.0s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 그런 건 없어요.
+[ 299.7s] turn 39 SAY: 귀뒤 붓기·처짐·목뻣뻣함·고열 지속 시 바로 오세요. -> 네, 알겠습니다.
+[ 299.7s] v3 explain done: said=9 answers=0 teach={'reply': '그런 건 없어요.', 'ok': False} turns_left=11 (start 21)
+[ 309.5s] llm[S-narr] low out=886 finish=stop 9.9s
+[ 309.6s] summary: turns=39 counts={'say': 29, 'exam': 9, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 18, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 20760, 'doctor_output_tokens': 8888, 'elapsed_s': 309.6} dx=우측 급성 중이염 (Right acute otitis media)
+{
+ "turns": 39,
+ "say": 29,
+ "exam": 9,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 9,
+ "doctor_input_tokens": 20760,
+ "doctor_output_tokens": 8888,
+ "sim_calls": 35,
+ "seconds": 309.6,
+ "diagnosis": "우측 급성 중이염 (Right acute otitis media)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S03-gen1

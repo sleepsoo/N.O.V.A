@@ -1,0 +1,392 @@
+{
+  "summary": {
+    "case_id": "C03",
+    "status": "expired",
+    "turns": 31,
+    "doctor_calls": 7,
+    "doctor_input_tokens": 10715,
+    "doctor_output_tokens": 13039,
+    "simulator_calls": 31,
+    "seconds": 1838.7,
+    "doctor_model": "openai/gpt-oss-20b",
+    "simulator_model": "openai/gpt-oss-20b"
+  },
+  "start_information": {
+    "opening": "이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다.",
+    "vital_signs": "혈압: 100/60 mmHg\n맥박: 90회/분\n호흡: 20회/분\n체온: 36.7°C"
+  },
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "키 성장에 대해 많이 걱정되셨겠어요.",
+      "effective_content": "키 성장에 대해 많이 걱정되셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 진짜 걱정돼요",
+        "turn": 1,
+        "turns_remaining": 49
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "그 뒤로 점점 심해지고 있나요?",
+      "effective_content": "그 뒤로 점점 심해지고 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 아직 변함 없어요.",
+        "turn": 2,
+        "turns_remaining": 48
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "이 문제로 병원에 가 본 적 있나요?",
+      "effective_content": "이 문제로 병원에 가 본 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 3,
+        "turns_remaining": 47
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "예전에 키 잰 기록이 있나요?",
+      "effective_content": "예전에 키 잰 기록이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 있었어요",
+        "turn": 4,
+        "turns_remaining": 46
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "언제부터 작다는 말을 들었나요?",
+      "effective_content": "언제부터 작다는 말을 들었나요?",
+      "response": {
+        "status": "OK",
+        "content": "일년 전부터 들어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "아빠 키는 얼마인가요?",
+      "effective_content": "아빠 키는 얼마인가요?",
+      "response": {
+        "status": "OK",
+        "content": "백칠십팔 센티미터예요.",
+        "turn": 6,
+        "turns_remaining": 44
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "아이가 먹는 양은 어떤가요?",
+      "effective_content": "아이가 먹는 양은 어떤가요?",
+      "response": {
+        "status": "OK",
+        "content": "항상 잘 먹어요",
+        "turn": 7,
+        "turns_remaining": 43
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "골발달이지연되나요?",
+      "effective_content": "골발달이지연되나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 8,
+        "turns_remaining": 42
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "피부가건조하거나가려운가요?",
+      "effective_content": "피부가건조하거나가려운가요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 9,
+        "turns_remaining": 41
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "배변이딱딱하거나늦나요?",
+      "effective_content": "배변이딱딱하거나늦나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요 그래요",
+        "turn": 10,
+        "turns_remaining": 40
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "만삭에 낳았나요?",
+      "effective_content": "만삭에 낳았나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 만삭이었어요",
+        "turn": 11,
+        "turns_remaining": 39
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "자연분만이었나요?",
+      "effective_content": "자연분만이었나요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 12,
+        "turns_remaining": 38
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "태어날 때 몸무게는 얼마였나요?",
+      "effective_content": "태어날 때 몸무게는 얼마였나요?",
+      "response": {
+        "status": "OK",
+        "content": "삼·이 키로그람",
+        "turn": 13,
+        "turns_remaining": 37
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "신생아 때 황달 같은 문제 있었나요?",
+      "effective_content": "신생아 때 황달 같은 문제 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 14,
+        "turns_remaining": 36
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "말이나 걷기 발달은 또래와 비슷한가요?",
+      "effective_content": "말이나 걷기 발달은 또래와 비슷한가요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 비슷합니다.",
+        "turn": 15,
+        "turns_remaining": 35
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "예방접종은 제때 맞았나요?",
+      "effective_content": "예방접종은 제때 맞았나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 맞았습니다.",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "앓고 있는 병이 있나요?",
+      "effective_content": "앓고 있는 병이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "입원하거나 크게 아픈 적 있나요?",
+      "effective_content": "입원하거나 크게 아픈 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "지금 먹는 약이 있나요?",
+      "effective_content": "지금 먹는 약이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "약 알레르기 있나요?",
+      "effective_content": "약 알레르기 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 알레르기 없어요",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "가족 중 비슷한 문제 있는 분 있나요?",
+      "effective_content": "가족 중 비슷한 문제 있는 분 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "집이나 어린이집 생활은 어떤가요?",
+      "effective_content": "집이나 어린이집 생활은 어떤가요?",
+      "response": {
+        "status": "OK",
+        "content": "주말엔 가족이랑 공원에서 산책해요.",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "SAY",
+      "content": "아이가 열이 난 적 있나요?",
+      "effective_content": "아이가 열이 난 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "SAY",
+      "content": "밥은 잘 먹나요?",
+      "effective_content": "밥은 잘 먹나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 적당히 먹어요",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "SAY",
+      "content": "우유는 하루에 얼마나 마시나요?",
+      "effective_content": "우유는 하루에 얼마나 마시나요?",
+      "response": {
+        "status": "OK",
+        "content": "하루 두 잔",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "SAY",
+      "content": "밤에 잠은 잘 자나요?",
+      "effective_content": "밤에 잠은 잘 자나요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "SAY",
+      "content": "잘 뛰어놀고 활발한가요?",
+      "effective_content": "잘 뛰어놀고 활발한가요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "SAY",
+      "content": "형제자매 중 키가 작아 보이는 사람이 있나요?",
+      "effective_content": "형제자매 중 키가 작아 보이는 사람이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "최근에 목에 부기가 있나요?",
+      "effective_content": "최근에 목에 부기가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "가족성 성장 지연 가능성이 높아 보여요.",
+      "effective_content": "가족성 성장 지연 가능성이 높아 보여요.",
+      "response": {
+        "status": "OK",
+        "content": "알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "검사 후 치료를 정하고, 심해지면 바로 오세요.",
+      "effective_content": "검사 후 치료를 정하고, 심해지면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    }
+  ]
+}

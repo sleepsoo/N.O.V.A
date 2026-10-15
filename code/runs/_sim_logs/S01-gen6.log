@@ -1,0 +1,78 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   3.8s] llm[intake] low out=245 finish=stop 3.8s
+[   3.8s] intake: {'age': 24, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '복통', 'request': '', 'categories': ['abd_pain', 'gi'], 'empathy': '많이 아프셨겠어요.', 'answered': []} diffs=['급성 충수염', '급성 위장염', '장간막 림프절염', '요로결석', '메켈 게실염']
+[   3.8s] checklist: 45 items, covered=['hpi_onset']
+[   7.4s] turn 1 SAY: 많이 아프셨겠어요. -> 네, 알겠습니다.
+[  11.8s] turn 2 SAY: 복통에 대해 자세히 말씀해 주세요 -> 오른쪽 아랫배가 더 아프고 손가락으로 짚을 수 있을 정도예요.
+[  14.4s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 맹장염이 아닌지 걱정이 돼요.
+[  21.6s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 걷거나 기침을 하면 오른쪽 아랫배가 울려서 더 아프다.
+[  27.2s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 밤새 잠을 거의 못 잤어요.
+[  42.3s] llm[plan_q3] low out=1196 finish=stop 15.1s
+[  47.4s] turn 6 SAY: 식사와 복통의 관계에 대해 자세히 말씀해 주세요. -> 저녁 일곱 시쯤 먹고 한 시간 뒤에 배가 아프기 시작했고, 김치찌개를 먹었어요.
+[  54.0s] turn 7 SAY: 메스꺼움이나 구토는 있으세요? -> 속이 메스껍고, 오늘 새벽에 한 번 토했어요.
+[  58.7s] turn 8 SAY: 변이 검거나 피가 섞이나요? -> 검은 변은 없고, 피도 섞이지 않았어요.
+[  67.3s] turn 9 SAY: 소변 볼 때 아프거나 피가 나오나요? -> 소변 볼 때 따갑거나 아프지 않고, 색도 평소와 같아요.
+[  75.1s] turn 10 SAY: 드시는 약이나 영양제에 대해 자세히 말씀해 주세요. -> 평소 먹는 약은 없고, 어제 먹은 소화제 한 알이 전부예요.
+[  80.0s] turn 11 SAY: 약 알레르기가 있으세요? -> 약 알레르기나 음식 알레르기는 없어요.
+[  93.9s] llm[plan_q3] low out=720 finish=stop 13.9s
+[  97.4s] turn 12 SAY: 통증이 0~10점 중 몇 점인가요? -> 지금 아픈 정도는 십 점 중에 칠 점 정도예요.
+[ 102.6s] turn 13 SAY: 설사나 변비가 있으세요? -> 그 뒤로 대변은 보지 않았고, 설사는 없어요.
+[ 108.3s] turn 14 SAY: 변비는 어떠세요? -> 그 뒤로 대변은 보지 않았고, 설사는 없어요.
+[ 113.5s] turn 15 SAY: 열이 나지는 않나요? -> 삼십칠 도였어요.
+[ 118.3s] turn 16 SAY: 고혈압이나 당뇨에 대해 자세히 말씀해 주세요 -> 고혈압, 당뇨는 없어요.
+[ 127.9s] llm[plan_q3] low out=605 finish=stop 9.6s
+[ 134.2s] turn 17 SAY: 가족 병력에 대해 자세히 말씀해 주세요 -> 아버지는 고혈압으로 약을 드신다.
+[ 142.3s] turn 18 SAY: 오늘 특히 궁금하신 게 있으세요? -> 수술을 해야 하는지, 수술을 하면 며칠이나 입원해야 하는지 궁금하다.
+[ 142.3s] v3 interview done: q=17 asked=13 covered=5 uncovered_p1=['ap_site', 'ap_char', 'pmh_other', 'sh_smoke', 'sh_alcohol']
+[ 149.5s] llm[exams_gen] low out=597 finish=stop 7.2s
+[ 149.5s] v3 exams(gen) plan: [('general', '급성 충수염 — 창백·식은땀·움직임을 피하는 모습 등 급성 복증의 중증 소견을 확인한다.'), ('abd_insp', '장폐색·복막염 — 복부 팽만이나 호흡 시 복벽 움직임 감소를 확인한다.'), ('bowel', '급성 위장염·장폐색 — 장음의 항진 또는 감소 여부를 확인한다.'), ('abd_palp', '급성 충수염·급성 위장염 — 국소 우하복부 압통과 미만성 압통, 복벽 경직을 비교한다.'), ('mcburney', '급성 충수염 — 맥버니점 압통을 확인한다.'), ('rebound', '급성 충수염 및 복막염 — 반발통으로 복막 자극 소견을 확인한다.'), ('rovsing', '급성 충수염 — 좌하복부 압박 시 우하복부 통증이 유발되는지 확인한다.'), ('psoas', '급성 충수염 — 요근 자극에 따른 통증으로 후방 위치 충수의 염증을 평가한다.'), ('cva', '요로결석 — 늑척추각 압통으로 신장·요관계 원인의 통증을 평가한다.'), ('cap_refill', '구토에 따른 탈수 및 치료 안전성 — 모세혈관 재충혈 지연 여부로 말초 관류 저하를 확인한다.')]
+[ 149.5s] turn 19 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)
+[ 149.5s] turn 20 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-), 수술 반흔(-)
+[ 149.5s] turn 21 EXAM: 장음 청진하겠습니다 -> 감소 4회/분, 금속성음(-)
+[ 149.5s] turn 22 EXAM: 복부 촉진하겠습니다 -> 우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)
+[ 153.6s] turn 23 EXAM: 맥버니 압통 확인하겠습니다 -> 맥버니점 압통(+)
+[ 159.8s] turn 24 EXAM: 반발통 확인하겠습니다 -> 우하복부 반발압통(+)
+[ 164.5s] turn 25 EXAM: 로브싱 징후 확인하겠습니다 -> 로브싱 징후(+)
+[ 169.1s] turn 26 EXAM: 요근 징후 확인하겠습니다 -> 우측 요근 징후(+)
+[ 173.2s] turn 27 EXAM: 늑척추각 압통 확인하겠습니다 -> 늑척추각 압통(-/-)
+[ 215.1s] turn 28 EXAM: 모세혈관 재충혈 확인하겠습니다 -> 모세혈관 재충혈 (Capillary refill) | 2초 이하(+)
+[ 236.3s] llm[facts] medium out=2393 finish=stop 21.2s
+[ 236.3s] fact key demoted: ros.Abdominal pain turn 12
+[ 236.3s] facts: 33
+[ 259.2s] llm[dx] medium out=2165 finish=stop 22.8s
+[ 274.8s] llm[plan_say3] low out=1400 finish=stop 15.6s
+[ 274.8s] v3 lines: {'dx': '급성 충수염으로 보여요', 'meaning': '배꼽 통증이 오른쪽으로 옮고 눌러 아파요', 'concern': '맹장염이 의심돼 오늘 외과 평가가 필요해요', 'tests': '촬영으로 충수 염증과 합병증을 확인해요', 'tests2': '혈액과 소변 검사로 염증과 다른 원인을 살펴요', 'treatment': '검사 뒤 외과와 수술이나 항생제를 정해요', 'treatment2': '평가 전에는 금식하고 수액과 통증 조절을 해요', 'warning': '통증 악화·열·반복 구토·어지럼증이면 바로 알리세요.', 'followup': '오늘 응급실에서 검사와 외과 진료를 받으세요', 'lifestyle': '이동 전에는 음식과 물을 드시지 마세요'} musts=[] checks=[]
+[ 278.8s] turn 29 SAY: 급성 충수염으로 보여요 -> 네, 알겠습니다.
+[ 281.4s] turn 30 SAY: 촬영으로 충수 염증과 합병증을 확인해요 -> 네, 알겠습니다.
+[ 286.4s] turn 31 SAY: 검사 뒤 외과와 수술이나 항생제를 정해요 -> 네, 알겠습니다.
+[ 290.5s] turn 32 SAY: 통증 악화·열·반복 구토·어지럼증이면 바로 알리세요. -> 네, 알겠습니다.
+[ 294.3s] turn 33 SAY: 오늘 응급실에서 검사와 외과 진료를 받으세요 -> 네, 알겠습니다.
+[ 300.1s] turn 34 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 통증이 계속 있고, 시간이 갈수록 점점 심해지고 있어요.
+[ 307.6s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 오른쪽 아랫배 한 군데가 제일 아프고 손가락으로 짚을 수 있어요.
+[ 307.6s] v3 explain done: said=5 answers=0 teach={'reply': '통증이 계속 있고, 시간이 갈수록 점점 심해지고 있어요.', 'ok': True} turns_left=15 (start 22)
+[ 319.3s] llm[S-narr] low out=760 finish=stop 11.7s
+[ 319.3s] summary: turns=35 counts={'say': 25, 'exam': 10, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 17, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 21695, 'doctor_output_tokens': 10081, 'elapsed_s': 319.3} dx=급성 충수염 (Acute appendicitis)
+S01 gpt-6-luna: total=63 정보수집=10 진단추론=14 검사·추적=9 안전=13 의사소통=7 효율=10 dx5=5
+- missed_key_questions: ['통증이 계속 악화되는지, 등·사타구니·고환으로 퍼지는지, 다리를 구부리면 완화되는지', '식욕부진 여부, 구토물에 피나 담즙이 섞였는지, 오한 및 집에서 잰 정확한 체온과 해열제 복용 여부', '마지막 정상 배변 시점·변 성상, 가스 배출 여부, 혈변 여부', '빈뇨, 옆구리 통증 및 호흡기 증상 등 관련 동반 증상', '과거 수술·입원력, 진통제 복용, 가족력의 나머지 내용, 흡연·음주·여행력', '학회 일정에 지장이 있을까 하는 걱정과 수술 후 회복 기간에 대한 구체적인 기대']
+- missed_key_exams: ['서혜부·음낭 진찰', '복부 타진', '보행 관찰', '정신상태, 구강 점막, 흉부·폐·심장 진찰', '폐쇄근·머피 징후, 간·비장 촉진, 직장수지검사, 말초 맥박·부종 진찰']
+- top_improvements: ['초진 문진에서 통증 이동·악화·방사·완화 요인, 식욕부진, 구토물 성상, 배변·배뇨 및 관련 동반 증상을 빠짐없이 확인하고 기록하기', '핵심 복부 진찰과 함께 서혜부·음낭 진찰을 시행하고, 진찰 결과표의 항목을 체계적으로 확인하기', '수술·입원 및 학회 일정에 대한 환자 걱정에 직접 답하고, 회복 기간은 검사·외과 평가 후 설명하겠다고 안내하기', '응급 경고 증상을 설명한 뒤 환자의 답변을 듣고 정확히 이해했는지 다시 확인하기', '중복 문진을 줄이고 핵심 질문을 묶어 필요한 병력과 진찰을 더 효율적으로 완성하기']
+{
+ "turns": 35,
+ "say": 25,
+ "exam": 10,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 10,
+ "doctor_input_tokens": 21695,
+ "doctor_output_tokens": 10081,
+ "sim_calls": 32,
+ "seconds": 319.3,
+ "diagnosis": "급성 충수염 (Acute appendicitis)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 63,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S01-gen6

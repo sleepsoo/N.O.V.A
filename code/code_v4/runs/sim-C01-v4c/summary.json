@@ -1,0 +1,350 @@
+{
+  "case_id": "C01",
+  "alias": "C01",
+  "turns": 38,
+  "say": 24,
+  "exam": 14,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 14,
+  "skipped_invalid": 0,
+  "doctor_calls": 6,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 10914,
+  "doctor_output_tokens": 7768,
+  "seconds": 505.4,
+  "diagnosis": "우울성 불면증 (Primary Insomnia)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia",
+      "mood"
+    ],
+    "empathy": "많이 걱정되셨겠어요。",
+    "answered": []
+  },
+  "explained": [
+    "우울증이 수면에 영향을 주어 치유에 더디게 진행됩니다",
+    "검사 결과를 보고 치료 방법을 같이 정해요.",
+    "스트레스·우울이 교차작용한 결과입니다",
+    "정확히 확인하려고 피검사를 할게요.",
+    "고루 자고, 스크린 시간을 줄이는 것이 중요합니다",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "심한 우울·자살 생각·졸음운전·낙상 시 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 703,
+      "out": 146,
+      "finish": "stop",
+      "sec": 7.7
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2904,
+      "out": 563,
+      "finish": "stop",
+      "sec": 29.6
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1212,
+      "out": 3724,
+      "finish": "stop",
+      "sec": 174.5
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2366,
+      "out": 1807,
+      "finish": "stop",
+      "sec": 83.7
+    },
+    {
+      "tag": "plan_say4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2055,
+      "out": 975,
+      "finish": "stop",
+      "sec": 47.1
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1674,
+      "out": 553,
+      "finish": "stop",
+      "sec": 25.5
+    }
+  ],
+  "phase_times": {
+    "intake": 7.8,
+    "interview": 134.0,
+    "examine": 0.0,
+    "facts": 174.6,
+    "dx": 83.7,
+    "plan_say": 47.1,
+    "explain": 32.7,
+    "effective": 0.0,
+    "S": 25.5
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "62세",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여성",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면증",
+      "pol": "+",
+      "detail": "시작",
+      "id": "F3"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면 시작",
+      "pol": "+",
+      "detail": "7년전",
+      "id": "F4"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "식은땀",
+      "pol": "+",
+      "detail": "계속",
+      "id": "F5"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "ros.Palpitation",
+      "label": "가슴 두근거림",
+      "pol": "+",
+      "detail": "계속",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "ros.Headache",
+      "label": "머리 아픔",
+      "pol": "+",
+      "detail": "계속",
+      "id": "F7"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "손 떨림",
+      "pol": "+",
+      "detail": "계속",
+      "id": "F8"
+    },
+    {
+      "turn": 6,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제",
+      "pol": "+",
+      "detail": "스틸녹스",
+      "id": "F9"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제 복용량",
+      "pol": "+",
+      "detail": "네알",
+      "id": "F10"
+    },
+    {
+      "turn": 8,
+      "sec": "meds",
+      "key": "other",
+      "label": "약 끊기 시 경련",
+      "pol": "-",
+      "detail": "?",
+      "id": "F11"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "천식",
+      "pol": "-",
+      "detail": "?",
+      "id": "F12"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "숨가쁨",
+      "pol": "-",
+      "detail": "?",
+      "id": "F13"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면 재발",
+      "pol": "+",
+      "detail": "6개월",
+      "id": "F14"
+    },
+    {
+      "turn": 12,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용약",
+      "pol": "+",
+      "detail": "암로디핀",
+      "id": "F15"
+    },
+    {
+      "turn": 13,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "있음",
+      "id": "F16"
+    },
+    {
+      "turn": 14,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 심장병",
+      "pol": "+",
+      "detail": "아버지",
+      "id": "F17"
+    },
+    {
+      "turn": 14,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 치매",
+      "pol": "+",
+      "detail": "어머니",
+      "id": "F18"
+    },
+    {
+      "turn": 15,
+      "sec": "ice",
+      "key": "other",
+      "label": "약물 감소 우려",
+      "pol": "+",
+      "detail": "두려움",
+      "id": "F19"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "ef6cc91311499c5547a2a38b3ce0750bd596056bb1dc33818b41f126282f3e6d",
+    "score_status": "not_scored",
+    "turn": 38
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다."
+  },
+  "exam_plan": [
+    "vitals",
+    "orthostatic",
+    "general",
+    "mental",
+    "skin_temp",
+    "conj",
+    "thyroid",
+    "lung",
+    "heart",
+    "abd_insp",
+    "liver_spleen",
+    "abd_palp",
+    "periph",
+    "cognitive"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 24,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 6,
+  "sim_doctor_calls": 6,
+  "sim_doctor_input_tokens": 10914,
+  "sim_doctor_output_tokens": 7768,
+  "sim_turns": 38,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 27,
+  "grade_scores": {
+    "정보수집": 14,
+    "진단추론": 1,
+    "검사·추적": 0,
+    "안전": 5,
+    "의사소통": 2,
+    "효율": 5
+  }
+}

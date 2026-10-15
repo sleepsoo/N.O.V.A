@@ -1,0 +1,307 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 언제부터 그러셨어요?",
+    "reply": "일곱 해 전부터요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "드시는 약 이름과 용량을 아세요?",
+    "reply": "스틸녹스, 한 알 10밀리그램이에요.",
+    "phase": "interview",
+    "qid": "sb_name",
+    "label": "약 이름·용량"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "그 약은 언제부터 드셨어요?",
+    "reply": "일곱 해 전부터요.",
+    "phase": "interview",
+    "qid": "sb_since",
+    "label": "복용 기간"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "요즘 하루에 몇 알 드세요?",
+    "reply": "한 번에 서너 알, 때때로 네 알까지.",
+    "phase": "interview",
+    "qid": "sb_dose_now",
+    "label": "현재 복용량"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "마지막으로 언제 몇 알 드셨어요?",
+    "reply": "어젯밤에 네 알을 먹고 새벽에 두 알 더 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_last",
+    "label": "마지막 복용"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "하루 중 언제 언제 드세요?",
+    "reply": "보통 밤 열한 시쯤 먹고, 새벽 두세 시쯤 다시 먹어요.",
+    "phase": "interview",
+    "qid": "sb_timing",
+    "label": "복용 시각"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "약을 안 드시면 어떤 증상이 있나요?",
+    "reply": "수면제를 안 먹으면 밤새 뒤척이고 온몸이 불안해요.",
+    "phase": "interview",
+    "qid": "sb_withdraw",
+    "label": "금단"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "이렇게 계속 먹어도 괜찮은지, 건강에 큰 문제가 생기지 않을지 걱정된다.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "약을 줄이려 시도해 보셨나요?",
+    "reply": "네, 줄이려 했지만 실패했어요.",
+    "phase": "interview",
+    "qid": "sb_cutdown",
+    "label": "감량 시도·실패"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "줄이다 다시 드신 이유가 뭐예요?",
+    "reply": "불안, 초조, 두통, 불면, 손떨림, 식은땀 같은 증상이 심해져서 다시 약을 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_cutdown_fail",
+    "label": "감량 실패"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "다른 수면제나 처방전을 드시나요?",
+    "reply": "네, 여러 병원에서 처방전 받고 있어요.",
+    "phase": "interview",
+    "qid": "sb_other",
+    "label": "다른 약 병용"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "그 약은 얼마나 자주 드세요?",
+    "reply": "보통 밤 열한 시쯤 한 번 먹고, 새벽 두세 시쯤 다시 한 번 먹어요.",
+    "phase": "interview",
+    "qid": "sb_other_detail",
+    "label": "병용 약 세부"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "약 드신 뒤 기억이 끊긴 적 있나요?",
+    "reply": "기억이 잘 안 나요.",
+    "phase": "interview",
+    "qid": "sb_blackout",
+    "label": "기억 공백"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "잠결에 뭘 먹거나 돌아다녔나요?",
+    "reply": "네 알을 먹고 새벽에 깨서 두 알을 더 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_sleepact",
+    "label": "복합수면행동"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "고혈압은 있고 암로디핀은 먹고 있어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "그건 없어요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(+)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "주간 진정·불안 관찰하겠습니다",
+    "reply": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+    "phase": "exam",
+    "qid": "sedation",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 6mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(-/-)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난, 발한(-), 손바닥 습윤(-/-)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 25,
+    "kind": "SAY",
+    "text": "벤조디아제핀 사용장애 가능성이 높아 보여요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 26,
+    "kind": "SAY",
+    "text": "이 약이 불안과 두통을 일으켜 잠을 못 자게 해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "덜 먹어도 걱정이 되신 건 이해돼요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "혈액 검사로 과다복용 원인과 신체 반응을 확인할 거예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "비약물 치료와 인지행동치료를 할게요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "약이 운전이 어려운 상태이니 운전은 금지해 주세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "숨 참·두통·체중 급증·갑작스러운 혼란 시 바로 오세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "이렇게 계속 먹어도 괜찮은지, 건강에 큰 문제가 생기지 않을지 걱정된다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

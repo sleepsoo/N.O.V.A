@@ -1,0 +1,414 @@
+{
+  "case_id": "C10",
+  "alias": "C10",
+  "turns": 41,
+  "say": 30,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 19721,
+  "doctor_output_tokens": 12846,
+  "seconds": 791.5,
+  "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "체중 감소 (세 달간)",
+    "request": "",
+    "categories": [
+      "weight_loss",
+      "fatigue",
+      "mood"
+    ],
+    "empathy": "걱정이 많으실 것 같아요.",
+    "answered": []
+  },
+  "explained": [
+    "그레이브스병으로 인한 갑상선 항진의 가능성이 큽니다",
+    "호르몬이 많아 체중이 줄고 가슴이 두근거려요",
+    "검사 결과를 확인해 정확한 진단을 노력할 거예요",
+    "항갑상샘제를 쓰면 드물게 고열이 올 수 있어요",
+    "숨참·불규칙한 맥·고열·혼동 시 바로 오세요",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "1~2주 뒤 결과 보러 다시 오세요",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 784,
+      "out": 153,
+      "finish": "stop",
+      "sec": 8.5
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3185,
+      "out": 747,
+      "finish": "stop",
+      "sec": 41.7
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3186,
+      "out": 473,
+      "finish": "stop",
+      "sec": 25.6
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1078,
+      "out": 74,
+      "finish": "stop",
+      "sec": 3.7
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1527,
+      "out": 3196,
+      "finish": "stop",
+      "sec": 149.9
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1549,
+      "out": 4022,
+      "finish": "stop",
+      "sec": 187.9
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2050,
+      "out": 2964,
+      "finish": "stop",
+      "sec": 140.6
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 4201,
+      "out": 653,
+      "finish": "stop",
+      "sec": 32.0
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 215,
+      "out": 109,
+      "finish": "stop",
+      "sec": 5.3
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1946,
+      "out": 455,
+      "finish": "stop",
+      "sec": 21.1
+    }
+  ],
+  "phase_times": {
+    "intake": 8.5,
+    "interview": 190.1,
+    "examine": 19.7,
+    "facts": 337.8,
+    "dx": 140.6,
+    "plan_say": 37.2,
+    "explain": 36.4,
+    "S": 21.1
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중감소",
+      "pol": "+",
+      "detail": "",
+      "id": "F1"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "other",
+      "label": "식사량증가",
+      "pol": "+",
+      "detail": "늘었다",
+      "id": "F2"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "other",
+      "label": "더위민감도",
+      "pol": "+",
+      "detail": "많이 타는",
+      "id": "F3"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "가슴두근거림",
+      "pol": "+",
+      "detail": "",
+      "id": "F4"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "other",
+      "label": "손떨림",
+      "pol": "+",
+      "detail": "",
+      "id": "F5"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "변부드러움",
+      "pol": "+",
+      "detail": "",
+      "id": "F6"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "목욕수분",
+      "pol": "-",
+      "detail": "",
+      "id": "F7"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "other",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "",
+      "id": "F8"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "other",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "",
+      "id": "F9"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "눈충혈",
+      "pol": "+",
+      "detail": "",
+      "id": "F10"
+    },
+    {
+      "turn": 9,
+      "sec": "pmh",
+      "key": "other",
+      "label": "기타질환",
+      "pol": "-",
+      "detail": "",
+      "id": "F11"
+    },
+    {
+      "turn": 10,
+      "sec": "meds",
+      "key": "other",
+      "label": "약이름없음",
+      "pol": "-",
+      "detail": "",
+      "id": "F12"
+    },
+    {
+      "turn": 11,
+      "sec": "fh",
+      "key": "other",
+      "label": "모친갑상샘저하",
+      "pol": "+",
+      "detail": "",
+      "id": "F13"
+    },
+    {
+      "turn": 12,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "",
+      "id": "F14"
+    },
+    {
+      "turn": 13,
+      "sec": "sh",
+      "key": "other",
+      "label": "음주",
+      "pol": "+",
+      "detail": "월 1-2회",
+      "id": "F15"
+    },
+    {
+      "turn": 14,
+      "sec": "sh",
+      "key": "other",
+      "label": "직무피로",
+      "pol": "+",
+      "detail": "",
+      "id": "F16"
+    },
+    {
+      "turn": 15,
+      "sec": "ros",
+      "key": "other",
+      "label": "운동량",
+      "pol": "-",
+      "detail": "",
+      "id": "F17"
+    },
+    {
+      "turn": 16,
+      "sec": "women",
+      "key": "other",
+      "label": "생리단축",
+      "pol": "+",
+      "detail": "",
+      "id": "F18"
+    },
+    {
+      "turn": 17,
+      "sec": "women",
+      "key": "other",
+      "label": "임신가능",
+      "pol": "-",
+      "detail": "",
+      "id": "F19"
+    },
+    {
+      "turn": 18,
+      "sec": "psych",
+      "key": "other",
+      "label": "기분",
+      "pol": "-",
+      "detail": "",
+      "id": "F20"
+    },
+    {
+      "turn": 19,
+      "sec": "psych",
+      "key": "other",
+      "label": "흥미",
+      "pol": "-",
+      "detail": "",
+      "id": "F21"
+    },
+    {
+      "turn": 20,
+      "sec": "psych",
+      "key": "other",
+      "label": "자살생각",
+      "pol": "-",
+      "detail": "",
+      "id": "F22"
+    },
+    {
+      "turn": 21,
+      "sec": "ice",
+      "key": "other",
+      "label": "치료계획",
+      "pol": "-",
+      "detail": "",
+      "id": "F23"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "검사희망",
+      "pol": "+",
+      "detail": "",
+      "id": "F24"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "6994a7c4560264115e559a8a07637007e10cec80f2bb184db4c074d46f5587a2",
+    "score_status": "not_scored",
+    "turn": 41
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C10",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 33,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 10,
+  "sim_doctor_calls": 10,
+  "sim_doctor_input_tokens": 19721,
+  "sim_doctor_output_tokens": 12846,
+  "sim_turns": 41,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v5/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 100,
+  "grade_scores": {
+    "정보수집": 20,
+    "진단추론": 15,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 13,
+    "효율": 20
+  }
+}

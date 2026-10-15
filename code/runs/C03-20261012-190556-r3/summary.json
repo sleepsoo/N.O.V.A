@@ -1,0 +1,380 @@
+{
+  "case_id": "ef3649a9-330b-4e12-ad2d-fab94d019330",
+  "alias": "C03",
+  "turns": 48,
+  "say": 39,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 13,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 24101,
+  "doctor_output_tokens": 20661,
+  "seconds": 787.2,
+  "diagnosis": "신체성장 지연 (Constitutional growth delay)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "신체성장 지연",
+      "diagnosis_en": "Constitutional growth delay",
+      "confidence": 0.85,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "성장 호르몬 결핍",
+      "diagnosis_en": "Growth hormone deficiency",
+      "confidence": 0.85,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "체질성 성장 지연",
+      "diagnosis_en": "Constitutional growth delay",
+      "confidence": 0.8,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "cc": "키 성장 지연",
+    "categories": [
+      "growth"
+    ],
+    "answered": [
+      "onset",
+      "course"
+    ],
+    "empathy": "키가 작아 걱정이 많으셨겠어요."
+  },
+  "explained": [
+    "가족지연성장요인 때문에 생긴 신체성장 지연이 의심돼요.",
+    "갑상선검사로 확인할게요.",
+    "영양·운동 지도로 치료할 수 있어요.",
+    "체중 급감이 있으면 바로 오세요.",
+    "매일 균형 잡힌 식사와 충분한 수면을 취하세요.",
+    "아쉽지만 성장 속도는 아직 계속 뛸 수 있어요.",
+    "더 궁금한 점 있으세요?",
+    "검사 후 재진 때 설명드릴게요"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 651,
+      "out": 170,
+      "finish": "stop",
+      "sec": 7.3
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1186,
+      "out": 2007,
+      "finish": "stop",
+      "sec": 63.6
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1537,
+      "out": 3644,
+      "finish": "stop",
+      "sec": 98.8
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2938,
+      "out": 625,
+      "finish": "stop",
+      "sec": 18.8
+    },
+    {
+      "tag": "dx1-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2155,
+      "out": 3226,
+      "finish": "stop",
+      "sec": 92.7
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2155,
+      "out": 1416,
+      "finish": "stop",
+      "sec": 41.2
+    },
+    {
+      "tag": "dx3-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2155,
+      "out": 1739,
+      "finish": "stop",
+      "sec": 52.3
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2012,
+      "out": 925,
+      "finish": "stop",
+      "sec": 26.8
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2583,
+      "out": 1663,
+      "finish": "stop",
+      "sec": 45.3
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 519,
+      "out": 143,
+      "finish": "stop",
+      "sec": 3.9
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2317,
+      "out": 2575,
+      "finish": "stop",
+      "sec": 78.6
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1499,
+      "out": 686,
+      "finish": "stop",
+      "sec": 20.1
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2394,
+      "out": 1842,
+      "finish": "stop",
+      "sec": 59.0
+    }
+  ],
+  "phase_times": {
+    "structure": 7.3,
+    "interview": 281.5,
+    "examine": 44.2,
+    "diagnose_vote": 186.2,
+    "plan": 26.8,
+    "explain": 83.2,
+    "S": 98.8,
+    "S-verify": 0.0,
+    "A": 59.0
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.course",
+      "pol": "?",
+      "detail": "최근엔 키가 별로 안 큰 것 같아요.",
+      "label": "경과"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.prior_visit",
+      "pol": "?",
+      "detail": "영유아 검진 때 지켜보자고 했어요.",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 4,
+      "key": "fh.father_height",
+      "pol": "?",
+      "detail": "178센티미터예요.",
+      "label": "부 키"
+    },
+    {
+      "turn": 5,
+      "key": "fh.mother_height",
+      "pol": "?",
+      "detail": "165센티미터예요.",
+      "label": "모 키"
+    },
+    {
+      "turn": 7,
+      "key": "peds.성장 기록",
+      "pol": "+",
+      "detail": "집에 영유아 검진 수첩 있어요.",
+      "label": "성장 기록"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Puberty signs",
+      "pol": "-",
+      "detail": "",
+      "label": "사춘기 징후"
+    },
+    {
+      "turn": 9,
+      "key": "fh.short_stature",
+      "pol": "-",
+      "detail": "",
+      "label": "저신장 가족력"
+    },
+    {
+      "turn": 12,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "만삭에 자연분만했어요.",
+      "label": "출생력-재태"
+    },
+    {
+      "turn": 13,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "자연분만이었어요.",
+      "label": "출생력-분만"
+    },
+    {
+      "turn": 14,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "3.2킬로그램이었어요.",
+      "label": "출생체중"
+    },
+    {
+      "turn": 15,
+      "key": "peds.신생아기",
+      "pol": "-",
+      "detail": "",
+      "label": "신생아기"
+    },
+    {
+      "turn": 16,
+      "key": "peds.발달",
+      "pol": "+",
+      "detail": "또래와 비슷했어요.",
+      "label": "발달"
+    },
+    {
+      "turn": 17,
+      "key": "peds.예방접종",
+      "pol": "+",
+      "detail": "모두 제때 맞았어요.",
+      "label": "예방접종"
+    },
+    {
+      "turn": 18,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "",
+      "label": "만성질환"
+    },
+    {
+      "turn": 19,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "",
+      "label": "입원력"
+    },
+    {
+      "turn": 20,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": "",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 21,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": "",
+      "label": "Allergy"
+    },
+    {
+      "turn": 22,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "아빠가 어릴 때 작다가 늦게 컸어요.",
+      "label": "FH 유사 질환"
+    },
+    {
+      "turn": 23,
+      "key": "sh.home",
+      "pol": "?",
+      "detail": "집에서도 어린이집에서도 잘 지내요.",
+      "label": "가정·사회"
+    },
+    {
+      "turn": 25,
+      "key": "ros.Appetite",
+      "pol": "?",
+      "detail": "네, 하루 세 끼 잘 먹어요.",
+      "label": "식사·영양"
+    },
+    {
+      "turn": 26,
+      "key": "peds.영양",
+      "pol": "+",
+      "detail": "하루에 한두 잔 마셔요.",
+      "label": "우유 섭취"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Sleep",
+      "pol": "?",
+      "detail": "네, 밤에 거의 안 깨고 잘 자요.",
+      "label": "수면"
+    },
+    {
+      "turn": 30,
+      "key": "ice.concern",
+      "pol": "?",
+      "detail": "키가 작은 게 큰 병 때문일까 봐요.",
+      "label": "보호자 걱정(ICE)"
+    },
+    {
+      "turn": 31,
+      "key": "ice.expectation",
+      "pol": "?",
+      "detail": "앞으로 키가 더 클 수 있을까요?",
+      "label": "보호자 기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "b4b83bade5ce33b2a9f9382b89844f2486ffedebb1a04429e3ce5d7ffd2549e7",
+    "score_status": "not_scored",
+    "turn": 48
+  },
+  "error": null,
+  "session_id": "11c00c6c-774c-45a2-a5c7-7f71a6e5dff1",
+  "api": "https://nova.snubhai.org"
+}

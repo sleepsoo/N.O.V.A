@@ -1,0 +1,358 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "불면에 대해 자세히 말씀해 주세요",
+    "reply": "나는 일곱 해 전부터 잠을 잘 못 자서 힘들었어요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨려요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "두근거림에 대해 자세히 말씀해 주세요",
+    "reply": "가슴이 두근거리고, 머리가 아프고",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨려요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "드시는 수면제 이름이 뭐예요?",
+    "reply": "스틸녹스예요.",
+    "phase": "interview",
+    "qid": "sb_name",
+    "label": "안전"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "수면제는 마지막으로 언제 드셨어요?",
+    "reply": "어젯밤에 네 알 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_last",
+    "label": "안전"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "약을 끊었을 때 경련한 적 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "sb_seizure",
+    "label": "안전"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "천식 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "안전"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "가만히 있어도 숨이 차세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "안전"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "최근 1년간 같은 불면이 있었나요?",
+    "reply": "최근 육 개월 사이에 같은 불면이 있었어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "현재 복용 중인 약은 무엇인가요?",
+    "reply": "암로디핀을 먹고 있어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "평소 앓는 병이 있으세요?",
+    "reply": "고혈압이 있어서 암로디핀을 먹고 있어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "과거력"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "가족 중에 아픈 분이 있으세요?",
+    "reply": "아버지는 심장병으로 돌아가셨고, 어머니는 치매로 돌아가셨다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "가족력"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "약을 줄이고 싶지만, 잠을 못 잘까 봐 두렵다.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 16,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 6mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(+)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난, 발한(-), 손바닥 습윤(-/-)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 황달(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "편평, 팽만(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "간·비장 촉진하겠습니다",
+    "reply": "간 늑골연하 촉지(-), 비장 촉지(-)",
+    "phase": "exam",
+    "qid": "liver_spleen",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "우울증이 수면에 영향을 주어 치유에 더디게 진행됩니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "검사 결과를 보고 치료 방법을 같이 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_options",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "스트레스·우울이 교차작용한 결과입니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_link",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "정확히 확인하려고 피검사를 할게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "고루 자고, 스크린 시간을 줄이는 것이 중요합니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_lifestyle",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "심한 우울·자살 생각·졸음운전·낙상 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  }
+]

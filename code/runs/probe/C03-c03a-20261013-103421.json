@@ -1,0 +1,1124 @@
+{
+ "case": "C03",
+ "plan": "c03a",
+ "session_id": "c9a114ec-34df-4045-b8d4-9dcb36291d7f",
+ "initial": {
+  "opening": "이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다.",
+  "vital_signs": "혈압: 100/60 mmHg\n맥박: 90회/분\n호흡: 20회/분\n체온: 36.7°C"
+ },
+ "log": [
+  {
+   "i": 1,
+   "action": "SAY",
+   "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "일 년 전부터 작다는 말을 들었어요.",
+    "turn": 1,
+    "turns_remaining": 49
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 2,
+   "action": "SAY",
+   "content": "그 밖에 달라진 점을 다 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 2,
+    "turns_remaining": 48
+   },
+   "sec": 2.1
+  },
+  {
+   "i": 3,
+   "action": "SAY",
+   "content": "다른 불편한 증상은 없으세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 다른 불편한 증상은 없어요.",
+    "turn": 3,
+    "turns_remaining": 47
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 4,
+   "action": "SAY",
+   "content": "평소 건강은 어떠셨어요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "큰 병 없이 건강하게 지냈어요.",
+    "turn": 4,
+    "turns_remaining": 46
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 5,
+   "action": "SAY",
+   "content": "드시는 약을 전부 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 5,
+    "turns_remaining": 45
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 6,
+   "action": "SAY",
+   "content": "가족 중 아픈 분이 있으세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "가족 중 특별히 아픈 분은 없어요.",
+    "turn": 6,
+    "turns_remaining": 44
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 7,
+   "action": "SAY",
+   "content": "하루 일과를 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "어린이집 다녀와 열 시쯤 자요.",
+    "turn": 7,
+    "turns_remaining": 43
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 8,
+   "action": "SAY",
+   "content": "출생 때부터 지금까지 말씀해 주세요",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 8,
+    "turns_remaining": 42
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 9,
+   "action": "SAY",
+   "content": "부모님 키와 성장은 어떠셨어요?",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아빠 178, 엄마 165cm예요.",
+    "turn": 9,
+    "turns_remaining": 41
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 10,
+   "action": "SAY",
+   "content": "아이 발달은 어땠어요?",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "말이나 운동은 또래와 비슷했어요.",
+    "turn": 10,
+    "turns_remaining": 40
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 11,
+   "action": "SAY",
+   "content": "최근 일 년간 변화를 전부 말씀해 주세요",
+   "tag": "open_all",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 11,
+    "turns_remaining": 39
+   },
+   "sec": 2.4
+  },
+  {
+   "i": 12,
+   "action": "SAY",
+   "content": "식사·잠·운동은 어떤가요?",
+   "tag": "open_bundle",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "식욕 좋고 하루 세 끼 잘 먹어요.",
+    "turn": 12,
+    "turns_remaining": 38
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 13,
+   "action": "SAY",
+   "content": "아빠와 엄마 키는 각각 몇이에요?",
+   "tag": "probe_nounpair",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아빠 178, 엄마 165cm예요.",
+    "turn": 13,
+    "turns_remaining": 37
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 14,
+   "action": "SAY",
+   "content": "잘 웃으시네요, 그런데 우유는 마셔요?",
+   "tag": "probe_prefix",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 하루 한두 잔 마셔요.",
+    "turn": 14,
+    "turns_remaining": 36
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 15,
+   "action": "SAY",
+   "content": "아빠가 사춘기가 늦었나요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 고등학교 때 키가 확 컸대요.",
+    "turn": 15,
+    "turns_remaining": 35
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 16,
+   "action": "SAY",
+   "content": "변비가 있나요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아니요, 변비는 없어요.",
+    "turn": 16,
+    "turns_remaining": 34
+   },
+   "sec": 2.1
+  },
+  {
+   "i": 17,
+   "action": "SAY",
+   "content": "복용하는 약이 있나요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아니요, 먹는 약은 없어요.",
+    "turn": 17,
+    "turns_remaining": 33
+   },
+   "sec": 2.2
+  },
+  {
+   "i": 18,
+   "action": "SAY",
+   "content": "잘 먹나요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 세 끼 잘 먹고 식욕도 좋아요.",
+    "turn": 18,
+    "turns_remaining": 32
+   },
+   "sec": 2.4
+  },
+  {
+   "i": 19,
+   "action": "SAY",
+   "content": "만삭에 태어났나요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 만삭에 태어났어요.",
+    "turn": 19,
+    "turns_remaining": 31
+   },
+   "sec": 2.1
+  },
+  {
+   "i": 20,
+   "action": "EXAM",
+   "content": "신체 계측하겠습니다",
+   "tag": "exam_in",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "turn": 20,
+    "turns_remaining": 30
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 21,
+   "action": "EXAM",
+   "content": "심부건반사 확인하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "이두근·삼두근·슬개건·아킬레스건 반사 2+/2+, 좌우 대칭",
+    "turn": 21,
+    "turns_remaining": 29
+   },
+   "sec": 3.1
+  },
+  {
+   "i": 22,
+   "action": "EXAM",
+   "content": "경부 림프절 촉진하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "경부 림프절 비대(-/-), 압통(-/-)",
+    "turn": 22,
+    "turns_remaining": 28
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 23,
+   "action": "EXAM",
+   "content": "롬베르그 검사하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "롬베르그 징후(-), 눈을 감고 서 있을 때 몸의 흔들림·균형 소실(-)",
+    "turn": 23,
+    "turns_remaining": 27
+   },
+   "sec": 5.8
+  },
+  {
+   "i": 24,
+   "action": "EXAM",
+   "content": "척추 시진하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "척추 정렬 정상, 측만·후만(-)",
+    "turn": 24,
+    "turns_remaining": 26
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 25,
+   "action": "EXAM",
+   "content": "키를 재겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "turn": 25,
+    "turns_remaining": 25
+   },
+   "sec": 2.2
+  },
+  {
+   "i": 26,
+   "action": "EXAM",
+   "content": "고환 크기 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "Tanner 1기, 고환 2mL/2mL",
+    "turn": 26,
+    "turns_remaining": 24
+   },
+   "sec": 2.0
+  },
+  {
+   "i": 27,
+   "action": "EXAM",
+   "content": "성장곡선 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+    "turn": 27,
+    "turns_remaining": 23
+   },
+   "sec": 2.0
+  },
+  {
+   "i": 28,
+   "action": "EXAM",
+   "content": "팔 길이 재겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "turn": 28,
+    "turns_remaining": 22
+   },
+   "sec": 3.6
+  },
+  {
+   "i": 29,
+   "action": "EXAM",
+   "content": "얼굴 생김새 보겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "안면 기형(-), 귀 위치 이상(-/-)",
+    "turn": 29,
+    "turns_remaining": 21
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 30,
+   "action": "SAY",
+   "content": "체질적으로 늦게 크는 것으로 보여요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "그럼 앞으로 더 클 수 있을까요?",
+    "turn": 30,
+    "turns_remaining": 20
+   },
+   "sec": 2.2
+  },
+  {
+   "i": 31,
+   "action": "SAY",
+   "content": "뼈나이 검사로 확인해 볼게요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 검사 받아볼게요.",
+    "turn": 31,
+    "turns_remaining": 19
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 32,
+   "action": "SAY",
+   "content": "궁금하신 점 있으세요?",
+   "tag": "explain_q",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "앞으로 키가 더 클 수 있을까요?",
+    "turn": 32,
+    "turns_remaining": 18
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 33,
+   "action": "SAY",
+   "content": "최종 키는 대개 정상 범위예요",
+   "tag": "explain_answer",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 조금 안심이 되네요.",
+    "turn": 33,
+    "turns_remaining": 17
+   },
+   "sec": 2.1
+  },
+  {
+   "i": 34,
+   "action": "SAY",
+   "content": "이해되셨어요? 한번 말해 보시겠어요?",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 이해됐어요.",
+    "turn": 34,
+    "turns_remaining": 16
+   },
+   "sec": 2.4
+  }
+ ],
+ "diagnose": {
+  "error": "FINAL_RECORD_REQUIRED"
+ },
+ "session": {
+  "session_id": "c9a114ec-34df-4045-b8d4-9dcb36291d7f",
+  "status": "active",
+  "turns_remaining": 16,
+  "initial": {
+   "opening": "이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다.",
+   "vital_signs": "혈압: 100/60 mmHg\n맥박: 90회/분\n호흡: 20회/분\n체온: 36.7°C"
+  },
+  "available_actions": [
+   "SAY",
+   "EXAM",
+   "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T11:02:51.282077+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+   {
+    "id": "344fa244-e420-4de5-8487-d92fdc0ccb09",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+     "request_id": "a17aa7ae-9c43-4fe3-8742-27b2b49b4020"
+    },
+    "effective_content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+    "response": {
+     "turn": 1,
+     "status": "OK",
+     "content": "일 년 전부터 작다는 말을 들었어요.",
+     "turns_remaining": 49
+    },
+    "http_status": 200,
+    "turn": 1
+   },
+   {
+    "id": "33e28033-2079-405d-b879-2ec6b97bd6a8",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 달라진 점을 다 말씀해 주세요",
+     "request_id": "444a5d5e-713f-4890-83ba-8b448321d4b9"
+    },
+    "effective_content": "그 밖에 달라진 점을 다 말씀해 주세요",
+    "response": {
+     "turn": 2,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 48
+    },
+    "http_status": 200,
+    "turn": 2
+   },
+   {
+    "id": "30dd8f5a-7301-41f0-85ae-10432b2b77f2",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "다른 불편한 증상은 없으세요?",
+     "request_id": "d9337557-fb21-46b9-ab49-af83521cd732"
+    },
+    "effective_content": "다른 불편한 증상은 없으세요?",
+    "response": {
+     "turn": 3,
+     "status": "OK",
+     "content": "네, 다른 불편한 증상은 없어요.",
+     "turns_remaining": 47
+    },
+    "http_status": 200,
+    "turn": 3
+   },
+   {
+    "id": "1995617d-45d2-4c77-8e3c-905ede471d28",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "평소 건강은 어떠셨어요?",
+     "request_id": "0e859190-d437-4a9f-aae5-104b3661b5e6"
+    },
+    "effective_content": "평소 건강은 어떠셨어요?",
+    "response": {
+     "turn": 4,
+     "status": "OK",
+     "content": "큰 병 없이 건강하게 지냈어요.",
+     "turns_remaining": 46
+    },
+    "http_status": 200,
+    "turn": 4
+   },
+   {
+    "id": "25dc8520-6a98-4a83-aa20-82d1ad74dce4",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "드시는 약을 전부 말씀해 주세요",
+     "request_id": "557a1e02-07ef-4dbb-bb1b-580407632781"
+    },
+    "effective_content": "드시는 약을 전부 말씀해 주세요",
+    "response": {
+     "turn": 5,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 45
+    },
+    "http_status": 200,
+    "turn": 5
+   },
+   {
+    "id": "049ee259-a15a-469d-b527-fd445d9427c9",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 중 아픈 분이 있으세요?",
+     "request_id": "fda71458-ba65-4bd2-892c-ec9a48267afd"
+    },
+    "effective_content": "가족 중 아픈 분이 있으세요?",
+    "response": {
+     "turn": 6,
+     "status": "OK",
+     "content": "가족 중 특별히 아픈 분은 없어요.",
+     "turns_remaining": 44
+    },
+    "http_status": 200,
+    "turn": 6
+   },
+   {
+    "id": "05f01ef5-68c8-48e9-b93e-c58d1b017dad",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "하루 일과를 말씀해 주세요",
+     "request_id": "83c28ed9-64cc-4ad8-8a4f-dac0c8489fe3"
+    },
+    "effective_content": "하루 일과를 말씀해 주세요",
+    "response": {
+     "turn": 7,
+     "status": "OK",
+     "content": "어린이집 다녀와 열 시쯤 자요.",
+     "turns_remaining": 43
+    },
+    "http_status": 200,
+    "turn": 7
+   },
+   {
+    "id": "5e2adf66-3813-4bc1-bb4f-fdc916513065",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "출생 때부터 지금까지 말씀해 주세요",
+     "request_id": "97550579-76b1-4bc0-ace4-b082fee878fa"
+    },
+    "effective_content": "출생 때부터 지금까지 말씀해 주세요",
+    "response": {
+     "turn": 8,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 42
+    },
+    "http_status": 200,
+    "turn": 8
+   },
+   {
+    "id": "8c0ecaee-ed26-4584-9adb-5b1ff42b3816",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "부모님 키와 성장은 어떠셨어요?",
+     "request_id": "641e705b-ed41-474a-bc06-5ce70f8abd12"
+    },
+    "effective_content": "부모님 키와 성장은 어떠셨어요?",
+    "response": {
+     "turn": 9,
+     "status": "OK",
+     "content": "아빠 178, 엄마 165cm예요.",
+     "turns_remaining": 41
+    },
+    "http_status": 200,
+    "turn": 9
+   },
+   {
+    "id": "fd9bce32-9147-4ecb-b433-b6b4fe80409a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "아이 발달은 어땠어요?",
+     "request_id": "de98d2f8-326c-4532-812a-ca63b5aeac49"
+    },
+    "effective_content": "아이 발달은 어땠어요?",
+    "response": {
+     "turn": 10,
+     "status": "OK",
+     "content": "말이나 운동은 또래와 비슷했어요.",
+     "turns_remaining": 40
+    },
+    "http_status": 200,
+    "turn": 10
+   },
+   {
+    "id": "82420eec-d839-4579-84f4-e5bf05ea79fe",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "최근 일 년간 변화를 전부 말씀해 주세요",
+     "request_id": "750ac520-d1be-4cc2-8d59-6a4d8aedba20"
+    },
+    "effective_content": "최근 일 년간 변화를 전부 말씀해 주세요",
+    "response": {
+     "turn": 11,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 39
+    },
+    "http_status": 200,
+    "turn": 11
+   },
+   {
+    "id": "c6f48144-9079-4971-93ed-2ea215adddd7",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "식사·잠·운동은 어떤가요?",
+     "request_id": "32aa00a6-5d27-4fd4-b9b4-f7c8b425043e"
+    },
+    "effective_content": "식사·잠·운동은 어떤가요?",
+    "response": {
+     "turn": 12,
+     "status": "OK",
+     "content": "식욕 좋고 하루 세 끼 잘 먹어요.",
+     "turns_remaining": 38
+    },
+    "http_status": 200,
+    "turn": 12
+   },
+   {
+    "id": "57cbf70c-76d4-41b8-8cd8-90e3931f6e53",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "아빠와 엄마 키는 각각 몇이에요?",
+     "request_id": "168e7d03-e27b-44d5-a154-14eef948d6b0"
+    },
+    "effective_content": "아빠와 엄마 키는 각각 몇이에요?",
+    "response": {
+     "turn": 13,
+     "status": "OK",
+     "content": "아빠 178, 엄마 165cm예요.",
+     "turns_remaining": 37
+    },
+    "http_status": 200,
+    "turn": 13
+   },
+   {
+    "id": "5ea13f82-8a9a-4838-b227-36e97231243a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "잘 웃으시네요, 그런데 우유는 마셔요?",
+     "request_id": "6c155cac-2c10-415b-bb15-c03c83f33be8"
+    },
+    "effective_content": "그런데 우유는 마셔요?",
+    "response": {
+     "turn": 14,
+     "status": "OK",
+     "content": "네, 하루 한두 잔 마셔요.",
+     "turns_remaining": 36
+    },
+    "http_status": 200,
+    "turn": 14
+   },
+   {
+    "id": "c4eb6745-681e-4286-9da7-fea1adf506ae",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "아빠가 사춘기가 늦었나요?",
+     "request_id": "312d5d0a-c1d8-4a00-bb9c-7ac4d22fb7cf"
+    },
+    "effective_content": "아빠가 사춘기가 늦었나요?",
+    "response": {
+     "turn": 15,
+     "status": "OK",
+     "content": "네, 고등학교 때 키가 확 컸대요.",
+     "turns_remaining": 35
+    },
+    "http_status": 200,
+    "turn": 15
+   },
+   {
+    "id": "a1e9fde7-0b79-4b04-8059-9ea0f48fc7a7",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "변비가 있나요?",
+     "request_id": "dc7d3461-4081-4e36-8d9a-85507717cb03"
+    },
+    "effective_content": "변비가 있나요?",
+    "response": {
+     "turn": 16,
+     "status": "OK",
+     "content": "아니요, 변비는 없어요.",
+     "turns_remaining": 34
+    },
+    "http_status": 200,
+    "turn": 16
+   },
+   {
+    "id": "0236bff1-2ccd-4c9b-ab85-5747aaf7e3f0",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "복용하는 약이 있나요?",
+     "request_id": "20fa097d-56ca-4d7b-9496-ef2863118288"
+    },
+    "effective_content": "복용하는 약이 있나요?",
+    "response": {
+     "turn": 17,
+     "status": "OK",
+     "content": "아니요, 먹는 약은 없어요.",
+     "turns_remaining": 33
+    },
+    "http_status": 200,
+    "turn": 17
+   },
+   {
+    "id": "969dd021-68c0-4ede-9cae-bac80a91e5b3",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "잘 먹나요?",
+     "request_id": "6690f96e-cbfe-4d59-b5bb-c31dfefd3128"
+    },
+    "effective_content": "잘 먹나요?",
+    "response": {
+     "turn": 18,
+     "status": "OK",
+     "content": "네, 세 끼 잘 먹고 식욕도 좋아요.",
+     "turns_remaining": 32
+    },
+    "http_status": 200,
+    "turn": 18
+   },
+   {
+    "id": "1be92eb7-d895-4002-a0e4-9a9ae91f6474",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "만삭에 태어났나요?",
+     "request_id": "e26335f5-9f9d-4ed0-a7f7-4e45d54f672f"
+    },
+    "effective_content": "만삭에 태어났나요?",
+    "response": {
+     "turn": 19,
+     "status": "OK",
+     "content": "네, 만삭에 태어났어요.",
+     "turns_remaining": 31
+    },
+    "http_status": 200,
+    "turn": 19
+   },
+   {
+    "id": "e65101a9-f30c-4b2b-b44a-a8befc62aa24",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "신체 계측하겠습니다",
+     "request_id": "d36d4e14-090b-495b-813f-d855991b145e"
+    },
+    "effective_content": "c02_anthropometry",
+    "response": {
+     "turn": 20,
+     "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+     "status": "OK",
+     "turns_remaining": 30
+    },
+    "http_status": 200,
+    "turn": 20
+   },
+   {
+    "id": "53ecf1a9-88ae-4241-bbd0-621703de2b45",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "심부건반사 확인하겠습니다",
+     "request_id": "aa632654-499e-4483-a22c-9879caf4942f"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 21,
+     "result": "이두근·삼두근·슬개건·아킬레스건 반사 2+/2+, 좌우 대칭",
+     "status": "OK",
+     "turns_remaining": 29
+    },
+    "http_status": 200,
+    "turn": 21
+   },
+   {
+    "id": "1305d797-652a-4a6a-9db9-3ac73694ca1d",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "경부 림프절 촉진하겠습니다",
+     "request_id": "c9d44915-397d-4425-903c-0fea939fab69"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 22,
+     "result": "경부 림프절 비대(-/-), 압통(-/-)",
+     "status": "OK",
+     "turns_remaining": 28
+    },
+    "http_status": 200,
+    "turn": 22
+   },
+   {
+    "id": "77b10ab8-9d69-4adc-8c53-b421c64a0c89",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "롬베르그 검사하겠습니다",
+     "request_id": "2688cdf0-6346-4f8e-a4cf-fe1e6817b035"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 23,
+     "result": "롬베르그 징후(-), 눈을 감고 서 있을 때 몸의 흔들림·균형 소실(-)",
+     "status": "OK",
+     "turns_remaining": 27
+    },
+    "http_status": 200,
+    "turn": 23
+   },
+   {
+    "id": "14bd94f2-c0ce-4626-aa44-4f17d9ca97bf",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "척추 시진하겠습니다",
+     "request_id": "d0fd7017-f170-442d-97d9-8e5443206e4e"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 24,
+     "result": "척추 정렬 정상, 측만·후만(-)",
+     "status": "OK",
+     "turns_remaining": 26
+    },
+    "http_status": 200,
+    "turn": 24
+   },
+   {
+    "id": "ecc9925e-1b0c-4747-9e77-897ac1d94d3c",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "키를 재겠습니다",
+     "request_id": "8888dc14-be92-4e1b-95d3-0caa35cc2aff"
+    },
+    "effective_content": "c02_anthropometry",
+    "response": {
+     "turn": 25,
+     "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+     "status": "OK",
+     "turns_remaining": 25
+    },
+    "http_status": 200,
+    "turn": 25
+   },
+   {
+    "id": "e2e40e52-db6c-4cd4-9a58-acbfaec45497",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "고환 크기 확인하겠습니다",
+     "request_id": "37b0186f-619d-4035-8630-21f5658211dd"
+    },
+    "effective_content": "c02_pubertal_status",
+    "response": {
+     "turn": 26,
+     "result": "Tanner 1기, 고환 2mL/2mL",
+     "status": "OK",
+     "turns_remaining": 24
+    },
+    "http_status": 200,
+    "turn": 26
+   },
+   {
+    "id": "8cc2631c-7104-4403-8c44-7fd19ca25a16",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "성장곡선 확인하겠습니다",
+     "request_id": "c8b15487-987f-4400-9491-1c9ca43bdc2b"
+    },
+    "effective_content": "c02_growth_percentile",
+    "response": {
+     "turn": 27,
+     "result": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+     "status": "OK",
+     "turns_remaining": 23
+    },
+    "http_status": 200,
+    "turn": 27
+   },
+   {
+    "id": "70c7c7b6-ecee-4146-b53b-1f9ab9331d6e",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "팔 길이 재겠습니다",
+     "request_id": "b8adc453-c672-4f74-a9fb-4d5d7947c0ff"
+    },
+    "effective_content": "c02_anthropometry",
+    "response": {
+     "turn": 28,
+     "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+     "status": "OK",
+     "turns_remaining": 22
+    },
+    "http_status": 200,
+    "turn": 28
+   },
+   {
+    "id": "84819ef7-afb2-4c17-9993-0cd39951197f",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "얼굴 생김새 보겠습니다",
+     "request_id": "28790d9c-9a5a-43fd-966b-bd96abc901b4"
+    },
+    "effective_content": "c02_dysmorphic_face",
+    "response": {
+     "turn": 29,
+     "result": "안면 기형(-), 귀 위치 이상(-/-)",
+     "status": "OK",
+     "turns_remaining": 21
+    },
+    "http_status": 200,
+    "turn": 29
+   },
+   {
+    "id": "60f6dff0-d371-420f-a1fd-74c0a7f96465",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "체질적으로 늦게 크는 것으로 보여요",
+     "request_id": "f454f3a5-1ff5-4ed8-bb50-17c56442d875"
+    },
+    "effective_content": "체질적으로 늦게 크는 것으로 보여요",
+    "response": {
+     "turn": 30,
+     "status": "OK",
+     "content": "그럼 앞으로 더 클 수 있을까요?",
+     "turns_remaining": 20
+    },
+    "http_status": 200,
+    "turn": 30
+   },
+   {
+    "id": "0586f9bd-081a-4601-80f1-d8dab178b0bb",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "뼈나이 검사로 확인해 볼게요",
+     "request_id": "96704737-2037-4335-8494-9cb66f8cb492"
+    },
+    "effective_content": "뼈나이 검사로 확인해 볼게요",
+    "response": {
+     "turn": 31,
+     "status": "OK",
+     "content": "네, 검사 받아볼게요.",
+     "turns_remaining": 19
+    },
+    "http_status": 200,
+    "turn": 31
+   },
+   {
+    "id": "fb387346-5749-4ff6-92e2-871d9bbc1d05",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "궁금하신 점 있으세요?",
+     "request_id": "68868b4c-a635-4f52-bc96-24aedb667810"
+    },
+    "effective_content": "궁금하신 점 있으세요?",
+    "response": {
+     "turn": 32,
+     "status": "OK",
+     "content": "앞으로 키가 더 클 수 있을까요?",
+     "turns_remaining": 18
+    },
+    "http_status": 200,
+    "turn": 32
+   },
+   {
+    "id": "3d86458e-017b-424f-9f0b-25353be0d730",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "최종 키는 대개 정상 범위예요",
+     "request_id": "355e9b81-ebc4-4edf-82fe-5facbe7d0b94"
+    },
+    "effective_content": "최종 키는 대개 정상 범위예요",
+    "response": {
+     "turn": 33,
+     "status": "OK",
+     "content": "네, 조금 안심이 되네요.",
+     "turns_remaining": 17
+    },
+    "http_status": 200,
+    "turn": 33
+   },
+   {
+    "id": "7fdde1c3-f60f-4549-9e6e-6d9afe304785",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "이해되셨어요? 한번 말해 보시겠어요?",
+     "request_id": "fed394ae-23dc-4260-a041-a206dc7491d9"
+    },
+    "effective_content": "이해되셨어요?",
+    "response": {
+     "turn": 34,
+     "status": "OK",
+     "content": "네, 이해됐어요.",
+     "turns_remaining": 16
+    },
+    "http_status": 200,
+    "turn": 34
+   }
+  ],
+  "note": "",
+  "record": {},
+  "diagnosis": "",
+  "score": null
+ }
+}

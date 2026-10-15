@@ -1,0 +1,205 @@
+{
+  "case_id": "C10",
+  "alias": "C10",
+  "turns": 47,
+  "say": 38,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 14,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 21704,
+  "doctor_output_tokens": 20181,
+  "seconds": 880.0,
+  "diagnosis": "그레이브스병에 의한 갑상샘 항진증 (Graves' disease (toxic diffuse goiter))",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "그레이브스병에 의한 갑상샘 항진증",
+      "diagnosis_en": "Graves' disease (toxic diffuse goiter)",
+      "confidence": 0.95
+    },
+    {
+      "diagnosis_ko": "그레이브스병에 의한 갑상샘항진증",
+      "diagnosis_en": "Graves disease-induced hyperthyroidism",
+      "confidence": 0.92
+    },
+    {
+      "diagnosis_ko": "그레이브스병에 의한 갑상샘 항진증",
+      "diagnosis_en": "Graves' disease causing hyperthyroidism",
+      "confidence": 0.95
+    }
+  ],
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다",
+    "categories": [
+      "weight"
+    ],
+    "answered": [],
+    "empathy": "많이 걱정되셨겠어요."
+  },
+  "explained": [
+    "주요 질환은레이브스병이에요",
+    "이유는 갑상선이 과다 활동해요",
+    "검사는 혈액과 초음파로 해요",
+    "심계곤란이나 가슴통증이 있으면 바로 와요",
+    "식사는 규칙적이고 물은 자주 마셔요",
+    "걱정 안 해도 돼요. 더 궁금한 점 있으세요?",
+    "검사 결과는 이번 주에 알려드리겠습니다."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 533,
+      "out": 406,
+      "finish": "stop",
+      "sec": 14.3
+    },
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 554,
+      "out": 199,
+      "finish": "stop",
+      "sec": 7.2
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 899,
+      "out": 1572,
+      "finish": "stop",
+      "sec": 39.2
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1141,
+      "out": 1172,
+      "finish": "stop",
+      "sec": 31.0
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2791,
+      "out": 965,
+      "finish": "stop",
+      "sec": 23.6
+    },
+    {
+      "tag": "dx1",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1769,
+      "out": 1466,
+      "finish": "stop",
+      "sec": 37.1
+    },
+    {
+      "tag": "dx2",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1769,
+      "out": 2129,
+      "finish": "stop",
+      "sec": 61.8
+    },
+    {
+      "tag": "dx3",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1769,
+      "out": 2548,
+      "finish": "stop",
+      "sec": 60.6
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1814,
+      "out": 1829,
+      "finish": "stop",
+      "sec": 40.9
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1835,
+      "out": 1695,
+      "finish": "stop",
+      "sec": 25.2
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 2276,
+      "out": 2130,
+      "finish": "stop",
+      "sec": 27.9
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 458,
+      "out": 139,
+      "finish": "stop",
+      "sec": 5.4
+    },
+    {
+      "tag": "S-a",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1967,
+      "out": 1835,
+      "finish": "stop",
+      "sec": 34.9
+    },
+    {
+      "tag": "S-b",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2129,
+      "out": 2096,
+      "finish": "stop",
+      "sec": 50.5
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "4bbd0ae3d70dbdd330130837c9cfd3032db72d90bb62f2240a5662a7c2c3c1b2",
+    "score_status": "not_scored",
+    "turn": 47
+  },
+  "error": null,
+  "mode": "hybrid",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_calls": 49
+}

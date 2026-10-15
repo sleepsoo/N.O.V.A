@@ -1,0 +1,433 @@
+{
+  "case_id": "S06",
+  "alias": "S06",
+  "turns": 41,
+  "say": 30,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 7,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 15730,
+  "doctor_output_tokens": 8642,
+  "seconds": 613.9,
+  "diagnosis": "2형 당뇨병 (Type 2 Diabetes Mellitus)",
+  "accepted_diagnoses": [
+    "2형 당뇨병 (Type 2 diabetes mellitus)",
+    "제2형 당뇨병",
+    "당뇨병"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 56,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "피로",
+    "request": "",
+    "categories": [
+      "fatigue",
+      "urinary",
+      "dm"
+    ],
+    "empathy": "많이 힘드셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "당뇨병 가능성이 높아 보여요.",
+    "피로·목말라함이 원인일 수 있어요.",
+    "투석 걱정이 있으면 고혈압·신장검사 할게요.",
+    "식이·운동써 혈당 관리 해요.",
+    "숨참·고열·저혈당·시야흐려 시 바로 오세요.",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "1~2주 뒤 결과 보러 다시 오세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 714,
+      "out": 252,
+      "finish": "stop",
+      "sec": 11.5
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2445,
+      "out": 479,
+      "finish": "stop",
+      "sec": 27.7
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3270,
+      "out": 458,
+      "finish": "stop",
+      "sec": 21.4
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1470,
+      "out": 4929,
+      "finish": "stop",
+      "sec": 246.2
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2476,
+      "out": 1869,
+      "finish": "stop",
+      "sec": 93.9
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3264,
+      "out": 395,
+      "finish": "stop",
+      "sec": 20.7
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2091,
+      "out": 260,
+      "finish": "stop",
+      "sec": 13.1
+    }
+  ],
+  "phase_times": {
+    "intake": 11.5,
+    "interview": 168.5,
+    "examine": 29.1,
+    "facts": 246.3,
+    "dx": 93.9,
+    "plan_say": 20.7,
+    "explain": 30.8,
+    "S": 13.1
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "피로",
+      "pol": "+",
+      "detail": "두세 달 만에",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "목 건조",
+      "pol": "+",
+      "detail": "목이 자주 말라서",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "자주 배뇨",
+      "pol": "+",
+      "detail": "화장실 자주",
+      "id": "F3"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "other",
+      "label": "체중 감소",
+      "pol": "+",
+      "detail": "삼 키로그람",
+      "id": "F4"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "other",
+      "label": "추위 민감",
+      "pol": "-",
+      "detail": "예전과 같음",
+      "id": "F5"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "숨가쁨",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F6"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "other",
+      "label": "소변 색 변화",
+      "pol": "-",
+      "detail": "붉은거 없음",
+      "id": "F7"
+    },
+    {
+      "turn": 5,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "",
+      "id": "F8"
+    },
+    {
+      "turn": 5,
+      "sec": "pmh",
+      "key": "other",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "",
+      "id": "F9"
+    },
+    {
+      "turn": 6,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "",
+      "id": "F10"
+    },
+    {
+      "turn": 6,
+      "sec": "pmh",
+      "key": "other",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "",
+      "id": "F11"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "혈압제 복용",
+      "pol": "+",
+      "detail": "하루 1알",
+      "id": "F12"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "걱정",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F13"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "변비",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F14"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "부종",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F15"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "ros.Dizziness",
+      "label": "어지러움",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "other",
+      "label": "열",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F17"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "피로",
+      "pol": "+",
+      "detail": "두세 달 전부터",
+      "id": "F18"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "목 건조",
+      "pol": "+",
+      "detail": "목이 자주 말라서",
+      "id": "F19"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "자주 배뇨",
+      "pol": "+",
+      "detail": "화장실 자주",
+      "id": "F20"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "pmh.op_hx",
+      "label": "제왕절개",
+      "pol": "+",
+      "detail": "15년 전",
+      "id": "F21"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "fh.DM",
+      "label": "가족 당뇨",
+      "pol": "+",
+      "detail": "부모",
+      "id": "F22"
+    },
+    {
+      "turn": 16,
+      "sec": "psych",
+      "key": "other",
+      "label": "기분 변화",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F23"
+    },
+    {
+      "turn": 17,
+      "sec": "psych",
+      "key": "other",
+      "label": "수면",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F24"
+    },
+    {
+      "turn": 18,
+      "sec": "ros",
+      "key": "other",
+      "label": "요실",
+      "pol": "-",
+      "detail": "아프거나 따갑지 않음",
+      "id": "F25"
+    },
+    {
+      "turn": 19,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F26"
+    },
+    {
+      "turn": 20,
+      "sec": "sh",
+      "key": "other",
+      "label": "술",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F27"
+    },
+    {
+      "turn": 21,
+      "sec": "women",
+      "key": "other",
+      "label": "생리량",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F28"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "투석 걱정",
+      "pol": "+",
+      "detail": "가족력과 비슷",
+      "id": "F29"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "e425af885f625cd9a2c04dddfbc4342fdbf40908510abefefe88f2bebbaa82f9",
+    "score_status": "not_scored",
+    "turn": 41
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 힘드셨겠어요. 최근 체중 변화가 있나요?",
+      "effective": "최근 체중 변화가 있나요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S06",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 32,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 7,
+  "sim_doctor_calls": 7,
+  "sim_doctor_input_tokens": 15730,
+  "sim_doctor_output_tokens": 8642,
+  "sim_turns": 41,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v7/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 42,
+  "grade_scores": {
+    "정보수집": 12,
+    "진단추론": 5,
+    "검사·추적": 0,
+    "안전": 15,
+    "의사소통": 5,
+    "효율": 5
+  }
+}

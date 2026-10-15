@@ -1,0 +1,480 @@
+{
+  "case_id": "S01",
+  "alias": "S01",
+  "turns": 42,
+  "say": 31,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 16610,
+  "doctor_output_tokens": 8268,
+  "seconds": 285.0,
+  "diagnosis": "급성 충수염 (Acute appendicitis)",
+  "accepted_diagnoses": [
+    "급성 충수염 (Acute appendicitis)",
+    "급성 충수염",
+    "Acute appendicitis"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 24,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "우하복부 통증",
+    "request": "",
+    "categories": [
+      "abd_pain",
+      "gi"
+    ],
+    "empathy": "많이 불편하셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "급성 충수염일 가능성이 높아요.",
+    "충수에 염증이 생겨 움직일 때 아파요.",
+    "발표 일정은 진료 뒤 함께 조정해요.",
+    "피검사와 소변검사로 염증을 확인해요.",
+    "복부 CT로 충수와 주변을 살펴봐요.",
+    "오늘 응급실에서 외과 진료를 받으세요.",
+    "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 673,
+      "out": 206,
+      "finish": "stop",
+      "sec": 4.3
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2622,
+      "out": 708,
+      "finish": "stop",
+      "sec": 8.7
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2865,
+      "out": 669,
+      "finish": "stop",
+      "sec": 8.8
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1288,
+      "out": 202,
+      "finish": "stop",
+      "sec": 3.2
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1790,
+      "out": 2117,
+      "finish": "stop",
+      "sec": 21.4
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2385,
+      "out": 2097,
+      "finish": "stop",
+      "sec": 18.8
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2276,
+      "out": 1445,
+      "finish": "stop",
+      "sec": 15.0
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2711,
+      "out": 824,
+      "finish": "stop",
+      "sec": 11.1
+    }
+  ],
+  "phase_times": {
+    "intake": 4.3,
+    "interview": 146.0,
+    "examine": 29.3,
+    "facts": 21.4,
+    "dx": 18.8,
+    "plan_say": 15.1,
+    "explain": 39.1,
+    "S": 11.1
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "정민수",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "24세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "남자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "복통 시작",
+      "pol": "?",
+      "detail": "어제 저녁부터",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "초기 통증 위치",
+      "pol": "?",
+      "detail": "배꼽 주변",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "초기 통증 양상",
+      "pol": "?",
+      "detail": "체한 것처럼 더부룩",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면",
+      "pol": "?",
+      "detail": "밤새 거의 못 잠",
+      "id": "F7"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증 위치",
+      "pol": "?",
+      "detail": "오른쪽 아랫배가 더 아픔",
+      "id": "F8"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "움직임 시 통증",
+      "pol": "+",
+      "detail": "걷거나 기침하면 울림",
+      "id": "F9"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증 점수",
+      "pol": "?",
+      "detail": "7점",
+      "id": "F10"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "식사와 통증",
+      "pol": "?",
+      "detail": "김치찌개 먹어도 아픔",
+      "id": "F11"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Nausea",
+      "label": "메스꺼움",
+      "pol": "+",
+      "detail": "속이 메스꺼움",
+      "id": "F12"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "+",
+      "detail": "새벽 1회",
+      "id": "F13"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "ros.Diarrhea",
+      "label": "설사",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "검은변",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F15"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "혈변",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "우려",
+      "pol": "?",
+      "detail": "맹장염 걱정",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "체온",
+      "pol": "?",
+      "detail": "37도 정도",
+      "id": "F18"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증 경과",
+      "pol": "?",
+      "detail": "계속 있고 점점 심해짐",
+      "id": "F19"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증 방사",
+      "pol": "-",
+      "detail": "등·사타구니·고환 방사 없음",
+      "id": "F20"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "other",
+      "label": "배뇨통",
+      "pol": "-",
+      "detail": "따갑거나 아프지 않음",
+      "id": "F21"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "other",
+      "label": "소변 색",
+      "pol": "?",
+      "detail": "평소와 같음",
+      "id": "F22"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "상한 음식",
+      "pol": "-",
+      "detail": "먹은 기억 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 14,
+      "sec": "pmh",
+      "key": "other",
+      "label": "기타 지병",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F24"
+    },
+    {
+      "turn": 15,
+      "sec": "meds",
+      "key": "other",
+      "label": "평소 복용약",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F25"
+    },
+    {
+      "turn": 15,
+      "sec": "meds",
+      "key": "other",
+      "label": "소화제",
+      "pol": "?",
+      "detail": "어제 1알",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "+",
+      "detail": "하루 반 갑, 5년째",
+      "id": "F27"
+    },
+    {
+      "turn": 17,
+      "sec": "sh",
+      "key": "sh.alcohol",
+      "label": "음주",
+      "pol": "+",
+      "detail": "주 1회 맥주 2~3잔",
+      "id": "F28"
+    },
+    {
+      "turn": 18,
+      "sec": "hpi",
+      "key": "other",
+      "label": "과거 유사 통증",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F29"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F30"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F31"
+    },
+    {
+      "turn": 20,
+      "sec": "pmh",
+      "key": "other",
+      "label": "맹장 수술",
+      "pol": "-",
+      "detail": "받지 않음",
+      "id": "F32"
+    },
+    {
+      "turn": 21,
+      "sec": "fh",
+      "key": "fh.HTN",
+      "label": "부친 고혈압",
+      "pol": "+",
+      "detail": "약 복용 중",
+      "id": "F33"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "일정 걱정",
+      "pol": "+",
+      "detail": "다음 주 학회 발표에 지장 우려",
+      "id": "F34"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "270b1abdca4bbbc53626dad0f493614c91cebded23a09d983b141b20e7665713",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 불편하셨겠어요. 배 어디가 아프세요?",
+      "effective": "배 어디가 아프세요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 36,
+  "luna_calls": 9,
+  "sim_doctor_calls": 8,
+  "sim_doctor_input_tokens": 16610,
+  "sim_doctor_output_tokens": 8268,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v2c/run.py",
+  "grade_total": 60,
+  "grade_scores": {
+    "정보수집": 13,
+    "진단추론": 13,
+    "검사·추적": 7,
+    "안전": 11,
+    "의사소통": 6,
+    "효율": 10
+  }
+}

@@ -1,0 +1,13 @@
+---
+title: "Percentage of Korean CAPD patients meeting DOQI guidelines - Analyzed using the computerized urea kinetic modeling -"
+organization: "Korean J Med"
+year: "1999"
+language: ko
+source_url: "https://koreamed.org/SearchBasic.php?RID=2251350"
+license: "CC BY-NC"
+---
+# Percentage of Korean CAPD patients meeting DOQI guidelines - Analyzed using the computerized urea kinetic modeling -
+
+## Abstract
+
+Methods: Baseline urea kinetic data from a 24-hour dialysate collection was obtained and analyzed using the computerized urea kinetic model of peritoneal urea transport (PACK-PD, vers 1.01, Fresenius). The potential Kt/Vurea and Ccr values using four 2L and 2.5L daily exchanges were calculated with the PC program. Results: The mean weekly Kt/Vurea and Ccr values were 2.01+/-0.67 and 66.4+/-29.6 L/week/1.73 m2 respectively, with a median body surface area (BSA) of 1.61 m2 (75th percentile 1.73 m2). The mean 24 hour dialysate-to-plasma creatinine ratio was 0.75+/-0.16. Fourty-five of the 110 patients (41%) had no residual renal function. Upon logistic regression analysis, Kt/Vurea was independent factor affecting serum albumin and NPCR. 1) In forty-eight (44%) of the 110 patients, both Kt/Vurea and Ccr values with four 2-L daily exchanges were adequate. In twenty-two (20%), one of Kt/Vurea and Ccr values with four 2-L daily exchanges was inadequate. In fourty (36%), both Kt/Vurea and Ccr values with four 2-L daily exchanges were inadequate. 2) In eighty-four (77%) of the 110 patients, both Kt/Vurea and Ccr values with four 2.5-L daily exchanges were adequate. In nineteen (17%), one of Kt/Vurea and Ccr values with four 2.5-L daily exchanges was inadequate. In seven (6%), both Kt/Vurea and Ccr values with four 2.5-L daily exchanges were inadequate. 3) In three (7%) of the fourty-five anuric patients, both Kt/Vurea and Ccr values with four 2-L daily exchanges were adequate. In eleven (24%), one of Kt/Vurea and Ccr values with four 2-L daily exchanges was inadequate. In thirty-one (69%), both Kt/Vurea and Ccr values with four 2-L daily exchanges were inadequate. 4) In twenty-seven (60%) of the fourty-five anuric patients, both Kt/Vurea and Ccr values with four 2.5-L daily exchanges were adequate. In thirteen (29%), one of Kt/Vurea and Ccr values with four 2.5-L daily exchanges was inadequate. In five (11%), both Kt/Vurea and Ccr values with four 2.5-L daily exchanges were inadequate. CONCLUSION: The anuric Korean patients may need four 2.5L daily exchanges for acceptable adequacy target. Special attention must be given to those patients with no residual renal function.

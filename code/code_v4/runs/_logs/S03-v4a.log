@@ -1,0 +1,94 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  18.4s] llm[intake] low out=372 finish=stop 18.3s
+[  18.4s] intake: {'age': 3, 'sex': 'F', 'pediatric': True, 'informant': '어머님', 'cc': '오른쪽 귀통증 (열 38.6°C)', 'request': '', 'categories': ['p_fever', 'dizziness', 'insomnia'], 'empathy': '많이 걱정되셨겠어요.', 'answered': []} diffs=['이중이염 (Acute Otitis Media)', '귀 감염 (Ear Infection)', '급성 비염 (Acute Rhinitis)', '수막염 (Meningitis)', '폐렴 (Pneumonia)']
+[  18.4s] checklist: 47 items, covered=['hpi_onset', 'p_sleep']
+[  19.9s] turn 1 SAY: 많이 걱정되셨겠어요. -> 네, 알겠습니다.
+[  25.0s] turn 2 SAY: 오른쪽 귀통증에 대해 자세히 말씀해 주세요 -> 오른쪽 귀를 잡아당기고 '귀 아파'라고 울었어요.
+[  33.3s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 숨이 차거나 쌕쌕거리는 소리는 없어요.
+[  39.3s] turn 4 SAY: 숨찬 증상에 대해 자세히 말씀해 주세요 -> 숨이 차거나 쌕쌕거리는 소리는 없어요.
+[  84.0s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 그런 건 없어요.
+[  84.0s] guidelines[iv]: Korean Clinical Practice Guidelines: Otitis Media in Children (KR_EuropePMC, 2012)
+[  84.0s] guidelines[iv]: Clinical Guideline for the Diagnosis and Treatment of Gastrointestinal Infection (KR_Journals, 2010)
+[ 111.2s] llm[plan_v4] low out=580 finish=stop 27.2s
+[ 128.0s] llm[plan_v4] low out=369 finish=stop 16.8s
+[ 128.0s] v4 plan q bad (go_connect): 열이 나고 귀가 아픈 때, 언제 가장 심한가요?
+[ 128.0s] v4 plan: diffs=['이중이염 (Acute Otitis Media)', '귀 감염 (Ear Infection)', '급성 비염 (Acute Rhinitis)', '수막염 (Meningitis)', '폐렴 (Pneumonia)'] qs=[('free', '귀에서 재흐르는 소리가 있나요?'), ('free', '소음을 듣는데 어려움이 있나요?'), ('free', '귀통증이 바깥쪽으로 뻗나요?'), ('free', '머리가 아프나요?')] exams=[('ear', '고막의 붉음, 부종, 전이성 감염 여부 확인', 'high'), ('neck_stiff', '수막염 가능성 배제', 'mid')] thyroid=False
+[ 131.4s] turn 6 SAY: 귀에서 재흐르는 소리가 있나요? -> 그런 건 없어요.
+[ 136.3s] turn 7 SAY: 소음을 듣는데 어려움이 있나요? -> 소리를 잘 못 듣는 것 같지는 않다.
+[ 140.2s] turn 8 SAY: 입원한 적 있나요? -> 입원하거나 수술을 받은 적은 없어요.
+[ 143.9s] turn 9 SAY: 먹는 약이 있나요? -> 평소 먹는 약은 없어요.
+[ 148.5s] turn 10 SAY: 가족 중에 아픈 분이 있나요? -> 가족 중에 귀 수술을 받거나 난청이 있는 사람은 없어요.
+[ 156.1s] turn 11 SAY: 귀통증이 바깥쪽으로 뻗나요? -> 그런 건 없어요.
+[ 159.8s] turn 12 SAY: 머리가 아프나요? -> 그런 건 없어요.
+[ 166.7s] turn 13 SAY: 어린이집 생활은 어떤가요? -> 하은이는 평일에 어린이집에 다닌다.
+[ 171.9s] turn 14 SAY: 출산 때 문제는 없었나요? -> 태어날 때 특별한 문제는 없었어요.
+[ 176.9s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 열이 계속 나서 혹시 뇌수막염 같은 큰 병이 아닌지 걱정이 된다.
+[ 176.9s] v4 interview done: q=14 turn=15 left=25
+[ 176.9s] v4 exams plan (c8flex, budget 14): spec=['thyroid', 'ear', 'neck_stiff'] order=['vitals', 'general', 'mental', 'conj', 'ear', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph', 'neck_stiff'] backups=['pharynx', 'cervical_ln', 'skin_rash', 'cap_refill', 'orthostatic', 'nystagmus']
+[ 176.9s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C
+[ 176.9s] turn 17 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)
+[ 176.9s] turn 18 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 연령에 맞는 반응, 보호자 알아봄(+)
+[ 176.9s] turn 19 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 눈곱(-/-)
+[ 183.2s] turn 20 EXAM: 고막 시진하겠습니다 -> 우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)
+[ 206.4s] turn 21 EXAM: 갑상선 촉진하겠습니다 -> 갑상선 부위 부드럽고, 크기 정상, 비대 없음, 압통 없음, 경계선 명확
+[ 206.4s] turn 22 EXAM: 흉곽 시진하겠습니다 -> 흉곽 함몰(-), 보조호흡근 사용(-), 비익 확장(-)
+[ 206.4s] turn 23 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 206.4s] turn 24 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 128회/분, 심잡음(-)
+[ 255.9s] turn 25 EXAM: 복부 시진하겠습니다 -> 복부 시진 (Abdominal inspection) | 복부 모양 평평, 피부 정상, 팽만 없음, 색상 정상
+[ 292.1s] turn 26 EXAM: 간·비장 촉진하겠습니다 -> 간·비장 촉지(-)
+[ 292.1s] turn 27 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)
+[ 310.2s] turn 28 EXAM REFUSED EXAM_NOT_SPECIFIC: 하지 말초 진찰하겠습니다
+[ 317.8s] turn 29 EXAM: 경부 강직 확인하겠습니다 -> 경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)
+[ 317.8s] v4 exams done: ['vitals', 'general', 'mental', 'conj', 'ear', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'neck_stiff'] refused=['periph']
+[ 466.9s] llm[facts] medium out=2988 finish=stop 149.1s
+[ 466.9s] facts: 17
+[ 466.9s] guidelines[dx]: Korean Clinical Practice Guidelines: Otitis Media in Children (KR_EuropePMC, 2012)
+[ 466.9s] guidelines[dx]: Clinical Guideline for the Diagnosis and Treatment of Gastrointestinal Infection (KR_Journals, 2010)
+[ 518.7s] llm[dx] medium out=1128 finish=stop 51.8s
+[ 518.8s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: 유소아 중이염의 진단 및 치료 (KR_Journals, 2015)
+[ 518.8s] guidelines[plan-ovw-dx.fu/dx.fu.edu]: 중이염 (KR_HealthInfo, 2026)
+[ 543.1s] llm[plan_say4] low out=502 finish=stop 24.4s
+[ 543.1s] v4 lines: {'dx': '중이염 가능성이 높아 보여요.', 'options': '열과 통증은 해열진통제로 조절해요.', 'link': '말씀하신 증상들이 이 병과 잘 맞아요.', 'concern': '진찰 소견은 큰 병보다 지금 진단 쪽에 맞아요.', 'tests': '정확히 확인하려고 피검사를 할게요.', 'caution': '', 'followup': '2~3일 뒤 귀 상태를 다시 볼게요.', 'warning': '귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.', 'lifestyle': ''} musts=[] emergency=False checks=[{'drop': '급성 중이염', 'key': 'dx', 'why': 'ending'}, {'drop': '귀 안에 염증이 생겨 귀통증이 생김', 'key': 'dx', 'why': 'ending'}]
+[ 547.5s] turn 30 SAY: 중이염 가능성이 높아 보여요. -> 네, 알겠습니다.
+[ 552.2s] turn 31 SAY: 열과 통증은 해열진통제로 조절해요. -> 네, 알겠습니다.
+[ 556.6s] turn 32 SAY: 말씀하신 증상들이 이 병과 잘 맞아요. -> 네, 알겠습니다.
+[ 558.6s] turn 33 SAY: 진찰 소견은 큰 병보다 지금 진단 쪽에 맞아요. -> 네, 알겠습니다.
+[ 564.0s] turn 34 SAY: 정확히 확인하려고 피검사를 할게요. -> 네, 알겠습니다.
+[ 568.5s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 네, 알겠습니다.
+[ 573.4s] turn 36 SAY: 2~3일 뒤 귀 상태를 다시 볼게요. -> 네, 알겠습니다.
+[ 577.6s] turn 37 SAY: 귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 628.1s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 목이 뻣뻣하거나 고개를 숙이기 싫어하는 모습은 없어요.
+[ 628.1s] v4 explain done: said=7 answers=0 final=True teach={'reply': '목이 뻣뻣하거나 고개를 숙이기 싫어하는 모습은 없어요.'} turns_left=2 (start 11)
+[ 641.4s] llm[S-narr] low out=274 finish=stop 13.3s
+[ 641.4s] v4 S safety net: ['복용약: 평소 먹는 약은 없어요.', '가족력: 가족 중에 귀 수술을 받거나 난청이 있는 사람', '출생력: 태어날 때 특별한 문제는 없었어요.']
+[ 641.4s] summary: turns=38 counts={'say': 24, 'exam': 13, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 7, 'doctor_ok_calls': 7, 'doctor_invalid': 0, 'doctor_input_tokens': 14217, 'doctor_output_tokens': 6213, 'elapsed_s': 641.4} dx=중이염 (Acute Otitis Media)
+S03 gpt-oss-20b: total=64 정보수집=11 진단추론=10 검사·추적=8 안전=15 의사소통=8 효율=12 dx5=3
+- missed_key_questions: ['최고 체온', '해열제 반응 및 기간', '마지막 해열제 시각', '연속 열 지속 여부', '음성 방울·성능(귀 청력)', '음식/수분 섭취량', '기습적상기도 감염(5일 전 콧물·기침)', '어린이집 상호 감염 이력', '부모·가족 중 귀 문제 기록', '끝말휘 행사/에서는 없음', '환자 기존 항생제 사용 여부', '아비계 외부 흡연 여부']
+- missed_key_exams: ['Tragal and pinna tenderness', 'Mastoid palpation']
+- top_improvements: ['1)서버 기록에 발열 및 해열제 반응 등 핵심 병력 완전 문진 추가', '2)옥 설 의구체적으로 진단 결제 명시(우측 급성 중이염)', '3)항생제 처방이나 복용 계획과 용량/주기 명시', '4)추적 일정과 평가기준(열, 귀 통증, 삼출) 명확히 제시', '5)환경/가족력(흡연, 귀수술) 상세 질문 수행', '6)부적절 중복 질문 및 불필요 검사 면제']
+{
+ "turns": 38,
+ "say": 24,
+ "exam": 13,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 7,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 7,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 14217,
+ "doctor_output_tokens": 6213,
+ "sim_calls": 33,
+ "seconds": 641.4,
+ "diagnosis": "중이염 (Acute Otitis Media)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 64,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-S03-v4a

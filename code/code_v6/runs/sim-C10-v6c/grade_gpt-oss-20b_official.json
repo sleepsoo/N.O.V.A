@@ -1,0 +1,51 @@
+{
+  "checklist": {
+    "history_total": 22,
+    "history_done": 20,
+    "exam_total": 23,
+    "exam_done": 23
+  },
+  "scores": {
+    "정보수집": 23.6,
+    "진단추론": 15,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 14,
+    "효율": 18
+  },
+  "total": 95.6,
+  "diagnosis_5pt": 5,
+  "deductions": {
+    "정보수집": [],
+    "진단추론": [],
+    "검사·추적": [],
+    "안전": [],
+    "의사소통": [],
+    "효율": []
+  },
+  "missed_key_questions": [
+    "아드레날린/비만 인지 여부",
+    "수분 소변량 정량",
+    "시림·피부병변",
+    "고혈압 및 코르티코스테로이드 과거 이력"
+  ],
+  "missed_key_exams": [],
+  "record_errors": [],
+  "top_improvements": [
+    "다음 단계에서 일상생활에 미치는 갑상선 기능 항진증의 영향 구체적으로 설명",
+    "추적 방문 시 항목별 체크리스트 제공",
+    "새로운 사례에서 환자 인식과 경계심을 강화하기 위해 교차 질문 포함"
+  ],
+  "usage": {
+    "prompt_tokens": 9889,
+    "total_tokens": 12270,
+    "completion_tokens": 2381,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "_calls": 1,
+  "_model": "openai/gpt-oss-20b",
+  "remote": false
+}

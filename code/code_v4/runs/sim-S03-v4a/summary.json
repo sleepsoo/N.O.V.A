@@ -1,0 +1,336 @@
+{
+  "case_id": "S03",
+  "alias": "S03",
+  "turns": 38,
+  "say": 24,
+  "exam": 13,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 14,
+  "skipped_invalid": 0,
+  "doctor_calls": 7,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 14217,
+  "doctor_output_tokens": 6213,
+  "seconds": 641.4,
+  "diagnosis": "중이염 (Acute Otitis Media)",
+  "accepted_diagnoses": [
+    "우측 급성 중이염 (Acute otitis media, right)",
+    "급성 중이염",
+    "Acute otitis media"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 3,
+    "sex": "F",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "오른쪽 귀통증 (열 38.6°C)",
+    "request": "",
+    "categories": [
+      "p_fever",
+      "dizziness",
+      "insomnia"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "중이염 가능성이 높아 보여요.",
+    "열과 통증은 해열진통제로 조절해요.",
+    "말씀하신 증상들이 이 병과 잘 맞아요.",
+    "진찰 소견은 큰 병보다 지금 진단 쪽에 맞아요.",
+    "정확히 확인하려고 피검사를 할게요.",
+    "2~3일 뒤 귀 상태를 다시 볼게요.",
+    "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 740,
+      "out": 372,
+      "finish": "stop",
+      "sec": 18.3
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2701,
+      "out": 580,
+      "finish": "stop",
+      "sec": 27.2
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2722,
+      "out": 369,
+      "finish": "stop",
+      "sec": 16.8
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1215,
+      "out": 2988,
+      "finish": "stop",
+      "sec": 149.1
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2164,
+      "out": 1128,
+      "finish": "stop",
+      "sec": 51.8
+    },
+    {
+      "tag": "plan_say4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2942,
+      "out": 502,
+      "finish": "stop",
+      "sec": 24.4
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1733,
+      "out": 274,
+      "finish": "stop",
+      "sec": 13.3
+    }
+  ],
+  "phase_times": {
+    "intake": 18.3,
+    "interview": 158.5,
+    "examine": 141.0,
+    "facts": 149.1,
+    "dx": 51.9,
+    "plan_say": 24.4,
+    "explain": 84.9,
+    "effective": 0.0,
+    "S": 13.4
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "이름",
+      "pol": "+",
+      "detail": "이하은",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "3세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여아",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자",
+      "pol": "+",
+      "detail": "박수진 (34세)",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "열",
+      "pol": "+",
+      "detail": "어제부터",
+      "id": "F5"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "귀통증",
+      "pol": "+",
+      "detail": "오른쪽",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "호흡곤란",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F7"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "점막분비물",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F8"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "청력저하",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F9"
+    },
+    {
+      "turn": 8,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원력",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F10"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "당일약물",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F11"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가족 청력 질환",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F12"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "통증방사",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F13"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "ros.Headache",
+      "label": "두통",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F14"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "어린이집 참석",
+      "pol": "+",
+      "detail": "평일",
+      "id": "F15"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "other",
+      "label": "출산이상",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 15,
+      "sec": "ice",
+      "key": "other",
+      "label": "뇌수막염 우려",
+      "pol": "+",
+      "detail": "열 지속",
+      "id": "F17"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "cb49d62a978dc2a34c3359a57eb5cf81c8baf2003e3b6ae184b2df19034f69e7",
+    "score_status": "not_scored",
+    "turn": 38
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "목이 뻣뻣하거나 고개를 숙이기 싫어하는 모습은 없어요."
+  },
+  "exam_plan": [
+    "vitals",
+    "general",
+    "mental",
+    "conj",
+    "ear",
+    "thyroid",
+    "chest_insp",
+    "lung",
+    "heart",
+    "abd_insp",
+    "liver_spleen",
+    "abd_palp",
+    "periph",
+    "neck_stiff"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 33,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 7,
+  "sim_doctor_calls": 7,
+  "sim_doctor_input_tokens": 14217,
+  "sim_doctor_output_tokens": 6213,
+  "sim_turns": 38,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 64,
+  "grade_scores": {
+    "정보수집": 11,
+    "진단추론": 10,
+    "검사·추적": 8,
+    "안전": 15,
+    "의사소통": 8,
+    "효율": 12
+  }
+}

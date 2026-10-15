@@ -1,0 +1,598 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많이 걱정되셨겠어요.",
+      "effective_content": "많이 걱정되셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많이 걱정되셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "아이 열에 대해 자세히 말씀해 주세요",
+      "effective_content": "아이 열에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "삼십팔 도까지 올라가요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "아이 열에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "어머님이 가장 걱정되시는 게 뭐예요?",
+      "effective_content": "어머님이 가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "오줌은 평소처럼 기저귀가 젖고, 마지막으로 오줌 싼 건 두 시간 전이에요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "어머님이 가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "열이 가장 높았을 때에 대해 자세히 말씀해 주세요",
+      "effective_content": "열이 가장 높았을 때에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "삼십팔 도까지 올랐어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "열이 가장 높았을 때에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "해열제 반응에 대해 자세히 말씀해 주세요",
+      "effective_content": "해열제 반응에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "해열제 먹으면 두세 시간 열이 내렸다가 다시 오른다.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "해열제 반응에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "먹는 양에 대해 자세히 말씀해 주세요",
+      "effective_content": "먹는 양에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "먹는 양에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "열이 난 뒤 경련한 적 있나요?",
+      "effective_content": "열이 난 뒤 경련한 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "경련을 한 적도 없어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "열이 난 뒤 경련한 적 있나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "먹는 약이나 한약에 대해 자세히 말씀해 주세요",
+      "effective_content": "먹는 약이나 한약에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "평소 먹는 약은 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "먹는 약이나 한약에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "귀 뒤가 붓거나 빨개졌나요?",
+      "effective_content": "귀 뒤가 붓거나 빨개졌나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "귀 뒤가 붓거나 빨개졌나요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "열이 난 뒤 경과에 대해 자세히 말씀해 주세요",
+      "effective_content": "열이 난 뒤 경과에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "어제 낮부터 열이 나기 시작했고, 어젯밤에는 삼십팔 도까지 올랐어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "열이 난 뒤 경과에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "오른쪽 귀 통증 양상에 대해 자세히 말씀해 주세요",
+      "effective_content": "오른쪽 귀 통증 양상에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "오른쪽 귀를 손으로 잡아당기고 '귀 아파'라고 하며 울었어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "오른쪽 귀 통증 양상에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "아이의 처짐이나 보챔에 대해 자세히 말씀해 주세요",
+      "effective_content": "아이의 처짐이나 보챔에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "누우면 더 보채고, 안아 주면 조금 나아져요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "아이의 처짐이나 보챔에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "기침이나 콧물은 없나요?",
+      "effective_content": "기침이나 콧물은 없나요?",
+      "response": {
+        "status": "OK",
+        "content": "닷새 전부터 맑은 콧물과 가벼운 기침이 있었어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "기침이나 콧물은 없나요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "구토나 설사에 대해 자세히 말씀해 주세요",
+      "effective_content": "구토나 설사에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "토하지는 않았고, 설사도 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "구토나 설사에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "숨이 차거나 입술이 파래지나요?",
+      "effective_content": "숨이 차거나 입술이 파래지나요?",
+      "response": {
+        "status": "OK",
+        "content": "숨이 차거나 쌕쌕거리는 소리는 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "숨이 차거나 입술이 파래지나요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "귀에서 나오는 분비물에 대해 자세히 말씀해 주세요",
+      "effective_content": "귀에서 나오는 분비물에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "귀에서 고름이나 진물이 나온 적은 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "귀에서 나오는 분비물에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "입원하거나 크게 아픈 적 있나요?",
+      "effective_content": "입원하거나 크게 아픈 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "입원하거나 수술을 받은 적은 없어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "입원하거나 크게 아픈 적 있나요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "몸에 발진이 생겼나요?",
+      "effective_content": "몸에 발진이 생겼나요?",
+      "response": {
+        "status": "OK",
+        "content": "몸에 발진은 없어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "몸에 발진이 생겼나요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "예방접종은 제때 맞았나요?",
+      "effective_content": "예방접종은 제때 맞았나요?",
+      "response": {
+        "status": "OK",
+        "content": "예방접종은 폐렴구균 백신까지 모두 제때 맞았어요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "예방접종은 제때 맞았나요?"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "약 알레르기가 있나요?",
+      "effective_content": "약 알레르기가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "약 알레르기는 없어요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "약 알레르기가 있나요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "뇌수막염 같은 큰 병이 아닌지 걱정돼요",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 연령에 맞는 반응, 보호자 알아봄(+)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "고막 시진하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "비강 시진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "맑은 콧물(+), 비점막 부종 경도(+)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "인두·편도 시진하겠습니다",
+      "effective_content": "r11",
+      "response": {
+        "status": "OK",
+        "result": "인두 경도 발적(+), 편도 비대 1도, 삼출물(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "경부 강직 확인하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "피부 긴장도 확인하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "피부 탄성 검사 (Skin turgor test) | 피부 탄성 0/0",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "모세혈관 재충혈 확인하겠습니다",
+      "effective_content": "r21",
+      "response": {
+        "status": "OK",
+        "result": "2초 미만",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r17",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "오른쪽 급성 중이염으로 보여요",
+      "effective_content": "오른쪽 급성 중이염으로 보여요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "오른쪽 급성 중이염으로 보여요"
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "귀 통증과 부푼 고막이 중이염에 맞아요",
+      "effective_content": "귀 통증과 부푼 고막이 중이염에 맞아요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "귀 통증과 부푼 고막이 중이염에 맞아요"
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "목 경직과 처짐이 없어 뇌수막염 소견은 적어요",
+      "effective_content": "목 경직과 처짐이 없어 뇌수막염 소견은 적어요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "목 경직과 처짐이 없어 뇌수막염 소견은 적어요"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "고막 진찰로 중이염을 확인했어요",
+      "effective_content": "고막 진찰로 중이염을 확인했어요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "고막 진찰로 중이염을 확인했어요"
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "진통제로 돕고 항생제 여부를 함께 정해요",
+      "effective_content": "진통제로 돕고 항생제 여부를 함께 정해요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "진통제로 돕고 항생제 여부를 함께 정해요"
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "약 뒤 발진이나 숨참이 생기면 바로 진료받으세요",
+      "effective_content": "약 뒤 발진이나 숨참이 생기면 바로 진료받으세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "약 뒤 발진이나 숨참이 생기면 바로 진료받으세요"
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.",
+      "effective_content": "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "2~3일 뒤 귀 상태를 다시 볼게요.",
+      "effective_content": "2~3일 뒤 귀 상태를 다시 볼게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "2~3일 뒤 귀 상태를 다시 볼게요."
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "귀 뒤 붓기·처짐·목 뻣뻣함도 생기면 바로 오세요.",
+      "effective_content": "귀 뒤 붓기·처짐·목 뻣뻣함도 생기면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 41,
+        "turns_remaining": 9
+      },
+      "payload": {
+        "content": "귀 뒤 붓기·처짐·목 뻣뻣함도 생기면 바로 오세요."
+      }
+    },
+    {
+      "turn": 41,
+      "action": "DIAGNOSE",
+      "diagnosis": "급성 우측 중이염 (Acute right otitis media)"
+    }
+  ]
+}

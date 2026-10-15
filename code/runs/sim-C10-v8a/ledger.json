@@ -1,0 +1,615 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "안녕하세요, 걱정되셨죠. 다른 불편한 데는요?",
+    "reply": "손이 떨리는 것도 느껴진다.",
+    "phase": "first",
+    "qid": "open",
+    "label": "개방형",
+    "items": [
+      {
+        "id": "wl_tremor",
+        "label": "손떨림",
+        "answered": true,
+        "pol": "+",
+        "kw": "떨",
+        "mention": true
+      }
+    ],
+    "mentioned": [
+      "wl_tremor"
+    ]
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "식사량이나 입맛은 예전과 어떠세요?",
+    "reply": "식사량은 늘었고, 식욕이 좋아졌어요.",
+    "phase": "interview",
+    "qid": "wl_intake",
+    "label": "식사량·식욕",
+    "items": [
+      {
+        "id": "wl_intake",
+        "label": "식사량·식욕",
+        "answered": true,
+        "pol": "?",
+        "kw": "식사|입맛|식욕|먹|양"
+      }
+    ],
+    "unit": "wl_intake",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "더위를 타거나 땀이 많아졌나요?",
+    "reply": "요즘 들어 더위를 많이 타는 것 같아요.",
+    "phase": "interview",
+    "qid": "wl_heat",
+    "label": "더위 불내성·발한",
+    "items": [
+      {
+        "id": "wl_heat",
+        "label": "더위 불내성",
+        "answered": true,
+        "pol": "+",
+        "kw": "더위|덥"
+      },
+      {
+        "id": "wl_sweat",
+        "label": "발한",
+        "answered": false,
+        "pol": "?",
+        "kw": "땀|젖"
+      }
+    ],
+    "unit": "wl_heat",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "가슴이 두근거릴 때가 있나요?",
+    "reply": "가슴이 두근거리는 증상도 자주 있어요.",
+    "phase": "interview",
+    "qid": "wl_palp",
+    "label": "두근거림",
+    "items": [
+      {
+        "id": "ros_palp",
+        "label": "두근거림",
+        "answered": true,
+        "pol": "+",
+        "kw": "두근|뛰|빨리"
+      }
+    ],
+    "unit": "wl_palp",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "대변 횟수나 모양이 변했나요?",
+    "reply": "변이 묽은 편이고 하루에 이에서 삼회 정도예요.",
+    "phase": "interview",
+    "qid": "wl_bowel",
+    "label": "배변 횟수·변 양상",
+    "items": [
+      {
+        "id": "wl_bowel_freq",
+        "label": "배변 횟수",
+        "answered": true,
+        "pol": "+",
+        "kw": "번|회|자주|횟수"
+      },
+      {
+        "id": "wl_bowel_form",
+        "label": "변 양상",
+        "answered": true,
+        "pol": "+",
+        "kw": "묽|모양|설사|딱딱|변비|물"
+      }
+    ],
+    "unit": "wl_bowel",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "갈증이나 소변량 변화가 있나요?",
+    "reply": "소변량은 비슷하거나 약간 늘었고 갈증은 심하지 않아요.",
+    "phase": "interview",
+    "qid": "wl_thirst",
+    "label": "갈증·소변량",
+    "items": [
+      {
+        "id": "wl_thirst",
+        "label": "갈증",
+        "answered": true,
+        "pol": "-",
+        "kw": "갈증|목이\\s*마르|물"
+      },
+      {
+        "id": "wl_urine",
+        "label": "소변량",
+        "answered": true,
+        "pol": "+",
+        "kw": "소변"
+      }
+    ],
+    "unit": "wl_thirst",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "눈이 튀어나오거나 뻑뻑한가요?",
+    "reply": "눈이 약간 튀어나오고, 뻑뻑해요.",
+    "phase": "interview",
+    "qid": "wl_eye",
+    "label": "안구 돌출·안구 건조·자극",
+    "items": [
+      {
+        "id": "wl_eye_prop",
+        "label": "안구 돌출",
+        "answered": true,
+        "pol": "+",
+        "kw": "튀어|돌출|커"
+      },
+      {
+        "id": "wl_eye_dry",
+        "label": "안구 건조·자극",
+        "answered": true,
+        "pol": "+",
+        "kw": "뻑뻑|건조|따가|충혈"
+      }
+    ],
+    "unit": "wl_eye",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "목이 붓거나 혹이 만져지나요?",
+    "reply": "목 앞이 조금 두꺼워졌는데 혹은 없어요.",
+    "phase": "interview",
+    "qid": "wl_neck",
+    "label": "목 부음·목 혹",
+    "items": [
+      {
+        "id": "wl_neck_swell",
+        "label": "목 부음",
+        "answered": true,
+        "pol": "+",
+        "kw": "붓|부었|두꺼|커|부어"
+      },
+      {
+        "id": "wl_neck_mass",
+        "label": "목 혹",
+        "answered": true,
+        "pol": "-",
+        "kw": "혹|멍울"
+      }
+    ],
+    "unit": "wl_neck",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "생리 양이나 기간이 변했나요?",
+    "reply": "생리량이 많이 줄었고, 기간도 짧아졌어요.",
+    "phase": "interview",
+    "qid": "wl_cycle",
+    "label": "월경량·월경 기간·주기",
+    "items": [
+      {
+        "id": "wm_amount",
+        "label": "월경량",
+        "answered": true,
+        "pol": "+",
+        "kw": "양|량|많|적|줄|늘"
+      },
+      {
+        "id": "wm_duration",
+        "label": "월경 기간·주기",
+        "answered": true,
+        "pol": "+",
+        "kw": "기간|짧|길|주기|불규칙"
+      }
+    ],
+    "unit": "wl_cycle",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "복통이나 구토, 혈변은 없나요?",
+    "reply": "복통이나 구토는 없어요.",
+    "phase": "interview",
+    "qid": "wl_gi_red",
+    "label": "복통·구토·혈변",
+    "items": [
+      {
+        "id": "ros_abd",
+        "label": "복통",
+        "answered": true,
+        "pol": "-",
+        "kw": "복통|배"
+      },
+      {
+        "id": "ros_vomit",
+        "label": "구토",
+        "answered": true,
+        "pol": "-",
+        "kw": "토|구토"
+      },
+      {
+        "id": "ros_hematochezia",
+        "label": "혈변",
+        "answered": false,
+        "pol": "?",
+        "kw": "피|혈변|빨간"
+      }
+    ],
+    "unit": "wl_gi_red",
+    "ukind": "neg3",
+    "safety": false
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "가슴 통증이나 숨찬 증상 있으세요?",
+    "reply": "가슴이 두근거리고 숨이 차요.",
+    "phase": "interview",
+    "qid": "wl_cardio",
+    "label": "흉통·호흡곤란",
+    "items": [
+      {
+        "id": "ros_cp",
+        "label": "흉통",
+        "answered": true,
+        "pol": "+",
+        "kw": "가슴|흉통|통증"
+      },
+      {
+        "id": "ros_dysp",
+        "label": "호흡곤란",
+        "answered": true,
+        "pol": "+",
+        "kw": "숨"
+      }
+    ],
+    "unit": "wl_cardio",
+    "ukind": "pair",
+    "safety": true
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "갑상선 질환이나 천식·심장병 있으세요?",
+    "reply": "갑상선 질환은 없어요.",
+    "phase": "interview",
+    "qid": "wl_hx",
+    "label": "갑상샘 질환력·천식·심장병",
+    "items": [
+      {
+        "id": "pmh_thyroid",
+        "label": "갑상샘 질환력",
+        "answered": true,
+        "pol": "-",
+        "kw": "갑상"
+      },
+      {
+        "id": "pmh_asthma",
+        "label": "천식",
+        "answered": false,
+        "pol": "?",
+        "kw": "천식"
+      },
+      {
+        "id": "pmh_heart",
+        "label": "심장병",
+        "answered": false,
+        "pol": "?",
+        "kw": "심장"
+      }
+    ],
+    "unit": "wl_hx",
+    "ukind": "hx3",
+    "safety": true
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "천식이 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "wl_hx",
+    "label": "천식",
+    "items": [
+      {
+        "id": "pmh_asthma",
+        "label": "천식",
+        "answered": true,
+        "pol": "-",
+        "kw": "천식"
+      }
+    ],
+    "unit": "wl_hx",
+    "ukind": "single",
+    "safety": true
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "hx_meds",
+    "label": "복용약·영양제·보조제",
+    "items": [
+      {
+        "id": "pmh_meds",
+        "label": "복용약",
+        "answered": true,
+        "pol": "-",
+        "kw": "약|[가-힣](핀|린|롤|팜|뎀|틴|졸|드)\\b|먹고|먹어|드시"
+      },
+      {
+        "id": "pmh_supp",
+        "label": "영양제·보조제",
+        "answered": true,
+        "pol": "-",
+        "kw": "영양제|보조제|한약|비타민"
+      }
+    ],
+    "unit": "hx_meds",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "가족 중 갑상선병 있는 분 있나요?",
+    "reply": "네, 어머니가 갑상샘 기능저하증이 있어요.",
+    "phase": "interview",
+    "qid": "wl_fh",
+    "label": "갑상샘 가족력",
+    "items": [
+      {
+        "id": "fh_thyroid",
+        "label": "갑상샘 가족력",
+        "answered": true,
+        "pol": "+",
+        "kw": "갑상|어머니|아버지|엄마|아빠|언니|동생|이모|할머니|가족"
+      }
+    ],
+    "unit": "wl_fh",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "담배나 술은 하세요?",
+    "reply": "담배는 피우지 않고, 술은 한 달에 한두 번 마셔요.",
+    "phase": "interview",
+    "qid": "sh_smoke_alc",
+    "label": "흡연·음주",
+    "items": [
+      {
+        "id": "sh_smoke",
+        "label": "흡연",
+        "answered": true,
+        "pol": "-",
+        "kw": "담배|흡연|피우|피워|금연"
+      },
+      {
+        "id": "sh_alcohol",
+        "label": "음주",
+        "answered": true,
+        "pol": "+",
+        "kw": "술|음주|소주|맥주|마셔|마시"
+      }
+    ],
+    "unit": "sh_smoke_alc",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "혹시 임신 가능성은 있으세요?",
+    "reply": "임신 가능성은 없어요.",
+    "phase": "interview",
+    "qid": "wm_preg",
+    "label": "임신 가능성",
+    "items": [
+      {
+        "id": "wm_preg",
+        "label": "임신 가능성",
+        "answered": true,
+        "pol": "-",
+        "kw": "임신|관계|피임|생리"
+      }
+    ],
+    "unit": "wm_preg",
+    "ukind": "single",
+    "safety": true
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "혹시 걱정되는 병이 있으세요?",
+    "reply": "최근 살이 많이 빠지고 여러 증상이 함께 있어서 혹시 큰 병이 아닐까 걱정이 많아요.",
+    "phase": "interview",
+    "qid": "ice",
+    "label": "걱정(ICE)",
+    "items": [
+      {
+        "id": "ice_concern",
+        "label": "걱정(ICE)",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "ice",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(+/+)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "경부 림프절 촉진하겠습니다",
+    "reply": "촉지(-/-), 압통(-/-)",
+    "phase": "exam",
+    "qid": "cervical_ln",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "사지 근력 검사하겠습니다",
+    "reply": "상지 Gr.5/Gr.5, 하지 근위부 Gr.4/Gr.4",
+    "phase": "exam",
+    "qid": "power",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "많이 걱정되셨죠, 그레이브스병 가능성이 있어요.",
+    "reply": "네, 알겠습니다. 다음 검사는 어떤 게 필요할까요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "면역이 잘못돼서 호르몬이 많아 살이 빠지고 떨려요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "걱정하신 큰 병보다 갑상샘항진증 가능성이 높아요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "피검사·초음파 를 2주 뒤 결과 보고 와요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "열·목 아픔·숨참·심한 두근거림 땐 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "reply": "밤에도 땀이 많이 나서 잠옷이 젖을 때가 있다.",
+    "phase": "explain-teachback",
+    "qid": "",
+    "label": ""
+  }
+]

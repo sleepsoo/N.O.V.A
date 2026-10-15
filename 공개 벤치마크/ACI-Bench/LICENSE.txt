@@ -1,0 +1,12 @@
+ACI-BENCH corpus (aci-bench-2023)
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Source: https://doi.org/10.6084/m9.figshare.22494601.v1
+The folder aci-bench-corpus/ is the unmodified content of aci-bench-2023.zip.
+
+Attribution:
+Wen-wai Yim, Yujuan Fu, Asma Ben Abacha, Neal Snider, Thomas Lin, Meliha Yetisgen.
+"ACI-BENCH: a Novel Ambient Clinical Intelligence Dataset for Benchmarking
+Automatic Visit Note Generation." Scientific Data 10, 586 (2023).

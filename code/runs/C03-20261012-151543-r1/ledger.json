@@ -1,0 +1,443 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "키가 작아져서 많이 걱정되셨겠어요.",
+    "reply": "네, 큰 병일까 봐 걱정돼요.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "그 뒤로 점점 심해지고 있나요?",
+    "reply": "최근엔 키가 별로 안 큰 것 같아요.",
+    "phase": "hpi",
+    "qid": "course",
+    "label": "경과"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "이 문제로 병원에 가 본 적 있나요?",
+    "reply": "아니요, 이번이 처음이에요.",
+    "phase": "hpi",
+    "qid": "prior_care",
+    "label": "이전 진료"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "아빠 키는 얼마인가요?",
+    "reply": "아빠는 178센티미터예요.",
+    "phase": "bundle",
+    "qid": "gr_father",
+    "label": "부 키"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "엄마 키는 얼마인가요?",
+    "reply": "저는 165센티미터예요.",
+    "phase": "bundle",
+    "qid": "gr_mother",
+    "label": "모 키"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "부모님 중 사춘기가 늦은 분 있나요?",
+    "reply": "아빠가 사춘기가 늦었어요.",
+    "phase": "bundle",
+    "qid": "gr_late",
+    "label": "부모 사춘기 지연"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "예전에 키 잰 기록이 있나요?",
+    "reply": "네, 영유아 검진 수첩에 있어요.",
+    "phase": "bundle",
+    "qid": "gr_record",
+    "label": "성장 기록"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "음모나 고환 변화가 있었나요?",
+    "reply": "아니요, 아직 그런 변화는 없어요.",
+    "phase": "bundle",
+    "qid": "gr_puberty",
+    "label": "사춘기 징후"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "추위에 민감해졌나요?",
+    "reply": "아니요, 추위를 더 타진 않아요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "음식 먹고 복통이 느껴지나요?",
+    "reply": "아니요, 먹고 배 아파하진 않아요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "가족 중 갑상선 질환이 있나요?",
+    "reply": "아니요, 가족 중에는 없어요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "만삭에 낳았나요?",
+    "reply": "네, 만삭에 태어났어요.",
+    "phase": "history",
+    "qid": "birth_term",
+    "label": "출생력-재태"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "자연분만이었나요?",
+    "reply": "네, 자연분만으로 낳았어요.",
+    "phase": "history",
+    "qid": "birth_mode",
+    "label": "출생력-분만"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "태어날 때 몸무게는 얼마였나요?",
+    "reply": "3.2킬로그램이었어요.",
+    "phase": "history",
+    "qid": "birth_wt",
+    "label": "출생체중"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "신생아 때 황달 같은 문제 있었나요?",
+    "reply": "아니요, 황달은 없었어요.",
+    "phase": "history",
+    "qid": "neonatal",
+    "label": "신생아기"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "말이나 걷기 발달은 또래와 비슷한가요?",
+    "reply": "네, 말도 걷기도 또래와 비슷해요.",
+    "phase": "history",
+    "qid": "develop",
+    "label": "발달"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "예방접종은 제때 맞았나요?",
+    "reply": "네, 모두 제때 맞았어요.",
+    "phase": "history",
+    "qid": "vaccine",
+    "label": "예방접종"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "앓고 있는 병이 있나요?",
+    "reply": "아니요, 앓고 있는 병은 없어요.",
+    "phase": "history",
+    "qid": "chronic",
+    "label": "만성질환"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "입원하거나 크게 아픈 적 있나요?",
+    "reply": "아니요, 그런 적 없어요.",
+    "phase": "history",
+    "qid": "admission",
+    "label": "입원력"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "지금 먹는 약이 있나요?",
+    "reply": "아니요, 먹는 약은 없어요.",
+    "phase": "history",
+    "qid": "meds",
+    "label": "Medicine history"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "약 알레르기 있나요?",
+    "reply": "아니요, 약 알레르기는 없어요.",
+    "phase": "history",
+    "qid": "allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "가족 중 비슷한 문제 있는 분 있나요?",
+    "reply": "아빠도 어릴 때 키가 작았대요.",
+    "phase": "history",
+    "qid": "fh_similar",
+    "label": "FH 유사 질환"
+  },
+  {
+    "turn": 23,
+    "kind": "SAY",
+    "text": "집이나 어린이집 생활은 어떤가요?",
+    "reply": "집에서도 어린이집에서도 잘 지내요.",
+    "phase": "history",
+    "qid": "home",
+    "label": "가정·사회"
+  },
+  {
+    "turn": 24,
+    "kind": "SAY",
+    "text": "아이가 열이 난 적 있나요?",
+    "reply": "감기 걸렸을 때 열난 적은 있어요.",
+    "phase": "ros",
+    "qid": "ros_fever",
+    "label": "Fever"
+  },
+  {
+    "turn": 25,
+    "kind": "SAY",
+    "text": "밥은 잘 먹나요?",
+    "reply": "네, 식욕 좋고 잘 먹어요.",
+    "phase": "ros",
+    "qid": "ros_appetite",
+    "label": "식사·영양"
+  },
+  {
+    "turn": 26,
+    "kind": "SAY",
+    "text": "우유는 하루에 얼마나 마시나요?",
+    "reply": "하루 한두 잔 마셔요.",
+    "phase": "ros",
+    "qid": "ros_milk",
+    "label": "우유 섭취"
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "밤에 잠은 잘 자나요?",
+    "reply": "네, 밤에 깨지 않고 잘 자요.",
+    "phase": "ros",
+    "qid": "ros_sleep",
+    "label": "수면"
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "조부모님의키가어느정도이신가요?",
+    "reply": "할아버지 170, 할머니 158쯤요.",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형"
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "피부가건조하거나가려움이있나요?",
+    "reply": "아니요, 건조하거나 가렵진 않아요.",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형"
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "어머님이 가장 걱정되는 게 뭐예요?",
+    "reply": "혹시 큰 병일까 봐 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "보호자 걱정(ICE)"
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "오늘 가장 궁금하신 게 뭐예요?",
+    "reply": "앞으로 키가 더 클 수 있을까요?",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "보호자 기대(ICE)"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 또래보다 작은 키, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 34,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 35,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 36,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "phase": "exam",
+    "qid": "anthro",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 37,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 38,
+    "kind": "EXAM",
+    "text": "피부·모발 건조 확인하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_SPECIFIC",
+    "qid": "skin_dry",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "EXAM",
+    "text": "성장도표 백분위수 확인하겠습니다",
+    "reply": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+    "phase": "exam",
+    "qid": "growth_chart",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 40,
+    "kind": "EXAM",
+    "text": "성장 속도·중간부모키 산출하겠습니다",
+    "reply": "성장속도 5cm/년, 중간부모키 178cm",
+    "phase": "exam",
+    "qid": "growth_vel",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "가족성 성장장애가 의심돼요.",
+    "reply": "그럼 앞으로 더 클 수 있나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "유전적 성장인자 감소 때문으로 보여요.",
+    "reply": "그럼 치료가 필요한가요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "성장 호르몬 검사로 확인할게요.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 44,
+    "kind": "SAY",
+    "text": "영양·운동 관리로 치료할 수 있어요.",
+    "reply": "네, 잘 챙겨볼게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 45,
+    "kind": "SAY",
+    "text": "발열·호흡 곤란이 있으면 바로 오세요.",
+    "reply": "네, 그러면 바로 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 46,
+    "kind": "SAY",
+    "text": "고단백·비타민 충분히 섭취하고, 꾸준히 운동하세요.",
+    "reply": "네, 식사와 운동 잘 챙길게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 47,
+    "kind": "SAY",
+    "text": "더 궁금한 점 있으세요?",
+    "reply": "추가 검사도 필요한가요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 48,
+    "kind": "SAY",
+    "text": "추가 검사는 필요 없을 것 같아요.",
+    "reply": "네, 알겠어요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  }
+]

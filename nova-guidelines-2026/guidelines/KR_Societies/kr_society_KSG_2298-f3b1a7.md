@@ -1,0 +1,435 @@
+---
+title: "Guideline for Minimizing Radiation Exposure of Interventionalists during Fluoroscopy-guided Interventional Procedures Korean J Gastroenterol 2024; 84(6): 251-264"
+organization: "대한소화기학회"
+year: "2024"
+language: ko
+source_url: "https://www.gastrokorea.org/bbs2/index.php?code=guide2&number=2298&mode=view"
+license: "CC BY-NC"
+---
+##### REVIEW ARTICLE
+
+# 투시장비를 이용한 중재 시술 중 의료 방사선 중재 시술자의 방사선 노출 최소화를 위한 권고안
+
+신일상 , 이윤나 , 이준규 , 김주성 , 김승범 , 금지영 , 오창훈 , 이강원 , 정주원 , 권려민 , 김남희 , 이상수 , 손병관 , 최미영
+
+순천향대학교 의과대학 순천향대학교부천병원 소화기내과 , 동국대학교 의과대학 동국대학교일산병원 소화기내과 , 영남대학교 의과대학 영남대학교병원 소화기내과 , 이화여자대학교 의과대학 이화여자대학교목동병원 소화기내과 , 이화여자대학교 의과대학 이화여자대학교목동병원 영상의학과 , 고려대학교 의과대학 고려대학교안암병원 소화기내과 , 을지대학교 의과대학 노원을지대학교병원 소화기내과 , 한림대학교 의과대학 한림대학교성심병원 영상의학과 , 성균관대학교 의과대학 강북삼성병원 소화기내과 , 울산대학교 의과대학 서울아산병원 소화기내과 , 을지대학교 의과대학 의정부을지대학교병원 소화기내과 , 한국보건의료연구원 보건의료연구본부 임상근거연구팀
+
+### Guideline for Minimizing Radiation Exposure of Interventionalists during Fluoroscopy-guided Interventional Procedures
+
+Il Sang Shin , Yun Nah Lee , Jun Kyu Lee^2 , Joo Seong Kim^2 , Sung Bum Kim^3 , Jiyoung Keum , Chang Hoon Oh , Kang Won Lee , Joowon Chung , Lyo Min Kwon , Nam Hee Kim , Sang Soo Lee , Byoung Kwan Son and Miyoung Choi
+
+1Digestive Disease Center and Research Institute, Department of Internal Medicine, SoonChunHyang University Bucheon Hospital, SoonChunHyang University School of Medicine, Bucheon; Division of Gastroenterology, Department of Internal Medicine, Dongguk University Ilsan Hospital, Dongguk University School of Medicine, Goyang; Division of Gastroenterology, Department of Internal Medicine, Yeungnam University Medical Center, Yeungnam University College of Medicine, Daegu; Division of Gastroenterology, Department of Internal Medicine, Ewha Womans University Mokdong Hospital, Ewha Womans University College of Medicine, Seoul; Department of Radiology, Ewha Womans University Mokdong Hospital, Ewha Womans University School of Medicine, Seoul; Division of Gastroenterology, Department of Internal Medicine, Korea University Anam Hospital, Korea University School of Medicine, Seoul; Division of Gastroenterology, Department of Internal Medicine, Nowon Eulji Medical Center, Eulji University School of Medicine, Seoul; Department of Radiology, Hallym University Sacred Heart Hospital, Hallym University College of Medicine, Anyang; Division of Gastroenterology, Department of Internal Medicine, Kangbuk Samsung Hospital, Sungkyunkwan University School of Medicine, Seoul; Division of Gastroenterology, Department of Internal Medicine, Asan Medical Center, Ulsan University School of Medicine, Seoul; Division of Gastroenterology, Department of Internal Medicine, Uijeongbu Eulji Medical Center, Eulji University School of Medicine, Uijeongbu; Division of Healthcare Research, Clinical Evidence Research, National Evidence-Based Healthcare Collaborating Agency, Seoul, Korea
+
+As fluoroscopy-guided interventional procedures gain popularity, the associated health threats from radiation exposure to interventionalists during these procedures are increasing. Therefore, an understanding of the potential risks of radiation and careful consideration on minimizing exposure to radiation during the procedures are of paramount importance. The Korean Pancreatobiliary Association has developed a clinical practice guideline to minimize radiation exposure during fluoroscopy-guided interventional procedures. This guideline provides recommendations to deal with the risk of radiation exposure to interventionalists who perform fluoroscopy-guided procedures, and emphasizes the importance of proper and practical approaches to avoid unnecessary radiation exposure. (Korean J Gastroenterol 2024;84:251-264)
+
+Key Words: Radiation exposure; Radiation protection; Fluoroscopy; Endoscopic retrograde cholangiopancreatography
+
+Received July 11, 2024. Revised August 3, 2024. Accepted August 3, 2024.
+
+> CC This is an open access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (http://creativecommons.org/licenses/ by-nc/4.0) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright © 2024. Korean Society of Gastroenterology.
+
+교신저자: 이윤나, 14584, 부천시 원미구 조마루로 170, 순천향대학교 의과대학 내과학교실 순천향대학교부천병원 소화기내과 Correspondence to: Yun Nah Lee, Digestive Disease Center and Research Institute, Department of Internal Medicine, SoonChunHyang University School of Medicine, 170 Jomaru-ro, Wonmi-gu, Bucheon 14584, Korea. Tel: +82-32-621-5094, Fax: +82-32-621-5080, E-mail: yunnah@schmc.ac.kr, ORCID: https://orcid.org/0000-0001-5588-784X Financial support: None. Conflict of interest: None.
+
+## 서 론
+
+투시 장비를 이용한 다양한 시술이 대중화되면서 방사선으 로 인한 의료방사선 중재 시술자 및 보조자의 건강 위협이 증대되고 있다. 현재까지 다양한 방사선 중재 시술들에 대 한 기술적 성공률, 임상적 성공률, 시술과 연관된 합병증 등의 평가는 많이 이루어져 왔으나 아직까지 우리나라에서 의료 방 사선 중재 시술자의 방사선 노출에 대한 평가는 충분히 이루 어지지 못하였으며, 이는 의료방사선 중재 시술자들의 방사선 노출에 대한 충분한 인식이 부족함을 시사한다.
+
+이에 대한췌장담도학회는 2023년 6월 대한췌장담도학회 이 사장(이진), 회장(이종균) 및 임원진을 중심으로 투시 장비를 이용한 중재 시술 중 의료 방사선 중재 시술자의 방사선 노출 최소화를 위한 권고안 개발 계획을 수립하였다. 이후 대한췌장 담도학회 학술위원회에서 이윤나 위원장을 중심으로 권고안 실무위원회를 구성하였다. 실무위원회는 권고안 개발에 있어서 실질적인 역할을 하는 위원회로서 주요 질문을 선택하고 문헌을 검색하여 원고를 도출하였다. 감수위원회 감수위원은 동국의대 이준규, 을지의대 손병관, 울산의대 이상수 3명으로 구성하였 다. 실무위원회에서 작성된 권고안을 감수위원들에게 의뢰하여 편집과 교정을 받았다. 진료지침 개발 방법론을 확립하고자 근거중심의학 분야의 전문가인 한국보건의료연구원 임상근거 연구팀 최미영을 초빙하여 2023년 7월 27일 1차 임상진료지침 개발위원회를 실시하였다. 이후 진료지침 개발 과정 동안 수차 례 개발 위원회가 열렸다.
+
+현재까지 연구된 임상 자료들과 해외의 전문가 단체 및 국제 학회의 권고안들을 최대한 검토하고 고찰하여 시술 중 방사선 노출 최소화를 위해 실제 임상에서 활용될 수 있는 핵심 질문을 중심으로 수정 델파이 방법을 사용하여 본 권고안을 도출하였다. 비교연구가 부족하거나 논란이 큰 부분은 본 권고안의 핵심 질문에서 제외하였고, 일부 근거가 부족한 경우라도 임상적으로 의의가 있고 전문가들의 의견이 일치하는 부분에서는 합의과정을
+
+거쳐 권고안에 포함하였다. 권고안에 포함되어야 하는 핵심적인 임상질문들은 Patient, Intervention, Comparison, Outcome (PICO) 원칙하에 설계되었다. 각 임상질문들에 대하여 권고안의 근거수준과 권고의 등급화를 시행하였다(Table 1). 각 권고안별 근거 자료들과 함께 동의 정도를 묻는 5-Likert scale의 설문지를 이메일로 회람하여 완전히 동의(completely agree) 또는 대부분 동의(mostly agree) 한 비율이 2/3 이상인 경우 권고안으로 채택하였다. 국내 전문가 33명이 합의 과정에 참여하였으며, 1차 합의 답변에서 채택되지 못한 답변들에 대해서는 수정을 거쳐 2차 합의를 하는 것으로 계획하였으나 1차 합의에서 모든 권고안이 채택 기준에 적합하였다.
+
+본 권고안의 개발은 외부 재정 지원 없이 이루어졌으며, 개 발과정에서 참여한 모든 구성원은 이해상충의 문제가 없다. 본 권고안은 투시 장비를 이용한 중재 시술을 시행하는 모든 의료 방사선 중재 시술자를 위해 새롭게 개발되었으며 방사선 차폐, 방사선 투시기와 방사선량의 관리, 방사선 노출선량 한 도 및 감시, 임신과 출산 총 4가지 분야로 구분하여 과학적 근거를 기반으로 광범위한 주제를 다루어 실제 임상 진료에 도움이 될 수 있도록 구성하였다. 본 권고안을 통해 의료 방사 선 중재 시술자의 방사선 노출을 최소화하기 위한 관심과 노 력이 이루어져 보다 안전하고 효과적인 중재 시술이 이루어질 수 있기를 기대한다.
+
+## 본 론
+
+1. 방사선 차폐(shielding)
+
+ - 1) 투시 장비를 이용한 중재 시술 중 의료 방사선 중재 시술 자는 방사선방호복, 갑상선보호대를 반드시 착용해야 하 는가?(근거수준: C, 권고등급: I)
+
+Table 1. Definitions of Categories for Levels of Evidence and Grades of Recommendations
+
+|Levels of|evidence|
+|---|---|
+|A|Meta-analysis or systematic reviews of RCT or RCT with a low risk of bias|
+|B|High quality systematic reviews of cohort studies, high-quality or well-conducted cohort studies|
+|C|Non-analytic studies (e.g., instituitional case series)|
+|D|Expert opinions|
+|Grades o|f recommendations|
+|I|Strong evidence for efficacy with a substantial clinical benefit, strongly recommended|
+|II|Strong or moderate evidence for efficacy but with a limited clinical benefit, generally recommended|
+|III|Insufficient evidence for efficacy or benefit that do not outweigh the risk or the disadvantages (adverse events, costs, etc.), optional|
+|IV|Moderate evidence against efficacy or for adverse outcome, generally not recommended|
+
+RCT, randomized controlled trial.
+
+권고안 1. 투시 장비를 이용한 중재 시술 중 의료 방사선 중재 시술자는 0.25 mm 이상 납 등가 두께의 전･후면 가림 방사선방호복, 0.25 mm 이상 납 등가 두께의 갑상선보호대를 착용해야 한다.
+
+의료 방사선 중재 시술자를 방사선 노출로부터 보호하는 가장 효과적인 방법 중 하나는 개인 보호 장비를 사용하는 것으로 0.25 mm 이상 납 등가 두께의 전･후면을 모두 가리 는 방사선방호복, 갑상선보호대를 반드시 착용해야 하며, 0.5 mm 이상 납 등가 두께의 보안경을 사용하는 것이 권장된다 (Fig. 1). 방사선방호복은 전면 보호용, 전･후면 보호용, 일 체형, 투피스형의 다양한 모양으로 제공된다. 중재 시술자는 방사선 노출로부터의 보호를 위해 가벼우면서 무릎까지 닿는 형태를 선택하되, 전면과 후면을 모두 가리는 전･후면 보호용 방호복을 입어야 한다. 투피스형 또는 허리 벨트가 있는 일체 형 방호복은 척추와 골반 전체에 하중을 보다 균등하게 분산 시켜 근골격계 부작용을 줄일 수 있으며, 일체형과 투피스형 중에는 투피스형 방호복이 무게를 더 고르게 분배하고 일관된 보호를 제공하여 효과적일 수 있다. 방호복의 크기는 체형 에 맞게 착용해야 하며, 특히 팔과 방호복 사이의 틈새가 큰 경우 유방조직의 방사선 노출 증가로 이어져 여성 시술자의 유방암 발생 위험을 높일 수 있어 주의가 필요하다.
+
+납으로만 구성된 방호복은 중량이 무거워 시술자의 피로도
+
+Fig. 1. Proper wearing of radiation protection equipments including protective wrap-around apron, collar, and glasses.
+
+를 높이고 근골격계 문제를 유발하는 경우가 많아, 최근 사용 가능한 대부분의 방호복은 기존 무게의 30%로 가벼우면서 납 과 동일한 보호 기능을 제공하는 경량 납 합성물 또는 납이 없는 재료(바륨, 주석, 안티모니 등)로 대체되었다. 방호복의 균열을 방지하기 위해서는 방호복을 조심스럽게 취급하고 고 정형 차폐 보호장치 뒤 또는 검사실 외부에 수직으로 걸어 놓아야 하며 접어서 던져 놓는 행위는 피해야 한다. 또한 방호 복 내부 재료의 미세한 균열이나 보이지 않는 구멍을 확인하 기 위해 매년 투시 장비를 이용하여 확인해야 한다.
+
+방호복은 대부분의 전리 방사선에 대한 노출을 효과적으로 감소시키지만 방호복으로 가려지지 않는 신체 부위는 별도의 방호가 필요하다. 갑상선보호대를 착용하는 경우 갑상선에 노 출되는 방사선량의 46% 정도를 감소시키기에 시술자는 0.25 mm 이상 납 등가 두께의 갑상선보호대를 반드시 사용해야 한다.
+
+- 2) 투시 장비를 이용한 중재 시술 중 의료 방사선 중재 시술 자는 보안경을 반드시 착용해야 하는가?(근거수준: B, 권고등급: II)
+
+권고안 2. 투시 장비를 이용한 중재 시술 중 의료 방사선 중재 시술자는 0.5 mm 이상 납 등가 두께의 측면 패널이 있는 보안경을 착용해야 한다.
+
+눈의 수정체는 가장 방사선에 민감한 조직 중 하나로 백내 장이 발병할 수 있어 주의를 요한다. 한 연구에서 일반 인구와 의료 방사선 중재 시술자의 백내장 발생률을 비교하였을 때, 일반인 대비 백내장 발생 위험이 3배 증가한 것으로 보고되었 다(38% vs. 12%; p=0.005). 따라서 방사선 노출을 감소시키 기 위해 산란 방사선을 차단하기 위한 측면 패널이 있는 0.5 mm 납 등가 두께 보안경의 착용이 권고된다. 특히 X선관이 치료테이블의 위에 위치하는 투시 장비(over-couch system) 를 사용하는 경우 보안경의 착용이 반드시 권고되며, 차폐안 경이 무겁고 불편하여 착용이 어려운 경우 차폐 안면마스크 또는 이동식 차폐 보호장치를 이용하여 차폐하는 방법을 고려 해야 한다.
+
+방사선 보호 장갑은 시술을 어렵게 하며 10–30%의 제한된 방사선 차폐 효과를 보일 뿐만 아니라 장갑으로 인해 산란된 X선이 발생되어 시술 중 권장되지 않는다. 손의 방사선 노 출을 감소시키기 위한 가장 좋은 방법은 방사선 보호 장갑을 착용하는 것보다 X선에 손을 대지 않는 것이다. 같은 이유로 팔과 다리에 대한 차폐 장비의 착용은 권고되지 않으며, 다른 차폐 보호장치들을 적절히 활용하여 방사선의 노출을 최소화 하도록 한다.
+
+- 3) 산란된 방사선(scattered radiation)으로부터 의료 방사선 중재 시술자를 보호하기 위해 방사선 차폐 장치는 반드시 필요한가?(근거수준: B, 권고등급: II)
+
+권고안 3. 산란된 방사선의 차폐를 위하여 방사선 차폐 장치(천 장형･이동형 차폐 장치, 하부 차폐 장치 등)를 사용한 차폐가 권고된다.
+
+환자에게서 반사된 후 방출되는 산란된 방사선은 환자의 측면에서 가장 높은 에너지로 감지되므로 의료 방사선 중재 시술자가 받는 가장 중요한 방사선 노출원이다. 산란된 방사 선을 효과적으로 억제하여 방사선 노출량을 최소화하기 위한
+
+방호 장비로는 천장형 및 이동식 차폐 장치, 하부 차폐 장치 등이 있다(Fig. 2). 이전의 전향적 연구에서 2 mm 납 등 가 두께의 이동식 차폐 장치를 설치하였을 때, 차폐 장치의 안과 밖에서 측정되는 방사선량의 차이가 통계적으로 유의한 결과를 얻어 이동식 차폐 장치의 추가 사용이 방사선 노출을 의미있게 줄일 수 있음을 확인하였다. 다른 연구에서도 0.5 mm 납 등가 두께의 천장형 차폐 장치를 설치하였을 때, 그렇 지 않았을 때와 비교하여 시술자의 방사선 노출량이 현저하게 감소됨을 보여주었다.
+
+이동형 C-arm 장치를 포함한 X선관이 치료테이블 위에 위 치하는 투시 장비(over-couch system)를 사용하는 경우, X선 관이 치료테이블의 아래에 위치하는 투시 장비(under-couch system)에 비하여 시술자에게 더 많은 방사선 노출을 유발할 수 있어 적극적인 차폐가 특히 권고된다. 한 Phantom 연구에 의하면, over-couch system 투시 장비에 X선 광원과 시술자 사이에 차폐 장치를 설치하였을 때, 방사선 노출의 90% 이상을 줄일 수 있었다. 이와 비슷하게 다른 전향적 이 중 눈가림 무작위 배정 연구에서도 중재 시술 동안 X선 광원 과 시술자 사이 하부 차폐 장치를 설치하였을 때 시술자에 대 한 방사선 노출량의 유의한 감소를 보고하였다.
+
+이들 연구들을 종합해 볼 때, 개인 방호 장비와 더불어 산 란 방사선을 차단하기 위한 방사선 차폐 장치(천장형･이동형 차폐 장치, 하부 차폐 장치 등)의 사용이 권고되며, X선 광원 과 의료 방사선 중재 시술자 사이에 0.5 mm 이상 두께의 차 폐 장치를 over-couch system에서는 치료테이블 위에, under-couch system에서는 치료테이블 아래에 배치하는 것이 적절하다.
+
+Fig. 2. Various types of protection shielding devices ([A] a free-standing shield, [B] a shield hanging from ceiling, and [C] a shield suspended from patient table).
+
+Fig. 3. Different stationary fluoroscopy systems with X-ray tubes located under ([A] under-couch system) or above ([B] over-couch system) the patient table (adapted from Oh and Son).
+
+> Shin IS et al. Guideline for Minimizing Radiation Exposure for Interventionalist **255**
+
+###### 2. 방사선 투시기와 방사선량의 관리
+
+- 1) X선관이 치료테이블 아래에 위치하는 투시 장비 (under-couch system)는 X선관이 치료테이블 위에 위 치하는 투시 장비(over-couch system)에 비해 의료 방사선 중재 시술자의 방사선 노출 감소에 유용한가?(근 거수준: B, 권고등급: II)
+
+권고안 4. X선관이 치료테이블 아래에 위치하는 투시 장비 (under-couch system)는 X선관이 치료테이블 위에 위치하 는 투시 장비(over-couch system)에 비해 시술자에 노출되는 방사선량을 감소시킬 수 있다.
+
+방사선 투시하 중재 시술에 일반적으로 사용되는 투시 장비는 치료테이블 아래에 X선관이 위치하고 이미지 수용체(image receptor)가 치료테이블 위에 있는 시스템(under-couch system)과 치료테이블 위에 X선관이 위치하고 이미지 수용체가 테이블 아래에 있는 시스템(over-couch system)으로 나뉜다 (Fig. 3).
+
+Over-couch system에서의 X선의 발생은 환자 위에서 시 작하여 아래로 전달되는 반면, under-couch system에서는 X선이 환자 아래에서 발생하여 위로 전달되게 된다. Over-couch system에서는 위에서 내려오는 방사선이 환자 를 거쳐 시술자에게 산란되기 때문에 시술자의 신체 부위에 전달되는 방사선량이 under-couch system에 비해 5–6배가 량 높다. 실제 시술자의 방사선 유발 백내장 발병을 보고 한 이전 문헌에서도 추가적인 차폐 장치 없이 over-couch system을 사용하였던 것으로 확인되었다. 그러므로, X선관 이 치료테이블 아래에 위치하는 under-couch system을 사 용하는 것이 의료 방사선 중재 시술자의 방사선 노출을 감소 시키기 위해 권고된다. 이동식 C-arm 장비의 경우 일반적으 로 under-couch system으로 분류되나, X선관과 시술자 사 이에 차폐 장치가 없어 고정형 under-couch system 투시 장 비에 비해 방사선 노출량이 많아 사용에 주의가 필요하다.
+
+- 2) 연속투시방식(continuous fluoroscopy)에 비하여 펄스 투시방식(pulsed fluoroscopy)은 의료 방사선 중재 시 술자의 방사선 노출량을 감소시킬 수 있는가?(근거수준: C, 권고등급: II)
+
+권고안 5. 방사선 노출량 감소를 위하여 연속투시방식 대신 펄스투시방식을 사용하여 검사를 시행하는 것이 권고된다.
+
+켜고 꺼짐을 반복하며 관찰하는 펄스투시방식의 경우 지속
+
+적으로 투시하며 관찰하는 연속투시방식에 비해 방사선 노출 을 최대 70–80% 감소시킬 수 있는 것으로 알려져 있으며, 영상의 품질에도 연속투시방식과 비교하여 큰 차이를 미치지 않는 것으로 나타났다. 그러므로 시술자의 방사선 노출량을 줄이기 위하여 속도가 낮은 펄스투시방식을 가능한 짧은 기간 사용하고 고준위의 연속투시방식은 가급적 제한해야 한다.
+
+- 3) 의료 방사선 중재 시술자가 투시 장비와 최대한 거리를 두는 것은 시술 중 방사선 노출을 최소화하기 위하여 유 용한가?(근거수준: A, 권고등급: I)
+
+권고안 6. 의료 방사선 중재 시술자는 시술 중 방사선에 대한 노출을 최소화하기 위하여 가능한 투시 장비의 X선관으로부 터 최대한 거리를 두어야 한다.
+
+방사선량은 X선 광원으로부터 거리의 제곱에 반비례하는 것으로 알려져 있으며, 투시 장비로부터 발생하는 X선은 환자 의 머리 근처에서 가장 높은 선량을 보인 후 산란되어 의료 방사선 중재 시술자에게 노출된다. 시술 보조자는 시술자 에 비해 X선관으로부터 멀리 떨어져 있기 때문에 방사선 노 출량이 더 낮으며, 이론적으로 거리가 3배 멀어질 경우 방사 선 노출은 9배 감소하게 된다. 따라서 의료 방사선 중재 시 술자의 방사선 노출을 최소화하기 위해 가장 우선적으로 요구 되는 것은 투시 장비의 X선관 및 산란 방사선의 원인이 되는 환자로부터 최대한 멀리 위치하는 것이다. 방사선 방호의 3대 원칙은 (1) 거리를 멀리, (2) 시간을 짧게, (3) 효과적인 차폐를 하는 것으로, 시술 중 방사선 노출을 감소시키기 위한 3대 원 칙 중 제일 우선되는 원칙은 거리를 멀리 두는 것임을 기억해 야 한다. 특히 해부학적 차이를 확인하기 위해 비스듬한 각 도로 투시를 시행하는 경우 신체를 투과하는 방사선 경로의 길이를 증가시켜 방사선 노출량이 증가할 수 있다. 60도의 각 도는 30도의 각도로 관찰하는 것에 비해 방사선 노출량이 3배 증가하는 것으로 보고되었다. 그러므로 비스듬한 각도로 투시하는 경우 눈, 갑상선, 유방, 생식선과 같은 민감한 신체 기관들은 투시 장비로부터 가능한 거리를 둘 수 있도록 해야 한다.
+
+- 4) 시술 중 방사선에 대한 노출을 최소화하기 위하여 투시에 노출되는 시간을 줄이는 것은 유용한가?(근거수준: B, 권 고등급: I)
+
+권고안 7. 시술 중 의료 방사선 중재 시술자의 방사선에 대한 노출을 최소화하기 위하여 가능한 투시 시간(fluoroscopy time)을 최소화해야 한다.
+
+방사선 노출량에 가장 영향을 끼치는 요소 중 하나인 투시 시간은 시술 중 X선이 사용되는 시간으로, 측정이 용이하며 방사선 노출량을 간접적으로 반영하는 것으로 알려져 있다. 투시 시간만으로 총 방사선 노출량을 측정하는 것은 정확도가 떨어질 수 있으나, 일반적인 경우 투시 시간이 방사선량과 어 느 정도 비례하기 때문에 투시 시간을 줄이는 것은 시술 중 방사선 노출을 줄이는 가장 쉽고 효과적인 수단이 될 수 있 다. 방사선 투시 시간은 중재 시술자의 경험과 역의 상관관계 를 보여, 10년 이상의 경험을 가진 시술자는 더 짧은 경험을 가진 시술자에 비해 방사선 투시 시간을 20% 감소시킬 수 있는 것으로 보고되었다. 따라서, 방사선에 대한 노출이 클 것으로 생각되는 시술의 경우에는 경험이 많은 시술자가 시술 하는 것이 방사선 노출을 줄이는 데 유리할 수 있다.
+
+- 5) 마지막 영상정지 기능(last-image-hold method)의 사 용이 의료방사선 중재 시술자의 방사선 노출 선량을 감소 시킬 수 있는가?(근거수준: B, 권고등급: II)
+
+권고안 8. 순간 촬영 영상 대신 마지막 영상정지 기능(last-image-hold method)을 적극적으로 사용하는 것은 방사선 노출 을 감소시키는 데 유용하다.
+
+마지막 영상정지 기능은 투시 발판(foot-pedal)을 떼는 순 간의 사진을 화면에 나타내고 이를 저장하는 방법으로, 연속 적으로 투시를 하지 않아도 가장 마지막 투시 사진을 화면에 유지시켜 투시 시간을 줄일 뿐만 아니라 순간 촬영 영상의 빈도를 낮추어 방사선 노출 선량을 감소시킬 수 있다. 투시 장비를 이용한 중재 시술 동안 순간 촬영 영상은 전체 방사선 량의 10-30%를 차지하는 것으로 보고되었으며, 한 번의 순간
+
+촬영 영상이 발생시키는 방사선량은 2-4초의 투시 동안 발생 하는 양과 동일한 것으로 보고되었다. 그러므로, 순간 촬영 영상 대신 마지막 영상정지 기능을 적극적으로 사용하는 경우 방사선 노출량을 효과적으로 낮출 수 있다(Fig. 4).
+
+- 6) 시술 중 영상확대(image enlargement)의 최소화는 의 료 방사선 중재 시술자의 방사선 노출량 감소에 도움이 되는가?(근거수준: C, 권고등급: II)
+
+권고안 9. 시술 중 영상확대(image enlargement)를 최소화하 는 것은 의료 방사선 중재 시술자의 방사선 노출량을 감소시키 는데 유용하다.
+
+영상확대는 임상적 관심영역에 대한 공간해상도(spatial resolution)와 영상대조(image contrast)를 향상시켜 특정 부 분에 대한 시각화를 개선하는 방법이다. 대부분의 투시 장비 는 약 3–5단계의 영상확대 기능을 사용할 수 있는데, 영상확 대 시 투시면적 감소로 인해 영상증배관(image intensifier) 에 도달하는 방사선량이 감소하여 밝기와 해상도가 떨어진 다. 이러한 해상도 감소를 보상하기 위해 투시 장비에 내재 된 자동노출제어장치(automatic brightness control)가 전류 량을 자체적으로 증가시켜 밝기와 해상도를 보정하기에 결론 적으로 노출되는 방사선량이 증가하게 된다.
+
+이전의 연구에서 영상증배관의 투시 시야 크기에 따라 영 상증배관의 상부에서 방사선량을 측정한 결과 영상확대를 할 수록 방사선 노출량이 많았다. 팬텀을 통한 연구에서도 영상 확대 비율이 증가함에 따라 방사선 노출이 비례하여 증가함을 보고하였다. 따라서, 시술 중 영상확대는 병변의 정확한 시 각화에 도움이 될 수 있으나 방사선 노출은 증가되므로 방사
+
+Fig. 4. (A) Balloon-occluded cholangiogram obtained using the last-image-hold method. (B) Taking a radiograph does not provide any additional information. (C) Taking a radiograph with image enlargement gives no additional information with the most radiation exposure compared to last-image-hold method.
+
+> Shin IS et al. Guideline for Minimizing Radiation Exposure for Interventionalist **257**
+
+선량 감소를 위해 평소에는 배율을 가능한 낮게 설정하고, 영 상확대 기능은 임상적 필요시 제한적으로만 사용하여야 한다.
+
+- 7) 시준(collimation)의 사용은 의료 방사선 중재 시술자의 방사선 노출량을 감소시킬 수 있는가?(근거수준: B, 권고 등급: II)
+
+로 방사선 노출량이 증가할 수 있으나, 시준을 사용하지 않을 때와 비교하였을 때 전체 방사선량은 감소한다. 따라서, 의 료 방사선 중재 시술자는 시술 중 확인이 필요한 영역만을 포함하도록 X선 광선을 적절히 시준하여 영상 품질은 향상시 키고 전리 방사선을 포함한 전체 방사선 노출량을 줄일 수 있도록 노력해야 한다.
+
+권고안 10. X선관을 시준(collimation) 하여 시술하는 것은 의료 방사선 중재 시술자의 방사선 노출량을 감소시키기 위해 권장된다.
+
+시준은 X선관에서 발생한 입자의 줄기를 평행하게 만들어 주는 방사선 비투과성 셔터(shutter)를 사용하여 X선 광선을 형상화하는 방법으로 X선의 모양과 크기를 조절할 수 있다. 방사선 조사영역을 임상적 관심영역으로 제한하고 이외의 부 위는 배제하여 중재 시술자에게 불필요한 방사선 노출을 최소 화할 수 있어 적극적으로 사용하는 것이 좋다. 방사선량은 방사선 조사영역의 크기에 비례하므로, 시준을 통해 조사영역 을 최소화하면 방사선량 및 이에 따른 산란 방사선량이 감소 하게 된다. 또한, 시준을 통해 X선 검출기(X-ray detector) 에 도달하는 산란 방사선을 감소시켜 영상화질도 개선될 수 있다. 예를 들어, 관심 영역 외에 위치한 밀도가 높은 몸통의 끝부분을 배제하여 관심장기의 해상도를 높일 수 있으며, 위 내강에 차 있는 공기를 시준하여 제거하면 관심장기의 전형적 인 해부학적 특징들이 더 선명하게 관찰될 수 있다. 다만, 관 심영역에 포함되지 않는 곳에 위치한 유도철선, 카테터 선단 부 등의 변화 파악이 제한될 수 있어 시술 시 주의해야 한다. 시준 시 영상의 밝기 감소로 인한 자동노출제어장치의 보상으
+
+###### 3. 방사선 노출 선량 한도 및 감시
+
+- 1) 방사선 노출 위험의 방지를 위한 의료 방사선 중재 시술 자의 연간 유효 선량 한도(annual effective dose limit)는 얼마 이하로 제한되어야 하는가?(근거수준: A, 권고 등급: I)
+
+권고안 11-1. 의료 방사선 중재 시술자의 방사선 노출로 인한 위험을 방지하기 위하여 노출 선량 한도는 유효 선량(effective dose)을 기준으로 5년동안 연간 평균 20 mSv (최대 연간 50 mSv)로 제한한다.
+
+방사선 노출로 인한 조직 및 장기의 손상은 방사선량뿐만 아니라 노출 시간, 특정 조직의 방사선 민감도, 개인의 유전적 민감도 등이 복합적으로 작용한다. 방사선 노출로 인한 사건 들은 조직 괴사 등으로 인한 세포 사멸을 유발하는 결정론적 영향(deterministic effect)과 유전자 변이 등을 유발하여 암 발생의 위험성을 증가시키는 확률적 영향(stochastic effect) 으로 나누어 설명될 수 있다. 결정론적 영향은 방사선량과 장 해 발생 확률이 비례하며 어떤 임계치(threshold)를 넘으면 증상이 나타나는 것으로 피부 홍반, 골수손상, 불임, 수정체
+
+Table 2. Standard Definitions of Technical Terms
+
+|Terms|Symbol|Unit|Definition|
+|---|---|---|---|
+|Scattered radiation|-|-|Radiation arising from interactions of the primary beam with patient tissues or other scattered medium (patient table or other).|
+|Absorbed dose|D|Gy|Amount of energy imparted by ionizing radiation to unit mass of absorbing material.|
+|Gray|Gy|Gy|Energy absorption of 1 joule per kg.|
+|Equivalent dose|-|Sv|Value obtained by multiplying the absorbed dose by a radiation weighting factor, to take into account the degree of biological damage produced by a particular type of ionizing radiation.|
+|Effective dose|E|Sv|Average of radiation doses received by the different organs or tissues, weighted for the relative biological effectiveness of the types of ionizing radiation as well as for the sensitivity of the organs or tissues.|
+|Kerma|K|Gy|Ratio of the kinetic energies of all charged particles which are generated in a volume element by indirectly ionizing radiation (γrays or neutrons) to the mass of the volume element.|
+|Air Kerma|Kair|Gy|Kerma in air.|
+|Kerma-area product|KAP|Gy･cm^2|Air kerma multiplied by the X-ray beam cross-sectional area at the point of measurement (this can be displayed on the equipment as dose-area product).|
+
+변형 등이 이에 해당된다. 확률적 영향은 증상의 심각성이 선 량과 무관하게 임계선량(threshold dose)없이 생물학적 문제 를 유발하는 경우로 암이나 유전적 변형 등이 해당된다. 방사 선 노출로 인한 조직 및 장기 손상은 결정론적 영향에 의해 임계점을 초과할 때 발생하며 용량이 증가함에 따라 중증도가 증가하여 시술자에게 백내장, 불임, 피부 손상, 탈모 등을 유 발할 수 있다. 방사선 노출 선량 한도는 결정론적으로 발 생하는 신체적 영향을 최소화하기 위해 조직별로 설정하고 제 한되어야 한다.
+
+흡수선량(absorbed dose)은 전리 방사선으로 인해 흡수된 단위 질량당 평균 에너지양이며, 등가선량(equivalent dose) 은 특정 전리 방사선에 의해 발생하는 생물학적 손상 정도를 평가하기 위하여 흡수선량에 방사선 가중치를 곱하여 얻은 값 이다. 흡수선량은 일반적으로 결정론적 영향을, 등가선량은 확률론적 영향을 확인하기 위하여 측정된다. 유효선량은 등가 선량에 조직가중계수를 곱하여 합산하여 계산되며 전리 방사 선에 대한 기관이나 조직의 민감도 차이에 따른 가중치가 반 영되어 있다(Table 2). 의료 방사선 중재 시술자의 방사선 노출로 인한 선량 한도는 유효선량을 기준으로 5년 동안 연간 평균 선량 한도 20 mSv 미만으로 제한되어야 하며, 특정 1년 간 최대 50 mSv를 넘지 않아야 한다(Table 3).
+
+- 2) 방사선 노출로 인한 수정체 보호를 위해 의료 방사선 중 재 시술자의 연간 유효 선량 한도(annual effective dose limit)는 얼마 이하로 제한하여야 하는가?(근거수 준: A, 권고등급: I)
+
+권고안 11-2. 의료 방사선 중재 시술자의 방사선 노출로 인한 수정체 손상의 위험을 방지하기 위하여 노출 선량 한도는 유효 선량(effective dose)을 기준으로 5년동안 연간 평균 20 mSv (최대 연간 50 mSv) 로 제한한다.
+
+최근 백내장 발생의 역치가 예상보다 더 낮을 수 있음이 보고되면서 수정체 보호를 위한 노출 선량 한도를 재정립하게 되었다. 국제방사선방호위원회(International Commission on Radiological Protection, ICRP)는 2017년도 눈의 등가선 량 한도를 5년 동안 평균 연간 150 mSv에서 20 mSv로 낮추 고 단일 연도에서 50 mSv를 초과하지 않을 것을 권고하고 있다. 최근의 메타 분석에서 시술 당 안구에 대한 유효 선량은 0.139 mSv였으며, 이를 연간 선량 한도인 20 mSv 와 비교하였을 때 보호장구 없이 연간 평균 627 회의 ERCP 를 수행하는 경우 선량 한도를 초과할 수 있다. 차폐가 제대로 이루어지지 않은 over-couch system을 사용하는 경 우 수정체 손상의 위험을 방지하기 위하여 눈에 대한 등가선 량을 측정하는 것이 반드시 필요하다.
+
+Fig. 5. Schematic diagram of Diagnostic Reference Level (DRL). (A) DRL is established using the 75th percentile of radiation dose measurements collected from various institutions. (B) New 75th percentile value can be set as a new DRL to further reduce overall radiation doses.
+
+Table 3. Radiation Dose Limits for Interventionalists According to ICRP 139 Recommendation
+
+|Type of limit|Dose limit in exposure, mSv|
+|---|---|
+|Effective dose limits|20, averaged over defined periods of 5 years (maximum of 50 per year)|
+|Annual equivalent dose in:||
+|Lens of the eye|20, averaged over defined periods of 5 years (maximum of 50 per year)|
+|Extremities and skin|500|
+|Pregnant woman|2 (measured at the abdominal surface for the whole pregnancy)|
+
+ICRP, International Comission on Radiological Protection.
+
+- 3) 국제방사선보호위원회(ICRP)에 따른 Diagnostic Reference Level (DRL) 확인을 위하여 방사선량의 측정과 수집은 반드 시 필요한가?(근거수준: C, 권고등급: II)
+
+권고안 12. 의료방사선 중재 시술자의 방사선 노출 위험 방지 를 위한 Diagnostic Reference Level (DRL)의 설정을 위하여 각 기관의 방사선량의 측정과 수집은 반드시 필요하다.
+
+국제방사선방호위원회(ICRP)는 방사선 피폭 선량 한도에 대하여 합리적으로 가능한 범위 내에서 최대한 낮게 유지하도 록 하는 As Low As Reasonable Achievable (ALARA)원칙 을 권장하며, 이를 달성하기 위하여 Diagnostic Reference Level (DRL)을 도입하였다. DRL은 특정기관에서 수집한 방 사선량 분포의 75th percentile에 해당하는 값을 DRL으로 설 정하는 것이 일반적이다. 미국, 영국, 독일 등 여러 국가들에 서는 병원 내, 병원간 차이를 비교하고, 지역 및 국가 내 DRL 수립을 위한 활동이 활발하게 진행되어 왔다. 이렇게 수립 된 DRL은 주기적인 개정을 통하여, 궁극적으로는 노출되는 방사선 피폭 선량을 낮추는 것에 의의를 둔다. 실제로 영국과 북유럽에서는 국가 수준에서 환자의 방사선량을 조사한 후 시 술자의 방사선 노출이 감소하였음을 보고하였다. 우리나라 에서는 영상의학과와 심장내과 중재 시술에 대한 환자 노출량 은 평가된 적이 있었으나, 소화기 내시경 중재 시술자에 대한 방사선 노출 위험에 대한 평가와 노출량 수집에 대한 노력은 전무한 상태로, DRL 기준치를 파악하고 DRL을 설정하여 전 체 방사선량을 감소시키려는 노력이 필요하다(Fig. 5). 면적
+
+선량(Kerma-area product)은 방사선이 운반하는 에너지양을 공기에서 측정한 공기 커마(Air Kerma)를 측정 지점의 X선 광원의 단면적과 곱한 값으로, DRL을 수집할 때 투시 장비를 이용한 중재 시술 선량의 척도로 이용할 수 있다. 따라서, 시 술자, 병원, 지역, 국가 간 DRL의 차이를 비교하기 위해 평균 면적선량을 측정하고 수집하는 것이 필요하다.
+
+- 4) 정확한 방사선 노출량의 측정을 위해 의료 방사선 중재 시술자에게 선량계는 반드시 필요한가?(근거수준: C, 권 고등급: II)
+
+권고안 13. 의료 방사선 중재 시술자의 방사선 노출량 측정을 위하여 시술자는 반드시 선량계를 착용하여야 한다.
+
+선량 한도를 측정하는 가장 일반적인 방법은 선량계를 사용 하는 것이다. 효과적인 유효선량의 측정을 위하여 두 개의 선 량계를 착용할 수 있는데, 하나는 방호복 바깥쪽 목 또는 안구 높이에, 다른 하나는 방호복 안쪽 가슴 높이에 착용한다(Fig. 6). 방호복 바깥쪽 목에 착용하는 선량계는 갑상선 및 수정체 를, 방호복 안쪽 가슴 높이에 착용하는 선량계는 하체로 침투 하는 방사선량을 각각 반영한다. 두 가지의 선량계를 사용하는 경우 각각의 선량계를 색상으로 구분해 놓아야 방사선 노출량 을 정확하게 측정할 수 있다. 예를 들어, 바깥쪽 목에 부착하였 던 선량계를 안쪽 허리 높이에 착용한 선량계로 착각하는 경 우 방사선 노출량이 과도한 것으로 오인될 수 있다. 적절한 차폐를 사용하는 경우 손, 손가락, 다리와 같은 사
+
+Fig. 6. (A) A schema showing proper wearing sites for dosimeters. Dosimeters are attached on the outside of the protective apron at neck level (B), and under the protective apron at thoracic level (C).
+
+지에 노출되는 방사선량은 권장 방사선량 한계보다 낮아 선량 계를 이용해 측정하지 않는다. 그러나 적절한 차폐가 되지 않 은 상태에서 over-couch system을 사용하는 경우, 투시 중 손의 위치가 X선관에 계속해서 근접하게 된다면 추가적으로 손가락 또는 손목에 선량계를 착용하고 사지 방사선량을 측정 하여 연간 선량 한도를 추적한 후 지속적인 선량 측정이 필요 한지 결정하는 것이 도움이 될 수 있다.
+
+다만 실제 임상 현장에서 여러 개의 선량계를 착용하고 있 는 경우는 매우 드물다. 한 개의 선량계만 착용하게 되는 상황에서는 몸통에서 노출이 가장 많은 것으로 예상되는 부위 에 착용하는 것을 권장한다. 예를 들어, 투시 장비가 overcouch system인 경우 상체에, under-couch system인 경우 하체에 방사선 노출이 많을 것으로 예상하고 선량계를 이용한 방사선 노출을 측정해볼 수 있다. 또한, 단일 선량계를 납가 운 바깥에 착용하면 수정체 선량에 대한 적절한 평가를 제공 할 수 있다. 수정체에 대한 권장 방사선량 한도가 연간 20 mSv로 낮아짐에 따라 적절한 차폐 장비가 없는 over-couch system을 사용하는 경우에는 수정체 수준에서 방사선량을 모니터링하는 것이 필요하다. 착용 위치에 따라 노출량이 과 대 평가 혹은 과소 평가될 수 있기 때문에, 시술 환경과 시술 자의 건강 상태에 따라 선호하는 위치에 착용 가능하며 가급 적 일관된 착용 방법을 유지하여 노출량의 변화를 정확히 측 정하기 위한 노력이 필요하다.
+
+선량계는 3개월마다 수거하여 피폭량을 측정하고, 그 결과에 대해 시술자 본인과 관리자에게 통보되어야 한다. 방사선 조사 에 대한 세부 정보(날짜, 시간, 장소, 방사선 종류 등)를 기록하 는 것도 도움이 된다. 이러한 조치는 방사선 노출량을 효과적으 로 관리하고 시술자의 건강을 보호하는데 기여할 수 있다.
+
+- 5) 의료 방사선 중재 시술자에 대한 주기적인 건강 진단은 반드시 필요한가?(근거수준: D, 권고등급: I)
+
+권고안 14. 의료 방사선 중재 시술자는 혈색소, 적혈구 및 백혈구 수치를 포함한 건강진단을 2년마다 실시해야 한다.
+
+의료 방사선 중재 시술자의 건강 검진에 대한 국제적인 규 정은 없으나, 우리나라에서는 보건복지부령에 따라 진단용 방 사선 발생장치에 노출되는 근로자에 한하여 2년마다 건강검 진을 하도록 규정되어 있다. 먼저 기초 검진을 통해 건강 상태 를 평가하고, 시술 중 특별한 주의가 필요한 상태인지 여부(임 신, 갑상선 질환, 혈액관련 질환, 백내장 등)를 확인해야 한다. 기초 검진 항목은 말초혈액의 적혈구 수, 혈색소 및 백혈구 수를 포함하여 시행한다. 또한, 문진을 통해 방사선 노출로 인한 증상 여부, 노출 기간, 선량 및 장해 여부 등을 확인해야 하고 필요시 안과 검진을 고려해 볼 수 있다.
+
+정기 검진 결과는 시술자와 관리자에게 통보되어야 하며, 관리자는 시술자의 건강 상태가 시술에 참여 가능한 상태인 지, 제한된 조건하에서 시술해야 하는지, 아니면 시술을 중단 해야 하는지 평가하고 반영해야 한다. 이는 방사선 노출에 따 른 건강 관리를 효과적으로 수행하고 시술자의 안전한 작업 환경을 보장하기 위한 중요한 절차이다.
+
+###### 4. 임신과 출산
+
+- 1) 성공적인 임신 유지와 건강한 태아의 출산을 위하여 임신 한 의료 방사선 중재 시술자의 선량 한도는 얼마 이하여 야 하는가?(근거수준 C, 권고등급 II)
+
+권고안 15. 임신으로 진단된 여성 시술자는 건강한 태아의 출산을 위하여 방호복 안쪽 복부를 기준으로 임신기간 동안 유효선량을 2 mSv 미만으로 유지하여야 한다.
+
+투시 장비를 이용하여 시술을 주로 시행하는 여성 의료 방 사선 중재 시술자는 방사선으로 인한 태아의 기형 유발 위험 에 노출되어 있다. 이러한 우려는 자격을 갖춘 여성 시술 자가 중재 시술 분야에서 경력을 쌓는 데 부정적인 영향을 미칠 수 있다. 그러므로, 임신한 시술자가 투시 장비를 이용한 시술을 계속 수행하고자 하는 의사가 있는 경우 그 권리를 보호해야 하며, 태아에게 노출되는 방사선량의 측정을 위하여 방호복의 복부 부위 안쪽으로 선량계를 장착하여 방사선 노출 의 정도를 평가하는 것이 권고된다.
+
+Table 4. Deterministic Effects and Threshold Doses of Radiation Exposure by Gestational Age
+
+|Deterministic effect|Gestational age (weeks)|Threshold dose (mGy)|
+|---|---|---|
+|Embryo death|3–4|100–200|
+|Major malformations|4–8|250–500|
+|Growth retardation|4–15|200–500|
+|Severe mental disability|8–15|60–500|
+||>16|>1,500|
+|Microcephaly|8–15|>20,000|
+|Reduced intelligence|>16|>100|
+
+국제방사선방호위원회(ICRP) 지침에 따라, 임신으로 진단 된 여성 시술자의 건강한 태아의 출산을 위하여 방사선 노출 로 인한 유효선량 한도를 복부 표면을 기준으로 2 mSv 미만 으로 유지하는 것이 권고된다. 태아에 대한 전반적인 주산기 위험은 임신 단계에 따른 흡수된 방사선량에 따라 결정되는데 착상 전 방사선 노출로 인한 배아 사망 위험성은 이 단계에서 의 여성이 임신 여부 자체를 모르는 경우가 많아 아직까지 제대로 정량화된 바 없으나, 100 mGy 미만의 선량에서 착상 후 8일까지 태아 사망은 매우 드문 것으로 여겨지며 임계 선 량을 넘지 못하는 100 mGy 이하의 방사선 노출은 임신 중절 의 근거가 되지 못한다. 임신 주수 2-8 주 동안에는 방사선 노출로 인한 기형 위험이 가장 크며, 8-15 주 사이에는 성장 지연, 심각한 정신 장애 및 소두증 등이 발생 가능하다. 16주 이후에는 지능 저하가 발생할 수 있다(Table 4).
+
+주산기의 방사선 노출은 확률적 영향에 의하여 소아암 위 험을 증가시킬 수 있다. 하지만, 40주의 임신 기간 동안 방호 복을 착용한 임신한 중재 시술자의 평균 방사선 노출량은 총 0.3 mSv로 태아의 방사선 노출 유효 선량 한도인 2 mSv보다 훨씬 낮은 것으로 보고되었다. 자궁에서 0.5 mSv의 방사선 노출을 받았던 태아가 장애 없이 건강하게 태어날 확률은 95.928%로 방사선 노출을 받지 않은 태아의 95.93%에 비해
+
+약간 감소하는 것으로 나타났으나, 임신 중인 여성 시술자의 경우 지속적으로 엄격한 방사선 노출 관리를 통해 시술을 하 면서도 성공적인 임신과 건강한 태아의 출산이 가능한 것으로 조심스럽게 판단해 볼 수 있다.
+
+- 2) 성공적인 임신 유지와 건강한 태아의 출산을 위하여 임신 을 준비하는 의료 방사선 중재 시술자의 선량 한도는 얼 마 이하여야 하는가?(근거수준 D, 권고등급 III)
+
+권고안 16. 임신을 계획중인 여성 시술자는 방호복 안쪽 복부 를 기준으로 유효선량을 3개월동안 총 5 mSv 미만으로 유지하 는 것을 권고한다.
+
+방사선 노출은 남성과 여성의 생식 건강에 모두 영향을 미 칠 수 있다. 불임은 임계선량이 있는 결정론적 영향에 의해 발생하는데, 남성의 경우 연간 유효선량 15 mSv 미만, 가임 기 여성의 경우 총 누적 흡수선량이 2,000 mGy 미만인 경우 불임을 초래할 가능성이 거의 없는 것으로 보고되며, 이는 표 준 차폐를 정확히 수행하는 시술자의 일반적인 노출량을 크게 상회하는 값이다. 방사선 노출로 인해 발생하는 자녀의 유전 적 위험에 대하여 아직까지 입증된 연구가 많지 않으나 누적
+
+Table 5. Recommendations for Interventionalists to Minimize Radiation Exposure
+
+|Recommendations|
+|---|
+|1. Interventionalists should wear wrap-around (not front-only) protective aprons with a lead-equivalent thickness≥0.25 mm and protective collar with a lead-equivalent thickness≥0.25 mm.|
+|2. Interventionalists are recommended to wear protective glasses with side panels having a lead-equivalent thickness≥0.5 mm.|
+|3. The use of radiation shielding devices (e.g., vertical shields suspended from the patient table, ceiling or movable shields) is recommended to protect against scattered radiation.|
+|4. Using under-couch systems can reduce radiation exposure compared to over-couch system.|
+|5. Pulsed fluoroscopy is recommended to use instead of continuous fluoroscopy.|
+|6. Maintain the maximum possible distance from the X-ray tube of the fluoroscopy equipment.|
+|7. Minimize fluoroscopy time during procedures.|
+|8. Use the last-image-hold method instead of taking additional radiographs.|
+|9. Minimizing image enlargement during procedures can help reduce radiation exposure.|
+|10. Collimating the X-ray beam during procedures is recommended.|
+|11-1. The effective dose limit for interventionalists should be restricted to 20 mSv, averaged over defined periods of 5 years (maximum 50 mSv, per year).|
+|11-2. To prevent eye lens damage, the effective dose limit should be restricted to 20 mSv, averaged over defined periods of 5 years (maximum 50 mSv, per year).|
+|12. Measurement and collection of radiation dose data at each institution are essential for establishing Diagnostic Reference Levels (DRLs). 13. Interventionalists should wear dosimeters to measure radiation exposure levels.|
+|14. Interventionalists should undergo health check-ups, including hemoglobin and white blood cell counts, every two years.|
+|15. Pregnant female interventionalists should maintain an effective dose of less than 2 mSv to the abdominal surface, beneath the protective apron, during the pregnancy period to ensure the healthy birth of the fetus.|
+|16. Female interventionalists planning pregnancy are recommended to maintain an effective dose of less than 5 mSv to the abdominal surface, beneath the protective apron, over three months.|
+
+흡수선량이 1,000 mGy 증가할 때 자녀의 유전질환 발생 가 능성이 0.05%만 증가하는 것으로 알려져 있어, 적절한 차폐 를 수행하는 시술자에게 불임이나 태아에게 발생할 수 있는 유전적 영향의 위험은 크지 않을 것으로 판단된다.
+
+임신을 계획 중인 여성 시술자의 유효선량 한도에 대하여 일본에서는 방호복 안쪽 복부를 기준으로 3개월 동안 5 mSv 를 넘지 않도록 규정하고 있으며, 이는 유럽의 기준과 비슷하 거나 더 엄격한 수치이다. 우리나라의 경우 이와 관계된 법령 및 가이드라인은 없는 상태로, 현재 가장 엄격한 수치인 일본 의 기준에 따라 3개월 동안 5 mSv를 넘지 않을 것이 안전할 것으로 판단된다. 출산 후 수유 중인 여성 시술자의 경우 투시 장비를 이용한 시술로 인하여 모유 수유에 제한을 받지는 않 는다. 일반적으로 방사선의 노출은 모유 자체에 영향을 미치 지 않으며 수유 중 방사선이 노출되지도 않는 것으로 알려져 있다. 그러나 독일의 경우 수유부를 임산부와 동일한 선량 기 준으로 관리하도록 제시하고 있으며, 유럽 가이드라인에서도 수유부는 방사선 핵종 섭취나 신체오염의 위험이 높은 작업에 투입되지 않도록 권고하고 있다. 따라서 보다 안전한 수유를 위해 시술 중 적절한 차폐를 통해 방사선 노출을 최대한 피하 는 것이 좋을 것으로 생각되며, 보다 명확한 근거를 위한 추가 적인 연구가 필요하다.
+
+## 결 론
+
+다양한 중재 시술의 발전으로, 투시 장비를 이용하는 중재 시술의 종류와 범위가 확대되고 있다. 의료 방사선 중재 시술 자는 환자의 해부학적 특징에 대한 실시간 영상을 얻고 이를 바탕으로 효과적인 시술을 수행하게 되지만, 방사선 투시 검 사는 본질적으로 시술자에게 방사선 노출의 위험을 초래하므 로 이에 대한 이해와 주의가 반드시 필요하다. 방사선 투시기 와의 거리 유지, 방사선 투시 시간의 단축뿐만 아니라 방호복, 갑상선 보호대, 보안경, 다양한 형태의 차폐 장치를 사용하는 것이 중요하다. 시술 중에는 펄스투시방식을 이용, 마지막 영 상정지 기능(last-image-hold)의 사용, 영상확대(image enlargement)의 최소화, 시준(collimation)의 사용이 방사선 노 출을 줄이는 데 유용하다. 수정체를 포함한 신체 손상의 위험 을 방지하기 위한 적절한 피폭 선량에 대한 개념을 숙지하고 선량계를 이용하여 방사선량을 측정해야 하며, ALARA 원칙 에 맞추어 국가 데이터베이스 개념으로 방사선량을 보고하고 관리하는 것이 요구된다. 임신을 계획 중이거나 임신 상태인 여성 시술자의 경우 방사선 중재 시술의 절대적 금기는 아니 지만, 보다 엄격한 기준으로 방사선 노출을 감소시키기 위한 노력이 필요하다(Table 5). 본 대한췌장담도학회의 권고안을 통하여 우리나라에서 많은 의료 방사선 중재 시술자들의 방사
+
+선 안전에 대한 관심이 증대되고 방사선 노출을 최소화하기 위한 노력들이 확대되기를 소망한다.
+
+#### REFERENCES
+
+1. Oh CH, Son BK. Minimizing radiation exposure in endoscopic retrograde cholangiopancreatography: a review for medical personnel. Korean J Intern Med 2022;37:1111-1119.
+
+2. Huang RJ, Thosani NC, Barakat MT, et al. Evolution in the utilization of biliary interventions in the United States: results of a nationwide longitudinal study from 1998 to 2013. Gastrointest Endosc 2017;86:319-326.e5.
+
+3. Itoi T, Kasuya K, Sofuni A, et al. Endoscopic ultrasonographyguided pancreatic duct access: techniques and literature review of pancreatography, transmural drainage and rendezvous techniques. Dig Endosc 2013;25:241-252.
+
+4. Tsuchiya T, Itoi T, Sofuni A, Tonozuka R, Mukai S. Endoscopic ultrasonography-guided rendezvous technique. Dig Endosc 2016; 28 Suppl 1:96-101.
+
+5. Teoh AYB, Bapaye A, Lakhtakia S, et al. Prospective multicenter international study on the outcomes of a newly developed self-approximating lumen-apposing metallic stent for drainage of pancreatic fluid collections and endoscopic necrosectomy. Dig Endosc 2020;32:391-398.
+
+6. Katanuma A, Hayashi T, Kin T, et al. Interventional endoscopic ultrasonography in patients with surgically altered anatomy: Techniques and literature review. Dig Endosc 2020;32:263-274.
+
+7. Schünemann HJ, Oxman AD, Brozek J, et al. Grading quality of evidence and strength of recommendations for diagnostic tests and strategies. BMJ 2008;336:1106-1110.
+
+8. Maeder M, Brunner-La Rocca HP, Wolber T, et al. Impact of a lead glass screen on scatter radiation to eyes and hands in interventional cardiologists. Catheter Cardiovasc Interv 2006;67:18-23.
+
+9. McGinley PH, Miner MS. A history of radiation shielding of x-ray therapy rooms. Health Phys 1995;69:759-765.
+
+10. Archer BR, Gray JE. Important changes in medical x-ray imaging facility shielding design methodology. A brief summary of recommendations in NCRP Report No. 147. Med Phys 2005;32:3599-3601.
+
+11. Campbell N, Sparrow K, Fortier M, Ponich T. Practical radiation safety and protection for the endoscopist during ERCP. Gastrointest Endosc 2002;55:552-557.
+
+12. Pedrosa MC, Farraye FA, Shergill AK, et al. Minimizing occupational hazards in endoscopy: personal protective equipment, radiation safety, and ergonomics. Gastrointest Endosc 2010;72: 227-235.
+
+13. Yaffe MJ, Mawdsley GE, Lilley M, Servant R, Reh G. Composite materials for x-ray protection. Health Phys 1991;60:661-664.
+
+14. Rehani MM, Ciraj-Bjelac O, Vañó E, et al. ICRP Publication 117. Radiological protection in fluoroscopically guided procedures performed outside the imaging department. Ann ICRP 2010;40: 1-102.
+
+15. Vano E, Kleiman NJ, Duran A, Rehani MM, Echeverri D, Cabrera M. Radiation cataract risk in interventional cardiology personnel. Radiat Res 2010;174:490-495.
+
+16. Sethi S, Barakat MT, Friedland S, Banerjee S. Radiation training,
+
+ - radiation protection, and fluoroscopy utilization practices among US therapeutic endoscopists. Dig Dis Sci 2019;64:2455-2466.
+
+17. Wagner LK, Mulhern OR. Radiation-attenuating surgical gloves: effects of scatter and secondary electron production. Radiology 1996;200:45-48.
+
+18. Son B, Lee S, Lee K, Kim JS. Prevention of ERCP-related radiation hazard. Korean J Pancreas Biliary Tract 2009;14:35-44.
+
+19. Chen MY, Van Swearingen FL, Mitchell R, Ott DJ. Radiation exposure during ERCP: effect of a protective shield. Gastrointest Endosc 1996;43:1-5.
+
+20. Johlin FC, Pelsang RE, Greenleaf M. Phantom study to determine radiation exposure to medical personnel involved in ERCP fluoroscopy and its reduction through equipment and behavior modifications. Am J Gastroenterol 2002;97:893-897.
+
+21. Morishima Y, Chida K, Meguro T. Effectiveness of additional lead shielding to protect staff from scattering radiation during endoscopic retrograde cholangiopancreatography procedures. J Radiat Res 2018;59:225-232.
+
+22. Chung KH, Park YS, Ahn SB, Son BK. Radiation protection effect of mobile shield barrier for the medical personnel during endoscopic retrograde cholangiopancreatography: a quasi-experimental prospective study. BMJ Open 2019;9:e027729.
+
+23. Badawy MK, Henely-Smith E, Hasmat S. Radiation exposure to staff during fluoroscopic endoscopic procedures. DEN Open 2023;3:e234.
+
+24. Kurihara T, Itoi T, Sofuni A, et al. Novel protective lead shield and pulse fluoroscopy can reduce radiation exposure during the ERCP procedure. Hepatogastroenterology 2012;59:709-712.
+
+25. Yamada R, Saimyo Y, Tanaka K, et al. Usefulness of an additional lead shielding device in reducing occupational radiation exposure during interventional endoscopic procedures: An observational study. Medicine (Baltimore) 2020;99:e21831.
+
+26. Muniraj T, Aslanian HR, Laine L, et al. A double-blind, randomized, sham-controlled trial of the effect of a radiation-attenuating drape on radiation exposure to endoscopy staff during ERCP. Am J Gastroenterol 2015;110:690-696.
+
+27. Harris AM. radiation exposure to the urologist using an overcouch radiation source compared with an undercouch radiation source in contemporary urology practice. Urology 2018;114:45-48.
+
+28. Bowsher WG, Blott P, Whitfield HN. Radiation protection in percutaneous renal surgery. Br J Urol 1992;69:231-233.
+
+29. Vañó E, González L, Beneytez F, Moreno F. Lens injuries induced by occupational exposure in non-optimized interventional radiology laboratories. Br J Radiol 1998;71:728-733.
+
+30. Churrango G, Deutsch JK, Dinneen HS, Churrango J, Samiullah S, Ahlawat SK. Minimizing radiation exposure during ERCP by avoiding live or continuous fluoroscopy. J Clin Gastroenterol 2015;49:e96-100.
+
+31. Seo D, Kim KH, Kim JS, Han S, Park K, Kim J. Evaluation of radiation doses in patient and medical staff during endoscopic retrograde cholangiopancreatography procedures. Radiat Prot Dosimetry 2016;168:516-522.
+
+32. Jorgensen JE, Rubenstein JH, Goodsitt MM, Elta GH. Radiation doses to ERCP patients are significantly lower with experienced endoscopists. Gastrointest Endosc 2010;72:58-65.
+
+33. Damilakis J, Perisinakis K, Theocharopoulos N, et al. Anticipation
+
+of radiation dose to the conceptus from occupational exposure of pregnant staff during fluoroscopically guided electrophysiological procedures. J Cardiovasc Electrophysiol 2005;16: 773-780.
+
+34. Uradomo LT, Lustberg ME, Darwin PE. Effect of physician training on fluoroscopy time during ERCP. Dig Dis Sci 2006;51:909-914.
+
+35. López PO, Dauer LT, Loose R, et al. ICRP Publication 139: Occupational radiological protection in interventional procedures. Ann ICRP 2018;47:1-118.
+
+36. Larkin CJ, Workman A, Wright RE, Tham TC. Radiation doses to patients during ERCP. Gastrointest Endosc 2001;53:161-164.
+
+37. Stueve D. Management of pediatric radiation dose using Philips fluoroscopy systems DoseWise: perfect image, perfect sense. Pediatr Radiol 2006;36 Suppl 2:216-220.
+
+38. Chaffins JA. Radiation protection and procedures in the OR. Radiol Technol 2008;79:415-428; quiz 429-31.
+
+39. Miller DL, Balter S, Schueler BA, Wagner LK, Strauss KJ, Vañó E. Clinical radiation management for fluoroscopically guided interventional procedures. Radiology 2010;257:321-332.
+
+40. Rauch P, Lin PJ, Balter S, et al. Functionality and operation of fluoroscopic automatic brightness control/automatic dose rate control logic in modern cardiovascular and interventional angiography systems: a report of Task Group 125 Radiography/ Fluoroscopy Subcommittee, Imaging Physics Committee, Science Council. Med Phys 2012;39:2826-2828.
+
+41. Meisinger QC, Stahl CM, Andre MP, Kinney TB, Newton IG. Radiation protection for the fluoroscopy operator and staff. AJR Am J Roentgenol 2016;207:745-754.
+
+42. Buls N, Pages J, Mana F, Osteaux M. Patient and staff exposure during endoscopic retrograde cholangiopancreatography. Br J Radiol 2002;75:435-443.
+
+43. Schueler BA. The AAPM/RSNA physics tutorial for residents: general overview of fluoroscopic imaging. Radiographics 2000;20: 1115-1126.
+
+44. Ho IK, Cash BD, Cohen H, et al. Radiation exposure in gastroenterology: improving patient and staff protection. Am J Gastroenterol 2014;109:1180-1194.
+
+45. Kwok K, Hasan N, Duloy A, Murad F, Nieto J, Day LW. American Society for Gastrointestinal Endoscopy radiation and fluoroscopy safety in GI endoscopy. Gastrointest Endosc 2021;94:685-697.e4.
+
+46. Boix J, Lorenzo-Zúñiga V. Radiation dose to patients during endoscopic retrograde cholangiopancreatography. World J Gastrointest Endosc 2011;3:140-144.
+
+47. The 2007 Recommendations of the International Commission on Radiological Protection. ICRP publication 103. Ann ICRP 2007;37:1-332.
+
+48. Dumonceau JM, Garcia-Fernandez FJ, Verdun FR, et al. Radiation protection in digestive endoscopy: European Society of Digestive Endoscopy (ESGE) guideline. Endoscopy 2012;44:408-421.
+
+49. Olgar T, Bor D, Berkmen G, Yazar T. Patient and staff doses for some complex x-ray examinations. J Radiol Prot 2009;29:393-407.
+
+50. Menon S, Mathew R, Kumar M. Ocular radiation exposure during endoscopic retrograde cholangiopancreatography: a meta-analysis of studies. Eur J Gastroenterol Hepatol 2019;31:463-470.
+
+51. O'Connor U, Gallagher A, Malone L, O'Reilly G. Occupational radiation dose to eyes from endoscopic retrograde cholangiopancreatog-
+
+raphy procedures in light of the revised eye lens dose limit from the International Commission on Radiological Protection. Br J Radiol 2013;86:20120289.
+
+52. Radiological protection and safety in medicine. A report of the International Commission on Radiological Protection. Ann ICRP 1996;26:1-47.
+
+53. Takenaka M, Hosono M, Hayashi S, Nishida T, Kudo M. How should radiation exposure be handled in fluoroscopy-guided endoscopic procedures in the field of gastroenterology? Dig Endosc 2022;34:890-900.
+
+54. Lopes J, Baudin C, Feuardent J, et al. Cohort profile: ORICAMs, a French cohort of medical workers exposed to low-dose ionizing radiation. PLoS One 2023;18:e0286910.
+
+55. Geise RA, O'Dea TJ. Radiation dose in interventional fluoroscopic procedures. Appl Radiat Isot 1999;50:173-184.
+
+56. Moreira AC, da Silva Branco AJ, Khoury HJ, Pires SR, Pereira Barbosa AH, Bitelli Medeiros R. Cardiologist's exposure to radiation in cath lab measured with Instadose^TM dosimeter. J Radiol
+
+Prot 2023;43:011512.
+
+57. Krueger KJ, Hoffman BJ. Radiation exposure during gastroenterologic fluoroscopy: risk assessment for pregnant workers. Am J Gastroenterol 1992;87:429-431.
+
+58. Ratnapalan S, Bona N, Chandra K, Koren G. Physicians' perceptions of teratogenic risk associated with radiography and CT during early pregnancy. AJR Am J Roentgenol 2004;182:1107-1109.
+
+59. International Commission on Radiological Protection. Pregnancy and medical radiation. Ann ICRP 2000;30:iii-viii, 1-43.
+
+60. Mainprize JG, Yaffe MJ, Chawla T, Glanc P. Effects of ionizing radiation exposure during pregnancy. Abdom Radiol (NY) 2023;48: 1564-1578.
+
+61. Vu CT, Elder DH. Pregnancy and the working interventional radiologist. Semin Intervent Radiol 2013;30:403-407.
+
+62. Marx MV, Niklason L, Mauger EA. Occupational radiation exposure to interventional radiologists: a prospective study. J Vasc Interv Radiol 1992;3:597-606.

@@ -1,0 +1,21 @@
+---
+title: "HBeAg-positive grey-zone patients: Treatment beyond guideline recommendations?"
+organization: "Clinical and molecular hepatology"
+year: "2023"
+language: en
+source_url: "https://europepmc.org/article/MED/37254484"
+license: "CC BY-NC"
+---
+# HBeAg-positive grey-zone patients: Treatment beyond guideline recommendations?
+
+HBeAg-positive patients include those in the immune-tolerant (IT) phase and the immune-active (IA) phase. Recently, a more detailed classification beyond the original criteria of alanine aminotransferase (ALT) levels or hepatitis B virus (HBV) DNA levels has placed some of these patients into a grey-zone. The decision on whether to initiate antiviral therapy (AVT) for patients in the grey-zone is a clinically challenging matter, and it is often difficult to make an accurate decision without the results of a liver biopsy.
+
+Conventionally, the IT phase is characterized by HBeAg positivity, very high level of serum HBV DNA (generally ≥107 IU/mL), persistently normal level of ALT, and minimal or absence of hepatic necroinflammation. Several guidelines have recommended that IT patients be monitored without AVT. HBeAg-positive IA phase is characterized by fluctuating courses of persistently or intermittently elevated serum ALT level and high level of viral replication (HBV DNA ≥20,000 IU/mL). Histological findings have revealed moderate-to-severe necroinflammation with or without fibrosis. AVT is recommended in HBeAg-positive patients with HBV DNA ≥2,000–20,000 IU/mL if the serum ALT level is ≥2 times the upper limit of normal (ULN).
+
+However, patients who do not fit into any of the usual clinical phases are considered to be in the “grey-zone.” For instance, in HBeAg-positive patients, serum HBV DNA may be below 107 IU/mL, but serum ALT may not be elevated; or in HBeAg-negative patients, serum HBV DNA may be above 2,000 IU/mL, but serum ALT may not be elevated. Approximately 30% of CHB patients are in the grey-zone, and the prognosis and treatment of CHB patients in the grey-zone are currently being studied.
+
+A recent study reporting a high 10-year HCC incidence of 12.7% in untreated IT patients (HBV DNA >20,000 IU/mL, ALT <30 U/L for men, <19 U/L for women) has raised some concerns, suggesting earlier AVT in IT patients, although a long-term prognosis without AVT has been excellent. Among HBeAg-positive patients (HBV DNA >2,000 IU/mL, ALT 40–70 U/L for men, 40–50 U/L for women) who did not meet the criteria for AVT under the current guidelines, the 5-year incidence rate of HCC was 7.3%.
+
+These findings can be explained by two factors. First, there is the lack of precise evaluation of liver fibrosis and inflammation, such as liver biopsy, in the determination of the phase. Among the wide spectrum range of IT patients based on the serum markers, it is not surprising that only 31.7% of patients belong to the histologic IT phase without fibrosis. Although there are many non-invasive tests, such as serum fibrosis markers (e.g., APRI, FIB-4, M2BPGi) or transient elastography or magnetic resonance elastography, they require further validation for an accurate diagnosis of hepatic fibrosis as well as inflammation for replacing a biopsy. Second, strict clinical criteria are necessary to define “genuine IT” excluding greyzone patients. Older age (>30–40 years), male gender, a family history of HCC, high FIB-4 value, moderate level of HBV DNA level (<107 IU/mL), or borderline ALT level are reported to be related to advanced fibrosis and finally associated with HCC development. In such cases among presumed IT phase patients, an evaluation of the degree of liver fibrosis using non-invasive fibrosis tests or liver biopsy is recommended, and AVT can be considered for patients with significant liver fibrosis or inflammation.
+
+Therefore, the key is to identify true IT patients who can be monitored without AVT and to distinguish grey-zone patients with more advanced fibrosis who would benefit from AVT (Figure). Future guidelines for IT and HBeAg-positive IA phase should include more detailed demographic criteria and noninvasive diagnostic technologies to avoid unnecessary liver biopsy or AVT and ultimately reduce the risk of HCC.

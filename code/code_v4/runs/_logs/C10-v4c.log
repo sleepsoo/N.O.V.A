@@ -1,0 +1,96 @@
+[   0.5s] guidelines: catalog.csv 2733 entries
+[   0.5s] guidelines: index ready 2733 docs, 7408 tokens, 0.5s
+[   0.5s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  16.5s] llm[intake] low out=307 finish=stop 16.0s
+[  16.5s] intake: {'age': 32, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '체중 감소', 'request': '', 'categories': ['weight_loss'], 'empathy': '많이 걱정되셨겠어요.', 'answered': []} diffs=['甲状腺 기능 항진 (Hyperthyroidism)', '요로감염 및 신장 질환 (Urinary infection/Renal disease)', '자기파괴적 섭식장애 (Anorexia nervosa)', '몸무게 감소를 유발하는 감염성 질환 (Infectious disease)', '신경계 질환으로 인한 운동성 감소 (Neurological disorder)']
+[  16.5s] checklist: 49 items, covered=['hpi_onset']
+[  18.3s] turn 1 SAY: 많이 걱정되셨겠어요. -> 네, 알겠습니다.
+[  25.6s] turn 2 SAY: 체중 감소에 대해 자세히 말씀해 주세요 -> 최근 3개월에 7kg 빠졌어요.
+[  35.6s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 가슴이 두근거리는 증상도 자주 있어요.
+[  40.5s] turn 4 SAY: 두근거림에 대해 자세히 말씀해 주세요 -> 가슴이 두근거려요.
+[  52.7s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 매일 피로감이 심해요.
+[  57.6s] turn 6 SAY: 피로에 대해 자세히 말씀해 주세요 -> 피로감도 심해서 아침에 일어나기 힘들고, 낮에도 쉽게 지친다.
+[  57.6s] guidelines[iv]: The Diagnosis and Management of Hyperthyroidism in Korea: Consensus Report of th (KR_EuropePMC, 2013)
+[  74.2s] llm[plan_v4] low out=355 finish=stop 16.5s
+[  74.2s] v4 plan q bad (go_connect): 최근 기분이 우울하고 의욕이 없으신가요?
+[  74.2s] v4 plan q bad (pair_geona): 시야가 흐릿하거나 눈이 피곤해지나요?
+[  74.2s] v4 plan: diffs=['갑상선 기능 항진 (Hyperthyroidism)', '요로감염·신장 질환 (Urinary infection/renal disease)', '자기파괴적 섭식장애 (Anorexia nervosa)', '감염성 질환 (Infectious disease)', '신경계 질환 (Neurological disorder)'] qs=[('free', '금방 전을 때 땀이 많이 나나요?'), ('free', '최근 열이 있었나요?'), ('free', '올바른 체온이 37\u202f도 이상인가요?')] exams=[('eye_signs', '갑상선 안증상으로 빠른 진단 유도', 'high'), ('skin_rash', '피부 발진을 통해 감염성 질환 차단', 'mid')] thyroid=True
+[  78.0s] turn 7 SAY: 혹시 임신 가능성은 있으세요? -> 임신 가능성은 없어요.
+[  80.7s] turn 8 SAY: 천식 있으세요? -> 그런 건 없어요.
+[  86.0s] turn 9 SAY: 가만히 있어도 숨이 차세요? -> 가만히 있을 때는 괜찮아요.
+[  93.1s] turn 10 SAY: 금방 전을 때 땀이 많이 나나요? -> 사무실에서도 땀이 많이 나요.
+[ 167.3s] turn 11 SAY: 최근 열이 있었나요? -> 그런 건 없어요.
+[ 176.5s] turn 12 SAY: 평소 앓는 병이 있으세요? -> 그런 건 없어요.
+[ 180.5s] turn 13 SAY: 드시는 약이 있으세요? -> 복용 중인 약이나 건강보조식품도 없어요.
+[ 185.0s] turn 14 SAY: 가족 중에 아픈 분이 있으세요? -> 어머니가 갑상샘 기능저하증으로 약을 드시고 계신다.
+[ 193.5s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 가슴이 두근거리는 증상이 언제부터 시작됐나요?
+[ 193.5s] v4 interview done: q=14 turn=15 left=25
+[ 193.5s] v4 exams plan (c8flex, budget 14): spec=['thyroid', 'eye_signs', 'skin_rash', 'radial'] order=['vitals', 'general', 'mental', 'radial', 'skin_rash', 'conj', 'eye_signs', 'thyroid', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] backups=['chest_insp', 'skin_temp', 'post_tremor', 'thyroid_bruit', 'dtr', 'power']
+[ 193.5s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C
+[ 193.5s] turn 17 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 마른 체형, 안절부절(+) 경도
+[ 193.5s] turn 18 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 193.5s] turn 19 EXAM: 요골동맥 맥박 촉진하겠습니다 -> 102회/분, 규칙적, 강하고 빠름
+[ 228.5s] turn 20 EXAM: 피부 발진 시진하겠습니다 -> 피부 발진 없음(-/-)
+[ 228.5s] turn 21 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 228.5s] turn 22 EXAM: 갑상선 안징후 검사하겠습니다 -> 돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)
+[ 228.5s] turn 23 EXAM: 갑상선 촉진하겠습니다 -> 양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)
+[ 228.5s] turn 24 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 228.5s] turn 25 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)
+[ 228.5s] turn 26 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-)
+[ 228.5s] turn 27 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 228.5s] turn 28 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)
+[ 228.5s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 228.5s] v4 exams done: ['vitals', 'general', 'mental', 'radial', 'skin_rash', 'conj', 'eye_signs', 'thyroid', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] refused=[]
+[ 435.1s] llm[facts] medium out=4414 finish=stop 206.6s
+[ 435.1s] facts: 17
+[ 435.1s] guidelines[dx]: The Diagnosis and Management of Hyperthyroidism in Korea: Consensus Report of th (KR_EuropePMC, 2013)
+[ 637.4s] llm[dx] medium out=4280 finish=stop 202.2s
+[ 637.4s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[ 637.4s] guidelines[plan-ovw-dx.fu/dx.fu.edu]: 2025 갑상선기능항진증의 방사성요오드 치료에 대한 진료권고안 (KR_Societies, 2025)
+[ 637.4s] guidelines[plan-edu-dx.fu/dx.fu.edu]: 갑상선기능항진증 (KR_HealthInfo, 2026)
+[ 674.7s] llm[plan_say4] low out=754 finish=stop 37.3s
+[ 728.1s] llm[plan_say4] low out=1117 finish=stop 53.4s
+[ 728.1s] v4 lines: {'dx': '갑상샘 호르몬 과다', 'options': '치료하면 대부분 좋아지는 병이에요.', 'link': '말씀하신 증상들이 이 병과 잘 맞아요.', 'concern': '가슴이 두근거리는 증상, 체중 감소가 걱정됩니다', 'tests': '피검사·갑상선 초음파·심전도를 할게요.', 'caution': '약 먹다 열·목 아프면 멈추고 바로 연락주세요.', 'followup': '1~2주 뒤 결과 보고 약을 정해요.', 'warning': '숨참·불규칙한 맥·고열·혼동 시 바로 오세요.', 'lifestyle': '카페인 줄이고 충분히 쉬세요.'} musts=[] emergency=False checks=[{'drop': '베타차단제로 증상 완화', 'key': 'options', 'why': 'ending'}, {'drop': '항갑상샘제로 호르몬 조절', 'key': 'options', 'why': 'ending'}, {'drop': '가슴 두근거림과 체중 감소는 갑상샘이 과다분비로 인한 에너지 증가 때문', 'key': 'link', 'why': 'too_long'}, {'drop': 'TSH, free T4, T3로 갑상샘기능 확인', 'key': 'tests', 'why': 'english'}, {'drop': 'TRAb로 그레이브스병 확진', 'key': 'tests', 'why': 'english'}, {'drop': '항갑상샘제 복용 중 발열·황달 시 곧바로 중단', 'key': 'caution', 'why': 'ending'}, {'drop': '재진 시 혈액검사와 증상 모니터링', 'key': 'followup', 'why': 'ending'}, {'drop': '발열·가슴 불규칙·호흡곤란·의식 변화면 바로 응급', 'key': 'warning', 'why': 'ending'}, {'drop': '카페인 줄이기·충분한 휴식 유지', 'key': 'lifestyle', 'why': 'ending'}]
+[ 728.1s] v4 explain trim: lifestyle
+[ 731.8s] turn 30 SAY: 갑상샘 호르몬 과다 -> 네, 알겠습니다.
+[ 736.2s] turn 31 SAY: 치료하면 대부분 좋아지는 병이에요. -> 네, 알겠습니다.
+[ 739.4s] turn 32 SAY: 말씀하신 증상들이 이 병과 잘 맞아요. -> 네, 알겠습니다.
+[ 742.9s] turn 33 SAY: 가슴이 두근거리는 증상, 체중 감소가 걱정됩니다 -> 네, 알겠습니다.
+[ 746.4s] turn 34 SAY: 피검사·갑상선 초음파·심전도를 할게요. -> 네, 알겠습니다.
+[ 749.2s] turn 35 SAY: 약 먹다 열·목 아프면 멈추고 바로 연락주세요. -> 네, 알겠습니다.
+[ 757.7s] turn 36 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 그런 건 없어요.
+[ 759.9s] turn 37 SAY: 1~2주 뒤 결과 보고 약을 정해요. -> 네, 알겠습니다.
+[ 763.3s] turn 38 SAY: 숨참·불규칙한 맥·고열·혼동 시 바로 오세요. -> 네, 알겠습니다.
+[ 769.8s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 계단 오르거나 빨리 걸을 때 숨이 차요.
+[ 769.8s] v4 explain done: said=8 answers=0 final=True teach={'reply': '계단 오르거나 빨리 걸을 때 숨이 차요.'} turns_left=1 (start 11)
+[ 788.3s] llm[S-narr] low out=362 finish=stop 18.5s
+[ 788.4s] v4 S safety net: ['안전: 가만히 있을 때는 괜찮아요.']
+[ 788.4s] summary: turns=39 counts={'say': 25, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 7, 'doctor_ok_calls': 7, 'doctor_invalid': 0, 'doctor_input_tokens': 15359, 'doctor_output_tokens': 11589, 'elapsed_s': 787.8} dx=그레이브스병에 의한 갑상샘항진증 (Graves' disease)
+C10 gpt-oss-20b: total=63.8 정보수집=16.8 진단추론=5 검사·추적=8 안전=13 의사소통=9 효율=12 dx5=5
+- missed_key_questions: ['식욕·섭취량 변화', '수면 패턴·불면세부', '자주 감각대상(식사나 감정) 정보', '체중 변동과 생활 습관과의 연계(흡연·알코올)', '생리 패턴 상세(통증·정규성)']
+- missed_key_exams: []
+- top_improvements: ['1. 체계적 사전문진 체크리스트(항목별 Yes/No)의 활용', '2. 공감·설명 단계에서 환자 수준 맞춤 상세 설명 제공', '3. 불필요한 질문·응답 제거 및 ‘한 번에 하나씩’ 원칙 준수', '4. 감별진단과 검사 계획을 체계적으로 제시해 전문성 강조', '5. 검사결과·치료지침을 환자에게 한 단계 더 간단히 정리하여 확인']
+{
+ "turns": 39,
+ "say": 25,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 7,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 7,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 15359,
+ "doctor_output_tokens": 11589,
+ "sim_calls": 28,
+ "seconds": 788.4,
+ "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 63.8,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-C10-v4c

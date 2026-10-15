@@ -1,0 +1,81 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[   8.8s] llm[intake] low out=186 finish=stop 8.7s
+[   8.8s] intake: {'age': 6, 'sex': 'M', 'pediatric': True, 'informant': '어머님', 'cc': '키가 이른 나이에 비해 작음', 'request': '', 'categories': ['growth'], 'empathy': '키 성장이 걱정되시겠어요.', 'answered': []} diffs=['유전적 소신장', '성장호르몬 결핍', '갑상선 기능저하증', '영양불충분(식이성)', '만성질환(신장/간)']
+[   8.8s] checklist: 32 items, covered=['hpi_course', 'hpi_onset']
+[  19.0s] turn 1 SAY: 언제부터 작다는 말을 들었나요? -> 두 살 무렵부터 작은 편이라는 말을 들었어요.
+[  26.7s] turn 2 SAY: 예전에 잰 키 기록이 있나요? -> 두 살 때 키 173cm, 네 살 때 196cm이었어요.
+[  29.6s] turn 3 SAY: 두 살, 네 살 때 키는 얼마였나요? -> 두 살 때 키 173cm, 네 살 때 196cm이었어요.
+[  35.8s] turn 4 SAY: 부모님 중 늦게 키가 큰 분 있나요? -> 아빠는 어릴 때 키가 작아서 할머니가 걱정했어요.
+[  39.2s] turn 5 SAY: 가족 중 키가 작거나 유전병 있나요? -> 아니요, 그런 건 없어요.
+[  42.5s] turn 6 SAY: 천식이나 장, 콩팥 질환 들은 적 있나요? -> 아니요, 그런 건 없어요.
+[  47.7s] turn 7 SAY: 어머님이 가장 걱정되시는 게 뭐예요? -> 큰 병이 있을까 걱정이 많아요.
+[  47.8s] guidelines[iv]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)
+[  74.7s] llm[plan_q] low out=579 finish=stop 27.0s
+[  78.5s] turn 8 SAY: 지치거나 변비가 있나요? -> 아니요, 그런 건 없어요.
+[  81.9s] turn 9 SAY: 스테로이드 복용하셨나요? -> 아니요, 그런 건 없어요.
+[  86.9s] turn 10 SAY: 음모가 나오거나 고환이 변했나요? -> 음모나 고환 크기 변화는 없어요.
+[  90.6s] turn 11 SAY: 두통이나 구토가 있었나요? -> 그런 건 없어요.
+[  94.5s] turn 12 SAY: 말이나 걷기는 또래만큼 했나요? -> 네, 평소에도 운동이나 신체 활동을 활발하게 해요.
+[ 110.7s] llm[plan_q] low out=347 finish=stop 16.1s
+[ 117.3s] turn 13 SAY: 최근 살이 늘었나요? -> 몸무게는 십육 점 오 키로그람으로 일 점 오 키로그람 늘었어요.
+[ 122.6s] turn 14 SAY: 밥은 잘 먹는 편인가요? -> 식사는 평소 잘 먹는 편이에요.
+[ 127.6s] turn 15 SAY: 임신이나 출산 때 문제 있었나요? -> 임신 중이나 출산 과정에서 특별한 문제는 없었어요.
+[ 138.4s] turn 16 SAY: 오늘 특히 궁금하신 게 있으세요? -> 키가 작아서 걱정이에요.
+[ 138.4s] interview done: asked=16 covered=4 uncovered_p1=[]
+[ 143.0s] llm[exams] low out=99 finish=stop 4.5s
+[ 143.0s] exams plan: ['general', 'anthro', 'growth_chart', 'body_prop', 'tanner', 'dysmorph', 'thyroid', 'orthostatic']
+[ 143.0s] turn 17 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 또래보다 작은 키, 안절부절(-)
+[ 143.0s] turn 18 EXAM: 신체 계측하겠습니다 -> 신장 105cm, 체중 16.5kg, 머리둘레 52cm
+[ 143.0s] turn 19 EXAM: 성장도표 백분위수 확인하겠습니다 -> 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm
+[ 143.0s] turn 20 EXAM: 신체 비율 평가하겠습니다 -> 상·하절 비율 정상, 양팔간격 불균형(-)
+[ 143.0s] turn 21 EXAM: 사춘기 성숙도 평가하겠습니다 -> Tanner 1기, 고환 2mL/2mL
+[ 143.0s] turn 22 EXAM: 안면 기형 소견 시진하겠습니다 -> 안면 기형(-), 귀 위치 이상(-/-)
+[ 143.0s] turn 23 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 213.2s] turn 24 EXAM: 기립성 혈압 측정하겠습니다 -> 기립성 혈압 측정 (Orthostatic blood pressure measurement) | 정상(수축기 
+[ 370.8s] llm[facts] medium out=3386 finish=stop 157.7s
+[ 370.8s] fact key demoted: ros.Constipation turn 8
+[ 370.8s] fact key demoted: ros.Headache turn 11
+[ 370.8s] fact key demoted: ros.Vomiting turn 11
+[ 370.8s] facts: 17
+[ 370.9s] guidelines[dx]: 2023 대한갑상선학회 무증상갑상선기능저하증 진료 권고안 (KR_Journals, 2023)
+[ 497.6s] llm[dx] medium out=2725 finish=stop 126.7s
+[ 497.6s] guidelines[plan-mgmt]: 2022 Consensus statement on the management of familial hypercholesterolemia in K (KR_EuropePMC, 2022)
+[ 497.6s] guidelines[plan-ovw]: 2022 Consensus Statement on the Management of Familial Hypercholesterolemia in K (KR_EuropePMC, 2022)
+[ 532.2s] llm[plan_say] low out=727 finish=stop 34.7s
+[ 577.7s] llm[say_fix] low out=1009 finish=stop 45.4s
+[ 577.7s] say fixes: ['dx', 'warning']
+[ 590.2s] turn 25 SAY: 가족성 저신장 가능성이 높아 보여요. -> 가족 중에 유전 질환이나 호르몬에 문제가 있다고 들은 사람도 없나요?
+[ 598.9s] llm[answer] low out=190 finish=stop 8.7s
+[ 602.9s] turn 26 SAY: 성장 추적과 생활습관이 핵심이에요. -> 네, 알겠습니다.
+[ 606.8s] turn 27 SAY: 성장 속도와 키가 정상보다 낮아요. -> 네, 알겠습니다.
+[ 609.1s] turn 28 SAY: 검사 결과 성장 호르몬 필요하면 치료를 권유할게요. -> 네, 알겠습니다.
+[ 611.6s] turn 29 SAY: 다음 재진은 6개월 후에 진행하며 결과를 보고할게요. -> 네, 알겠습니다.
+[ 615.0s] turn 30 SAY: 두통·구토·시야 이상·성장 멈춤 시 바로 오세요. -> 네, 알겠습니다.
+[ 619.6s] turn 31 SAY: 더 궁금하신 점 있으세요? -> 두통은 없어요.
+[ 634.1s] llm[S-narr] low out=310 finish=stop 14.5s
+[ 634.1s] summary: turns=31 counts={'say': 23, 'exam': 8, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 16} budget={'doctor_calls': 10, 'doctor_ok_calls': 10, 'doctor_invalid': 0, 'doctor_input_tokens': 15826, 'doctor_output_tokens': 9558, 'elapsed_s': 634.0} dx=가족성 저신장 (Familial short stature)
+{
+ "turns": 31,
+ "say": 23,
+ "exam": 8,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 10,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 10,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 15826,
+ "doctor_output_tokens": 9558,
+ "sim_calls": 25,
+ "seconds": 634.1,
+ "diagnosis": "가족성 저신장 (Familial short stature)",
+ "dx_hit": false,
+ "session_status": "completed",
+ "grade_total": null,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-C03-js7ctl

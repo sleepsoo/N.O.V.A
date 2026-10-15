@@ -1,0 +1,525 @@
+{
+  "case_id": "S04",
+  "alias": "S04",
+  "turns": 42,
+  "say": 31,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 18144,
+  "doctor_output_tokens": 9563,
+  "seconds": 310.6,
+  "diagnosis": "만성폐쇄성폐질환의 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)",
+  "accepted_diagnoses": [
+    "만성 폐쇄성 폐질환 급성 악화 (Acute exacerbation of COPD)",
+    "COPD 급성 악화",
+    "만성폐쇄성폐질환 악화"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 72,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "호흡곤란, 기침·가래",
+    "request": "",
+    "categories": [
+      "dyspnea",
+      "cough_fever"
+    ],
+    "empathy": "많이 힘드셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "만성폐쇄성폐질환 급성 악화로 보여요.",
+    "기도가 좁아져 숨참과 가래가 늘었어요.",
+    "입원 여부는 산소와 검사 후 정해요.",
+    "산소포화도·흉부 엑스선·심전도로 확인해요.",
+    "응급실에서 산소와 흡입치료를 평가해요.",
+    "항생제·스테로이드는 검사 후 결정해요.",
+    "오늘 응급실로 가고 금연, 1~2일 내 재진해요.",
+    "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 672,
+      "out": 227,
+      "finish": "stop",
+      "sec": 3.7
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2868,
+      "out": 706,
+      "finish": "stop",
+      "sec": 8.8
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3083,
+      "out": 978,
+      "finish": "stop",
+      "sec": 11.5
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1342,
+      "out": 205,
+      "finish": "stop",
+      "sec": 3.2
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1878,
+      "out": 2428,
+      "finish": "stop",
+      "sec": 24.3
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2690,
+      "out": 2536,
+      "finish": "stop",
+      "sec": 22.6
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2623,
+      "out": 1730,
+      "finish": "stop",
+      "sec": 18.2
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2988,
+      "out": 753,
+      "finish": "stop",
+      "sec": 9.6
+    }
+  ],
+  "phase_times": {
+    "intake": 3.7,
+    "interview": 147.9,
+    "examine": 45.1,
+    "facts": 24.3,
+    "dx": 22.6,
+    "plan_say": 18.3,
+    "explain": 39.2,
+    "S": 9.6
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "정만수",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "72세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "남성",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "호흡곤란 기간",
+      "pol": "?",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기침 기간",
+      "pol": "?",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가래 기간",
+      "pol": "?",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "만성 호흡곤란",
+      "pol": "?",
+      "detail": "몇 년 전부터 숨참",
+      "id": "F7"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "호흡곤란 양상",
+      "pol": "?",
+      "detail": "서서히 시작",
+      "id": "F8"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "활동 시 호흡곤란",
+      "pol": "+",
+      "detail": "집 안 조금만 움직여도",
+      "id": "F9"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "누울 때 호흡곤란",
+      "pol": "+",
+      "detail": "누우면 더 참",
+      "id": "F10"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "베개 사용",
+      "pol": "?",
+      "detail": "베개 하나 더 받침",
+      "id": "F11"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리 부종",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F12"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Cough",
+      "label": "기침",
+      "pol": "+",
+      "detail": "부쩍 늘음",
+      "id": "F13"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Sputum",
+      "label": "가래",
+      "pol": "+",
+      "detail": "많아짐",
+      "id": "F14"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "쌕쌕거림",
+      "pol": "+",
+      "detail": "숨 쉴 때 가슴에서 남",
+      "id": "F15"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "ros.Chest pain",
+      "label": "가슴 통증",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "입원 걱정",
+      "pol": "+",
+      "detail": "작년처럼 입원할까 걱정",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "야간 발작성 호흡곤란",
+      "pol": "-",
+      "detail": "자다 숨 막혀 깬 적 없음",
+      "id": "F18"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "+",
+      "detail": "조금 나는 것 같음",
+      "id": "F19"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Chill",
+      "label": "오한",
+      "pol": "+",
+      "detail": "으슬으슬 추움",
+      "id": "F20"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가래 색·양상",
+      "pol": "?",
+      "detail": "하루 종일 누렇고 끈적함",
+      "id": "F21"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가래 양",
+      "pol": "+",
+      "detail": "많이 나옴",
+      "id": "F22"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "객혈",
+      "pol": "-",
+      "detail": "가래에 피 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 13,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "있음",
+      "id": "F24"
+    },
+    {
+      "turn": 13,
+      "sec": "meds",
+      "key": "other",
+      "label": "혈압약",
+      "pol": "?",
+      "detail": "하루 한 알",
+      "id": "F25"
+    },
+    {
+      "turn": 14,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연량",
+      "pol": "+",
+      "detail": "하루 서너 개비",
+      "id": "F26"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "other",
+      "label": "부친 폐암",
+      "pol": "+",
+      "detail": "폐암",
+      "id": "F27"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "fh.HTN",
+      "label": "모친 고혈압",
+      "pol": "+",
+      "detail": "고혈압",
+      "id": "F28"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "other",
+      "label": "형 흡연",
+      "pol": "+",
+      "detail": "담배 많이 피움",
+      "id": "F29"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "other",
+      "label": "형 호흡기 질환",
+      "pol": "+",
+      "detail": "숨이 찬 병",
+      "id": "F30"
+    },
+    {
+      "turn": 16,
+      "sec": "sh",
+      "key": "sh.alcohol",
+      "label": "음주",
+      "pol": "+",
+      "detail": "주 1~2회 소주 반 병",
+      "id": "F31"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "과거 응급실 방문",
+      "pol": "+",
+      "detail": "작년 겨울 숨차서 방문",
+      "id": "F32"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "과거 입원",
+      "pol": "+",
+      "detail": "작년 겨울 3일 입원",
+      "id": "F33"
+    },
+    {
+      "turn": 18,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연 기간",
+      "pol": "+",
+      "detail": "20세부터 50년 가까이",
+      "id": "F34"
+    },
+    {
+      "turn": 19,
+      "sec": "ros",
+      "key": "ros.Rhinorrhea",
+      "label": "콧물",
+      "pol": "+",
+      "detail": "남",
+      "id": "F35"
+    },
+    {
+      "turn": 20,
+      "sec": "hpi",
+      "key": "other",
+      "label": "주변 유사 증상",
+      "pol": "+",
+      "detail": "숨차서 숨 못 쉬는 분 있음",
+      "id": "F36"
+    },
+    {
+      "turn": 21,
+      "sec": "pmh",
+      "key": "other",
+      "label": "천식",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F37"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "흡입기 변경 궁금증",
+      "pol": "+",
+      "detail": "더 세게 바꿔야 하는지",
+      "id": "F38"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "금연 궁금증",
+      "pol": "+",
+      "detail": "담배를 다 끊어야 하는지",
+      "id": "F39"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "bfa91c5cab80149451bfdda55503128881ab198084383ac44959d95149b4c4d3",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 힘드셨겠어요. 갑자기 숨이 찼나요, 서서히였나요?",
+      "effective": "갑자기 숨이 찼나요, 서서히였나요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S04",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 35,
+  "luna_calls": 9,
+  "sim_doctor_calls": 8,
+  "sim_doctor_input_tokens": 18144,
+  "sim_doctor_output_tokens": 9563,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v2c/run.py",
+  "grade_total": 66,
+  "grade_scores": {
+    "정보수집": 15,
+    "진단추론": 12,
+    "검사·추적": 7,
+    "안전": 11,
+    "의사소통": 8,
+    "효율": 13
+  }
+}

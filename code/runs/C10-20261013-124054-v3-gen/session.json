@@ -1,0 +1,797 @@
+{
+  "session_id": "559346a2-8578-4980-83e2-0ff757a0a6dd",
+  "status": "completed",
+  "turns_remaining": 11,
+  "initial": {
+    "opening": "이름은 최윤정이고, 나는 서른두 살 여자이다. 최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다. 원래 몸무게는 오십육 키로그람 정도였는데, 최근 석 달 사이에 칠 키로그람 정도 빠져서 지금은 사십구 키로그람 정도이다. 평소에는 몸무게 변화가 거의 없었는데, 이번에는 다이어트나 운동을 한 것도 아닌데 저절로 살이 빠져서 걱정이 되었다. 키는 백육십사 센티미터이다.",
+    "vital_signs": "혈압 : 138/72 mmHg\n맥박 : 102 회/분\n호흡 : 19 회/분\n체온 : 36.9°C"
+  },
+  "available_actions": [
+    "SAY",
+    "EXAM",
+    "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T13:06:14.825581+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+    {
+      "id": "d4ee8b9d-95c5-4ef7-84af-951e01dde7bb",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "많이 걱정되셨겠어요.",
+        "request_id": "ddd8e85e-c6b1-4aa9-a1c0-21eaead7da30"
+      },
+      "effective_content": "많이 걱정되셨겠어요.",
+      "response": {
+        "turn": 1,
+        "status": "OK",
+        "content": "네, 큰 병일까 봐 걱정돼요.",
+        "turns_remaining": 49
+      },
+      "http_status": 200,
+      "turn": 1
+    },
+    {
+      "id": "2fe1deba-f5e4-4168-8a69-afa800575636",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "비의도적 체중 감소에 대해 자세히 말씀해 주세요",
+        "request_id": "0f145027-c6a3-4a25-8100-6ff894e777a3"
+      },
+      "effective_content": "비의도적 체중 감소에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 2,
+        "status": "OK",
+        "content": "석 달간 저절로 7kg 빠졌어요.",
+        "turns_remaining": 48
+      },
+      "http_status": 200,
+      "turn": 2
+    },
+    {
+      "id": "f8e6d4c0-8b4a-405d-ba9b-df229fb73d99",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "특히 걱정되는 병이 있으세요?",
+        "request_id": "cc741412-40d7-4654-ae11-ecf13767cf3e"
+      },
+      "effective_content": "특히 걱정되는 병이 있으세요?",
+      "response": {
+        "turn": 3,
+        "status": "OK",
+        "content": "암일까 봐 걱정돼요.",
+        "turns_remaining": 47
+      },
+      "http_status": 200,
+      "turn": 3
+    },
+    {
+      "id": "06ac0b27-65ce-4d48-b948-834c9521b8da",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "다른 불편한 증상은 없으세요?",
+        "request_id": "233e9d38-9839-4a96-8729-6aab4361dd4f"
+      },
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "turn": 4,
+        "status": "OK",
+        "content": "가슴이 자주 두근거려요.",
+        "turns_remaining": 46
+      },
+      "http_status": 200,
+      "turn": 4
+    },
+    {
+      "id": "1334e30a-9a9c-47fa-97bf-c9f534019a93",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "그 밖에 또 불편한 건 없으세요?",
+        "request_id": "7134a83a-36d2-48fd-b591-2c8db7e7fffc"
+      },
+      "effective_content": "그 밖에 또 불편한 건 없으세요?",
+      "response": {
+        "turn": 5,
+        "status": "OK",
+        "content": "요즘 손이 떨려요.",
+        "turns_remaining": 45
+      },
+      "http_status": 200,
+      "turn": 5
+    },
+    {
+      "id": "12bbb278-aee0-4fc3-9cd0-2c6fc8e9b76b",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "천식이나 심장병 있으세요?",
+        "request_id": "11d0a7a2-f604-4e6f-a0ac-8b6ae82cc880"
+      },
+      "effective_content": "천식이나 심장병 있으세요?",
+      "response": {
+        "turn": 6,
+        "status": "OK",
+        "content": "아니요, 둘 다 없어요.",
+        "turns_remaining": 44
+      },
+      "http_status": 200,
+      "turn": 6
+    },
+    {
+      "id": "9315d104-245f-4554-a8a2-d0a0f1f925ab",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가슴 통증이나 숨참은 없으세요?",
+        "request_id": "d5c40865-0e44-42f5-bad6-de62a1e9a8f9"
+      },
+      "effective_content": "가슴 통증이나 숨참은 없으세요?",
+      "response": {
+        "turn": 7,
+        "status": "OK",
+        "content": "통증은 없고, 걸으면 숨차요.",
+        "turns_remaining": 43
+      },
+      "http_status": 200,
+      "turn": 7
+    },
+    {
+      "id": "251d3059-9b67-46dc-ac17-cc05da451252",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "식사량과 식욕에 대해 자세히 말씀해 주세요",
+        "request_id": "18159061-59e8-4e32-9cf7-e00e100be965"
+      },
+      "effective_content": "식사량과 식욕에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 8,
+        "status": "OK",
+        "content": "식욕이 좋아져 더 많이 먹어요.",
+        "turns_remaining": 42
+      },
+      "http_status": 200,
+      "turn": 8
+    },
+    {
+      "id": "5848c357-a877-4ddf-98d9-2b0ffb01ffe2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "두근거림에 대해 자세히 말씀해 주세요",
+        "request_id": "db8c9f87-5cc0-46c0-918d-58bb96067f2f"
+      },
+      "effective_content": "두근거림에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 9,
+        "status": "OK",
+        "content": "가만히 있어도 자주 두근거려요.",
+        "turns_remaining": 41
+      },
+      "http_status": 200,
+      "turn": 9
+    },
+    {
+      "id": "37b15097-5f45-42f3-bfad-55af0917321f",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "더위 민감함에 대해 자세히 말씀해 주세요",
+        "request_id": "061f9d1a-f029-4323-a934-b91d22c850fa"
+      },
+      "effective_content": "더위 민감함에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 10,
+        "status": "OK",
+        "content": "에어컨을 틀어도 덥고 땀이 나요.",
+        "turns_remaining": 40
+      },
+      "http_status": 200,
+      "turn": 10
+    },
+    {
+      "id": "a303dc92-8c08-4c13-9f65-f5d4fc4d2ccf",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "대변 변화에 대해 자세히 말씀해 주세요",
+        "request_id": "3019e91f-1f95-41fd-b903-b30675f4b9cb"
+      },
+      "effective_content": "대변 변화에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 11,
+        "status": "OK",
+        "content": "하루 2~3번, 전보다 묽어요.",
+        "turns_remaining": 39
+      },
+      "http_status": 200,
+      "turn": 11
+    },
+    {
+      "id": "a2013b0c-c92b-4075-b601-c8babf7fcc3c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "물을 예전보다 많이 마시세요?",
+        "request_id": "36d5eb6a-f661-4e2e-b91d-fc73bf4e1543"
+      },
+      "effective_content": "물을 예전보다 많이 마시세요?",
+      "response": {
+        "turn": 12,
+        "status": "OK",
+        "content": "아니요, 예전과 비슷해요.",
+        "turns_remaining": 38
+      },
+      "http_status": 200,
+      "turn": 12
+    },
+    {
+      "id": "9c430e6f-db1f-4190-af09-1f81dd0056e6",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "고혈압이나 당뇨가 있으세요?",
+        "request_id": "5b5b2e46-c656-42e1-9dcb-2ae54f254736"
+      },
+      "effective_content": "고혈압이나 당뇨가 있으세요?",
+      "response": {
+        "turn": 13,
+        "status": "OK",
+        "content": "아니요, 둘 다 없어요.",
+        "turns_remaining": 37
+      },
+      "http_status": 200,
+      "turn": 13
+    },
+    {
+      "id": "87c7540e-bc4e-4b75-9dda-14ab90f4cad0",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+        "request_id": "0cd22f58-8f27-4c0d-99c1-0b09905c791b"
+      },
+      "effective_content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 14,
+        "status": "OK",
+        "content": "약이나 영양제는 안 먹어요.",
+        "turns_remaining": 36
+      },
+      "http_status": 200,
+      "turn": 14
+    },
+    {
+      "id": "8179bab2-0c35-4803-ac52-ddb7330b2389",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "임신 가능성이 있으세요?",
+        "request_id": "04a313d5-149e-4612-897a-8618b7c14b15"
+      },
+      "effective_content": "임신 가능성이 있으세요?",
+      "response": {
+        "turn": 15,
+        "status": "OK",
+        "content": "아니요, 몇 달간 관계가 없었어요.",
+        "turns_remaining": 35
+      },
+      "http_status": 200,
+      "turn": 15
+    },
+    {
+      "id": "455a4e4d-37a8-46b8-844b-fb224ca5bec2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "다른 지병에 대해 자세히 말씀해 주세요",
+        "request_id": "e2122465-a2d3-42f4-b923-81052a8aa1fa"
+      },
+      "effective_content": "다른 지병에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 16,
+        "status": "OK",
+        "content": "다른 지병은 없어요.",
+        "turns_remaining": 34
+      },
+      "http_status": 200,
+      "turn": 16
+    },
+    {
+      "id": "f2e9f068-684a-4f23-b615-35c938778399",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가족 병력에 대해 자세히 말씀해 주세요",
+        "request_id": "039349ff-d5ba-4ece-b802-a24ad7c72fd2"
+      },
+      "effective_content": "가족 병력에 대해 자세히 말씀해 주세요",
+      "response": {
+        "turn": 17,
+        "status": "OK",
+        "content": "어머니가 갑상샘 저하증이세요.",
+        "turns_remaining": 33
+      },
+      "http_status": 200,
+      "turn": 17
+    },
+    {
+      "id": "77178f1d-f0d6-4392-b092-0c3fc591cb7c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "생리 주기나 양이 변했나요?",
+        "request_id": "c597053c-9e40-458a-9e7f-a9f6e31400d8"
+      },
+      "effective_content": "생리 주기나 양이 변했나요?",
+      "response": {
+        "turn": 18,
+        "status": "OK",
+        "content": "두 달간 양이 줄고 짧아졌어요.",
+        "turns_remaining": 32
+      },
+      "http_status": 200,
+      "turn": 18
+    },
+    {
+      "id": "cdbfd92c-141e-49a2-afc7-873d8f7f993f",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "오늘 특히 궁금하신 게 있으세요?",
+        "request_id": "fa16516c-9326-491e-91be-6ec07ba296bb"
+      },
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "turn": 19,
+        "status": "OK",
+        "content": "어떤 검사를 받아야 하나요?",
+        "turns_remaining": 31
+      },
+      "http_status": 200,
+      "turn": 19
+    },
+    {
+      "id": "15be7fda-1357-4305-a9bc-d8103ae6a3f6",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "갑상선 촉진하겠습니다",
+        "request_id": "e457744d-8070-4951-9a80-47598ae53b53"
+      },
+      "effective_content": "hn_thyroid_palpation",
+      "response": {
+        "turn": 20,
+        "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+        "status": "OK",
+        "turns_remaining": 30
+      },
+      "http_status": 200,
+      "turn": 20
+    },
+    {
+      "id": "7a146c22-e193-408d-889d-467579435831",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "갑상선 잡음 청진하겠습니다",
+        "request_id": "1bd7bfa7-e2d9-4f91-93cd-aac2e18d1903"
+      },
+      "effective_content": "hn_thyroid_bruit",
+      "response": {
+        "turn": 21,
+        "result": "잡음(+/+)",
+        "status": "OK",
+        "turns_remaining": 29
+      },
+      "http_status": 200,
+      "turn": 21
+    },
+    {
+      "id": "f737c386-6c96-47b2-a049-2e299334178e",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "갑상선 안징후 검사하겠습니다",
+        "request_id": "b3213b1e-3a46-412a-a33a-4ad1c3cfd309"
+      },
+      "effective_content": "hn_thyroid_eye_signs",
+      "response": {
+        "turn": 22,
+        "result": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+        "status": "OK",
+        "turns_remaining": 28
+      },
+      "http_status": 200,
+      "turn": 22
+    },
+    {
+      "id": "cbb32647-0363-44f1-b185-1917571c4a7a",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "자세성 떨림 확인하겠습니다",
+        "request_id": "070afbd6-08b9-45dd-92b1-f67d7b5369ef"
+      },
+      "effective_content": "bex_postural_tremor",
+      "response": {
+        "turn": 23,
+        "result": "자세성 떨림(+/+)",
+        "status": "OK",
+        "turns_remaining": 27
+      },
+      "http_status": 200,
+      "turn": 23
+    },
+    {
+      "id": "8f6ba1f8-de6a-46ee-b664-b07ddb845ff5",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "심부건반사 검사하겠습니다",
+        "request_id": "2c8f7f3a-ec95-492e-8992-2799cb471069"
+      },
+      "effective_content": "bex_dtr",
+      "response": {
+        "turn": 24,
+        "result": "슬개건 3+/3+, 아킬레스건 2+/2+",
+        "status": "OK",
+        "turns_remaining": 26
+      },
+      "http_status": 200,
+      "turn": 24
+    },
+    {
+      "id": "0bd5f1ba-e337-47bd-8c9c-23a806e3b774",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "심음 청진하겠습니다",
+        "request_id": "cef88204-e00c-4f51-b1c0-13adaccc351d"
+      },
+      "effective_content": "ch_heart_auscultation",
+      "response": {
+        "turn": 25,
+        "result": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+        "status": "OK",
+        "turns_remaining": 25
+      },
+      "http_status": 200,
+      "turn": 25
+    },
+    {
+      "id": "d8a6925f-b4ab-439d-ae12-8dd03c95c44c",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "폐 청진하겠습니다",
+        "request_id": "e424ff84-3005-4722-bc6a-68d426456f39"
+      },
+      "effective_content": "ch_lung_auscultation",
+      "response": {
+        "turn": 26,
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "status": "OK",
+        "turns_remaining": 24
+      },
+      "http_status": 200,
+      "turn": 26
+    },
+    {
+      "id": "0b58b181-ec50-4b02-b0d2-e10de8d5964d",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "피부 온도·발한 촉진하겠습니다",
+        "request_id": "c3403fe4-41b4-4239-912e-b5f84c979cbc"
+      },
+      "effective_content": "gen_skin_palpation",
+      "response": {
+        "turn": 27,
+        "result": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+        "status": "OK",
+        "turns_remaining": 23
+      },
+      "http_status": 200,
+      "turn": 27
+    },
+    {
+      "id": "880ac7b5-fd5a-4a08-9181-a145bca545b1",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "복부 촉진하겠습니다",
+        "request_id": "2eeabba3-6a37-4b3f-a4d6-626b241de5a7"
+      },
+      "effective_content": "abd_palpation",
+      "response": {
+        "turn": 28,
+        "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+        "status": "OK",
+        "turns_remaining": 22
+      },
+      "http_status": 200,
+      "turn": 28
+    },
+    {
+      "id": "fe712d63-760e-4bab-99c6-176a289bf59f",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "경부 림프절 촉진하겠습니다",
+        "request_id": "4a2cbae7-59d5-491f-9278-6ce2b8119078"
+      },
+      "effective_content": "hn_cervical_lymph_node",
+      "response": {
+        "turn": 29,
+        "result": "촉지(-/-), 압통(-/-)",
+        "status": "OK",
+        "turns_remaining": 21
+      },
+      "http_status": 200,
+      "turn": 29
+    },
+    {
+      "id": "6f2770cd-ba0f-4499-bb7d-bf48d3a9e955",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "액와 림프절 촉진하겠습니다",
+        "request_id": "134662e4-3958-4e16-91aa-e8442daf5ecd"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 30,
+        "result": "액와 림프절 촉지(-/-), 압통(-/-)",
+        "status": "OK",
+        "turns_remaining": 20
+      },
+      "http_status": 200,
+      "turn": 30
+    },
+    {
+      "id": "9cf0f350-aced-4c10-97fa-d1ddf33e5ff2",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "신체 계측하겠습니다",
+        "request_id": "9f57558f-0d7b-420a-b4ee-0632d2ad8e8b"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 31,
+        "error": {
+          "code": "EXAM_NOT_SPECIFIC",
+          "message": "Request one specific examination maneuver."
+        },
+        "turns_remaining": 19
+      },
+      "http_status": 422,
+      "turn": 31
+    },
+    {
+      "id": "0b5c4e3f-4cef-4096-be61-898215711a01",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "그레이브스병에 의한 갑상샘항진증으로 보여요.",
+        "request_id": "525fc156-4a56-4b0a-8b13-990b08039336"
+      },
+      "effective_content": "그레이브스병에 의한 갑상샘항진증으로 보여요.",
+      "response": {
+        "turn": 32,
+        "status": "OK",
+        "content": "치료하면 좋아질 수 있나요?",
+        "turns_remaining": 18
+      },
+      "http_status": 200,
+      "turn": 32
+    },
+    {
+      "id": "30bde11b-a53f-4798-afa7-3ed957ab333c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "치료하면 대부분 좋아지고 체중도 돌아와요.",
+        "request_id": "773607da-ed4f-480b-9db1-96a95cb378af"
+      },
+      "effective_content": "치료하면 대부분 좋아지고 체중도 돌아와요.",
+      "response": {
+        "turn": 33,
+        "status": "OK",
+        "content": "다행이네요. 치료받고 싶어요.",
+        "turns_remaining": 17
+      },
+      "http_status": 200,
+      "turn": 33
+    },
+    {
+      "id": "ae8b909f-6ebb-4e7c-b4d2-ad21121fc6f1",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "갑상샘 호르몬과 항체로 원인을 확인해요.",
+        "request_id": "94805167-1b4a-44f1-9030-06b8da33cc4f"
+      },
+      "effective_content": "갑상샘 호르몬과 항체로 원인을 확인해요.",
+      "response": {
+        "turn": 34,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 16
+      },
+      "http_status": 200,
+      "turn": 34
+    },
+    {
+      "id": "1d41dd02-1a17-4aa9-beeb-b54bb0a1be7c",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "검사 결과에 따라 증상약과 항갑상샘제를 상의해요.",
+        "request_id": "5782dcf3-6b65-49bf-b976-f646a573cf6e"
+      },
+      "effective_content": "검사 결과에 따라 증상약과 항갑상샘제를 상의해요.",
+      "response": {
+        "turn": 35,
+        "status": "OK",
+        "content": "네, 결과 보고 상의할게요.",
+        "turns_remaining": 15
+      },
+      "http_status": 200,
+      "turn": 35
+    },
+    {
+      "id": "4cbbe256-cfa4-4cf9-bf21-8341011146ff",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "발열·불규칙한 맥·호흡곤란·의식 변화면 바로 오세요.",
+        "request_id": "dcec6400-df1f-463d-b6d3-543d13af90bf"
+      },
+      "effective_content": "발열·불규칙한 맥·호흡곤란·의식 변화면 바로 오세요.",
+      "response": {
+        "turn": 36,
+        "status": "OK",
+        "content": "네, 그러면 바로 올게요.",
+        "turns_remaining": 14
+      },
+      "http_status": 200,
+      "turn": 36
+    },
+    {
+      "id": "52eb5a14-ef87-46d9-8d5a-3d945b051a7d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+        "request_id": "46443744-2802-48dd-b585-ac2207e27260"
+      },
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "turn": 37,
+        "status": "OK",
+        "content": "열이 나면 바로 와야 해요.",
+        "turns_remaining": 13
+      },
+      "http_status": 200,
+      "turn": 37
+    },
+    {
+      "id": "56c42007-d035-4a78-8061-f60b08f3eca8",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+        "request_id": "b9a05f23-bff2-4c5d-8f41-156b26cae943"
+      },
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "turn": 38,
+        "status": "OK",
+        "content": "약은 얼마나 오래 먹어야 하나요?",
+        "turns_remaining": 12
+      },
+      "http_status": 200,
+      "turn": 38
+    },
+    {
+      "id": "056df746-688e-4d32-9c5a-28866882dfef",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "약은 보통 1~2년 정도 드셔요.",
+        "request_id": "21048c0e-68d5-447d-a0d1-40c43799e8b8"
+      },
+      "effective_content": "약은 보통 1~2년 정도 드셔요.",
+      "response": {
+        "turn": 39,
+        "status": "OK",
+        "content": "네, 꾸준히 먹을게요.",
+        "turns_remaining": 11
+      },
+      "http_status": 200,
+      "turn": 39
+    },
+    {
+      "id": "ff500fa9-678a-4a88-9564-2a6164840f6a",
+      "action": "DIAGNOSE",
+      "payload": {
+        "note": {
+          "A": {
+            "evidence": "#1. 그레이브스병에 의한 갑상샘항진증 (Graves' disease)\n- 근거 : 3개월간 비의도적으로 56kg에서 49kg으로 약 7kg 감소했고 다이어트나 운동은 하지 않았으며, 현재 BMI는 18.2이다 → 임상적으로 의미 있는 비의도적 체중 감소이다. (시작 정보)\n- 근거 : 체중 감소에도 식욕이 좋고 더 많이 먹으며, 자주 두근거리고 손이 떨리며 더위와 발한을 호소한다 → 갑상샘항진증에 합당한 증상 조합이다. (턴 4, 5, 8, 10)\n- 근거 : 진찰상 갑상샘이 대칭적으로 미만성 비대하고 잡음이 들리며 안구돌출·안검 지연·안검 후퇴가 확인된다 → 그레이브스병을 강하게 시사한다. (턴 20, 21, 22)\n- 근거 : 진찰상 맥박 102회/분, 자세성 떨림, 슬개건 반사 항진, 따뜻하고 땀이 나는 피부가 확인된다 → 갑상샘항진의 신체 소견과 부합한다. (턴 23, 24, 25, 27)\n- 근거 : 모친에게 갑상샘 저하증 병력이 있다 → 갑상샘 질환 가족력이 있다. (턴 17)\n- 근거 : 진찰상 갑상샘 결절, 복부 종괴, 경부·액와 림프절 촉지가 없다 → 촉진상 결절성 갑상샘 질환이나 종괴·림프절 비대는 확인되지 않는다. (턴 20, 28, 29, 30)",
+            "differential": "r/o 갑상샘염에 의한 갑상샘중독증 : 체중 감소와 두근거림 등은 갑상샘중독증과 맞지만, 진찰상 갑상샘 잡음과 안징후는 그레이브스병을 더 지지한다 (시작 정보; 턴 4, 21, 22). 감별 검사 : TSH, 유리 T4\nr/o 독성 갑상샘결절 또는 다결절성 갑상샘종 : 체중 감소와 두근거림은 가능하지만, 진찰상 결절 없이 대칭적인 미만성 갑상샘 비대가 확인되어 가능성이 낮다 (시작 정보; 턴 4, 20). 감별 검사 : 갑상샘 초음파, 갑상샘 스캔\nr/o 당뇨병 : 비의도적 체중 감소와 식욕 증가는 고려할 근거이나, 수분 섭취는 예전과 같고 갑상샘항진을 시사하는 증상·진찰 소견이 뚜렷하다 (시작 정보; 턴 8, 12, 21, 22). 감별 검사 : 공복 혈당, 당화혈색소\nr/o 위장관 질환 또는 흡수장애 : 하루 2~3회의 이전보다 묽은 변과 비의도적 체중 감소가 있어 고려할 수 있으나, 뚜렷한 갑상샘항진 증상과 진찰 소견이 함께 확인된다 (시작 정보; 턴 11, 20, 21, 22). 감별 검사 : 혈액검사(CBC, 전해질), 임상 소견에 따른 대변검사 또는 흡수장애 검사"
+          },
+          "O": {
+            "exam": "V/S : BP 138/72 mmHg, PR 102 회/분, RR 19 회/분, BT 36.9°C (시작 정보) / Ht 164 cm, Wt 49 kg(환자 진술), BMI 18.2\nSkin : 피부 온도·발한 촉진 : 온난(+), 발한(+), 손바닥 습윤(+/+) (턴 27)\nH/E/E/N/T : 갑상선 안징후 검사 : 돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+) (턴 22)\nNeck : 갑상선 촉진 : 양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-) (턴 20). 갑상선 잡음 청진 : 잡음(+/+) (턴 21). 경부 림프절 촉진 : 촉지(-/-), 압통(-/-) (턴 29)\nLymph : 액와 림프절 촉진 : 액와 림프절 촉지(-/-), 압통(-/-) (턴 30)\nChest : 심음 청진 : S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연) (턴 25). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 26)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 28)\nNeuro : 자세성 떨림 확인 : 자세성 떨림(+/+) (턴 23). 심부건반사 검사 : 슬개건 3+/3+, 아킬레스건 2+/2+ (턴 24)",
+            "tests": ""
+          },
+          "P": {
+            "tests": "- 갑상샘자극호르몬, 유리 티록신, 삼요오드티로닌 : 갑상샘호르몬 과다 여부와 정도를 확인합니다.\n- 갑상샘자극호르몬 수용체 항체 : 그레이브스병인지 확인합니다.\n- 일반혈액검사, 간기능검사 : 항갑상샘제 치료 전 혈액과 간의 기준 상태를 확인합니다.\n- 심전도 : 두근거림과 빠른 맥박, 부정맥 여부를 확인합니다.\n- 혈청 임신검사 : 가임기 여성에서 임신 여부를 확인해 약 선택에 반영합니다.\n- 갑상샘 초음파 : 결절 여부와 갑상샘 모양을 확인해 원인을 감별합니다.\n- 공복혈당 또는 당화혈색소 : 체중 감소의 다른 원인인 당뇨병을 확인합니다.",
+            "education": "진료 중 설명함:\n- 그레이브스병에 의한 갑상샘항진증으로 보여요.\n- 치료하면 대부분 좋아지고 체중도 돌아와요.\n- 갑상샘 호르몬과 항체로 원인을 확인해요.\n- 검사 결과에 따라 증상약과 항갑상샘제를 상의해요.\n- 발열·불규칙한 맥·호흡곤란·의식 변화면 바로 오세요.\n- 약은 보통 1~2년 정도 드셔요.\n다음 방문 시 교육 예정 : 항갑상샘제 복용 중 발열이나 인후통, 황달이 생기면 약 복용을 중단하고 즉시 의료진에게 연락합니다.; 눈이 건조하거나 자극감이 있으면 인공눈물을 사용하고, 흡연 중이면 금연이 눈 증상 악화 예방에 도움이 됩니다.",
+            "follow_up": "- 1주 이내 재진해 검사 결과를 확인하고 치료 방향을 상의합니다.\n- 치료를 시작하면 4~6주 간격으로 갑상샘 기능, 혈액검사, 간기능, 맥박과 증상을 확인합니다.\n- 즉시 내원 : 발열·인후통, 황달, 심한 두근거림·불규칙 맥, 호흡곤란, 의식 변화, 시력 저하·복시",
+            "treatment": "- 금기(천식·서맥·심부전) 확인 후 베타차단제로 두근거림·떨림 조절\n- TFT·TRAb 확인 후 항갑상샘제 시작 여부를 내분비내과 전문의와 상의해 결정, 무과립구증·간독성 교육\n- 눈 건조·자극감이 있으면 인공눈물, 흡연자는 금연 권고(안병증 악화 인자)\n- 재발·부작용 시 방사성요오드·수술을 내분비내과와 상의",
+            "disposition": "- 활력징후 대체로 안정(빈맥 102회/분) : BP 138/72 mmHg, PR 102 회/분, RR 19 회/분, BT 36.9°C\n- 외래 : 맥박은 분당 102회로 빠르고 걸을 때 숨차지만, 흉통·폐 이상·의식 변화 등 위급 소견은 없습니다. 외래에서 신속히 검사하고 내분비내과 진료를 연계합니다."
+          },
+          "S": {
+            "cc": "C.C : 비의도적 체중 감소\nOnset : 3개월 전\n통증평가 : 해당 없음",
+            "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 모친 갑상샘 저하증 (+)",
+            "sh": "Smoking ( )\nAlcohol ( )",
+            "hpi": "32세 여성으로, 3개월 전부터 체중이 저절로 감소하기 시작함.\n평소 체중은 56kg 정도였고 현재 49kg 정도로, 3개월간 7kg 정도 감소함. 키는 164cm이며 평소 체중 변화는 거의 없었다고 함.\n다이어트나 운동을 하지 않았고, 식욕은 좋아져 더 많이 먹는다고 함. 가슴 두근거림이 가만히 있어도 자주 있고 손이 떨리며, 에어컨을 틀어도 덥고 더울 때 땀이 난다고 함.\n걸으면 숨이 차고, 대변은 하루 2~3번으로 전보다 묽다고 함. 월경량과 기간이 2개월간 줄고 짧아졌다고 함.\n가슴 통증 (-), 수분 섭취 변화 (-), 임신 가능성 (-; 몇 달간 성관계 없음)이라고 함. 천식·심장병·고혈압·당뇨 및 기타 지병은 없고, 복용 약이나 영양제는 없다고 함.\n큰 병, 특히 암일까 봐 걱정되며 어떤 검사를 받아야 하는지 궁금해 내원함.",
+            "pmh": "DM / HTN (-/-)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease (-)  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 기타 지병 (-), 천식(-), 약·영양제(-)",
+            "ros": "General weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation (+)\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation (-/ / / / )\nOthers : 두근거림 (+) 가만히 있어도 자주 있음, 손떨림 (+) 요즘 손이 떨림, 보행 시 숨참 (+), 식욕 증가 (+) 더 많이 먹음, 더위 민감 (+) 에어컨에도 더움, 땀 (+) 더울 때 땀 남, 배변 변화 (+) 하루 2~3번으로 전보다 묽음, 수분 섭취 변화 (-) 예전과 비슷함, 월경량 감소 (+) 2개월간, 월경 기간 감소 (+) 2개월간"
+          }
+        },
+        "action": "DIAGNOSE",
+        "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+        "request_id": "89376ab6-2907-4590-bc51-dfd1390c1abd"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 39,
+        "status": "completed",
+        "score_status": "not_scored",
+        "record_digest": "1cdd8533911267d2d7677ded6a3a55793e2e2f4b6d715d0c348acbc46a56da2d"
+      },
+      "http_status": 200,
+      "turn": 39
+    }
+  ],
+  "note": "[S] 주호소 (CC)\nC.C : 비의도적 체중 감소\nOnset : 3개월 전\n통증평가 : 해당 없음\n\n[S] 현병력 (HPI)\n32세 여성으로, 3개월 전부터 체중이 저절로 감소하기 시작함.\n평소 체중은 56kg 정도였고 현재 49kg 정도로, 3개월간 7kg 정도 감소함. 키는 164cm이며 평소 체중 변화는 거의 없었다고 함.\n다이어트나 운동을 하지 않았고, 식욕은 좋아져 더 많이 먹는다고 함. 가슴 두근거림이 가만히 있어도 자주 있고 손이 떨리며, 에어컨을 틀어도 덥고 더울 때 땀이 난다고 함.\n걸으면 숨이 차고, 대변은 하루 2~3번으로 전보다 묽다고 함. 월경량과 기간이 2개월간 줄고 짧아졌다고 함.\n가슴 통증 (-), 수분 섭취 변화 (-), 임신 가능성 (-; 몇 달간 성관계 없음)이라고 함. 천식·심장병·고혈압·당뇨 및 기타 지병은 없고, 복용 약이나 영양제는 없다고 함.\n큰 병, 특히 암일까 봐 걱정되며 어떤 검사를 받아야 하는지 궁금해 내원함.\n\n[S] 과거력·약물·알레르기 (PMH)\nDM / HTN (-/-)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease (-)  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 기타 지병 (-), 천식(-), 약·영양제(-)\n\n[S] 가족력 (FH)\nDM / HTN ( / )\nStroke ( )\nOthers : 모친 갑상샘 저하증 (+)\n\n[S] 사회력 (SH)\nSmoking ( )\nAlcohol ( )\n\n[S] 계통 문진 (ROS)\nGeneral weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation (+)\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation (-/ / / / )\nOthers : 두근거림 (+) 가만히 있어도 자주 있음, 손떨림 (+) 요즘 손이 떨림, 보행 시 숨참 (+), 식욕 증가 (+) 더 많이 먹음, 더위 민감 (+) 에어컨에도 더움, 땀 (+) 더울 때 땀 남, 배변 변화 (+) 하루 2~3번으로 전보다 묽음, 수분 섭취 변화 (-) 예전과 비슷함, 월경량 감소 (+) 2개월간, 월경 기간 감소 (+) 2개월간\n\n[O] 진찰 소견\nV/S : BP 138/72 mmHg, PR 102 회/분, RR 19 회/분, BT 36.9°C (시작 정보) / Ht 164 cm, Wt 49 kg(환자 진술), BMI 18.2\nSkin : 피부 온도·발한 촉진 : 온난(+), 발한(+), 손바닥 습윤(+/+) (턴 27)\nH/E/E/N/T : 갑상선 안징후 검사 : 돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+) (턴 22)\nNeck : 갑상선 촉진 : 양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-) (턴 20). 갑상선 잡음 청진 : 잡음(+/+) (턴 21). 경부 림프절 촉진 : 촉지(-/-), 압통(-/-) (턴 29)\nLymph : 액와 림프절 촉진 : 액와 림프절 촉지(-/-), 압통(-/-) (턴 30)\nChest : 심음 청진 : S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연) (턴 25). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 26)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 28)\nNeuro : 자세성 떨림 확인 : 자세성 떨림(+/+) (턴 23). 심부건반사 검사 : 슬개건 3+/3+, 아킬레스건 2+/2+ (턴 24)\n\n[O] 검사 결과\n\n\n[A] 주진단\n그레이브스병에 의한 갑상샘항진증 (Graves' disease)\n\n[A] 근거\n#1. 그레이브스병에 의한 갑상샘항진증 (Graves' disease)\n- 근거 : 3개월간 비의도적으로 56kg에서 49kg으로 약 7kg 감소했고 다이어트나 운동은 하지 않았으며, 현재 BMI는 18.2이다 → 임상적으로 의미 있는 비의도적 체중 감소이다. (시작 정보)\n- 근거 : 체중 감소에도 식욕이 좋고 더 많이 먹으며, 자주 두근거리고 손이 떨리며 더위와 발한을 호소한다 → 갑상샘항진증에 합당한 증상 조합이다. (턴 4, 5, 8, 10)\n- 근거 : 진찰상 갑상샘이 대칭적으로 미만성 비대하고 잡음이 들리며 안구돌출·안검 지연·안검 후퇴가 확인된다 → 그레이브스병을 강하게 시사한다. (턴 20, 21, 22)\n- 근거 : 진찰상 맥박 102회/분, 자세성 떨림, 슬개건 반사 항진, 따뜻하고 땀이 나는 피부가 확인된다 → 갑상샘항진의 신체 소견과 부합한다. (턴 23, 24, 25, 27)\n- 근거 : 모친에게 갑상샘 저하증 병력이 있다 → 갑상샘 질환 가족력이 있다. (턴 17)\n- 근거 : 진찰상 갑상샘 결절, 복부 종괴, 경부·액와 림프절 촉지가 없다 → 촉진상 결절성 갑상샘 질환이나 종괴·림프절 비대는 확인되지 않는다. (턴 20, 28, 29, 30)\n\n[A] 감별진단\nr/o 갑상샘염에 의한 갑상샘중독증 : 체중 감소와 두근거림 등은 갑상샘중독증과 맞지만, 진찰상 갑상샘 잡음과 안징후는 그레이브스병을 더 지지한다 (시작 정보; 턴 4, 21, 22). 감별 검사 : TSH, 유리 T4\nr/o 독성 갑상샘결절 또는 다결절성 갑상샘종 : 체중 감소와 두근거림은 가능하지만, 진찰상 결절 없이 대칭적인 미만성 갑상샘 비대가 확인되어 가능성이 낮다 (시작 정보; 턴 4, 20). 감별 검사 : 갑상샘 초음파, 갑상샘 스캔\nr/o 당뇨병 : 비의도적 체중 감소와 식욕 증가는 고려할 근거이나, 수분 섭취는 예전과 같고 갑상샘항진을 시사하는 증상·진찰 소견이 뚜렷하다 (시작 정보; 턴 8, 12, 21, 22). 감별 검사 : 공복 혈당, 당화혈색소\nr/o 위장관 질환 또는 흡수장애 : 하루 2~3회의 이전보다 묽은 변과 비의도적 체중 감소가 있어 고려할 수 있으나, 뚜렷한 갑상샘항진 증상과 진찰 소견이 함께 확인된다 (시작 정보; 턴 11, 20, 21, 22). 감별 검사 : 혈액검사(CBC, 전해질), 임상 소견에 따른 대변검사 또는 흡수장애 검사\n\n[P] 추가 검사\n- 갑상샘자극호르몬, 유리 티록신, 삼요오드티로닌 : 갑상샘호르몬 과다 여부와 정도를 확인합니다.\n- 갑상샘자극호르몬 수용체 항체 : 그레이브스병인지 확인합니다.\n- 일반혈액검사, 간기능검사 : 항갑상샘제 치료 전 혈액과 간의 기준 상태를 확인합니다.\n- 심전도 : 두근거림과 빠른 맥박, 부정맥 여부를 확인합니다.\n- 혈청 임신검사 : 가임기 여성에서 임신 여부를 확인해 약 선택에 반영합니다.\n- 갑상샘 초음파 : 결절 여부와 갑상샘 모양을 확인해 원인을 감별합니다.\n- 공복혈당 또는 당화혈색소 : 체중 감소의 다른 원인인 당뇨병을 확인합니다.\n\n[P] 치료\n- 금기(천식·서맥·심부전) 확인 후 베타차단제로 두근거림·떨림 조절\n- TFT·TRAb 확인 후 항갑상샘제 시작 여부를 내분비내과 전문의와 상의해 결정, 무과립구증·간독성 교육\n- 눈 건조·자극감이 있으면 인공눈물, 흡연자는 금연 권고(안병증 악화 인자)\n- 재발·부작용 시 방사성요오드·수술을 내분비내과와 상의\n\n[P] 처치 결정\n- 활력징후 대체로 안정(빈맥 102회/분) : BP 138/72 mmHg, PR 102 회/분, RR 19 회/분, BT 36.9°C\n- 외래 : 맥박은 분당 102회로 빠르고 걸을 때 숨차지만, 흉통·폐 이상·의식 변화 등 위급 소견은 없습니다. 외래에서 신속히 검사하고 내분비내과 진료를 연계합니다.\n\n[P] 추적\n- 1주 이내 재진해 검사 결과를 확인하고 치료 방향을 상의합니다.\n- 치료를 시작하면 4~6주 간격으로 갑상샘 기능, 혈액검사, 간기능, 맥박과 증상을 확인합니다.\n- 즉시 내원 : 발열·인후통, 황달, 심한 두근거림·불규칙 맥, 호흡곤란, 의식 변화, 시력 저하·복시\n\n[P] 환자 교육\n진료 중 설명함:\n- 그레이브스병에 의한 갑상샘항진증으로 보여요.\n- 치료하면 대부분 좋아지고 체중도 돌아와요.\n- 갑상샘 호르몬과 항체로 원인을 확인해요.\n- 검사 결과에 따라 증상약과 항갑상샘제를 상의해요.\n- 발열·불규칙한 맥·호흡곤란·의식 변화면 바로 오세요.\n- 약은 보통 1~2년 정도 드셔요.\n다음 방문 시 교육 예정 : 항갑상샘제 복용 중 발열이나 인후통, 황달이 생기면 약 복용을 중단하고 즉시 의료진에게 연락합니다.; 눈이 건조하거나 자극감이 있으면 인공눈물을 사용하고, 흡연 중이면 금연이 눈 증상 악화 예방에 도움이 됩니다.\n\n",
+  "record": {
+    "A": {
+      "evidence": "#1. 그레이브스병에 의한 갑상샘항진증 (Graves' disease)\n- 근거 : 3개월간 비의도적으로 56kg에서 49kg으로 약 7kg 감소했고 다이어트나 운동은 하지 않았으며, 현재 BMI는 18.2이다 → 임상적으로 의미 있는 비의도적 체중 감소이다. (시작 정보)\n- 근거 : 체중 감소에도 식욕이 좋고 더 많이 먹으며, 자주 두근거리고 손이 떨리며 더위와 발한을 호소한다 → 갑상샘항진증에 합당한 증상 조합이다. (턴 4, 5, 8, 10)\n- 근거 : 진찰상 갑상샘이 대칭적으로 미만성 비대하고 잡음이 들리며 안구돌출·안검 지연·안검 후퇴가 확인된다 → 그레이브스병을 강하게 시사한다. (턴 20, 21, 22)\n- 근거 : 진찰상 맥박 102회/분, 자세성 떨림, 슬개건 반사 항진, 따뜻하고 땀이 나는 피부가 확인된다 → 갑상샘항진의 신체 소견과 부합한다. (턴 23, 24, 25, 27)\n- 근거 : 모친에게 갑상샘 저하증 병력이 있다 → 갑상샘 질환 가족력이 있다. (턴 17)\n- 근거 : 진찰상 갑상샘 결절, 복부 종괴, 경부·액와 림프절 촉지가 없다 → 촉진상 결절성 갑상샘 질환이나 종괴·림프절 비대는 확인되지 않는다. (턴 20, 28, 29, 30)",
+      "differential": "r/o 갑상샘염에 의한 갑상샘중독증 : 체중 감소와 두근거림 등은 갑상샘중독증과 맞지만, 진찰상 갑상샘 잡음과 안징후는 그레이브스병을 더 지지한다 (시작 정보; 턴 4, 21, 22). 감별 검사 : TSH, 유리 T4\nr/o 독성 갑상샘결절 또는 다결절성 갑상샘종 : 체중 감소와 두근거림은 가능하지만, 진찰상 결절 없이 대칭적인 미만성 갑상샘 비대가 확인되어 가능성이 낮다 (시작 정보; 턴 4, 20). 감별 검사 : 갑상샘 초음파, 갑상샘 스캔\nr/o 당뇨병 : 비의도적 체중 감소와 식욕 증가는 고려할 근거이나, 수분 섭취는 예전과 같고 갑상샘항진을 시사하는 증상·진찰 소견이 뚜렷하다 (시작 정보; 턴 8, 12, 21, 22). 감별 검사 : 공복 혈당, 당화혈색소\nr/o 위장관 질환 또는 흡수장애 : 하루 2~3회의 이전보다 묽은 변과 비의도적 체중 감소가 있어 고려할 수 있으나, 뚜렷한 갑상샘항진 증상과 진찰 소견이 함께 확인된다 (시작 정보; 턴 11, 20, 21, 22). 감별 검사 : 혈액검사(CBC, 전해질), 임상 소견에 따른 대변검사 또는 흡수장애 검사"
+    },
+    "O": {
+      "exam": "V/S : BP 138/72 mmHg, PR 102 회/분, RR 19 회/분, BT 36.9°C (시작 정보) / Ht 164 cm, Wt 49 kg(환자 진술), BMI 18.2\nSkin : 피부 온도·발한 촉진 : 온난(+), 발한(+), 손바닥 습윤(+/+) (턴 27)\nH/E/E/N/T : 갑상선 안징후 검사 : 돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+) (턴 22)\nNeck : 갑상선 촉진 : 양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-) (턴 20). 갑상선 잡음 청진 : 잡음(+/+) (턴 21). 경부 림프절 촉진 : 촉지(-/-), 압통(-/-) (턴 29)\nLymph : 액와 림프절 촉진 : 액와 림프절 촉지(-/-), 압통(-/-) (턴 30)\nChest : 심음 청진 : S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연) (턴 25). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 26)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 28)\nNeuro : 자세성 떨림 확인 : 자세성 떨림(+/+) (턴 23). 심부건반사 검사 : 슬개건 3+/3+, 아킬레스건 2+/2+ (턴 24)",
+      "tests": ""
+    },
+    "P": {
+      "tests": "- 갑상샘자극호르몬, 유리 티록신, 삼요오드티로닌 : 갑상샘호르몬 과다 여부와 정도를 확인합니다.\n- 갑상샘자극호르몬 수용체 항체 : 그레이브스병인지 확인합니다.\n- 일반혈액검사, 간기능검사 : 항갑상샘제 치료 전 혈액과 간의 기준 상태를 확인합니다.\n- 심전도 : 두근거림과 빠른 맥박, 부정맥 여부를 확인합니다.\n- 혈청 임신검사 : 가임기 여성에서 임신 여부를 확인해 약 선택에 반영합니다.\n- 갑상샘 초음파 : 결절 여부와 갑상샘 모양을 확인해 원인을 감별합니다.\n- 공복혈당 또는 당화혈색소 : 체중 감소의 다른 원인인 당뇨병을 확인합니다.",
+      "education": "진료 중 설명함:\n- 그레이브스병에 의한 갑상샘항진증으로 보여요.\n- 치료하면 대부분 좋아지고 체중도 돌아와요.\n- 갑상샘 호르몬과 항체로 원인을 확인해요.\n- 검사 결과에 따라 증상약과 항갑상샘제를 상의해요.\n- 발열·불규칙한 맥·호흡곤란·의식 변화면 바로 오세요.\n- 약은 보통 1~2년 정도 드셔요.\n다음 방문 시 교육 예정 : 항갑상샘제 복용 중 발열이나 인후통, 황달이 생기면 약 복용을 중단하고 즉시 의료진에게 연락합니다.; 눈이 건조하거나 자극감이 있으면 인공눈물을 사용하고, 흡연 중이면 금연이 눈 증상 악화 예방에 도움이 됩니다.",
+      "follow_up": "- 1주 이내 재진해 검사 결과를 확인하고 치료 방향을 상의합니다.\n- 치료를 시작하면 4~6주 간격으로 갑상샘 기능, 혈액검사, 간기능, 맥박과 증상을 확인합니다.\n- 즉시 내원 : 발열·인후통, 황달, 심한 두근거림·불규칙 맥, 호흡곤란, 의식 변화, 시력 저하·복시",
+      "treatment": "- 금기(천식·서맥·심부전) 확인 후 베타차단제로 두근거림·떨림 조절\n- TFT·TRAb 확인 후 항갑상샘제 시작 여부를 내분비내과 전문의와 상의해 결정, 무과립구증·간독성 교육\n- 눈 건조·자극감이 있으면 인공눈물, 흡연자는 금연 권고(안병증 악화 인자)\n- 재발·부작용 시 방사성요오드·수술을 내분비내과와 상의",
+      "disposition": "- 활력징후 대체로 안정(빈맥 102회/분) : BP 138/72 mmHg, PR 102 회/분, RR 19 회/분, BT 36.9°C\n- 외래 : 맥박은 분당 102회로 빠르고 걸을 때 숨차지만, 흉통·폐 이상·의식 변화 등 위급 소견은 없습니다. 외래에서 신속히 검사하고 내분비내과 진료를 연계합니다."
+    },
+    "S": {
+      "cc": "C.C : 비의도적 체중 감소\nOnset : 3개월 전\n통증평가 : 해당 없음",
+      "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 모친 갑상샘 저하증 (+)",
+      "sh": "Smoking ( )\nAlcohol ( )",
+      "hpi": "32세 여성으로, 3개월 전부터 체중이 저절로 감소하기 시작함.\n평소 체중은 56kg 정도였고 현재 49kg 정도로, 3개월간 7kg 정도 감소함. 키는 164cm이며 평소 체중 변화는 거의 없었다고 함.\n다이어트나 운동을 하지 않았고, 식욕은 좋아져 더 많이 먹는다고 함. 가슴 두근거림이 가만히 있어도 자주 있고 손이 떨리며, 에어컨을 틀어도 덥고 더울 때 땀이 난다고 함.\n걸으면 숨이 차고, 대변은 하루 2~3번으로 전보다 묽다고 함. 월경량과 기간이 2개월간 줄고 짧아졌다고 함.\n가슴 통증 (-), 수분 섭취 변화 (-), 임신 가능성 (-; 몇 달간 성관계 없음)이라고 함. 천식·심장병·고혈압·당뇨 및 기타 지병은 없고, 복용 약이나 영양제는 없다고 함.\n큰 병, 특히 암일까 봐 걱정되며 어떤 검사를 받아야 하는지 궁금해 내원함.",
+      "pmh": "DM / HTN (-/-)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease (-)  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 기타 지병 (-), 천식(-), 약·영양제(-)",
+      "ros": "General weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation (+)\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation (-/ / / / )\nOthers : 두근거림 (+) 가만히 있어도 자주 있음, 손떨림 (+) 요즘 손이 떨림, 보행 시 숨참 (+), 식욕 증가 (+) 더 많이 먹음, 더위 민감 (+) 에어컨에도 더움, 땀 (+) 더울 때 땀 남, 배변 변화 (+) 하루 2~3번으로 전보다 묽음, 수분 섭취 변화 (-) 예전과 비슷함, 월경량 감소 (+) 2개월간, 월경 기간 감소 (+) 2개월간"
+    }
+  },
+  "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)",
+  "score": {
+    "status": "not_scored",
+    "total": null,
+    "components": {}
+  }
+}

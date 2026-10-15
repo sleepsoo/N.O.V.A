@@ -1,0 +1,592 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많이 힘드셨겠어요.",
+      "effective_content": "많이 힘드셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많이 힘드셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "잦아진 두통에 대해 자세히 말씀해 주세요",
+      "effective_content": "잦아진 두통에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "최근 석 달 동안 한 달에 네다섯 번 정도 아프다.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "잦아진 두통에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "두통이 이렇게 자주 오니까 혹시 뇌에 혹이 있거나 뇌출혈 같은 큰 병이 아닌지 걱정이 된다.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "두통이 시작되는 양상에 대해 자세히 말씀해 주세요.",
+      "effective_content": "두통이 시작되는 양상에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "두통은 생리 시작하기 하루 이틀 전에 특히 잘 생긴다.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "두통이 시작되는 양상에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "두통이 아픈 부위에 대해 자세히 말씀해 주세요.",
+      "effective_content": "두통이 아픈 부위에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "왼쪽 관자놀이와 눈 뒤쪽이 아프고 가끔 오른쪽도 아프다.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "두통이 아픈 부위에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "두통의 느낌에 대해 자세히 말씀해 주세요.",
+      "effective_content": "두통의 느낌에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "맥박이 뛰듯이 욱신욱신 쑤시고, 심할 때는 십 점 중에 팔 점 정도로 아프다.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "두통의 느낌에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "팔다리 힘 빠짐이나 말 어눌함이 있나요?",
+      "effective_content": "팔다리 힘 빠짐이나 말 어눌함이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "팔다리 힘 빠짐 없고 말 어눌함도 없어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "팔다리 힘 빠짐이나 말 어눌함이 있나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "열이나 목 뻣뻣함이 있나요?",
+      "effective_content": "열이나 목 뻣뻣함이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "열이 나거나 목이 뻣뻣한 적은 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "열이나 목 뻣뻣함이 있나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "평생 처음 겪는 심한 두통인가요?",
+      "effective_content": "평생 처음 겪는 심한 두통인가요?",
+      "response": {
+        "status": "OK",
+        "content": "두통은 이십 대 후반부터 있었어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "평생 처음 겪는 심한 두통인가요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "진통제 드시는 방법에 대해 자세히 말씀해 주세요.",
+      "effective_content": "진통제 드시는 방법에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "진통제는 이부프로펜을 한 달에 다섯~여섯 번 정도 먹어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "진통제 드시는 방법에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "혹시 임신 가능성이 있으세요?",
+      "effective_content": "혹시 임신 가능성이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "임신 가능성은 없어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "혹시 임신 가능성이 있으세요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "메스꺼움이나 구토에 대해 자세히 말씀해 주세요",
+      "effective_content": "메스꺼움이나 구토에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "속이 메스껍고 심할 때는 토할 때도 있어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "메스꺼움이나 구토에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "두통 전 시야 변화에 대해 자세히 말씀해 주세요",
+      "effective_content": "두통 전 시야 변화에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "두통 전에 눈앞에 번쩍이는 빛이 보이거나 시야가 가려지는 일은 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "두통 전 시야 변화에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "다른 지병이 있으세요?",
+      "effective_content": "다른 지병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "과거에 큰 병을 앓은 적은 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "다른 지병이 있으세요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+      "effective_content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "진통제는 이부프로펜을 한 달에 다섯~여섯 번 정도 먹어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "가족 병력에 대해 자세히 말씀해 주세요",
+      "effective_content": "가족 병력에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "어머니가 젊을 때부터 편두통이 있으셨고, 아버지는 고혈압이 있으세요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "가족 병력에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "두통이 지속되는 시간에 대해 자세히 말씀해 주세요.",
+      "effective_content": "두통이 지속되는 시간에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "한 번 아프기 시작하면 하루 정도, 길면 이틀까지 간다.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "두통이 지속되는 시간에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "빛이나 소리에 예민해지나요?",
+      "effective_content": "빛이나 소리에 예민해지나요?",
+      "response": {
+        "status": "OK",
+        "content": "밝은 빛을 보면 눈이 부시고 더 아프고, 소리도 거슬려요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "빛이나 소리에 예민해지나요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨가 있으세요?",
+      "effective_content": "고혈압이나 당뇨가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압, 당뇨는 없어요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨가 있으세요?"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "담배를 피우세요?",
+      "effective_content": "담배를 피우세요?",
+      "response": {
+        "status": "OK",
+        "content": "담배는 피우지 않아요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "담배를 피우세요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "술 드시는 양과 빈도에 대해 자세히 말씀해 주세요.",
+      "effective_content": "술 드시는 양과 빈도에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "한 달에 한두 번 와인 한두 잔 정도 마셔요.",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "술 드시는 양과 빈도에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 23,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "두통이 자주 와서 뇌에 혹이 아닌지 걱정돼요.",
+        "turn": 23,
+        "turns_remaining": 27
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "안저 검사하겠습니다",
+      "effective_content": "r07",
+      "response": {
+        "status": "OK",
+        "result": "시신경유두 경계 명확(+/+), 유두부종(-/-), 출혈(-/-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "대면 시야 검사하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "시야 결손(-/-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "동공 대광반사 확인하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "동공 3mm/3mm 동일, 직접·간접 대광반사(+/+)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "외안근 운동 검사하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "6방향 제한(-/-), 복시(-), 안구진탕(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 지남력 3/3점",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "사지 근력 검사하겠습니다",
+      "effective_content": "r17",
+      "response": {
+        "status": "OK",
+        "result": "상지 Gr.5/Gr.5, 하지 Gr.5/Gr.5",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "사지 감각 검사하겠습니다",
+      "effective_content": "r18",
+      "response": {
+        "status": "OK",
+        "result": "통각·촉각 저하(-/-)",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "구음장애 확인하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "구음장애(-)",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "EXAM",
+      "content": "소뇌 협조운동 검사하겠습니다",
+      "effective_content": "r20",
+      "response": {
+        "status": "OK",
+        "result": "겨냥이상(-/-), 실조(-/-)",
+        "turn": 32,
+        "turns_remaining": 18
+      }
+    },
+    {
+      "turn": 33,
+      "action": "EXAM",
+      "content": "경부 강직 확인하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 34,
+      "action": "EXAM",
+      "content": "보행 관찰하겠습니다",
+      "effective_content": "r22",
+      "response": {
+        "status": "OK",
+        "result": "보폭 정상, 절뚝임(-), 불균형(-), 일자보행 정상",
+        "turn": 34,
+        "turns_remaining": 16
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "무조짐 편두통으로 보여요.",
+      "effective_content": "무조짐 편두통으로 보여요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "무조짐 편두통으로 보여요."
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "진찰이 정상이라 뇌 영상은 우선 필요하지 않아요.",
+      "effective_content": "진찰이 정상이라 뇌 영상은 우선 필요하지 않아요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "진찰이 정상이라 뇌 영상은 우선 필요하지 않아요."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "초기 진통제를 고려하고 잦으면 예방약도 상의해요.",
+      "effective_content": "초기 진통제를 고려하고 잦으면 예방약도 상의해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "초기 진통제를 고려하고 잦으면 예방약도 상의해요."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "갑작스런 최악의 두통·마비·말 어눌함면 바로 오세요.",
+      "effective_content": "갑작스런 최악의 두통·마비·말 어눌함면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "갑작스런 최악의 두통·마비·말 어눌함면 바로 오세요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "4~8주 후 두통일기와 치료 반응을 확인해요.",
+      "effective_content": "4~8주 후 두통일기와 치료 반응을 확인해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "4~8주 후 두통일기와 치료 반응을 확인해요."
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "심할 때는 십 점 중에 팔 점 정도로 아프다.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "심할 때는 십 점 중에 팔 점 정도로 아프다.",
+        "turn": 41,
+        "turns_remaining": 9
+      },
+      "payload": {
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?"
+      }
+    },
+    {
+      "turn": 41,
+      "action": "DIAGNOSE",
+      "diagnosis": "무조짐 편두통 (Migraine without aura)"
+    }
+  ]
+}

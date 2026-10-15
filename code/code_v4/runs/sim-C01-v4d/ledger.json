@@ -1,0 +1,367 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "불면이 심하시겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "불면에 대해 자세히 말씀해 주세요",
+    "reply": "밤새 뒤척이고 온몸이 불안해요",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "두근거림에 대해 자세히 말씀해 주세요",
+    "reply": "가슴이 두근거려요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "낮에 멍하고, 집중이 안 되고, 짜증이 늘어납니다.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "집중력에 대해 자세히 말씀해 주세요",
+    "reply": "집중이 안 되고, 짜증이 늘어납니다.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "드시는 수면제 이름이 뭐예요?",
+    "reply": "스틸녹스예요.",
+    "phase": "interview",
+    "qid": "sb_name",
+    "label": "안전"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "수면제는 마지막으로 언제 드셨어요?",
+    "reply": "어젯밤에도 자기 전에 네 알을 먹고 새벽에 깨서 두 알을 더 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_last",
+    "label": "안전"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "약을 끊었을 때 경련한 적 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "sb_seizure",
+    "label": "안전"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "지난 1개월간 손톱이 금속광이었나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "가장 최근에 정신적인 스트레스를 느낀 상황이 있었나요?",
+    "reply": "가족들과 갈등이 있었어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "평소 앓는 병이 있으세요?",
+    "reply": "고혈압이 있어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "과거력"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "가족 중에 아픈 분이 있으세요?",
+    "reply": "아버지는 심장병으로 돌아가셨고, 어머니는 치매로 돌아가셨다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "가족력"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "하루에 커피 혹은 녹차를 두 잔 이상 드시나요?",
+    "reply": "하루에 한두 잔 마셔요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "수면제 때문에 일상생활에도 문제가 생겼어요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 16,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 6mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(+)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 황달(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "갑상선 잡음 청진하겠습니다",
+    "reply": "갑상선 청진 (Thyroid auscultation) | 음성",
+    "phase": "exam",
+    "qid": "thyroid_bruit",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "편평, 팽만(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "간·비장 촉진하겠습니다",
+    "reply": "간 늑골연하 촉지(-), 비장 촉지(-)",
+    "phase": "exam",
+    "qid": "liver_spleen",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "범불안장애: 죠기가 두려워서 밤마다 깨워요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "상담 치료와 약으로 좋아질 수 있어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_options",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "분비된 호르몬 균형이 깨져 혈압과 심박이 변동돼요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_link",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "수면제 복용이 늘어져 일상에 지장이 생겼습니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "심전도로 부정맥이 있는지 확인합니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "수면제 때문에 일상생활에 가장 불편한 점이 뭐예요?",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "주로 신경전달물질 불균형과 생활습관으로 발생합니다",
+    "reply": "수면제 때문에 일상생활에 문제가 생겼어요.",
+    "phase": "explain-answer",
+    "qid": "x_answer",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "가슴이 두근거림·가슴 통증·복통면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "가슴이 두근거리고, 가슴이 두근거려요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  }
+]

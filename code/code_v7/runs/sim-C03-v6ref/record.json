@@ -1,0 +1,26 @@
+{
+  "S": {
+    "cc": "C.C : 키가 작아서 큰 병이 있을까 걱정\nOnset : 6개월 전\n통증평가 : 해당 없음",
+    "hpi": "보호자(모) 동반, 문진은 모가 대신 답함.\n한(6)세 남생애 6개월전부터 키가 평소보다 낮게 자라서 걱정, 현재 105cm, 1cm/6개월 동안 성장, 언어·운동·사회성 모두 또래와 비슷, 우유 1~2잔·식사·활동 흔히, 큰 병 존재 여부 불확실해 놓고 내원함",
+    "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx ( )\nMedicine history : 복용 약·보조제 (-)\nAllergy ( )\nOthers : 천식(-), 장·콩팥 질환(-)\n* 소아\n- 출생력 : 태아 키 50cm, 몸무게 3.2kg\n- 신생아기 : 별다른 이상 없음\n- 발달 : 언어·운동·사회성 또래 수준\n- 예방접종 : 미기입\n- 영양 : 우유 1~2잔·식사 잘함\n- 수면·활동 : 평소 활발 운동\n- 성장 기록 : 2세 83cm, 4세 96cm, 1년 전 100cm, 현재 105cm",
+    "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 부모 키 아빠 118cm, 어머니 165cm, paternal grandmother 나이가 적지 않음, 가족 중 뼈 이상 없는 편",
+    "sh": "Smoking / Alcohol : 해당 없음(소아)\nOthers : 우유 하루 1~2잔, 평소 활발한 운동",
+    "ros": "General weakness ( )  Fatigue ( )\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 없음"
+  },
+  "O": {
+    "exam": "V/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / 기립성 혈압 측정 : 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C (턴 31) / Ht 105 cm, Wt 16.5 kg(환자 진술)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 23)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 24). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 25). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 26)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 28). 갑상선 안징후 검사 : 비대(-), 결절(-), 압통(-) (턴 30)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 29)\nChest : 흉곽 시진 : 전후:좌우 1:2, 보조호흡근 사용(-) (턴 32). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 33)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 27)",
+    "tests": ""
+  },
+  "A": {
+    "evidence": "#1. 가족성 저신장 (Familial short stature)\n- 근거 : 부모의 키가 평균보다 낮고 시아버지도 어린 시절 키가 작았던 사실이 유전적 요인을 시사한다 (턴 4, 5, 6)\n- 근거 : 현재 신장은 105cm으로 3번째 백분위수 이하이며 성장 속도도 5cm/년이라는 정상 하한치에 근접해 있음을 확인하였다 (턴 24, 25)\n- 근거 : 상·하절 비율이 정상이고, 팔길이대비 다리길이가 비정상적으로 짧지 않으며, 병력이 전반적으로 없으므로 골연골 이형성증 같은 구조적 이상을 배제한다 (턴 26, 28)",
+    "differential": "r/o 성장호르몬 결핍증 : 성장 속도가 정상 하한치로 보이더라도, 신체 비율이 정상 여부와 IGF-1 수치가 낮을 경우 진단 가능성이 있다 (턴 25, 26, 27). 감별 검사 : IGF‑1 검사 및 성장호르몬 자극검사\nr/o 비후성 골연골 이형성증 : 들어온 소견에서 비대치, 머리둘레 비정상, 비정상적인 골격 비율 등 특징이 없고, 상·하절 비율도 정상으로 골연골이형성증 배제 가능 (턴 26, 28). 감별 검사 : 정형외과 X‑ray (전부기, 사지 길이 비율 확인)"
+  },
+  "P": {
+    "tests": "- 좌측 손 X‑ray : 골연령 확인으로 성장지연 여부 확인\n- TSH 및 자유 T4 : 갑상선 기능 정상 여부 파악\n- IGF‑1 : 성장호르몬 기능 평가\n- 혈액 산화물질 검사 : 정상 성장과의 비교\n- 좌측 손 X-ray(골연령) : 역연령과 일치 확인",
+    "treatment": "- 치료 적응 없음, 성장 추적",
+    "disposition": "- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C → 현재 외래 추적이 적절하며 활력징후 불안정·증상 급격한 악화 시 입원 고려",
+    "follow_up": "- 즉시 내원 : 성장 속도 저하",
+    "education": "진료 중 설명함:\n- 가족성 저신장은 유전 가능성이 높습니다\n- 신장은 부모 신장과 유사합니다\n- 키가 더 클 수도 있어요 확인이 필요합니다\n- 성장 호르몬 필요 시 치료 링크가 있어요\n- 숨참·불규칙한 맥·고열·혼동 시 바로 오세요\n- 바로 오셔야 할 증상 하나를 말씀해 보세요.\n- 6개월 후 성장 곡선 확인으로 다시 오세요\n- 손 엑스레이로 뼈 나이를 확인할게요.\n다음 방문 시 교육 예정 : 정기적 성장 기록이 중요합니다; 식이섬유·적당 운동이 도움됩니다\n참고 지침 : 2022 Consensus statement on the management of familial hypercholesterolemia in K (KR_EuropePMC, 2022); 2022 Consensus Statement on the Management of Familial Hypercholesterolemia in K (KR_EuropePMC, 2022)"
+  },
+  "diagnosis": "가족성 저신장 (Familial short stature)"
+}

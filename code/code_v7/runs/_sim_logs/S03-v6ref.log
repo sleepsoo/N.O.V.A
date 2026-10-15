@@ -1,0 +1,94 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  23.9s] llm[intake] low out=510 finish=stop 23.8s
+[  23.9s] intake: {'age': 3, 'sex': 'F', 'pediatric': True, 'informant': '어머님', 'cc': '열 (38.6°C) + 오른쪽 귀통증', 'request': '', 'categories': ['p_fever', 'insomnia'], 'empathy': '걱정스러우셨겠어요.', 'answered': []} diffs=['급성중이염', '상기도감염', '외이염', '바이러스성 귀염', '수막염']
+[  23.9s] checklist: 37 items, covered=['hpi_onset', 'p_sleep']
+[  28.7s] turn 1 SAY: 걱정스러우셨겠어요. 열은 몇 도까지 났나요? -> 삼십팔 도까지 올랐어요.
+[  33.4s] turn 2 SAY: 열은 언제부터 났나요? -> 어제 낮부터 열이 나기 시작했어요.
+[  39.7s] turn 3 SAY: 해열제 먹이면 열이 떨어지나요? -> 해열제 먹으면 두세 시간 열이 내렸다가 다시 오른다.
+[  45.7s] turn 4 SAY: 먹는 양은 평소와 비교해 어때요? -> 밥은 평소의 반 정도만 먹고, 우유는 잘 마신다
+[  52.5s] turn 5 SAY: 소변은 평소만큼 보나요? -> 오줌은 평소처럼 기저귀가 젖고, 마지막으로 오줌 싼 건 두 시간 전이에요.
+[  60.5s] turn 6 SAY: 많이 처지거나 보채나요? -> 보채고, 누우면 더 보채요.
+[  70.2s] turn 7 SAY: 기침이나 콧물이 있나요? -> 닷새 전부터 맑은 콧물과 가벼운 기침이 있었어요.
+[  77.0s] turn 8 SAY: 어머님이 가장 걱정되시는 게 뭐예요? -> 귀에서 고름이나 진물이 나오지 않아요.
+[  91.6s] llm[plan_q] low out=303 finish=stop 14.6s
+[  97.1s] turn 9 SAY: 토하거나 설사를 하나요? -> 토하지는 않았고, 설사도 없어요.
+[ 101.1s] turn 10 SAY: 몸에 발진이 생겼나요? -> 몸에 발진은 없어요.
+[ 106.0s] turn 11 SAY: 어린이집에서 아픈 아이가 있었나요? -> 어린이집에서 감기가 돌고 있었어요.
+[ 112.2s] turn 12 SAY: 열이 점점 심해지고 있나요? -> 열이 나기 시작했고, 삼십팔 도까지 올랐어요.
+[ 117.1s] turn 13 SAY: 태어날 때 키와 몸무게가 적절했나요? -> 그런 건 없어요.
+[ 122.1s] turn 14 SAY: 출산 때 문제가 있었나요? -> 태어날 때 특별한 문제는 없었어요.
+[ 125.3s] turn 15 SAY: 신생아 때 황달 같은 문제가 있었나요? -> 그런 건 없어요.
+[ 125.3s] guidelines[iv]: 2026년도 바이러스성 모기매개감염병 관리지침 (KR_KDCA, 2026)
+[ 139.8s] llm[plan_q] low out=310 finish=stop 14.5s
+[ 139.8s] q rejected (covered pf_rash): 피부에 발진이 있나요?
+[ 144.6s] turn 16 SAY: 예방접종은 제때 맞았나요? -> 예방접종은 폐렴구균 백신까지 모두 제때 맞았어요.
+[ 148.4s] turn 17 SAY: 경련이 있었나요? -> 경련을 한 적도 없어요.
+[ 154.4s] turn 18 SAY: 말이나 걷기는 또래만큼 했나요? -> 말도 잘하고, 또래와 비슷해요.
+[ 160.7s] turn 19 SAY: 가족 중 같은 증상으로 아프신 사람이 있나요? -> 아빠는 비염이 있어요.
+[ 165.0s] turn 20 SAY: 입원하거나 크게 아픈 적 있나요? -> 입원하거나 수술을 받은 적은 없어요.
+[ 167.6s] turn 21 SAY: 먹는 약이나 한약, 영양제 있나요? -> 평소 먹는 약은 없어요.
+[ 173.3s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 뇌수막염 같은 큰 병이 아닌지 걱정돼요.
+[ 173.3s] interview done: asked=22 covered=3 uncovered_p1=[]
+[ 176.0s] llm[exams] low out=61 finish=stop 2.7s
+[ 176.0s] exams plan: ['general', 'anthro', 'ear', 'pharynx', 'cervical_ln', 'lung', 'heart', 'abd_palp', 'mental', 'sedation', 'neck_stiff']
+[ 176.0s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)
+[ 176.0s] turn 24 EXAM: 신체 계측하겠습니다 -> 신장 96cm, 체중 14.5kg
+[ 179.9s] turn 25 EXAM: 고막 시진하겠습니다 -> 우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)
+[ 179.9s] turn 26 EXAM: 인두·편도 시진하겠습니다 -> 인두 경도 발적(+), 편도 비대 1도, 삼출물(-)
+[ 179.9s] turn 27 EXAM: 경부 림프절 촉진하겠습니다 -> 우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)
+[ 180.0s] turn 28 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 180.0s] turn 29 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 128회/분, 심잡음(-)
+[ 180.0s] turn 30 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)
+[ 180.0s] turn 31 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 연령에 맞는 반응, 보호자 알아봄(+)
+[ 185.5s] turn 32 EXAM REFUSED EXAM_NOT_RECOGNIZED: 주간 진정·불안 관찰하겠습니다
+[ 190.0s] turn 33 EXAM: 경부 강직 확인하겠습니다 -> 경부강직(-), 케르니그 징후(-), 브루진스키 징후(-)
+[ 353.3s] llm[facts] medium out=3566 finish=stop 163.3s
+[ 353.3s] facts: 27
+[ 353.3s] guidelines[dx]: 2026년도 바이러스성 모기매개감염병 관리지침 (KR_KDCA, 2026)
+[ 457.5s] llm[dx] medium out=2267 finish=stop 104.1s
+[ 457.5s] guidelines[plan-mgmt]: Korean Clinical Practice Guidelines: Otitis Media in Children (KR_EuropePMC, 2012)
+[ 478.7s] llm[plan_say] low out=465 finish=stop 21.2s
+[ 496.2s] llm[say_fix] low out=376 finish=stop 17.5s
+[ 496.2s] say fixes: ['warning', 'followup']
+[ 500.5s] turn 34 SAY: 급성 중이염 가능성이 높습니다 -> 네, 알겠습니다.
+[ 504.6s] turn 35 SAY: 귀에 혈액이 모일 수 있어 통증이 납니다 -> 네, 알겠습니다.
+[ 508.9s] turn 36 SAY: 약은 검사 결과 보고 상의해 조절해요. -> 그런 건 없어요.
+[ 513.2s] turn 37 SAY: 통증 완화제와 해열제를 사용해요 -> 네, 알겠습니다.
+[ 518.2s] turn 38 SAY: 발열, 통증, 귀 뒤 붓기가 있으면 바로 내원해요. -> 네, 알겠습니다.
+[ 520.4s] turn 39 SAY: 귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 529.6s] turn 40 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 열이 나면서 오른쪽 귀를 손으로 잡아당기고 '귀 아파'라고 하며 울었어요.
+[ 533.7s] turn 41 SAY: 2~3일 뒤 결과 보러 다시 오세요. -> 네, 알겠습니다.
+[ 540.2s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 엄마는 열이 계속 나서 혹시 뇌수막염 같은 큰 병이 아닌지 걱정이 된다.
+[ 553.7s] llm[S-narr] low out=291 finish=stop 13.4s
+[ 553.7s] llm[S-narr] unparsable: '{"cc_text":"고음이(해열제 반응을 걱정)","onset":"어제 낮","pain":"해당 없음","hpi":"보호자(모) 동반, 문진은 모가 대신 답함. 나이 3세, 성별/여자. 시작 어제 낮. 경과 열 최'
+[ 568.0s] llm[S-narr] low out=292 finish=stop 14.4s
+[ 568.1s] summary: turns=42 counts={'say': 31, 'exam': 10, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 22} budget={'doctor_calls': 10, 'doctor_ok_calls': 10, 'doctor_invalid': 0, 'doctor_input_tokens': 17287, 'doctor_output_tokens': 8441, 'elapsed_s': 568.0} dx=급성중이염 (Acute Otitis Media)
+S03 gpt-oss-20b: total=75 정보수집=13 진단추론=15 검사·추적=10 안전=15 의사소통=10 효율=12 dx5=5
+- missed_key_questions: ['오른쪽 귀 잡아당김·귀 통증', '누우면 보챔', '이루(-)', '청력 저하 의심(-)', '수분 섭취 양상', '호흡곤란·천명(-)', '경부강직(-)', '놀이 가능 여부', '돌 무렵 중이염 이력', '최근 1개월 항생제', '아목시실린 이전 반응', '오빠 최근 감기', '아빠 흡연']
+- missed_key_exams: ['이개 견인 압통', '유양돌기 축양', '피부 발진']
+- top_improvements: ['핵심 문진 체크리스트 완전 수행하고 순서대로 기록', '핵심 검사를 모두 시행(이개 견인·유양돌기·피부발진) 및 결과 정리', '약물 이름·용량·복용 방식·부작용·주의점 명확히 안내하고 환자 이해도 확인', '진료 기록 포맷을 간결·일관교정(각 항목별 명시)', "불필요한 'ice', 반복·중복 질문을 최소화"]
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 10,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 10,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 10,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 17287,
+ "doctor_output_tokens": 8441,
+ "sim_calls": 34,
+ "seconds": 568.0,
+ "diagnosis": "급성중이염 (Acute Otitis Media)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 75,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-S03-v6ref

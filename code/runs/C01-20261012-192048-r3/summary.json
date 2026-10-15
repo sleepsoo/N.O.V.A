@@ -1,0 +1,461 @@
+{
+  "case_id": "4fa07144-04e5-4116-a18e-88d8a90cc21a",
+  "alias": "C01",
+  "turns": 48,
+  "say": 39,
+  "exam": 8,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 14,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 21297,
+  "doctor_output_tokens": 21978,
+  "seconds": 890.9,
+  "diagnosis": "졸피뎀 사용장애 (Zolpidem use disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": false,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "졸피뎀 사용장애",
+      "diagnosis_en": "Zolpidem Use Disorder",
+      "confidence": 0.92,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "졸피뎀 사용장애",
+      "diagnosis_en": "Zolpidem use disorder",
+      "confidence": 0.95,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "수면 문제",
+    "categories": [
+      "drug",
+      "sleep"
+    ],
+    "answered": [],
+    "empathy": "잠을 못 주무셔서 많이 힘드셨겠어요."
+  },
+  "explained": [
+    "졸피뎀 과다복용 때문에 생긴 졸피뎀사용장애가 의심돼요.",
+    "혈액검사 수면검사로 확인할게요.",
+    "약을 천천히 줄이는 치료로 치료할 수 있어요.",
+    "불안 심화가 있으면 바로 오세요.",
+    "규칙적인 생활습관과 수면 환경 정비하세요.",
+    "약을 천천히 줄이면서 수면을 돕는 치료를 해요.",
+    "더 궁금한 점 있으세요?",
+    "검사 후 재진 때 자세히 말씀드릴게요."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 485,
+      "out": 179,
+      "finish": "stop",
+      "sec": 6.0
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1017,
+      "out": 1987,
+      "finish": "stop",
+      "sec": 52.3
+    },
+    {
+      "tag": "shorten",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 200,
+      "out": 94,
+      "finish": "stop",
+      "sec": 3.1
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1350,
+      "out": 1881,
+      "finish": "stop",
+      "sec": 57.0
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2740,
+      "out": 1247,
+      "finish": "stop",
+      "sec": 35.5
+    },
+    {
+      "tag": "dx1-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1865,
+      "out": 1291,
+      "finish": "stop",
+      "sec": 41.9
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1865,
+      "out": 1288,
+      "finish": "stop",
+      "sec": 45.4
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1886,
+      "out": 1680,
+      "finish": "stop",
+      "sec": 47.9
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1708,
+      "out": 963,
+      "finish": "stop",
+      "sec": 32.3
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2294,
+      "out": 2171,
+      "finish": "stop",
+      "sec": 76.8
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 553,
+      "out": 47,
+      "finish": "stop",
+      "sec": 3.4
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2032,
+      "out": 3920,
+      "finish": "stop",
+      "sec": 144.5
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1298,
+      "out": 1954,
+      "finish": "stop",
+      "sec": 69.5
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2004,
+      "out": 3276,
+      "finish": "stop",
+      "sec": 122.6
+    }
+  ],
+  "phase_times": {
+    "structure": 6.0,
+    "interview": 209.4,
+    "examine": 62.5,
+    "diagnose_vote": 135.2,
+    "plan": 32.3,
+    "explain": 108.2,
+    "S": 214.0,
+    "S-verify": 0.1,
+    "A": 122.6
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.onset",
+      "pol": "+",
+      "detail": "칠 년 전부터",
+      "label": "Onset"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.course",
+      "pol": "+",
+      "detail": "점점 심해짐",
+      "label": "경과"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.impact",
+      "pol": "+",
+      "detail": "낮에 졸려",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 5,
+      "key": "pmh.meds",
+      "pol": "+",
+      "detail": "졸피뎀 10mg",
+      "label": "약 이름·용량"
+    },
+    {
+      "turn": 6,
+      "key": "pmh.meds_qty",
+      "pol": "+",
+      "detail": "5~6 알",
+      "label": "복용량"
+    },
+    {
+      "turn": 7,
+      "key": "pmh.meds_qty_inc",
+      "pol": "+",
+      "detail": "반~서너",
+      "label": "내성"
+    },
+    {
+      "turn": 8,
+      "key": "ros.tremor",
+      "pol": "+",
+      "detail": "손 떨림",
+      "label": "금단 증상"
+    },
+    {
+      "turn": 8,
+      "key": "ros.anxiety",
+      "pol": "+",
+      "detail": "불안",
+      "label": "금단 증상"
+    },
+    {
+      "turn": 9,
+      "key": "pmh.other:multiple_prescriptions",
+      "pol": "+",
+      "detail": "내·신경·정신",
+      "label": "처방처"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Sleep",
+      "pol": "+",
+      "detail": "밤새 못자",
+      "label": "입면 장애"
+    },
+    {
+      "turn": 11,
+      "key": "ros.Weight change",
+      "pol": "-",
+      "detail": "",
+      "label": "적응형"
+    },
+    {
+      "turn": 12,
+      "key": "ros.other:snoring",
+      "pol": "-",
+      "detail": "",
+      "label": "적응형"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.HTN",
+      "pol": "+",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 14,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "고혈압 말고 없음",
+      "label": "기타 지병"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.Tbc",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.hepatitis",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 16,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "",
+      "label": "Op. Hx"
+    },
+    {
+      "turn": 17,
+      "key": "pmh.meds",
+      "pol": "+",
+      "detail": "졸피뎀, 암로디핀",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 18,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": "",
+      "label": "Allergy"
+    },
+    {
+      "turn": 19,
+      "key": "fh.similar",
+      "pol": "-",
+      "detail": "",
+      "label": "FH 유사 질환"
+    },
+    {
+      "turn": 20,
+      "key": "fh.DM",
+      "pol": "-",
+      "detail": "",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 20,
+      "key": "fh.HTN",
+      "pol": "-",
+      "detail": "",
+      "label": "FH DM/HTN"
+    },
+    {
+      "turn": 21,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "",
+      "label": "Smoking"
+    },
+    {
+      "turn": 22,
+      "key": "sh.alcohol",
+      "pol": "+",
+      "detail": "명절에 소주",
+      "label": "Alcohol"
+    },
+    {
+      "turn": 23,
+      "key": "sh.job",
+      "pol": "+",
+      "detail": "전업주부",
+      "label": "직업"
+    },
+    {
+      "turn": 24,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "약 안 먹으면",
+      "label": "Palpitation"
+    },
+    {
+      "turn": 25,
+      "key": "ros.Dyspnea",
+      "pol": "-",
+      "detail": "",
+      "label": "Dyspnea"
+    },
+    {
+      "turn": 26,
+      "key": "ros.Chest pain",
+      "pol": "-",
+      "detail": "",
+      "label": "Chest pain"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Anxiety",
+      "pol": "+",
+      "detail": "약 떨어질까",
+      "label": "기분"
+    },
+    {
+      "turn": 28,
+      "key": "ros.Headache",
+      "pol": "+",
+      "detail": "약 안 먹거나 줄이면",
+      "label": "적응형"
+    },
+    {
+      "turn": 29,
+      "key": "ros.other:skin dryness",
+      "pol": "-",
+      "detail": "",
+      "label": "적응형"
+    },
+    {
+      "turn": 30,
+      "key": "ice.concern",
+      "pol": "+",
+      "detail": "약 없으면 잠 못",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 31,
+      "key": "ice.expectation",
+      "pol": "+",
+      "detail": "수면제 처방",
+      "label": "기대(ICE)"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Mood",
+      "pol": "?",
+      "detail": "약 떨어질까 봐 불안해요.",
+      "label": "기분"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "3598313bede6482ff84e53dd131b79339141b45d8813ce040fabd495b06606c5",
+    "score_status": "not_scored",
+    "turn": 48
+  },
+  "error": null,
+  "session_id": "18d6c929-c6a3-47b0-aca9-bd7e27dbba69",
+  "api": "https://nova.snubhai.org"
+}

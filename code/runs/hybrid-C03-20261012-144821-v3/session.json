@@ -1,0 +1,574 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "키가 작아 걱정 많이 되셨겠어요.",
+      "effective_content": "키가 작아 걱정 많이 되셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 걱정이 많아요.",
+        "turn": 1,
+        "turns_remaining": 49
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "그 뒤로 점점 심해지고 있나요?",
+      "effective_content": "그 뒤로 점점 심해지고 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 별로 심해지지 않았어요",
+        "turn": 2,
+        "turns_remaining": 48
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "이 문제로 병원에 가 본 적 있나요?",
+      "effective_content": "이 문제로 병원에 가 본 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 3,
+        "turns_remaining": 47
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "예전에 키 잰 기록이 있나요?",
+      "effective_content": "예전에 키 잰 기록이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "있었어요",
+        "turn": 4,
+        "turns_remaining": 46
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "언제부터 작다는 말을 들었나요?",
+      "effective_content": "언제부터 작다는 말을 들었나요?",
+      "response": {
+        "status": "OK",
+        "content": "한 해 전부터요",
+        "turn": 5,
+        "turns_remaining": 45
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "아빠 키는 얼마인가요?",
+      "effective_content": "아빠 키는 얼마인가요?",
+      "response": {
+        "status": "OK",
+        "content": "아빠는 백흔이십팔센티미터예요.",
+        "turn": 6,
+        "turns_remaining": 44
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "아이가 먹는 양은 어떤가요?",
+      "effective_content": "아이가 먹는 양은 어떤가요?",
+      "response": {
+        "status": "OK",
+        "content": "먹는 양은 잘 돼요.",
+        "turn": 7,
+        "turns_remaining": 43
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "형제키는 얼마나 되나요?",
+      "effective_content": "형제키는 얼마나 되나요?",
+      "response": {
+        "status": "OK",
+        "content": "형제들은 키가 평균적이에요.",
+        "turn": 8,
+        "turns_remaining": 42
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "남아 사춘기가 시작됐나요?",
+      "effective_content": "남아 사춘기가 시작됐나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 9,
+        "turns_remaining": 41
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "대변이 자주 나오나요?",
+      "effective_content": "대변이 자주 나오나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 10,
+        "turns_remaining": 40
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "만삭에 낳았나요?",
+      "effective_content": "만삭에 낳았나요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 11,
+        "turns_remaining": 39
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "자연분만이었나요?",
+      "effective_content": "연분만이었나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 자연분만이었어요",
+        "turn": 12,
+        "turns_remaining": 38
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "태어날 때 몸무게는 얼마였나요?",
+      "effective_content": "태어날 때 몸무게는 얼마였나요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 13,
+        "turns_remaining": 37
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "신생아 때 황달 같은 문제 있었나요?",
+      "effective_content": "신생아 때 황달 같은 문제 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 14,
+        "turns_remaining": 36
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "말이나 걷기 발달은 또래와 비슷한가요?",
+      "effective_content": "말이나 걷기 발달은 또래와 비슷한가요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 15,
+        "turns_remaining": 35
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "예방접종은 제때 맞았나요?",
+      "effective_content": "예방접종은 제때 맞았나요?",
+      "response": {
+        "status": "OK",
+        "content": "네",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "앓고 있는 병이 있나요?",
+      "effective_content": "앓고 있는 병이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요.",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "입원하거나 크게 아픈 적 있나요?",
+      "effective_content": "입원하거나 크게 아픈 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "지금 먹는 약이 있나요?",
+      "effective_content": "지금 먹는 약이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "없어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "약 알레르기 있나요?",
+      "effective_content": "약 알레르기 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요.",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "가족 중 비슷한 문제 있는 분 있나요?",
+      "effective_content": "가족 중 비슷한 문제 있는 분 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "집이나 어린이집 생활은 어떤가요?",
+      "effective_content": "집이나 어린이집 생활은 어떤가요?",
+      "response": {
+        "status": "OK",
+        "content": "어렵게 지내요.",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "SAY",
+      "content": "아이가 열이 난 적 있나요?",
+      "effective_content": "아이가 열이 난 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "SAY",
+      "content": "밥은 잘 먹나요?",
+      "effective_content": "밥은 잘 먹나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 잘 먹어요.",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "SAY",
+      "content": "우유는 하루에 얼마나 마시나요?",
+      "effective_content": "우유는 하루에 얼마나 마시나요?",
+      "response": {
+        "status": "OK",
+        "content": "한 두 잔 정도요.",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "SAY",
+      "content": "밤에 잠은 잘 자나요?",
+      "effective_content": "밤에 잠은 잘 자나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 잘 자요.",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "SAY",
+      "content": "잘 뛰어놀고 활발한가요?",
+      "effective_content": "잘 뛰어놀고 활발한가요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 잘 뛰어요.",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "SAY",
+      "content": "어머니 키는 얼마나 되세요?",
+      "effective_content": "어머니 키는 얼마나 되세요?",
+      "response": {
+        "status": "OK",
+        "content": "백여십오 센티미터예요.",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "최근 피로감 더 자주 느끼세요?",
+      "effective_content": "최근 피로감 더 자주 느끼세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요.",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "어머님이 가장 걱정되는 게 뭐예요?",
+      "effective_content": "어머님이 가장 걱정되는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "아들이 키가 작아서요",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "오늘 가장 궁금하신 게 뭐예요?",
+      "effective_content": "오늘 가장 궁금하신 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "키가 더 클 수 있을까?",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    },
+    {
+      "turn": 32,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C",
+        "turn": 32,
+        "turns_remaining": 18
+      }
+    },
+    {
+      "turn": 33,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 또래보다 작은 키, 안절부절(-)",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 34,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 심잡음(-)",
+        "turn": 34,
+        "turns_remaining": 16
+      }
+    },
+    {
+      "turn": 35,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 35,
+        "turns_remaining": 15
+      }
+    },
+    {
+      "turn": 36,
+      "action": "EXAM",
+      "content": "신체 계측하겠습니다",
+      "effective_content": "r04",
+      "response": {
+        "status": "OK",
+        "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+        "turn": 36,
+        "turns_remaining": 14
+      }
+    },
+    {
+      "turn": 37,
+      "action": "EXAM",
+      "content": "성장 속도·중간부모키 산출하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "성장속도 5cm/년, 중간부모키 178cm",
+        "turn": 37,
+        "turns_remaining": 13
+      }
+    },
+    {
+      "turn": 38,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "비대(-), 결절(-), 압통(-)",
+        "turn": 38,
+        "turns_remaining": 12
+      }
+    },
+    {
+      "turn": 39,
+      "action": "EXAM",
+      "content": "성장도표 백분위수 확인하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+        "turn": 39,
+        "turns_remaining": 11
+      }
+    },
+    {
+      "turn": 40,
+      "action": "EXAM",
+      "content": "신체 비율 평가하겠습니다",
+      "effective_content": "r07",
+      "response": {
+        "status": "OK",
+        "result": "상·하절 비율 정상, 양팔간격 불균형(-)",
+        "turn": 40,
+        "turns_remaining": 10
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "유전적 요인 때문에 생긴 가족성 성장 지연이 의심돼요.",
+      "effective_content": "유전적 요인 때문에 생긴 가족성 성장 지연이 의심돼요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 가능할까요?",
+        "turn": 41,
+        "turns_remaining": 9
+      }
+    },
+    {
+      "turn": 42,
+      "action": "SAY",
+      "content": "혈액 검사로 확인할게요.",
+      "effective_content": "혈액 검사로 확인할게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠어요",
+        "turn": 42,
+        "turns_remaining": 8
+      }
+    },
+    {
+      "turn": 43,
+      "action": "SAY",
+      "content": "생장 호르몬 치료로 치료할 수 있어요.",
+      "effective_content": "생장 호르몬 치료로 치료할 수 있어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠어요",
+        "turn": 43,
+        "turns_remaining": 7
+      }
+    },
+    {
+      "turn": 44,
+      "action": "SAY",
+      "content": "두통, 시야 변화가 있으면 바로 오세요.",
+      "effective_content": "두통, 시야 변화가 있으면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠어요",
+        "turn": 44,
+        "turns_remaining": 6
+      }
+    },
+    {
+      "turn": 45,
+      "action": "SAY",
+      "content": "규칙적인 식사와 운동을 하세요.",
+      "effective_content": "규칙적인 식사와 운동을 하세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠어요",
+        "turn": 45,
+        "turns_remaining": 5
+      }
+    },
+    {
+      "turn": 46,
+      "action": "SAY",
+      "content": "다양한 검사를 통해 성장 가능성을 확인해 드릴게요.",
+      "effective_content": "다양한 검사를 통해 성장 가능성을 확인해 드릴게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠어요",
+        "turn": 46,
+        "turns_remaining": 4
+      }
+    },
+    {
+      "turn": 47,
+      "action": "SAY",
+      "content": "더 궁금한 점 있으세요?",
+      "effective_content": "더 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 괜찮습니다.",
+        "turn": 47,
+        "turns_remaining": 3
+      }
+    },
+    {
+      "turn": 47,
+      "action": "DIAGNOSE",
+      "diagnosis": "가족성 성장 지연 (Familial short stature)"
+    }
+  ]
+}

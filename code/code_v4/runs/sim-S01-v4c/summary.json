@@ -1,0 +1,327 @@
+{
+  "case_id": "S01",
+  "alias": "S01",
+  "turns": 38,
+  "say": 24,
+  "exam": 14,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 14,
+  "skipped_invalid": 0,
+  "doctor_calls": 7,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 13685,
+  "doctor_output_tokens": 8499,
+  "seconds": 517.6,
+  "diagnosis": "급성 충수염 (Acute Appendicitis)",
+  "accepted_diagnoses": [
+    "급성 충수염 (Acute appendicitis)",
+    "급성 충수염",
+    "Acute appendicitis"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 24,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "오른쪽 하복부 복통",
+    "request": "",
+    "categories": [
+      "abd_pain",
+      "insomnia",
+      "gi"
+    ],
+    "empathy": "심상 많이 걱정되십니다.",
+    "answered": []
+  },
+  "explained": [
+    "급성 충수염은 복통이 오른쪽 아랫배에 집중돼요.",
+    "치료는 항생제·수술, 필요 시 입원합니다.",
+    "고열·백혈구 상승은 염증 반응을 의미해요.",
+    "관절통이 점점 심해지면 바로 의사에게 말씀해 주세요.",
+    "복부 CT는 정확한 진단을 도와 주고요.",
+    "오늘 바로 응급실에서 진료를 받으세요.",
+    "발열·복통·복부 팽창·통증 악화면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 748,
+      "out": 287,
+      "finish": "stop",
+      "sec": 14.5
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2787,
+      "out": 361,
+      "finish": "stop",
+      "sec": 16.9
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2808,
+      "out": 435,
+      "finish": "stop",
+      "sec": 20.0
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1231,
+      "out": 4111,
+      "finish": "stop",
+      "sec": 189.8
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2404,
+      "out": 1863,
+      "finish": "stop",
+      "sec": 78.5
+    },
+    {
+      "tag": "plan_say4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2060,
+      "out": 1079,
+      "finish": "stop",
+      "sec": 45.6
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1647,
+      "out": 363,
+      "finish": "stop",
+      "sec": 15.4
+    }
+  ],
+  "phase_times": {
+    "intake": 14.5,
+    "interview": 123.9,
+    "examine": 11.8,
+    "facts": 189.8,
+    "dx": 78.6,
+    "plan_say": 45.6,
+    "explain": 38.0,
+    "effective": 0.0,
+    "S": 15.4
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "발병시기",
+      "pol": "+",
+      "detail": "어제 저녁",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "복통",
+      "pol": "+",
+      "detail": "오른쪽 하복부",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "ros",
+      "key": "other",
+      "label": "수면부족",
+      "pol": "+",
+      "detail": "밤새 잠 못자",
+      "id": "F3"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "ros.Abdominal pain",
+      "label": "복통",
+      "pol": "+",
+      "detail": "오른쪽 아랫배",
+      "id": "F4"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "other",
+      "label": "수면부족",
+      "pol": "+",
+      "detail": "밤새 잠 못자",
+      "id": "F5"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Nausea",
+      "label": "메스껍",
+      "pol": "+",
+      "detail": "메스껍",
+      "id": "F6"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "+",
+      "detail": "토함",
+      "id": "F7"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "소화제",
+      "pol": "+",
+      "detail": "1알",
+      "id": "F8"
+    },
+    {
+      "turn": 8,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족진단",
+      "pol": "-",
+      "detail": "IBD 결장암 없음",
+      "id": "F9"
+    },
+    {
+      "turn": 9,
+      "sec": "sh",
+      "key": "other",
+      "label": "직업",
+      "pol": "+",
+      "detail": "대학원생",
+      "id": "F10"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기분",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F11"
+    },
+    {
+      "turn": 12,
+      "sec": "sh",
+      "key": "other",
+      "label": "술",
+      "pol": "+",
+      "detail": "주1회 2-3잔",
+      "id": "F12"
+    },
+    {
+      "turn": 13,
+      "sec": "sh",
+      "key": "other",
+      "label": "흡연",
+      "pol": "+",
+      "detail": "하루 반 갑씩 오 년째 피워요.",
+      "id": "F13"
+    },
+    {
+      "turn": 14,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F14"
+    },
+    {
+      "turn": 14,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F15"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "방사부재",
+      "pol": "+",
+      "detail": "방사 없음",
+      "id": "F16"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "907642edfd804150f00561de90e6ee496dfd265f3d52b321ff8d561d5bca6011",
+    "score_status": "not_scored",
+    "turn": 38
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "배가 아프기 시작한 건 어제 저녁 일곱 시쯤"
+  },
+  "exam_plan": [
+    "vitals",
+    "general",
+    "mental",
+    "conj",
+    "chest_insp",
+    "lung",
+    "heart",
+    "abd_insp",
+    "bowel",
+    "liver_spleen",
+    "abd_palp",
+    "rebound",
+    "murphy",
+    "periph"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 26,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 7,
+  "sim_doctor_calls": 7,
+  "sim_doctor_input_tokens": 13685,
+  "sim_doctor_output_tokens": 8499,
+  "sim_turns": 38,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 38,
+  "grade_scores": {
+    "정보수집": 7,
+    "진단추론": 4,
+    "검사·추적": 0,
+    "안전": 15,
+    "의사소통": 8,
+    "효율": 4
+  }
+}

@@ -1,0 +1,1124 @@
+{
+ "case": "C10",
+ "plan": "c10b",
+ "session_id": "d17b3318-aa20-4bf1-a7a4-ee6f691f26b7",
+ "initial": {
+  "opening": "이름은 최윤정이고, 나는 서른두 살 여자이다. 최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다. 원래 몸무게는 오십육 키로그람 정도였는데, 최근 석 달 사이에 칠 키로그람 정도 빠져서 지금은 사십구 키로그람 정도이다. 평소에는 몸무게 변화가 거의 없었는데, 이번에는 다이어트나 운동을 한 것도 아닌데 저절로 살이 빠져서 걱정이 되었다. 키는 백육십사 센티미터이다.",
+  "vital_signs": "혈압 : 138/72 mmHg\n맥박 : 102 회/분\n호흡 : 19 회/분\n체온 : 36.9°C"
+ },
+ "log": [
+  {
+   "i": 1,
+   "action": "SAY",
+   "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+   "tag": "open_repeat",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "석 달 전부터 살이 빠지기 시작했어요.",
+    "turn": 1,
+    "turns_remaining": 49
+   },
+   "sec": 3.6
+  },
+  {
+   "i": 2,
+   "action": "SAY",
+   "content": "다른 불편한 증상은 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 가슴이 자주 두근거려요.",
+    "turn": 2,
+    "turns_remaining": 48
+   },
+   "sec": 4.1
+  },
+  {
+   "i": 3,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 손이 떨려서 불편해요.",
+    "turn": 3,
+    "turns_remaining": 47
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 4,
+   "action": "SAY",
+   "content": "그 밖에 또 불편한 건 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 더위를 많이 타요.",
+    "turn": 4,
+    "turns_remaining": 46
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 5,
+   "action": "SAY",
+   "content": "또 다른 증상은 없으세요?",
+   "tag": "open_sweep",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 잠을 잘 못 자요.",
+    "turn": 5,
+    "turns_remaining": 45
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 6,
+   "action": "SAY",
+   "content": "요즘 몸 상태는 어떠세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 쉽게 지치고 피곤해요.",
+    "turn": 6,
+    "turns_remaining": 44
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 7,
+   "action": "SAY",
+   "content": "어디가 제일 불편하세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "살이 자꾸 빠져서 걱정돼요.",
+    "turn": 7,
+    "turns_remaining": 43
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 8,
+   "action": "SAY",
+   "content": "두근거림에 대해 자세히 말씀해 주세요",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "가만히 있어도 자주 빨리 뛰어요.",
+    "turn": 8,
+    "turns_remaining": 42
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 9,
+   "action": "SAY",
+   "content": "생리에 대해 자세히 말씀해 주세요",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "두 달째 양이 줄고 짧아졌어요.",
+    "turn": 9,
+    "turns_remaining": 41
+   },
+   "sec": 4.9
+  },
+  {
+   "i": 10,
+   "action": "SAY",
+   "content": "대변은 어떠세요?",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "하루 두세 번 보고 좀 묽어요.",
+    "turn": 10,
+    "turns_remaining": 40
+   },
+   "sec": 4.9
+  },
+  {
+   "i": 11,
+   "action": "SAY",
+   "content": "눈에 대해 자세히 말씀해 주세요",
+   "tag": "open_topic",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "눈이 건조하고 좀 튀어나온 듯해요.",
+    "turn": 11,
+    "turns_remaining": 39
+   },
+   "sec": 6.4
+  },
+  {
+   "i": 12,
+   "action": "SAY",
+   "content": "더위나 땀은 어떠세요?",
+   "tag": "pair_na",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "더위를 타고 밤엔 잠옷이 젖어요.",
+    "turn": 12,
+    "turns_remaining": 38
+   },
+   "sec": 3.7
+  },
+  {
+   "i": 13,
+   "action": "SAY",
+   "content": "잠과 기분은 어떠세요?",
+   "tag": "pair_gwa",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "뒤척이다 새벽에 겨우 잠들어요.",
+    "turn": 13,
+    "turns_remaining": 37
+   },
+   "sec": 6.5
+  },
+  {
+   "i": 14,
+   "action": "SAY",
+   "content": "눈이나 목에 변화가 있나요?",
+   "tag": "pair_na",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "눈이 좀 튀어나온 것 같아요.",
+    "turn": 14,
+    "turns_remaining": 36
+   },
+   "sec": 3.3
+  },
+  {
+   "i": 15,
+   "action": "SAY",
+   "content": "피곤하거나 숨이 차세요?",
+   "tag": "pair_geona",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 쉽게 지치고 많이 피곤해요.",
+    "turn": 15,
+    "turns_remaining": 35
+   },
+   "sec": 3.5
+  },
+  {
+   "i": 16,
+   "action": "SAY",
+   "content": "가족 중 다른 아픈 분도 있나요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아버지는 고혈압이 있으세요.",
+    "turn": 16,
+    "turns_remaining": 34
+   },
+   "sec": 4.6
+  },
+  {
+   "i": 17,
+   "action": "SAY",
+   "content": "어떤 점이 가장 걱정되세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "혹시 큰 병일까 봐 걱정돼요.",
+    "turn": 17,
+    "turns_remaining": 33
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 18,
+   "action": "EXAM",
+   "content": "갑상선 청진하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "잡음(+/+)",
+    "turn": 18,
+    "turns_remaining": 32
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 19,
+   "action": "EXAM",
+   "content": "심장 청진하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+    "turn": 19,
+    "turns_remaining": 31
+   },
+   "sec": 3.7
+  },
+  {
+   "i": 20,
+   "action": "EXAM",
+   "content": "피부 만져보겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+    "turn": 20,
+    "turns_remaining": 30
+   },
+   "sec": 3.6
+  },
+  {
+   "i": 21,
+   "action": "EXAM",
+   "content": "안구 돌출 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "turn": 21,
+    "turns_remaining": 29
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 22,
+   "action": "EXAM",
+   "content": "아킬레스건 반사 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "슬개건 3+/3+, 아킬레스건 2+/2+",
+    "turn": 22,
+    "turns_remaining": 28
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 23,
+   "action": "EXAM",
+   "content": "정강이 앞 피부 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "함요부종(-/-), 경골앞 비함요성 부종(-/-), 피부 비후(-/-)",
+    "turn": 23,
+    "turns_remaining": 27
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 24,
+   "action": "EXAM",
+   "content": "맥박 재겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "102회/분, 규칙적, 강하고 빠름",
+    "turn": 24,
+    "turns_remaining": 26
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 25,
+   "action": "EXAM",
+   "content": "다리 근력 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "상지 Gr.5/Gr.5, 하지 근위부 Gr.4/Gr.4",
+    "turn": 25,
+    "turns_remaining": 25
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 26,
+   "action": "EXAM",
+   "content": "혈압 재겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+    "turn": 26,
+    "turns_remaining": 24
+   },
+   "sec": 3.3
+  },
+  {
+   "i": 27,
+   "action": "SAY",
+   "content": "그레이브스병이 의심돼요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "치료하면 좋아질 수 있나요?",
+    "turn": 27,
+    "turns_remaining": 23
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 28,
+   "action": "SAY",
+   "content": "호르몬이 많아 두근거리고 떨려요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "그래서 두근거리고 떨렸군요.",
+    "turn": 28,
+    "turns_remaining": 22
+   },
+   "sec": 5.8
+  },
+  {
+   "i": 29,
+   "action": "SAY",
+   "content": "피검사와 초음파를 할게요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 검사받을게요.",
+    "turn": 29,
+    "turns_remaining": 21
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 30,
+   "action": "SAY",
+   "content": "약으로 호르몬을 낮추면 좋아져요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 좋아진다니 다행이에요.",
+    "turn": 30,
+    "turns_remaining": 20
+   },
+   "sec": 3.8
+  },
+  {
+   "i": 31,
+   "action": "SAY",
+   "content": "제 설명을 다시 말씀해 주시겠어요?",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "약으로 호르몬을 낮추면 좋아진다고요.",
+    "turn": 31,
+    "turns_remaining": 19
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 32,
+   "action": "SAY",
+   "content": "어떤 치료를 받는지 말씀해 보세요",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "호르몬을 낮추는 약을 먹는 거죠.",
+    "turn": 32,
+    "turns_remaining": 18
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 33,
+   "action": "SAY",
+   "content": "열이나 목이 아프면 바로 오세요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 그러면 바로 올게요.",
+    "turn": 33,
+    "turns_remaining": 17
+   },
+   "sec": 3.4
+  },
+  {
+   "i": 34,
+   "action": "SAY",
+   "content": "언제 바로 오셔야 하는지 말씀해 보세요",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "열이 나거나 목이 아프면 바로요.",
+    "turn": 34,
+    "turns_remaining": 16
+   },
+   "sec": 3.4
+  }
+ ],
+ "diagnose": {
+  "error": "FINAL_RECORD_REQUIRED"
+ },
+ "session": {
+  "session_id": "d17b3318-aa20-4bf1-a7a4-ee6f691f26b7",
+  "status": "active",
+  "turns_remaining": 16,
+  "initial": {
+   "opening": "이름은 최윤정이고, 나는 서른두 살 여자이다. 최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다. 원래 몸무게는 오십육 키로그람 정도였는데, 최근 석 달 사이에 칠 키로그람 정도 빠져서 지금은 사십구 키로그람 정도이다. 평소에는 몸무게 변화가 거의 없었는데, 이번에는 다이어트나 운동을 한 것도 아닌데 저절로 살이 빠져서 걱정이 되었다. 키는 백육십사 센티미터이다.",
+   "vital_signs": "혈압 : 138/72 mmHg\n맥박 : 102 회/분\n호흡 : 19 회/분\n체온 : 36.9°C"
+  },
+  "available_actions": [
+   "SAY",
+   "EXAM",
+   "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T11:04:47.635528+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+   {
+    "id": "02856f16-b91c-4ae0-b630-90154e79f70d",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+     "request_id": "6a28dbad-c616-4861-b973-bc0df4e6cdc8"
+    },
+    "effective_content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+    "response": {
+     "turn": 1,
+     "status": "OK",
+     "content": "석 달 전부터 살이 빠지기 시작했어요.",
+     "turns_remaining": 49
+    },
+    "http_status": 200,
+    "turn": 1
+   },
+   {
+    "id": "11b2e74b-ffb9-4a46-a8d3-17c031db6ff5",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "다른 불편한 증상은 없으세요?",
+     "request_id": "a603ccd4-dadb-4303-b271-462f832f8dbc"
+    },
+    "effective_content": "다른 불편한 증상은 없으세요?",
+    "response": {
+     "turn": 2,
+     "status": "OK",
+     "content": "요즘 가슴이 자주 두근거려요.",
+     "turns_remaining": 48
+    },
+    "http_status": 200,
+    "turn": 2
+   },
+   {
+    "id": "79598939-3c7f-42c5-8537-0afc282c98ff",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "d5c3dcd0-1720-4de2-990f-cba49ac16002"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 3,
+     "status": "OK",
+     "content": "요즘 손이 떨려서 불편해요.",
+     "turns_remaining": 47
+    },
+    "http_status": 200,
+    "turn": 3
+   },
+   {
+    "id": "5154956d-6506-47f7-99a6-f512df678666",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 또 불편한 건 없으세요?",
+     "request_id": "e7eeadd4-4252-49a8-a634-228d0e9d6033"
+    },
+    "effective_content": "그 밖에 또 불편한 건 없으세요?",
+    "response": {
+     "turn": 4,
+     "status": "OK",
+     "content": "요즘 더위를 많이 타요.",
+     "turns_remaining": 46
+    },
+    "http_status": 200,
+    "turn": 4
+   },
+   {
+    "id": "84f57872-6242-4d78-8057-d1a14343b518",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "또 다른 증상은 없으세요?",
+     "request_id": "6c84366c-6bc4-458f-b4db-56e5e34264c8"
+    },
+    "effective_content": "또 다른 증상은 없으세요?",
+    "response": {
+     "turn": 5,
+     "status": "OK",
+     "content": "요즘 잠을 잘 못 자요.",
+     "turns_remaining": 45
+    },
+    "http_status": 200,
+    "turn": 5
+   },
+   {
+    "id": "1c72f07c-02b9-453d-973c-79ae6e85333f",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "요즘 몸 상태는 어떠세요?",
+     "request_id": "046b84e5-2578-4b29-bed5-a6f5077857c8"
+    },
+    "effective_content": "요즘 몸 상태는 어떠세요?",
+    "response": {
+     "turn": 6,
+     "status": "OK",
+     "content": "요즘 쉽게 지치고 피곤해요.",
+     "turns_remaining": 44
+    },
+    "http_status": 200,
+    "turn": 6
+   },
+   {
+    "id": "4bbeaa89-b5b2-4ba7-ae5a-473dd19ffb84",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "어디가 제일 불편하세요?",
+     "request_id": "4faf27e5-04f2-4d28-a4ef-46e8a75da851"
+    },
+    "effective_content": "어디가 제일 불편하세요?",
+    "response": {
+     "turn": 7,
+     "status": "OK",
+     "content": "살이 자꾸 빠져서 걱정돼요.",
+     "turns_remaining": 43
+    },
+    "http_status": 200,
+    "turn": 7
+   },
+   {
+    "id": "1c0cbf2e-2cee-4d1b-8f84-393567ee0cf1",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "두근거림에 대해 자세히 말씀해 주세요",
+     "request_id": "96500ed2-4a17-4083-9541-0b192456240e"
+    },
+    "effective_content": "두근거림에 대해 자세히 말씀해 주세요",
+    "response": {
+     "turn": 8,
+     "status": "OK",
+     "content": "가만히 있어도 자주 빨리 뛰어요.",
+     "turns_remaining": 42
+    },
+    "http_status": 200,
+    "turn": 8
+   },
+   {
+    "id": "cdd6b356-3f29-4eb7-a516-c4686f353cec",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "생리에 대해 자세히 말씀해 주세요",
+     "request_id": "e2daa773-111c-4dd0-92e7-08820b544a94"
+    },
+    "effective_content": "생리에 대해 자세히 말씀해 주세요",
+    "response": {
+     "turn": 9,
+     "status": "OK",
+     "content": "두 달째 양이 줄고 짧아졌어요.",
+     "turns_remaining": 41
+    },
+    "http_status": 200,
+    "turn": 9
+   },
+   {
+    "id": "9f4fc32a-4832-4905-8eb2-e95933728c3d",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "대변은 어떠세요?",
+     "request_id": "da5e637b-8389-4f53-8335-3b13c4729afc"
+    },
+    "effective_content": "대변은 어떠세요?",
+    "response": {
+     "turn": 10,
+     "status": "OK",
+     "content": "하루 두세 번 보고 좀 묽어요.",
+     "turns_remaining": 40
+    },
+    "http_status": 200,
+    "turn": 10
+   },
+   {
+    "id": "c180b249-3676-484b-a4b1-eb49ff220248",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "눈에 대해 자세히 말씀해 주세요",
+     "request_id": "fa3d7964-dfd7-468c-80f6-b4d26f9a85cb"
+    },
+    "effective_content": "눈에 대해 자세히 말씀해 주세요",
+    "response": {
+     "turn": 11,
+     "status": "OK",
+     "content": "눈이 건조하고 좀 튀어나온 듯해요.",
+     "turns_remaining": 39
+    },
+    "http_status": 200,
+    "turn": 11
+   },
+   {
+    "id": "3722f395-bbfb-4da7-8bad-3523a71bafc0",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "더위나 땀은 어떠세요?",
+     "request_id": "1247fa4a-5ef0-4e81-b72f-3ad802442b6f"
+    },
+    "effective_content": "더위나 땀은 어떠세요?",
+    "response": {
+     "turn": 12,
+     "status": "OK",
+     "content": "더위를 타고 밤엔 잠옷이 젖어요.",
+     "turns_remaining": 38
+    },
+    "http_status": 200,
+    "turn": 12
+   },
+   {
+    "id": "0fac4eab-8af4-485a-8c6f-cecc6fb31c6d",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "잠과 기분은 어떠세요?",
+     "request_id": "c3f8b83e-cf2f-4dcd-9044-67aa7b98cf2e"
+    },
+    "effective_content": "잠과 기분은 어떠세요?",
+    "response": {
+     "turn": 13,
+     "status": "OK",
+     "content": "뒤척이다 새벽에 겨우 잠들어요.",
+     "turns_remaining": 37
+    },
+    "http_status": 200,
+    "turn": 13
+   },
+   {
+    "id": "7bd76111-dc73-427c-a218-5df2cc6b3edd",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "눈이나 목에 변화가 있나요?",
+     "request_id": "d753cd26-3b27-4032-b84a-0332457081fd"
+    },
+    "effective_content": "눈이나 목에 변화가 있나요?",
+    "response": {
+     "turn": 14,
+     "status": "OK",
+     "content": "눈이 좀 튀어나온 것 같아요.",
+     "turns_remaining": 36
+    },
+    "http_status": 200,
+    "turn": 14
+   },
+   {
+    "id": "41981968-4162-4e56-a8eb-5529349c5b8a",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "피곤하거나 숨이 차세요?",
+     "request_id": "8241b47b-bf59-442c-a72b-ad7fb10286e8"
+    },
+    "effective_content": "피곤하거나 숨이 차세요?",
+    "response": {
+     "turn": 15,
+     "status": "OK",
+     "content": "네, 쉽게 지치고 많이 피곤해요.",
+     "turns_remaining": 35
+    },
+    "http_status": 200,
+    "turn": 15
+   },
+   {
+    "id": "a4a78ffb-fa21-485f-b8a3-c7920e52e0ea",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 중 다른 아픈 분도 있나요?",
+     "request_id": "d8c6469d-07c9-493e-a656-b32928f5bf89"
+    },
+    "effective_content": "가족 중 다른 아픈 분도 있나요?",
+    "response": {
+     "turn": 16,
+     "status": "OK",
+     "content": "아버지는 고혈압이 있으세요.",
+     "turns_remaining": 34
+    },
+    "http_status": 200,
+    "turn": 16
+   },
+   {
+    "id": "240c2b3b-89a1-48e1-9c1f-d31561594d43",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "어떤 점이 가장 걱정되세요?",
+     "request_id": "09041871-0076-419b-87a2-741dfc7c6593"
+    },
+    "effective_content": "어떤 점이 가장 걱정되세요?",
+    "response": {
+     "turn": 17,
+     "status": "OK",
+     "content": "혹시 큰 병일까 봐 걱정돼요.",
+     "turns_remaining": 33
+    },
+    "http_status": 200,
+    "turn": 17
+   },
+   {
+    "id": "738b071e-cdab-4fd4-a04a-f1f40a6b9b4d",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "갑상선 청진하겠습니다",
+     "request_id": "5afc9bb8-de76-4a15-b863-c7ad47a6a22b"
+    },
+    "effective_content": "hn_thyroid_bruit",
+    "response": {
+     "turn": 18,
+     "result": "잡음(+/+)",
+     "status": "OK",
+     "turns_remaining": 32
+    },
+    "http_status": 200,
+    "turn": 18
+   },
+   {
+    "id": "5c9b8d0f-dd15-4f66-a7fc-3029acaa37bf",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "심장 청진하겠습니다",
+     "request_id": "4cf2fce2-3b42-4a42-bf8a-08355705dc43"
+    },
+    "effective_content": "ch_heart_auscultation",
+    "response": {
+     "turn": 19,
+     "result": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+     "status": "OK",
+     "turns_remaining": 31
+    },
+    "http_status": 200,
+    "turn": 19
+   },
+   {
+    "id": "26c626ea-df55-45b0-ba8c-a5969b8e2761",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "피부 만져보겠습니다",
+     "request_id": "29e6cc70-8028-434c-8b46-9f5b8a4c1d93"
+    },
+    "effective_content": "gen_skin_palpation",
+    "response": {
+     "turn": 20,
+     "result": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+     "status": "OK",
+     "turns_remaining": 30
+    },
+    "http_status": 200,
+    "turn": 20
+   },
+   {
+    "id": "abb2e98c-f690-4172-92c8-598538ea17dd",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "안구 돌출 확인하겠습니다",
+     "request_id": "10ea1777-362c-4509-97c5-f424b11918c0"
+    },
+    "effective_content": "hn_thyroid_eye_signs",
+    "response": {
+     "turn": 21,
+     "result": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+     "status": "OK",
+     "turns_remaining": 29
+    },
+    "http_status": 200,
+    "turn": 21
+   },
+   {
+    "id": "b09b3066-9557-4c05-94cd-5da64d1a0393",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "아킬레스건 반사 확인하겠습니다",
+     "request_id": "29bc680f-3ba3-4bb6-a9a3-4060b4773e06"
+    },
+    "effective_content": "bex_dtr",
+    "response": {
+     "turn": 22,
+     "result": "슬개건 3+/3+, 아킬레스건 2+/2+",
+     "status": "OK",
+     "turns_remaining": 28
+    },
+    "http_status": 200,
+    "turn": 22
+   },
+   {
+    "id": "688e75c2-d54c-49bd-9963-ab9e461c6549",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "정강이 앞 피부 확인하겠습니다",
+     "request_id": "d71afd18-497f-4e0a-aadf-0814d3f75c74"
+    },
+    "effective_content": "c09_pretibial_myxedema",
+    "response": {
+     "turn": 23,
+     "result": "함요부종(-/-), 경골앞 비함요성 부종(-/-), 피부 비후(-/-)",
+     "status": "OK",
+     "turns_remaining": 27
+    },
+    "http_status": 200,
+    "turn": 23
+   },
+   {
+    "id": "621d0ba6-3713-4cdf-8162-03e74df9c973",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "맥박 재겠습니다",
+     "request_id": "2dc12b9e-34f5-4a97-ba7d-09188cd64dc3"
+    },
+    "effective_content": "gen_radial_pulse",
+    "response": {
+     "turn": 24,
+     "result": "102회/분, 규칙적, 강하고 빠름",
+     "status": "OK",
+     "turns_remaining": 26
+    },
+    "http_status": 200,
+    "turn": 24
+   },
+   {
+    "id": "09954f2d-7bd6-4f3e-bf8d-326025b9e5c6",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "다리 근력 확인하겠습니다",
+     "request_id": "908f81d2-5f89-4fbe-ac56-fa17afe36f6f"
+    },
+    "effective_content": "bex_limb_power",
+    "response": {
+     "turn": 25,
+     "result": "상지 Gr.5/Gr.5, 하지 근위부 Gr.4/Gr.4",
+     "status": "OK",
+     "turns_remaining": 25
+    },
+    "http_status": 200,
+    "turn": 25
+   },
+   {
+    "id": "ecb3bf31-69eb-4018-ba2d-6a66a7811613",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "혈압 재겠습니다",
+     "request_id": "afb9ba97-fe34-439f-b20c-a37208030686"
+    },
+    "effective_content": "gen_vital_signs",
+    "response": {
+     "turn": 26,
+     "result": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+     "status": "OK",
+     "turns_remaining": 24
+    },
+    "http_status": 200,
+    "turn": 26
+   },
+   {
+    "id": "806233bd-da9f-4c90-a2dc-fe0715bdee6d",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그레이브스병이 의심돼요",
+     "request_id": "0dfae61e-fefb-4df1-a878-7302e9117afc"
+    },
+    "effective_content": "그레이브스병이 의심돼요",
+    "response": {
+     "turn": 27,
+     "status": "OK",
+     "content": "치료하면 좋아질 수 있나요?",
+     "turns_remaining": 23
+    },
+    "http_status": 200,
+    "turn": 27
+   },
+   {
+    "id": "55c6f1e3-2a25-49e0-a9fa-f52eb86ce517",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "호르몬이 많아 두근거리고 떨려요",
+     "request_id": "059724ce-a2d7-4bd0-9a58-8ea2d932eb3b"
+    },
+    "effective_content": "호르몬이 많아 두근거리고 떨려요",
+    "response": {
+     "turn": 28,
+     "status": "OK",
+     "content": "그래서 두근거리고 떨렸군요.",
+     "turns_remaining": 22
+    },
+    "http_status": 200,
+    "turn": 28
+   },
+   {
+    "id": "392073b5-f9de-4739-bdb2-0b22dcc14d7f",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "피검사와 초음파를 할게요",
+     "request_id": "cf1386a7-2f24-4477-9ae3-47ec39fd5548"
+    },
+    "effective_content": "피검사와 초음파를 할게요",
+    "response": {
+     "turn": 29,
+     "status": "OK",
+     "content": "네, 검사받을게요.",
+     "turns_remaining": 21
+    },
+    "http_status": 200,
+    "turn": 29
+   },
+   {
+    "id": "46112d82-3c22-4323-9b4e-31fc952e6e2c",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "약으로 호르몬을 낮추면 좋아져요",
+     "request_id": "9ed16ff3-cca9-4b27-b107-f3358c826f38"
+    },
+    "effective_content": "약으로 호르몬을 낮추면 좋아져요",
+    "response": {
+     "turn": 30,
+     "status": "OK",
+     "content": "네, 좋아진다니 다행이에요.",
+     "turns_remaining": 20
+    },
+    "http_status": 200,
+    "turn": 30
+   },
+   {
+    "id": "792cbc38-533d-47f7-8374-4a66c9dee6bd",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "제 설명을 다시 말씀해 주시겠어요?",
+     "request_id": "c821082f-f446-4b0f-a4b8-42abca5660c4"
+    },
+    "effective_content": "제 설명을 다시 말씀해 주시겠어요?",
+    "response": {
+     "turn": 31,
+     "status": "OK",
+     "content": "약으로 호르몬을 낮추면 좋아진다고요.",
+     "turns_remaining": 19
+    },
+    "http_status": 200,
+    "turn": 31
+   },
+   {
+    "id": "28bea27a-f168-426f-b381-b7d8d3dfe3a0",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "어떤 치료를 받는지 말씀해 보세요",
+     "request_id": "df2dd310-538c-4ad6-ab4f-eb62629918e3"
+    },
+    "effective_content": "어떤 치료를 받는지 말씀해 보세요",
+    "response": {
+     "turn": 32,
+     "status": "OK",
+     "content": "호르몬을 낮추는 약을 먹는 거죠.",
+     "turns_remaining": 18
+    },
+    "http_status": 200,
+    "turn": 32
+   },
+   {
+    "id": "e0757f2f-9454-40a4-aad5-9214e2403abe",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "열이나 목이 아프면 바로 오세요",
+     "request_id": "7337d51c-a787-46e9-bae4-2ba60dc8dd34"
+    },
+    "effective_content": "열이나 목이 아프면 바로 오세요",
+    "response": {
+     "turn": 33,
+     "status": "OK",
+     "content": "네, 그러면 바로 올게요.",
+     "turns_remaining": 17
+    },
+    "http_status": 200,
+    "turn": 33
+   },
+   {
+    "id": "02843f12-0421-4c22-aab4-33cdca06cdeb",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "언제 바로 오셔야 하는지 말씀해 보세요",
+     "request_id": "f27e9279-c296-48f3-94ad-6c8632d84cb7"
+    },
+    "effective_content": "언제 바로 오셔야 하는지 말씀해 보세요",
+    "response": {
+     "turn": 34,
+     "status": "OK",
+     "content": "열이 나거나 목이 아프면 바로요.",
+     "turns_remaining": 16
+    },
+    "http_status": 200,
+    "turn": 34
+   }
+  ],
+  "note": "",
+  "record": {},
+  "diagnosis": "",
+  "score": null
+ }
+}

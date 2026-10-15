@@ -1,0 +1,82 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   2.5s] llm[intake] low out=219 finish=stop 2.5s
+[   2.5s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로, 갈증 및 잦은 소변', 'request': '', 'categories': ['dm', 'fatigue', 'urinary'], 'empathy': '많이 불편하셨겠어요.', 'answered': []} diffs=['당뇨병', '요붕증', '고칼슘혈증', '요로감염', '만성 신장질환']
+[   2.5s] checklist: 58 items, covered=['hpi_onset']
+[   6.8s] turn 1 SAY: 많이 불편하셨겠어요. -> 네, 알겠습니다.
+[  11.5s] turn 2 SAY: 혈당에 대해 자세히 말씀해 주세요 -> 혈당이 조금 높다고 해서 운동하라는 말을 들었는데, 그 뒤로 다시 검사하지는 않았다.
+[  18.9s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.
+[  24.2s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.
+[  31.1s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.
+[  44.7s] llm[plan_q3] low out=1062 finish=stop 13.6s
+[  47.1s] turn 6 SAY: 최근 체중 변화에 대해 자세히 말씀해 주세요. -> 삼 키로그람 정도 빠졌어요.
+[  55.6s] turn 7 SAY: 소변량과 횟수에 대해 자세히 말씀해 주세요. -> 낮에 열 번 넘게, 밤에 두세 번
+[  61.5s] turn 8 SAY: 횟수는 어떠세요? -> 낮에 열 번 넘게, 밤에 두세 번
+[  69.0s] turn 9 SAY: 고혈압이나 당뇨 진단을 받으셨나요? -> 그런 건 없어요.
+[  77.8s] turn 10 SAY: 드시는 약이나 영양제에 대해 자세히 말씀해 주세요. -> 혈압약을 하루 한 알 먹고 있어요. 이름은 잘 모르겠어요.
+[  84.5s] turn 11 SAY: 소변 볼 때 통증이나 피가 있나요? -> 소변 볼 때 아프거나 따갑지는 않고, 소변 색이 붉은 적도 없어요.
+[  87.9s] turn 12 SAY: 옆구리 통증이나 열이 있나요? -> 그런 건 없어요.
+[  95.9s] llm[plan_q3] low out=720 finish=stop 7.9s
+[ 104.5s] turn 13 SAY: 손발 저림이나 잘 낫지 않는 상처가 있나요? -> 발에 상처가 나거나 잘 안 낫는 곳도 없어요.
+[ 107.7s] turn 14 SAY: 약 알레르기가 있으세요? -> 약 알레르기는 없어요.
+[ 119.0s] llm[plan_q3] low out=1017 finish=stop 11.3s
+[ 122.0s] turn 15 SAY: 거품뇨나 몸이 붓는 증상은 없으세요? -> 그런 건 없어요.
+[ 122.0s] v3 q skipped (topic covered ['pmh_meds', 'pmh_htn_dm']): 혈압약에 이뇨제가 들어 있나요?
+[ 125.1s] turn 16 SAY: 담배를 피우세요? -> 담배는 피운 적 없어요.
+[ 128.6s] turn 17 SAY: 요즘 기분이 많이 가라앉나요? -> 그런 건 없어요.
+[ 133.0s] turn 18 SAY: 일상생활에 미치는 영향에 대해 말씀해 주세요 -> 네, 알겠습니다.
+[ 141.1s] turn 19 SAY: 오늘 특히 궁금하신 게 있으세요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정돼요
+[ 141.1s] v3 interview done: q=18 asked=13 covered=6 uncovered_p1=['dm_thirst', 'dm_glucose', 'dm_fh', 'pmh_other', 'sh_alcohol', 'ps_sleep']
+[ 149.0s] llm[exams_gen] low out=648 finish=stop 7.9s
+[ 149.0s] v3 exams(gen) plan: [('general', '당뇨병성 케톤산증 등 급성 대사 이상 — 전신 상태 저하 여부'), ('orthostatic', '다뇨에 따른 체액 감소 — 기립성 혈압 저하'), ('acanthosis', '인슐린 저항성 및 제2형 당뇨병 가능성 — 흑색가시세포증'), ('fundus', '당뇨병성 망막병증 — 흐린 시야와 안저 이상'), ('genital', '당뇨병에 동반될 수 있는 외음부 칸디다증 — 가려움·분비물의 원인'), ('periph', '당뇨병성 말초신경병증 및 만성 신장질환에 동반된 말초부종 — 감각 이상·부종 확인'), ('conj', '만성 신장질환에 동반될 수 있는 빈혈 — 결막 창백 확인'), ('jvp', '만성 신장질환에 따른 체액 과다 — 경정맥 팽대 확인')]
+[ 149.0s] turn 20 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 149.0s] turn 21 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 4mmHg, 어지럼(-)
+[ 197.9s] turn 22 EXAM: 흑색가시세포증 시진하겠습니다 -> 후경부·액와 흑색극세포증(+)
+[ 197.9s] turn 23 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 205.2s] turn 24 EXAM: 외부 생식기 시진하겠습니다 -> 외음부 발적(+) 경도, 흰색 분비물(+) 소량
+[ 205.2s] turn 25 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 205.2s] turn 26 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 242.5s] turn 27 EXAM: 경정맥 팽대 관찰하겠습니다 -> 경정맥 팽대 관찰 | 정상
+[ 261.8s] llm[facts] medium out=2052 finish=stop 19.3s
+[ 261.8s] fact key demoted: pmh.HTN turn 9
+[ 261.8s] fact key demoted: pmh.DM turn 9
+[ 261.8s] fact key demoted: ros.Fever turn 12
+[ 261.8s] fact key demoted: pmh.HTN turn 9
+[ 261.8s] fact key demoted: pmh.DM turn 9
+[ 261.8s] facts: 33
+[ 284.4s] llm[dx] medium out=2327 finish=stop 22.5s
+[ 300.3s] llm[plan_say3] low out=1464 finish=stop 15.9s
+[ 300.3s] v3 lines: {'dx': '당뇨병으로 인한 혈당 상승이 의심돼요.', 'meaning': '갈증과 잦은 소변, 체중 감소가 혈당 상승과 맞아요.', 'concern': '신장검사로 살피고 혈당을 관리해 위험을 낮춰요.', 'tests': '혈당과 당화혈색소로 당뇨 여부를 확인해요.', 'tests2': '신장 기능과 소변검사로 콩팥 상태도 살펴요.', 'treatment': '결과와 콩팥 기능을 보고 약과 식사 운동을 정해요.', 'treatment2': '약을 쓰면 어지럼이나 식은땀 때 혈당을 확인해요.', 'warning': '구토·복통·숨참·멍함이면 바로 오세요.', 'followup': '1~2주 뒤 결과를 보고 치료를 정해요.', 'lifestyle': '단 음료 대신 물을 드시고 식후 걸어 보세요.'} musts=[] checks=[]
+[ 305.4s] turn 28 SAY: 당뇨병으로 인한 혈당 상승이 의심돼요. -> 네, 알겠습니다.
+[ 310.2s] turn 29 SAY: 혈당과 당화혈색소로 당뇨 여부를 확인해요. -> 네, 알겠습니다.
+[ 315.3s] turn 30 SAY: 결과와 콩팥 기능을 보고 약과 식사 운동을 정해요. -> 네, 알겠습니다.
+[ 319.9s] turn 31 SAY: 구토·복통·숨참·멍함이면 바로 오세요. -> 네, 알겠습니다.
+[ 322.2s] turn 32 SAY: 1~2주 뒤 결과를 보고 치료를 정해요. -> 네, 알겠습니다.
+[ 329.7s] turn 33 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 가슴이 아프거나 숨이 찬 적은 없어요.
+[ 331.8s] turn 34 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 네, 알겠습니다.
+[ 331.8s] v3 explain done: said=5 answers=0 teach={'reply': '가슴이 아프거나 숨이 찬 적은 없어요.', 'ok': False} turns_left=16 (start 23)
+[ 340.4s] llm[S-narr] low out=755 finish=stop 8.6s
+[ 340.4s] summary: turns=34 counts={'say': 26, 'exam': 8, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 18, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 23197, 'doctor_output_tokens': 10264, 'elapsed_s': 340.4} dx=제2형 당뇨병 (Type 2 diabetes mellitus)
+S06 gpt-6-luna: total=51 정보수집=9 진단추론=11 검사·추적=7 안전=10 의사소통=5 효율=9 dx5=4
+- missed_key_questions: ['하루 수분 섭취량이 2L를 넘는지와 갈증·다뇨의 구체적 경과', '피로가 일상생활에 미치는 영향, 단 음료 섭취, 식사량 유지 여부', '발 저림 여부, 흉통·호흡곤란, 구역·복통, 더위·추위 민감도', '고혈압 7년 병력과 환자의 부정 답변 간 모순 확인, 이상지질혈증 및 약 복용 여부', '제왕절개, 임신성 당뇨, 폐경 시점, 스테로이드 복용 여부', '어머니와 언니의 당뇨, 가족의 갑상샘 질환 여부', '음주, 식사·야식 습관, 운동, 직업·동거 상황', '인슐린·평생 약 복용·식이 제한에 대한 환자의 걱정과 기대']
+- missed_key_exams: ['신장·체중·BMI·허리둘레 측정', '구강 점막과 피부 탄력 확인', '갑상선 촉진', '흉곽 시진, 폐·심장 청진', '복부 시진·촉진 및 늑골척추각 압통 확인', '발 시진, 단섬유·진동 감각, 심부건반사']
+- top_improvements: ['고혈압 병력의 모순을 바로 확인하고, 병력 체크리스트를 따라 당뇨 위험인자·가족력·식습관·임신력을 빠짐없이 묻기.', '필수 진찰을 체계적으로 시행하고 신체 계측과 발 신경 검사를 포함해 기록하기.', '당일 혈당 및 케톤 평가를 포함한 검사 계획을 세우고, 신장·망막·질 증상 평가와 구체적 추적 일정을 제시하기.', '투석 걱정에 공감한 뒤 신장 검진과 예방 계획을 설명하고, 약·인슐린·식이에 대한 질문에 직접 답하기.', '반복 질문과 낮은 우선순위 진찰을 줄이고 핵심 평가를 효율적으로 완료하기.']
+{
+ "turns": 34,
+ "say": 26,
+ "exam": 8,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 10,
+ "doctor_input_tokens": 23197,
+ "doctor_output_tokens": 10264,
+ "sim_calls": 31,
+ "seconds": 340.4,
+ "diagnosis": "제2형 당뇨병 (Type 2 diabetes mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 51,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S06-gen6

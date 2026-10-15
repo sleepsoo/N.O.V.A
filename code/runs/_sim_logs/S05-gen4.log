@@ -1,0 +1,79 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   4.7s] llm[intake] low out=270 finish=stop 4.7s
+[   4.7s] intake: {'age': 44, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '허리 통증 및 왼쪽 다리 저림', 'request': '', 'categories': ['msk', 'neuro'], 'empathy': '많이 불편하셨겠어요.', 'answered': []} diffs=['요추 추간판 탈출증 및 신경근병증', '급성 요추 염좌·근육 긴장', '요추 신경근 자극 또는 압박', '천장관절 염좌', '요추 척추관 협착증']
+[   4.7s] checklist: 40 items, covered=['hpi_onset']
+[   6.1s] turn 1 SAY: 많이 불편하셨겠어요. -> 네, 알겠습니다.
+[  10.7s] turn 2 SAY: 아픈 곳에 대해 자세히 말씀해 주세요 -> 왼쪽 엉덩이에서 허벅지 뒤쪽, 종아리를 지나 발바깥쪽 새끼발가락 쪽까지 전기가 오듯 찌릿하게 내려가는 통…
+[  27.0s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 그런 건 없어요.
+[  68.4s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 다리로 내려가는 통증은 없었어요.
+[  99.6s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 통증은 십 점 중에 일곱 점 정도예요.
+[ 118.8s] llm[plan_q3] low out=1404 finish=stop 19.2s
+[ 123.2s] turn 6 SAY: 소변이나 대변 조절이 어려우세요? -> 소변이나 대변을 보는 데 문제는 없어요.
+[ 130.4s] turn 7 SAY: 왼쪽 다리에 힘이 빠지거나 걷기 힘드세요? -> 왼쪽이 오른쪽보다 힘이 좀 없어요.
+[ 162.1s] turn 8 SAY: 통증의 변화에 대해 자세히 말씀해 주세요 -> 처음은 허리만 뻐근했어요. 사흘째부터 전기가 오듯 찌릿한 통증이 생겼어요.
+[ 169.7s] turn 9 SAY: 통증이 달라지는 상황에 대해 자세히 말씀해 주세요 -> 오래 앉아 있거나 기침, 재채기하면 다리 통증이 심해지고, 누워서 무릎을 구부리면 좀 나아져요.
+[ 174.5s] turn 10 SAY: 일상생활에 미치는 영향에 대해 자세히 말씀해 주세요 -> 일주일째 병가를 내고 쉬고 있어요.
+[ 179.1s] turn 11 SAY: 고혈압이나 당뇨는 없으세요? -> 고혈압, 당뇨는 없어요.
+[ 185.3s] turn 12 SAY: 다른 지병에 대해 자세히 말씀해 주세요 -> 암이나 결핵을 앓은 적은 없어요.
+[ 190.7s] turn 13 SAY: 드시는 약과 영양제에 대해 자세히 말씀해 주세요 -> 진통소염제를 하루 두세 번 먹고 있어요.
+[ 197.6s] turn 14 SAY: 열이 나거나 이유 없이 살이 빠지셨나요? -> 열이나 오한 없고, 살도 빠지지 않았어요.
+[ 206.8s] llm[plan_q3] low out=605 finish=stop 9.2s
+[ 212.1s] turn 15 SAY: 왼쪽 다리 힘 빠짐에 대해 자세히 말씀해 주세요 -> 왼쪽이 오른쪽보다 힘이 좀 없는 것 같아요.
+[ 218.2s] turn 16 SAY: 이전 허리 통증에 대해 자세히 말씀해 주세요 -> 삼 년 전에도 허리가 아파서 한의원에서 침을 맞고 일주일 만에 나은 적이 있다.
+[ 224.3s] turn 17 SAY: 사타구니 주변 감각이 둔해졌나요? -> 엉덩이 사이나 항문 주변이 멍하거나 감각이 없는 느낌은 없어요.
+[ 227.8s] turn 18 SAY: 약 알레르기가 있으세요? -> 약 알레르기는 없어요.
+[ 242.3s] llm[plan_q3] low out=884 finish=stop 14.5s
+[ 242.3s] v3 plan q bad (go_connect): 왼쪽 다리 힘 빠짐이 심해지고 있나요? → bank None
+[ 245.6s] turn 19 SAY: 받으신 수술에 대해 자세히 말씀해 주세요 -> 그런 건 없어요.
+[ 249.1s] turn 20 SAY: 위궤양이나 콩팥병이 있으세요? -> 그런 건 없어요.
+[ 254.2s] turn 21 SAY: 오늘 특히 궁금하신 게 있으세요? -> 언제쯤 다시 일하러 나갈 수 있는지 궁금해요.
+[ 254.2s] v3 interview done: q=20 asked=13 covered=2 uncovered_p1=['mk_site', 'mk_swell', 'mk_morning', 'mk_trauma', 'mk_rad', 'fh_open', 'sh_smoke', 'sh_alcohol']
+[ 261.3s] llm[exams_gen] low out=589 finish=stop 7.1s
+[ 261.3s] v3 exams(gen) plan: [('power', '요추 신경근병증 — 하지 근력을 좌우·근절별로 비교해 신경학적 근력 저하의 유무와 중증도를 확인한다.'), ('sensory', '요추 신경근병증 — 하지 감각을 피부절별로 비교해 저림의 분포가 신경근 병변과 맞는지 확인한다.'), ('dtr', '요추 신경근병증 — 슬개건·아킬레스건 반사의 좌우 차이로 관련 신경근 압박 소견을 확인한다.'), ('slr', '요추 추간판 탈출증 및 신경근병증 — 하지직거상으로 익숙한 방사통이 유발되는지 확인한다.'), ('spine', '급성 요추 염좌·근육 긴장 및 척추 압박 골절 등 — 척추 정중선과 주변의 압통을 확인해 국소 근골격 손상이나 뼈 압통을 평가한다.'), ('gait', '신경근병증의 기능적 영향 — 보행의 불안정이나 발처짐이 있는지 관찰해 운동 기능 저하의 정도를 평가한다.'), ('babinski', '상위운동신경원 병변 — 바빈스키 징후로 단순 요추 신경근 병변 외 중추 신경계 이상을 확인한다.'), ('periph', '말초혈관성 하지 증상 — 하지 말초 순환과 부종을 확인해 방사통을 흉내 내는 혈관성 원인 등 다른 하지 이상을 평가한다.')]
+[ 261.3s] turn 22 EXAM: 사지 근력 검사하겠습니다 -> 족저굴곡 Gr.5/Gr.4, 족배굴곡 Gr.5/Gr.5, 무지 신전 Gr.5/Gr.5, 고관절 굴곡 Gr.5
+[ 278.7s] turn 23 EXAM REFUSED EXAM_NOT_SPECIFIC: 사지 감각 검사하겠습니다
+[ 283.0s] turn 24 EXAM: 심부건반사 검사하겠습니다 -> 슬개건 2+/2+, 아킬레스건 2+/1+(우/좌)
+[ 283.0s] turn 25 EXAM: 하지직거상 검사하겠습니다 -> 좌측 40도에서 방사통(+), 우측 80도 음성(-)
+[ 290.8s] turn 26 EXAM: 척추 압통 확인하겠습니다 -> 극돌기 타진 압통(-)
+[ 290.8s] turn 27 EXAM: 보행 관찰하겠습니다 -> 진통 회피 보행(+), 좌측 체중부하 회피
+[ 296.2s] turn 28 EXAM: 바빈스키 징후 확인하겠습니다 -> 족저 굴곡(정상)/족저 굴곡(정상)
+[ 296.2s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 316.1s] llm[facts] medium out=2076 finish=stop 19.9s
+[ 316.1s] facts: 35
+[ 343.3s] llm[dx] medium out=2433 finish=stop 27.2s
+[ 361.0s] llm[plan_say3] low out=1399 finish=stop 17.7s
+[ 361.0s] v3 lines: {'dx': '허리 디스크로 왼쪽 신경이 눌린 듯해요.', 'meaning': '엉덩이부터 발까지 저리고 힘과 반사가 줄었어요.', 'concern': '다리 힘과 통증을 보며 복귀 시점을 정해요.', 'tests': '허리 자기공명영상으로 디스크와 신경을 살펴요.', 'tests2': '엑스선과 신경 검사는 뼈와 힘 변화를 봐요.', 'treatment': '검사 결과를 보고 약과 재활을 함께 정해요.', 'treatment2': '힘이 더 빠지면 바로 진료받고 치료를 다시 상의해요.', 'warning': '숨참·흉통·의식 변화·고열 시 바로 오세요.', 'followup': '일주일 안에 다시 와서 영상과 다리 힘을 봐요.', 'lifestyle': '무거운 짐과 허리 비틀기는 피하고 가볍게 걸어요.'} musts=[] checks=[{'drop': '소변 막힘·회음부 무감각·힘 저하·발열이면 바로 오세요.', 'key': 'warning', 'why': 'too_long'}]
+[ 367.4s] turn 30 SAY: 허리 디스크로 왼쪽 신경이 눌린 듯해요. -> 네, 알겠습니다.
+[ 390.5s] turn 31 SAY: 허리 자기공명영상으로 디스크와 신경을 살펴요. -> 오래 앉아 있으면 다리 통증 심해져요.
+[ 393.5s] turn 32 SAY: 검사 결과를 보고 약과 재활을 함께 정해요. -> 네, 알겠습니다.
+[ 397.5s] turn 33 SAY: 숨참·흉통·의식 변화·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 402.4s] turn 34 SAY: 일주일 안에 다시 와서 영상과 다리 힘을 봐요. -> 네, 알겠습니다.
+[ 408.3s] turn 35 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 오래 앉아 있으면 다리 통증이 심해져요.
+[ 410.3s] turn 36 SAY: 숨참·흉통·의식 변화도 생기면 바로 오세요. -> 네, 알겠습니다.
+[ 410.3s] v3 explain done: said=6 answers=0 teach={'reply': '오래 앉아 있으면 다리 통증이 심해져요.', 'ok': False} turns_left=14 (start 21)
+[ 418.8s] llm[S-narr] low out=732 finish=stop 8.5s
+[ 418.8s] summary: turns=36 counts={'say': 28, 'exam': 7, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 20, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 22314, 'doctor_output_tokens': 10392, 'elapsed_s': 418.8} dx=요추 추간판 탈출증에 의한 좌측 S1 신경근병증 (Lumbar intervertebral disc herniation with left S1 radiculopathy)
+S05 gpt-6-luna: total=43 정보수집=11 진단추론=12 검사·추적=4 안전=7 의사소통=4 효율=5 dx5=5
+- missed_key_questions: ['무거운 물건을 허리를 숙여 들었는지와 낙상·충돌 등 외상 여부', '야간통 여부, 우측 하지 증상 여부, 발 외측·새끼발가락의 구체적인 감각 저하', '스테로이드 장기 사용 및 주사 약물 사용 여부', '부친의 디스크 수술 등 가족력, 흡연·음주·운동·직업의 구체적 업무 요구', '수술 필요성 및 MRI에 대한 걱정, 업무 복귀 시점에 대한 환자의 기대']
+- missed_key_exams: ['하지 감각 검사(S1 피부분절 포함)—검사 요청이 거절됨', '요추 시진·압통 및 운동범위', '교차 하지직거상 검사와 대퇴신경 신장 검사', '회음부 감각 및 항문 괄약근 긴장도', '발뒤꿈치·발끝 보행, 고관절 진찰', '복부 및 방광 촉진']
+- top_improvements: ['문진을 체크리스트에 따라 마무리해 적색 신호, 감각 증상, 약물·가족력·사회력과 수술·MRI·업무 복귀 우려를 빠짐없이 확인하고 기록하기.', '신경학적 진찰을 완성하기: 감각, 근력, 반사, SLR·교차 SLR, 보행 및 회음부 진찰을 시행하고 결과를 기록하기.', '적색 신호가 없으면 즉시 영상검사 대신 활동 유지와 보존 치료를 시작하고, 지속 증상 또는 악화 시 영상검사 기준을 설명하기.', '배뇨·배변 장애, 안장 감각 저하, 진행성 근력 저하 발생 시 즉시 응급 진료가 필요하다고 안내하고 이해 여부를 확인하기.', '환자의 수술 걱정, MRI 필요성, 업무 복귀 질문에 직접 답하면서 예상 회복 기간과 추적 시점을 구체적으로 설명하기.']
+{
+ "turns": 36,
+ "say": 28,
+ "exam": 7,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 10,
+ "doctor_input_tokens": 22314,
+ "doctor_output_tokens": 10392,
+ "sim_calls": 32,
+ "seconds": 418.8,
+ "diagnosis": "요추 추간판 탈출증에 의한 좌측 S1 신경근병증 (Lumbar intervertebral disc herniation with left S1 radiculopathy)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 43,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S05-gen4

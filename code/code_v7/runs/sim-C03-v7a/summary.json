@@ -1,0 +1,652 @@
+{
+  "case_id": "C03",
+  "alias": "C03",
+  "turns": 41,
+  "say": 30,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 8,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 18758,
+  "doctor_output_tokens": 11711,
+  "seconds": 779.1,
+  "diagnosis": "가족성 저신장 (Familial short stature)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "소아 성장 지연: 키가 또래보다 작음",
+    "request": "",
+    "categories": [
+      "growth"
+    ],
+    "empathy": "키가 걱정되셨겠어요。",
+    "answered": []
+  },
+  "explained": [
+    "키가 작으신 것 같아 걱정이 많으시겠어요.",
+    "더 궁금한 점이 있으면 언제든지 말씀해주세요.",
+    "부모님 키를 닮은 가족성 저신장 같아요.",
+    "손 엑스레이로 뼈 나이를 확인할게요.",
+    "6개월마다 키를 재서 성장 곡선을 봐요.",
+    "두통·구토·시야 이상·성장 멈춤 시 바로 오세요.",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 870,
+      "out": 137,
+      "finish": "stop",
+      "sec": 7.8
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2657,
+      "out": 362,
+      "finish": "stop",
+      "sec": 19.0
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2854,
+      "out": 382,
+      "finish": "stop",
+      "sec": 18.0
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1223,
+      "out": 190,
+      "finish": "stop",
+      "sec": 8.5
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1784,
+      "out": 7305,
+      "finish": "stop",
+      "sec": 364.1
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 3552,
+      "out": 2441,
+      "finish": "stop",
+      "sec": 123.2
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2806,
+      "out": 452,
+      "finish": "stop",
+      "sec": 24.3
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3012,
+      "out": 442,
+      "finish": "stop",
+      "sec": 22.6
+    }
+  ],
+  "phase_times": {
+    "intake": 7.8,
+    "interview": 153.1,
+    "examine": 31.1,
+    "facts": 364.1,
+    "dx": 123.2,
+    "plan_say": 24.3,
+    "explain": 52.8,
+    "S": 22.6
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "김도현",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "6세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "남자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자",
+      "pol": "?",
+      "detail": "엄마 김지영",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자나이",
+      "pol": "?",
+      "detail": "37세",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "ice",
+      "key": "other",
+      "label": "우려",
+      "pol": "?",
+      "detail": "키가 작음",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키(1년전)",
+      "pol": "?",
+      "detail": "100cm",
+      "id": "F7"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키(현재)",
+      "pol": "?",
+      "detail": "105cm",
+      "id": "F8"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키증가",
+      "pol": "?",
+      "detail": "5cm/1yr",
+      "id": "F9"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "몸무게(1년전)",
+      "pol": "?",
+      "detail": "15kg",
+      "id": "F10"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "몸무게(현재)",
+      "pol": "?",
+      "detail": "16.5kg",
+      "id": "F11"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "몸무게증가",
+      "pol": "?",
+      "detail": "1.5kg/1yr",
+      "id": "F12"
+    },
+    {
+      "turn": 0,
+      "sec": "fh",
+      "key": "other",
+      "label": "부모키(아빠)",
+      "pol": "?",
+      "detail": "",
+      "id": "F13"
+    },
+    {
+      "turn": 0,
+      "sec": "fh",
+      "key": "other",
+      "label": "부모키(엄마)",
+      "pol": "?",
+      "detail": "",
+      "id": "F14"
+    },
+    {
+      "turn": 0,
+      "sec": "fh",
+      "key": "other",
+      "label": "아빠(어린시절)",
+      "pol": "?",
+      "detail": "작음",
+      "id": "F15"
+    },
+    {
+      "turn": 0,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키(1년전)",
+      "pol": "?",
+      "detail": "100cm",
+      "id": "F17"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키(현재)",
+      "pol": "?",
+      "detail": "105cm",
+      "id": "F18"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키(2세)",
+      "pol": "?",
+      "detail": "두 살 때 키 팔십삼 센티미터, 네 ",
+      "id": "F19"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키(4세)",
+      "pol": "?",
+      "detail": "96cm",
+      "id": "F20"
+    },
+    {
+      "turn": 3,
+      "sec": "fh",
+      "key": "other",
+      "label": "부모키(아빠)",
+      "pol": "?",
+      "detail": "아빠는 백칠십팔 센티미터, 엄마는 백",
+      "id": "F21"
+    },
+    {
+      "turn": 3,
+      "sec": "fh",
+      "key": "other",
+      "label": "부모키(엄마)",
+      "pol": "?",
+      "detail": "165cm",
+      "id": "F22"
+    },
+    {
+      "turn": 4,
+      "sec": "fh",
+      "key": "other",
+      "label": "아빠(어린시절)",
+      "pol": "?",
+      "detail": "작음",
+      "id": "F23"
+    },
+    {
+      "turn": 5,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F24"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "천식",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F25"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "장 질환",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F26"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "콩팥 질환",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F27"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "스테로이드",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F28"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "한약",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F29"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "건강보조식품",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F30"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "우려",
+      "pol": "?",
+      "detail": "큰병",
+      "id": "F31"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "음모 크기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F32"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "고환 크기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F33"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "변비",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F34"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "피로",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F35"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "복부 팽창",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F36"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "얼굴 둥글기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F37"
+    },
+    {
+      "turn": 12,
+      "sec": "peds",
+      "key": "other",
+      "label": "우유섭취",
+      "pol": "?",
+      "detail": "1-2잔/일",
+      "id": "F38"
+    },
+    {
+      "turn": 13,
+      "sec": "peds",
+      "key": "other",
+      "label": "신생아 키",
+      "pol": "?",
+      "detail": "50cm",
+      "id": "F39"
+    },
+    {
+      "turn": 13,
+      "sec": "peds",
+      "key": "other",
+      "label": "신생아 몸무게",
+      "pol": "?",
+      "detail": "3.2kg",
+      "id": "F40"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "출산과정",
+      "pol": "?",
+      "detail": "특별한 문제 없음",
+      "id": "F41"
+    },
+    {
+      "turn": 15,
+      "sec": "peds",
+      "key": "other",
+      "label": "신생아 황달",
+      "pol": "?",
+      "detail": "없음",
+      "id": "F42"
+    },
+    {
+      "turn": 16,
+      "sec": "ros",
+      "key": "other",
+      "label": "두통",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F43"
+    },
+    {
+      "turn": 16,
+      "sec": "ros",
+      "key": "other",
+      "label": "구토",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F44"
+    },
+    {
+      "turn": 16,
+      "sec": "ros",
+      "key": "other",
+      "label": "시야",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F45"
+    },
+    {
+      "turn": 17,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F46"
+    },
+    {
+      "turn": 18,
+      "sec": "peds",
+      "key": "other",
+      "label": "말 발달",
+      "pol": "?",
+      "detail": "정상",
+      "id": "F47"
+    },
+    {
+      "turn": 18,
+      "sec": "peds",
+      "key": "other",
+      "label": "걷음",
+      "pol": "?",
+      "detail": "정상",
+      "id": "F48"
+    },
+    {
+      "turn": 19,
+      "sec": "peds",
+      "key": "other",
+      "label": "친구와 어울림",
+      "pol": "?",
+      "detail": "잘함",
+      "id": "F49"
+    },
+    {
+      "turn": 19,
+      "sec": "peds",
+      "key": "other",
+      "label": "발달",
+      "pol": "?",
+      "detail": "정상",
+      "id": "F50"
+    },
+    {
+      "turn": 20,
+      "sec": "peds",
+      "key": "other",
+      "label": "식욕",
+      "pol": "?",
+      "detail": "좋음",
+      "id": "F51"
+    },
+    {
+      "turn": 21,
+      "sec": "peds",
+      "key": "other",
+      "label": "수면",
+      "pol": "?",
+      "detail": "밤에 열 시쯤 잠자리에 들고 아침 일",
+      "id": "F52"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "기대",
+      "pol": "?",
+      "detail": "추가검사, 치료 여부",
+      "id": "F53"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "10717777de2b52c2074281b134b9862b76110ee4f074d5397a520253563e08eb",
+    "score_status": "not_scored",
+    "turn": 41
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 32,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 8,
+  "sim_doctor_calls": 8,
+  "sim_doctor_input_tokens": 18758,
+  "sim_doctor_output_tokens": 11711,
+  "sim_turns": 41,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v7/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 73,
+  "grade_scores": {
+    "정보수집": 18,
+    "진단추론": 10,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 10,
+    "효율": 10
+  }
+}

@@ -1,0 +1,87 @@
+---
+title: "Application of radiotherapy for hepatocellular carcinoma in current clinical practice guidelines"
+organization: "European Association"
+year: "2016"
+language: en
+source_url: "https://europepmc.org/article/MED/27730805"
+license: "CC BY-NC"
+---
+# Application of radiotherapy for hepatocellular carcinoma in current clinical practice guidelines
+
+## Abstract
+
+In oncologic practice, treatment guidelines provide appropriate treatment strategies based on evidence. Currently, many guidelines are used, including those of the European Association for the Study of the Liver and European Organization for Research and Treatment of Cancer (EASL-EORTC), National Comprehensive Cancer Network (NCCN), Asia-Pacific Primary Liver Cancer Expert (APPLE), and Korean Liver Cancer Study Group and National Cancer Centre (KLCSG-NCC). Although radiotherapy is commonly used in clinical practice, some guidelines do not accept it as a standard treatment modality. In this review, we will investigate the clinical practice guidelines currently used, and discuss the application of radiotherapy.
+
+## Introduction
+
+Treatment guidelines are used in oncologic practice to provide the most appropriate therapeutic option(s) based on evidence. Currently, there are several guidelines for the treatment of hepatocellular carcinoma (HCC), including guidelines from the European Association for the Study of the Liver and European Organization for Research and Treatment of Cancer (EASL-EORTC), which are based on the Barcelona Clinic Liver Cancer (BCLC) guidelines; the National Comprehensive Cancer Network (NCCN); Asia-Pacific Primary Liver Cancer Expert (APPLE); and the Korean Liver Cancer Study Group and National Cancer Centre (KLCSG-NCC).
+
+The application of radiotherapy (RT) has increased over recent decades, as has the number of studies using the latest technologies, such as stereotactic body radiotherapy (SBRT) or proton therapy (Fig. 1). Many researchers have reported effective clinical outcomes for patients with HCC using RT. However, RT is not a recommended option in the BCLC guidelines or in some of the international consensuses.
+
+This review will investigate the utilization and perspectives of RT in the currently used treatment guidelines, examine the weaknesses of the guidelines and discuss about the application of RT.
+
+## Evidence Grading Systems
+
+The clinical practice guidelines for HCC adopted different evidence grading systems. The EASL-EORTC guidelines used two systems: 1) the Physician Data Query (PDQ) Levels of Evidence for Adult and Pediatric Cancer Treatment Studies (evidence classification adapted from the National Cancer Institute) and 2) the Grading of Recommendations, Assessment, Development and Evaluation (GRADE). The GRADE system, which has been adopted by many key organizations, was also used in the APPLE consensus guidelines and the KLCSG-NCC guidelines. The NCCN Guidelines used their own system, the NCCN categories of Evidence and Consensus. This system considered characteristics unique to the oncologic field since high-quality evidence from large randomized controlled trials might not always exist, and in some situations treatment decisions should be made based on data from non-randomized trials or multiple retrospective studies, or even on the experience of physicians.
+
+## BCLC and EASL-EORTC Guidelines
+
+The BCLC staging system was established by the hepatologists’ society, and it was first published in 1999. Numerous studies have been performed comparing the various HCC staging systems, and the BCLC staging system showed the best efficacy in many studies. The BCLC staging system is widely used in the Asia-Pacific region; According to a report from the 2014 APPLE meeting, 24 of 33 institutions adopted the BCLC system as a staging modality. In terms of treatment guidelines, the BCLC system has the advantage of recommending treatment options in accordance with stage, which is simple and easy to understand.
+
+The BCLC staging and guidelines are most commonly used and are strongly recommended by the American Association for the Study of Liver Disease (AASLD) and the EASL. The AASLD guidelines state that the BCLC staging is the de facto staging system, which is widely accepted in practice and is used in many clinical trials. EASL and EORTC published comprehensive clinical practice guidelines in which BCLC staging is the sole recommended system; the use of other staging systems, even in combination with the BCLC system, is not recommended.
+
+However, in the clinical guidelines of EASL-EORTC, the role of RT is seriously overlooked. The guidelines mention that the use of conventional external beam radiotherapy (EBRT) often causes radiation-induced liver disease (RILD) due to low radiation tolerance of cirrhotic liver, and the benefit of three-dimensional conformal radiotherapy (3D-CRT) has only been proved in uncontrolled studies.
+
+RT is ranked as the lowest for both the grade of recommendation and level of evidence in the guidelines. However, RT has been actively used in practice and its effectiveness has been proved in recent meta-analyses. Meng et al. performed a meta-analysis comparing combined treatment of trans-arterial chemoembolization (TACE) plus RT versus TACE alone, and the combined treatment was associated with higher tumor response (odds ratio [OR], 3.14; 95% confidence interval [CI], 2.42 to 4.07) and better 2-year survival (OR, 2.39; 95% CI, 1.85 to 3.09). A more recent meta-analysis with a similar design confirmed the benefit of combined-treatment RT in terms of 5-year survival (OR, 3.98; 95% CI, 1.89 to 8.50) and complete tumor response (OR, 2.73; 95% CI, 1.95 to 3.81).
+
+The BCLC guidelines were last revised in 2011, and do not reflect subsequent clinical data or practice. The pioneering 3D-CRT studies were performed in the 1990s, and newly developed technologies, such as intensity-modulated radiation therapy (IMRT), SBRT, and charged particle therapy (e.g., proton therapy), which can conformally deliver doses to HCC safely, are now commonly practiced. In the era of these advanced technologies, RILD due to whole liver irradiation is an outdated concern. A recent meta-analysis showed the pooled local control rates of SBRT and charged particle therapy to be 87% and 86%, respectively, and the rates of acute hepatic toxicities of grade >3 to be 4.9% and 3.1%, respectively.
+
+In addition, BCLC guidelines suggest single treatment for each stage. However, it is difficult to perform the single standard treatment in practice because not all medical facilities can provide the best treatment, and patients can have various conditions in one stage. In addition, combined treatment is commonly performed in practice, where it has shown favorable clinical outcomes.
+
+EASL-EORTC guidelines look down on RT, emphasizing the importance of evidence from randomized clinical trials. However, RT has commonly been performed for patients with advanced disease or who failed first-line treatments and were not good candidates for clinical trials. Furthermore, the research of radiation oncology has been performed without major support. In addition, HCC is more prevalent in developing countries, such as those in Asia and sub-Saharan Africa. In those countries, the field of medical research is not developed enough. Therefore, the clinical experience of RT should not be disregarded. In addition, the suggestion of combined treatment or alternative options that can be applied more flexibly in clinical practice should be considered.
+
+## The NCCN Guidelines
+
+The NCCN Guidelines are one of the most comprehensive and widely used oncologic standards. The guidelines are presented in a flow-chart format, suggesting treatments according to clinical presentation; this is understandable and practically useful for physicians. The guidelines are updated at least once a year to ensure that they take into account the most current evidence.
+
+The 2015 update of the NCCN Guidelines ver. 2.0 considers locoregional therapies, including ablation, arterially directed therapies, and EBRT as preferred treatment options for inoperable patients or those with unresectable disease. In the most recent NCCN Guidelines (version 2.2016), EBRT is suggested as a locoregional treatment option for patients with unresectable HCC who are ineligible for transplantation, who are inoperable owing to comorbidity, or who have local disease with/without minimal extrahepatic disease, with evidence level of 2B (based on lower-level evidence, with consensus that the intervention is appropriate). For patients who are operable, locoregional therapy including EBRT is a treatment option, although resection is the preferred treatment.
+
+The guidelines mention the feasibility of modern RT: EBRT allows focal high-dose irradiation to liver tumors, while sparing surrounding normal liver, thereby limiting the risk of RILD. Furthermore, EBRT can be applied irrespective of tumor location. The panels have considerable interests in SBRT. SBRT is suggested as an alternative for ablation and/or embolization techniques, or when they have failed or are contraindicated. The possible indications of SBRT are as follow: Tumors on the liver capsule which might be ruptured and cause track seeding with radiofrequency ablation (RFA); Lesions close to the major vessels where the effectiveness of ablation can be diminished due to the “heat sink effect” (cooling effect of blood flow); Lesions abutting the diaphragm which are at risk of diaphragmatic injury.
+
+Consentient indications have not been confirmed, but SBRT is often performed on patients with 1–3 tumors and limited or no extrahepatic disease. Although SBRT is commonly applied for small tumors (≤4–5 cm), it may be used for larger lesions if sufficient uninvolved liver volume can be respected. SBRT is difficult to perform for lesions near the small bowel, owing to the risk of gastrointestinal toxicity.
+
+The role of RT as a locoregional treatment for HCC is well documented in the NCCN Guidelines. Since the NCCN Guidelines are one of the most commonly and globally used oncologic guidelines, the guidelines may introduce the role of RT to the physicians of the oncologic society.
+
+## The APPLE Consensus Guidelines
+
+The APPLE is an association of liver cancer experts in the Asia-Pacific region, and is the most active multi-national liver cancer association with International Liver Cancer Association (ILCA).The liver cancer specialists who participate in the APPLE include hepatologists, surgeons, radiologists, radiation oncologists, medical oncologists, and pathologists. At their meeting in 2014, the APPLE established comprehensive consensus guidelines for radiotherapy of HCC. Specific recommendations for RT according to stage, based on the BCLC staging system, were proposed.
+
+In the guidelines, techniques of modern EBRT, which might be unfamiliar for specialists other than radiation oncologists, are comprehensively explained. With the application of planning computed tomography (CT), 3D-CRT with dose-volume histogram (DVH) analysis has enabled accurate research on RILD. With DVH analysis, physicians can understand the amount of irradiated dose quantitatively. IMRT enables more conformal and higher dose delivery, through the method of inverse planning: computerized planning with given dose prescriptions and limitations.
+
+SBRT (or stereotactic ablative body RT [SABR]) is described as the accurate delivery of ablative radiation with a relatively large single dose in less than 5 fractions. This treatment has attracted interest owing to excellent local control, short treatment time, and feasibility of use regardless of location. The number of registered prospective SBRT (or SABR) protocols has dramatically increased on the clinicaltrials.gov.
+
+Proton therapy has an advantage in terms of dose distribution, with its characteristics of Bragg peak: a proton beam can confer a minimal dose to the front of the tumor, maximal dose at the tumor, and almost no dose behind the tumor. Proton therapy showed excellent local control and survival in patients with HCC. Hata et al. performed proton therapy for 19 HCC patients with Child-Pugh class C, who would have received supportive treatment according to the BCLC guidelines. Proton therapy showed favorable outcomes, with a 1-year overall survival rate of 53% and a progression-free survival rate of 47%.
+
+Combination treatment with RT has been actively studied. TACE and hepatic arterial infusion chemotherapy (HAIC) have been used as combination agents to enhance the effect of RT and clinical outcomes. Combination use of RT and a targeted agent, such as sorafenib, might have a synergistic effect, decreasing intrahepatic progression.
+
+Taken together, the APPLE consensus guidelines may help liver specialists, not only radiation oncologists, to understand the applications and techniques of RT. In addition, the APPLE consensus guidelines were to widen application of RT for HCC by proposing the indications of RT across all the stages.
+
+## KLCSG-NCC Korea Guidelines
+
+KLCSG and NCC Korea had published first practice guidelines at 2003, and recently updated at 2014. The KLCSG-NCC aimed to suggest comprehensive guidelines, considering specific clinical conditions in Asia, which can differ from those in Western countries. The modified Union for International Cancer Control (mUICC) staging system was adopted to develop the KLCSG-NCC guidelines.
+
+The mUICC staging system is based on a tumor-node-metastasis (TNM) system, which is most widely used across all solid tumors. It helps unification of clinical data since the mUICC system was adopted from the first version of KLCSG-NCC guidelines. The BCLC staging system recommends treatment according to stage, and has been validated in many studies. It is supported by EASL and AASLD; hence, it can be useful for international exchange of information. However, BCLC categorizes Child-Pugh class A and B patients into one stage, whereas the liver function of patients in these classes can vary widely. Moreover, the recommended treatments are too simple, and may not fit with clinical practice.
+
+The KLCSG-NCC guidelines provide multiple treatment suggestions for each stage, and state the best and the alternative options. Proposal of multiple treatments and alternative options is a reasonable concept considering the individual circumstances of patients and the difference between medical facilities.
+
+According to the guidelines, RT is an alternative option for mUICC stage I patients who are not candidates for resection or RFA. For a stage II single tumor >2 cm without vascular invasion, RT is also an alternative option. RT is recommended as one of the best options for a stage II single tumor ≤2 cm with vascular invasion, and a stage III single tumor >2 cm with vascular invasion. For stage IV patients with lymph node or extrahepatic metastases, RT is suggested as an alternative, while sorafenib is recommended as the best option.
+
+EBRT is usually performed for patients with Child-Pugh class A or favorable class B. RT should be performed with CT-based planning, and V30 (volume irradiated ≥30 Gy) should be less than 60% of the liver volume. For hypofractionated RT with fewer than 10 fractions, the volume of normal liver irradiated <15 Gy should exceed 700 mL, and the mean dose for normal liver should be limited to <28 Gy (the dose should be evaluated in EQD2; equivalent dose for 2 Gy per fraction treatment).
+
+EBRT is recommended for incompletely treated HCC after TACE, with evidence level B2 (moderate quality of evidence with weak strength of recommendation). A tumor with portal vein invasion is also an indication, with evidence level C1 (low quality of evidence with strong recommendation). EBRT is an effective treatment for palliation of pain, which is caused by the tumor itself or bone metastases, and symptoms of brain, lungs, and lymph nodes metastases. Treatment with EBRT is expected to confer a survival benefit and palliation effect for patients with jaundice due to biliary obstruction. Palliative RT is recommended with evidence level B1 (moderate quality of evidence with strong recommendation).
+
+The KLCSG guidelines provide comprehensive information across various clinical fields, including diagnosis, treatment, surveillance, and prevention. They propose practical and evidence-based indications for RT in variable clinical situations, using an anatomically based staging system. Also, the guidelines provide comprehensive implementation of RT which is clinically helpful.
+
+## Conclusion
+
+Comparison of the currently used guidelines is summarized in Table 1. Although RT is a frequently used treatment option for HCC, the applications of RT differ according to the guidelines. Applications of treatment, with clinical examples according to the guidelines, are shown in Table 2. Some guidelines, especially those of the EASL-EORTC, are negative about the application of RT, asserting the importance of evidence from randomized clinical trials. There are several ongoing randomized trials, which are expected to prove the efficacy of RT in the near future (Table 3). In addition, the clinical experiences of RT should not be neglected. RT has been commonly performed for patients who were hard to cure, and research has been performed without major support. We expect the globally accepted guidelines reflecting clinical practice, as well as adopting multimodal treatment.

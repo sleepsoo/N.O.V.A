@@ -1,0 +1,513 @@
+{
+  "case_id": "ef3649a9-330b-4e12-ad2d-fab94d019330",
+  "alias": "C03",
+  "turns": 39,
+  "say": 30,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 21,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 23473,
+  "doctor_output_tokens": 9817,
+  "seconds": 250.1,
+  "diagnosis": "체질성 성장지연 (Constitutional delay of growth and puberty)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "또래보다 작은 키",
+    "request": "",
+    "categories": [
+      "growth"
+    ],
+    "empathy": "걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "체질성 성장지연 가능성이 있어요.",
+    "대개 사춘기 뒤 또래만큼 자라요.",
+    "손 엑스레이로 뼈 나이를 확인해요.",
+    "검사 결과를 보고 치료를 함께 정해요.",
+    "키 성장 급감·두통·구토·시야 이상이면 바로 오세요.",
+    "지금은 약이나 주사가 필요 없어요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 806,
+      "out": 197,
+      "finish": "stop",
+      "sec": 3.6
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2730,
+      "out": 1115,
+      "finish": "stop",
+      "sec": 15.1
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3001,
+      "out": 709,
+      "finish": "stop",
+      "sec": 10.7
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3152,
+      "out": 680,
+      "finish": "stop",
+      "sec": 10.2
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3251,
+      "out": 970,
+      "finish": "stop",
+      "sec": 10.2
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1935,
+      "out": 1775,
+      "finish": "stop",
+      "sec": 17.8
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2761,
+      "out": 2355,
+      "finish": "stop",
+      "sec": 23.0
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2531,
+      "out": 1210,
+      "finish": "stop",
+      "sec": 12.8
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3306,
+      "out": 806,
+      "finish": "stop",
+      "sec": 10.7
+    }
+  ],
+  "phase_times": {
+    "intake": 3.6,
+    "interview": 113.9,
+    "examine": 45.7,
+    "facts": 17.8,
+    "dx": 23.0,
+    "plan_say": 12.8,
+    "explain": 22.3,
+    "effective": 0.1,
+    "S": 10.7
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "김도현",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이·성별",
+      "pol": "?",
+      "detail": "여섯 살 남아",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자",
+      "pol": "?",
+      "detail": "엄마 김지영, 37세",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "또래보다 작은 키",
+      "pol": "+",
+      "detail": "어린이집 같은 반보다 작아 보임",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "주변 지적",
+      "pol": "?",
+      "detail": "1년 전부터 또래보다 작다는 말 들음",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "최근 성장 체감",
+      "pol": "?",
+      "detail": "최근 6개월~1년 키가 별로 안 큰 것 같음",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "1년 전 키",
+      "pol": "?",
+      "detail": "100cm",
+      "id": "F7"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "현재 키",
+      "pol": "?",
+      "detail": "105cm 정도",
+      "id": "F8"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "1년간 키 증가",
+      "pol": "?",
+      "detail": "약 5cm",
+      "id": "F9"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "1년 전 체중",
+      "pol": "?",
+      "detail": "15kg",
+      "id": "F10"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "현재 체중",
+      "pol": "?",
+      "detail": "16.5kg",
+      "id": "F11"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "1년간 체중 증가",
+      "pol": "?",
+      "detail": "1.5kg",
+      "id": "F12"
+    },
+    {
+      "turn": 1,
+      "sec": "ice",
+      "key": "other",
+      "label": "큰 병 걱정",
+      "pol": "+",
+      "detail": "큰 병일까 봐 걱정",
+      "id": "F13"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "최근 키 성장",
+      "pol": "?",
+      "detail": "최근 1년에 5cm 성장",
+      "id": "F14"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기타 불편감",
+      "pol": "-",
+      "detail": "다른 불편한 증상 없음",
+      "id": "F15"
+    },
+    {
+      "turn": 4,
+      "sec": "fh",
+      "key": "other",
+      "label": "아버지 키",
+      "pol": "?",
+      "detail": "178cm",
+      "id": "F16"
+    },
+    {
+      "turn": 4,
+      "sec": "fh",
+      "key": "other",
+      "label": "어머니 키",
+      "pol": "?",
+      "detail": "165cm",
+      "id": "F17"
+    },
+    {
+      "turn": 5,
+      "sec": "fh",
+      "key": "other",
+      "label": "아버지 성장 시기",
+      "pol": "?",
+      "detail": "고등학교 때 많이 큼",
+      "id": "F18"
+    },
+    {
+      "turn": 6,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족의 작은 키",
+      "pol": "-",
+      "detail": "다른 가족은 키가 작지 않음",
+      "id": "F19"
+    },
+    {
+      "turn": 7,
+      "sec": "peds",
+      "key": "other",
+      "label": "임신·출산",
+      "pol": "?",
+      "detail": "만삭, 자연분만, 문제없음",
+      "id": "F20"
+    },
+    {
+      "turn": 8,
+      "sec": "peds",
+      "key": "other",
+      "label": "발달",
+      "pol": "?",
+      "detail": "말·걷기 또래와 비슷",
+      "id": "F21"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "약·한약",
+      "pol": "-",
+      "detail": "복용 안 함",
+      "id": "F22"
+    },
+    {
+      "turn": 10,
+      "sec": "peds",
+      "key": "other",
+      "label": "식사",
+      "pol": "?",
+      "detail": "세 끼 잘 먹고 간식도 먹음",
+      "id": "F23"
+    },
+    {
+      "turn": 11,
+      "sec": "pmh",
+      "key": "other",
+      "label": "진단받은 병",
+      "pol": "-",
+      "detail": "진단받은 병 없음",
+      "id": "F24"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "ros.Constipation",
+      "label": "변비",
+      "pol": "-",
+      "detail": "변비 없음",
+      "id": "F25"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "추위 민감",
+      "pol": "-",
+      "detail": "추위 안 탐",
+      "id": "F26"
+    },
+    {
+      "turn": 13,
+      "sec": "ros",
+      "key": "ros.Headache",
+      "label": "두통",
+      "pol": "-",
+      "detail": "두통 없음",
+      "id": "F27"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "두 살 키",
+      "pol": "?",
+      "detail": "83cm",
+      "id": "F28"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "네 살 키",
+      "pol": "?",
+      "detail": "96cm",
+      "id": "F29"
+    },
+    {
+      "turn": 15,
+      "sec": "peds",
+      "key": "other",
+      "label": "음모·고환 변화",
+      "pol": "-",
+      "detail": "아직 변화 없음",
+      "id": "F30"
+    },
+    {
+      "turn": 16,
+      "sec": "peds",
+      "key": "other",
+      "label": "출생 키",
+      "pol": "?",
+      "detail": "50cm",
+      "id": "F31"
+    },
+    {
+      "turn": 16,
+      "sec": "peds",
+      "key": "other",
+      "label": "출생 체중",
+      "pol": "?",
+      "detail": "3.2kg",
+      "id": "F32"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "배 돌출",
+      "pol": "-",
+      "detail": "배만 나오지는 않음",
+      "id": "F33"
+    },
+    {
+      "turn": 18,
+      "sec": "peds",
+      "key": "other",
+      "label": "우유 섭취",
+      "pol": "?",
+      "detail": "하루 한두 잔",
+      "id": "F34"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원·큰 병",
+      "pol": "-",
+      "detail": "입원·큰 병 앓은 적 없음",
+      "id": "F35"
+    },
+    {
+      "turn": 20,
+      "sec": "peds",
+      "key": "other",
+      "label": "활동",
+      "pol": "?",
+      "detail": "친구와 뛰어놀고 자전거 탐",
+      "id": "F36"
+    },
+    {
+      "turn": 21,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "-",
+      "detail": "구토 없음",
+      "id": "F37"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "향후 성장 질문",
+      "pol": "?",
+      "detail": "앞으로 키가 더 클 수 있는지 궁금",
+      "id": "F38"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "8bfe3aeddd0e5ba3657c098cf0c27927ebdf180d4aeec513c28cd6449ec5b9f1",
+    "score_status": "not_scored",
+    "turn": 39
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "두통이 생기면 바로 올게요.",
+    "ok": true
+  },
+  "exam_plan": [
+    "anthro",
+    "growth_chart",
+    "body_prop",
+    "dysmorph",
+    "thyroid",
+    "skin_dry",
+    "dtr",
+    "vfield",
+    "general"
+  ],
+  "error": null,
+  "session_id": "fae34a04-ac7b-4168-897d-dc26d6d1e295",
+  "api": "https://nova.snubhai.org"
+}

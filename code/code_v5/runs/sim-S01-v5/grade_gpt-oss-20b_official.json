@@ -1,0 +1,62 @@
+{
+  "checklist": {
+    "history_total": 27,
+    "history_done": 27,
+    "exam_total": 10,
+    "exam_done": 8
+  },
+  "scores": {
+    "정보수집": 23,
+    "진단추론": 15,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 10,
+    "효율": 10
+  },
+  "total": 83,
+  "diagnosis_5pt": 5,
+  "deductions": {
+    "정보수집": [],
+    "진단추론": [],
+    "검사·추적": [],
+    "안전": [],
+    "의사소통": [
+      "고객 이해 확인 부족",
+      "구체적 위험경보·재진 시점 설명 대화 단단함 부족"
+    ],
+    "효율": [
+      "과다한 턴(42개)·다중작업·대화 분산",
+      "불필요한 반복 문장 (ex: '네, 알았습니다.')",
+      "대화 흐름 통합 부족"
+    ]
+  },
+  "missed_key_questions": [
+    "어제 저녁 7시경 정확한 발병 시각에 대한 구체적 질의",
+    "통증 방사(방사통) 여부에 대한 직접 질문"
+  ],
+  "missed_key_exams": [
+    "로브싱 징후(Rovsing sign)",
+    "뇌-척추계통 거치는 항해음수(CVA tenderness)",
+    "서혜부·음낭(inguinal & scrotal) 진찰"
+  ],
+  "record_errors": [],
+  "top_improvements": [
+    "1) 핵심 국면(증상 시작 시점, 방사통 등) 명확히 전달하도록 질문 항목 구조화",
+    "2) 직접적 의사소통(질문+정리)으로 환자 이해도 체크",
+    "3) 핵심 신체검사(로브싱, CVA, 서혜부) 포함",
+    "4) 대화 흐름을 한 번에 한 개념씩 전달하여 턴 수 최소화",
+    "5) 진료 로고와 환자 교육 포인트 일관성 강조"
+  ],
+  "usage": {
+    "prompt_tokens": 7940,
+    "total_tokens": 10625,
+    "completion_tokens": 2685,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "_calls": 1,
+  "_model": "openai/gpt-oss-20b",
+  "remote": false
+}

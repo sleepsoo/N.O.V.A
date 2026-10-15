@@ -1,0 +1,91 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  16.8s] llm[intake] low out=267 finish=stop 16.8s
+[  16.8s] intake: {'age': 62, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '불면 (수면제 처방 원함)', 'request': '수면제 처방', 'categories': ['substance', 'insomnia', 'mood'], 'empathy': '불면이 심하시겠어요.', 'answered': []} diffs=['불면증 (Insomnia)', '우울증 (Major Depressive Disorder)', '불안장애 (Generalized Anxiety Disorder)', '수면장애(Parasomnia)', '수면제 남용 가능성 (Sedative-hypnotic dependence)']
+[  16.8s] checklist: 61 items, covered=['ps_sleep']
+[  23.1s] turn 1 SAY: 불면이 심하시겠어요. -> 네, 알겠습니다.
+[  30.4s] turn 2 SAY: 불면에 대해 자세히 말씀해 주세요 -> 밤새 뒤척이고 온몸이 불안해요
+[  36.5s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.
+[  40.3s] turn 4 SAY: 두근거림에 대해 자세히 말씀해 주세요 -> 가슴이 두근거려요.
+[  49.3s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 낮에 멍하고, 집중이 안 되고, 짜증이 늘어납니다.
+[  55.4s] turn 6 SAY: 집중력에 대해 자세히 말씀해 주세요 -> 집중이 안 되고, 짜증이 늘어납니다.
+[  55.4s] guidelines[iv]: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia i (KR_EuropePMC, 2020)
+[  55.4s] guidelines[iv]: 우울증 Practical tip (KR_KoMGI, 2023)
+[  75.7s] llm[plan_v4] low out=405 finish=stop 20.3s
+[  75.7s] v4 plan q bad (pair): 수면 뒤 도네 시간과 일정이 어떻게 되나요?
+[  75.7s] v4 plan: diffs=['불면증 (Insomnia)', '우울증 (Major Depressive Disorder)', '불안장애 (Generalized Anxiety Disorder)', '수면장애(Parasomnia)', '수면제 남용 가능성 (Sedative‑hypnotic dependence)'] qs=[('free', '지난 1개월간 손톱이 금속광이었나요?'), ('free', '가장 최근에 정신적인 스트레스를 느낀 상황이 있었나요?'), ('free', '하루에 커피 혹은 녹차를 두 잔 이상 드시나요?'), ('free', '최근에 신경근성 약물을 복용한 적이 있나요?'), ('free', '일상 생활에서 기억력에 문제가 있나요?'), ('free', '침실에서 전자기기를 밤에 사용하시나요?')] exams=[('cognitive', '정신 기능 저하 배제', 'mid'), ('thyroid_bruit', '갑상선 기능 과다 증상 점검', 'mid')] thyroid=True
+[  81.9s] turn 7 SAY: 드시는 수면제 이름이 뭐예요? -> 스틸녹스예요.
+[  93.2s] turn 8 SAY: 수면제는 마지막으로 언제 드셨어요? -> 어젯밤에도 자기 전에 네 알을 먹고 새벽에 깨서 두 알을 더 먹었어요.
+[  95.7s] turn 9 SAY: 약을 끊었을 때 경련한 적 있나요? -> 그런 건 없어요.
+[  99.8s] turn 10 SAY: 지난 1개월간 손톱이 금속광이었나요? -> 그런 건 없어요.
+[ 117.9s] turn 11 SAY: 가장 최근에 정신적인 스트레스를 느낀 상황이 있었나요? -> 가족들과 갈등이 있었어요.
+[ 121.5s] turn 12 SAY: 평소 앓는 병이 있으세요? -> 고혈압이 있어요.
+[ 131.8s] turn 13 SAY: 가족 중에 아픈 분이 있으세요? -> 아버지는 심장병으로 돌아가셨고, 어머니는 치매로 돌아가셨다.
+[ 135.3s] turn 14 SAY: 하루에 커피 혹은 녹차를 두 잔 이상 드시나요? -> 하루에 한두 잔 마셔요.
+[ 146.9s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 수면제 때문에 일상생활에도 문제가 생겼어요.
+[ 146.9s] v4 interview done: q=14 turn=15 left=25
+[ 146.9s] v4 exams plan (c8flex, budget 14): spec=['thyroid', 'cognitive', 'thyroid_bruit', 'orthostatic'] order=['vitals', 'orthostatic', 'general', 'mental', 'conj', 'thyroid', 'thyroid_bruit', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph', 'cognitive'] backups=['chest_insp', 'post_tremor', 'skin_temp', 'nystagmus', 'dysarthria', 'gait']
+[ 147.0s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C
+[ 147.0s] turn 17 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 6mmHg, 어지럼(-)
+[ 147.0s] turn 18 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 정상 체형, 안절부절(+)
+[ 147.0s] turn 19 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 147.0s] turn 20 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 147.0s] turn 21 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 188.2s] turn 22 EXAM: 갑상선 잡음 청진하겠습니다 -> 갑상선 청진 (Thyroid auscultation) | 음성
+[ 188.2s] turn 23 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 188.2s] turn 24 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 188.2s] turn 25 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-)
+[ 188.2s] turn 26 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 188.2s] turn 27 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 188.2s] turn 28 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 188.2s] turn 29 EXAM: 인지기능 선별검사 하겠습니다 -> MMSE-K 28/30점, 지연회상 2/3점
+[ 188.2s] v4 exams done: ['vitals', 'orthostatic', 'general', 'mental', 'conj', 'thyroid', 'thyroid_bruit', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph', 'cognitive'] refused=[]
+[ 288.4s] llm[facts] medium out=2154 finish=stop 100.3s
+[ 288.5s] facts: 24
+[ 288.5s] guidelines[dx]: Korean Clinical Practice Guideline for the Diagnosis and Treatment of Insomnia i (KR_EuropePMC, 2020)
+[ 288.5s] guidelines[dx]: 우울증 Practical tip (KR_KoMGI, 2023)
+[ 352.3s] llm[dx] medium out=1324 finish=stop 63.8s
+[ 394.5s] llm[plan_say4] low out=894 finish=stop 42.2s
+[ 394.5s] v4 lines: {'dx': '범불안장애: 죠기가 두려워서 밤마다 깨워요', 'options': '상담 치료와 약으로 좋아질 수 있어요.', 'link': '분비된 호르몬 균형이 깨져 혈압과 심박이 변동돼요', 'concern': '수면제 복용이 늘어져 일상에 지장이 생겼습니다', 'tests': '심전도로 부정맥이 있는지 확인합니다', 'caution': '', 'followup': '1~2주 뒤 결과 보고 다음 치료를 정해요.', 'warning': '가슴이 두근거림·가슴 통증·복통면 바로 오세요.', 'lifestyle': ''} musts=[] emergency=False checks=[{'drop': '인지행동치료와 이완 훈련으로 불안을 관리하고, 필요 시 SSRI를 검토합니다', 'key': 'options', 'why': 'too_long'}, {'drop': '정기적인 혈압 체크와 안전성 있는 수면제 사용을 병행합니다', 'key': 'options', 'why': 'too_long'}, {'drop': '비정상적 신경전달물질이 신경계를 과도하게 자극해 불면성과 불안이 커져요', 'key': 'link', 'why': 'too_long'}, {'drop': 'TFT로 갑상샘을 검사해 불안의 원인을 찾습니다', 'key': 'tests', 'why': 'english'}, {'drop': '수면제 복용 시 균형 감각이 떨어져 낙상 위험이 있으니 주변에 물체 배치에 주의하세요', 'key': 'caution', 'why': 'too_long'}, {'drop': '2주 후 재진 시 수면 패턴 변화를 점검하고, 혈압이 상승하면 상담해요', 'key': 'followup', 'why': 'too_long'}, {'drop': '카페인과 정크음식은 줄이고, 규칙적인 수면 시간을 지키세요', 'key': 'lifestyle', 'why': 'too_long'}]
+[ 399.8s] turn 30 SAY: 범불안장애: 죠기가 두려워서 밤마다 깨워요 -> 네, 알겠습니다.
+[ 403.3s] turn 31 SAY: 상담 치료와 약으로 좋아질 수 있어요. -> 네, 알겠습니다.
+[ 406.0s] turn 32 SAY: 분비된 호르몬 균형이 깨져 혈압과 심박이 변동돼요 -> 네, 알겠습니다.
+[ 410.7s] turn 33 SAY: 수면제 복용이 늘어져 일상에 지장이 생겼습니다 -> 네, 알겠습니다.
+[ 413.1s] turn 34 SAY: 심전도로 부정맥이 있는지 확인합니다 -> 네, 알겠습니다.
+[ 438.5s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 수면제 때문에 일상생활에 가장 불편한 점이 뭐예요?
+[ 450.3s] turn 36 SAY: 주로 신경전달물질 불균형과 생활습관으로 발생합니다 -> 수면제 때문에 일상생활에 문제가 생겼어요.
+[ 454.2s] turn 37 SAY: 1~2주 뒤 결과 보고 다음 치료를 정해요. -> 네, 알겠습니다.
+[ 459.1s] turn 38 SAY: 가슴이 두근거림·가슴 통증·복통면 바로 오세요. -> 네, 알겠습니다.
+[ 465.2s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 가슴이 두근거리고, 가슴이 두근거려요.
+[ 465.2s] v4 explain done: said=8 answers=0 final=True teach={'reply': '가슴이 두근거리고, 가슴이 두근거려요.'} turns_left=1 (start 11)
+[ 478.0s] llm[S-narr] low out=281 finish=stop 12.8s
+[ 478.0s] summary: turns=39 counts={'say': 25, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 6, 'doctor_ok_calls': 6, 'doctor_invalid': 0, 'doctor_input_tokens': 10569, 'doctor_output_tokens': 5325, 'elapsed_s': 478.0} dx=범불안장애 (Generalized Anxiety Disorder)
+C01 gpt-oss-20b: total=26 정보수집=17 진단추론=1 검사·추적=0 안전=0 의사소통=3 효율=5 dx5=1
+- missed_key_questions: ['정신과 치료 경험 및 현재 여부', '수면 유도제의 정확한 복용량 및 일정', '지금까지 약물 감소 노력 세부사항', '정신건강 및 불안 데이터, PHQ–9', '증상 및 부작용 시간대 및 빈도']
+- missed_key_exams: ['뇌신경전반(시력, 청력, 귀 파악)', '분석된 신경통(작은 정지, 근육경련)', '정신 상태(정보 기억력, 언어)', '신경계전반(근력, 감각), 야간골수파수', '정서 및 감정 척도']
+- top_improvements: ['정밀히 수면제 복용 패턴 및 의존성 탐색', '정확한 검사 및 치료 안내 포함', '구체적 비약물 및 약물 개입 방안 제시', '적절한 환자 교육 및 위험성 언급', '불필요한 대화와 수동적 응답 제거']
+{
+ "turns": 39,
+ "say": 25,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 6,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 6,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 10569,
+ "doctor_output_tokens": 5325,
+ "sim_calls": 27,
+ "seconds": 478.0,
+ "diagnosis": "범불안장애 (Generalized Anxiety Disorder)",
+ "dx_hit": false,
+ "session_status": "completed",
+ "grade_total": 26,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-C01-v4d

@@ -1,0 +1,53 @@
+---
+title: "Disease-based evidence map for the second-wave development of evidence-based Korean medicine clinical practice guidelines in Korea"
+organization: "Integrative medicine research"
+year: "2022"
+language: en
+source_url: "https://europepmc.org/article/MED/35783541"
+license: "CC BY-NC-ND"
+---
+# Disease-based evidence map for the second-wave development of evidence-based Korean medicine clinical practice guidelines in Korea
+
+Public health care in Korea operates on two different medical systems: (1) conventional Western medicine and (2) Korean medicine (KM), which consists of complementary and integrative medicine (CIM) in Korea. KM has played an important role in the national health care system. However, the integration of KM in the national health care system has been providing a limited proportion of the national health care services, mostly concentrated on musculoskeletal conditions and conditions in older adults. One of the reasons for this situation in Korea is the public distrust of KM, which may stem from the lack of scientific evidence and unstandardized medical approach. The development of evidence-based KM clinical practice guidelines (KM-CPGs) was initiated in 2016 by the Ministry of Health and Welfare, based on the 3rd National Comprehensive Plan for KM Development, which aimed to promote the utilization of KM in medical care services and diversify the applicability of KM to various medical conditions in Korea.
+
+The first-wave development project for KM-CPGs (2016–2022) oversaw the completion of KM-CPGs for 30 diseases in 2021, which was followed by the new nationally funded project, the Korean Medicine Innovative Technology Development Project that will span from 2020 to 2029. The new project group proposed 35 additional disease candidates for the second-wave development of KM-CPGs. To appraise the feasibility of the project, the authors investigated the amount of preceding evidence for each disease candidate through a preliminary literature search (Table 1).
+
+**Table 1 Candidates for second-wave development of Korean medicine clinical practice guidelines.**
+
+| First-wave development of KM-CPGs (2016–2021) | Candidates for second-wave development of KM-CPGs (2020–2029) |
+|---|---|
+| (1) Allergic rhinitis (2) Ankle sprain (3) Anxiety disorder (4) Atopic dermatitis (5) Autism spectrum disorder (6) Breast cancer (7) Cancer accompanying symptoms (8) Cervical pain (9) Chronic low back pain (10) Cold hands and feet (11) Common cold (12) Dementia (13) Dizziness (14) Dysmenorrhea (15) Facial nerve palsy (16) Fatigue (17) Functional dyspepsia (18) Hwa-byung (anger syndrome in KM) (19) Hypertension (20) Insomnia (21) Lumbar herniated intervertebral disk (22) Lumbar spinal stenosis (23) Menopause disorder (24) Migraine (25) Parkinson's disease (26) Postoperative syndrome (27) Shoulder pain (28) Stroke (29) Temporomandibular disorders (30) Traffic accident injury syndrome | (1) Acne (2) Adhesive capsulitis of shoulder (3) Alopecia areata (4) Asthma (5) Benign prostatic hyperplasia (6) Cancer (7) Cervical herniated intervertebral disk (8) Constipation (primary constipation) (9) Coronavirus disease 2019 (10) Care for the disabled (11) Disorders of autonomic nervous system (12) Dry mouth (13) Eczema (seborrheic dermatitis) (14) Fracture (15) Functional diarrhea (16) Gastritis (17) Gastroesophageal reflux disease (18) Geriatric care (such as elderly frailty) (19) Home care (20) Hyperlipidemia (21) Influenza A virus subtype (22) Liver dysfunction (23) Perinatal care (including hyperemesis gravidarum) (24) Peripheral vascular disease (25) Polycystic ovary syndrome (26) Posttraumatic stress disorder (27) Premenstrual tension syndrome (28) Psoriasis (29) Sciatica (30) Stomatitis (31) Thoracic outlet syndrome (32) Tinnitus (33) Traumatic brain injury (34) Ulcerative colitis (35) Zoster (herpes zoster) |
+
+_Abbreviations. CPG, clinical practice guideline; KM, Korean medicine. Abbreviations. CPG, clinical practice guideline; KM, Korean medicine._
+
+Relevant studies on the 35 disease candidates for the new KM-CPGs were searched using MEDLINE (via PubMed) and China National Knowledge Infrastructure. The search strategy for each disease or medical condition, constructed by two experts (CYK and BL) who have sufficient experience in performing systematic reviews and developing KM-CPGs, was established by emphasizing the specificity of the disease. The initial search date for the 35 disease candidates was on January 4, 2022, and additional search on cerebral palsy was conducted on March 8, 2022, which was added as a supplement to the candidate disability after discussion with the project group team. All related studies published up to the search date were included. The inclusion criteria were as follows: (1) population: patients diagnosed with one of the 35 disease candidates, (2) intervention type: KM interventions as monotherapy or adjuvant therapy, including acupuncture or moxibustion (AcuMoxa), oral herbal medicine (HM), and other KM treatments (e.g., Chuna, external HM, thread-embedding therapy, cupping therapy, and pharmacopuncture), (3) comparator: not limited, (4) outcome: not limited, and (5) study type: only randomized controlled trials (RCTs) and systematic reviews (SRs) were allowed. The eligibility of the searched studies was determined based on the title and abstract, and if the eligibility was unclear, the full texts of these studies were reviewed.
+
+The included studies were subdivided according to the study type and interventions used: (1) RCT with AcuMoxa, (2) RCT with oral HM, (3) RCT with both AcuMoxa and oral HM, (4) RCT with other KM treatments, and (5) SRs with or without meta-analysis. In addition, the studies on cancer were further subdivided into 17 different types of cancer and any studies that were related to two or more types of cancer or did not specify the type of cancer were categorized as 'unclassified.' In the study selection process, two independent researchers were assigned to each disease candidate, and six researchers (CYK, JCS, JHN, JHP, SEJ, and DJH) participated in this process using EndNote 20 (Clarivate Analytics, London, England). Differences in opinions on the inclusion of studies were moderated by one researcher (CYK). Finally, to visualize the results, an evidence map was presented using a heat map and data bars in Excel (Microsoft Corp., Redmond, WA, USA).
+
+The total number of included studies varied from 1 to 3992 for each disease. The top five disease candidates were gastritis (n = 3992), cancer (total) (n = 3609), fracture (n = 3407), asthma (n = 3321), and ulcerative colitis (n = 2273). When the study type was limited to RCTs, the top five candidates were gastritis (n = 3892), fracture (n = 3375), asthma (n = 3180), cancer (total) (n = 3134), and ulcerative colitis (n = 2164). The ranking of the disease candidates also differ based on the type of KM intervention used in RCTs. In particular, the number of RCTs examining the use of AcuMoxa for adhesive capsulitis of shoulder (n = 707) and cerebral palsy (n = 270) were relatively higher compared to that of other types of KM treatment (Fig. 1).
+
+[그림/Figure] Fig. 1 Disease-based evidence map for second-wave development of Korean medicine clinical practice guidelines. Abbreviations. AcuMoxa, acupuncture and moxibustion; ANS, autonomic nervous system; BPH, benign prostatic hyperplasia; CIVD, cervical herniated intervertebral disk; CLJ, Chinese local journal; COVID-19, coronavirus disease 2019; CPG, clinical practice guideline; GERD, gastroesophageal reflux disease; H1N1, Influenza A virus subtype; HM, herbal medicine; KM, Korean medicine; MA, meta-analysis; PCOS, polycystic ovary syndrome; PMS, premenstrual tension syndrome; PTSD, posttraumatic stress disorder; RCT, randomized controlled trial; SR, systematic review; TBI, traumatic brain injury. Note. In each column, a cell close to red (or blue) means that cell has a high (or low) value. The yellow bar inside each cell represents the value of outcome.
+
+It is important to set rational priorities in the field of CPG development at the national level. This study was intended to provide a basis for determining the priority of diseases when developing clinical guidelines by drawing an evidence map using rapid review methodology. In addition, the authors calculated the proportion of literature originating from local Chinese journals among the included studies by topic, and the range varied from 22.2% to 100%, with an average of 82.3% (Fig. 1). This suggests that most relevant clinical evidences may have originated in China, therefore the necessity of creating clinical evidence that reflects the characteristics and clinical settings of KM in Korea is emphasized.
+
+There are a few limitations in this study. First, this literature search was limited to searches in two electronic databases. Second, a search strategy that prioritized specificity rather than sensitivity was used. These limitations imply that the possibility that relevant studies were missing from our results cannot be ruled out. Third, the 35 disease candidates examined in this study were based on national policies in Korea, and the importance of disease selection may differ in other countries. Fourth, since this study did not evaluate the methodological quality of the included studies, the distribution of high-quality studies on the disease of interest is unknown. Finally, quantitative analysis of the efficacy (or effectiveness) and safety of KM treatments for each disease candidate was beyond the scope of this study.
+
+## Author contributions
+
+Conceptualization: CYK. Methodology: CYK, SS, BL, JCS, JHN, JHP, SEJ, DJH, MP. Formal analysis: CYK. Data curation: CYK. Writing – Original Draft: CYK, SS. Writing – Review & Editing: BL, JCS, JHN, JHP, SEJ, DJH, WM, NKK, MP. Visualization: CYK. Supervision: CYK, MP. Project administration: MP. Funding acquisition: NKK, MP.
+
+## Conflict of interest
+
+CYK and BL are youth editorial board members of the journal but their board membership had no bearing on the editorial process or decision on this commentary. The authors declare that they have no other conflicts of interest.
+
+## Funding
+
+This research was supported by a grant of the Korea Health Technology R&D Project through the 10.13039/501100003710Korea Health Industry Development Institute (KHIDI), funded by the 10.13039/501100006506Ministry of Health & Welfare, Republic of Korea (grant number: HB16C0012 & HF20C0001).
+
+## Ethical statement
+
+Not applicable.
+
+## Data availability
+
+The data that support the findings of this study are available from the corresponding author upon reasonable request.

@@ -1,0 +1,147 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "언제부터 그러셨어요?",
+    "reply": "7년 전부터 잠을 잘 못 잤어요.",
+    "phase": "hpi",
+    "qid": "onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "그 뒤로 점점 심해지고 있나요?",
+    "reply": "네, 약 먹는 양도 계속 늘었어요.",
+    "phase": "hpi",
+    "qid": "course",
+    "label": "경과"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "이 문제로 진료받은 적 있으세요?",
+    "reply": "네, 여러 병원에서 약 받아요.",
+    "phase": "hpi",
+    "qid": "prior_care",
+    "label": "이전 진료"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "지금 하루에 몇 알 드세요?",
+    "reply": "밤에 5~6알, 낮에 가끔 1알요.",
+    "phase": "bundle",
+    "qid": "dr_dose",
+    "label": "복용량"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "약 양이 점점 늘었나요?",
+    "reply": "네, 반 알에서 대여섯 알로 늘었어요.",
+    "phase": "bundle",
+    "qid": "dr_tolerance",
+    "label": "내성"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "약을 안 드시면 어떠세요?",
+    "reply": "잠 못 자고 불안해 손도 떨려요.",
+    "phase": "bundle",
+    "qid": "dr_withdraw",
+    "label": "금단 증상"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "약은 어디서 처방받으세요?",
+    "reply": "동네 내과, 신경과, 정신과요.",
+    "phase": "bundle",
+    "qid": "dr_where",
+    "label": "처방처"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "잠드는 데 오래 걸리세요?",
+    "reply": "네, 약 없이는 잠이 안 와요.",
+    "phase": "bundle",
+    "qid": "sl_initiate",
+    "label": "입면 장애"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "약을 줄여 보신 적 있으세요?",
+    "reply": "네, 여러 번 줄이다 실패했어요.",
+    "phase": "bundle",
+    "qid": "dr_cut",
+    "label": "감량 시도"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "결핵이나 간염 앓은 적 있으세요?",
+    "reply": "아니요, 둘 다 앓은 적 없어요.",
+    "phase": "history",
+    "qid": "pmh_tb_hep",
+    "label": "Tbc/hepatitis"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "수술받으신 적 있으세요?",
+    "reply": "아니요, 수술받은 적 없어요.",
+    "phase": "history",
+    "qid": "pmh_op",
+    "label": "Op. Hx"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "지금 드시는 약 있으세요?",
+    "reply": "졸피뎀과 암로디핀 먹어요.",
+    "phase": "history",
+    "qid": "meds",
+    "label": "Medicine history"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "약 알레르기 있으세요?",
+    "reply": "아니요, 약 알레르기는 없어요.",
+    "phase": "history",
+    "qid": "allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "가족 중 비슷한 병 있는 분 계세요?",
+    "reply": "아니요, 가족은 이런 문제 없어요.",
+    "phase": "history",
+    "qid": "fh_similar",
+    "label": "FH 유사 질환"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "가족 중 당뇨나 고혈압 있으세요?",
+    "reply": "아니요, 당뇨나 고혈압은 없어요.",
+    "phase": "history",
+    "qid": "fh_dm_htn",
+    "label": "FH DM/HTN"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  }
+]

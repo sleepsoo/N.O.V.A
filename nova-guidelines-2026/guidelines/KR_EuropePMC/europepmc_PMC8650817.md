@@ -1,0 +1,77 @@
+---
+title: "Recommendation for use of diphtheria and tetanus toxoids and acellular pertussis, inactivated poliovirus, Haemophilus influenzae type b conjugate, and hepatitis B vaccine in infants"
+organization: "Ministry of Food and Drug Safety"
+year: "2021"
+language: en
+source_url: "https://europepmc.org/article/MED/34098627"
+license: "CC BY-NC"
+---
+# Recommendation for use of diphtheria and tetanus toxoids and acellular pertussis, inactivated poliovirus, Haemophilus influenzae type b conjugate, and hepatitis B vaccine in infants
+
+## Abstract
+
+In April 2020, the Ministry of Food and Drug Safety licensed a hexavalent combined diphtheria and tetanus toxoids and acellular pertussis (DTaP), inactivated poliovirus (IPV), Haemophilus influenzae type b (Hib) conjugated to tetanus protein, and hepatitis B (HepB) (recombinant DNA) vaccine, DTa-PIPV-Hib-HepB (Hexaxim, Sanofi Pasteur), for use as a 3-dose primary series in infants aged 2, 4, and 6 months. The DTaP-IPV-Hib-HepB vaccine is highly immunogenic and safe and provides a long-term immune response based on studies performed in a variety of settings in many countries, including Korea. This report summarizes the Committee on Infectious Diseases of the Korean Pediatric Society guidelines for the use of this newly introduced hexavalent combination vaccine.
+
+Graphical abstract
+
+## Introduction
+
+Combination vaccines, compared with individually administered components, decrease the number of injections, amount of pain, and cumulative exposure to preservatives and stabilizers that can contribute to adverse events. Moreover, combination products have simplified immunization delivery, improving vaccine coverage and vaccination timeliness with additional cost-saving effects of administration, handling, and storage. In Korea, tetravalent and pentavalent vaccines were introduced in 2009 and 2017, respectively, based on the results of clinical trials in Korean infants. In April 2020, the Ministry of Food and Drug Safety licensed a hexavalent combined diphtheria and tetanus toxoids and acellular pertussis (DTaP), inactivated poliovirus (IPV), Haemophilus influenzae type b (Hib) conjugated to tetanus protein, and hepatitis B (HepB) (recombinant DNA) vaccine, DTaP-IPV-Hib-HepB (Hexaxim; Sanofi Pasteur, Lyon, France), for use as a 3-dose primary series in infants aged 2, 4, and 6 months. The DTaP-IPV-Hib-HepB vaccine is not currently included in the national immunization program.
+
+There are currently 3 hexavalent vaccine preparations approved for use worldwide: Infanrix-hexa (GSK, Rixensart, Belgium); Hexyon/Hexacima/Hexaxim (all Sanofi Pasteur); and Vaxelis (MSP Vaccine Co., Swiftwater, PA, USA). Their composition and formulation differ slightly, but all have shown good immunogenicity and safety profiles. Hexyon and Hexacima are the same products as Hexaxim, with the only differences being their brand names depending on the country of sale. As of 2021, only Hexaxim has been introduced in Korea. This report summarizes the Committee on Infectious Diseases of the Korean Pediatric Society guidelines for the use of a newly introduced hexavalent combination vaccine.
+
+## Composition of the hexavalent vaccine
+
+The DTaP-IPV-Hib-HepB vaccine is based on the well-established pentavalent DTaP-IPV/Hib vaccine (Pentaxim; Sanofi Pasteur) with the addition of 10 µg of Hansenula polymorpha–derived HepB surface antigen (HBsAg). Each dose contains the same amount of diphtheria and tetanus toxoids and pertussis antigens (inactivated pertussis toxin [PT] and filamentous hemagglutinin [FHA]) and the same amount of inactivated poliovirus antigens as DTaP-IPV/Hib (Table 1). The Hib component (Hib capsular polysaccharide polyribosyl-ribotol-phosphate [PRP] coupled to tetanus toxoid protein) is the same as that in DTaP-IPV/Hib but in an increased amount. It features a preservative-free fully liquid formulation that requires no reconstitution. Since Hexaxim was first licensed in Europe in 2013, it has been licensed in more than 100 countries worldwide with more than 30 million doses distributed in 70 countries, and it is pre-qualified by the World Health Organization.
+
+## Immunogenicity
+
+The immunogenicity of the DTaP-IPV-Hib-HepB vaccine has been evaluated in a variety of settings in many countries worldwide. It is highly immunogenic compared to licensed comparators.
+
+A phase III noninferiority study evaluated the immunogenicity of DTaP-IPV-Hib-HepB vaccine in >300 Korean infants. The immunologic responses were compared between the 2 groups: infants vaccinated with HepB vaccine alone at birth and hexavalent vaccine at 2, 4, and 6 months of age (group 1); and infants vaccinated with a standalone HepB vaccine at birth and at 1 and 6 months of age and a pentavalent vaccine (DTaP-IPV/Hib) at 2, 4, and 6 months of age (group 2). For anti-HBs (≥10 mIU/mL), -PRP (≥ 0.15 µg/mL), -D (> 0.01 IU/mL), -T (0.1 IU/mL), -polio 1, 2, and 3 (≥8 [1/dil]), seropositive rates were ≥97.7% and ≥96.9% in groups 1 and 2, respectively. For anti-PT and anti-FHA, seroconversion (≥4-fold antibody concentration increase from prevaccination of the first dose to postvaccination of the third dose) was ≥91.7% and ≥89.3% in groups 1 and 2, respectively. The geometric mean concentrations (GMCs) and geometric mean titers of antibodies for all antigens were comparable between the 2 groups except that anti-HBs GMC was slightly higher in group 1 than in group 2 (1,068 mIU/mL vs. 827 mIU/mL), confirming the noninferiority of the hexavalent vaccine.
+
+## Long-term immunity
+
+A former hexavalent vaccine, Hexavac (Sanofi Pasteur), licensed in Europe in 2000, could not guarantee long-term protective immunity against HepB; it was withdrawn in 2005. It was presumed that the small amount of antigen (5 µg) contained in the vaccine did not provide long-term persistence of antiHBs antibodies. In contrast, another hexavalent vaccine (Infanrix-hexa, GSK), also licensed in Europe in 2000, which contains 10 µg of HBsAg, reportedly provides persistent protective immunity. Immunization with a standalone HepB vaccine at birth and a 3-dose primary series with Hexaxim, which contains 10 µg of HBsAg, at 2, 4, and 6 months of age, reportedly induces a long-lasting anti-HBs antibody response and persistent immune memory up to 9–10 years of age, comparable with the results of immunization with Infanrix-hexa.
+
+## Safety
+
+The safety profile of DTaP-IPV-Hib-HepB was comparable to that of DTaP-IPV/Hib. In a clinical trial conducted in Korean infants, there were no immediate AEs. Local adverse reactions such as pain, erythema, and swelling commonly occurred (48%–62%), comparable to those of DTaP-IPV/Hib (43%–58%). Systemic adverse reactions such as vomiting, crying, somnolence, decreased appetite, and irritability, except for fever, occurred in subjects who received DTaP-IPV-Hib-HepB (27%–57%), similar to those who received DTaP-IPV/Hib (25%–49%). Fever occurred more frequently in the DTaP-IPV-Hib-HepB group (20.1%; 95% confidential interval [CI], 14.0–27.5) than in the DTaP-IPV/Hib group (7.7%; 95% CI, 4.1–13.1); the overall differences in the incidence of fever came from after the first and second doses (8.1% and 1.3%, 9.4%, and 2.6%, respectively). A high fever >39.5ºC did not occur in either group. No intergroup difference was observed regarding the incidence of severe adverse events.
+
+## Indication for use
+
+DTaP-IPV-Hib-HepB is licensed for use in children aged ≥2 months. DTaP-IPV-Hib-HepB is indicated only for use as a 3-dose series in infants who received a standalone HepB vaccine at birth. For infants who received the first dose of the HepB vaccine at birth, a 3-dose primary series of DTaP-IPV-Hib-HepB can be administered at 2, 4, and 6 months of age.
+
+## Prevention of diphtheria, tetanus, and pertussis
+
+Children are recommended to receive a 3-dose primary series of DTaP at ages 2, 4, and 6 months as well as booster doses at ages 15–18 months and 4–6 years. DTaP-IPV-Hib-HepB can be used for the first 3 doses of the recommended DTaP series but should not be used for the fourth or fifth dose. However, if DTaP-IPV-Hib-HepB is inadvertently administered for either booster dose, it need not be repeated with another DTaP-containing vaccine when spacing between the previous doses was proper. The recommended minimum age for the third dose of the DTaP-IPV-Hib-HepB vaccine is 24 weeks, the minimum age for completion of the HepB vaccine series. Therefore, this combination vaccine is not recommended for use in the third dose of the primary series on an accelerated schedule at 4-week intervals to prevent pertussis (Table 2).
+
+## Prevention of poliomyelitis
+
+Children are recommended to receive 4 doses of IPV, at ages 2, 4, 6–18 months, and 4–6 years. DTaP-IPV-Hib-HepB may be used for the first 3 doses of the IPV series but is not indicated for the fourth dose. However, if DTaP-IPV-Hib-HepB is inadvertently given for the fourth dose, it need not be repeated with another IPV-containing vaccine when spacing between the previous doses was proper.
+
+## Prevention of invasive Hib disease
+
+Children are recommended to receive a primary series of a Hib conjugate vaccine and a booster dose of vaccine at 12–15 months of age. The DTaP-IPV-Hib-HepB vaccine can be administered for the primary series at the recommended ages or as a catch-up vaccination. In infants aged ≥7 months, fewer than 3 doses are required for catch-up of the Hib component. If catch-up for other components is also needed in infants aged ≥7 months, the DTaP-IPV-Hib-HepB vaccine can be used, but a 3-dose primary series should be completed to ensure an adequate immune response to those components. The DTaP-IPV-Hib-HepB vaccine should not be used for the booster dose when the 3-dose primary series is completed. Any Hib conjugate vaccine licensed for use as a booster dose can be used. If DTaP-IPV-Hib-HepB is inadvertently administered for the booster dose, it need not be repeated with another Hib-containing vaccine if the spacing between the previous doses was proper.
+
+## Prevention of HepB
+
+Children are recommended to receive 3 doses of a HepB vaccine at birth and 1 and 6 months of age. The DTaP-IPV-Hib-HepB vaccine is not licensed for the birth dose; rather, it is only indicated for the primary vaccination series in infants of HBsAg-negative mothers at ages 2, 4, and 6 months. In such cases, the HepB component is administered a total of 4 times at 0, 2, 4, and 6 months of age (Table 3). If an infant is to be vaccinated with DTaP-IPV-Hib-HepB, the second dose of the HepB vaccine should not be administered at 1 month of age. Infants born to HBsAg-positive mothers are currently recommended to be immunized with HepB immunoglobulin at birth and then monovalent HepB vaccine at 0, 1, and 6 months. Although the Advisory Committee on Immunization Practices states that a hexavalent vaccine can be administered to infants at 2, 4, and 6 months of age regardless of maternal HBsAg status, concerns persist about a longer interval between the first and second vaccine doses in countries with relatively higher endemicity, as most cases of HepB vaccine failure in high-risk newborns occur during the first few months of life. According to a study in Thailand, after the control for maternal HBeAg status, when the interval between the first and second doses in newborns born to HBsAg-positive mothers exceeded 10 weeks, the infection risk of the newborn was 3.74 times higher (95% CI, 0.97–14.39). Administration of the second dose within 10 weeks of life did not increase the risk of infection. However, since this was obtained using 4 or 5 doses of HepB vaccine without HepB immunoglobulin, careful consideration is needed to apply it to policymaking in Korea.
+
+To ensure an adequate immune response, the last dose of the HepB vaccine should be administered at age ≥24 weeks; therefore, administration of the third dose of DTaP-IPV-Hib-HepB is not recommended before 24 weeks of age. If it is given earlier and other vaccine components than HepB are spaced properly, an additional dose of monovalent HepB vaccine should be administered at age ≥24 weeks after the proper intervals between previous doses.
+
+## Interchangeability
+
+There are limited data on the safety and immunogenicity of interchanging vaccines from different manufacturers in children. Whenever available, the same manufacturer’s product should be used to complete the primary series. However, if the specific vaccine product previously administered is unavailable or unknown, the vaccination should not be deferred; rather, another manufacturer’s product can be permitted. DTaP-IPV and DTaP-IPV/Hib vaccines that contain similar acellular pertussis antigens from the same manufacturer may be used interchangeably if indicated for a patient’s age.
+
+## Minimum ages and intervals and simultaneous use of other vaccines
+
+The recommended minimum age for each dose and minimum intervals between doses for the administration of the DTaP-IPV-Hib-HepB vaccine are presented in Table 2. The DTaP-IPV-Hib-HepB vaccine can be administered simultaneously with other vaccines, such as the pneumococcal conjugate vaccine and rotavirus vaccine. When other vaccines are administered at the same visit, each should be injected at a separate site.
+
+## Use of hexavalent vaccine in preterm infants
+
+The hexavalent vaccine can be administered to premature infants and should be vaccinated by age in the same schedule and manner as in term infants. Although a lower gestational age seems to be associated with lower antibody titers against some vaccine antigens (e.g., HepB, Hib, poliovirus type 1, and pertussis), the hexavalent vaccine showed good immunogenicity in preterm infants. The hexavalent vaccine showed a similar or lower incidence of both local and systemic adverse events in preterm versus term infants, even when administered with other vaccines included in the routine immunization schedule. No vaccinerelated severe adverse events were observed. As reported by the European Medicines Agency, the potential risk of apnea and the need for respiratory monitoring for 48–72 hours should be considered when administering the primary series to very premature infants (born at ≤28 weeks of gestation), particularly those with a previous history of respiratory immaturity. As the benefit of vaccination is high in this group of infants, vaccinations should not be withheld or delayed.
+
+## Contraindications and precautions
+
+The DTaP-IPV-Hib-HepB vaccine is contraindicated in infants with a history of a severe allergic reaction (e.g., anaphylaxis) after a previous dose or to a vaccine component. Vaccination in children with a serious allergic reaction (e.g., anaphylactic reaction) to any component of the vaccine is absolutely contraindicated. It should also not be administered to children who previously developed encephalopathy not attributable to another identifiable cause within 7 days of the administration of a previous dose of a pertussis component-containing vaccine. Vaccination should be delayed in children who have progressive or unstable neurologic disorders, uncontrolled seizures, or progressive encephalopathy until the neurologic status is clarified or the condition is stabilized. The vaccination should be chosen considering the risks and benefits in children who developed Guillain-Barré syndrome within 6 weeks of the administration of a previous dose of tetanus toxoid–containing vaccine.

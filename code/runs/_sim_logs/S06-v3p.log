@@ -1,0 +1,90 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   5.0s] llm[intake] low out=218 finish=stop 5.0s
+[   5.0s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로감, 다음·다뇨', 'request': '', 'categories': ['dm', 'fatigue', 'urinary'], 'empathy': '많이 불편하셨겠어요.', 'answered': []} diffs=['제2형 당뇨병', '요붕증', '원발성 다음증', '고칼슘혈증', '신장 농축 장애']
+[   5.0s] checklist: 58 items, covered=['hpi_onset']
+[   8.0s] turn 1 SAY: 많이 불편하셨겠어요. -> 네, 알겠습니다.
+[  12.8s] turn 2 SAY: 혈당에 대해 자세히 말씀해 주세요 -> 네, 알겠습니다.
+[  17.8s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.
+[  22.8s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.
+[  28.1s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 가슴이 아프거나 숨이 찬 적은 없어요.
+[  39.6s] llm[plan_q3] low out=908 finish=stop 11.5s
+[  45.6s] turn 6 SAY: 고혈압이나 당뇨 진단을 받으신 적 있나요? -> 고혈압이 있어서 혈압약을 하루 한 알 먹고 있어요.
+[  50.9s] turn 7 SAY: 소변을 자주 보세요? -> 낮에 열 번 넘게, 밤에 두세 번 깨서 소변을 보죠.
+[  57.5s] turn 8 SAY: 살이 빠지거나 찌셨나요? -> 몸무게가 삼 키로그람 정도 빠졌어요.
+[  65.1s] turn 9 SAY: 전에 혈당이 높다고 들으셨나요? -> 이 년 전 건강검진에서 혈당이 조금 높다고 들었어요.
+[  69.3s] turn 10 SAY: 가족 중 당뇨 있는 분 있나요? -> 아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.
+[  74.2s] turn 11 SAY: 다른 지병이 있으세요? -> 질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.
+[  78.4s] turn 12 SAY: 담배는 피우세요? -> 피운 적 없어요.
+[  81.7s] turn 13 SAY: 술은 얼마나 드세요? -> 술은 거의 마시지 않아요.
+[  89.7s] llm[plan_q3] low out=756 finish=stop 8.0s
+[  95.1s] turn 14 SAY: 흐릿한 시야에 대해 자세히 말씀해 주세요 -> 한 달 전부터 눈이 침침하고 글씨가 흐릿해요.
+[  98.7s] turn 15 SAY: 요즘 기분이 많이 가라앉나요? -> 그런 건 없어요.
+[ 103.2s] turn 16 SAY: 소변 볼 때 아프세요? -> 아프거나 따갑지는 않아요.
+[ 106.1s] turn 17 SAY: 질 가려움과 분비물에 대해 자세히 말씀해 주세요 -> 질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰인다.
+[ 109.0s] turn 18 SAY: 잠은 잘 주무세요? -> 그런 건 없어요.
+[ 114.4s] turn 19 SAY: 손발이 저리세요? -> 발이 저리거나 화끈거리는 증상은 없어요.
+[ 119.5s] turn 20 SAY: 상처가 잘 안 낫나요? -> 발에 상처가 나거나 잘 안 낫는 곳도 없어요.
+[ 126.5s] turn 21 SAY: 단 음료나 야식을 자주 드세요? -> 단 음료를 자주 마시고 야식도 자주 먹어요.
+[ 133.0s] turn 22 SAY: 일상생활에 지장이 있으세요? -> 피곤해서 오후만 되면 눕고 싶고, 집안일을 하다가도 자주 쉰다.
+[ 140.6s] turn 23 SAY: 오늘 특히 궁금하신 게 있으세요? -> 두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.
+[ 140.6s] v3 interview done: q=22 asked=19 covered=6 uncovered_p1=['dm_thirst']
+[ 145.5s] llm[exams3] low out=248 finish=stop 4.9s
+[ 145.5s] v3 exams plan: ['fundus', 'oral', 'genital', 'sensory', 'dtr', 'general', 'heart', 'lung', 'abd_palp', 'mental', 'conj', 'thyroid', 'periph', 'vitals']
+[ 145.5s] turn 24 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 153.6s] turn 25 EXAM: 구강 점막 시진하겠습니다 -> 구강 점막 약간 건조(+), 피부 탄력 정상
+[ 159.3s] turn 26 EXAM: 외부 생식기 시진하겠습니다 -> 외음부 발적(+) 경도, 흰색 분비물(+) 소량
+[ 172.3s] turn 27 EXAM REFUSED EXAM_NOT_SPECIFIC: 사지 감각 검사하겠습니다
+[ 177.3s] turn 28 EXAM: 심부건반사 검사하겠습니다 -> 슬개건 2+/2+, 아킬레스건 2+/2+
+[ 177.3s] turn 29 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 177.3s] turn 30 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 177.3s] turn 31 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 177.3s] turn 32 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 177.3s] turn 33 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 177.3s] turn 34 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 177.3s] turn 35 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 177.3s] turn 36 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 177.3s] turn 37 EXAM: 활력징후 측정하겠습니다 -> 146/88mmHg, 82회/분 규칙적, 16회/분, 36.6°C
+[ 200.6s] llm[facts] medium out=2007 finish=stop 23.4s
+[ 200.7s] facts: 37
+[ 225.8s] llm[dx] medium out=2615 finish=stop 25.2s
+[ 238.3s] llm[plan_say3] low out=1276 finish=stop 12.5s
+[ 238.3s] v3 lines: {'dx': '제2형 당뇨병 가능성이 있어요', 'meaning': '갈증·빈뇨와 체중 감소가 혈당 상승과 맞아요', 'concern': '아버님처럼 투석할지 콩팥 검사로 살펴볼게요', 'tests': '혈당과 당화혈색소로 당뇨를 확인해요', 'tests2': '콩팥·칼슘·소변 검사로 다른 원인도 살펴요', 'treatment': '결과를 보고 식사·운동과 약을 함께 정해요', 'treatment2': '약은 콩팥 기능과 부작용을 살펴 선택해요', 'warning': '구토·복통·숨 가쁨·의식 저하가 생기면 바로 오세요.', 'followup': '1~2주 뒤 결과 보고 약을 정해요.', 'lifestyle': '단 음료를 물로 바꾸고 야식을 줄여보세요'} musts=[] checks=[]
+[ 241.6s] turn 38 SAY: 제2형 당뇨병 가능성이 있어요 -> 네, 알겠습니다.
+[ 245.5s] turn 39 SAY: 갈증·빈뇨와 체중 감소가 혈당 상승과 맞아요 -> 네, 알겠습니다.
+[ 248.1s] turn 40 SAY: 아버님처럼 투석할지 콩팥 검사로 살펴볼게요 -> 네, 알겠습니다.
+[ 250.7s] turn 41 SAY: 혈당과 당화혈색소로 당뇨를 확인해요 -> 네, 알겠습니다.
+[ 254.4s] turn 42 SAY: 콩팥·칼슘·소변 검사로 다른 원인도 살펴요 -> 네, 알겠습니다.
+[ 256.7s] turn 43 SAY: 결과를 보고 식사·운동과 약을 함께 정해요 -> 네, 알겠습니다.
+[ 260.9s] turn 44 SAY: 약은 콩팥 기능과 부작용을 살펴 선택해요 -> 네, 알겠습니다.
+[ 266.3s] turn 45 SAY: 구토·복통·숨 가쁨·의식 저하가 생기면 바로 오세요. -> 네, 알겠습니다.
+[ 270.7s] turn 46 SAY: 1~2주 뒤 결과 보고 약을 정해요. -> 네, 알겠습니다.
+[ 272.9s] turn 47 SAY: 단 음료를 물로 바꾸고 야식을 줄여보세요 -> 네, 알겠습니다.
+[ 276.9s] turn 48 SAY: 언제 바로 오셔야 하는지 말씀해 보세요 -> 그런 건 없어요.
+[ 283.0s] turn 49 SAY: 구토·복통·숨 가쁨·의식 저하가 생기면 바로 오세요. -> 네, 알겠습니다.
+[ 283.0s] v3 explain done: said=11 answers=0 teach={'reply': '그런 건 없어요.', 'ok': False} turns_left=1 (start 13)
+[ 287.8s] llm[S-narr] low out=443 finish=stop 4.8s
+[ 287.8s] summary: turns=49 counts={'say': 35, 'exam': 13, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 22, 'truncated': 0} budget={'doctor_calls': 8, 'doctor_ok_calls': 8, 'doctor_invalid': 0, 'doctor_input_tokens': 18051, 'doctor_output_tokens': 8471, 'elapsed_s': 287.8} dx=제2형 당뇨병 (Type 2 diabetes mellitus)
+S06 gpt-6-luna: total=64 정보수집=19 진단추론=12 검사·추적=7 안전=10 의사소통=6 효율=10 dx5=4
+- missed_key_questions: ['혈뇨가 있었는지', '식사량 변화 여부', '고지혈증 진단 및 약 복용 여부', '고혈압 진단 기간과 혈압약 이름', '수술력, 스테로이드 복용, 약물 알레르기', '폐경 및 임신성 당뇨 병력', '자매의 당뇨 병력', '탄수화물 위주의 식사 여부와 운동량', '인슐린 주사·평생 약 복용·식사 제한에 대한 구체적 걱정과 기대']
+- missed_key_exams: ['신장·체중·BMI·허리둘레 측정', '기립성 혈압', '후경부·액와 흑색극세포증 시진', '흉곽 시진, 복부 시진, 늑골척추각 압통', '발 시진, 단섬유 감각, 진동 감각 검사']
+- top_improvements: ['초진 병력 체크리스트를 따라 임신성 당뇨, 약물·알레르기, 지질, 수술력, 식사·운동, 가족력까지 빠짐없이 확인하고 기록하세요.', '당뇨 초진 핵심 진찰인 신체 계측, 흑색극세포증, 발 시진과 감각 검사를 시행하세요.', '투석 걱정과 인슐린·식이 질문에 직접 답하고, 신장 합병증 예방 및 치료 선택지를 쉬운 말로 설명하세요.', '필요 검사, 질 증상 평가·치료, 검사 결과 재진 시점과 추적 계획을 구체적으로 안내하세요.', '중복 질문과 경고 설명을 줄이고, 마지막에는 환자가 이해한 계획과 경고 증상을 자신의 말로 확인하게 하세요.']
+{
+ "turns": 49,
+ "say": 35,
+ "exam": 13,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 8,
+ "luna_calls": 9,
+ "doctor_input_tokens": 18051,
+ "doctor_output_tokens": 8471,
+ "sim_calls": 39,
+ "seconds": 287.8,
+ "diagnosis": "제2형 당뇨병 (Type 2 diabetes mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 64,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S06-v3p

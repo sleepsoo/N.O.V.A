@@ -1,0 +1,266 @@
+{
+  "case_id": "ef3649a9-330b-4e12-ad2d-fab94d019330",
+  "alias": "C03",
+  "turns": 44,
+  "say": 33,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 24,
+  "skipped_invalid": 0,
+  "doctor_calls": 4,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 4336,
+  "doctor_output_tokens": 887,
+  "seconds": 158.4,
+  "diagnosis": "진단 미정",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": [],
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "cc": "또래보다 작은 키",
+    "categories": [
+      "growth"
+    ],
+    "answered": [
+      "onset",
+      "course"
+    ],
+    "empathy": "또래보다 작고 잘 크지 않는 것 같아 걱정되셨겠어요."
+  },
+  "explained": [
+    "진단 미정 가능성이 높아 보여요.",
+    "원인 확인을 위해 검사가 필요해요.",
+    "정확히 확인하려고 피검사를 할게요.",
+    "검사 결과를 보고 치료를 정할게요.",
+    "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "더 궁금하신 점 있으세요?",
+    "아직 치료 여부는 정할 수 없어 검사가 먼저입니다."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 707,
+      "out": 200,
+      "finish": "stop",
+      "sec": 3.0
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3223,
+      "out": 325,
+      "finish": "stop",
+      "sec": 5.1
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 162,
+      "out": 118,
+      "finish": "stop",
+      "sec": 2.4
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 244,
+      "out": 244,
+      "finish": "stop",
+      "sec": 3.8
+    }
+  ],
+  "phase_times": {
+    "structure": 3.1,
+    "interview": 82.7,
+    "examine": 39.6,
+    "diagnose_vote": 0.2,
+    "plan": 0.1,
+    "explain": 32.2,
+    "S": 0.3,
+    "S-verify": 0.0,
+    "A": 0.2
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.prior_visit",
+      "pol": "?",
+      "detail": "이 문제로 진료받은 적은 없어요.",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 3,
+      "key": "fh.father_height",
+      "pol": "?",
+      "detail": "아빠는 178센티미터예요.",
+      "label": "부 키"
+    },
+    {
+      "turn": 4,
+      "key": "fh.mother_height",
+      "pol": "?",
+      "detail": "저는 165센티미터예요.",
+      "label": "모 키"
+    },
+    {
+      "turn": 6,
+      "key": "peds.성장 기록",
+      "pol": "+",
+      "detail": "영유아 검진 수첩에 있어요",
+      "label": "성장 기록"
+    },
+    {
+      "turn": 7,
+      "key": "peds.성장 기록",
+      "pol": "+",
+      "detail": "두 살 83, 네 살 96센티",
+      "label": "과거 계측치"
+    },
+    {
+      "turn": 9,
+      "key": "fh.short_stature",
+      "pol": "-",
+      "detail": "",
+      "label": "저신장 가족력"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Puberty signs",
+      "pol": "-",
+      "detail": "",
+      "label": "사춘기 징후"
+    },
+    {
+      "turn": 11,
+      "key": "ros.other:갑상선저하 증상",
+      "pol": "-",
+      "detail": "",
+      "label": "갑상선저하 증상"
+    },
+    {
+      "turn": 13,
+      "key": "ros.Appetite",
+      "pol": "?",
+      "detail": "네, 하루 세 끼 잘 먹어요.",
+      "label": "식사·영양"
+    },
+    {
+      "turn": 14,
+      "key": "peds.영양",
+      "pol": "+",
+      "detail": "하루 한두 잔 마셔요",
+      "label": "우유 섭취"
+    },
+    {
+      "turn": 15,
+      "key": "ros.Sleep",
+      "pol": "?",
+      "detail": "네, 밤에 깨지 않고 잘 자요.",
+      "label": "수면"
+    },
+    {
+      "turn": 16,
+      "key": "peds.수면·활동",
+      "pol": "+",
+      "detail": "잘 뛰어놀고 활발해요",
+      "label": "활동"
+    },
+    {
+      "turn": 17,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "만삭에 낳았어요",
+      "label": "출생력-재태"
+    },
+    {
+      "turn": 18,
+      "key": "peds.신생아기",
+      "pol": "-",
+      "detail": "",
+      "label": "신생아기"
+    },
+    {
+      "turn": 19,
+      "key": "peds.발달",
+      "pol": "+",
+      "detail": "또래와 비슷",
+      "label": "발달"
+    },
+    {
+      "turn": 20,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "",
+      "label": "만성질환"
+    },
+    {
+      "turn": 21,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "",
+      "label": "입원력"
+    },
+    {
+      "turn": 22,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": "",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 23,
+      "key": "ros.Fatigue",
+      "pol": "-",
+      "detail": "",
+      "label": "Fatigue"
+    },
+    {
+      "turn": 23,
+      "key": "ros.General weakness",
+      "pol": "-",
+      "detail": "",
+      "label": "Fatigue"
+    },
+    {
+      "turn": 24,
+      "key": "ice.concern",
+      "pol": "?",
+      "detail": "큰 병 때문에 안 크는 건가 걱정돼요.",
+      "label": "보호자 걱정(ICE)"
+    },
+    {
+      "turn": 25,
+      "key": "ice.expectation",
+      "pol": "?",
+      "detail": "앞으로 키가 더 클 수 있을까요?",
+      "label": "보호자 기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "936ed85ec6118e8398071876b8e52f62fbf9d01b4fccc0a3e456597b1731d7a9",
+    "score_status": "not_scored",
+    "turn": 44
+  },
+  "error": null,
+  "session_id": "ed1071e1-a033-435a-b155-3ceedd743e73",
+  "api": "https://nova.snubhai.org"
+}

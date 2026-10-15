@@ -1,0 +1,376 @@
+{
+  "case_id": "ef3649a9-330b-4e12-ad2d-fab94d019330",
+  "alias": "C03",
+  "turns": 47,
+  "say": 36,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 24,
+  "skipped_invalid": 0,
+  "doctor_calls": 12,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 24083,
+  "doctor_output_tokens": 13072,
+  "seconds": 312.5,
+  "diagnosis": "체질성 성장지연 (Constitutional delay of growth and puberty)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "체질성 성장지연",
+      "diagnosis_en": "Constitutional delay of growth and puberty",
+      "confidence": 0.72,
+      "_effort": "high"
+    }
+  ],
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "cc": "키가 또래보다 작음",
+    "categories": [
+      "growth"
+    ],
+    "answered": [
+      "onset",
+      "course"
+    ],
+    "empathy": "또래보다 작아 보여 많이 걱정되셨겠어요."
+  },
+  "explained": [
+    "체질성 성장지연 가능성이 있습니다.",
+    "더 클 가능성은 있지만 단정할 수 없습니다.",
+    "아빠처럼 늦게 크는 체질일 수도 있습니다.",
+    "큰 병인지 검사하고, 더 클 가능성도 살펴봅니다.",
+    "빈혈·갑상선 검사와 손목 골연령 사진을 봅니다.",
+    "검사와 성장 경과 뒤 필요할 때 치료를 정합니다.",
+    "성장 제품은 피하고 임의로 약을 먹이지 마세요.",
+    "두통·구토·시야 변화·보행 이상이면 바로 오세요.",
+    "4~6주 뒤 결과를 보고, 잘 먹고 자게 해주세요.",
+    "더 궁금하신 점 있으세요?",
+    "지금은 치료보다 원인 검사와 경과 확인이 먼저입니다."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 707,
+      "out": 208,
+      "finish": "stop",
+      "sec": 2.6
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1561,
+      "out": 1385,
+      "finish": "stop",
+      "sec": 18.3
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1723,
+      "out": 1820,
+      "finish": "stop",
+      "sec": 23.6
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3283,
+      "out": 326,
+      "finish": "stop",
+      "sec": 5.6
+    },
+    {
+      "tag": "dx1-high",
+      "effort": "high",
+      "max_tokens": 8000,
+      "in": 2491,
+      "out": 1469,
+      "finish": "stop",
+      "sec": 17.0
+    },
+    {
+      "tag": "plan",
+      "effort": "high",
+      "max_tokens": 8000,
+      "in": 2533,
+      "out": 1928,
+      "finish": "stop",
+      "sec": 25.6
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 3341,
+      "out": 2447,
+      "finish": "stop",
+      "sec": 22.2
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 657,
+      "out": 163,
+      "finish": "stop",
+      "sec": 2.9
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 799,
+      "out": 134,
+      "finish": "stop",
+      "sec": 3.0
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2511,
+      "out": 1410,
+      "finish": "stop",
+      "sec": 18.6
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1562,
+      "out": 973,
+      "finish": "stop",
+      "sec": 10.9
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2915,
+      "out": 809,
+      "finish": "stop",
+      "sec": 8.0
+    }
+  ],
+  "phase_times": {
+    "structure": 2.6,
+    "interview": 118.1,
+    "examine": 50.2,
+    "diagnose_vote": 17.0,
+    "plan": 25.6,
+    "explain": 61.4,
+    "S": 29.5,
+    "S-verify": 0.0,
+    "A": 8.1
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.prior_visit",
+      "pol": "-",
+      "detail": "이번이 처음",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 3,
+      "key": "fh.father_height",
+      "pol": "?",
+      "detail": "178센티미터",
+      "label": "부 키"
+    },
+    {
+      "turn": 4,
+      "key": "fh.mother_height",
+      "pol": "?",
+      "detail": "165센티미터",
+      "label": "모 키"
+    },
+    {
+      "turn": 5,
+      "key": "fh.late_puberty",
+      "pol": "+",
+      "detail": "아빠 고등학교 때 많이 큼",
+      "label": "부모 사춘기 지연"
+    },
+    {
+      "turn": 6,
+      "key": "peds.성장 기록",
+      "pol": "+",
+      "detail": "영유아 검진 수첩에 있음",
+      "label": "성장 기록"
+    },
+    {
+      "turn": 7,
+      "key": "peds.성장 기록",
+      "pol": "?",
+      "detail": "두 살 83cm, 네 살 96cm",
+      "label": "과거 계측치"
+    },
+    {
+      "turn": 8,
+      "key": "hpi.onset",
+      "pol": "?",
+      "detail": "두 살 무렵부터",
+      "label": "작다는 시점"
+    },
+    {
+      "turn": 9,
+      "key": "fh.short_stature",
+      "pol": "-",
+      "detail": "키 작은 가족 없음",
+      "label": "저신장 가족력"
+    },
+    {
+      "turn": 10,
+      "key": "ros.Puberty signs",
+      "pol": "-",
+      "detail": "변화 없음",
+      "label": "사춘기 징후"
+    },
+    {
+      "turn": 11,
+      "key": "ros.Fatigue",
+      "pol": "-",
+      "detail": "",
+      "label": "갑상선저하 증상"
+    },
+    {
+      "turn": 11,
+      "key": "ros.Constipation",
+      "pol": "-",
+      "detail": "",
+      "label": "갑상선저하 증상"
+    },
+    {
+      "turn": 11,
+      "key": "ros.other:추위 탐",
+      "pol": "-",
+      "detail": "",
+      "label": "갑상선저하 증상"
+    },
+    {
+      "turn": 13,
+      "key": "ros.Headache",
+      "pol": "-",
+      "detail": "아침 두통 없음",
+      "label": "적응형"
+    },
+    {
+      "turn": 14,
+      "key": "ros.Fever",
+      "pol": "+",
+      "detail": "감기 때 열남",
+      "label": "Fever"
+    },
+    {
+      "turn": 15,
+      "key": "ros.Appetite",
+      "pol": "+",
+      "detail": "하루 세 끼 잘 먹음",
+      "label": "식사·영양"
+    },
+    {
+      "turn": 16,
+      "key": "peds.영양",
+      "pol": "?",
+      "detail": "하루 한두 잔",
+      "label": "우유 섭취"
+    },
+    {
+      "turn": 17,
+      "key": "ros.Sleep",
+      "pol": "+",
+      "detail": "거의 안 깨고 푹 잠",
+      "label": "수면"
+    },
+    {
+      "turn": 18,
+      "key": "peds.수면·활동",
+      "pol": "+",
+      "detail": "잘 뛰어놀고 활발",
+      "label": "활동"
+    },
+    {
+      "turn": 19,
+      "key": "peds.출생력",
+      "pol": "+",
+      "detail": "만삭 출생",
+      "label": "출생력-재태"
+    },
+    {
+      "turn": 20,
+      "key": "peds.신생아기",
+      "pol": "-",
+      "detail": "황달 없음",
+      "label": "신생아기"
+    },
+    {
+      "turn": 21,
+      "key": "peds.발달",
+      "pol": "+",
+      "detail": "말·걷기 또래와 비슷",
+      "label": "발달"
+    },
+    {
+      "turn": 22,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "천식·장·콩팥 질환 없음",
+      "label": "만성질환"
+    },
+    {
+      "turn": 23,
+      "key": "peds.출생력",
+      "pol": "?",
+      "detail": "3.2kg",
+      "label": "적응형"
+    },
+    {
+      "turn": 24,
+      "key": "ice.concern",
+      "pol": "+",
+      "detail": "큰 병일까 걱정",
+      "label": "보호자 걱정(ICE)"
+    },
+    {
+      "turn": 25,
+      "key": "ice.expectation",
+      "pol": "+",
+      "detail": "앞으로 키 더 클지",
+      "label": "보호자 기대(ICE)"
+    },
+    {
+      "turn": 11,
+      "key": "ros.other:갑상선저하 증상",
+      "pol": "-",
+      "detail": "",
+      "label": "갑상선저하 증상"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "61a65cf9e4218f73bcf0160a225b11903caf1b5f1aa2c5059b81a7d192716fb0",
+    "score_status": "not_scored",
+    "turn": 47
+  },
+  "error": null,
+  "session_id": "7bc16522-47e6-4a6e-8949-b912952cfadd",
+  "api": "https://nova.snubhai.org"
+}

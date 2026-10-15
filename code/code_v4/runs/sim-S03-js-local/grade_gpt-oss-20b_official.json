@@ -1,0 +1,71 @@
+{
+  "checklist": {
+    "history_total": 25,
+    "history_done": 18,
+    "exam_total": 9,
+    "exam_done": 5
+  },
+  "scores": {
+    "정보수집": 16.4,
+    "진단추론": 15,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 12,
+    "효율": 10
+  },
+  "total": 78,
+  "diagnosis_5pt": 5,
+  "deductions": {
+    "정보수집": [
+      "청력 저하 여부 누락",
+      "호흡곤란·천명 언급 미함",
+      "경부강직 미검사",
+      "처짐 여부 미확인",
+      "오빠 비감기 미확인",
+      "아빠 흡연 미확인"
+    ],
+    "진단추론": [],
+    "검사·추적": [],
+    "안전": [],
+    "의사소통": [
+      "짧은 정형 문장 반복, 착각 방지 부족"
+    ],
+    "효율": [
+      "불필요한 중복 질문, 42터널 과다 사용"
+    ]
+  },
+  "missed_key_questions": [
+    "청력 저하 여부",
+    "호흡곤란·천명 여부",
+    "경부강직 여부",
+    "처짐 여부",
+    "오빠 근황",
+    "아빠 흡연 여부"
+  ],
+  "missed_key_exams": [
+    "이개 견인 압통",
+    "유양돌기 촉진",
+    "경부강직",
+    "피부 발진 시진"
+  ],
+  "record_errors": [],
+  "top_improvements": [
+    "리스트에 포함된 핵심 질문 추가 및 기록",
+    "이개 견인 압통과 유양돌기 촉진 포함",
+    "추가된 항생제 정량 및 기간 명시",
+    "일정과 질문에 맞는 간단한 언어 사용",
+    "반복 설명 최소화 및 환자/보호자 반응 확인"
+  ],
+  "usage": {
+    "prompt_tokens": 8184,
+    "total_tokens": 12511,
+    "completion_tokens": 4327,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "_calls": 1,
+  "_model": "openai/gpt-oss-20b",
+  "remote": false
+}

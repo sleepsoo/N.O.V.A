@@ -1,0 +1,114 @@
+{
+  "case_id": "4fa07144-04e5-4116-a18e-88d8a90cc21a",
+  "alias": "C01",
+  "turns": 19,
+  "say": 15,
+  "exam": 1,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 15,
+  "skipped_invalid": 0,
+  "doctor_calls": 4,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 5106,
+  "doctor_output_tokens": 3199,
+  "seconds": 1710.5,
+  "diagnosis": "수면제 의존 장애 (Hypnotic, sedative or anxiolytic dependence)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "수면제 의존 장애",
+      "diagnosis_en": "Hypnotic, sedative or anxiolytic dependence",
+      "confidence": 0.92,
+      "_effort": "medium"
+    },
+    {
+      "diagnosis_ko": "수면제 의존성 장애",
+      "diagnosis_en": "Sedative-hypnotic dependence",
+      "confidence": 0.92,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "수면장애",
+    "categories": [
+      "drug",
+      "sleep"
+    ],
+    "answered": [
+      "impact"
+    ],
+    "empathy": "잠을 못 주무셔서 많이 힘드셨겠어요."
+  },
+  "explained": [],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 506,
+      "out": 193,
+      "finish": "stop",
+      "sec": 259.4
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2209,
+      "out": 480,
+      "finish": "stop",
+      "sec": 58.7
+    },
+    {
+      "tag": "dx1-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1206,
+      "out": 1025,
+      "finish": "stop",
+      "sec": 123.4
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1185,
+      "out": 1501,
+      "finish": "stop",
+      "sec": 159.5
+    }
+  ],
+  "phase_times": {
+    "structure": 379.7,
+    "interview": 881.2,
+    "examine": 60.7,
+    "diagnose_vote": 388.7,
+    "explain": 0.0
+  },
+  "findings": null,
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "0e0c9e91cc2858d06c191ef26293014962c1da8ea6bce51188eaccf18b674850",
+    "score_status": "not_scored",
+    "turn": 19
+  },
+  "error": null,
+  "session_id": "4c744f34-d029-447c-b9cb-d7ee388d7da9",
+  "api": "https://nova.snubhai.org"
+}

@@ -1,0 +1,334 @@
+{
+  "case_id": "C03",
+  "alias": "C03",
+  "turns": 31,
+  "say": 23,
+  "exam": 8,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 16,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 15826,
+  "doctor_output_tokens": 9558,
+  "seconds": 634.1,
+  "diagnosis": "가족성 저신장 (Familial short stature)",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "키가 이른 나이에 비해 작음",
+    "request": "",
+    "categories": [
+      "growth"
+    ],
+    "empathy": "키 성장이 걱정되시겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "가족성 저신장 가능성이 높아 보여요.",
+    "성장 추적과 생활습관이 핵심이에요.",
+    "성장 속도와 키가 정상보다 낮아요.",
+    "검사 결과 성장 호르몬 필요하면 치료를 권유할게요.",
+    "다음 재진은 6개월 후에 진행하며 결과를 보고할게요.",
+    "두통·구토·시야 이상·성장 멈춤 시 바로 오세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 870,
+      "out": 186,
+      "finish": "stop",
+      "sec": 8.7
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2467,
+      "out": 579,
+      "finish": "stop",
+      "sec": 27.0
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2584,
+      "out": 347,
+      "finish": "stop",
+      "sec": 16.1
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 963,
+      "out": 99,
+      "finish": "stop",
+      "sec": 4.5
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1452,
+      "out": 3386,
+      "finish": "stop",
+      "sec": 157.7
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2129,
+      "out": 2725,
+      "finish": "stop",
+      "sec": 126.7
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2659,
+      "out": 727,
+      "finish": "stop",
+      "sec": 34.7
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 400,
+      "out": 1009,
+      "finish": "stop",
+      "sec": 45.4
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 399,
+      "out": 190,
+      "finish": "stop",
+      "sec": 8.7
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1903,
+      "out": 310,
+      "finish": "stop",
+      "sec": 14.5
+    }
+  ],
+  "phase_times": {
+    "intake": 8.7,
+    "interview": 129.6,
+    "examine": 74.8,
+    "facts": 157.7,
+    "dx": 126.7,
+    "plan_say": 80.1,
+    "explain": 41.9,
+    "S": 14.5
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키 성장",
+      "pol": "+",
+      "detail": "1년간 5cm 성장, 1.5kg 증가",
+      "id": "F1"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "작은 키 인식",
+      "pol": "+",
+      "detail": "2세부터 우려",
+      "id": "F2"
+    },
+    {
+      "turn": 2,
+      "sec": "peds",
+      "key": "other",
+      "label": "키 기록",
+      "pol": "+",
+      "detail": "2세 173cm, 4세 196cm",
+      "id": "F3"
+    },
+    {
+      "turn": 4,
+      "sec": "fh",
+      "key": "other",
+      "label": "부모 성장 지연",
+      "pol": "+",
+      "detail": "아빠 성장 지연",
+      "id": "F4"
+    },
+    {
+      "turn": 5,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 징후 없음",
+      "pol": "-",
+      "detail": "유전 질환 없음",
+      "id": "F5"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "천식/장/콩팥 무증상",
+      "pol": "-",
+      "detail": "",
+      "id": "F6"
+    },
+    {
+      "turn": 7,
+      "sec": "ice",
+      "key": "other",
+      "label": "큰 병 우려",
+      "pol": "+",
+      "detail": "큰 병이 있을까",
+      "id": "F7"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "변비",
+      "pol": "-",
+      "detail": "",
+      "id": "F8"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "스테로이드 무복용",
+      "pol": "-",
+      "detail": "",
+      "id": "F9"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "음모/고환 변화 없음",
+      "pol": "-",
+      "detail": "",
+      "id": "F10"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "두통",
+      "pol": "-",
+      "detail": "",
+      "id": "F11"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "구토",
+      "pol": "-",
+      "detail": "",
+      "id": "F12"
+    },
+    {
+      "turn": 12,
+      "sec": "peds",
+      "key": "other",
+      "label": "언어·운동 정상",
+      "pol": "+",
+      "detail": "",
+      "id": "F13"
+    },
+    {
+      "turn": 13,
+      "sec": "peds",
+      "key": "other",
+      "label": "체중 증가",
+      "pol": "+",
+      "detail": "1.5kg 증가",
+      "id": "F14"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "식사 정상",
+      "pol": "+",
+      "detail": "",
+      "id": "F15"
+    },
+    {
+      "turn": 15,
+      "sec": "peds",
+      "key": "other",
+      "label": "출산 과정 정상",
+      "pol": "-",
+      "detail": "",
+      "id": "F16"
+    },
+    {
+      "turn": 16,
+      "sec": "ice",
+      "key": "other",
+      "label": "키 소위",
+      "pol": "+",
+      "detail": "키 작음",
+      "id": "F17"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "4ae924f6c78ee575ebf56644328d7e8866bc0ad117a52166ee460fc6639389eb",
+    "score_status": "not_scored",
+    "turn": 31
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 25,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 10,
+  "sim_doctor_calls": 10,
+  "sim_doctor_input_tokens": 15826,
+  "sim_doctor_output_tokens": 9558,
+  "sim_turns": 31,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_js7/run.py"
+}

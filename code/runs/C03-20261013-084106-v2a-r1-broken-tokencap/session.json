@@ -1,0 +1,885 @@
+{
+  "session_id": "ed1071e1-a033-435a-b155-3ceedd743e73",
+  "status": "completed",
+  "turns_remaining": 6,
+  "initial": {
+    "opening": "이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다.",
+    "vital_signs": "혈압: 100/60 mmHg\n맥박: 90회/분\n호흡: 20회/분\n체온: 36.7°C"
+  },
+  "available_actions": [
+    "SAY",
+    "EXAM",
+    "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T09:08:28.149667+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+    {
+      "id": "5c494f24-4853-49da-9b7b-9a0bfc31aa9d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "또래보다 작고 잘 크지 않는 것 같아 걱정되셨겠어요.",
+        "request_id": "bf32f9c3-b88b-4533-a652-b75baa68fc70"
+      },
+      "effective_content": "또래보다 작고 잘 크지 않는 것 같아 걱정되셨겠어요.",
+      "response": {
+        "turn": 1,
+        "status": "OK",
+        "content": "네, 큰 병일까 봐 걱정돼요.",
+        "turns_remaining": 49
+      },
+      "http_status": 200,
+      "turn": 1
+    },
+    {
+      "id": "a7a97270-014d-471b-a3c8-e29059bee40d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "이 문제로 병원에 가 본 적 있나요?",
+        "request_id": "e53ce85b-3d9a-4e0f-aaee-e04180bd9dff"
+      },
+      "effective_content": "이 문제로 병원에 가 본 적 있나요?",
+      "response": {
+        "turn": 2,
+        "status": "OK",
+        "content": "이 문제로 진료받은 적은 없어요.",
+        "turns_remaining": 48
+      },
+      "http_status": 200,
+      "turn": 2
+    },
+    {
+      "id": "98d647f9-9546-4b1c-867e-d9e17dc3b875",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "아빠 키는 얼마인가요?",
+        "request_id": "62fff25e-adae-4067-a6b9-6e5df478e804"
+      },
+      "effective_content": "아빠 키는 얼마인가요?",
+      "response": {
+        "turn": 3,
+        "status": "OK",
+        "content": "아빠는 178센티미터예요.",
+        "turns_remaining": 47
+      },
+      "http_status": 200,
+      "turn": 3
+    },
+    {
+      "id": "0ff784da-ec82-463f-8222-9588d146a83b",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "엄마 키는 얼마인가요?",
+        "request_id": "a1d29e8d-5c63-48f9-b3a5-db4051f7dc30"
+      },
+      "effective_content": "엄마 키는 얼마인가요?",
+      "response": {
+        "turn": 4,
+        "status": "OK",
+        "content": "저는 165센티미터예요.",
+        "turns_remaining": 46
+      },
+      "http_status": 200,
+      "turn": 4
+    },
+    {
+      "id": "570ec0aa-f57b-40c9-9622-8bc48ac67545",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "부모님 중 늦게 키가 큰 분 있나요?",
+        "request_id": "bed448da-97d1-4d02-910c-25606a754d8c"
+      },
+      "effective_content": "부모님 중 늦게 키가 큰 분 있나요?",
+      "response": {
+        "turn": 5,
+        "status": "OK",
+        "content": "아빠가 고등학교 때 많이 컸어요.",
+        "turns_remaining": 45
+      },
+      "http_status": 200,
+      "turn": 5
+    },
+    {
+      "id": "6d571a62-503d-421d-bba3-1acd3f04ac2a",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "예전에 잰 키 기록이 있나요?",
+        "request_id": "3b3937fd-9a3e-4c77-8c70-44b19ea9ff15"
+      },
+      "effective_content": "예전에 잰 키 기록이 있나요?",
+      "response": {
+        "turn": 6,
+        "status": "OK",
+        "content": "네, 영유아 검진 수첩에 있어요.",
+        "turns_remaining": 44
+      },
+      "http_status": 200,
+      "turn": 6
+    },
+    {
+      "id": "b1b21fac-4691-4a33-9a72-ece83f4903f3",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "두 살, 네 살 때 키는 얼마였나요?",
+        "request_id": "3f9e4d45-3727-461c-8b94-6daaad90fb22"
+      },
+      "effective_content": "두 살, 네 살 때 키는 얼마였나요?",
+      "response": {
+        "turn": 7,
+        "status": "OK",
+        "content": "두 살 83, 네 살 96센티예요.",
+        "turns_remaining": 43
+      },
+      "http_status": 200,
+      "turn": 7
+    },
+    {
+      "id": "b4e2ce37-4865-44b9-b69a-bf26431746a5",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "언제부터 작다는 말을 들었나요?",
+        "request_id": "ab642b18-045e-4596-b735-c299c5f67d80"
+      },
+      "effective_content": "언제부터 작다는 말을 들었나요?",
+      "response": {
+        "turn": 8,
+        "status": "OK",
+        "content": "두 살 무렵부터 들었어요.",
+        "turns_remaining": 42
+      },
+      "http_status": 200,
+      "turn": 8
+    },
+    {
+      "id": "a40618f2-f9ad-4c39-87db-dab3408ed80e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "가족 중 키가 작거나 유전병 있나요?",
+        "request_id": "36f6b719-85b4-46ef-8d86-5550da7c9c9f"
+      },
+      "effective_content": "가족 중 키가 작거나 유전병 있나요?",
+      "response": {
+        "turn": 9,
+        "status": "OK",
+        "content": "아빠 말고는 없어요.",
+        "turns_remaining": 41
+      },
+      "http_status": 200,
+      "turn": 9
+    },
+    {
+      "id": "992b986b-75c6-4636-86b4-5b8c51deda15",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "음모나 고환 변화가 있었나요?",
+        "request_id": "f2afdd35-1b0e-48ca-b00e-7a393a32ee2e"
+      },
+      "effective_content": "음모나 고환 변화가 있었나요?",
+      "response": {
+        "turn": 10,
+        "status": "OK",
+        "content": "아니요, 그런 변화는 없어요.",
+        "turns_remaining": 40
+      },
+      "http_status": 200,
+      "turn": 10
+    },
+    {
+      "id": "d2aa2421-045e-42ac-9505-5b7c8d395f2e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "잘 지치거나 변비, 추위 타나요?",
+        "request_id": "7b864ae8-4acd-4be2-b907-377eca0bb8d8"
+      },
+      "effective_content": "잘 지치거나 변비, 추위 타나요?",
+      "response": {
+        "turn": 11,
+        "status": "OK",
+        "content": "아니요, 그런 증상은 없어요.",
+        "turns_remaining": 39
+      },
+      "http_status": 200,
+      "turn": 11
+    },
+    {
+      "id": "ecde1e50-71f9-4880-b045-358983c20c86",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "아이가 열이 난 적 있나요?",
+        "request_id": "a244b0e3-308e-45c2-9936-f21bb05d87e5"
+      },
+      "effective_content": "아이가 열이 난 적 있나요?",
+      "response": {
+        "turn": 12,
+        "status": "OK",
+        "content": "감기 걸렸을 때만 있었어요.",
+        "turns_remaining": 38
+      },
+      "http_status": 200,
+      "turn": 12
+    },
+    {
+      "id": "eeb257b4-9094-42e2-b9fd-6b2bd19becf6",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "밥은 잘 먹나요?",
+        "request_id": "189e3695-60b2-4927-ba5a-46dac8bc6f89"
+      },
+      "effective_content": "밥은 잘 먹나요?",
+      "response": {
+        "turn": 13,
+        "status": "OK",
+        "content": "네, 하루 세 끼 잘 먹어요.",
+        "turns_remaining": 37
+      },
+      "http_status": 200,
+      "turn": 13
+    },
+    {
+      "id": "756b8ef2-9cb7-4c86-8c7d-908448b82c6d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "우유는 하루에 얼마나 마시나요?",
+        "request_id": "539ccdd9-347a-4306-a066-69f566993107"
+      },
+      "effective_content": "우유는 하루에 얼마나 마시나요?",
+      "response": {
+        "turn": 14,
+        "status": "OK",
+        "content": "하루 한두 잔 마셔요.",
+        "turns_remaining": 36
+      },
+      "http_status": 200,
+      "turn": 14
+    },
+    {
+      "id": "f624bc5a-6147-4528-bea1-e888b545daed",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "밤에 잠은 잘 자나요?",
+        "request_id": "bdc055bf-0c8c-4b8b-95e5-396a6f086f2b"
+      },
+      "effective_content": "밤에 잠은 잘 자나요?",
+      "response": {
+        "turn": 15,
+        "status": "OK",
+        "content": "네, 밤에 깨지 않고 잘 자요.",
+        "turns_remaining": 35
+      },
+      "http_status": 200,
+      "turn": 15
+    },
+    {
+      "id": "49bdbe16-66b2-4fcc-a707-3b158728da1d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "잘 뛰어놀고 활발한가요?",
+        "request_id": "95477962-cb7c-4e93-8a05-5153ee937e7b"
+      },
+      "effective_content": "잘 뛰어놀고 활발한가요?",
+      "response": {
+        "turn": 16,
+        "status": "OK",
+        "content": "네, 잘 뛰어놀고 활발해요.",
+        "turns_remaining": 34
+      },
+      "http_status": 200,
+      "turn": 16
+    },
+    {
+      "id": "6aa685e0-9a7c-4fa7-b528-bfd61ea1f0db",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "만삭에 낳았나요?",
+        "request_id": "cf9508f3-3d68-4c82-a101-7b60e25162e6"
+      },
+      "effective_content": "만삭에 낳았나요?",
+      "response": {
+        "turn": 17,
+        "status": "OK",
+        "content": "네, 만삭에 낳았어요.",
+        "turns_remaining": 33
+      },
+      "http_status": 200,
+      "turn": 17
+    },
+    {
+      "id": "e7cb8d85-739f-43fd-85d5-e087763f66d2",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "신생아 때 황달 같은 문제 있었나요?",
+        "request_id": "02c57353-f3e6-44ed-a243-27cd1c192968"
+      },
+      "effective_content": "신생아 때 황달 같은 문제 있었나요?",
+      "response": {
+        "turn": 18,
+        "status": "OK",
+        "content": "아니요, 황달은 없었어요.",
+        "turns_remaining": 32
+      },
+      "http_status": 200,
+      "turn": 18
+    },
+    {
+      "id": "1b37fb77-463c-4618-9d75-d330e41d73f9",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "말이나 걷기는 또래만큼 했나요?",
+        "request_id": "e0c43e7b-74ab-4e93-bc2b-a5308b31c4d6"
+      },
+      "effective_content": "말이나 걷기는 또래만큼 했나요?",
+      "response": {
+        "turn": 19,
+        "status": "OK",
+        "content": "네, 또래와 비슷했어요.",
+        "turns_remaining": 31
+      },
+      "http_status": 200,
+      "turn": 19
+    },
+    {
+      "id": "4617bb6c-77e8-4be7-a04d-bdc5fbe0a23e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+        "request_id": "af507fbb-eef2-4901-a56d-b67b1da66e74"
+      },
+      "effective_content": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+      "response": {
+        "turn": 20,
+        "status": "OK",
+        "content": "아니요, 그런 질환은 없어요.",
+        "turns_remaining": 30
+      },
+      "http_status": 200,
+      "turn": 20
+    },
+    {
+      "id": "7e3f5495-ed2c-4456-b832-20916bd1060a",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "입원하거나 크게 아픈 적 있나요?",
+        "request_id": "700aee0f-20e9-4d4c-9738-533fa0b5e516"
+      },
+      "effective_content": "입원하거나 크게 아픈 적 있나요?",
+      "response": {
+        "turn": 21,
+        "status": "OK",
+        "content": "아니요, 그런 적 없어요.",
+        "turns_remaining": 29
+      },
+      "http_status": 200,
+      "turn": 21
+    },
+    {
+      "id": "5c90dfd6-f374-44ff-8f43-f15829f690cd",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "먹는 약이나 한약, 영양제 있나요?",
+        "request_id": "c649d09d-36db-4f15-a6d7-27298a5a403d"
+      },
+      "effective_content": "먹는 약이나 한약, 영양제 있나요?",
+      "response": {
+        "turn": 22,
+        "status": "OK",
+        "content": "아니요, 먹는 건 없어요.",
+        "turns_remaining": 28
+      },
+      "http_status": 200,
+      "turn": 22
+    },
+    {
+      "id": "1710697e-9b47-48a2-8645-5b7c222c0fa5",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "쉽게 피곤해하나요?",
+        "request_id": "119a5201-33c1-48f8-a100-64c127332602"
+      },
+      "effective_content": "쉽게 피곤해하나요?",
+      "response": {
+        "turn": 23,
+        "status": "OK",
+        "content": "아니요, 쉽게 피곤해하지 않아요.",
+        "turns_remaining": 27
+      },
+      "http_status": 200,
+      "turn": 23
+    },
+    {
+      "id": "9fc7a18f-04d5-4f19-b148-6a49781e8ea6",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "어머님이 가장 걱정되는 게 뭐예요?",
+        "request_id": "0e4134ef-33ea-467d-adbe-6c925a05e4ec"
+      },
+      "effective_content": "어머님이 가장 걱정되는 게 뭐예요?",
+      "response": {
+        "turn": 24,
+        "status": "OK",
+        "content": "큰 병 때문에 안 크는 건가 걱정돼요.",
+        "turns_remaining": 26
+      },
+      "http_status": 200,
+      "turn": 24
+    },
+    {
+      "id": "02bb69cb-793d-4b6d-b8da-68fad6b2d0ad",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "오늘 가장 궁금하신 게 뭐예요?",
+        "request_id": "090f4e73-7b77-4f78-98ab-1672daf36ef8"
+      },
+      "effective_content": "오늘 가장 궁금하신 게 뭐예요?",
+      "response": {
+        "turn": 25,
+        "status": "OK",
+        "content": "앞으로 키가 더 클 수 있을까요?",
+        "turns_remaining": 25
+      },
+      "http_status": 200,
+      "turn": 25
+    },
+    {
+      "id": "b4cbc33f-659c-48fb-a288-ec9ac38c65d9",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "활력징후 측정하겠습니다",
+        "request_id": "d450e1d8-b492-464f-9511-f4140b6d06e2"
+      },
+      "effective_content": "gen_vital_signs",
+      "response": {
+        "turn": 26,
+        "result": "100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C",
+        "status": "OK",
+        "turns_remaining": 24
+      },
+      "http_status": 200,
+      "turn": 26
+    },
+    {
+      "id": "e4b4c9da-24ec-40c9-ad3d-fc990321d7ea",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "전반적 외관 시진하겠습니다",
+        "request_id": "1384fde9-1fe3-4c20-96be-560be450560f"
+      },
+      "effective_content": "gen_general_appearance",
+      "response": {
+        "turn": 27,
+        "result": "급성 병색(-), 또래보다 작은 키, 안절부절(-)",
+        "status": "OK",
+        "turns_remaining": 23
+      },
+      "http_status": 200,
+      "turn": 27
+    },
+    {
+      "id": "13906d4f-38fc-4ecf-b432-545a47ad2a72",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "신체 계측하겠습니다",
+        "request_id": "70ae9aba-652b-4c67-bb7d-2f695f373f6f"
+      },
+      "effective_content": "c02_anthropometry",
+      "response": {
+        "turn": 28,
+        "result": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+        "status": "OK",
+        "turns_remaining": 22
+      },
+      "http_status": 200,
+      "turn": 28
+    },
+    {
+      "id": "39679027-7cb2-4d82-999c-205b5b0bc544",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "성장도표 백분위수 확인하겠습니다",
+        "request_id": "669952fe-524c-408b-b1e0-111b2c660ba5"
+      },
+      "effective_content": "c02_growth_percentile",
+      "response": {
+        "turn": 29,
+        "result": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+        "status": "OK",
+        "turns_remaining": 21
+      },
+      "http_status": 200,
+      "turn": 29
+    },
+    {
+      "id": "48bb4e67-2e83-465e-a3b9-957fc6697f78",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "성장 속도·중간부모키 산출하겠습니다",
+        "request_id": "ddb19f1f-7ed9-47f7-a021-d280ea62a87e"
+      },
+      "effective_content": "c02_growth_velocity",
+      "response": {
+        "turn": 30,
+        "result": "성장속도 5cm/년, 중간부모키 178cm",
+        "status": "OK",
+        "turns_remaining": 20
+      },
+      "http_status": 200,
+      "turn": 30
+    },
+    {
+      "id": "dbeada0e-5e9e-4868-a973-6b72d42299cf",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "신체 비율 평가하겠습니다",
+        "request_id": "add1e7bc-e1e3-4742-88fb-25b712ddd1d8"
+      },
+      "effective_content": "c02_body_proportion",
+      "response": {
+        "turn": 31,
+        "result": "상·하절 비율 정상, 양팔간격 불균형(-)",
+        "status": "OK",
+        "turns_remaining": 19
+      },
+      "http_status": 200,
+      "turn": 31
+    },
+    {
+      "id": "a6ae8a79-8353-4c16-883c-b136861b1550",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "사춘기 성숙도 평가하겠습니다",
+        "request_id": "76e725e5-93d2-47a4-b9f0-697234c91524"
+      },
+      "effective_content": "c02_pubertal_status",
+      "response": {
+        "turn": 32,
+        "result": "Tanner 1기, 고환 2mL/2mL",
+        "status": "OK",
+        "turns_remaining": 18
+      },
+      "http_status": 200,
+      "turn": 32
+    },
+    {
+      "id": "a5c488ed-e394-4c86-83ec-455b8599da16",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "안면 기형 소견 시진하겠습니다",
+        "request_id": "2355ef17-5834-4af0-958c-89764bef921b"
+      },
+      "effective_content": "c02_dysmorphic_face",
+      "response": {
+        "turn": 33,
+        "result": "안면 기형(-), 귀 위치 이상(-/-)",
+        "status": "OK",
+        "turns_remaining": 17
+      },
+      "http_status": 200,
+      "turn": 33
+    },
+    {
+      "id": "947abae1-7777-436c-949f-9f0545c7769d",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "갑상선 촉진하겠습니다",
+        "request_id": "ce9f75ec-3eb0-4f84-b031-55d32e51175a"
+      },
+      "effective_content": "hn_thyroid_palpation",
+      "response": {
+        "turn": 34,
+        "result": "비대(-), 결절(-), 압통(-)",
+        "status": "OK",
+        "turns_remaining": 16
+      },
+      "http_status": 200,
+      "turn": 34
+    },
+    {
+      "id": "1496f1c0-ea6c-490e-a537-487aae64c06f",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "복부 촉진하겠습니다",
+        "request_id": "ced6db75-3b7a-4e22-a9fc-c0f8beda08bc"
+      },
+      "effective_content": "abd_palpation",
+      "response": {
+        "turn": 35,
+        "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+        "status": "OK",
+        "turns_remaining": 15
+      },
+      "http_status": 200,
+      "turn": 35
+    },
+    {
+      "id": "e4948e35-9cb6-4cca-9ada-55299980cbd8",
+      "action": "EXAM",
+      "payload": {
+        "action": "EXAM",
+        "content": "자주색 선조 시진하겠습니다",
+        "request_id": "e3218181-7ac8-4dc1-8e91-8aa065ebafa6"
+      },
+      "effective_content": "c02_striae",
+      "response": {
+        "turn": 36,
+        "result": "자주색 선조(-), 색소침착(-), 중심성 비만(-), 달덩이얼굴(-)",
+        "status": "OK",
+        "turns_remaining": 14
+      },
+      "http_status": 200,
+      "turn": 36
+    },
+    {
+      "id": "fa5aab6d-c2c2-43c9-9577-2084bee4ee38",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "진단 미정 가능성이 높아 보여요.",
+        "request_id": "4707742e-644a-4e65-b197-30b80a877d3a"
+      },
+      "effective_content": "진단 미정 가능성이 높아 보여요.",
+      "response": {
+        "turn": 37,
+        "status": "OK",
+        "content": "네, 검사가 필요한가요?",
+        "turns_remaining": 13
+      },
+      "http_status": 200,
+      "turn": 37
+    },
+    {
+      "id": "4f5086ef-80d0-401a-873b-b535b0725b15",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "원인 확인을 위해 검사가 필요해요.",
+        "request_id": "43c255bd-3f55-46e2-b004-85003791a156"
+      },
+      "effective_content": "원인 확인을 위해 검사가 필요해요.",
+      "response": {
+        "turn": 38,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 12
+      },
+      "http_status": 200,
+      "turn": 38
+    },
+    {
+      "id": "29ecd467-7d96-4f97-b31c-516089b15d9f",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "정확히 확인하려고 피검사를 할게요.",
+        "request_id": "6daea0b5-697b-4503-80af-a543306f7f97"
+      },
+      "effective_content": "정확히 확인하려고 피검사를 할게요.",
+      "response": {
+        "turn": 39,
+        "status": "OK",
+        "content": "네, 검사받을게요.",
+        "turns_remaining": 11
+      },
+      "http_status": 200,
+      "turn": 39
+    },
+    {
+      "id": "f8c72177-5df1-4783-9683-06796edb654e",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "검사 결과를 보고 치료를 정할게요.",
+        "request_id": "9f353687-ca49-41d2-b77e-f2cc3b97fa60"
+      },
+      "effective_content": "검사 결과를 보고 치료를 정할게요.",
+      "response": {
+        "turn": 40,
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turns_remaining": 10
+      },
+      "http_status": 200,
+      "turn": 40
+    },
+    {
+      "id": "6733ed53-3057-4897-a26d-71cdbfc857f1",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+        "request_id": "e8aac590-3e0a-4bde-9b19-8cbcca11cdb4"
+      },
+      "effective_content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+      "response": {
+        "turn": 41,
+        "status": "OK",
+        "content": "네, 그러면 바로 올게요.",
+        "turns_remaining": 9
+      },
+      "http_status": 200,
+      "turn": 41
+    },
+    {
+      "id": "c8799a0b-064b-4a5e-a25b-fe09a1253f69",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+        "request_id": "b63439bb-f3f3-4b0b-8ef5-374b2929ef1d"
+      },
+      "effective_content": "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+      "response": {
+        "turn": 42,
+        "status": "OK",
+        "content": "네, 그때 다시 올게요.",
+        "turns_remaining": 8
+      },
+      "http_status": 200,
+      "turn": 42
+    },
+    {
+      "id": "c96f3dcf-ea29-41d2-ba6a-82b9eb093238",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "더 궁금하신 점 있으세요?",
+        "request_id": "14afb71a-6db7-44a5-841d-999941d9b1d9"
+      },
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "turn": 43,
+        "status": "OK",
+        "content": "치료가 필요할까요?",
+        "turns_remaining": 7
+      },
+      "http_status": 200,
+      "turn": 43
+    },
+    {
+      "id": "ae027001-b0b9-491e-bbd9-f9f61ba2e80d",
+      "action": "SAY",
+      "payload": {
+        "action": "SAY",
+        "content": "아직 치료 여부는 정할 수 없어 검사가 먼저입니다.",
+        "request_id": "4e1644cf-df60-49b5-982f-2e192425ee89"
+      },
+      "effective_content": "아직 치료 여부는 정할 수 없어 검사가 먼저입니다.",
+      "response": {
+        "turn": 44,
+        "status": "OK",
+        "content": "네, 먼저 검사받을게요.",
+        "turns_remaining": 6
+      },
+      "http_status": 200,
+      "turn": 44
+    },
+    {
+      "id": "abd55f49-c8c5-487c-b23f-c66c32bfb7f8",
+      "action": "DIAGNOSE",
+      "payload": {
+        "note": {
+          "A": {
+            "evidence": "#1. 진단 미정\n- 근거 : 또래보다 작은 키",
+            "differential": ""
+          },
+          "O": {
+            "exam": "V/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / 활력징후 측정 : 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C (턴 26)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 27)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 28). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 29). 성장 속도·중간부모키 산출 : 성장속도 5cm/년, 중간부모키 178cm (턴 30). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 31)\nSkin : 자주색 선조 시진 : 자주색 선조(-), 색소침착(-), 중심성 비만(-), 달덩이얼굴(-) (턴 36)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 33)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 34)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 35)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 32)",
+            "tests": ""
+          },
+          "P": {
+            "tests": "- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가\n- 주진단 확인을 위한 표적 검사 : 감별진단 배제",
+            "education": "진료 중 설명함:\n- 진단 미정 가능성이 높아 보여요.\n- 원인 확인을 위해 검사가 필요해요.\n- 정확히 확인하려고 피검사를 할게요.\n- 검사 결과를 보고 치료를 정할게요.\n- 숨참·흉통·의식 변화·고열 시 바로 오세요.\n- 1~2주 뒤 결과 보고 다음 치료를 정해요.\n- 아직 치료 여부는 정할 수 없어 검사가 먼저입니다.\n다음 방문 시 교육 예정 : 경고 증상 시 즉시 내원 안내",
+            "follow_up": "- 1~2주 후 검사 결과 확인 위해 재진\n- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시",
+            "treatment": "- 검사 결과 확인 후 원인에 맞는 치료 시작 고려\n- 금기 확인 후 증상 조절",
+            "disposition": "- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 급성 위험 징후 없어 외래 추적"
+          },
+          "S": {
+            "cc": "C.C : 또래보다 작은 키\nOnset :",
+            "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 부 키 : 아빠는 178센티미터예요., 모 키 : 저는 165센티미터예요., 저신장(-)",
+            "sh": "Smoking / Alcohol : 해당 없음(소아)",
+            "hpi": "6세 남자. 이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다\nprior_visit : 이 문제로 진료받은 적은 없어요.\n문진상 사춘기 징후, 갑상선저하 증상, Fatigue, General weakness(-)\n걱정·기대 : 큰 병 때문에 안 크는 건가 걱정돼요.; 앞으로 키가 더 클 수 있을까요?\n위 증상으로 내원함.",
+            "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history : 복용 약 없음 (-)\nAllergy ( )\nOthers : 기타 지병(-)\n* 소아\n- 출생력 : 재태 만삭에 낳았어요\n- 신생아기 : 신생아기(-)\n- 발달 : 발달 또래와 비슷\n- 예방접종 :\n- 영양 : 우유 섭취 하루 한두 잔 마셔요\n- 수면·활동 : 활동 잘 뛰어놀고 활발해요\n- 성장 기록 : 성장 기록 영유아 검진 수첩에 있어요, 과거 계측치 두 살 83, 네 살 96센티",
+            "ros": "General weakness (-)  Fatigue (-)\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 사춘기 징후(-), 갑상선저하 증상(-), 식욕 : 네, 하루 세 끼 잘 먹어요., 수면 : 네, 밤에 깨지 않고 잘 자요."
+          }
+        },
+        "action": "DIAGNOSE",
+        "diagnosis": "진단 미정",
+        "request_id": "c8219b5d-64c5-45fe-8393-f95e2993526e"
+      },
+      "effective_content": "",
+      "response": {
+        "turn": 44,
+        "status": "completed",
+        "score_status": "not_scored",
+        "record_digest": "936ed85ec6118e8398071876b8e52f62fbf9d01b4fccc0a3e456597b1731d7a9"
+      },
+      "http_status": 200,
+      "turn": 44
+    }
+  ],
+  "note": "[S] 주호소 (CC)\nC.C : 또래보다 작은 키\nOnset :\n\n[S] 현병력 (HPI)\n6세 남자. 이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다\nprior_visit : 이 문제로 진료받은 적은 없어요.\n문진상 사춘기 징후, 갑상선저하 증상, Fatigue, General weakness(-)\n걱정·기대 : 큰 병 때문에 안 크는 건가 걱정돼요.; 앞으로 키가 더 클 수 있을까요?\n위 증상으로 내원함.\n\n[S] 과거력·약물·알레르기 (PMH)\nDM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history : 복용 약 없음 (-)\nAllergy ( )\nOthers : 기타 지병(-)\n* 소아\n- 출생력 : 재태 만삭에 낳았어요\n- 신생아기 : 신생아기(-)\n- 발달 : 발달 또래와 비슷\n- 예방접종 :\n- 영양 : 우유 섭취 하루 한두 잔 마셔요\n- 수면·활동 : 활동 잘 뛰어놀고 활발해요\n- 성장 기록 : 성장 기록 영유아 검진 수첩에 있어요, 과거 계측치 두 살 83, 네 살 96센티\n\n[S] 가족력 (FH)\nDM / HTN ( / )\nStroke ( )\nOthers : 부 키 : 아빠는 178센티미터예요., 모 키 : 저는 165센티미터예요., 저신장(-)\n\n[S] 사회력 (SH)\nSmoking / Alcohol : 해당 없음(소아)\n\n[S] 계통 문진 (ROS)\nGeneral weakness (-)  Fatigue (-)\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 사춘기 징후(-), 갑상선저하 증상(-), 식욕 : 네, 하루 세 끼 잘 먹어요., 수면 : 네, 밤에 깨지 않고 잘 자요.\n\n[O] 진찰 소견\nV/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / 활력징후 측정 : 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C (턴 26)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 27)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 28). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 29). 성장 속도·중간부모키 산출 : 성장속도 5cm/년, 중간부모키 178cm (턴 30). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 31)\nSkin : 자주색 선조 시진 : 자주색 선조(-), 색소침착(-), 중심성 비만(-), 달덩이얼굴(-) (턴 36)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 33)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 34)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 35)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 32)\n\n[O] 검사 결과\n\n\n[A] 주진단\n진단 미정\n\n[A] 근거\n#1. 진단 미정\n- 근거 : 또래보다 작은 키\n\n[A] 감별진단\n\n\n[P] 추가 검사\n- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가\n- 주진단 확인을 위한 표적 검사 : 감별진단 배제\n\n[P] 치료\n- 검사 결과 확인 후 원인에 맞는 치료 시작 고려\n- 금기 확인 후 증상 조절\n\n[P] 처치 결정\n- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 급성 위험 징후 없어 외래 추적\n\n[P] 추적\n- 1~2주 후 검사 결과 확인 위해 재진\n- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시\n\n[P] 환자 교육\n진료 중 설명함:\n- 진단 미정 가능성이 높아 보여요.\n- 원인 확인을 위해 검사가 필요해요.\n- 정확히 확인하려고 피검사를 할게요.\n- 검사 결과를 보고 치료를 정할게요.\n- 숨참·흉통·의식 변화·고열 시 바로 오세요.\n- 1~2주 뒤 결과 보고 다음 치료를 정해요.\n- 아직 치료 여부는 정할 수 없어 검사가 먼저입니다.\n다음 방문 시 교육 예정 : 경고 증상 시 즉시 내원 안내\n\n",
+  "record": {
+    "A": {
+      "evidence": "#1. 진단 미정\n- 근거 : 또래보다 작은 키",
+      "differential": ""
+    },
+    "O": {
+      "exam": "V/S : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C (시작 정보) / 활력징후 측정 : 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C (턴 26)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 또래보다 작은 키, 안절부절(-) (턴 27)\nGrowth : 신체 계측 : 신장 105cm, 체중 16.5kg, 머리둘레 52cm (턴 28). 성장도표 백분위수 확인 : 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm (턴 29). 성장 속도·중간부모키 산출 : 성장속도 5cm/년, 중간부모키 178cm (턴 30). 신체 비율 평가 : 상·하절 비율 정상, 양팔간격 불균형(-) (턴 31)\nSkin : 자주색 선조 시진 : 자주색 선조(-), 색소침착(-), 중심성 비만(-), 달덩이얼굴(-) (턴 36)\nH/E/E/N/T : 안면 기형 소견 시진 : 안면 기형(-), 귀 위치 이상(-/-) (턴 33)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 34)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-) (턴 35)\nGenitalia : 사춘기 성숙도 평가 : Tanner 1기, 고환 2mL/2mL (턴 32)",
+      "tests": ""
+    },
+    "P": {
+      "tests": "- 기본 혈액검사(CBC, 전해질, 간·신장 기능, 혈당) : 전신 상태 평가\n- 주진단 확인을 위한 표적 검사 : 감별진단 배제",
+      "education": "진료 중 설명함:\n- 진단 미정 가능성이 높아 보여요.\n- 원인 확인을 위해 검사가 필요해요.\n- 정확히 확인하려고 피검사를 할게요.\n- 검사 결과를 보고 치료를 정할게요.\n- 숨참·흉통·의식 변화·고열 시 바로 오세요.\n- 1~2주 뒤 결과 보고 다음 치료를 정해요.\n- 아직 치료 여부는 정할 수 없어 검사가 먼저입니다.\n다음 방문 시 교육 예정 : 경고 증상 시 즉시 내원 안내",
+      "follow_up": "- 1~2주 후 검사 결과 확인 위해 재진\n- 즉시 내원 : 증상 악화, 호흡곤란, 의식 변화, 흉통 시",
+      "treatment": "- 검사 결과 확인 후 원인에 맞는 치료 시작 고려\n- 금기 확인 후 증상 조절",
+      "disposition": "- 활력징후 대체로 안정 : BP 100/60 mmHg, PR 90회/분, RR 20회/분, BT 36.7°C → 급성 위험 징후 없어 입원 불필요, 외래 추적\n- 급성 위험 징후 없어 외래 추적"
+    },
+    "S": {
+      "cc": "C.C : 또래보다 작은 키\nOnset :",
+      "fh": "DM / HTN ( / )\nStroke ( )\nOthers : 부 키 : 아빠는 178센티미터예요., 모 키 : 저는 165센티미터예요., 저신장(-)",
+      "sh": "Smoking / Alcohol : 해당 없음(소아)",
+      "hpi": "6세 남자. 이름은 김도현이고, 여섯 살 남자아이이다. 엄마 김지영, 서른일곱 살이 보호자로 함께 왔다. 엄마는 도현이 키가 또래에 비해 많이 작은 것 같아 걱정이 된다고 말했다. 어린이집에서 같은 반 친구들보다 도현이 키가 확실히 작아 보인다고 한다. 엄마는 일 년 전부터 주변에서 도현이가 또래보다 작다는 말을 듣기 시작했다고 했다. 특히 최근 육 개월에서 일 년 사이에 키가 별로 크지 않은 것 같다고 느꼈다. 엄마가 집에서 키를 재보니, 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였다. 일 년 동안 오 센티미터 정도 자랐다. 몸무게는 일 년 전 십오 키로그람에서 지금은 십육 점 오 키로그람으로 일 점 오 키로그람 늘었다\nprior_visit : 이 문제로 진료받은 적은 없어요.\n문진상 사춘기 징후, 갑상선저하 증상, Fatigue, General weakness(-)\n걱정·기대 : 큰 병 때문에 안 크는 건가 걱정돼요.; 앞으로 키가 더 클 수 있을까요?\n위 증상으로 내원함.",
+      "pmh": "DM / HTN ( / )\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (-)\nMedicine history : 복용 약 없음 (-)\nAllergy ( )\nOthers : 기타 지병(-)\n* 소아\n- 출생력 : 재태 만삭에 낳았어요\n- 신생아기 : 신생아기(-)\n- 발달 : 발달 또래와 비슷\n- 예방접종 :\n- 영양 : 우유 섭취 하루 한두 잔 마셔요\n- 수면·활동 : 활동 잘 뛰어놀고 활발해요\n- 성장 기록 : 성장 기록 영유아 검진 수첩에 있어요, 과거 계측치 두 살 83, 네 살 96센티",
+      "ros": "General weakness (-)  Fatigue (-)\nHeadache ( )  Dizziness ( )\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea ( / / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 사춘기 징후(-), 갑상선저하 증상(-), 식욕 : 네, 하루 세 끼 잘 먹어요., 수면 : 네, 밤에 깨지 않고 잘 자요."
+    }
+  },
+  "diagnosis": "진단 미정",
+  "score": {
+    "status": "not_scored",
+    "total": null,
+    "components": {}
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많이 불편하셨겠어요.",
+      "effective_content": "많이 불편하셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많이 불편하셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "아픈 곳에 대해 자세히 말씀해 주세요",
+      "effective_content": "아픈 곳에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "지금은 허리보다 다리가 더 아프다.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "아픈 곳에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지처럼 수술을 해야 하는 건 아닌지 걱정이 된다.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "오래 앉아 있거나 기침, 재채기를 하면 다리로 뻗치는 통증이 심해진다.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "그 밖에 또 불편한 건 없으세요?",
+      "effective_content": "그 밖에 또 불편한 건 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "그 밖에 또 불편한 건 없으세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "통증 경과에 대해 자세히 말씀해 주세요",
+      "effective_content": "통증 경과에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "사흘째부터 왼쪽 엉덩이에서 허벅지 뒤쪽, 종아리를 지나 발바깥쪽 새끼발가락 쪽까지 전기가 오듯 찌릿하게…",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "통증 경과에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "다리 저림에 대해 자세히 말씀해 주세요",
+      "effective_content": "다리 저림에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "왼쪽 발바깥쪽과 새끼발가락 쪽이 남의 살 같고 감각이 둔해요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "다리 저림에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "다리에 힘이 빠지거나 발을 들기 힘드세요?",
+      "effective_content": "다리에 힘이 빠지거나 발을 들기 힘드세요?",
+      "response": {
+        "status": "OK",
+        "content": "왼쪽이 오른쪽보다 힘이 좀 없는 것 같아요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "다리에 힘이 빠지거나 발을 들기 힘드세요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "대소변을 보기 어렵거나 새는 일이 있나요?",
+      "effective_content": "대소변을 보기 어렵거나 새는 일이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "소변이나 대변에 문제 없어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "대소변을 보기 어렵거나 새는 일이 있나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨가 있으세요?",
+      "effective_content": "고혈압이나 당뇨가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압, 당뇨는 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨가 있으세요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "다른 지병에 대해 자세히 말씀해 주세요",
+      "effective_content": "다른 지병에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "고혈압, 당뇨는 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "다른 지병에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+      "effective_content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "진통소염제 하루 두세 번 먹고 있어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "약 알레르기가 있으세요?",
+      "effective_content": "약 알레르기가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "약 알레르기는 없어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "약 알레르기가 있으세요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "열이나 체중 감소가 있으세요?",
+      "effective_content": "열이나 체중 감소가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "열이나 오한은 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "열이나 체중 감소가 있으세요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "다리 힘 빠짐에 대해 자세히 말씀해 주세요",
+      "effective_content": "다리 힘 빠짐에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "왼쪽이 오른쪽보다 힘이 좀 없는 것 같아요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "다리 힘 빠짐에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "회음부 감각이 둔해졌나요?",
+      "effective_content": "회음부 감각이 둔해졌나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "회음부 감각이 둔해졌나요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "위궤양이나 신장병이 있으세요?",
+      "effective_content": "위궤양이나 신장병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "위궤양이나 신장병이 있으세요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "비슷한 허리 통증에 대해 자세히 말씀해 주세요",
+      "effective_content": "비슷한 허리 통증에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "이삿짐 옮길 때 허리 삐끗해서 아프기 시작했어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "비슷한 허리 통증에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "일상생활 지장에 대해 자세히 말씀해 주세요",
+      "effective_content": "일상생활 지장에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "지금은 아파서 일주일째 병가를 내고 쉬고 있어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "일상생활 지장에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "가족력에 대해 자세히 말씀해 주세요",
+      "effective_content": "가족력에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "아버지는 허리 디스크로 수술을 받으셨고, 어머니는 고혈압이 있어요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "가족력에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "밤에 쉬어도 허리가 아픈가요?",
+      "effective_content": "밤에 쉬어도 허리가 아픈가요?",
+      "response": {
+        "status": "OK",
+        "content": "밤에 자다가 통증 때문에 깨는 일은 없어요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "밤에 쉬어도 허리가 아픈가요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "사지 근력 검사하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "족저굴곡 Gr.5/Gr.4, 족배굴곡 Gr.5/Gr.5, 무지 신전 Gr.5/Gr.5, 고관절 굴곡 Gr.5/Gr.5",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "사지 감각 검사하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "좌측 발 외측·새끼발가락(S1 피부분절) 촉각·통각 저하(+), 우측 정상",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "심부건반사 검사하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "슬개건 2+/2+, 아킬레스건 2+/1+(우/좌)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "하지직거상 검사하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "좌측 40도에서 방사통(+), 우측 80도 음성(-)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "보행 관찰하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "진통 회피 보행(+), 좌측 체중부하 회피",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "척추 압통 확인하겠습니다",
+      "effective_content": "r09",
+      "response": {
+        "status": "OK",
+        "result": "극돌기 타진 압통(-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "바빈스키 징후 확인하겠습니다",
+      "effective_content": "r16",
+      "response": {
+        "status": "OK",
+        "result": "족저 굴곡(정상)/족저 굴곡(정상)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "하지 말초 진찰하겠습니다",
+      "effective_content": "r19",
+      "response": {
+        "status": "OK",
+        "result": "족배동맥(+/+), 함요부종(-/-)",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "허리 디스크로 왼쪽 S1 신경이 눌린 듯해요.",
+      "effective_content": "허리 디스크로 왼쪽 S1 신경이 눌린 듯해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "허리 디스크로 왼쪽 S1 신경이 눌린 듯해요."
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "왼발 바깥 감각 저하와 약한 힘이 신경 자극과 맞아요.",
+      "effective_content": "왼발 바깥 감각 저하와 약한 힘이 신경 자극과 맞아요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "왼발 바깥 감각 저하와 약한 힘이 신경 자극과 맞아요."
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "아버님처럼 바로 수술하기보다 검사 후 치료를 정해요.",
+      "effective_content": "아버님처럼 바로 수술하기보다 검사 후 치료를 정해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "아버님처럼 바로 수술하기보다 검사 후 치료를 정해요."
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "자기공명영상으로 디스크와 신경 눌림을 확인해요.",
+      "effective_content": "자기공명영상으로 디스크와 신경 눌림을 확인해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "자기공명영상으로 디스크와 신경 눌림을 확인해요."
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "검사 결과와 근력에 따라 비수술 치료부터 상의해요.",
+      "effective_content": "검사 결과와 근력에 따라 비수술 치료부터 상의해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "검사 결과와 근력에 따라 비수술 치료부터 상의해요."
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "힘이 더 약해지거나 통증이 심하면 수술도 검토해요.",
+      "effective_content": "힘이 더 약해지거나 통증이 심하면 수술도 검토해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "힘이 더 약해지거나 통증이 심하면 수술도 검토해요."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+      "effective_content": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "숨참·흉통·의식 변화·고열 시 바로 오세요."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "빠른 시일 내 다시 뵙고 영상과 근력을 확인해요.",
+      "effective_content": "빠른 시일 내 다시 뵙고 영상과 근력을 확인해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "빠른 시일 내 다시 뵙고 영상과 근력을 확인해요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "숨참·흉통·의식 변화도 생기면 바로 오세요.",
+      "effective_content": "숨참·흉통·의식 변화도 생기면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "숨참·흉통·의식 변화도 생기면 바로 오세요."
+      }
+    },
+    {
+      "turn": 40,
+      "action": "DIAGNOSE",
+      "diagnosis": "요추 추간판 탈출증에 의한 좌측 S1 신경근병증 (Lumbar disc herniation causing left S1 radiculopathy)"
+    }
+  ]
+}

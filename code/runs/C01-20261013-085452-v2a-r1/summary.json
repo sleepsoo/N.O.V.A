@@ -1,0 +1,426 @@
+{
+  "case_id": "4fa07144-04e5-4116-a18e-88d8a90cc21a",
+  "alias": "C01",
+  "turns": 47,
+  "say": 36,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 24,
+  "skipped_invalid": 0,
+  "doctor_calls": 12,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 21626,
+  "doctor_output_tokens": 16676,
+  "seconds": 489.2,
+  "diagnosis": "졸피뎀 사용장애(진정제·수면제·항불안제 사용장애) (Sedative, hypnotic, or anxiolytic use disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "졸피뎀 사용장애(진정제·수면제·항불안제 사용장애)",
+      "diagnosis_en": "Sedative, hypnotic, or anxiolytic use disorder (zolpidem)",
+      "confidence": 0.95,
+      "_effort": "high"
+    }
+  ],
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "불면",
+    "categories": [
+      "drug",
+      "sleep"
+    ],
+    "answered": [],
+    "empathy": "잠을 못 주무셔서 많이 힘드셨겠어요."
+  },
+  "explained": [
+    "졸피뎀 사용장애입니다.",
+    "졸피뎀을 조절하기 어렵게 사용하는 상태입니다.",
+    "오래 많이 복용해 약에 의존한 상태입니다.",
+    "잠이 걱정돼도 급히 끊지 않고 감량을 계획합니다.",
+    "혈구·전해질·간·신장 검사와 심전도를 합니다.",
+    "오늘 추가 처방 없이 응급실에서 감량을 평가합니다.",
+    "보호자와 가고 운전·수면유도제 병용은 피하세요.",
+    "경련·혼돈·환각·숨참·심한 두근거림은 바로 오세요.",
+    "3~7일 내 재진하고 매일 같은 시각에 일어나세요.",
+    "더 궁금하신 점 있으세요?",
+    "네, 불면 인지행동치료와 수면습관 조절이 있습니다."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 534,
+      "out": 57,
+      "finish": "stop",
+      "sec": 1.3
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1370,
+      "out": 1646,
+      "finish": "stop",
+      "sec": 21.6
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1512,
+      "out": 1099,
+      "finish": "stop",
+      "sec": 14.4
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3080,
+      "out": 358,
+      "finish": "stop",
+      "sec": 5.7
+    },
+    {
+      "tag": "dx1-high",
+      "effort": "high",
+      "max_tokens": 8000,
+      "in": 2163,
+      "out": 2589,
+      "finish": "stop",
+      "sec": 28.7
+    },
+    {
+      "tag": "plan",
+      "effort": "high",
+      "max_tokens": 8000,
+      "in": 2225,
+      "out": 3004,
+      "finish": "stop",
+      "sec": 38.7
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 3142,
+      "out": 4392,
+      "finish": "stop",
+      "sec": 41.6
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 715,
+      "out": 118,
+      "finish": "stop",
+      "sec": 3.5
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 879,
+      "out": 212,
+      "finish": "stop",
+      "sec": 3.8
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2171,
+      "out": 1694,
+      "finish": "stop",
+      "sec": 21.3
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1348,
+      "out": 639,
+      "finish": "stop",
+      "sec": 7.9
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2487,
+      "out": 868,
+      "finish": "stop",
+      "sec": 8.3
+    }
+  ],
+  "phase_times": {
+    "structure": 1.3,
+    "interview": 179.6,
+    "examine": 78.3,
+    "diagnose_vote": 28.7,
+    "plan": 38.7,
+    "explain": 124.9,
+    "S": 29.2,
+    "S-verify": 0.0,
+    "A": 8.3
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.onset",
+      "pol": "?",
+      "detail": "7년 전부터",
+      "label": "Onset"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.course",
+      "pol": "+",
+      "detail": "약 먹는 양도 늘었어요",
+      "label": "경과"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.impact",
+      "pol": "+",
+      "detail": "낮에 졸아 집안일 힘듦",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 5,
+      "key": "pmh.meds",
+      "pol": "?",
+      "detail": "졸피뎀 10mg/알",
+      "label": "약 이름·용량"
+    },
+    {
+      "turn": 6,
+      "key": "pmh.meds",
+      "pol": "?",
+      "detail": "하루 5~6알, 많으면 7알",
+      "label": "복용량"
+    },
+    {
+      "turn": 7,
+      "key": "pmh.meds",
+      "pol": "?",
+      "detail": "밤11시·새벽2~3시, 가끔 낮",
+      "label": "복용 시각"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Anxiety",
+      "pol": "+",
+      "detail": "약 안 먹으면 불안",
+      "label": "금단 증상"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Tremor",
+      "pol": "+",
+      "detail": "약 안 먹으면 손 떨림",
+      "label": "금단 증상"
+    },
+    {
+      "turn": 8,
+      "key": "ros.Sleep disturbance",
+      "pol": "+",
+      "detail": "약 안 먹으면 잠 못 잠",
+      "label": "금단 증상"
+    },
+    {
+      "turn": 9,
+      "key": "ros.Sleep disturbance",
+      "pol": "+",
+      "detail": "약 없이는 잠 못 잠",
+      "label": "입면 장애"
+    },
+    {
+      "turn": 10,
+      "key": "hpi.prior_visit",
+      "pol": "?",
+      "detail": "줄이거나 끊기 여러 번 실패",
+      "label": "감량 시도"
+    },
+    {
+      "turn": 11,
+      "key": "ros.Sleep disturbance",
+      "pol": "+",
+      "detail": "두세 시간 뒤 깸",
+      "label": "수면 유지 장애"
+    },
+    {
+      "turn": 12,
+      "key": "ros.other:주간 졸림",
+      "pol": "+",
+      "detail": "낮에 졸림",
+      "label": "주간 졸림"
+    },
+    {
+      "turn": 12,
+      "key": "ros.other:멍함",
+      "pol": "+",
+      "detail": "많이 멍함",
+      "label": "주간 졸림"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.meds",
+      "pol": "?",
+      "detail": "약국 수면유도제 가끔 병용",
+      "label": "다른 약 병용"
+    },
+    {
+      "turn": 14,
+      "key": "ros.other:경련",
+      "pol": "-",
+      "detail": "경련한 적 없음",
+      "label": "적응형"
+    },
+    {
+      "turn": 15,
+      "key": "ros.other:깨우기 어려움",
+      "pol": "-",
+      "detail": "그런 적 없음",
+      "label": "적응형"
+    },
+    {
+      "turn": 16,
+      "key": "ros.Fatigue",
+      "pol": "+",
+      "detail": "낮에 피곤함",
+      "label": "Fatigue/Weakness"
+    },
+    {
+      "turn": 16,
+      "key": "ros.General weakness",
+      "pol": "+",
+      "detail": "기운 없음",
+      "label": "Fatigue/Weakness"
+    },
+    {
+      "turn": 17,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "약 안 먹으면 두근거림",
+      "label": "Palpitation"
+    },
+    {
+      "turn": 18,
+      "key": "ros.Headache",
+      "pol": "+",
+      "detail": "약 안 먹으면 머리 아픔",
+      "label": "Headache"
+    },
+    {
+      "turn": 19,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 19,
+      "key": "pmh.HTN",
+      "pol": "+",
+      "detail": "암로디핀 복용",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 19,
+      "key": "pmh.meds",
+      "pol": "?",
+      "detail": "암로디핀",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 20,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "다른 지병 없음",
+      "label": "기타 지병·수술"
+    },
+    {
+      "turn": 20,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "수술력 없음",
+      "label": "기타 지병·수술"
+    },
+    {
+      "turn": 21,
+      "key": "fh.other:어머니 치매",
+      "pol": "+",
+      "detail": "어머니는 치매",
+      "label": "FH"
+    },
+    {
+      "turn": 21,
+      "key": "fh.other:아버지 심장병",
+      "pol": "+",
+      "detail": "아버지는 심장병",
+      "label": "FH"
+    },
+    {
+      "turn": 22,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "평생 안 피움",
+      "label": "Smoking"
+    },
+    {
+      "turn": 23,
+      "key": "sh.other:약 추가 복용 충동",
+      "pol": "+",
+      "detail": "불안하면 더 먹고 싶음",
+      "label": "적응형"
+    },
+    {
+      "turn": 24,
+      "key": "ice.concern",
+      "pol": "?",
+      "detail": "약 줄이면 잠 못 잘까 두려움",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 25,
+      "key": "ice.expectation",
+      "pol": "?",
+      "detail": "수면제 처방을 받고 싶음",
+      "label": "기대(ICE)"
+    },
+    {
+      "turn": 21,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "어머니는 치매, 아버지는 심장병요",
+      "label": "FH"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "6812660bf2954a31d2a653bc5c787376791019846148b1b7c9b8c5f0659ae51d",
+    "score_status": "not_scored",
+    "turn": 47
+  },
+  "error": null,
+  "session_id": "2e8ef90f-d913-4097-9638-05f48c8bc590",
+  "api": "https://nova.snubhai.org"
+}

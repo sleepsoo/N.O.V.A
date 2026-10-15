@@ -1,0 +1,396 @@
+{
+  "case_id": "C01",
+  "alias": "C01",
+  "turns": 39,
+  "say": 25,
+  "exam": 14,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 14,
+  "skipped_invalid": 0,
+  "doctor_calls": 6,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 10569,
+  "doctor_output_tokens": 5325,
+  "seconds": 478.0,
+  "diagnosis": "범불안장애 (Generalized Anxiety Disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia",
+      "mood"
+    ],
+    "empathy": "불면이 심하시겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "범불안장애: 죠기가 두려워서 밤마다 깨워요",
+    "상담 치료와 약으로 좋아질 수 있어요.",
+    "분비된 호르몬 균형이 깨져 혈압과 심박이 변동돼요",
+    "수면제 복용이 늘어져 일상에 지장이 생겼습니다",
+    "심전도로 부정맥이 있는지 확인합니다",
+    "주로 신경전달물질 불균형과 생활습관으로 발생합니다",
+    "1~2주 뒤 결과 보고 다음 치료를 정해요.",
+    "가슴이 두근거림·가슴 통증·복통면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 703,
+      "out": 267,
+      "finish": "stop",
+      "sec": 16.8
+    },
+    {
+      "tag": "plan_v4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2708,
+      "out": 405,
+      "finish": "stop",
+      "sec": 20.3
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1219,
+      "out": 2154,
+      "finish": "stop",
+      "sec": 100.3
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2214,
+      "out": 1324,
+      "finish": "stop",
+      "sec": 63.8
+    },
+    {
+      "tag": "plan_say4",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1796,
+      "out": 894,
+      "finish": "stop",
+      "sec": 42.2
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1929,
+      "out": 281,
+      "finish": "stop",
+      "sec": 12.8
+    }
+  ],
+  "phase_times": {
+    "intake": 16.8,
+    "interview": 130.1,
+    "examine": 41.2,
+    "facts": 100.3,
+    "dx": 63.9,
+    "plan_say": 42.2,
+    "explain": 70.6,
+    "effective": 0.0,
+    "S": 12.8
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "62세",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여성",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면증",
+      "pol": "+",
+      "detail": "잠 못 자서 방문",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "처방요청",
+      "pol": "+",
+      "detail": "수면제 처방 요청",
+      "id": "F4"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불안감",
+      "pol": "+",
+      "detail": "밤새 뒤척임, 온몸 불안",
+      "id": "F5"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "ros.Palpitation",
+      "label": "흉부 무시",
+      "pol": "+",
+      "detail": "가슴이 두근거림",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "식은땀",
+      "pol": "+",
+      "detail": "식은땀",
+      "id": "F7"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "ros.Headache",
+      "label": "두통",
+      "pol": "+",
+      "detail": "머리 아픔",
+      "id": "F8"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "손떨림",
+      "pol": "+",
+      "detail": "손이 떨림",
+      "id": "F9"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "ros.Palpitation",
+      "label": "흉부 무시",
+      "pol": "+",
+      "detail": "가슴이 두근거름",
+      "id": "F10"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "멍함",
+      "pol": "+",
+      "detail": "낮에 멍함",
+      "id": "F11"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "집중력 감소",
+      "pol": "+",
+      "detail": "집중 안 되고",
+      "id": "F12"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "짜증",
+      "pol": "+",
+      "detail": "짜증 잦음",
+      "id": "F13"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "집중력 감소",
+      "pol": "+",
+      "detail": "집중 안 되고",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제명",
+      "pol": "+",
+      "detail": "스틸녹스",
+      "id": "F15"
+    },
+    {
+      "turn": 8,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제 복용",
+      "pol": "+",
+      "detail": "네 알 섭취, 새벽 두 알 추가",
+      "id": "F16"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "경련력",
+      "pol": "-",
+      "detail": "경련 없음",
+      "id": "F17"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "손톱 금속광",
+      "pol": "-",
+      "detail": "그런 건 없어요",
+      "id": "F18"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "스트레스",
+      "pol": "+",
+      "detail": "가족 갈등",
+      "id": "F19"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "고혈압 존재",
+      "id": "F20"
+    },
+    {
+      "turn": 13,
+      "sec": "fh",
+      "key": "other",
+      "label": "아버지 심장병",
+      "pol": "+",
+      "detail": "아버지 심장병",
+      "id": "F21"
+    },
+    {
+      "turn": 13,
+      "sec": "fh",
+      "key": "other",
+      "label": "어머니 치매",
+      "pol": "+",
+      "detail": "어머니 치매",
+      "id": "F22"
+    },
+    {
+      "turn": 14,
+      "sec": "hpi",
+      "key": "other",
+      "label": "카페인 섭취",
+      "pol": "+",
+      "detail": "하루 한두 잔",
+      "id": "F23"
+    },
+    {
+      "turn": 15,
+      "sec": "ice",
+      "key": "other",
+      "label": "수면제로 인한 일상 문제",
+      "pol": "+",
+      "detail": "수면제로 일상 문제 발생",
+      "id": "F24"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "8d526cb83ec24e5a487d3d3d3c866816804b51c879b665964daefe39c523a716",
+    "score_status": "not_scored",
+    "turn": 39
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "가슴이 두근거리고, 가슴이 두근거려요."
+  },
+  "exam_plan": [
+    "vitals",
+    "orthostatic",
+    "general",
+    "mental",
+    "conj",
+    "thyroid",
+    "thyroid_bruit",
+    "lung",
+    "heart",
+    "abd_insp",
+    "liver_spleen",
+    "abd_palp",
+    "periph",
+    "cognitive"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 27,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 6,
+  "sim_doctor_calls": 6,
+  "sim_doctor_input_tokens": 10569,
+  "sim_doctor_output_tokens": 5325,
+  "sim_turns": 39,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 26,
+  "grade_scores": {
+    "정보수집": 17,
+    "진단추론": 1,
+    "검사·추적": 0,
+    "안전": 0,
+    "의사소통": 3,
+    "효율": 5
+  }
+}

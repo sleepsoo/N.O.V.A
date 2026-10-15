@@ -1,0 +1,382 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 힘드셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "호흡곤란에 대해 자세히 말씀해 주세요",
+    "reply": "집 안에서 조금만 움직여도 숨이 차요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "작년처럼 입원해야 하는 건 아닌지 걱정이 된다.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "열이 조금 나고 으슬으슬 춥기도 해요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "가래가 누렇고 끈적해요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "가슴 통증도 있으세요?",
+    "reply": "가슴이 쥐어짜듯 아픈 적은 없어요.",
+    "phase": "interview",
+    "qid": "dy_chest",
+    "label": "흉통"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "누우면 숨이 더 차세요?",
+    "reply": "누우면 숨이 더 차서 베개를 하나 더 받치고 잤어요.",
+    "phase": "interview",
+    "qid": "dy_orthop",
+    "label": "기좌호흡"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "다리가 붓나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "dy_edema",
+    "label": "부종"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "숨 쉴 때 쌕쌕 소리가 나나요?",
+    "reply": "숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.",
+    "phase": "interview",
+    "qid": "dy_wheeze",
+    "label": "천명"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨가 있으세요?",
+    "reply": "고혈압이 있어요. 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "기존 질환에 대해 자세히 말씀해 주세요",
+    "reply": "고혈압이 있어요. 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요",
+    "reply": "혈압약을 하루 한 알 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "지난번 입원에 대해 자세히 말씀해 주세요",
+    "reply": "작년 겨울에 감기 끝에 숨이 차서 한 번 응급실에 갔고, 사흘 입원했다.",
+    "phase": "interview",
+    "qid": "hpi_prior",
+    "label": "이전 진료"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "숨이 갑자기 차기 시작했나요?",
+    "reply": "사흘 전부터 숨이 많이 차고 기침과 가래가 심해져서 병원에 오게 되었다.",
+    "phase": "interview",
+    "qid": "dy_onset",
+    "label": "발생"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "자다가 숨이 차서 깬 적 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "dy_pnd",
+    "label": "야간 호흡곤란"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "가래에 피가 섞인 적 있나요?",
+    "reply": "가래에 피가 섞여 나온 적은 없어요.",
+    "phase": "interview",
+    "qid": "cf_hemop",
+    "label": "객혈"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "천식이나 알레르기가 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "cf_asthma",
+    "label": "천식·알레르기"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "기침과 가래에 대해 자세히 말씀해 주세요.",
+    "reply": "기침이 부쩍 늘었고 가래가 많아졌어요. 가래는 누렇고 끈적해요.",
+    "phase": "interview",
+    "qid": "dy_cough",
+    "label": "기침·가래"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "약 알레르기가 있으세요?",
+    "reply": "약 알레르기는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "흡입기를 더 세게 바꿔야 하는지, 담배는 정말 다 끊어야 하는지 궁금해요",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(+), 앉은 자세에서 입술 오므린 호흡(+), 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "경정맥 팽대 관찰하겠습니다",
+    "reply": "경정맥 팽창(-), 45도에서 JVP 3cm",
+    "phase": "exam",
+    "qid": "jvp",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "흉곽 시진하겠습니다",
+    "reply": "전후:좌우 1:1.2 술통형 흉곽(+), 보조호흡근 사용(+) 경도, 늑간 함몰(-)",
+    "phase": "exam",
+    "qid": "chest_insp",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "호흡음 감소(+/+), 호기 연장(+), 호기성 천명음(+/+) 미만성, 수포음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "흉부 타진하겠습니다",
+    "reply": "양측 과공명음(+/+), 탁음(-/-)",
+    "phase": "exam",
+    "qid": "chest_perc",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "촉각 진탕 확인하겠습니다",
+    "reply": "자세성 떨림(-/-)",
+    "phase": "exam",
+    "qid": "fremitus",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 104회/분, S3(-), 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "종아리 압통 확인하겠습니다",
+    "reply": "압통(-/-), 둘레 차이(-)",
+    "phase": "exam",
+    "qid": "calf",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "모세혈관 재충혈 확인하겠습니다",
+    "reply": "모세혈관 재충혈 확인 (Capillary refill test) | 2초 이하(+)",
+    "phase": "exam",
+    "qid": "cap_refill",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "만성폐쇄성폐질환 급성 악화로 보여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "숨참과 누런 가래가 늘고 쌕쌕거려요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_meaning",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "입원 여부는 산소와 검사 결과로 판단해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "엑스레이로 폐렴과 폐부종을 살펴봐요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "결과에 따라 흡입제와 다른 치료를 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "흡입 뒤 떨리거나 두근거리면 알려주세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment2",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "가능하면 이틀 안에 다시 숨참을 확인해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_recheck",
+    "label": ""
+  }
+]

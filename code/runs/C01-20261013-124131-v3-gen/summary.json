@@ -1,0 +1,457 @@
+{
+  "case_id": "4fa07144-04e5-4116-a18e-88d8a90cc21a",
+  "alias": "C01",
+  "turns": 39,
+  "say": 28,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 19,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 23665,
+  "doctor_output_tokens": 8756,
+  "seconds": 316.5,
+  "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "수면제 사용장애로 보여요.",
+    "확인 후 천천히 줄이는 방법을 정해요.",
+    "갑자기 끊거나 더 드시지 마세요.",
+    "졸릴 땐 운전과 위험한 일은 피하세요.",
+    "수면 습관 교정과 인지행동치료를 같이 해요.",
+    "술이나 약국 수면제는 함께 드시면 안 돼요.",
+    "경련·환각·혼란면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 628,
+      "out": 111,
+      "finish": "stop",
+      "sec": 2.4
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3262,
+      "out": 957,
+      "finish": "stop",
+      "sec": 13.3
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3511,
+      "out": 611,
+      "finish": "stop",
+      "sec": 7.3
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3616,
+      "out": 730,
+      "finish": "stop",
+      "sec": 10.1
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 2988,
+      "out": 623,
+      "finish": "stop",
+      "sec": 7.5
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1631,
+      "out": 1560,
+      "finish": "stop",
+      "sec": 15.7
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2335,
+      "out": 2241,
+      "finish": "stop",
+      "sec": 22.4
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3026,
+      "out": 1312,
+      "finish": "stop",
+      "sec": 13.3
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2668,
+      "out": 611,
+      "finish": "stop",
+      "sec": 6.4
+    }
+  ],
+  "phase_times": {
+    "intake": 2.4,
+    "interview": 146.7,
+    "examine": 56.8,
+    "facts": 15.7,
+    "dx": 22.4,
+    "plan_say": 13.4,
+    "explain": 52.4,
+    "effective": 0.1,
+    "S": 6.5
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성명",
+      "pol": "?",
+      "detail": "박선희",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "예순두 살",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "여자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면 불편",
+      "pol": "+",
+      "detail": "잠을 잘 못 잠",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "ice",
+      "key": "other",
+      "label": "수면제 처방 요청",
+      "pol": "?",
+      "detail": "수면제 처방 원함",
+      "id": "F5"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면 기간",
+      "pol": "?",
+      "detail": "7년 전부터",
+      "id": "F6"
+    },
+    {
+      "turn": 3,
+      "sec": "ice",
+      "key": "other",
+      "label": "복용량 증가 걱정",
+      "pol": "+",
+      "detail": "약 먹는 양이 자꾸 늘어 걱정",
+      "id": "F7"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "낮 졸림",
+      "pol": "+",
+      "detail": "낮에도 졸림",
+      "id": "F8"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "멍함",
+      "pol": "+",
+      "detail": "낮에도 멍함",
+      "id": "F9"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기억력 저하",
+      "pol": "+",
+      "detail": "기억력이 떨어진 것 같음",
+      "id": "F10"
+    },
+    {
+      "turn": 6,
+      "sec": "meds",
+      "key": "other",
+      "label": "남은 수면제",
+      "pol": "?",
+      "detail": "스무 알 정도",
+      "id": "F11"
+    },
+    {
+      "turn": 7,
+      "sec": "meds",
+      "key": "other",
+      "label": "남편 약 관리 가능",
+      "pol": "+",
+      "detail": "남편이 맡아줄 수 있음",
+      "id": "F12"
+    },
+    {
+      "turn": 8,
+      "sec": "meds",
+      "key": "other",
+      "label": "야간 수면제",
+      "pol": "?",
+      "detail": "밤엔 4알",
+      "id": "F13"
+    },
+    {
+      "turn": 8,
+      "sec": "meds",
+      "key": "other",
+      "label": "새벽 추가 복용",
+      "pol": "?",
+      "detail": "깨면 1~2알 더",
+      "id": "F14"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제 복용 기간",
+      "pol": "?",
+      "detail": "7년 전부터",
+      "id": "F15"
+    },
+    {
+      "turn": 10,
+      "sec": "psych",
+      "key": "other",
+      "label": "중단 시 불면",
+      "pol": "+",
+      "detail": "약 안 먹으면 잠이 안 옴",
+      "id": "F16"
+    },
+    {
+      "turn": 10,
+      "sec": "psych",
+      "key": "other",
+      "label": "중단 시 불안",
+      "pol": "+",
+      "detail": "온몸이 불안함",
+      "id": "F17"
+    },
+    {
+      "turn": 11,
+      "sec": "meds",
+      "key": "other",
+      "label": "감량·중단 시도",
+      "pol": "?",
+      "detail": "여러 번 했지만 실패",
+      "id": "F18"
+    },
+    {
+      "turn": 12,
+      "sec": "meds",
+      "key": "other",
+      "label": "처방 기관",
+      "pol": "?",
+      "detail": "내과, 신경과, 정신과 여러 곳",
+      "id": "F19"
+    },
+    {
+      "turn": 13,
+      "sec": "meds",
+      "key": "other",
+      "label": "암로디핀",
+      "pol": "?",
+      "detail": "암로디핀 복용",
+      "id": "F20"
+    },
+    {
+      "turn": 13,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면유도제",
+      "pol": "?",
+      "detail": "가끔 복용",
+      "id": "F21"
+    },
+    {
+      "turn": 14,
+      "sec": "meds",
+      "key": "other",
+      "label": "오늘 낮 복용",
+      "pol": "-",
+      "detail": "아직 안 먹음",
+      "id": "F22"
+    },
+    {
+      "turn": 15,
+      "sec": "meds",
+      "key": "other",
+      "label": "중단 시 경련",
+      "pol": "-",
+      "detail": "그런 적 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 15,
+      "sec": "meds",
+      "key": "other",
+      "label": "중단 시 헛것",
+      "pol": "-",
+      "detail": "그런 적 없음",
+      "id": "F24"
+    },
+    {
+      "turn": 16,
+      "sec": "meds",
+      "key": "other",
+      "label": "현재 야간 복용량",
+      "pol": "?",
+      "detail": "밤4알",
+      "id": "F25"
+    },
+    {
+      "turn": 16,
+      "sec": "meds",
+      "key": "other",
+      "label": "현재 새벽 복용량",
+      "pol": "?",
+      "detail": "새벽1~2알",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "meds",
+      "key": "other",
+      "label": "현재 낮 복용량",
+      "pol": "?",
+      "detail": "낮 가끔1알",
+      "id": "F27"
+    },
+    {
+      "turn": 17,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용 후 기억 소실",
+      "pol": "+",
+      "detail": "먹고 나면 기억 안 날 때 있음",
+      "id": "F28"
+    },
+    {
+      "turn": 18,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제·술 병용",
+      "pol": "-",
+      "detail": "같이 먹은 적 없음",
+      "id": "F29"
+    },
+    {
+      "turn": 19,
+      "sec": "meds",
+      "key": "other",
+      "label": "중단 시 헛것",
+      "pol": "-",
+      "detail": "그런 적 없음",
+      "id": "F30"
+    },
+    {
+      "turn": 20,
+      "sec": "ice",
+      "key": "other",
+      "label": "감량 가능 여부 궁금",
+      "pol": "?",
+      "detail": "약을 줄일 수 있을지 궁금",
+      "id": "F31"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "4a17b4da470f307d8254d6cc713c4f04f31d8e0a36516f8280b0b074da7b72ad",
+    "score_status": "not_scored",
+    "turn": 39
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "경련이 나면 바로 올게요.",
+    "ok": true
+  },
+  "exam_plan": [
+    "sedation",
+    "mental",
+    "cognitive",
+    "gait",
+    "orthostatic",
+    "spo2",
+    "post_tremor",
+    "affect",
+    "insight",
+    "anthro",
+    "pharynx"
+  ],
+  "error": null,
+  "session_id": "f09d56f4-ac4b-4344-80eb-2f564496724a",
+  "api": "https://nova.snubhai.org"
+}

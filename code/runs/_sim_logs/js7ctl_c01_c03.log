@@ -1,0 +1,6 @@
+시작: ../공개 샘플데이터/C01 → /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/_sim_logs/C01-js7ctl.log
+시작: ../공개 샘플데이터/C03 → /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/_sim_logs/C03-js7ctl.log
+완료: ../공개 샘플데이터/C01 (exit 0)
+완료: ../공개 샘플데이터/C03 (exit 0)
+C01: 턴 33 거절 0 하나씩 0 절단 1 doctor local:10 luna 0 dx=벤조디아제핀 사용장애 (Benzodiazepine Use Disorder) hit=False grade=None
+C03: 턴 31 거절 0 하나씩 0 절단 0 doctor local:10 luna 0 dx=가족성 저신장 (Familial short stature) hit=False grade=None

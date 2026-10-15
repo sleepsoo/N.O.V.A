@@ -1,0 +1,406 @@
+{
+  "case_id": "C10",
+  "alias": "C10",
+  "turns": 31,
+  "say": 23,
+  "exam": 8,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 16,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 20335,
+  "doctor_output_tokens": 10793,
+  "seconds": 613.0,
+  "diagnosis": "과다 갑상선 기능 항진증 (Hyperthyroidism)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "체중 감소",
+    "request": "",
+    "categories": [
+      "weight_loss"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "현재 갑상선 기능이 과다일 가능성이 높습니다.",
+    "호르몬이 많아 체중이 빠지고 두근거려요.",
+    "검사로 진짜 원인을 찾아요.",
+    "베타 차단제는 천식·서맥이 없을 때만 복용해 주세요.",
+    "숨참·불규칙한 맥·고열·혼동 시 바로 오세요.",
+    "1~2주 후 결과 보고 약을 시작할게요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 784,
+      "out": 233,
+      "finish": "stop",
+      "sec": 11.1
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3149,
+      "out": 496,
+      "finish": "stop",
+      "sec": 22.6
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 906,
+      "out": 148,
+      "finish": "stop",
+      "sec": 7.2
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1369,
+      "out": 2467,
+      "finish": "stop",
+      "sec": 114.9
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1391,
+      "out": 3564,
+      "finish": "stop",
+      "sec": 165.9
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2248,
+      "out": 2062,
+      "finish": "stop",
+      "sec": 96.7
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 4202,
+      "out": 542,
+      "finish": "stop",
+      "sec": 25.1
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 4223,
+      "out": 620,
+      "finish": "stop",
+      "sec": 27.6
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 246,
+      "out": 288,
+      "finish": "stop",
+      "sec": 13.6
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1817,
+      "out": 373,
+      "finish": "stop",
+      "sec": 17.2
+    }
+  ],
+  "phase_times": {
+    "intake": 11.1,
+    "interview": 96.1,
+    "examine": 13.3,
+    "facts": 280.8,
+    "dx": 96.7,
+    "plan_say": 66.3,
+    "explain": 31.4,
+    "S": 17.2
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "+",
+      "detail": "최윤정",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여자",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "32세",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "키",
+      "pol": "+",
+      "detail": "164cm",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기초 체중",
+      "pol": "+",
+      "detail": "56kg",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "최근 체중",
+      "pol": "+",
+      "detail": "49kg",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중 감소",
+      "pol": "+",
+      "detail": "7kg 3개월",
+      "id": "F7"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "ros.Anorexia",
+      "label": "식욕 감소",
+      "pol": "-",
+      "detail": "",
+      "id": "F8"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "other",
+      "label": "식욕 증가",
+      "pol": "+",
+      "detail": "",
+      "id": "F9"
+    },
+    {
+      "turn": 2,
+      "sec": "ros",
+      "key": "other",
+      "label": "더위 타기",
+      "pol": "+",
+      "detail": "",
+      "id": "F10"
+    },
+    {
+      "turn": 3,
+      "sec": "ros",
+      "key": "ros.Palpitation",
+      "label": "가슴 두근거림",
+      "pol": "+",
+      "detail": "",
+      "id": "F11"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "other",
+      "label": "불규칙 심박",
+      "pol": "-",
+      "detail": "",
+      "id": "F12"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "손 떨림",
+      "pol": "+",
+      "detail": "",
+      "id": "F13"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "형태/빈도",
+      "pol": "+",
+      "detail": "변은 하루에 이에서 삼회 정도이고 묽",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "other",
+      "label": "다음 정도",
+      "pol": "-",
+      "detail": "",
+      "id": "F15"
+    },
+    {
+      "turn": 8,
+      "sec": "fh",
+      "key": "fh.HTN",
+      "label": "가족고혈압",
+      "pol": "+",
+      "detail": "",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "fh",
+      "key": "fh.DM",
+      "label": "가족당뇨",
+      "pol": "+",
+      "detail": "",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "ice",
+      "key": "other",
+      "label": "걱정 병",
+      "pol": "+",
+      "detail": "대량 체중 감소 및 증상",
+      "id": "F18"
+    },
+    {
+      "turn": 10,
+      "sec": "ice",
+      "key": "other",
+      "label": "걱정 병",
+      "pol": "+",
+      "detail": "대량 체중 감소 및 증상",
+      "id": "F19"
+    },
+    {
+      "turn": 11,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "담배 흡연",
+      "pol": "-",
+      "detail": "",
+      "id": "F20"
+    },
+    {
+      "turn": 12,
+      "sec": "sh",
+      "key": "other",
+      "label": "술 섭취",
+      "pol": "+",
+      "detail": "월 1–2회 가벼운",
+      "id": "F21"
+    },
+    {
+      "turn": 13,
+      "sec": "meds",
+      "key": "other",
+      "label": "약/영양제",
+      "pol": "-",
+      "detail": "",
+      "id": "F22"
+    },
+    {
+      "turn": 14,
+      "sec": "pmh",
+      "key": "other",
+      "label": "기타 지병",
+      "pol": "-",
+      "detail": "",
+      "id": "F23"
+    },
+    {
+      "turn": 15,
+      "sec": "women",
+      "key": "other",
+      "label": "생리주기 변화",
+      "pol": "+",
+      "detail": "짧아지고 양 감소",
+      "id": "F24"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "767ae1f058d411a6ff6508eabc2bafbcd1468fdce81862a62524908841314873",
+    "score_status": "not_scored",
+    "turn": 31
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 걱정되셨겠어요. 식사량은 예전과 비교해 어떠세요?",
+      "effective": "식사량은 예전과 비교해 어떠세요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C10",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 24,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 10,
+  "sim_doctor_calls": 10,
+  "sim_doctor_input_tokens": 20335,
+  "sim_doctor_output_tokens": 10793,
+  "sim_turns": 31,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_js7/run.py"
+}

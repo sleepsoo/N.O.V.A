@@ -1,0 +1,6 @@
+시작: synthetic_cases/S01 → ../code_v7/runs/_sim_logs/S01-v7a.log
+시작: synthetic_cases/S06 → ../code_v7/runs/_sim_logs/S06-v7a.log
+완료: synthetic_cases/S01 (exit 0)
+완료: synthetic_cases/S06 (exit 0)
+S01: 턴 42 거절 1 하나씩 0 절단 1 doctor local:10 luna 0 dx=급성 충수염 (Acute appendicitis) hit=True grade=64
+S06: 턴 41 거절 1 하나씩 0 절단 1 doctor local:7 luna 0 dx=2형 당뇨병 (Type 2 Diabetes Mellitus) hit=True grade=42

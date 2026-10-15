@@ -1,0 +1,93 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  12.5s] llm[intake] low out=260 finish=stop 12.4s
+[  12.5s] intake: {'age': 6, 'sex': 'M', 'pediatric': True, 'informant': '어머님', 'cc': '키가 작다', 'request': '', 'categories': ['growth'], 'empathy': '자꾸 걱정이 되셨겠어요.', 'answered': []} diffs=['저신장(Short stature)', '유전형 성장지연(Hypochondroplasia)', '성장호르몬 저하(Hypopituitarism)', '영양실태 문제(Nutritional deficiency)', '내분비계 이상(Endocrine disorder)']
+[  12.5s] checklist: 32 items, covered=['hpi_course', 'hpi_onset']
+[  15.0s] turn 1 SAY: 자꾸 걱정이 되셨겠어요. -> 네, 알겠습니다.
+[  18.3s] turn 2 SAY: 키가 작다에 대해 자세히 말씀해 주세요 -> 키가 또래에 비해 많이 작은 것 같아요.
+[  26.8s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 밤에 깨는 일은 거의 없고, 깊게 잘 잔다.
+[  35.1s] turn 4 SAY: 그 밖에 또 불편한 건 없으세요? -> 입원하거나 큰 병을 앓은 적도 없어요.
+[  35.1s] guidelines[iv]: 저신장 (KR_HealthInfo, 2026)
+[  51.5s] llm[plan_v4] low out=354 finish=stop 16.4s
+[  51.5s] v4 plan q bad (pair): 어머니와 아버지 키는 어떻게 되십니까?
+[  51.5s] v4 plan q bad (pair): 관절통이나 다리 비대칭 같은 증상이 있습니까?
+[  51.5s] v4 plan q bad (pair): 팔과 다리 길이가 비슷하신가요?
+[  51.5s] v4 plan: diffs=['저신장 (Short stature)', '유전형 성장지연 (Hypochondroplasia)', '성장호르몬 저하 (Hypopituitarism)', '영양실태 문제 (Nutritional deficiency)', '내분비계 이상 (Endocrine disorder)'] qs=[('free', '식욕이 정상인가요?'), ('free', '다른 성장 수축이 있습니까?')] exams=[('dysmorph', '안면 및 사지 비대칭 및 뼈매우 짧은가 확인', 'high'), ('body_prop', '신체 비율로 사지 비중 파악', 'high'), ('growth_vel', '과거 성장 속도 및 부모 평균 키 산출', 'mid')] thyroid=True
+[  55.3s] turn 5 SAY: 식욕이 정상인가요? -> 식욕도 좋다.
+[  63.2s] turn 6 SAY: 다른 성장 수축이 있습니까? -> 최근 육개월에서 일 년 사이에 키가 별로 크지 않았어요.
+[  67.8s] turn 7 SAY: 입원한 적 있나요? -> 입원하거나 큰 병을 앓은 적도 없어요.
+[  76.3s] turn 8 SAY: 먹는 약이 있나요? -> 복용 중인 약이나 최근 먹었던 약도 없어요.
+[  89.3s] turn 9 SAY: 가족 중에 아픈 분이 있나요? -> 가족 중에 유전 질환이나 호르몬 문제가 없어요.
+[  97.0s] turn 10 SAY: 어린이집 생활은 어떤가요? -> 친구들과 잘 어울리고, 뛰어놀아요.
+[ 101.9s] turn 11 SAY: 출산 때 문제는 없었나요? -> 출생 과정에서 특별한 문제 없었어요.
+[ 104.5s] turn 12 SAY: 발달은 또래와 비슷했나요? -> 언어, 운동, 사회성 모두 또래와 비슷해요.
+[ 110.0s] turn 13 SAY: 오늘 특히 궁금하신 게 있으세요? -> 키가 더 클 수 있는지 궁금해요.
+[ 110.0s] v4 interview done: q=12 turn=13 left=27
+[ 110.0s] v4 exam dropped (rule): growth_vel
+[ 110.0s] v4 exams plan (c8flex, budget 16): spec=['thyroid', 'dysmorph', 'body_prop', 'anthro'] order=['vitals', 'general', 'mental', 'body_prop', 'anthro', 'growth_chart', 'conj', 'dysmorph', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] backups=['tanner', 'striae', 'gait', 'vfield']
+[ 110.0s] turn 14 EXAM: 활력징후 측정하겠습니다 -> 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C
+[ 110.0s] turn 15 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 또래보다 작은 키, 안절부절(-)
+[ 110.0s] turn 16 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 110.0s] turn 17 EXAM: 신체 비율 평가하겠습니다 -> 상·하절 비율 정상, 양팔간격 불균형(-)
+[ 110.0s] turn 18 EXAM: 신체 계측하겠습니다 -> 신장 105cm, 체중 16.5kg, 머리둘레 52cm
+[ 110.0s] turn 19 EXAM: 성장도표 백분위수 확인하겠습니다 -> 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm
+[ 110.0s] turn 20 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 110.0s] turn 21 EXAM: 안면 기형 소견 시진하겠습니다 -> 안면 기형(-), 귀 위치 이상(-/-)
+[ 110.0s] turn 22 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 110.0s] turn 23 EXAM: 흉곽 시진하겠습니다 -> 전후:좌우 1:2, 보조호흡근 사용(-)
+[ 110.0s] turn 24 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 110.0s] turn 25 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 심잡음(-)
+[ 110.0s] turn 26 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-)
+[ 110.0s] turn 27 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 110.0s] turn 28 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)
+[ 110.0s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 110.0s] v4 exams done: ['vitals', 'general', 'mental', 'body_prop', 'anthro', 'growth_chart', 'conj', 'dysmorph', 'thyroid', 'chest_insp', 'lung', 'heart', 'abd_insp', 'liver_spleen', 'abd_palp', 'periph'] refused=[]
+[ 309.9s] llm[facts] medium out=4050 finish=stop 199.9s
+[ 309.9s] facts: 22
+[ 309.9s] guidelines[dx]: 저신장 (KR_HealthInfo, 2026)
+[ 445.8s] llm[dx] medium out=2824 finish=stop 135.9s
+[ 445.8s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: 저신장 (KR_HealthInfo, 2026)
+[ 477.3s] llm[plan_say4] low out=701 finish=stop 31.4s
+[ 477.3s] v4 lines: {'dx': '저신장 가능성이 높아 보여요.', 'options': '검사 결과를 보고 치료 방법을 같이 정해요.', 'link': '말씀하신 증상들이 이 병과 잘 맞아요.', 'concern': '키가 더 클 수 있는지 궁금해요', 'tests': '정확히 확인하려고 피검사를 할게요.', 'caution': '', 'followup': '1~2주 뒤 결과 보고 다음 치료를 정해요.', 'warning': '숨참·흉통·의식 변화·고열 시 바로 오세요.', 'lifestyle': ''} musts=[] emergency=False checks=[{'drop': '저신장 : 성장 과정 중 키가 정상보다 낮음', 'key': 'dx', 'why': 'ending'}, {'drop': '관심 키 : 신장이 낮아 뒤에서 가려지는 듯한 느낌', 'key': 'dx', 'why': 'ending'}, {'drop': '성장호르몬 검사 후 필요 시 치료 검토', 'key': 'options', 'why': 'ending'}, {'drop': '성장에 영향을 주는 영양, 호르몬, 유전의 복합적 요인으로 나타남', 'key': 'link', 'why': 'too_long'}, {'drop': '골연령 X‑선, 혈액 검사', 'key': 'tests', 'why': 'ending'}, {'drop': '충분한 수면과 균형 잡힌 식사', 'key': 'caution', 'why': 'ending'}, {'drop': '정기적 신장·체중 추적', 'key': 'followup', 'why': 'ending'}, {'drop': '가슴이 답답하거나 몸무게 급격히 증가하면 바로 내원', 'key': 'warning', 'why': 'ending'}, {'drop': '매일 10분씩 밝은 자연에서 산책', 'key': 'lifestyle', 'why': 'ending'}]
+[ 481.6s] turn 30 SAY: 저신장 가능성이 높아 보여요. -> 네, 알겠습니다.
+[ 484.8s] turn 31 SAY: 검사 결과를 보고 치료 방법을 같이 정해요. -> 네, 알겠습니다.
+[ 487.3s] turn 32 SAY: 말씀하신 증상들이 이 병과 잘 맞아요. -> 네, 알겠습니다.
+[ 491.8s] turn 33 SAY: 키가 더 클 수 있는지 궁금해요 -> 네, 알겠습니다.
+[ 495.8s] turn 34 SAY: 정확히 확인하려고 피검사를 할게요. -> 네, 알겠습니다.
+[ 504.4s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 그런 건 없어요.
+[ 507.8s] turn 36 SAY: 1~2주 뒤 결과 보고 다음 치료를 정해요. -> 네, 알겠습니다.
+[ 512.5s] turn 37 SAY: 숨참·흉통·의식 변화·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 516.2s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 그런 건 없어요.
+[ 516.2s] v4 explain done: said=7 answers=0 final=True teach={'reply': '그런 건 없어요.'} turns_left=2 (start 11)
+[ 529.2s] llm[S-narr] low out=260 finish=stop 13.0s
+[ 529.2s] v4 S safety net: ['기타 증상: 밤에 깨는 일은 거의 없고, 깊게 잘 잔다', '사회력: 친구들과 잘 어울리고, 뛰어놀아요.', '출생력: 출생 과정에서 특별한 문제 없었어요.']
+[ 529.2s] summary: turns=38 counts={'say': 22, 'exam': 16, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 12, 'truncated': 0} budget={'doctor_calls': 6, 'doctor_ok_calls': 6, 'doctor_invalid': 0, 'doctor_input_tokens': 11561, 'doctor_output_tokens': 8449, 'elapsed_s': 529.1} dx=저신장 (Short Stature)
+C03 gpt-oss-20b: total=78 정보수집=24 진단추론=15 검사·추적=9 안전=15 의사소통=8 효율=7 dx5=4
+- missed_key_questions: ['출생 기록(정확한 체중·저체중 구분 여부)', '예방접종 및 감염력 기록', '식이 과다/소음 관련 정보', '가족의 성장 호르몬 저하/갑상선 이상 여부', '심혈관/신장 등 만성 질환 유무']
+- missed_key_exams: []
+- top_improvements: ['1. 보호자와 환자에게 진단 및 검사 결과를 구체적이고 이해하기 쉬운 언어로 설명.', '2. 주요 과거력(출생, 예방접종, 가족의 장기 질환)을 구조화하여 기록.', '3. 검사 계획을 구체적으로 제시(골연령 X‑ray, 혈액검사)와 일정.', '4. 대화 길이를 줄이고 한 번에 하나의 질문에 집중.', '5. 환자와 보호자에게 재방문 시점과 징후에 대해 정확히 안내하고 확인.']
+{
+ "turns": 38,
+ "say": 22,
+ "exam": 16,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 6,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 6,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 11561,
+ "doctor_output_tokens": 8449,
+ "sim_calls": 22,
+ "seconds": 529.2,
+ "diagnosis": "저신장 (Short Stature)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 78,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-C03-v4c

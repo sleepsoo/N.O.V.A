@@ -1,0 +1,94 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  17.4s] llm[intake] low out=365 finish=stop 17.2s
+[  17.4s] intake: {'age': 24, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '배가 아프다 (오른쪽 아랫배 통증)', 'request': '', 'categories': ['abd_pain', 'gi'], 'empathy': '아무래도 불편하셨겠어요.', 'answered': []} diffs=['급성 충수염', '소장 장폐색', '크론병', '결장염', '대변검열']
+[  17.4s] checklist: 45 items, covered=['hpi_onset']
+[  22.9s] turn 1 SAY: 아무래도 불편하셨겠어요. 배 어디가 아프세요? -> 오른쪽 아랫배가 가장 아파요
+[  28.3s] turn 2 SAY: 어떻게 아프세요? -> 걷거나 기침하면 더 아프다
+[  31.6s] turn 3 SAY: 0~10점이면 몇 점이에요? -> 일곱 점이에요.
+[  38.5s] turn 4 SAY: 식사와 관련해 달라지나요? -> 저녁 일곱 시쯤 먹고 한 시간 뒤에 아프기 시작했어요.
+[  42.2s] turn 5 SAY: 메스껍거나 토하세요? -> 메스껍하고 토했어요.
+[  45.9s] turn 6 SAY: 설사나 변비가 있나요? -> 그런 건 없어요.
+[  51.0s] turn 7 SAY: 변이 검거나 피가 섞이나요? -> 변에 피가 섞이거나 검은 변을 본 적은 없어요.
+[  56.8s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 맹장염이 아닌지 걱정이 돼요.
+[  56.8s] guidelines[iv]: 급성 충수염 (KR_HealthInfo, 2026)
+[  56.8s] guidelines[iv]: 크론병 치료 가이드라인 (KR_Journals, 2012)
+[  77.3s] llm[plan_q] low out=437 finish=stop 20.5s
+[  81.9s] turn 9 SAY: 통증이 옮겨갔나요? -> 네, 오른쪽 아랫배로 옮겨갔어요.
+[  87.6s] turn 10 SAY: 이쪽에서 다른 곳으로 옮겨지나요? -> 통증이 등이나 사타구니, 고환 쪽으로 뻗치지는 않아요.
+[  91.6s] turn 11 SAY: 열이 나나요? -> 삼십칠 도예요.
+[  98.1s] turn 12 SAY: 진통제나 음주를 자주 드시나요? -> 진통제는 먹지 않았어요.
+[ 101.7s] turn 13 SAY: 점점 심해지고 있나요? -> 통증은 계속 있고, 시간이 갈수록 점점 심해지고 있어요.
+[ 114.0s] turn 14 SAY: 이 증상으로 진료받은 적 있으세요? -> 그런 건 없어요.
+[ 118.9s] turn 15 SAY: 담배를 피우세요? -> 하루 반 갑 정도, 오 년째 피워요.
+[ 132.8s] llm[plan_q] low out=309 finish=stop 13.8s
+[ 136.0s] turn 16 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압, 당뇨는 없어요.
+[ 142.4s] turn 17 SAY: 다른 지병 있으세요? -> 고혈압, 당뇨는 없어요.
+[ 148.5s] turn 18 SAY: 수술받은 적 있으세요? -> 지금까지 큰 병을 앓거나 입원한 적이 없고, 수술을 받은 적도 없어요.
+[ 153.8s] turn 19 SAY: 드시는 약이나 영양제 있으세요? -> 평소 먹는 약은 없고, 어제 먹은 소화제 한 알이 전부예요.
+[ 164.0s] turn 20 SAY: 부모님이나 형제분 앓는 병 있나요? -> 아버지는 고혈압으로 약을 드시고, 형은 맹장 수술을 받았어요.
+[ 169.6s] turn 21 SAY: 술은 얼마나 드세요? -> 일주일에 한 번 정도 맥주 두세 잔 마셔요.
+[ 177.5s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 가슴이 아프지 않다.
+[ 177.5s] interview done: asked=22 covered=7 uncovered_p1=[]
+[ 190.6s] llm[exams] low out=273 finish=stop 13.1s
+[ 190.6s] exams plan: ['general', 'abd_insp', 'bowel', 'abd_palp', 'rebound', 'murphy', 'mcburney', 'cva', 'psoas', 'liver_spleen', 'conj']
+[ 190.7s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)
+[ 190.7s] turn 24 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-), 수술 반흔(-)
+[ 190.7s] turn 25 EXAM: 장음 청진하겠습니다 -> 감소 4회/분, 금속성음(-)
+[ 190.7s] turn 26 EXAM: 복부 촉진하겠습니다 -> 우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)
+[ 195.2s] turn 27 EXAM: 반발통 확인하겠습니다 -> 우하복부 반발압통(+)
+[ 200.5s] turn 28 EXAM: 머피 징후 확인하겠습니다 -> 머피 징후(-)
+[ 205.4s] turn 29 EXAM: 맥버니 압통 확인하겠습니다 -> 맥버니점 압통(+)
+[ 210.3s] turn 30 EXAM: 늑척추각 압통 확인하겠습니다 -> 늑척추각 압통(-/-)
+[ 214.8s] turn 31 EXAM: 요근 징후 확인하겠습니다 -> 우측 요근 징후(+)
+[ 214.8s] turn 32 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 214.8s] turn 33 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 385.2s] llm[facts] medium out=3692 finish=stop 170.4s
+[ 385.2s] facts: 31
+[ 385.2s] guidelines[dx]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 385.2s] guidelines[dx]: 크론병 치료 가이드라인 (KR_Journals, 2012)
+[ 485.0s] llm[dx] medium out=2170 finish=stop 99.8s
+[ 485.0s] guidelines[plan-mgmt]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 499.6s] llm[plan_say] low out=316 finish=stop 14.5s
+[ 527.0s] llm[plan_say] low out=592 finish=stop 27.4s
+[ 553.5s] llm[say_fix] low out=558 finish=stop 26.5s
+[ 553.5s] say fixes: ['warning']
+[ 556.2s] turn 34 SAY: 급성 충수염일 가능성이 높아요 -> 네, 알겠습니다.
+[ 559.9s] turn 35 SAY: 맥버니점 압통에 따라 맹장의 염증이 있을 수 있어요 -> 네, 알겠습니다.
+[ 565.0s] turn 36 SAY: 지금 가장 걱정하는 맹장염 여부를 확인하길 원해요 -> 네, 알겠습니다.
+[ 567.5s] turn 37 SAY: CT를 통해 충수염 여부를 정확히 확인할 거예요 -> 네, 알겠습니다.
+[ 574.1s] turn 38 SAY: 결과에 따라 수술 여부를 정해요 -> 네, 알겠습니다.
+[ 576.2s] turn 39 SAY: 1~2주 뒤 결과 보러 다시 오세요 -> 네, 알겠습니다.
+[ 579.1s] turn 40 SAY: 숨참·흉통·의식 변화·고열 시 바로 오세요. -> 네, 알겠습니다.
+[ 584.8s] turn 41 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 열이 37도 이상이면
+[ 646.3s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 그런 건 없어요.
+[ 663.3s] llm[S-narr] low out=386 finish=stop 17.0s
+[ 663.3s] summary: turns=42 counts={'say': 31, 'exam': 11, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22} budget={'doctor_calls': 10, 'doctor_ok_calls': 10, 'doctor_invalid': 0, 'doctor_input_tokens': 18894, 'doctor_output_tokens': 9098, 'elapsed_s': 663.2} dx=급성 충수염 (Acute appendicitis)
+S01 gpt-oss-20b: total=84.5 정보수집=20.5 진단추론=15 검사·추적=10 안전=15 의사소통=12 효율=12 dx5=5
+- missed_key_questions: ['다리 구부리면 완화 질문', '배뇨통·빈뇨 질문', '옆구리 통증 질문', '호흡기 증상 질문', '같은 음식 먹은 사람 배탈 질문', '이전 유사 복통 질문']
+- missed_key_exams: ['서혜부·음낭 진찰']
+- top_improvements: ['1. 다리 구부리면 완화 여부를 확인해 요근 징후와 연계하여 평가', '2. 배뇨통·빈뇨, 옆구리 통증, 호흡기 증상 등 소아외증상 여부를 포함해 부정확성을 제거', '3. 서혜부·음낭 진찰을 환자 소견에 맞추어 직시적 시행', '4. 환자 수준에 맞춘 공감적 사전 설명과 이해 확인 과정 추가', '5. 불필요한 중복 질문을 줄이고 핵심 정보를 압축해 효율성 향상']
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 11,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 10,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 10,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 18894,
+ "doctor_output_tokens": 9098,
+ "sim_calls": 36,
+ "seconds": 663.3,
+ "diagnosis": "급성 충수염 (Acute appendicitis)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 84.5,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-S01-v6ref

@@ -1,0 +1,505 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "많이 아프셨겠어요.",
+      "effective_content": "많이 아프셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "많이 아프셨겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "복통에 대해 자세히 말씀해 주세요",
+      "effective_content": "복통에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "오른쪽 아랫배가 더 아프고 손가락으로 짚을 수 있을 정도예요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "복통에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "맹장염이 아닌지 걱정이 돼요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "걷거나 기침을 하면 오른쪽 아랫배가 울려서 더 아프다.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "그 밖에 또 불편한 건 없으세요?",
+      "effective_content": "그 밖에 또 불편한 건 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "밤새 잠을 거의 못 잤어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "그 밖에 또 불편한 건 없으세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "식사와 복통의 관계에 대해 자세히 말씀해 주세요.",
+      "effective_content": "식사와 복통의 관계에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "저녁 일곱 시쯤 먹고 한 시간 뒤에 배가 아프기 시작했고, 김치찌개를 먹었어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "식사와 복통의 관계에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "메스꺼움이나 구토는 있으세요?",
+      "effective_content": "메스꺼움이나 구토는 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "속이 메스껍고, 오늘 새벽에 한 번 토했어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "메스꺼움이나 구토는 있으세요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "변이 검거나 피가 섞이나요?",
+      "effective_content": "변이 검거나 피가 섞이나요?",
+      "response": {
+        "status": "OK",
+        "content": "검은 변은 없고, 피도 섞이지 않았어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "변이 검거나 피가 섞이나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "소변 볼 때 아프거나 피가 나오나요?",
+      "effective_content": "소변 볼 때 아프거나 피가 나오나요?",
+      "response": {
+        "status": "OK",
+        "content": "소변 볼 때 따갑거나 아프지 않고, 색도 평소와 같아요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "소변 볼 때 아프거나 피가 나오나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요.",
+      "effective_content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요.",
+      "response": {
+        "status": "OK",
+        "content": "평소 먹는 약은 없고, 어제 먹은 소화제 한 알이 전부예요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "드시는 약이나 영양제에 대해 자세히 말씀해 주세요."
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "약 알레르기가 있으세요?",
+      "effective_content": "약 알레르기가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "약 알레르기나 음식 알레르기는 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "약 알레르기가 있으세요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "통증이 0~10점 중 몇 점인가요?",
+      "effective_content": "통증이 0~10점 중 몇 점인가요?",
+      "response": {
+        "status": "OK",
+        "content": "지금 아픈 정도는 십 점 중에 칠 점 정도예요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "통증이 0~10점 중 몇 점인가요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "설사나 변비가 있으세요?",
+      "effective_content": "설사나 변비가 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그 뒤로 대변은 보지 않았고, 설사는 없어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "설사나 변비가 있으세요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "변비는 어떠세요?",
+      "effective_content": "변비는 어떠세요?",
+      "response": {
+        "status": "OK",
+        "content": "그 뒤로 대변은 보지 않았고, 설사는 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "변비는 어떠세요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "열이 나지는 않나요?",
+      "effective_content": "열이 나지는 않나요?",
+      "response": {
+        "status": "OK",
+        "content": "삼십칠 도였어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "열이 나지는 않나요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨에 대해 자세히 말씀해 주세요",
+      "effective_content": "고혈압이나 당뇨에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "고혈압, 당뇨는 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "가족 병력에 대해 자세히 말씀해 주세요",
+      "effective_content": "가족 병력에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "아버지는 고혈압으로 약을 드신다.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "가족 병력에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "수술을 해야 하는지, 수술을 하면 며칠이나 입원해야 하는지 궁금하다.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "EXAM",
+      "content": "복부 시진하겠습니다",
+      "effective_content": "r09",
+      "response": {
+        "status": "OK",
+        "result": "편평, 팽만(-), 수술 반흔(-)",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "EXAM",
+      "content": "장음 청진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "감소 4회/분, 금속성음(-)",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r12",
+      "response": {
+        "status": "OK",
+        "result": "우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "맥버니 압통 확인하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "맥버니점 압통(+)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "반발통 확인하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "우하복부 반발압통(+)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "로브싱 징후 확인하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "로브싱 징후(+)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "요근 징후 확인하겠습니다",
+      "effective_content": "r16",
+      "response": {
+        "status": "OK",
+        "result": "우측 요근 징후(+)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "늑척추각 압통 확인하겠습니다",
+      "effective_content": "r20",
+      "response": {
+        "status": "OK",
+        "result": "늑척추각 압통(-/-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "모세혈관 재충혈 확인하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "모세혈관 재충혈 (Capillary refill) | 2초 이하(+)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "급성 충수염으로 보여요",
+      "effective_content": "급성 충수염으로 보여요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 29,
+        "turns_remaining": 21
+      },
+      "payload": {
+        "content": "급성 충수염으로 보여요"
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "촬영으로 충수 염증과 합병증을 확인해요",
+      "effective_content": "촬영으로 충수 염증과 합병증을 확인해요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      },
+      "payload": {
+        "content": "촬영으로 충수 염증과 합병증을 확인해요"
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "검사 뒤 외과와 수술이나 항생제를 정해요",
+      "effective_content": "검사 뒤 외과와 수술이나 항생제를 정해요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "검사 뒤 외과와 수술이나 항생제를 정해요"
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "통증 악화·열·반복 구토·어지럼증이면 바로 알리세요.",
+      "effective_content": "통증 악화·열·반복 구토·어지럼증이면 바로 알리세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "통증 악화·열·반복 구토·어지럼증이면 바로 알리세요."
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "오늘 응급실에서 검사와 외과 진료를 받으세요",
+      "effective_content": "오늘 응급실에서 검사와 외과 진료를 받으세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "오늘 응급실에서 검사와 외과 진료를 받으세요"
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "통증이 계속 있고, 시간이 갈수록 점점 심해지고 있어요.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "오른쪽 아랫배 한 군데가 제일 아프고 손가락으로 짚을 수 있어요.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "DIAGNOSE",
+      "diagnosis": "급성 충수염 (Acute appendicitis)"
+    }
+  ]
+}

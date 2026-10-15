@@ -1,0 +1,37 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  11.0s] llm[intake] low out=248 finish=stop 10.9s
+[  11.0s] intake: {'age': 6, 'sex': 'M', 'pediatric': True, 'informant': '어머님', 'cc': '키 증가 저하', 'request': '', 'categories': ['growth'], 'empathy': '걱정되셨죠.', 'answered': []} diffs=['선천성 성장 지연(저신장)', '납소 연령 평균 이하 성장동원(임신)', '민감성 성장 완화(영양소 부족)', '후천성 저신장(신장 기형)', '성장호르몬 저하']
+[  11.0s] intake_v8 llm items: {'discriminators': [{'q': '키가 어느 분기에서 급성 부족이 있었나요?', 'label': '성장지기', 'sys': 'peds'}, {'q': '최근 감염이 있었나요?', 'label': '감염', 'sys': 'peds'}, {'q': '가족 중 유사 사례가 있나요?', 'label': '가족력', 'sys': 'peds'}, {'q': '영양 섭취가 충분한가요?', 'label': '영양', 'sys': 'peds'}], 'contra': []}
+[  11.0s] llm discriminators dropped (bank category): ['키가 어느 분기에서 급성 부족이 있었나요?', '최근 감염이 있었나요?', '가족 중 유사 사례가 있나요?', '영양 섭취가 충분한가요?']
+[  18.9s] turn 1 SAY: 안녕하세요, 걱정되셨죠. 아이가 다른 불편한 데는요? -> 두통이 없어요.
+[  18.9s] cpx: main=growth bank=True chosen=['gr_parents', 'gr_late', 'gr_puberty', 'gr_hypo', 'gr_ich', 'gr_record', 'gr_vision', 'gr_cushing', 'gr_weight', 'gr_chronic', 'gr_steroid', 'p_perinatal', 'p_develop', 'p_admit_op', 'p_allergy', 'gr_fh', 'ice'] backlog=['p_birth_size', 'p_daycare', 'p_diet', 'p_sleep', 'gr_constip', 'p_vaccine', 'gr_milk']
+[  22.3s] turn 2 SAY: 부모님 키는 각각 어떻게 되세요? -> 아빠는 백칠십팔 센티미터, 엄마는 백육십오 센티미터예요.
+[  31.7s] turn 3 SAY: 부모님 중 늦게 키가 큰 분 있나요? -> 아빠는 중학교 때까지 제일 작은 편이었고, 고등학교에 들어가서 갑자기 키가 많이 컸어요.
+[  36.7s] turn 4 SAY: 음모나 고환 변화가 있었나요? -> 음모나 고환 크기 변화는 없어요.
+[  40.1s] turn 5 SAY: 잘 지치거나 추위를 타나요? -> 그런 건 없어요.
+[  45.2s] turn 6 SAY: 머리가 자주 아프다고 하나요? -> 그런 건 없어요.
+[  48.9s] turn 7 SAY: 예전에 잰 키 기록이 있나요? -> 두 살 때 키 팔십삼 센티미터, 네 살 때는 키 구십육 센티미터였어요.
+[  52.2s] turn 8 SAY: 눈이 잘 안 보인다고 하나요? -> 그런 건 없어요.
+[  57.4s] turn 9 SAY: 배만 나오거나 얼굴이 둥글어졌나요? -> 그런 건 없어요.
+[  62.5s] turn 10 SAY: 최근 살이 빠지거나 찌진 않았나요? -> 최근 살이 빠지거나 찌진 건 없어요.
+[  68.5s] turn 11 SAY: 천식이나 장, 콩팥 질환 들은 적 있나요? -> 천식은 없어요.
+[  72.6s] turn 12 SAY: 스테로이드나 한약 먹은 적 있나요? -> 아니요, 그런 건 없어요.
+[  75.3s] turn 13 SAY: 임신이나 출산 때 문제가 있었나요? -> 출생 시 특별한 문제는 없었어요.
+[  79.5s] turn 14 SAY: 말이나 걷기는 또래만큼 했나요? -> 언어, 운동, 사회성 모두 또래와 비슷해요.
+[  82.9s] turn 15 SAY: 입원이나 수술한 적 있나요? -> 입원이나 수술은 없어요.
+[  86.2s] turn 16 SAY: 알레르기 있는 게 있나요? -> 그런 건 없어요.
+[  91.5s] turn 17 SAY: 가족 중 키가 작거나 유전병 있나요? -> 아빠는 118cm, 엄마는 165cm이고 가족 중에 키가 작거나 뼈 이상이 있는 사람은 없어요.
+[  98.3s] turn 18 SAY: 어머님이 가장 걱정되시는 게 뭐예요? -> 키가 더 클 수 있는지, 치료가 필요한지 궁금해해요.
+[  98.3s] interview_v8 done: asked=17 items=23 missing_must=[]
+[  98.3s] exams plan v8: ['vitals', 'anthro', 'growth_chart', 'body_prop', 'tanner', 'dysmorph', 'thyroid'] (total=7, backlog=['striae', 'heart', 'lung', 'abd_palp', 'conj', 'periph', 'gait', 'mental', 'liver_spleen', 'vfield'])
+[  98.3s] turn 19 EXAM: 활력징후 측정하겠습니다 -> 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C
+[  98.3s] turn 20 EXAM: 신체 계측하겠습니다 -> 신장 105cm, 체중 16.5kg, 머리둘레 52cm
+[  98.3s] turn 21 EXAM: 성장도표 백분위수 확인하겠습니다 -> 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm
+[  98.3s] turn 22 EXAM: 신체 비율 평가하겠습니다 -> 상·하절 비율 정상, 양팔간격 불균형(-)
+[  98.3s] turn 23 EXAM: 사춘기 성숙도 평가하겠습니다 -> Tanner 1기, 고환 2mL/2mL
+[  98.3s] turn 24 EXAM: 안면 기형 소견 시진하겠습니다 -> 안면 기형(-), 귀 위치 이상(-/-)
+[  98.3s] turn 25 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 447.4s] llm[facts] medium out=7509 finish=stop 349.1s
+[ 447.4s] facts: 40
+[ 447.4s] guidelines[dx]: 저신장 (KR_HealthInfo, 2026)

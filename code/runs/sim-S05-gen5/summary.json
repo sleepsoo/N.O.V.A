@@ -1,0 +1,538 @@
+{
+  "case_id": "S05",
+  "alias": "S05",
+  "turns": 34,
+  "say": 26,
+  "exam": 8,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 18,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 22815,
+  "doctor_output_tokens": 9943,
+  "seconds": 311.2,
+  "diagnosis": "요추 추간판 탈출증에 의한 좌측 S1 신경근병증 (Left S1 radiculopathy due to lumbar disc herniation)",
+  "accepted_diagnoses": [
+    "요추 추간판 탈출증 (Lumbar disc herniation, L5-S1, 좌측 S1 신경근병증)",
+    "요추 추간판 탈출증",
+    "요추 디스크 탈출에 의한 좌측 S1 신경근병증"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 44,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "허리 통증 및 왼쪽 다리 저림",
+    "request": "",
+    "categories": [
+      "msk",
+      "neuro"
+    ],
+    "empathy": "많이 불편하셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "허리 디스크로 왼쪽 다리 신경이 눌린 듯해요.",
+    "자기공명영상으로 디스크와 신경 압박을 살펴요.",
+    "오늘 응급실에서 검사 후 치료를 함께 정해요.",
+    "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "오늘 응급실에서 신경과 영상을 확인하세요.",
+    "숨참·흉통·의식 변화도 생기면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 661,
+      "out": 246,
+      "finish": "stop",
+      "sec": 2.6
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2897,
+      "out": 879,
+      "finish": "stop",
+      "sec": 12.0
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3195,
+      "out": 701,
+      "finish": "stop",
+      "sec": 11.0
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3285,
+      "out": 701,
+      "finish": "stop",
+      "sec": 10.6
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3086,
+      "out": 724,
+      "finish": "stop",
+      "sec": 9.7
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1782,
+      "out": 2278,
+      "finish": "stop",
+      "sec": 15.0
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2642,
+      "out": 2393,
+      "finish": "stop",
+      "sec": 24.1
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2192,
+      "out": 1339,
+      "finish": "stop",
+      "sec": 14.9
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3075,
+      "out": 682,
+      "finish": "stop",
+      "sec": 6.7
+    }
+  ],
+  "phase_times": {
+    "intake": 2.6,
+    "interview": 170.2,
+    "examine": 31.7,
+    "facts": 15.1,
+    "dx": 24.1,
+    "plan_say": 14.9,
+    "explain": 45.9,
+    "effective": 0.0,
+    "S": 6.7
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "한동욱",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "마흔네 살",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "남자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "허리통증",
+      "pol": "+",
+      "detail": "열흘 전부터",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리저림",
+      "pol": "+",
+      "detail": "왼쪽 다리, 열흘 전부터",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리당김",
+      "pol": "+",
+      "detail": "왼쪽 다리",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "발생상황",
+      "pol": "?",
+      "detail": "이삿짐 옮기다 허리 삐끗",
+      "id": "F7"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "방사통",
+      "pol": "+",
+      "detail": "왼쪽 엉덩이부터 다리 끝까지",
+      "id": "F8"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "전기찌릿함",
+      "pol": "+",
+      "detail": "왼쪽 엉덩이부터 다리 끝까지",
+      "id": "F9"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증악화",
+      "pol": "+",
+      "detail": "오래 앉기, 기침·재채기 시",
+      "id": "F10"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리방사통",
+      "pol": "+",
+      "detail": "기침·재채기 시 심해짐",
+      "id": "F11"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "감각저하",
+      "pol": "+",
+      "detail": "왼쪽 발바깥쪽·새끼발가락",
+      "id": "F12"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "통증악화",
+      "pol": "+",
+      "detail": "오래 앉기, 기침·재채기 시",
+      "id": "F13"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리방사통",
+      "pol": "+",
+      "detail": "기침·재채기 시 심해짐",
+      "id": "F14"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "배뇨배변장애",
+      "pol": "-",
+      "detail": "소변·대변 보는 데 문제 없음",
+      "id": "F15"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "요폐",
+      "pol": "-",
+      "detail": "소변 안 나온 적 없음",
+      "id": "F16"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "요실금",
+      "pol": "-",
+      "detail": "소변 지린 적 없음",
+      "id": "F17"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "회음부감각저하",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F18"
+    },
+    {
+      "turn": 8,
+      "sec": "hpi",
+      "key": "other",
+      "label": "좌하지근력저하",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F19"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "방사통경과",
+      "pol": "?",
+      "detail": "사흘째부터 발생",
+      "id": "F20"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "방사통분포",
+      "pol": "?",
+      "detail": "왼쪽 엉덩이·허벅지 뒤·종아리·새끼발가락",
+      "id": "F21"
+    },
+    {
+      "turn": 9,
+      "sec": "hpi",
+      "key": "other",
+      "label": "전기찌릿함",
+      "pol": "+",
+      "detail": "사흘째부터 아래로 뻗침",
+      "id": "F22"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "병가",
+      "pol": "?",
+      "detail": "일주일째 쉬는 중",
+      "id": "F23"
+    },
+    {
+      "turn": 11,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F24"
+    },
+    {
+      "turn": 11,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F25"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "other",
+      "label": "암 병력",
+      "pol": "-",
+      "detail": "앓은 적 없음",
+      "id": "F26"
+    },
+    {
+      "turn": 12,
+      "sec": "pmh",
+      "key": "pmh.Tbc",
+      "label": "결핵",
+      "pol": "-",
+      "detail": "앓은 적 없음",
+      "id": "F27"
+    },
+    {
+      "turn": 13,
+      "sec": "meds",
+      "key": "other",
+      "label": "진통소염제",
+      "pol": "+",
+      "detail": "하루 두세 번",
+      "id": "F28"
+    },
+    {
+      "turn": 14,
+      "sec": "pmh",
+      "key": "pmh.allergy",
+      "label": "약 알레르기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F29"
+    },
+    {
+      "turn": 15,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F30"
+    },
+    {
+      "turn": 15,
+      "sec": "ros",
+      "key": "ros.Chill",
+      "label": "오한",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F31"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "체중감소",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F32"
+    },
+    {
+      "turn": 16,
+      "sec": "hpi",
+      "key": "other",
+      "label": "과거허리통증",
+      "pol": "+",
+      "detail": "삼 년 전",
+      "id": "F33"
+    },
+    {
+      "turn": 16,
+      "sec": "hpi",
+      "key": "other",
+      "label": "침 치료",
+      "pol": "+",
+      "detail": "한의원에서 맞음",
+      "id": "F34"
+    },
+    {
+      "turn": 16,
+      "sec": "hpi",
+      "key": "other",
+      "label": "과거통증경과",
+      "pol": "?",
+      "detail": "일주일 만에 나음",
+      "id": "F35"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "야간통증",
+      "pol": "-",
+      "detail": "통증으로 깨지 않음",
+      "id": "F36"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "자세변경",
+      "pol": "?",
+      "detail": "자세 바꾸면 괜찮아짐",
+      "id": "F37"
+    },
+    {
+      "turn": 18,
+      "sec": "fh",
+      "key": "other",
+      "label": "부친 허리수술",
+      "pol": "+",
+      "detail": "허리 디스크 수술",
+      "id": "F38"
+    },
+    {
+      "turn": 19,
+      "sec": "ice",
+      "key": "other",
+      "label": "복귀시기 궁금",
+      "pol": "?",
+      "detail": "언제 다시 일할 수 있는지",
+      "id": "F39"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "59f496c41f95b45dda0b92770789f368ecf83cd396173474e48e11a1b76f25cb",
+    "score_status": "not_scored",
+    "turn": 34
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "오른쪽 다리는 아프거나 저리지 않다.",
+    "ok": false
+  },
+  "exam_plan": [
+    "spine",
+    "slr",
+    "power",
+    "sensory",
+    "dtr",
+    "gait",
+    "periph",
+    "babinski"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S05",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 30,
+  "luna_calls": 10,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 22815,
+  "sim_doctor_output_tokens": 9943,
+  "sim_turns": 34,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code/run.py",
+  "grade_total": 42,
+  "grade_scores": {
+    "정보수집": 12,
+    "진단추론": 14,
+    "검사·추적": 3,
+    "안전": 5,
+    "의사소통": 3,
+    "효율": 5
+  }
+}

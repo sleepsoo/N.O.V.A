@@ -1,0 +1,511 @@
+{
+  "case_id": "S03",
+  "alias": "S03",
+  "turns": 37,
+  "say": 29,
+  "exam": 8,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 21,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 22327,
+  "doctor_output_tokens": 9529,
+  "seconds": 276.6,
+  "diagnosis": "우측 급성 중이염 (Right acute otitis media)",
+  "accepted_diagnoses": [
+    "우측 급성 중이염 (Acute otitis media, right)",
+    "급성 중이염",
+    "Acute otitis media"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 3,
+    "sex": "F",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "발열 및 오른쪽 귀 통증",
+    "request": "",
+    "categories": [
+      "p_fever",
+      "insomnia"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "오른쪽 급성 중이염으로 보여요.",
+    "고막을 살펴 중이염 여부를 확인했어요.",
+    "해열진통제로 통증을 줄이고 지켜볼 수 있어요.",
+    "귀뒤 붓기·처짐·목경직·열 지속이면 바로 오세요.",
+    "2~3일 뒤 귀 상태를 다시 볼게요.",
+    "귀뒤 붓기·처짐·목경직도 생기면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 665,
+      "out": 244,
+      "finish": "stop",
+      "sec": 4.1
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2753,
+      "out": 1044,
+      "finish": "stop",
+      "sec": 15.4
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2937,
+      "out": 735,
+      "finish": "stop",
+      "sec": 10.3
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3081,
+      "out": 879,
+      "finish": "stop",
+      "sec": 12.3
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 3133,
+      "out": 594,
+      "finish": "stop",
+      "sec": 7.4
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1842,
+      "out": 2092,
+      "finish": "stop",
+      "sec": 14.1
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2511,
+      "out": 1977,
+      "finish": "stop",
+      "sec": 21.2
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2205,
+      "out": 1176,
+      "finish": "stop",
+      "sec": 13.5
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3200,
+      "out": 788,
+      "finish": "stop",
+      "sec": 9.2
+    }
+  ],
+  "phase_times": {
+    "intake": 4.1,
+    "interview": 171.3,
+    "examine": 17.1,
+    "facts": 14.1,
+    "dx": 21.2,
+    "plan_say": 13.5,
+    "explain": 26.1,
+    "effective": 0.0,
+    "S": 9.2
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "이하은",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이·성별",
+      "pol": "?",
+      "detail": "3세 여자아이",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자",
+      "pol": "?",
+      "detail": "엄마 박수진, 34세",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "+",
+      "detail": "어제부터 열",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "오른쪽 귀 통증",
+      "pol": "+",
+      "detail": "귀를 만지고 아파함",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "보챔",
+      "pol": "+",
+      "detail": "밤새 보챔",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "수면 곤란",
+      "pol": "+",
+      "detail": "밤새 잠을 잘 못 잠",
+      "id": "F7"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "+",
+      "detail": "어제 낮부터 38도",
+      "id": "F8"
+    },
+    {
+      "turn": 3,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 걱정",
+      "pol": "?",
+      "detail": "열 지속, 뇌수막염 걱정",
+      "id": "F9"
+    },
+    {
+      "turn": 4,
+      "sec": "hpi",
+      "key": "other",
+      "label": "귀 분비물",
+      "pol": "-",
+      "detail": "고름·진물 없음",
+      "id": "F10"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "귀 분비물",
+      "pol": "-",
+      "detail": "고름·진물 없음",
+      "id": "F11"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "ros.Fever",
+      "label": "최고 체온",
+      "pol": "?",
+      "detail": "어젯밤 38.9도",
+      "id": "F12"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "해열제 반응",
+      "pol": "?",
+      "detail": "2~3시간 내렸다 다시 오름",
+      "id": "F13"
+    },
+    {
+      "turn": 8,
+      "sec": "peds",
+      "key": "other",
+      "label": "먹는 양 변화",
+      "pol": "-",
+      "detail": "특이 변화 없음",
+      "id": "F14"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "ros.Rhinorrhea",
+      "label": "콧물",
+      "pol": "+",
+      "detail": "닷새 전부터 맑은 콧물",
+      "id": "F15"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "ros.Cough",
+      "label": "기침",
+      "pol": "+",
+      "detail": "닷새 전부터 가벼운 기침",
+      "id": "F16"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "-",
+      "detail": "토하지 않음",
+      "id": "F17"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "ros.Diarrhea",
+      "label": "설사",
+      "pol": "-",
+      "detail": "설사 없음",
+      "id": "F18"
+    },
+    {
+      "turn": 11,
+      "sec": "peds",
+      "key": "other",
+      "label": "경련",
+      "pol": "-",
+      "detail": "경련한 적 없음",
+      "id": "F19"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "자세별 보챔",
+      "pol": "+",
+      "detail": "누우면 더 보챔",
+      "id": "F20"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "안았을 때 호전",
+      "pol": "+",
+      "detail": "안아 주면 조금 나아짐",
+      "id": "F21"
+    },
+    {
+      "turn": 13,
+      "sec": "peds",
+      "key": "other",
+      "label": "소변량 감소",
+      "pol": "-",
+      "detail": "평소보다 줄지 않음",
+      "id": "F22"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "기력 저하",
+      "pol": "-",
+      "detail": "축 처지지 않음",
+      "id": "F23"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "놀이 활동",
+      "pol": "+",
+      "detail": "열 내리면 장난감 놀이",
+      "id": "F24"
+    },
+    {
+      "turn": 15,
+      "sec": "peds",
+      "key": "other",
+      "label": "목 경직",
+      "pol": "-",
+      "detail": "뻣뻣하지 않음",
+      "id": "F25"
+    },
+    {
+      "turn": 15,
+      "sec": "peds",
+      "key": "other",
+      "label": "고개 숙임 거부",
+      "pol": "-",
+      "detail": "고개 숙이기 싫어하지 않음",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "hpi",
+      "key": "other",
+      "label": "오른쪽 귀 통증",
+      "pol": "+",
+      "detail": "귀 잡아당기며 아프다 울음",
+      "id": "F27"
+    },
+    {
+      "turn": 17,
+      "sec": "meds",
+      "key": "other",
+      "label": "해열제",
+      "pol": "?",
+      "detail": "아세트아미노펜 시럽",
+      "id": "F28"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "해열제 반응",
+      "pol": "?",
+      "detail": "2~3시간 내렸다 다시 오름",
+      "id": "F29"
+    },
+    {
+      "turn": 18,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원력",
+      "pol": "-",
+      "detail": "입원한 적 없음",
+      "id": "F30"
+    },
+    {
+      "turn": 18,
+      "sec": "pmh",
+      "key": "pmh.op_hx",
+      "label": "수술력",
+      "pol": "-",
+      "detail": "수술 받은 적 없음",
+      "id": "F31"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "pmh.allergy",
+      "label": "약 알레르기",
+      "pol": "-",
+      "detail": "약 알레르기 없음",
+      "id": "F32"
+    },
+    {
+      "turn": 20,
+      "sec": "peds",
+      "key": "other",
+      "label": "발진",
+      "pol": "-",
+      "detail": "몸에 발진 없음",
+      "id": "F33"
+    },
+    {
+      "turn": 21,
+      "sec": "peds",
+      "key": "other",
+      "label": "귀 뒤 부종·발적",
+      "pol": "-",
+      "detail": "붓거나 빨갛지 않음",
+      "id": "F34"
+    },
+    {
+      "turn": 22,
+      "sec": "peds",
+      "key": "other",
+      "label": "기저귀 소변",
+      "pol": "?",
+      "detail": "평소처럼 젖음",
+      "id": "F35"
+    },
+    {
+      "turn": 22,
+      "sec": "peds",
+      "key": "other",
+      "label": "최근 배뇨",
+      "pol": "?",
+      "detail": "마지막 소변 2시간 전",
+      "id": "F36"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "36ce0aabf8b311c73dbef3a83f57ffb9c4f3231076c42a37f9cb5d7d627c7cfe",
+    "score_status": "not_scored",
+    "turn": 37
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "귀 뒤 붓기",
+    "ok": false
+  },
+  "exam_plan": [
+    "ear",
+    "general",
+    "mental",
+    "neck_stiff",
+    "nasal",
+    "pharynx",
+    "lung",
+    "skin_rash"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 31,
+  "luna_calls": 10,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 22327,
+  "sim_doctor_output_tokens": 9529,
+  "sim_turns": 37,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code/run.py",
+  "grade_total": 52,
+  "grade_scores": {
+    "정보수집": 9,
+    "진단추론": 12,
+    "검사·추적": 6,
+    "안전": 10,
+    "의사소통": 4,
+    "효율": 11
+  }
+}

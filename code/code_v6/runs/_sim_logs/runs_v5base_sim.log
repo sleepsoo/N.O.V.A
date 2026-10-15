@@ -1,0 +1,87 @@
+[   0.4s] guidelines: catalog.csv 2733 entries
+[   0.4s] guidelines: index ready 2733 docs, 7408 tokens, 0.3s
+[  10.3s] llm[intake] low out=165 finish=stop 9.9s
+[  10.3s] intake: {'age': 62, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '불면 (수면제 처방 원함)', 'request': '수면제 처방', 'categories': ['substance', 'insomnia', 'mood'], 'empathy': '많이 걱정되셨겠어요.', 'answered': []} diffs=['원인 불명성 불면증', '우울/불안성 불면', '만성 스트레스 연결성 불면', '호르몬 불균형 (폐경기 후)', '약리성(수면제 부작용)']
+[  10.3s] checklist: 59 items, covered=['ps_sleep']
+[  14.4s] turn 1 SAY: 많이 걱정되셨겠어요. 언제부터 그러셨어요? -> 나는 일곱 해 전부터 잠을 잘 못 자서 힘들었어요.
+[  24.5s] turn 2 SAY: 드시는 약 이름과 용량을 아세요? -> 스틸녹스, 한 알이 10밀리그램이에요.
+[  32.3s] turn 3 SAY: 그 약은 언제부터 드셨어요? -> 그때부터 동네 내과에서 수면제를 받아 먹기 시작했어요.
+[  39.9s] turn 4 SAY: 요즘 하루에 몇 알 드세요? -> 한 번에 서너 알씩 먹어요.
+[  46.8s] turn 5 SAY: 하루 중 언제 언제 드세요? -> 밤 열한 시쯤 한 알, 새벽 두세 시쯤 한 알 더
+[  54.4s] turn 6 SAY: 약을 안 드시면 어떤 증상이 있나요? -> 밤새 뒤척이고 온몸이 불안해요.
+[  68.3s] turn 7 SAY: 가장 걱정되시는 게 뭐예요? -> 이렇게 계속 먹어도 괜찮은지, 건강에 큰 문제가 생기지 않을지 걱정된다.
+[  86.8s] llm[plan_q] low out=355 finish=stop 18.6s
+[  94.2s] turn 8 SAY: 줄이거나 끊어 보려 하신 적 있나요? -> 약을 줄이거나 끊으려다 실패한 적이 여러 번 있었어요.
+[ 110.4s] turn 9 SAY: 다른 수면제나 약국 약도 드세요? -> 약국에서 처방 없이 수면유도제도 가끔 사서 먹었어요.
+[ 116.2s] turn 10 SAY: 담배는 피우세요? -> 평생 피운 적이 없어요.
+[ 121.3s] turn 11 SAY: 술은 얼마나 드세요? -> 일 년에 명절이나 가족 모임 때 소주 한두 잔 정도만 마신다.
+[ 127.4s] turn 12 SAY: 약 드신 뒤 기억이 끊긴 적 있나요? -> 가끔은 약을 먹고 난 뒤 기억이 잘 안 나는 경우도 있었어요.
+[ 131.1s] turn 13 SAY: 가족들이 약 문제로 걱정하나요? -> 가족들과도 갈등이 있었어요.
+[ 136.2s] turn 14 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압이 있어요.
+[ 166.9s] llm[plan_q] low out=638 finish=stop 30.7s
+[ 172.7s] turn 15 SAY: 커피는 하루 몇 잔 드세요? -> 하루에 한두 잔 마신다.
+[ 193.3s] turn 16 SAY: 요즘 스트레스 받는 일 있으세요? -> 그런 건 없어요.
+[ 210.8s] turn 17 SAY: 요즘 기분이 많이 가라앉나요? -> 최근에 멍하고 가라앉는 기분이 있어요.
+[ 216.4s] turn 18 SAY: 드시는 약이나 영양제 있으세요? -> 암로디핀을 먹고 있어요. 그 외에는 없어요.
+[ 221.0s] turn 19 SAY: 부모님이나 형제분 앓는 병 있나요? -> 아버지는 심장병으로 돌아가셨고, 어머니는 치매로 요양병원에 계시다 돌아가셨습니다.
+[ 228.3s] turn 20 SAY: 다른 지병이 있으신가요? -> 고혈압이 있어요.
+[ 250.3s] turn 21 SAY: 즐겁던 일에 흥미가 줄었나요? -> 친구들과 모임도 최근 일 년 사이에 거의 나가지 않았다.
+[ 257.2s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 불면증 해결 방법이 궁금해요.
+[ 257.2s] interview done: asked=22 covered=8 uncovered_p1=['ps_si']
+[ 271.9s] llm[exams] low out=226 finish=stop 14.8s
+[ 271.9s] exams plan: ['general', 'mental', 'sedation', 'cognitive', 'orthostatic', 'post_tremor', 'skin_temp', 'affect', 'heart', 'lung', 'dtr']
+[ 271.9s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 정상 체형, 안절부절(+)
+[ 271.9s] turn 24 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 271.9s] turn 25 EXAM: 주간 진정·불안 관찰하겠습니다 -> 반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)
+[ 271.9s] turn 26 EXAM: 인지기능 선별검사 하겠습니다 -> MMSE-K 28/30점, 지연회상 2/3점
+[ 271.9s] turn 27 EXAM: 기립성 혈압 측정하겠습니다 -> 수축기 강하 6mmHg, 어지럼(-)
+[ 278.2s] turn 28 EXAM: 자세성 떨림 확인하겠습니다 -> 자세성 떨림(-/-)
+[ 278.2s] turn 29 EXAM: 피부 온도·발한 촉진하겠습니다 -> 온난, 발한(-), 손바닥 습윤(-/-)
+[ 305.9s] turn 30 EXAM: 기분·정동 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 305.9s] turn 31 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 305.9s] turn 32 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 338.4s] turn 33 EXAM: 심부건반사 검사하겠습니다 -> 심부건반사 검사 (Deep tendon reflex test) | 양측 반사 2+/2+, 대칭
+[ 626.1s] llm[facts] medium out=5560 finish=stop 287.7s
+[ 626.1s] facts: 28
+[ 710.4s] llm[dx] medium out=1707 finish=stop 84.3s
+[ 896.0s] llm[dx] medium out=3338 finish=stop 185.6s
+[ 920.9s] llm[plan_say] low out=434 finish=stop 24.9s
+[ 925.0s] turn 34 SAY: 박선희 님은 진정수면제 사용장애가 보여요 -> 네, 알겠습니다.
+[ 928.6s] turn 35 SAY: 소변 검사로 다른 진정제 사용 여부를 확인하고요 -> 네, 알겠습니다.
+[ 934.7s] turn 36 SAY: 감량은 전문의 지도하에 진행하며 운전은 피하도록 해요 -> 네, 알겠습니다.
+[ 937.2s] turn 37 SAY: 약은 갑자기 끊지 말고 천천히 줄여요. -> 네, 알겠습니다.
+[ 943.8s] turn 38 SAY: 수면 습관 교정과 인지행동치료도 같이 해요. -> 네, 알겠습니다.
+[ 947.0s] turn 39 SAY: 숨참·불규칙 심박·고열·혼동이 생기면 바로 와요 -> 네, 알겠습니다.
+[ 959.0s] turn 40 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.
+[ 961.1s] turn 41 SAY: 1~2주 뒤 결과 보러 다시 오세요 -> 네, 알겠습니다.
+[ 976.5s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 가족들과 갈등이 있었다.
+[1015.0s] llm[S-narr] low out=834 finish=stop 38.5s
+[1015.0s] summary: turns=42 counts={'say': 31, 'exam': 11, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 17187, 'doctor_output_tokens': 13257, 'elapsed_s': 1014.6} dx=수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)
+C01 gpt-oss-20b: total=62 정보수집=14 진단추론=5 검사·추적=6 안전=15 의사소통=10 효율=12 dx5=5
+- missed_key_questions: ['가족력 세부에서 알레르기(약제, 음식) 및 과거 수술, 생활 습관(운동량·수면위생) 상세', '산후·폐경과 관련된 호르몬 검증', '수면 일지 작성 및 CBT-I 교육 세부 항목', '물질 사용력(알코올·카페인· 담배) 연속성 및 성분']
+- missed_key_exams: ['병식 평가', '결막·공막 시진', '구음장애 확인', '갑상선 촉진', '안구진탕', '흉곽 시진', '복부 시진', '복부 촉진', '간·비장 촉진', '소뇌 협조운동 검사', '하지 말초 진찰', '보행 관찰', '롬베르그 검사']
+- top_improvements: ['1. 종합적 수면 정보 수집(수면이력, 수면 일지, 수면 패턴) 및 수면지표 측정 도구(앱, 체온 센서) 사용', '2. 불안·우울 평가(PHQ‑9, GAD‑7) 및 필요 시 정신건강 전문의 협진 계획', '3. 신체 검진 항목 전부 수행(갑상선, 음성, 눈·코·고환 등) 및 혈액·소변 검사(갑상선, 전해질, 전신상태) 계획', '4. 환자 교육 강화(약물 상호작용, 진정제 장기 사용 위험, 증상 인지, 변화 모니터링)', '5. 검토 및 추적 계획 세밀화(감량 단계, 주간 수면 일지, 정기적 검진 일정)']
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 11,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 9,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 9,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 17187,
+ "doctor_output_tokens": 13257,
+ "sim_calls": 35,
+ "seconds": 1015.0,
+ "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 62,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v6/runs/sim-C01-v5base

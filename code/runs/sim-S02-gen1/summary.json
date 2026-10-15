@@ -1,0 +1,454 @@
+{
+  "case_id": "S02",
+  "alias": "S02",
+  "turns": 41,
+  "say": 29,
+  "exam": 12,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 18,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 21195,
+  "doctor_output_tokens": 9533,
+  "seconds": 366.8,
+  "diagnosis": "무조짐 편두통 (Migraine without aura)",
+  "accepted_diagnoses": [
+    "무조짐 편두통 (Migraine without aura)",
+    "편두통",
+    "Migraine without aura"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 38,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "잦아진 두통 (원인 확인 원함)",
+    "request": "두통의 원인을 알고 싶음",
+    "categories": [
+      "headache"
+    ],
+    "empathy": "많이 힘드셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "무조짐 편두통으로 보여요.",
+    "메스꺼움과 구토가 동반돼 편두통 양상이에요.",
+    "진찰은 정상이고 위험 신호도 없어 보여요.",
+    "신경 진찰은 현재 정상인지 확인해요.",
+    "빈도와 일 지장을 보고 치료를 함께 정해요.",
+    "약을 자주 먹으면 두통이 잦아질 수 있어요.",
+    "벼락두통·마비·말 어눌함·고열 시 바로 오세요.",
+    "4~8주 뒤 두통일기와 치료 효과를 확인해요.",
+    "벼락두통·마비·말 어눌함·고열 시 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 666,
+      "out": 206,
+      "finish": "stop",
+      "sec": 3.4
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2717,
+      "out": 1032,
+      "finish": "stop",
+      "sec": 13.3
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2938,
+      "out": 940,
+      "finish": "stop",
+      "sec": 13.1
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3090,
+      "out": 801,
+      "finish": "stop",
+      "sec": 10.9
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 2852,
+      "out": 605,
+      "finish": "stop",
+      "sec": 7.0
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1748,
+      "out": 1617,
+      "finish": "stop",
+      "sec": 14.5
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2367,
+      "out": 2342,
+      "finish": "stop",
+      "sec": 25.9
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2116,
+      "out": 1077,
+      "finish": "stop",
+      "sec": 12.1
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2701,
+      "out": 913,
+      "finish": "stop",
+      "sec": 10.6
+    }
+  ],
+  "phase_times": {
+    "intake": 3.5,
+    "interview": 201.9,
+    "examine": 23.7,
+    "facts": 14.5,
+    "dx": 25.9,
+    "plan_say": 12.1,
+    "explain": 74.7,
+    "effective": 0.0,
+    "S": 10.6
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "한서영",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "38세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "여성",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "ros",
+      "key": "ros.Headache",
+      "label": "두통",
+      "pol": "+",
+      "detail": "몇 년 전부터 가끔",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "두통 빈도",
+      "pol": "?",
+      "detail": "최근 석 달간 더 잦음",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "업무 지장",
+      "pol": "+",
+      "detail": "두통으로 일하기 힘듦",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "ice",
+      "key": "other",
+      "label": "원인 확인 희망",
+      "pol": "+",
+      "detail": "제대로 원인을 알고 싶음",
+      "id": "F7"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "두통 지속",
+      "pol": "?",
+      "detail": "하루, 길면 이틀",
+      "id": "F8"
+    },
+    {
+      "turn": 3,
+      "sec": "ice",
+      "key": "other",
+      "label": "큰 병 걱정",
+      "pol": "+",
+      "detail": "뇌 혹이나 뇌출혈 걱정",
+      "id": "F9"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "other",
+      "label": "기타 불편감",
+      "pol": "-",
+      "detail": "그런 건 없음",
+      "id": "F10"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "두통 부위",
+      "pol": "?",
+      "detail": "왼쪽 관자놀이·눈 뒤",
+      "id": "F11"
+    },
+    {
+      "turn": 5,
+      "sec": "hpi",
+      "key": "other",
+      "label": "반대쪽 두통",
+      "pol": "+",
+      "detail": "가끔 오른쪽도 아픔",
+      "id": "F12"
+    },
+    {
+      "turn": 6,
+      "sec": "meds",
+      "key": "other",
+      "label": "진통제 복용",
+      "pol": "?",
+      "detail": "이부프로펜 월 5~6회",
+      "id": "F13"
+    },
+    {
+      "turn": 6,
+      "sec": "hpi",
+      "key": "other",
+      "label": "진통제 효과",
+      "pol": "?",
+      "detail": "먹으면 반쯤 나아짐",
+      "id": "F14"
+    },
+    {
+      "turn": 7,
+      "sec": "hpi",
+      "key": "other",
+      "label": "갑작스런 최악 두통",
+      "pol": "-",
+      "detail": "그런 적 없음",
+      "id": "F15"
+    },
+    {
+      "turn": 8,
+      "sec": "hpi",
+      "key": "other",
+      "label": "팔다리 힘 빠짐",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "hpi",
+      "key": "other",
+      "label": "말 어눌함",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "열",
+      "pol": "-",
+      "detail": "난 적 없음",
+      "id": "F18"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "목 뻣뻣함",
+      "pol": "-",
+      "detail": "있던 적 없음",
+      "id": "F19"
+    },
+    {
+      "turn": 10,
+      "sec": "women",
+      "key": "other",
+      "label": "임신 가능성",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F20"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "ros.Nausea",
+      "label": "메스꺼움",
+      "pol": "+",
+      "detail": "있음",
+      "id": "F21"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "+",
+      "detail": "있음",
+      "id": "F22"
+    },
+    {
+      "turn": 13,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F23"
+    },
+    {
+      "turn": 13,
+      "sec": "pmh",
+      "key": "pmh.DM",
+      "label": "당뇨",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F24"
+    },
+    {
+      "turn": 14,
+      "sec": "meds",
+      "key": "other",
+      "label": "진통제 복용",
+      "pol": "?",
+      "detail": "이부프로펜 월 5~6회",
+      "id": "F25"
+    },
+    {
+      "turn": 15,
+      "sec": "fh",
+      "key": "other",
+      "label": "모친 두통",
+      "pol": "?",
+      "detail": "젊을 때부터 편두통",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "pmh",
+      "key": "other",
+      "label": "과거 큰 병",
+      "pol": "-",
+      "detail": "앓은 적 없음",
+      "id": "F27"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "두통 전 번쩍임",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F28"
+    },
+    {
+      "turn": 18,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "피우지 않음",
+      "id": "F29"
+    },
+    {
+      "turn": 19,
+      "sec": "ice",
+      "key": "other",
+      "label": "큰 병 걱정",
+      "pol": "+",
+      "detail": "뇌 혹이나 뇌출혈 걱정",
+      "id": "F30"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "f75fef812a76e84393106d1a00d8c6500819a6f0dc5a12a1345cf20ad62c03db",
+    "score_status": "not_scored",
+    "turn": 41
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "그런 건 없어요.",
+    "ok": false
+  },
+  "exam_plan": [
+    "fundus",
+    "power",
+    "mental",
+    "pupil",
+    "eom",
+    "vfield",
+    "sensory",
+    "dtr",
+    "cerebellar",
+    "gait",
+    "neck_stiff",
+    "general"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S02",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 35,
+  "luna_calls": 9,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 21195,
+  "sim_doctor_output_tokens": 9533,
+  "sim_turns": 41,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code/run.py"
+}

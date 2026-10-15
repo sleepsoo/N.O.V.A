@@ -1,0 +1,1214 @@
+{
+ "case": "C10",
+ "plan": "c10a",
+ "session_id": "3f2007f3-24cf-4424-9a3e-c5a2a67fb576",
+ "initial": {
+  "opening": "이름은 최윤정이고, 나는 서른두 살 여자이다. 최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다. 원래 몸무게는 오십육 키로그람 정도였는데, 최근 석 달 사이에 칠 키로그람 정도 빠져서 지금은 사십구 키로그람 정도이다. 평소에는 몸무게 변화가 거의 없었는데, 이번에는 다이어트나 운동을 한 것도 아닌데 저절로 살이 빠져서 걱정이 되었다. 키는 백육십사 센티미터이다.",
+  "vital_signs": "혈압 : 138/72 mmHg\n맥박 : 102 회/분\n호흡 : 19 회/분\n체온 : 36.9°C"
+ },
+ "log": [
+  {
+   "i": 1,
+   "action": "SAY",
+   "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "석 달 전부터 저절로 살이 빠졌어요.",
+    "turn": 1,
+    "turns_remaining": 49
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 2,
+   "action": "SAY",
+   "content": "그 밖에 달라진 점을 다 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 2,
+    "turns_remaining": 48
+   },
+   "sec": 3.3
+  },
+  {
+   "i": 3,
+   "action": "SAY",
+   "content": "다른 불편한 증상은 없으세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 가슴이 자주 두근거려요.",
+    "turn": 3,
+    "turns_remaining": 47
+   },
+   "sec": 3.8
+  },
+  {
+   "i": 4,
+   "action": "SAY",
+   "content": "평소 건강은 어떠셨어요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "평소엔 건강한 편이었어요.",
+    "turn": 4,
+    "turns_remaining": 46
+   },
+   "sec": 3.1
+  },
+  {
+   "i": 5,
+   "action": "SAY",
+   "content": "드시는 약을 전부 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 5,
+    "turns_remaining": 45
+   },
+   "sec": 3.1
+  },
+  {
+   "i": 6,
+   "action": "SAY",
+   "content": "가족 중 아픈 분이 있으세요?",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "어머니가 갑상샘 기능저하증이세요.",
+    "turn": 6,
+    "turns_remaining": 44
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 7,
+   "action": "SAY",
+   "content": "하루 일과를 말씀해 주세요",
+   "tag": "open",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "사무실에서 일하고 대중교통으로 다녀요.",
+    "turn": 7,
+    "turns_remaining": 43
+   },
+   "sec": 3.9
+  },
+  {
+   "i": 8,
+   "action": "SAY",
+   "content": "술·담배·커피는 어떠세요?",
+   "tag": "open_bundle",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "술은 한 달에 한두 번 가볍게 마셔요.",
+    "turn": 8,
+    "turns_remaining": 42
+   },
+   "sec": 4.4
+  },
+  {
+   "i": 9,
+   "action": "SAY",
+   "content": "최근 석 달간 변화를 전부 말씀해 주세요",
+   "tag": "open_all",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "한 번에 하나씩 물어봐 주세요.",
+    "turn": 9,
+    "turns_remaining": 41
+   },
+   "sec": 4.2
+  },
+  {
+   "i": 10,
+   "action": "SAY",
+   "content": "더 자세히 말씀해 주시겠어요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "석 달 사이에 7킬로 빠졌어요.",
+    "turn": 10,
+    "turns_remaining": 40
+   },
+   "sec": 4.0
+  },
+  {
+   "i": 11,
+   "action": "SAY",
+   "content": "또 다른 변화는 없으세요?",
+   "tag": "open_followup",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "요즘 더위를 많이 타요.",
+    "turn": 11,
+    "turns_remaining": 39
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 12,
+   "action": "SAY",
+   "content": "손이 떨리세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 잔 들거나 글씨 쓸 때 떨려요.",
+    "turn": 12,
+    "turns_remaining": 38
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 13,
+   "action": "SAY",
+   "content": "변이 묽어지셨나요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 전보다 변이 묽어졌어요.",
+    "turn": 13,
+    "turns_remaining": 37
+   },
+   "sec": 3.2
+  },
+  {
+   "i": 14,
+   "action": "SAY",
+   "content": "생리는 규칙적인가요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "주기는 규칙적인데 양이 줄었어요.",
+    "turn": 14,
+    "turns_remaining": 36
+   },
+   "sec": 3.5
+  },
+  {
+   "i": 15,
+   "action": "SAY",
+   "content": "눈이 튀어나온 느낌이 있으세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 전보다 약간 튀어나온 것 같아요.",
+    "turn": 15,
+    "turns_remaining": 35
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 16,
+   "action": "SAY",
+   "content": "담배 피우세요?",
+   "tag": "closed",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "아니요, 담배는 안 피워요.",
+    "turn": 16,
+    "turns_remaining": 34
+   },
+   "sec": 2.4
+  },
+  {
+   "i": 17,
+   "action": "EXAM",
+   "content": "갑상선 촉진하겠습니다",
+   "tag": "exam_in",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "turn": 17,
+    "turns_remaining": 33
+   },
+   "sec": 3.0
+  },
+  {
+   "i": 18,
+   "action": "EXAM",
+   "content": "복부 촉진하겠습니다",
+   "tag": "exam_in",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "turn": 18,
+    "turns_remaining": 32
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 19,
+   "action": "EXAM",
+   "content": "경부 림프절 촉진하겠습니다",
+   "tag": "exam_in",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "촉지(-/-), 압통(-/-)",
+    "turn": 19,
+    "turns_remaining": 31
+   },
+   "sec": 2.7
+  },
+  {
+   "i": 20,
+   "action": "EXAM",
+   "content": "롬베르그 검사하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "롬베르그 검사 음성, 눈을 감고도 균형 유지",
+    "turn": 20,
+    "turns_remaining": 30
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 21,
+   "action": "EXAM",
+   "content": "보행 관찰하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "보폭과 보행속도 정상, 보행 안정적이며 좌우 대칭",
+    "turn": 21,
+    "turns_remaining": 29
+   },
+   "sec": 2.3
+  },
+  {
+   "i": 22,
+   "action": "EXAM",
+   "content": "동공 대광반사 확인하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "동공 3mm/3mm, 직접·간접 대광반사(+/+), 대칭",
+    "turn": 22,
+    "turns_remaining": 28
+   },
+   "sec": 5.8
+  },
+  {
+   "i": 23,
+   "action": "EXAM",
+   "content": "손톱 시진하겠습니다",
+   "tag": "exam_out",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "손톱 들뜸(-/-), 손톱밑 변색(-/-), 손톱밑 각질증식(-/-)",
+    "turn": 23,
+    "turns_remaining": 27
+   },
+   "sec": 2.4
+  },
+  {
+   "i": 24,
+   "action": "EXAM",
+   "content": "복부 진찰하겠습니다",
+   "tag": "exam_var",
+   "ok": false,
+   "code": "EXAM_NOT_SPECIFIC",
+   "http": 422,
+   "sec": 3.9
+  },
+  {
+   "i": 25,
+   "action": "EXAM",
+   "content": "눈 진찰하겠습니다",
+   "tag": "exam_var",
+   "ok": false,
+   "code": "EXAM_NOT_SPECIFIC",
+   "http": 422,
+   "sec": 2.1
+  },
+  {
+   "i": 26,
+   "action": "EXAM",
+   "content": "목 앞을 만져보겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "turn": 26,
+    "turns_remaining": 24
+   },
+   "sec": 5.3
+  },
+  {
+   "i": 27,
+   "action": "EXAM",
+   "content": "목에 청진기 대보겠습니다",
+   "tag": "exam_var",
+   "ok": false,
+   "code": "EXAM_NOT_SPECIFIC",
+   "http": 422,
+   "sec": 2.5
+  },
+  {
+   "i": 28,
+   "action": "EXAM",
+   "content": "무릎 반사 확인하겠습니다",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "슬개건 3+/3+, 아킬레스건 2+/2+",
+    "turn": 28,
+    "turns_remaining": 22
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 29,
+   "action": "EXAM",
+   "content": "손을 앞으로 뻗어 보세요",
+   "tag": "exam_var",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "자세성 떨림(+/+)",
+    "turn": 29,
+    "turns_remaining": 21
+   },
+   "sec": 4.3
+  },
+  {
+   "i": 30,
+   "action": "EXAM",
+   "content": "갑상선 촉진하겠습니다",
+   "tag": "exam_repeat",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "turn": 30,
+    "turns_remaining": 20
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 31,
+   "action": "SAY",
+   "content": "갑상선 기능이 높아진 것으로 보여요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "검사로 확인할 수 있나요?",
+    "turn": 31,
+    "turns_remaining": 19
+   },
+   "sec": 3.7
+  },
+  {
+   "i": 32,
+   "action": "SAY",
+   "content": "혈액검사로 호르몬을 확인할게요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 알겠어요.",
+    "turn": 32,
+    "turns_remaining": 18
+   },
+   "sec": 2.1
+  },
+  {
+   "i": 33,
+   "action": "SAY",
+   "content": "궁금하신 점 있으세요?",
+   "tag": "explain_q",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "치료는 어떻게 하나요?",
+    "turn": 33,
+    "turns_remaining": 17
+   },
+   "sec": 2.6
+  },
+  {
+   "i": 34,
+   "action": "SAY",
+   "content": "네, 혈액검사로 확인할 수 있어요",
+   "tag": "explain_answer",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 검사받을게요.",
+    "turn": 34,
+    "turns_remaining": 16
+   },
+   "sec": 2.5
+  },
+  {
+   "i": 35,
+   "action": "SAY",
+   "content": "약으로 대부분 잘 조절돼요",
+   "tag": "explain",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 다행이네요.",
+    "turn": 35,
+    "turns_remaining": 15
+   },
+   "sec": 2.8
+  },
+  {
+   "i": 36,
+   "action": "SAY",
+   "content": "이해되셨어요? 한번 말해 보시겠어요?",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "네, 이해됐어요.",
+    "turn": 36,
+    "turns_remaining": 14
+   },
+   "sec": 2.9
+  },
+  {
+   "i": 37,
+   "action": "SAY",
+   "content": "어떤 검사를 받는지 말씀해 보시겠어요?",
+   "tag": "teach",
+   "ok": true,
+   "response": {
+    "status": "OK",
+    "content": "혈액검사로 호르몬을 확인해요.",
+    "turn": 37,
+    "turns_remaining": 13
+   },
+   "sec": 2.7
+  }
+ ],
+ "diagnose": {
+  "error": "FINAL_RECORD_REQUIRED"
+ },
+ "session": {
+  "session_id": "3f2007f3-24cf-4424-9a3e-c5a2a67fb576",
+  "status": "active",
+  "turns_remaining": 13,
+  "initial": {
+   "opening": "이름은 최윤정이고, 나는 서른두 살 여자이다. 최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다. 원래 몸무게는 오십육 키로그람 정도였는데, 최근 석 달 사이에 칠 키로그람 정도 빠져서 지금은 사십구 키로그람 정도이다. 평소에는 몸무게 변화가 거의 없었는데, 이번에는 다이어트나 운동을 한 것도 아닌데 저절로 살이 빠져서 걱정이 되었다. 키는 백육십사 센티미터이다.",
+   "vital_signs": "혈압 : 138/72 mmHg\n맥박 : 102 회/분\n호흡 : 19 회/분\n체온 : 36.9°C"
+  },
+  "available_actions": [
+   "SAY",
+   "EXAM",
+   "DIAGNOSE"
+  ],
+  "deadline": "2026-10-13T10:58:08.690584+00:00",
+  "policy_version": "nova-2026-v1",
+  "events": [
+   {
+    "id": "88ba1ccc-b17e-42e9-b723-9d3b14a2f260",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+     "request_id": "97454cf3-644c-43bb-9e7a-65d80920bf3b"
+    },
+    "effective_content": "증상이 어떻게 시작됐는지 말씀해 주세요",
+    "response": {
+     "turn": 1,
+     "status": "OK",
+     "content": "석 달 전부터 저절로 살이 빠졌어요.",
+     "turns_remaining": 49
+    },
+    "http_status": 200,
+    "turn": 1
+   },
+   {
+    "id": "0eaef325-4d80-4730-b4c2-e5bf567ab0b7",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "그 밖에 달라진 점을 다 말씀해 주세요",
+     "request_id": "a83b4051-2163-41fc-9c83-192315865640"
+    },
+    "effective_content": "그 밖에 달라진 점을 다 말씀해 주세요",
+    "response": {
+     "turn": 2,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 48
+    },
+    "http_status": 200,
+    "turn": 2
+   },
+   {
+    "id": "97fb1bf3-25de-490e-b768-b4bb737e7974",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "다른 불편한 증상은 없으세요?",
+     "request_id": "b89a915f-86a4-4c48-b4e1-93df3d8aa14b"
+    },
+    "effective_content": "다른 불편한 증상은 없으세요?",
+    "response": {
+     "turn": 3,
+     "status": "OK",
+     "content": "요즘 가슴이 자주 두근거려요.",
+     "turns_remaining": 47
+    },
+    "http_status": 200,
+    "turn": 3
+   },
+   {
+    "id": "9eba741f-872f-4fb3-a3ce-afaf0a6b10dd",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "평소 건강은 어떠셨어요?",
+     "request_id": "d4c6b655-d211-46da-852a-2e0ab8925e61"
+    },
+    "effective_content": "평소 건강은 어떠셨어요?",
+    "response": {
+     "turn": 4,
+     "status": "OK",
+     "content": "평소엔 건강한 편이었어요.",
+     "turns_remaining": 46
+    },
+    "http_status": 200,
+    "turn": 4
+   },
+   {
+    "id": "a5e514aa-a8a2-4dd8-853f-96745842f87c",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "드시는 약을 전부 말씀해 주세요",
+     "request_id": "fe838a96-b03d-499d-8186-13a1cc096443"
+    },
+    "effective_content": "드시는 약을 전부 말씀해 주세요",
+    "response": {
+     "turn": 5,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 45
+    },
+    "http_status": 200,
+    "turn": 5
+   },
+   {
+    "id": "48013e67-28ab-429f-9174-4e0787c2bff1",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "가족 중 아픈 분이 있으세요?",
+     "request_id": "09d576e3-8b39-4974-9442-cc824662ecc9"
+    },
+    "effective_content": "가족 중 아픈 분이 있으세요?",
+    "response": {
+     "turn": 6,
+     "status": "OK",
+     "content": "어머니가 갑상샘 기능저하증이세요.",
+     "turns_remaining": 44
+    },
+    "http_status": 200,
+    "turn": 6
+   },
+   {
+    "id": "0a36a4d3-a37a-46c6-b2ee-b008bb5aaca9",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "하루 일과를 말씀해 주세요",
+     "request_id": "391f5e9c-a3ad-443d-8d99-ce77797797ab"
+    },
+    "effective_content": "하루 일과를 말씀해 주세요",
+    "response": {
+     "turn": 7,
+     "status": "OK",
+     "content": "사무실에서 일하고 대중교통으로 다녀요.",
+     "turns_remaining": 43
+    },
+    "http_status": 200,
+    "turn": 7
+   },
+   {
+    "id": "20d91af8-9b54-4174-9520-e59188012ad3",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "술·담배·커피는 어떠세요?",
+     "request_id": "5f454704-6cbb-4750-83fb-d76ecd6f7465"
+    },
+    "effective_content": "술·담배·커피는 어떠세요?",
+    "response": {
+     "turn": 8,
+     "status": "OK",
+     "content": "술은 한 달에 한두 번 가볍게 마셔요.",
+     "turns_remaining": 42
+    },
+    "http_status": 200,
+    "turn": 8
+   },
+   {
+    "id": "84c5f900-f6f0-4306-8685-f8064d2767d6",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "최근 석 달간 변화를 전부 말씀해 주세요",
+     "request_id": "e1cba45b-4690-4304-b6fa-4972cfff584a"
+    },
+    "effective_content": "최근 석 달간 변화를 전부 말씀해 주세요",
+    "response": {
+     "turn": 9,
+     "status": "OK",
+     "content": "한 번에 하나씩 물어봐 주세요.",
+     "turns_remaining": 41
+    },
+    "http_status": 200,
+    "turn": 9
+   },
+   {
+    "id": "3b586a4e-04a9-4037-9b2a-b68e32ec91a1",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "더 자세히 말씀해 주시겠어요?",
+     "request_id": "1e86344e-35dc-4acf-bf6d-e3ff569aa72c"
+    },
+    "effective_content": "더 자세히 말씀해 주시겠어요?",
+    "response": {
+     "turn": 10,
+     "status": "OK",
+     "content": "석 달 사이에 7킬로 빠졌어요.",
+     "turns_remaining": 40
+    },
+    "http_status": 200,
+    "turn": 10
+   },
+   {
+    "id": "db92a034-2aee-47f3-8f70-661f4aac55f6",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "또 다른 변화는 없으세요?",
+     "request_id": "d23e702c-a9e1-4dc2-8291-f46852e99207"
+    },
+    "effective_content": "또 다른 변화는 없으세요?",
+    "response": {
+     "turn": 11,
+     "status": "OK",
+     "content": "요즘 더위를 많이 타요.",
+     "turns_remaining": 39
+    },
+    "http_status": 200,
+    "turn": 11
+   },
+   {
+    "id": "3b0238d2-d8bf-4209-86d4-6b6ea3fb7be8",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "손이 떨리세요?",
+     "request_id": "4635a09c-9728-4e0c-8eaa-57bd90bc0ed9"
+    },
+    "effective_content": "손이 떨리세요?",
+    "response": {
+     "turn": 12,
+     "status": "OK",
+     "content": "네, 잔 들거나 글씨 쓸 때 떨려요.",
+     "turns_remaining": 38
+    },
+    "http_status": 200,
+    "turn": 12
+   },
+   {
+    "id": "c6ecc559-5968-4109-b2b5-b23055d408a6",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "변이 묽어지셨나요?",
+     "request_id": "e2810747-5d8d-4378-b880-5a8798f0d042"
+    },
+    "effective_content": "변이 묽어지셨나요?",
+    "response": {
+     "turn": 13,
+     "status": "OK",
+     "content": "네, 전보다 변이 묽어졌어요.",
+     "turns_remaining": 37
+    },
+    "http_status": 200,
+    "turn": 13
+   },
+   {
+    "id": "fad82c8e-2362-4111-a87d-42d2d07c5396",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "생리는 규칙적인가요?",
+     "request_id": "23633346-ba97-4fac-9631-589326271fbd"
+    },
+    "effective_content": "생리는 규칙적인가요?",
+    "response": {
+     "turn": 14,
+     "status": "OK",
+     "content": "주기는 규칙적인데 양이 줄었어요.",
+     "turns_remaining": 36
+    },
+    "http_status": 200,
+    "turn": 14
+   },
+   {
+    "id": "c0a2e02e-3fcf-48ca-8acb-88b9e350326b",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "눈이 튀어나온 느낌이 있으세요?",
+     "request_id": "92089a76-efdc-45f0-a5eb-f456514b5c9e"
+    },
+    "effective_content": "눈이 튀어나온 느낌이 있으세요?",
+    "response": {
+     "turn": 15,
+     "status": "OK",
+     "content": "네, 전보다 약간 튀어나온 것 같아요.",
+     "turns_remaining": 35
+    },
+    "http_status": 200,
+    "turn": 15
+   },
+   {
+    "id": "7fb7b4fa-aad5-4aa9-8413-fe01a9584599",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "담배 피우세요?",
+     "request_id": "904dd556-b642-4531-9af7-a09a3258453d"
+    },
+    "effective_content": "담배 피우세요?",
+    "response": {
+     "turn": 16,
+     "status": "OK",
+     "content": "아니요, 담배는 안 피워요.",
+     "turns_remaining": 34
+    },
+    "http_status": 200,
+    "turn": 16
+   },
+   {
+    "id": "f696cee4-8cd8-4eb4-94dd-f044ac58a600",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "갑상선 촉진하겠습니다",
+     "request_id": "6d7fffef-cd9f-4aa7-8dc4-a1f9de919226"
+    },
+    "effective_content": "hn_thyroid_palpation",
+    "response": {
+     "turn": 17,
+     "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+     "status": "OK",
+     "turns_remaining": 33
+    },
+    "http_status": 200,
+    "turn": 17
+   },
+   {
+    "id": "65b4539b-5ce1-4e39-bc34-4b997177e0f4",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "복부 촉진하겠습니다",
+     "request_id": "2a195ccb-31c5-4046-a4cb-c20d0cd29a16"
+    },
+    "effective_content": "abd_palpation",
+    "response": {
+     "turn": 18,
+     "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+     "status": "OK",
+     "turns_remaining": 32
+    },
+    "http_status": 200,
+    "turn": 18
+   },
+   {
+    "id": "f6f21445-6b17-4dc7-9b9e-cf7ae1b37ff7",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "경부 림프절 촉진하겠습니다",
+     "request_id": "e432df3e-39fc-4f9b-9519-ae3d1fd532a1"
+    },
+    "effective_content": "hn_cervical_lymph_node",
+    "response": {
+     "turn": 19,
+     "result": "촉지(-/-), 압통(-/-)",
+     "status": "OK",
+     "turns_remaining": 31
+    },
+    "http_status": 200,
+    "turn": 19
+   },
+   {
+    "id": "b222eb03-c5d3-49da-8323-ebe3da17fe38",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "롬베르그 검사하겠습니다",
+     "request_id": "5ab4bd4c-cc91-45ce-b140-f0063ba97bc8"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 20,
+     "result": "롬베르그 검사 음성, 눈을 감고도 균형 유지",
+     "status": "OK",
+     "turns_remaining": 30
+    },
+    "http_status": 200,
+    "turn": 20
+   },
+   {
+    "id": "ef35103f-be5c-4cd9-91c9-a37466e81bf1",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "보행 관찰하겠습니다",
+     "request_id": "9012ab27-e7fd-4ed9-91ec-f65a14d167a7"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 21,
+     "result": "보폭과 보행속도 정상, 보행 안정적이며 좌우 대칭",
+     "status": "OK",
+     "turns_remaining": 29
+    },
+    "http_status": 200,
+    "turn": 21
+   },
+   {
+    "id": "e6914cfd-db1e-4946-bfe1-a7d5f574012e",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "동공 대광반사 확인하겠습니다",
+     "request_id": "8d127f1e-26e2-4006-b8d6-131f132d60ce"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 22,
+     "result": "동공 3mm/3mm, 직접·간접 대광반사(+/+), 대칭",
+     "status": "OK",
+     "turns_remaining": 28
+    },
+    "http_status": 200,
+    "turn": 22
+   },
+   {
+    "id": "7b94bc02-50f0-4b41-9e7b-0a5d5a7f0508",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "손톱 시진하겠습니다",
+     "request_id": "9c7fb6f0-058a-490d-bab9-68b553cda357"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 23,
+     "result": "손톱 들뜸(-/-), 손톱밑 변색(-/-), 손톱밑 각질증식(-/-)",
+     "status": "OK",
+     "turns_remaining": 27
+    },
+    "http_status": 200,
+    "turn": 23
+   },
+   {
+    "id": "2cdb7451-1654-4b80-9c75-4ee237bd731d",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "복부 진찰하겠습니다",
+     "request_id": "dd2b7c9e-8daa-482f-92c9-5de4307d799f"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 24,
+     "error": {
+      "code": "EXAM_NOT_SPECIFIC",
+      "message": "Request one specific examination maneuver."
+     },
+     "turns_remaining": 26
+    },
+    "http_status": 422,
+    "turn": 24
+   },
+   {
+    "id": "167d7ed5-8b59-4d26-9b0d-0101bd09066e",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "눈 진찰하겠습니다",
+     "request_id": "e61b5c65-cbee-455b-8384-9b70bd71c018"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 25,
+     "error": {
+      "code": "EXAM_NOT_SPECIFIC",
+      "message": "Request one specific examination maneuver."
+     },
+     "turns_remaining": 25
+    },
+    "http_status": 422,
+    "turn": 25
+   },
+   {
+    "id": "83ea382e-fdac-4677-a8ea-097746c16166",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "목 앞을 만져보겠습니다",
+     "request_id": "620e5d61-01e5-47de-a9d4-191a5235fa39"
+    },
+    "effective_content": "hn_thyroid_palpation",
+    "response": {
+     "turn": 26,
+     "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+     "status": "OK",
+     "turns_remaining": 24
+    },
+    "http_status": 200,
+    "turn": 26
+   },
+   {
+    "id": "9408e849-2628-402c-aab8-ebb18a2b684e",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "목에 청진기 대보겠습니다",
+     "request_id": "904f2ddb-8a63-4040-a8a8-59fcbe67ad45"
+    },
+    "effective_content": "",
+    "response": {
+     "turn": 27,
+     "error": {
+      "code": "EXAM_NOT_SPECIFIC",
+      "message": "Request one specific examination maneuver."
+     },
+     "turns_remaining": 23
+    },
+    "http_status": 422,
+    "turn": 27
+   },
+   {
+    "id": "36f419f9-b6d1-4b46-997a-b848934b1029",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "무릎 반사 확인하겠습니다",
+     "request_id": "c35914b5-ddcd-4e60-a3c8-0c67483cb9a3"
+    },
+    "effective_content": "bex_dtr",
+    "response": {
+     "turn": 28,
+     "result": "슬개건 3+/3+, 아킬레스건 2+/2+",
+     "status": "OK",
+     "turns_remaining": 22
+    },
+    "http_status": 200,
+    "turn": 28
+   },
+   {
+    "id": "da7a194c-5a59-453b-8290-3fc943afb62c",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "손을 앞으로 뻗어 보세요",
+     "request_id": "c07f0e75-07db-48b0-9239-2163b7298b65"
+    },
+    "effective_content": "bex_postural_tremor",
+    "response": {
+     "turn": 29,
+     "result": "자세성 떨림(+/+)",
+     "status": "OK",
+     "turns_remaining": 21
+    },
+    "http_status": 200,
+    "turn": 29
+   },
+   {
+    "id": "6d2dab61-a268-4512-a5e7-06d90153e586",
+    "action": "EXAM",
+    "payload": {
+     "action": "EXAM",
+     "content": "갑상선 촉진하겠습니다",
+     "request_id": "a7d7f341-dac2-4161-9bbc-7b198c2ba903"
+    },
+    "effective_content": "hn_thyroid_palpation",
+    "response": {
+     "turn": 30,
+     "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+     "status": "OK",
+     "turns_remaining": 20
+    },
+    "http_status": 200,
+    "turn": 30
+   },
+   {
+    "id": "47c381ef-d47b-47ce-9a1f-b53aceb6d012",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "갑상선 기능이 높아진 것으로 보여요",
+     "request_id": "9733f9a8-11dc-4932-8dd6-e66b16cbe913"
+    },
+    "effective_content": "갑상선 기능이 높아진 것으로 보여요",
+    "response": {
+     "turn": 31,
+     "status": "OK",
+     "content": "검사로 확인할 수 있나요?",
+     "turns_remaining": 19
+    },
+    "http_status": 200,
+    "turn": 31
+   },
+   {
+    "id": "1f1d475b-cf1e-4b82-bbff-e10796c6f4f2",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "혈액검사로 호르몬을 확인할게요",
+     "request_id": "c68b990e-c759-4ac4-80c1-5775e13445a3"
+    },
+    "effective_content": "혈액검사로 호르몬을 확인할게요",
+    "response": {
+     "turn": 32,
+     "status": "OK",
+     "content": "네, 알겠어요.",
+     "turns_remaining": 18
+    },
+    "http_status": 200,
+    "turn": 32
+   },
+   {
+    "id": "f5d01159-e3c7-4b2d-a3ca-247e65209fcc",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "궁금하신 점 있으세요?",
+     "request_id": "38b139f0-4928-4ff9-9fcb-cc3edbc679bd"
+    },
+    "effective_content": "궁금하신 점 있으세요?",
+    "response": {
+     "turn": 33,
+     "status": "OK",
+     "content": "치료는 어떻게 하나요?",
+     "turns_remaining": 17
+    },
+    "http_status": 200,
+    "turn": 33
+   },
+   {
+    "id": "a1274787-600a-43cb-aa9a-69892f4dd88d",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "네, 혈액검사로 확인할 수 있어요",
+     "request_id": "dcde78c8-7369-489f-94b5-63e5141a335c"
+    },
+    "effective_content": "네, 혈액검사로 확인할 수 있어요",
+    "response": {
+     "turn": 34,
+     "status": "OK",
+     "content": "네, 검사받을게요.",
+     "turns_remaining": 16
+    },
+    "http_status": 200,
+    "turn": 34
+   },
+   {
+    "id": "cd3fc1ec-6a26-4bf4-86c9-dcd801e5cb98",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "약으로 대부분 잘 조절돼요",
+     "request_id": "d17403df-22fc-4d24-87b7-2578f129cbe8"
+    },
+    "effective_content": "약으로 대부분 잘 조절돼요",
+    "response": {
+     "turn": 35,
+     "status": "OK",
+     "content": "네, 다행이네요.",
+     "turns_remaining": 15
+    },
+    "http_status": 200,
+    "turn": 35
+   },
+   {
+    "id": "d30c0b10-6d92-46e6-95fe-fa5b985748b7",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "이해되셨어요? 한번 말해 보시겠어요?",
+     "request_id": "d36e8609-55aa-4512-b7ab-c3b0f9059721"
+    },
+    "effective_content": "이해되셨어요?",
+    "response": {
+     "turn": 36,
+     "status": "OK",
+     "content": "네, 이해됐어요.",
+     "turns_remaining": 14
+    },
+    "http_status": 200,
+    "turn": 36
+   },
+   {
+    "id": "b3cab1b8-d785-411b-aef8-ed8b37fb3913",
+    "action": "SAY",
+    "payload": {
+     "action": "SAY",
+     "content": "어떤 검사를 받는지 말씀해 보시겠어요?",
+     "request_id": "3f80f213-5b59-41fa-a6d6-266cb3ed4d31"
+    },
+    "effective_content": "어떤 검사를 받는지 말씀해 보시겠어요?",
+    "response": {
+     "turn": 37,
+     "status": "OK",
+     "content": "혈액검사로 호르몬을 확인해요.",
+     "turns_remaining": 13
+    },
+    "http_status": 200,
+    "turn": 37
+   }
+  ],
+  "note": "",
+  "record": {},
+  "diagnosis": "",
+  "score": null
+ }
+}

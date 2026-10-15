@@ -1,0 +1,391 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 언제부터 그러셨어요?",
+    "reply": "나는 일곱 해 전부터 잠을 잘 못 자서 힘들었어요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "드시는 약 이름과 용량을 아세요?",
+    "reply": "스틸녹스, 한 알이 10밀리그램이에요.",
+    "phase": "interview",
+    "qid": "sb_name",
+    "label": "약 이름·용량"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "그 약은 언제부터 드셨어요?",
+    "reply": "그때부터 동네 내과에서 수면제를 받아 먹기 시작했어요.",
+    "phase": "interview",
+    "qid": "sb_since",
+    "label": "복용 기간"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "요즘 하루에 몇 알 드세요?",
+    "reply": "한 번에 서너 알씩 먹어요.",
+    "phase": "interview",
+    "qid": "sb_dose_now",
+    "label": "현재 복용량"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "하루 중 언제 언제 드세요?",
+    "reply": "밤 열한 시쯤 한 알, 새벽 두세 시쯤 한 알 더",
+    "phase": "interview",
+    "qid": "sb_timing",
+    "label": "복용 시각"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "약을 안 드시면 어떤 증상이 있나요?",
+    "reply": "밤새 뒤척이고 온몸이 불안해요.",
+    "phase": "interview",
+    "qid": "sb_withdraw",
+    "label": "금단"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "이렇게 계속 먹어도 괜찮은지, 건강에 큰 문제가 생기지 않을지 걱정된다.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "줄이거나 끊어 보려 하신 적 있나요?",
+    "reply": "약을 줄이거나 끊으려다 실패한 적이 여러 번 있었어요.",
+    "phase": "interview",
+    "qid": "sb_cutdown",
+    "label": "감량 시도·실패"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "다른 수면제나 약국 약도 드세요?",
+    "reply": "약국에서 처방 없이 수면유도제도 가끔 사서 먹었어요.",
+    "phase": "interview",
+    "qid": "sb_other",
+    "label": "다른 약 병용"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "담배는 피우세요?",
+    "reply": "평생 피운 적이 없어요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "술은 얼마나 드세요?",
+    "reply": "일 년에 명절이나 가족 모임 때 소주 한두 잔 정도만 마신다.",
+    "phase": "interview",
+    "qid": "sh_alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "약 드신 뒤 기억이 끊긴 적 있나요?",
+    "reply": "가끔은 약을 먹고 난 뒤 기억이 잘 안 나는 경우도 있었어요.",
+    "phase": "interview",
+    "qid": "sb_blackout",
+    "label": "기억 공백"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "가족들이 약 문제로 걱정하나요?",
+    "reply": "가족들과도 갈등이 있었어요.",
+    "phase": "interview",
+    "qid": "sb_family",
+    "label": "대인 갈등"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "고혈압이 있어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "커피는 하루 몇 잔 드세요?",
+    "reply": "하루에 한두 잔 마신다.",
+    "phase": "interview",
+    "qid": "sh_caffeine",
+    "label": "카페인"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "요즘 스트레스 받는 일 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "sh_stress",
+    "label": "스트레스"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "요즘 기분이 많이 가라앉나요?",
+    "reply": "최근에 멍하고 가라앉는 기분이 있어요.",
+    "phase": "interview",
+    "qid": "ps_mood",
+    "label": "우울"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제 있으세요?",
+    "reply": "암로디핀을 먹고 있어요. 그 외에는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "부모님이나 형제분 앓는 병 있나요?",
+    "reply": "아버지는 심장병으로 돌아가셨고, 어머니는 치매로 요양병원에 계시다 돌아가셨습니다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "다른 지병이 있으신가요?",
+    "reply": "고혈압이 있어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "즐겁던 일에 흥미가 줄었나요?",
+    "reply": "친구들과 모임도 최근 일 년 사이에 거의 나가지 않았다.",
+    "phase": "interview",
+    "qid": "ps_interest",
+    "label": "흥미 저하"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "불면증 해결 방법이 궁금해요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(+)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "주간 진정·불안 관찰하겠습니다",
+    "reply": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+    "phase": "exam",
+    "qid": "sedation",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 6mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(-/-)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난, 발한(-), 손바닥 습윤(-/-)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "기분·정동 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "affect",
+    "label": "",
+    "system": "Psych"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "심부건반사 검사하겠습니다",
+    "reply": "심부건반사 검사 (Deep tendon reflex test) | 양측 반사 2+/2+, 대칭",
+    "phase": "exam",
+    "qid": "dtr",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "박선희 님은 진정수면제 사용장애가 보여요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "소변 검사로 다른 진정제 사용 여부를 확인하고요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "감량은 전문의 지도하에 진행하며 운전은 피하도록 해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "약은 갑자기 끊지 말고 천천히 줄여요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "수면 습관 교정과 인지행동치료도 같이 해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "숨참·불규칙 심박·고열·혼동이 생기면 바로 와요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "reply": "식은땀이 나고, 가슴이 두근거리고, 머리가 아프고, 손이 떨린다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보러 다시 오세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "가족들과 갈등이 있었다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

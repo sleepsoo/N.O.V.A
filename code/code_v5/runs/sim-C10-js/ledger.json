@@ -1,0 +1,373 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 걱정되셨겠어요. 식사량은 예전과 비교해 어떠세요?",
+    "reply": "식사량이 예전보다 늘어난 것 같아요.",
+    "phase": "first",
+    "qid": "wl_intake",
+    "label": "식사량·식욕"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "더위를 예전보다 많이 타세요?",
+    "reply": "요즘 더위를 많이 타요.",
+    "phase": "interview",
+    "qid": "wl_heat",
+    "label": "더위 민감"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가슴이 두근거릴 때가 있나요?",
+    "reply": "가슴이 두근거려요.",
+    "phase": "interview",
+    "qid": "wl_palp",
+    "label": "두근거림"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "손이 떨리세요?",
+    "reply": "손이 떨려요.",
+    "phase": "interview",
+    "qid": "wl_tremor",
+    "label": "손떨림"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "대변 횟수나 모양이 변했나요?",
+    "reply": "변이 하루에 이에서 삼회 정도예요.",
+    "phase": "interview",
+    "qid": "wl_bowel",
+    "label": "배변 변화"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "물을 예전보다 많이 마시나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "wl_thirst",
+    "label": "다음"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "최근 살이 많이 빠지고 여러 증상이 함께 있어서 혹시 큰 병이 아닐까 걱정이 많아요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "특히 걱정되는 병이 있으세요?",
+    "reply": "최근 살이 많이 빠지고 여러 증상이 함께 있어서 혹시 큰 병이 아닐까 걱정이 많아요.",
+    "phase": "ice",
+    "qid": "ice_disease",
+    "label": "걱정 질환"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "갑상샘 질환 진단을 받은 적은 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제 있으세요?",
+    "reply": "복용 중인 약이나 건강보조식품도 없어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "최근 열이 나나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "wl_fever",
+    "label": "발열"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "눈이 멀리 보이기 어려우세요?",
+    "reply": "눈이 멀리 보이기 어려워요.",
+    "phase": "interview",
+    "qid": "wl_eye",
+    "label": "눈 증상"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "목이 아프거나 부어오르세요?",
+    "reply": "목 앞이 조금 두꺼워졌어요.",
+    "phase": "interview",
+    "qid": "wl_neck",
+    "label": "목 부음"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "최근에 힘이 빠지나요?",
+    "reply": "피로감이 심해서 아침에 일어나기 힘들어요.",
+    "phase": "interview",
+    "qid": "wl_fatigue",
+    "label": "근력 저하"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "운동량이 늘었나요?",
+    "reply": "운동량이 늘어난 적 없어요.",
+    "phase": "interview",
+    "qid": "wl_activity",
+    "label": "활동량"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "부모님이나 형제분 앓는 병 있나요?",
+    "reply": "어머니가 갑상샘 기능저하증으로 약을 드시고 계신다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "담배는 피우세요?",
+    "reply": "담배는 피우지 않아요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "술은 얼마나 드세요?",
+    "reply": "술은 한 달에 한두 번 친구들과 가볍게 마시는 정도예요.",
+    "phase": "interview",
+    "qid": "sh_alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "생리 주기나 양이 변했나요?",
+    "reply": "생리 주기도 변화가 있었어요.",
+    "phase": "interview",
+    "qid": "wm_cycle",
+    "label": "월경 변화"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "혹시 임신 가능성은 있으세요?",
+    "reply": "임신 가능성은 없어요.",
+    "phase": "interview",
+    "qid": "wm_preg",
+    "label": "임신 가능성"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "가슴이 두근거리는 증상도 자주 있어요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "갑상선 안징후 검사하겠습니다",
+    "reply": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+    "phase": "exam",
+    "qid": "eye_signs",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "요골동맥 맥박 촉진하겠습니다",
+    "reply": "102회/분, 규칙적, 강하고 빠름",
+    "phase": "exam",
+    "qid": "radial",
+    "label": "",
+    "system": "Pulse"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(+/+)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "갑상선 잡음 청진하겠습니다",
+    "reply": "잡음(+/+)",
+    "phase": "exam",
+    "qid": "thyroid_bruit",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "경정맥 팽대 관찰하겠습니다",
+    "reply": "경정맥 팽대(-/-)",
+    "phase": "exam",
+    "qid": "jvp",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "기립성 혈압 측정 | 130/70 mmHg, 규칙적",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "흉곽 시진하겠습니다",
+    "reply": "전후:좌우 1:2, 보조호흡근 사용(-)",
+    "phase": "exam",
+    "qid": "chest_insp",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "현재 증상으로 그레이브스병 가능성이 높습니다.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "갑상선 호르몬이 많아 체중이 감소하고 두근거려요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "추가 검사를 통해 증진 상황을 확인할 예정입니다.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "항갑상샘제 시작은 검사 결과와 함께 결정할 계획입니다.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "숨참·불규칙한 맥·고열·혼동 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과 보고 약을 정해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "검사와 치료 궁금해요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

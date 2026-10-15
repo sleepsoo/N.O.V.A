@@ -1,0 +1,89 @@
+---
+title: "Semi-Quantitative Scoring of Late Gadolinium Enhancement of the Left Ventricle in Patients with Ischemic Cardiomyopathy: Improving Interobserver Reliability and Agreement Using Consensus Guidance from the Asian Society of Cardiovascular Imaging-Practical Tutorial (ASCI-PT) 2020"
+organization: "Asian Society of Cardiovascular Imaging-Practical Tutorial"
+year: "2022"
+language: en
+source_url: "https://europepmc.org/article/MED/35213094"
+license: "CC BY-NC"
+---
+# Semi-Quantitative Scoring of Late Gadolinium Enhancement of the Left Ventricle in Patients with Ischemic Cardiomyopathy: Improving Interobserver Reliability and Agreement Using Consensus Guidance from the Asian Society of Cardiovascular Imaging-Practical Tutorial (ASCI-PT) 2020
+
+## Abstract
+
+### Objective
+
+This study aimed to evaluate the effect of implementing the consensus statement from the Asian Society of Cardiovascular Imaging-Practical Tutorial 2020 (ASCI-PT 2020) on the reliability of cardiac MR with late gadolinium enhancement (CMR-LGE) myocardial viability scoring between observers in the context of ischemic cardiomyopathy.
+
+### Materials and Methods
+
+A total of 17 cardiovascular imaging experts from five different countries evaluated CMR obtained in 26 patients (male:female, 23:3; median age [interquartile range], 55.5 years [50–61.8]) with ischemic cardiomyopathy. For LGE scoring, based on the 17 segments, the extent of LGE in each segment was graded using a five-point scoring system ranging from 0 to 4 before and after exposure according to the consensus statement. All scoring was performed via web-based review. Scores for slices, vascular territories, and total scores were obtained as the sum of the relevant segmental scores. Interobserver reliability for segment scores was assessed using Fleiss’ kappa, while the intraclass correlation coefficient (ICC) was used for slice score, vascular territory score, and total score. Inter-observer agreement was assessed using the limits of agreement from the mean (LoA).
+
+### Results
+
+Interobserver reliability (Fleiss’ kappa) in each segment ranged 0.242–0.662 before the consensus and increased to 0.301–0.774 after the consensus. The interobserver reliability (ICC) for each slice, each vascular territory, and total score increased after the consensus (slice, 0.728–0.805 and 0.849–0.884; vascular territory, 0.756–0.902 and 0.852–0.941; total score, 0.847 and 0.913, before and after implementing the consensus statement, respectively. Interobserver agreement in scoring also improved with the implementation of the consensus for all slices, vascular territories, and total score. The LoA for the total score narrowed from ± 10.36 points to ± 7.12 points.
+
+### Conclusion
+
+The interobserver reliability and agreement for CMR-LGE scoring for ischemic cardiomyopathy improved when following guidance from the ASCI-PT 2020 consensus statement.
+
+## INTRODUCTION
+
+Myocardial viability is assessed to evaluate the potential risks and benefits of revascularization and inform management decisions for patients with ischemic cardiomyopathy. Among various imaging modalities, cardiac MR with late gadolinium enhancement (CMR-LGE) is a great tool for assessing myocardial viability, yielding high spatial resolution and anatomic detail. Although accurate and consistent evaluation of CMR-LGE is required from the perspective of viability, semiquantitative/visual scoring reflecting the extent of myocardial scarring and transmural involvement has been accepted because full quantification of CMR could be burdensome for daily use. However, the actual process of CMR-LGE evaluation for both semiquantitative/visual scoring and full quantitative scoring might be complicated and ambiguous, despite well-established guidelines for LGE evaluation.
+
+The interpretation of CMR-LGE is a complex and intricate process, although several well-written and comprehensive guidelines are available. According to these guidelines, visual interpretation and semi-quantitative scoring consist of various steps, including determining the presence of CMR-LGE, describing the location of CMR-LGE, evaluating the extent of CMR-LGE, and semi-quantitative scoring. However, various arbitrary points require further clarification and standardization. To resolve these typical problems, the Asian Society of Cardiovascular Imaging-Practical Tutorial 2020 (ASCI-PT 2020) published a consensus on CMR-LGE scoring from CMR experts. The entire ASCI-PT 2020 process and established consensus statement are well described in the accompanying publication. There is a need to determine whether the new consensus statement has facilitated improved reproducibility for evaluating myocardial viability using CMR-LGE.
+
+Generally, the reproducibility of scoring methods involves not only reliability but also agreement. The two concepts are distinct: reliability is defined as the ability of a measurement to differentiate between subjects or objects, and agreement is the degree to which scores are identical. Both concepts are important because they provide information about the quality of the measurements. In our study, reliability refers to how well a reader can identify myocardial scarring using CMR-LGE, and agreement is the extent to which scores determined by different readers are similar.
+
+Therefore, this study aimed to evaluate the effect of the ASCI-PT 2020 consensus statement on the reliability of CMR-LGE myocardial viability scoring between observers in the context of ischemic cardiomyopathy.
+
+## MATERIALS AND METHODS
+
+This retrospective study was approved by the Institutional Review Boards of all 13 institutions that provided LGE data for 26 patients with ischemic cardiomyopathy (approval numbers: 2012-032-19346, 2021AN0003, DAUHIRB-21-004, 2021AS0001, 2020-12-158-001, H-2012-132-1183, SCHCA 2021-01-008, 4-2020-1317, 2021-0122-001, PC21RIDI0017, KNUH 2020-12-026-001, 3-2021-0035, and 2021-0335). The requirement for informed consent was waived. The LGE data were collected from 13 hospitals (representing 13 panels) in South Korea (two cases per hospital).
+
+### Patients and Observers
+
+A total of 17 experienced observers from five different countries, consisting of 16 radiologists, with specific training and expertise in cardiovascular imaging, and one cardiologist, reported LGE scores for 26 patients with ischemic cardiomyopathy before and after dissemination of the ASCI-PT 2020 consensus statement. After confirming the presence of the ASCI-PT 2020 consensus statement in South Korea, we sent invitations to Korean ASCI members and executive committee members abroad. Finally, the members who accepted the invitation were included as participants. Among these readers, 52.9% had more than 10 years of CMR experience after board certification. The 26 cases were from 13 hospitals with varying MR imaging protocols, so that consensus guidance could be applied in a routine reading setting. Based on the 17 segments recommended by the American Heart Association (AHA), the LGE extent corresponding to each segment was scored as follows: 0, 0%; 1, 1%–25%; 2, 26%–50%, 3, 51%–75%, and 4, 76%–100%. Before the establishment of the consensus guidance, all participants applied their pre-existing LGE scoring methods without any special guidance. After the consensus statement was established, the participants were instructed to score the same cases again according to the consensus guidance. All scoring was performed using the ASCI-PT 2020 web-based review and scoring system (https://www.asci-heart.org:4442/meeting/programPT_2020.php).
+
+### Consensus for Semi-Quantitative LGE Scoring
+
+The ASCI-PT 2020 consensus statement for semi-quantitative LGE scoring mainly addressed seven issues to improve communication and reduce interobserver variability in the LGE interpretation. A summary of the consensus statements for these seven issues is shown in Table 1. Briefly, the consensus statement clarified how to divide myocardial segments, the definition of a delayed enhanced lesion, and how to score delayed enhanced lesion extent.
+
+### Statistical Analysis
+
+Interobserver reliability among the 17 observers was assessed using Fleiss’ kappa (with weighted calculation) with 95% confidence intervals (CIs) for each segment according to the AHA recommendations, intraclass correlation coefficients (ICCs) with 95% CIs for scoring of slices (apical, mid, and basal), vascular territories (right coronary artery [RCA], left anterior descending artery [LAD], and left circumflex artery [LCX]), and total score. Fleiss’ kappa is a statistical measure used to assess the reliability of agreement between three or more raters. To calculate the ICC, we used a two-way mixed effects model and “consistency” as the definition. In the slice analysis,‘apical’ was the sum of scores of segments 13–17, ‘mid-cavity’ was the sum of scores of segments 7–12, and basal was the sum of scores of segments 1–6. In the vascular territory analysis, RCA was the sum of scores of segments 3, 4, 9, 10, and 15; LAD was the sum of scores of segments 1, 2, 7, 8, 13, 14, and 17; and LCX was the sum of scores of segments 5, 6, 11, 12, and 16. The total was the sum of the scores of all segments.
+
+Interobserver agreement was assessed using a graphical method for multiple observers in a single plot, according to previous research. The differences between each observer and overall mean of all observers were calculated, including the limits of agreement from the mean (LoA) (± two standard deviations), which provides a useful measure for comparing likely differences between individual measurements performed using the two methods (before and after implementation of the consensus guidance). The difference in the mean of each observer was subsequently plotted. The range between the higher and lower LoA (twice the LoA) could be interpreted as the minimal detectable difference, with a narrower range representing higher agreement. Analyses were performed using the R packages “tibble,” “plyr,” “dplyr,” “ggplot2,” “magrittr,” and “MASS” (R Foundation for Statistical Computing).
+
+## RESULTS
+
+Among the 26 cases of ischemic cardiomyopathy assessed using LGE in this study, the median age was 55.5 years (interquartile range, 50–61.8), and 23 patients were male (88.5%). The most commonly used MR imaging machine manufacturer was Siemens (73.1%, 19/26), followed by GE (15.4%, 4/26) and Philips (11.5%, 3/26). Twenty-three patients were scanned using 3T machines (88.5%), and the remaining patients were scanned using 1.5T machines (11.5%). Two patients had three-vessel disease (7.7%), five had two-vessel disease (19.2%), and 19 patients had one-vessel disease (73.1%).
+
+### Interobserver Reliability for Each Segment
+
+Table 2 and Supplementary Table 1 summarize the interobserver reliability analysis for LGE scoring for each segment (reflected by Fleiss’ kappa) before and after the implementation of the consensus guidance. Reliability improved for all segments after the implementation of consensus guidance.
+
+Before the consensus statement was established, the Fleiss’ kappa values of segments 6, 9, 12, and 16 ranged from 0.242 to 0.364; the Fleiss’ kappa values of segments 1, 2, 3, 5, 7, 8, 11, 13, 14, 15, and 17 ranged from 0.435 to 0.531, and the Fleiss’ kappa values of segments 4 and 10 ranged from 0.644 to 0.662. After implementation of the consensus guidance, the Fleiss’ kappa of segment 12 was 0.301; Fleiss’ kappa values of segments 1, 2, 6, 9, 14, 15, 16, and 17 ranged from 0.424 to 0.577, and Fleiss’ kappa values of segments 3, 4, 5, 7, 8, 10, 11, and 13 ranged from 0.603 to 0.774 (Figs. 1, 2).
+
+### Interobserver Reliability for Slices, Vascular Territories, and Total Score
+
+Table 3 and Supplementary Table 2 show the interobserver reliability analysis for LGE scoring according to slice, vascular territory, and total score (reflected by the ICC) before and after consensus guidance implementation. Reliability increased after the consensus statement guidance was implemented for all slices and vascular territories and for the total score. The ASCI-PT 2020 consensus statement guidance improved the interobserver reliability for basal slices from good to excellent. After consensus guidance implementation, reliability was excellent for all slices, vascular territories, and total score.
+
+### Interobserver Agreement
+
+Table 4, Figure 3, and Supplementary Figure 1 show the analysis of agreement among readers as expressed by the LoA for slices, vascular territories, and total score before and after consensus guidance implementation. All LoAs narrowed after implementation of the ASCI-PT 2020 consensus guidance.
+
+## DISCUSSION
+
+The present study revealed the effects of using a consensus statement for scoring LGE in ischemic cardiomyopathy. The ASCI-PT 2020 consensus statement increased both the interobserver reliability and agreement of LGE scoring.
+
+Using the ASCI-PT 2020 consensus statement, readers were more consistent in their CMR-LGE evaluations of myocardial viability. Interobserver variability (represented by Fleiss’ kappa) for myocardial viability for each myocardial segment improved from 0.242–0.662 to 0.301–0.774. Interobserver variability (ICC) according to slice, vascular territory, and total score increased after consensus statement implementation over those before consensus statement implementation (ICC range before vs. after consensus, respectively: slice, 0.728–0.805 vs. 0.849–0.884; vascular territory, 0.756–0.902 vs. 0.852–0.941; total score, 0.847 vs. 0.913). Scoring agreement in all slices, vascular territories, and total scores improved with the implementation of the consensus guidance.
+
+These findings may have resulted from the lack of clear standards or definitions guiding myocardial scoring before publication of the ASCI-PT 2020 consensus statement. For example, there were no clear definitions for dividing the slices of the left ventricular (LV) myocardium, the most basal short-axis image of the basal LV slice, the exact area of segment 17, the most apical short-axis image of the apical LV slice, the segments in short-axis images, and even the presence of LGE. The ASCI-PT 2020 consensus statement clearly defined these previously ambiguous elements based on expert consensus, and it is believed that the reproducibility of scoring increased after these ambiguous criteria were made clearer. According to the suggested bullseye map, the interobserver agreement of the basal and mid-anterolateral wall and inferoseptal wall was particularly low. This means that the standards for dividing the myocardial slices and the boundary between the inferior/inferoseptal and anterior/anteroseptal areas were ambiguous. Therefore, it is presumed that the clear definitions provided by the consensus statement and the definition of the volumetric extent helped to increase agreement.
+
+Most recent studies on myocardial viability in CMR-LGE have been conducted using a five-point scale (i.e., score of 0, 0%; score of 1, 1%–25%; score of 2, 26%–50%, score of 3, 51%–75%, and score of 4, 76%–100%) and based on the 16 or 17 segments recommended by the AHA. However, because there were no clear definitions for anatomic details of LV slices or specific segments and even lesion definitions, the reliability of myocardial viability assessments among different studies is questionable. Therefore, we believe that the results of the recent Surgical Treatment for Ischemic Heart Failure (STICH) trial, which did not find an association between myocardial viability and a long-term benefit of revascularization in patients with ischemic cardiomyopathy, can be interpreted in a similar context. This indicates the requirement for more accurate evaluation of myocardial viability using CMR-LGE following standard guidelines.
+
+Few studies have assessed the interobserver reliability of myocardial viability assessed using CMR-LGE. Setser et al. reported that the overall agreement between two readers for quantitative assessment of myocardial viability using CMR-LGE was acceptable, with ICCs ranging from 0.77 to 0.84. Glaveckaite et al. checked interobserver variability between two blinded experienced readers for transmural grading in 10 patients, and these two readers showed good agreement (kappa = 0.88). These reported reliability findings were only between two readers and were similar to our interobserver reliability values obtained before the consensus guidance implementation. Our study determined the interobserver reliability of 17 observers, showing that reliability increased after the implementation of the consensus guidance.
+
+There are several limitations to this study. First, this study showed different reproducibility levels for each myocardial segment; however, the reason for this is unknown. Nonetheless, the primary purpose of this study was to show the changes in reproducibility before and after implementation of the ASCI-PT 2020 consensus statement guidance, and a significant increase in reproducibility was revealed for all myocardial segments. Further studies with robust designs are warranted to investigate the explanation for the different reproducibility levels among different myocardial segments. Second, in this study, the individuals who established the consensus statement were also the readers who performed the myocardial viability scoring. As this might have introduced bias, future studies should involve readers who were not involved in establishing the guidelines for myocardial viability scoring methods. Additionally, future studies focusing on validating the ASCI-PT 2020 consensus statement are needed.
+
+In conclusion, interobserver reliability and agreement for CMR-LGE scoring for ischemic cardiomyopathy improved using guidance from the ASCI-PT 2020 consensus statement.

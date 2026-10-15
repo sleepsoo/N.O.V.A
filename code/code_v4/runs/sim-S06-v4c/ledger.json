@@ -1,0 +1,367 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많은 걱정이 되셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "피로에 대해 자세히 말씀해 주세요",
+    "reply": "두세 달 전부터 몸이 너무 피곤해요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "눈이 침침하고 글씨가 흐릿해요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "눈 증상에 대해 자세히 말씀해 주세요",
+    "reply": "한 달 전부터 눈이 침침하고 글씨가 흐릿해요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "천식 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "안전"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "가만히 있어도 숨이 차세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "안전"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "평소 앓는 병이 있으세요?",
+    "reply": "고혈압이 있어서 하루에 한 알씩 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "과거력"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "드시는 약이 있으세요?",
+    "reply": "고혈압이 있어서 하루에 한 알씩 먹어요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "가족 중에 아픈 분이 있으세요?",
+    "reply": "아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "가족력"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "눈이 침침하신 이유에 대해 자세히 말씀해 주세요",
+    "reply": "한 달 전부터 눈이 침침하고 글씨가 흐릿해요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "최근 혈색소가 나빠지는 건 없으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "피부가 건조하시나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "비정상적인 소변 색이 보이시나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "당뇨가 맞다면 평생 약을 먹어야 하는지 궁금해요",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 16,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "146/88mmHg, 82회/분 규칙적, 16회/분, 36.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 비만 체형, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 황달(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "동공 대광반사 확인하겠습니다",
+    "reply": "동공 대광반사 | 양측 반응 2+/2+",
+    "phase": "exam",
+    "qid": "pupil",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "갑상선 잡음 청진하겠습니다",
+    "reply": "갑상선 잡음 청진 | 비음성(-)",
+    "phase": "exam",
+    "qid": "thyroid_bruit",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "경부 림프절 촉진하겠습니다",
+    "reply": "경부 림프절 2+/2+, 대칭, 무통, 비확대",
+    "phase": "exam",
+    "qid": "cervical_ln",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "복부 비만, 하복부 수술 반흔(+), 팽만(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "간·비장 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-)",
+    "phase": "exam",
+    "qid": "liver_spleen",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "2형 당뇨병은 인슐린 저항성으로 인한 혈당 상승입니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "식사 조절과 운동이 치료의 기본이에요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_options",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "시야 흐림·다식·다뇨는 혈당 상승이 원인입니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_link",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "당뇨를 평생 약에 의존해야 하는지 신경쓰셨죠",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "지질·신장·간 검사는 약 선택에 도움을 줍니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "복용 시 식후 물을 충분히 마셔야 합니다",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_caution",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "3개월 후 혈당·체중·시야 검사 결과를 함께 확인하세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "고혈당으로 인한 구토·의식저하면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "소변이 자주 마려워서 낮에 열 번 넘게 화장실에 가요",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  }
+]

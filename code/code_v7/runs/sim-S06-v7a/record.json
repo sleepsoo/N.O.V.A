@@ -1,0 +1,26 @@
+{
+  "S": {
+    "cc": "C.C : 피로 및 목 건조\nOnset : 두세 달\n통증평가 : 해당 없음",
+    "hpi": "오미경, 16세, 여성.\n두세 달 전에 피로와 목 건조를 시작해 자주 배뇨가 늘어났다고 호소.\n체중이 삼키로그람 감소했다고 보고.\n단일 제왕절개는 15년 전이며, 현재 혈압제 하루 1알을 복용중.\n일상생활에 피로로 인한 영향이 있었고, 가족 당뇨와 아버지의 투석 이력을 두려워해 내원함.\n걱정·궁금증 : 없음; 가족력과 비슷",
+    "pmh": "DM / HTN ( /+)\nprevious stroke ( )\nTbc / hepatitis ( / )\nheart disease ( )  dyslipidemia ( )\nOp. Hx (+) 15년 전\nMedicine history : 혈압제 1알·일일\nAllergy ( )\nOthers : 고혈압 (+), 당뇨(-), 혈압제 복용(+, 하루 1알)",
+    "fh": "DM / HTN (+/ )\nStroke ( )\nOthers : 당뇨 (+)",
+    "sh": "Smoking (-)\nAlcohol (-)\nOthers : 흡연 (-), 음주 (-), 술(-)",
+    "ros": "General weakness ( )  Fatigue (+)\nHeadache ( )  Dizziness (-)\nChest pain ( )  Palpitation ( )\nFever/Chill/Cough/Sputum/Rhinorrhea (-/ / / / )\nAbdominal pain ( )  Melena ( )  Hematochezia ( )  Hematemesis ( )\nAnorexia/Nausea/Vomiting/Diarrhea/Constipation ( / / / / )\nOthers : 체중 감소 (+ 삼키로그람), 추위 민감 (-), 숨가쁨 (-), 소변 색 변화 (-), 변비 (-), 부종 (-), 어지러움 (-), 열 (-), 요실 (-), 투석 걱정 (+), 기분 변화(-), 수면(-), 생리량(-)"
+  },
+  "O": {
+    "exam": "V/S : BP 146/88 mmHg, PR 82 회/분, RR 16 회/분, BT 36.6°C (턴 23 측정, 시작 정보와 같음)\nGeneral : 전반적 외관 시진 : 급성 병색(-), 비만 체형, 안절부절(-) (턴 24)\nH/E/E/N/T : 결막·공막 시진 : 창백(-/-), 충혈(-/-), 황달(-/-) (턴 25). 안저 검사 : 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상 (턴 26)\nNeck : 갑상선 촉진 : 비대(-), 결절(-), 압통(-) (턴 27)\nChest : 심음 청진 : S1·S2 명료, 규칙적, 심잡음(-) (턴 28). 폐 청진 : 폐포음, 수포음(-/-), 천명음(-/-) (턴 29)\nAbdomen : 복부 촉진 : 압통(-), 종괴(-), 근성방어·강직(-) (턴 30). 늑척추각 압통 확인 : 압통(-/-) (턴 31)\nExtremities : 하지 말초 진찰 : 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-) (턴 32)",
+    "tests": ""
+  },
+  "A": {
+    "evidence": "#1. 2형 당뇨병 (Type 2 Diabetes Mellitus)\n- 근거 : 피로, 목 건조, 자주 배뇨와 체중 감소가 3개월간 지속 (시작 정보; 턴 1, 13)\n- 근거 : 비만 체형과 고혈압이 있기에 당뇨 위험 증가 (턴 2, 23, 24)\n- 근거 : 가족 당뇨력(부모) 존재 (턴 15)",
+    "differential": "r/o 만성 무증상 갑상선기능저하증 (Silent Hypothyroidism) : 반대 → 환자 무증상, 목 건조 환자가 아닌, 제경절 양성 → 가능성 낮음 (시작 정보; 턴 2, 27). 감별 검사 : TSH, FT4\nr/o 부신피로증후군 (Adrenal Fatigue Syndrome) : 반대 → 고혈압 존재, 증상 충분히 짧음 → 가능성 낮음 (턴 2, 13, 32). 감별 검사 : ACTH, cortisol 연속 (TRAb 음성·불명확 시)\nr/o 위장관 질환(소화불량) : 지지 → 소화불량 비음성, 대체 증상 없음 → 배제 어려움 (턴 9). 감별 검사 : 대변 검사, 위장 내시경\nr/o 정신과적 인과(지속적 스트레스) : 지지 → 피로 무증상, 가족력 없음 → 가능성 중간 (턴 16, 17). 감별 검사 : 심리평가\nr/o 당뇨 [환자 우려] : 지지 → 몸이 피곤하고, 목 건조, 자주 배뇨, 체중 감소, 가족력 → 가장 가능성 (시작 정보; 턴 1, 13, 15). 감별 검사 : HbA1c, 공복혈당"
+  },
+  "P": {
+    "tests": "- 혈액 : CBC, 최종화, 공복혈당/HbA1c : 기본검사\n- 혈액 : TFT, 단백/스코어(조건부) : 갑상선 기능\n- TSH, FT4 : 만성 무증상 갑상선기능저하증 (Silent Hypothyroidism) 감별\n- (조건부) ACTH, cortisol 연속 : TRAb 음성·불명확 시 — 부신피로증후군 (Adrenal Fatigue Syndrome) 감별\n- 대변 검사, 위장 내시경 : 위장관 질환(소화불량) 감별\n- 심리평가 : 정신과적 인과(지속적 스트레스) 감별",
+    "treatment": "- 식사·운동 요법\n- 결과 확인 후 경구 혈당강하제 시작 고려(eGFR 확인)\n- 새 약 시작 전 금기·약물 알레르기·상호작용 확인",
+    "disposition": "- 활력징후 대체로 안정(혈압 상승)\n- 현재 외래 추적이 적절하며 활력징후 불안정·증상 급격한 악화 시 입원 고려",
+    "follow_up": "- 의뢰 기준 : 매우 높은 혈당·케톤·합병증 의심 시 내분비내과\n- 즉시 내원 : 심한 갈증·구토·의식 저하(고혈당 응급)",
+    "education": "진료 중 설명함:\n- 당뇨병 가능성이 높아 보여요.\n- 피로·목말라함이 원인일 수 있어요.\n- 투석 걱정이 있으면 고혈압·신장검사 할게요.\n- 식이·운동써 혈당 관리 해요.\n- 숨참·고열·저혈당·시야흐려 시 바로 오세요.\n- 바로 오셔야 할 증상 하나를 말씀해 보세요.\n- 1~2주 뒤 결과 보러 다시 오세요.\n다음 방문 시 교육 예정 : 당뇨 관리는 생활습관 핵심\n참고 지침 : 2019 Clinical Practice Guidelines for Type 2 Diabetes Mellitus in Korea (KR_EuropePMC, 2019); 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021); 당뇨병 (KR_HealthInfo, 2026)"
+  },
+  "diagnosis": "2형 당뇨병 (Type 2 Diabetes Mellitus)"
+}

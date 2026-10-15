@@ -1,0 +1,391 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "다소 괴로우셨겠어요. 배 어디가 아프세요?",
+    "reply": "오른쪽 아랫배가 더 아프다.",
+    "phase": "first",
+    "qid": "ap_site",
+    "label": "부위"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "어떻게 아프세요?",
+    "reply": "차가 덜컹거릴 때마다 아팠다.",
+    "phase": "interview",
+    "qid": "ap_char",
+    "label": "양상"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "0~10점이면 몇 점이에요?",
+    "reply": "십 점 중에 칠 점 정도예요.",
+    "phase": "interview",
+    "qid": "ap_nrs",
+    "label": "강도"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "식사와 관련해 달라지나요?",
+    "reply": "입맛이 없어서 아무것도 먹지 못했어요.",
+    "phase": "interview",
+    "qid": "ap_meal",
+    "label": "식사 연관"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "메스껍거나 토하세요?",
+    "reply": "메스껍고 토했어요.",
+    "phase": "interview",
+    "qid": "ap_nv",
+    "label": "구역·구토"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "설사나 변비가 있나요?",
+    "reply": "그 뒤로 대변은 보지 않았고, 설사는 없어요.",
+    "phase": "interview",
+    "qid": "ap_bowel",
+    "label": "배변"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "변이 검거나 피가 섞이나요?",
+    "reply": "검은 변이나 피가 섞인 변은 없어요.",
+    "phase": "interview",
+    "qid": "ap_blood",
+    "label": "위장관 출혈"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "가슴이 아프지 않아요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "아픈 곳이 옮겨 갔나요?",
+    "reply": "밤 열두 시가 지나면서 통증이 오른쪽 아랫배로 옮겨 갔어요.",
+    "phase": "interview",
+    "qid": "ap_migrate",
+    "label": "이동"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "통증이 다른 곳으로 퍼지나요?",
+    "reply": "통증이 등이나 사타구니, 고환 쪽으로 뻗치지는 않아요.",
+    "phase": "interview",
+    "qid": "ap_rad",
+    "label": "방사통"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "목이 따가운가요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ap_fever",
+    "label": "발열"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "소변이 어둡거나 아프나요?",
+    "reply": "소변 따갑거나 아프지 않고 색도 평소와 같아요.",
+    "phase": "interview",
+    "qid": "ap_urine",
+    "label": "비뇨기"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "진통제나 알코올을 자주 드세요?",
+    "reply": "진통제는 안 먹었고, 주 1회 마셔요.",
+    "phase": "interview",
+    "qid": "ap_nsaid",
+    "label": "진통제·음주"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "통증이 점점 심해졌나요?",
+    "reply": "통증이 점점 심해지고 있어요.",
+    "phase": "interview",
+    "qid": "hpi_course",
+    "label": "경과"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "일상생활이 어려우셨나요?",
+    "reply": "다음 주에 학회 발표가 있어서 일정에 지장이 있을까 봐 신경이 쓰인다.",
+    "phase": "interview",
+    "qid": "hpi_impact",
+    "label": "일상 지장"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "고혈압, 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "술은 얼마나 드세요?",
+    "reply": "일주일에 한 번 정도 맥주 두세 잔 마셔요.",
+    "phase": "interview",
+    "qid": "sh_alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "현재 복용 중인 약이 있나요?",
+    "reply": "평소 먹는 약은 없고, 어제 먹은 소화제 한 알이 전부예요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "가족분 중에 같은 증상이 있나요?",
+    "reply": "형이 맹장 수술을 받았어요.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "하루에 담배 몇 개나 피우세요?",
+    "reply": "하루 반 갑 정도 피워요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "이 문제로 진료받은 적 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "hpi_prior",
+    "label": "이전 진료"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "수술을 해야 하는지 궁금해요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "편평, 팽만(-), 수술 반흔(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "장음 청진하겠습니다",
+    "reply": "감소 4회/분, 금속성음(-)",
+    "phase": "exam",
+    "qid": "bowel",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "반발통 확인하겠습니다",
+    "reply": "우하복부 반발압통(+)",
+    "phase": "exam",
+    "qid": "rebound",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "머피 징후 확인하겠습니다",
+    "reply": "머피 징후(-)",
+    "phase": "exam",
+    "qid": "murphy",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "맥버니 압통 확인하겠습니다",
+    "reply": "맥버니점 압통(+)",
+    "phase": "exam",
+    "qid": "mcburney",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "기립성 혈압 측정 (Orthostatic blood pressure measurement) | 정상",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "요골동맥 맥박 촉진하겠습니다",
+    "reply": "요골동맥(+/+)",
+    "phase": "exam",
+    "qid": "radial",
+    "label": "",
+    "system": "Pulse"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "충수염이 가능성 높아 보여요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "지속되는 복통과 구토가 충수염의 흔한 증상이에요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "수술 여부는 검사 결과로 결정할 예정이에요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "CT를 통해 충수염 유무를 확인할 거예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "수술이 필요하면 복강경 절차를 선택할 거예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "수술 후 감염 위험이 있으니 팔로업 지켜요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "2~3일 내 결과 보고 후 치료 계획을 정할게요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  }
+]

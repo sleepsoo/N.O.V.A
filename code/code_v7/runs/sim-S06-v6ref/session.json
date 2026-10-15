@@ -1,0 +1,601 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "정말 힘드시겠어요. 최근 체중 변화가 있나요?",
+      "effective_content": "최근 체중 변화가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "몸무게가 삼 키로그람 정도 빠졌어요.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "정말 힘드시겠어요. 최근 체중 변화가 있나요?"
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "추위를 예전보다 많이 타세요?",
+      "effective_content": "추위를 예전보다 많이 타세요?",
+      "response": {
+        "status": "OK",
+        "content": "더위나 추위를 타는 것은 예전과 같아요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "추위를 예전보다 많이 타세요?"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "조금만 움직여도 숨이 차나요?",
+      "effective_content": "조금만 움직여도 숨이 차나요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 아프거나 숨이 찬 적은 없어요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "조금만 움직여도 숨이 차나요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "변이 검거나 피가 섞인 적 있나요?",
+      "effective_content": "변이 검거나 피가 섞인 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "변이 검거나 피가 섞인 적 있나요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "고혈압이나 당뇨 있으세요?",
+      "effective_content": "고혈압이나 당뇨 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어요. 혈압약 하루 한 알 먹어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "고혈압이나 당뇨 있으세요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "다른 지병이 있으세요?",
+      "effective_content": "다른 지병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "고혈압이 있어요. 혈압약 하루 한 알 먹어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "다른 지병이 있으세요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "가장 걱정되시는 게 뭐예요?",
+      "effective_content": "가장 걱정되시는 게 뭐예요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지처럼 당뇨 때문에 투석을 하게 될까 봐 걱정돼요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "가장 걱정되시는 게 뭐예요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "소변을 자주 보시나요?",
+      "effective_content": "소변을 자주 보시나요?",
+      "response": {
+        "status": "OK",
+        "content": "낮에 열 번 넘게, 밤에 두세 번 깨서 소변을 보요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "소변을 자주 보시나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "목이 자주 마르시나요?",
+      "effective_content": "목이 자주 마르시나요?",
+      "response": {
+        "status": "OK",
+        "content": "두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "목이 자주 마르시나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "가장 최근에 물을 많이 마셨나요?",
+      "effective_content": "가장 최근에 물을 많이 마셨나요?",
+      "response": {
+        "status": "OK",
+        "content": "두세 달 전부터 목이 말라서 하루에 물을 이 리터 넘게 마시게 되었다.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "가장 최근에 물을 많이 마셨나요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "배뇨 시 통증이나 불편함을 느끼시나요?",
+      "effective_content": "배뇨 시 통증이나 불편함을 느끼시나요?",
+      "response": {
+        "status": "OK",
+        "content": "소변볼 때 아프거나 따갑지는 않고, 소변 색이 붉은 적도 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "배뇨 시 통증이나 불편함을 느끼시나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "담배를 피우시나요?",
+      "effective_content": "담배를 피우시나요?",
+      "response": {
+        "status": "OK",
+        "content": "담배는 피운 적 없어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "담배를 피우시나요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "술은 얼마나 드시나요?",
+      "effective_content": "술은 얼마나 드시나요?",
+      "response": {
+        "status": "OK",
+        "content": "술은 거의 마시지 않는다.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "술은 얼마나 드시나요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "요즘 기분이 많이 가라앉나요?",
+      "effective_content": "요즘 기분이 많이 가라앉나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "요즘 기분이 많이 가라앉나요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "잠은 잘 주무세요?",
+      "effective_content": "잠은 잘 주무세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "잠은 잘 주무세요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "가족 중에 당뇨가 있는 분이 있나요?",
+      "effective_content": "가족 중에 당뇨가 있는 분이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지와 어머니 당뇨병이 있었어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "가족 중에 당뇨가 있는 분이 있나요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "평소에 운동은 얼마나 하세요?",
+      "effective_content": "평소에 운동은 얼마나 하세요?",
+      "response": {
+        "status": "OK",
+        "content": "운동은 거의 하지 않아요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "평소에 운동은 얼마나 하세요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "얼굴이나 다리에 붓는 증상이 있나요?",
+      "effective_content": "얼굴이나 다리에 붓는 증상이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "얼굴이나 다리에 붓는 증상이 있나요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "과거에 방광염이나 결석이 있었나요?",
+      "effective_content": "과거에 방광염이나 결석이 있었나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 19,
+        "turns_remaining": 31
+      },
+      "payload": {
+        "content": "과거에 방광염이나 결석이 있었나요?"
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "입맛이 갑자기 좋아지거나 싫어지셨나요?",
+      "effective_content": "입맛이 갑자기 좋아지거나 싫어지셨나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 20,
+        "turns_remaining": 30
+      },
+      "payload": {
+        "content": "입맛이 갑자기 좋아지거나 싫어지셨나요?"
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "최근에 불안하거나 초조하신 적이 있나요?",
+      "effective_content": "최근에 불안하거나 초조하신 적이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 21,
+        "turns_remaining": 29
+      },
+      "payload": {
+        "content": "최근에 불안하거나 초조하신 적이 있나요?"
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.",
+        "turn": 22,
+        "turns_remaining": 28
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 비만 체형, 안절부절(-)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "결막·공막 시진하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "창백(-/-), 충혈(-/-), 황달(-/-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "비대(-), 결절(-), 압통(-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적, 심잡음(-)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r12",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "하지 말초 진찰하겠습니다",
+      "effective_content": "r21",
+      "response": {
+        "status": "OK",
+        "result": "족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r15",
+      "response": {
+        "status": "OK",
+        "result": "압통(-), 종괴(-), 근성방어·강직(-)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "EXAM",
+      "content": "안저 검사하겠습니다",
+      "effective_content": "r09",
+      "response": {
+        "status": "OK",
+        "result": "미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "EXAM",
+      "content": "사지 감각 검사하겠습니다",
+      "refused": "EXAM_NOT_SPECIFIC"
+    },
+    {
+      "turn": 32,
+      "action": "EXAM",
+      "content": "늑척추각 압통 확인하겠습니다",
+      "effective_content": "r16",
+      "response": {
+        "status": "OK",
+        "result": "압통(-/-)",
+        "turn": 32,
+        "turns_remaining": 18
+      }
+    },
+    {
+      "turn": 33,
+      "action": "EXAM",
+      "content": "기립성 혈압 측정하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "수축기 강하 4mmHg, 어지럼(-)",
+        "turn": 33,
+        "turns_remaining": 17
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "혈당이 높은 당뇨병이 의심돼요.",
+      "effective_content": "혈당이 높은 당뇨병이 의심돼요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "혈당이 높은 당뇨병이 의심돼요."
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "공복 혈당과 당화혈색소를 검사할게요.",
+      "effective_content": "공복 혈당과 당화혈색소를 검사할게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "공복 혈당과 당화혈색소를 검사할게요."
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "식사 조절과 운동이 치료의 기본이에요.",
+      "effective_content": "식사 조절과 운동이 치료의 기본이에요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "식사 조절과 운동이 치료의 기본이에요."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "단 음료와 야식부터 줄여 보세요.",
+      "effective_content": "단 음료와 야식부터 줄여 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "단 음료와 야식부터 줄여 보세요."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "의식이 흐리거나 심하게 토하면 오세요.",
+      "effective_content": "의식이 흐리거나 심하게 토하면 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "의식이 흐리거나 심하게 토하면 오세요."
+      }
+    },
+    {
+      "turn": 39,
+      "action": "SAY",
+      "content": "1~2주 뒤 결과 보러 다시 오세요.",
+      "effective_content": "1~2주 뒤 결과 보러 다시 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 39,
+        "turns_remaining": 11
+      },
+      "payload": {
+        "content": "1~2주 뒤 결과 보러 다시 오세요."
+      }
+    },
+    {
+      "turn": 40,
+      "action": "SAY",
+      "content": "심한 갈증·구토·복통·의식 흐림 시 바로 오세요.",
+      "effective_content": "심한 갈증·구토·복통·의식 흐림 시 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 40,
+        "turns_remaining": 10
+      },
+      "payload": {
+        "content": "심한 갈증·구토·복통·의식 흐림 시 바로 오세요."
+      }
+    },
+    {
+      "turn": 41,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "낮에 열 번 넘게 화장실에 가고 밤에도 두세 번 깨서 소변을 본다",
+        "turn": 41,
+        "turns_remaining": 9
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요."
+      }
+    },
+    {
+      "turn": 42,
+      "action": "SAY",
+      "content": "더 궁금하신 점 있으세요?",
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.",
+        "turn": 42,
+        "turns_remaining": 8
+      },
+      "payload": {
+        "content": "더 궁금하신 점 있으세요?"
+      }
+    },
+    {
+      "turn": 42,
+      "action": "DIAGNOSE",
+      "diagnosis": "제2형 당뇨병 (Type 2 Diabetes Mellitus)"
+    }
+  ]
+}

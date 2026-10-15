@@ -1,0 +1,507 @@
+{
+  "case_id": "S04",
+  "alias": "S04",
+  "turns": 41,
+  "say": 31,
+  "exam": 10,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 20,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 23108,
+  "doctor_output_tokens": 9074,
+  "seconds": 432.6,
+  "diagnosis": "만성폐쇄성폐질환의 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)",
+  "accepted_diagnoses": [
+    "만성 폐쇄성 폐질환 급성 악화 (Acute exacerbation of COPD)",
+    "COPD 급성 악화",
+    "만성폐쇄성폐질환 악화"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 72,
+    "sex": "M",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "호흡곤란, 기침·가래",
+    "request": "",
+    "categories": [
+      "dyspnea",
+      "cough_fever"
+    ],
+    "empathy": "많이 힘드셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "만성폐쇄성폐질환 악화로 보여요.",
+    "누런 가래와 쌕쌕거림이 늘었어요.",
+    "폐암 여부는 엑스선 등으로 살펴볼게요.",
+    "엑스선으로 폐렴 여부를 확인할게요.",
+    "검사 결과에 맞춰 치료를 함께 정해요.",
+    "숨이 더 차면 입원 치료가 필요할 수 있어요.",
+    "숨참 악화·입술 파래짐·흉통·의식저하면 바로 오세요.",
+    "오늘 응급실 평가 후 빠른 시일 내 다시 뵐게요.",
+    "숨참 악화·입술 파래짐·흉통도 생기면 바로 오세요."
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 672,
+      "out": 173,
+      "finish": "stop",
+      "sec": 3.4
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3138,
+      "out": 899,
+      "finish": "stop",
+      "sec": 14.8
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3427,
+      "out": 721,
+      "finish": "stop",
+      "sec": 11.8
+    },
+    {
+      "tag": "plan_q3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3620,
+      "out": 673,
+      "finish": "stop",
+      "sec": 11.9
+    },
+    {
+      "tag": "exams_gen",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 2958,
+      "out": 325,
+      "finish": "stop",
+      "sec": 6.1
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1841,
+      "out": 2265,
+      "finish": "stop",
+      "sec": 21.9
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2517,
+      "out": 2079,
+      "finish": "stop",
+      "sec": 22.3
+    },
+    {
+      "tag": "plan_say3",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 1948,
+      "out": 1226,
+      "finish": "stop",
+      "sec": 16.3
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2987,
+      "out": 713,
+      "finish": "stop",
+      "sec": 8.2
+    }
+  ],
+  "phase_times": {
+    "intake": 3.4,
+    "interview": 158.8,
+    "examine": 150.5,
+    "facts": 22.0,
+    "dx": 22.3,
+    "plan_say": 16.3,
+    "explain": 51.2,
+    "effective": 0.0,
+    "S": 8.2
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "?",
+      "detail": "정만수",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "72세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "남자",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "호흡곤란",
+      "pol": "+",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기침",
+      "pol": "+",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가래",
+      "pol": "+",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "만성 호흡곤란",
+      "pol": "+",
+      "detail": "몇 년 전부터",
+      "id": "F7"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "활동 시 호흡곤란",
+      "pol": "+",
+      "detail": "집 안에서 조금만 움직여도",
+      "id": "F8"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기침 증가",
+      "pol": "+",
+      "detail": "부쩍 늘음",
+      "id": "F9"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "가래 증가",
+      "pol": "+",
+      "detail": "많아짐",
+      "id": "F10"
+    },
+    {
+      "turn": 3,
+      "sec": "ice",
+      "key": "other",
+      "label": "입원 걱정",
+      "pol": "+",
+      "detail": "작년처럼 입원할까 걱정",
+      "id": "F11"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "?",
+      "detail": "조금 나는 것 같음",
+      "id": "F12"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "ros.Chill",
+      "label": "오한",
+      "pol": "+",
+      "detail": "으슬으슬 추움",
+      "id": "F13"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "ros.Chest pain",
+      "label": "흉통",
+      "pol": "-",
+      "detail": "쥐어짜듯 아픈 적 없음",
+      "id": "F14"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "ros.Sputum",
+      "label": "가래",
+      "pol": "+",
+      "detail": "하루 종일 누렇고 끈적, 많음",
+      "id": "F15"
+    },
+    {
+      "turn": 7,
+      "sec": "pmh",
+      "key": "other",
+      "label": "폐질환",
+      "pol": "+",
+      "detail": "만성 폐쇄성 폐질환",
+      "id": "F16"
+    },
+    {
+      "turn": 8,
+      "sec": "meds",
+      "key": "other",
+      "label": "혈압약",
+      "pol": "+",
+      "detail": "하루 한 알",
+      "id": "F17"
+    },
+    {
+      "turn": 9,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "+",
+      "detail": "20세부터 하루 한 갑, 50년 가까이",
+      "id": "F18"
+    },
+    {
+      "turn": 10,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기좌호흡",
+      "pol": "+",
+      "detail": "베개 하나 더 받쳐 잠",
+      "id": "F19"
+    },
+    {
+      "turn": 11,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리 부종",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F20"
+    },
+    {
+      "turn": 12,
+      "sec": "ros",
+      "key": "other",
+      "label": "천명",
+      "pol": "+",
+      "detail": "숨 쉴 때 쌕쌕거림",
+      "id": "F21"
+    },
+    {
+      "turn": 13,
+      "sec": "hpi",
+      "key": "other",
+      "label": "객혈",
+      "pol": "-",
+      "detail": "가래에 피 섞인 적 없음",
+      "id": "F22"
+    },
+    {
+      "turn": 14,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "?",
+      "detail": "조금 나는 것 같음",
+      "id": "F23"
+    },
+    {
+      "turn": 14,
+      "sec": "ros",
+      "key": "ros.Chill",
+      "label": "오한",
+      "pol": "+",
+      "detail": "으슬으슬 추움",
+      "id": "F24"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "호흡곤란 악화",
+      "pol": "+",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F25"
+    },
+    {
+      "turn": 15,
+      "sec": "hpi",
+      "key": "other",
+      "label": "기침·가래 악화",
+      "pol": "+",
+      "detail": "사흘 전부터 심해짐",
+      "id": "F26"
+    },
+    {
+      "turn": 16,
+      "sec": "meds",
+      "key": "other",
+      "label": "흡입기",
+      "pol": "+",
+      "detail": "하루 한 번 사용",
+      "id": "F27"
+    },
+    {
+      "turn": 16,
+      "sec": "meds",
+      "key": "other",
+      "label": "파란 흡입기",
+      "pol": "+",
+      "detail": "하루 너덧 번, 별로 안 나음",
+      "id": "F28"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "야간 발작성 호흡곤란",
+      "pol": "-",
+      "detail": "자다 숨 막혀 깬 적 없음",
+      "id": "F29"
+    },
+    {
+      "turn": 18,
+      "sec": "hpi",
+      "key": "other",
+      "label": "다리 부종",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F30"
+    },
+    {
+      "turn": 18,
+      "sec": "hpi",
+      "key": "other",
+      "label": "급격한 체중 증가",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F31"
+    },
+    {
+      "turn": 19,
+      "sec": "pmh",
+      "key": "pmh.allergy",
+      "label": "약물 알레르기",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F32"
+    },
+    {
+      "turn": 20,
+      "sec": "hpi",
+      "key": "other",
+      "label": "주변 유사 증상",
+      "pol": "-",
+      "detail": "비슷하게 아픈 사람 없음",
+      "id": "F33"
+    },
+    {
+      "turn": 21,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 폐암",
+      "pol": "+",
+      "detail": "아버지 폐암",
+      "id": "F34"
+    },
+    {
+      "turn": 21,
+      "sec": "ice",
+      "key": "other",
+      "label": "폐암 걱정",
+      "pol": "+",
+      "detail": "본인도 폐암인지 불안",
+      "id": "F35"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "ac1814ce4663421d6e47082655196cb2dca551958ebd45703f2f50ae5f8d1f68",
+    "score_status": "not_scored",
+    "turn": 41
+  },
+  "truncated": 0,
+  "truncated_detail": [],
+  "teach_back": {
+    "reply": "숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.",
+    "ok": false
+  },
+  "exam_plan": [
+    "general",
+    "chest_insp",
+    "lung",
+    "chest_perc",
+    "fremitus",
+    "heart",
+    "jvp",
+    "periph",
+    "calf",
+    "clubbing"
+  ],
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S04",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 36,
+  "luna_calls": 10,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 23108,
+  "sim_doctor_output_tokens": 9074,
+  "sim_turns": 41,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code/run.py",
+  "grade_total": 55,
+  "grade_scores": {
+    "정보수집": 13,
+    "진단추론": 12,
+    "검사·추적": 6,
+    "안전": 7,
+    "의사소통": 7,
+    "효율": 10
+  }
+}

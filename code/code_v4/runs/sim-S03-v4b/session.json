@@ -1,0 +1,532 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "걱정이 많으시겠어요.",
+      "effective_content": "걱정이 많으시겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "걱정이 많으시겠어요."
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "귀통증에 대해 자세히 말씀해 주세요",
+      "effective_content": "귀통증에 대해 자세히 말씀해 주세요",
+      "response": {
+        "status": "OK",
+        "content": "귀를 잡아당기고 울었어요. 고름이나 진물은 없었어요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "귀통증에 대해 자세히 말씀해 주세요"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "다른 불편한 증상은 없으세요?",
+      "effective_content": "다른 불편한 증상은 없으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "다른 불편한 증상은 없으세요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "귀에 난리 물이 나오나요?",
+      "effective_content": "귀에 난리 물이 나오나요?",
+      "response": {
+        "status": "OK",
+        "content": "고름이나 진물이 나오지 않아요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "귀에 난리 물이 나오나요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "집에서 음식을 먹기 힘들었나요?",
+      "effective_content": "집에서 음식을 먹기 힘들었나요?",
+      "response": {
+        "status": "OK",
+        "content": "밥은 반 정도만 먹었어요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "집에서 음식을 먹기 힘들었나요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "입원한 적 있나요?",
+      "effective_content": "입원한 적 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "입원한 적 없어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "입원한 적 있나요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "먹는 약이 있나요?",
+      "effective_content": "먹는 약이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "평소 먹는 약은 없어요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "먹는 약이 있나요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "가족 중에 아픈 분이 있나요?",
+      "effective_content": "가족 중에 아픈 분이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아빠는 비염이 있어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "가족 중에 아픈 분이 있나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "어린이집 생활은 어떤가요?",
+      "effective_content": "어린이집 생활은 어떤가요?",
+      "response": {
+        "status": "OK",
+        "content": "평일에 어린이집에 다녀요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "어린이집 생활은 어떤가요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "출산 때 문제는 없었나요?",
+      "effective_content": "출산 때 문제는 없었나요?",
+      "response": {
+        "status": "OK",
+        "content": "태어날 때 특별한 문제는 없었어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "출산 때 문제는 없었나요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "발달은 또래와 비슷했나요?",
+      "effective_content": "발달은 또래와 비슷했나요?",
+      "response": {
+        "status": "OK",
+        "content": "발달은 또래와 비슷해요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "발달은 또래와 비슷했나요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "오늘 특히 궁금하신 게 있으세요?",
+      "effective_content": "오늘 특히 궁금하신 게 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "항생제 꼭 먹어야 하는지 궁금해요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "오늘 특히 궁금하신 게 있으세요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C",
+        "turn": 13,
+        "turns_remaining": 37
+      }
+    },
+    {
+      "turn": 14,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)",
+        "turn": 14,
+        "turns_remaining": 36
+      }
+    },
+    {
+      "turn": 15,
+      "action": "EXAM",
+      "content": "의식·지남력 평가하겠습니다",
+      "effective_content": "r02",
+      "response": {
+        "status": "OK",
+        "result": "명료, 연령에 맞는 반응, 보호자 알아봄(+)",
+        "turn": 15,
+        "turns_remaining": 35
+      }
+    },
+    {
+      "turn": 16,
+      "action": "EXAM",
+      "content": "피부 발진 시진하겠습니다",
+      "effective_content": "r20",
+      "response": {
+        "status": "OK",
+        "result": "발진(-), 점상출혈(-)",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "EXAM",
+      "content": "결막·공막 시진하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "창백(-/-), 충혈(-/-), 눈곱(-/-)",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "EXAM",
+      "content": "고막 시진하겠습니다",
+      "effective_content": "r06",
+      "response": {
+        "status": "OK",
+        "result": "우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "EXAM",
+      "content": "인두·편도 시진하겠습니다",
+      "effective_content": "r11",
+      "response": {
+        "status": "OK",
+        "result": "인두 경도 발적(+), 편도 비대 1도, 삼출물(-)",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "EXAM",
+      "content": "경부 림프절 촉진하겠습니다",
+      "effective_content": "r13",
+      "response": {
+        "status": "OK",
+        "result": "우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "갑상선 촉진 (Thyroid palpation) | 부드럽고, 크기 정상, 경계선 명확, 압통 없음",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "흉곽 시진하겠습니다",
+      "effective_content": "r16",
+      "response": {
+        "status": "OK",
+        "result": "흉곽 함몰(-), 보조호흡근 사용(-), 비익 확장(-)",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "폐 청진하겠습니다",
+      "effective_content": "r17",
+      "response": {
+        "status": "OK",
+        "result": "폐포음, 수포음(-/-), 천명음(-/-)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r18",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적 128회/분, 심잡음(-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "복부 시진하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "복부 시진 (Abdominal inspection) | 평평, 비대칭 없음, 색소 변색(-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "간·비장 촉진하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "간·비장 촉지(-)",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r19",
+      "response": {
+        "status": "OK",
+        "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "하지 말초 진찰하겠습니다",
+      "effective_content": "",
+      "response": {
+        "status": "OK",
+        "result": "다리 맥박 정상(2+/2+), 대칭",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "급성 중이염이 귀 안쪽 염증이예요",
+      "effective_content": "급성 중이염이 귀 안쪽 염증이예요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 29,
+        "turns_remaining": 21
+      },
+      "payload": {
+        "content": "급성 중이염이 귀 안쪽 염증이예요"
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "열과 통증은 해열진통제로 조절해요.",
+      "effective_content": "열과 통증은 해열진통제로 조절해요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      },
+      "payload": {
+        "content": "열과 통증은 해열진통제로 조절해요."
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "귀 안쪽 돔이 부풀어서 아프게 만들어요",
+      "effective_content": "귀 안쪽 돔이 부풀어서 아프게 만들어요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "귀 안쪽 돔이 부풀어서 아프게 만들어요"
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "고막 시진이 진단에 가장 사용돼요",
+      "effective_content": "고막 시진이 진단에 가장 사용돼요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "고막 시진이 진단에 가장 사용돼요"
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "항생제 복용 시 약물 복용을 주의하세요",
+      "effective_content": "항생제 복용 시 약물 복용을 주의하세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "항생제 복용 시 약물 복용을 주의하세요"
+      }
+    },
+    {
+      "turn": 34,
+      "action": "SAY",
+      "content": "집에 담배 피우지 마세요",
+      "effective_content": "집에 담배 피우지 마세요",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 34,
+        "turns_remaining": 16
+      },
+      "payload": {
+        "content": "집에 담배 피우지 마세요"
+      }
+    },
+    {
+      "turn": 35,
+      "action": "SAY",
+      "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "effective_content": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 35,
+        "turns_remaining": 15
+      },
+      "payload": {
+        "content": "설명 중 이해 안 되거나 궁금한 점 있으세요?"
+      }
+    },
+    {
+      "turn": 36,
+      "action": "SAY",
+      "content": "2~3일 뒤 귀 상태를 다시 볼게요.",
+      "effective_content": "2~3일 뒤 귀 상태를 다시 볼게요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 36,
+        "turns_remaining": 14
+      },
+      "payload": {
+        "content": "2~3일 뒤 귀 상태를 다시 볼게요."
+      }
+    },
+    {
+      "turn": 37,
+      "action": "SAY",
+      "content": "귀 뒤 붓기·고열 지속·구토면 바로 오세요.",
+      "effective_content": "귀 뒤 붓기·고열 지속·구토면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 37,
+        "turns_remaining": 13
+      },
+      "payload": {
+        "content": "귀 뒤 붓기·고열 지속·구토면 바로 오세요."
+      }
+    },
+    {
+      "turn": 38,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+      "response": {
+        "status": "OK",
+        "content": "귀 아파서 울었어요.",
+        "turn": 38,
+        "turns_remaining": 12
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요"
+      }
+    },
+    {
+      "turn": 38,
+      "action": "DIAGNOSE",
+      "diagnosis": "급성 전이성 중이염 (Acute Otitis Media)"
+    }
+  ]
+}

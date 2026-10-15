@@ -1,0 +1,601 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "안녕하세요, 걱정되셨죠. 아이가 다른 불편한 데는요?",
+    "reply": "밤에 깨는 일은 거의 없고, 깊게 잘 잔다.",
+    "phase": "first",
+    "qid": "open",
+    "label": "개방형"
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "예전에 잰 키 기록이 있나요?",
+    "reply": "두 살 때 키 163cm, 네 살 때 96cm이었어요.",
+    "phase": "interview",
+    "qid": "gr_record",
+    "label": "성장 기록",
+    "items": [
+      {
+        "id": "gr_record",
+        "label": "성장 기록",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "gr_record",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "부모님 키는 각각 어떻게 되세요?",
+    "reply": "아빠는 118cm, 엄마는 165cm예요.",
+    "phase": "interview",
+    "qid": "gr_parents",
+    "label": "부모 키",
+    "items": [
+      {
+        "id": "gr_parents",
+        "label": "부모 키",
+        "answered": true,
+        "pol": "?",
+        "kw": "\\d|센티|cm|커|작"
+      }
+    ],
+    "unit": "gr_parents",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "부모님 중 늦게 키가 큰 분 있나요?",
+    "reply": "아빠는 어릴 때 키가 작아서 할머니가 걱정했는데, 고등학교에 들어가서 갑자기 키가 많이 컸다고 해요.",
+    "phase": "interview",
+    "qid": "gr_late",
+    "label": "부모 사춘기 지연",
+    "items": [
+      {
+        "id": "gr_late",
+        "label": "부모 사춘기 지연",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "gr_late",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "음모나 고환 변화가 있었나요?",
+    "reply": "음모나 고환 크기 변화, 가슴이 발달하는 증상은 없어요.",
+    "phase": "interview",
+    "qid": "gr_puberty",
+    "label": "음모·고환 변화",
+    "items": [
+      {
+        "id": "gr_pubic",
+        "label": "음모",
+        "answered": true,
+        "pol": "+",
+        "kw": "음모|털"
+      },
+      {
+        "id": "gr_testis",
+        "label": "고환 변화",
+        "answered": true,
+        "pol": "+",
+        "kw": "고환"
+      }
+    ],
+    "unit": "gr_puberty",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "최근 살이 빠지거나 찌진 않았나요?",
+    "reply": "최근 살이 빠지거나 찌진 적 없어요.",
+    "phase": "interview",
+    "qid": "gr_weight",
+    "label": "체중 감소·체중 증가",
+    "items": [
+      {
+        "id": "gr_wt_loss",
+        "label": "체중 감소",
+        "answered": true,
+        "pol": "-",
+        "kw": "빠지|빠졌"
+      },
+      {
+        "id": "gr_wt_gain",
+        "label": "체중 증가",
+        "answered": true,
+        "pol": "-",
+        "kw": "찌|쪘"
+      }
+    ],
+    "unit": "gr_weight",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "잘 지치거나 변비, 추위 타나요?",
+    "reply": "피곤해요.",
+    "phase": "interview",
+    "qid": "gr_hypo",
+    "label": "피로·변비·추위 불내성",
+    "items": [
+      {
+        "id": "gr_fatigue",
+        "label": "피로",
+        "answered": true,
+        "pol": "+",
+        "kw": "지치|피곤"
+      },
+      {
+        "id": "ros_constip",
+        "label": "변비",
+        "answered": false,
+        "pol": "?",
+        "kw": "변비"
+      },
+      {
+        "id": "ft_cold",
+        "label": "추위 불내성",
+        "answered": false,
+        "pol": "?",
+        "kw": "추위"
+      }
+    ],
+    "unit": "gr_hypo",
+    "ukind": "neg3",
+    "safety": false
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "두통이나 구토, 시야 이상은요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_ich",
+    "label": "두통·구토·시야 이상",
+    "items": [
+      {
+        "id": "ros_headache",
+        "label": "두통",
+        "answered": true,
+        "pol": "-",
+        "kw": "두통|머리"
+      },
+      {
+        "id": "ros_vomit",
+        "label": "구토",
+        "answered": true,
+        "pol": "-",
+        "kw": "토|구토"
+      },
+      {
+        "id": "gr_vision",
+        "label": "시야 이상",
+        "answered": true,
+        "pol": "-",
+        "kw": "시야|눈|보"
+      }
+    ],
+    "unit": "gr_ich",
+    "ukind": "neg3",
+    "safety": true
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "배만 나오거나 얼굴이 둥글어졌나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "gr_cushing",
+    "label": "중심성 비만·달덩이 얼굴",
+    "items": [
+      {
+        "id": "gr_central",
+        "label": "중심성 비만",
+        "answered": true,
+        "pol": "-",
+        "kw": "배"
+      },
+      {
+        "id": "gr_moon",
+        "label": "달덩이 얼굴",
+        "answered": true,
+        "pol": "-",
+        "kw": "얼굴"
+      }
+    ],
+    "unit": "gr_cushing",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "1년간 평균 월간 키 증가가 1cm 이하인가요?",
+    "reply": "네, 1년 동안 5cm 자랐어요.",
+    "phase": "interview",
+    "qid": "llm_d1",
+    "label": "키증가",
+    "items": [
+      {
+        "id": "llm_d1",
+        "label": "키증가",
+        "answered": true,
+        "pol": "+",
+        "kw": "키증"
+      }
+    ],
+    "unit": "llm_d1",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "천식이나 장, 콩팥 질환 들은 적 있나요?",
+    "reply": "천식이나 장, 콩팥 질환은 없어요.",
+    "phase": "interview",
+    "qid": "gr_chronic",
+    "label": "천식·장 질환·콩팥 질환",
+    "items": [
+      {
+        "id": "pmh_asthma",
+        "label": "천식",
+        "answered": true,
+        "pol": "+",
+        "kw": "천식"
+      },
+      {
+        "id": "gr_gi",
+        "label": "장 질환",
+        "answered": true,
+        "pol": "+",
+        "kw": "장"
+      },
+      {
+        "id": "gr_kidney",
+        "label": "콩팥 질환",
+        "answered": true,
+        "pol": "-",
+        "kw": "콩팥|신장"
+      }
+    ],
+    "unit": "gr_chronic",
+    "ukind": "hx3",
+    "safety": false
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "스테로이드나 한약 먹은 적 있나요?",
+    "reply": "아니요, 스테로이드제나 한약은 먹지 않았어요.",
+    "phase": "interview",
+    "qid": "gr_steroid",
+    "label": "스테로이드·한약",
+    "items": [
+      {
+        "id": "gr_steroid",
+        "label": "스테로이드",
+        "answered": true,
+        "pol": "-",
+        "kw": "스테로이드"
+      },
+      {
+        "id": "gr_herbal",
+        "label": "한약",
+        "answered": true,
+        "pol": "-",
+        "kw": "한약"
+      }
+    ],
+    "unit": "gr_steroid",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "임신이나 출산 때 문제가 있었나요?",
+    "reply": "임신 중이나 출생 과정에서 특별한 문제는 없었어요.",
+    "phase": "interview",
+    "qid": "p_perinatal",
+    "label": "임신 중 문제·출산·분만",
+    "items": [
+      {
+        "id": "p_pregnancy",
+        "label": "임신 중 문제",
+        "answered": true,
+        "pol": "-",
+        "kw": "임신"
+      },
+      {
+        "id": "p_birth",
+        "label": "출산·분만",
+        "answered": false,
+        "pol": "?",
+        "kw": "출산|분만|만삭|조산|제왕"
+      }
+    ],
+    "unit": "p_perinatal",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "말이나 걷기는 또래만큼 했나요?",
+    "reply": "말도 잘하고, 걷기도 또래와 비슷해요.",
+    "phase": "interview",
+    "qid": "p_develop",
+    "label": "언어 발달·운동 발달",
+    "items": [
+      {
+        "id": "p_dev_speech",
+        "label": "언어 발달",
+        "answered": true,
+        "pol": "+",
+        "kw": "말"
+      },
+      {
+        "id": "p_dev_walk",
+        "label": "운동 발달",
+        "answered": true,
+        "pol": "+",
+        "kw": "걷|걸"
+      }
+    ],
+    "unit": "p_develop",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "잠을 못 자고 스트레스를 많이 받는다고 느끼시나요?",
+    "reply": "밤에 깨는 일은 거의 없고, 깊게 잘 잔다.",
+    "phase": "interview",
+    "qid": "llm_contra0",
+    "label": "정신적스트레스",
+    "items": [
+      {
+        "id": "llm_contra0",
+        "label": "정신적스트레스",
+        "answered": true,
+        "pol": "?",
+        "kw": "정신"
+      }
+    ],
+    "unit": "llm_contra0",
+    "ukind": "single",
+    "safety": true
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "가슴이 답답하거나 호흡이 힘드시나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "llm_contra1",
+    "label": "호흡곤란",
+    "items": [
+      {
+        "id": "llm_contra1",
+        "label": "호흡곤란",
+        "answered": true,
+        "pol": "-",
+        "kw": "호흡"
+      }
+    ],
+    "unit": "llm_contra1",
+    "ukind": "single",
+    "safety": true
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "가족 중 키가 작거나 유전병 있나요?",
+    "reply": "아빠는 어릴 때 키가 작았고, 가족 중 유전 질환이나 호르몬 문제가 없어요.",
+    "phase": "interview",
+    "qid": "gr_fh",
+    "label": "저신장 가족력·유전병 가족력",
+    "items": [
+      {
+        "id": "gr_fh_short",
+        "label": "저신장 가족력",
+        "answered": true,
+        "pol": "+",
+        "kw": "키|작"
+      },
+      {
+        "id": "gr_fh_genetic",
+        "label": "유전병 가족력",
+        "answered": true,
+        "pol": "-",
+        "kw": "유전"
+      }
+    ],
+    "unit": "gr_fh",
+    "ukind": "pair",
+    "safety": false
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "어머님이 가장 걱정되시는 게 뭐예요?",
+    "reply": "키가 작아서 큰 병이 있을까 걱정이 많아요.",
+    "phase": "interview",
+    "qid": "ice",
+    "label": "보호자 걱정",
+    "items": [
+      {
+        "id": "ice_concern",
+        "label": "보호자 걱정",
+        "answered": true,
+        "pol": "?",
+        "kw": "."
+      }
+    ],
+    "unit": "ice",
+    "ukind": "single",
+    "safety": false
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "신장 105cm, 체중 16.5kg, 머리둘레 52cm",
+    "phase": "exam",
+    "qid": "anthro",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "성장도표 백분위수 확인하겠습니다",
+    "reply": "신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm",
+    "phase": "exam",
+    "qid": "growth_chart",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "신체 비율 평가하겠습니다",
+    "reply": "상·하절 비율 정상, 양팔간격 불균형(-)",
+    "phase": "exam",
+    "qid": "body_prop",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "사춘기 성숙도 평가하겠습니다",
+    "reply": "Tanner 1기, 고환 2mL/2mL",
+    "phase": "exam",
+    "qid": "tanner",
+    "label": "",
+    "system": "Genitalia"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "안면 기형 소견 시진하겠습니다",
+    "reply": "안면 기형(-), 귀 위치 이상(-/-)",
+    "phase": "exam",
+    "qid": "dysmorph",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "비대(-), 결절(-), 압통(-)",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "자주색 선조 시진하겠습니다",
+    "reply": "자주색 선조(-), 색소침착(-), 중심성 비만(-), 달덩이얼굴(-)",
+    "phase": "exam",
+    "qid": "striae",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 26,
+    "kind": "SAY",
+    "text": "걱정 많으셨죠, 가족성 저신장 가능해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "피로에 힘들어하고 언어도 정상이에요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "걱정하신 큰 병보다 가족성 저신장 가능성이 높아요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "골연령, 갑상선, 성장호르몬 검사를 할게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "두통·구토·시야 변화·목 거름·발진이면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "6개월마다 키를 재서 성장 곡선을 봐요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도예요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "reply": "두통이 있으면 바로 오세요.",
+    "phase": "explain-teachback",
+    "qid": "",
+    "label": ""
+  }
+]

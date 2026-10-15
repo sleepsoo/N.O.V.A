@@ -1,0 +1,442 @@
+{
+  "case_id": "S03",
+  "alias": "S03",
+  "turns": 42,
+  "say": 31,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 10,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 17287,
+  "doctor_output_tokens": 8441,
+  "seconds": 568.0,
+  "diagnosis": "급성중이염 (Acute Otitis Media)",
+  "accepted_diagnoses": [
+    "우측 급성 중이염 (Acute otitis media, right)",
+    "급성 중이염",
+    "Acute otitis media"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 3,
+    "sex": "F",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "열 (38.6°C) + 오른쪽 귀통증",
+    "request": "",
+    "categories": [
+      "p_fever",
+      "insomnia"
+    ],
+    "empathy": "걱정스러우셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "급성 중이염 가능성이 높습니다",
+    "귀에 혈액이 모일 수 있어 통증이 납니다",
+    "약은 검사 결과 보고 상의해 조절해요.",
+    "통증 완화제와 해열제를 사용해요",
+    "발열, 통증, 귀 뒤 붓기가 있으면 바로 내원해요.",
+    "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "2~3일 뒤 결과 보러 다시 오세요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 729,
+      "out": 510,
+      "finish": "stop",
+      "sec": 23.8
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2075,
+      "out": 303,
+      "finish": "stop",
+      "sec": 14.6
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2536,
+      "out": 310,
+      "finish": "stop",
+      "sec": 14.5
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1101,
+      "out": 61,
+      "finish": "stop",
+      "sec": 2.7
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1506,
+      "out": 3566,
+      "finish": "stop",
+      "sec": 163.3
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2231,
+      "out": 2267,
+      "finish": "stop",
+      "sec": 104.1
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2651,
+      "out": 465,
+      "finish": "stop",
+      "sec": 21.2
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 227,
+      "out": 376,
+      "finish": "stop",
+      "sec": 17.5
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2105,
+      "out": 291,
+      "finish": "stop",
+      "sec": 13.4
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2126,
+      "out": 292,
+      "finish": "stop",
+      "sec": 14.4
+    }
+  ],
+  "phase_times": {
+    "intake": 23.8,
+    "interview": 149.4,
+    "examine": 16.7,
+    "facts": 163.3,
+    "dx": 104.1,
+    "plan_say": 38.8,
+    "explain": 44.0,
+    "S": 27.8
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이",
+      "pol": "+",
+      "detail": "3세",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여자",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자 나이",
+      "pol": "+",
+      "detail": "34세",
+      "id": "F3"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "ros.Fever",
+      "label": "열 최고",
+      "pol": "+",
+      "detail": "38°C",
+      "id": "F4"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "열 시작",
+      "pol": "+",
+      "detail": "어제 낮",
+      "id": "F5"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "해열제 반응",
+      "pol": "+",
+      "detail": "2시간",
+      "id": "F6"
+    },
+    {
+      "turn": 4,
+      "sec": "ros",
+      "key": "ros.Anorexia",
+      "label": "식욕 감퇴",
+      "pol": "+",
+      "detail": "반량",
+      "id": "F7"
+    },
+    {
+      "turn": 5,
+      "sec": "ros",
+      "key": "other",
+      "label": "소변량",
+      "pol": "+",
+      "detail": "두시간",
+      "id": "F8"
+    },
+    {
+      "turn": 6,
+      "sec": "ros",
+      "key": "other",
+      "label": "보채",
+      "pol": "+",
+      "detail": "증가",
+      "id": "F9"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "ros.Rhinorrhea",
+      "label": "콧물",
+      "pol": "+",
+      "detail": "맑음",
+      "id": "F10"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "ros.Cough",
+      "label": "기침",
+      "pol": "+",
+      "detail": "가벼움",
+      "id": "F11"
+    },
+    {
+      "turn": 8,
+      "sec": "ros",
+      "key": "other",
+      "label": "귀 분비물",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F12"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "구토",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F13"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "other",
+      "label": "설사",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F14"
+    },
+    {
+      "turn": 10,
+      "sec": "ros",
+      "key": "other",
+      "label": "발진",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F15"
+    },
+    {
+      "turn": 11,
+      "sec": "ros",
+      "key": "other",
+      "label": "감기 접촉",
+      "pol": "+",
+      "detail": "어린이집",
+      "id": "F16"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "열 악화",
+      "pol": "+",
+      "detail": "38°C",
+      "id": "F17"
+    },
+    {
+      "turn": 13,
+      "sec": "ros",
+      "key": "other",
+      "label": "출생 크기",
+      "pol": "-",
+      "detail": "정상",
+      "id": "F18"
+    },
+    {
+      "turn": 14,
+      "sec": "ros",
+      "key": "other",
+      "label": "출산 문제",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F19"
+    },
+    {
+      "turn": 15,
+      "sec": "ros",
+      "key": "other",
+      "label": "신생아 황달",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F20"
+    },
+    {
+      "turn": 16,
+      "sec": "peds",
+      "key": "other",
+      "label": "예방접종",
+      "pol": "+",
+      "detail": "폐렴구균",
+      "id": "F21"
+    },
+    {
+      "turn": 17,
+      "sec": "ros",
+      "key": "other",
+      "label": "경련",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F22"
+    },
+    {
+      "turn": 18,
+      "sec": "peds",
+      "key": "other",
+      "label": "언어 발달",
+      "pol": "+",
+      "detail": "같음",
+      "id": "F23"
+    },
+    {
+      "turn": 19,
+      "sec": "fh",
+      "key": "other",
+      "label": "비염",
+      "pol": "+",
+      "detail": "부모",
+      "id": "F24"
+    },
+    {
+      "turn": 20,
+      "sec": "pmh",
+      "key": "other",
+      "label": "입원/수술",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F25"
+    },
+    {
+      "turn": 21,
+      "sec": "meds",
+      "key": "other",
+      "label": "약물 복용",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F26"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "우려",
+      "pol": "+",
+      "detail": "뇌수막염",
+      "id": "F27"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "d14a8fcbd465e63ebf140afdf48e7f66c28c4115393f96ee58124a734ca4476f",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "걱정스러우셨겠어요. 열은 몇 도까지 났나요?",
+      "effective": "열은 몇 도까지 났나요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 34,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 10,
+  "sim_doctor_calls": 10,
+  "sim_doctor_input_tokens": 17287,
+  "sim_doctor_output_tokens": 8441,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v6/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 75,
+  "grade_scores": {
+    "정보수집": 13,
+    "진단추론": 15,
+    "검사·추적": 10,
+    "안전": 15,
+    "의사소통": 10,
+    "효율": 12
+  }
+}

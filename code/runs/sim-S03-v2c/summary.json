@@ -1,0 +1,552 @@
+{
+  "case_id": "S03",
+  "alias": "S03",
+  "turns": 42,
+  "say": 31,
+  "exam": 10,
+  "refused": 1,
+  "exam_refused": 1,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 17751,
+  "doctor_output_tokens": 9257,
+  "seconds": 270.9,
+  "diagnosis": "급성 우측 중이염 (Acute right otitis media)",
+  "accepted_diagnoses": [
+    "우측 급성 중이염 (Acute otitis media, right)",
+    "급성 중이염",
+    "Acute otitis media"
+  ],
+  "dx_hit": false,
+  "dx_samples": null,
+  "profile": {
+    "age": 3,
+    "sex": "F",
+    "pediatric": true,
+    "informant": "어머님",
+    "cc": "발열 및 오른쪽 귀 통증",
+    "request": "",
+    "categories": [
+      "p_fever",
+      "insomnia"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "오른쪽 급성 중이염으로 보여요.",
+    "감기 뒤 귀에 염증이 생겨 아프고 열나요.",
+    "현재 큰 위험 징후는 없고 청력은 경과를 살펴요.",
+    "고막 진찰로 확인해 추가 검사는 안 해요.",
+    "통증을 조절하고, 항생제는 48~72시간 뒤 정해요.",
+    "약은 체중에 맞추고 아스피린은 쓰지 마세요.",
+    "귀 뒤 붓기·처짐·목 뻣뻣함·고열 시 바로 오세요.",
+    "2~3일 뒤 귀 상태를 다시 볼게요.",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 665,
+      "out": 271,
+      "finish": "stop",
+      "sec": 4.1
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2525,
+      "out": 608,
+      "finish": "stop",
+      "sec": 8.2
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2710,
+      "out": 650,
+      "finish": "stop",
+      "sec": 7.4
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1322,
+      "out": 244,
+      "finish": "stop",
+      "sec": 4.7
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1861,
+      "out": 2705,
+      "finish": "stop",
+      "sec": 26.9
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 2641,
+      "out": 2045,
+      "finish": "stop",
+      "sec": 18.7
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2737,
+      "out": 1501,
+      "finish": "stop",
+      "sec": 15.7
+    },
+    {
+      "tag": "say_fix",
+      "effort": "low",
+      "max_tokens": 4000,
+      "in": 157,
+      "out": 486,
+      "finish": "stop",
+      "sec": 5.6
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 3133,
+      "out": 747,
+      "finish": "stop",
+      "sec": 9.0
+    }
+  ],
+  "phase_times": {
+    "intake": 4.1,
+    "interview": 129.0,
+    "examine": 19.7,
+    "facts": 26.9,
+    "dx": 18.7,
+    "plan_say": 21.4,
+    "explain": 42.1,
+    "S": 9.0
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "환자 이름",
+      "pol": "?",
+      "detail": "이하은",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "나이",
+      "pol": "?",
+      "detail": "세 살",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "성별",
+      "pol": "?",
+      "detail": "여자아이",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자",
+      "pol": "?",
+      "detail": "엄마 박수진",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보호자 나이",
+      "pol": "?",
+      "detail": "서른네 살",
+      "id": "F5"
+    },
+    {
+      "turn": 0,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열",
+      "pol": "+",
+      "detail": "어제부터",
+      "id": "F6"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "오른쪽 귀 통증",
+      "pol": "+",
+      "detail": "자꾸 만지고 아파함",
+      "id": "F7"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "보챔",
+      "pol": "+",
+      "detail": "밤새 보챔",
+      "id": "F8"
+    },
+    {
+      "turn": 0,
+      "sec": "peds",
+      "key": "other",
+      "label": "수면 저하",
+      "pol": "+",
+      "detail": "잠을 잘 못 잠",
+      "id": "F9"
+    },
+    {
+      "turn": 1,
+      "sec": "ros",
+      "key": "ros.Fever",
+      "label": "발열 최고",
+      "pol": "?",
+      "detail": "38도까지",
+      "id": "F10"
+    },
+    {
+      "turn": 2,
+      "sec": "hpi",
+      "key": "other",
+      "label": "발열 시작",
+      "pol": "?",
+      "detail": "어제 낮부터",
+      "id": "F11"
+    },
+    {
+      "turn": 3,
+      "sec": "hpi",
+      "key": "other",
+      "label": "해열제 반응",
+      "pol": "?",
+      "detail": "두세 시간 열 내린 뒤 재상승",
+      "id": "F12"
+    },
+    {
+      "turn": 4,
+      "sec": "peds",
+      "key": "other",
+      "label": "식사량",
+      "pol": "?",
+      "detail": "평소의 반 정도",
+      "id": "F13"
+    },
+    {
+      "turn": 5,
+      "sec": "peds",
+      "key": "other",
+      "label": "소변량",
+      "pol": "+",
+      "detail": "평소처럼 기저귀 젖음",
+      "id": "F14"
+    },
+    {
+      "turn": 5,
+      "sec": "peds",
+      "key": "other",
+      "label": "마지막 소변",
+      "pol": "?",
+      "detail": "두 시간 전",
+      "id": "F15"
+    },
+    {
+      "turn": 6,
+      "sec": "peds",
+      "key": "other",
+      "label": "자세별 보챔",
+      "pol": "+",
+      "detail": "누우면 더 보챔",
+      "id": "F16"
+    },
+    {
+      "turn": 6,
+      "sec": "peds",
+      "key": "other",
+      "label": "안았을 때",
+      "pol": "+",
+      "detail": "안으면 조금 나아짐",
+      "id": "F17"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "ros.Rhinorrhea",
+      "label": "콧물",
+      "pol": "+",
+      "detail": "닷새 전부터 맑은 콧물",
+      "id": "F18"
+    },
+    {
+      "turn": 7,
+      "sec": "ros",
+      "key": "ros.Cough",
+      "label": "기침",
+      "pol": "+",
+      "detail": "닷새 전부터 가벼운 기침",
+      "id": "F19"
+    },
+    {
+      "turn": 8,
+      "sec": "ice",
+      "key": "other",
+      "label": "보호자 걱정",
+      "pol": "?",
+      "detail": "열 지속, 뇌수막염 등 큰 병 걱정",
+      "id": "F20"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "ros.Vomiting",
+      "label": "구토",
+      "pol": "-",
+      "detail": "토하지 않음",
+      "id": "F21"
+    },
+    {
+      "turn": 9,
+      "sec": "ros",
+      "key": "ros.Diarrhea",
+      "label": "설사",
+      "pol": "-",
+      "detail": "설사 없음",
+      "id": "F22"
+    },
+    {
+      "turn": 10,
+      "sec": "peds",
+      "key": "other",
+      "label": "발진",
+      "pol": "-",
+      "detail": "발진 없음",
+      "id": "F23"
+    },
+    {
+      "turn": 11,
+      "sec": "peds",
+      "key": "other",
+      "label": "경련",
+      "pol": "-",
+      "detail": "경련 없음",
+      "id": "F24"
+    },
+    {
+      "turn": 12,
+      "sec": "hpi",
+      "key": "other",
+      "label": "오른쪽 귀 통증",
+      "pol": "+",
+      "detail": "귀 잡아당기며 울음",
+      "id": "F25"
+    },
+    {
+      "turn": 13,
+      "sec": "peds",
+      "key": "other",
+      "label": "귀 분비물",
+      "pol": "-",
+      "detail": "진물 없음",
+      "id": "F26"
+    },
+    {
+      "turn": 14,
+      "sec": "peds",
+      "key": "other",
+      "label": "예방접종",
+      "pol": "+",
+      "detail": "제때 맞음, 폐렴구균 포함",
+      "id": "F27"
+    },
+    {
+      "turn": 15,
+      "sec": "meds",
+      "key": "other",
+      "label": "평소 복용약",
+      "pol": "-",
+      "detail": "없음",
+      "id": "F28"
+    },
+    {
+      "turn": 16,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 귀 수술",
+      "pol": "-",
+      "detail": "받은 사람 없음",
+      "id": "F29"
+    },
+    {
+      "turn": 16,
+      "sec": "fh",
+      "key": "other",
+      "label": "가족 난청",
+      "pol": "-",
+      "detail": "있는 사람 없음",
+      "id": "F30"
+    },
+    {
+      "turn": 17,
+      "sec": "hpi",
+      "key": "other",
+      "label": "오른쪽 귀 통증",
+      "pol": "+",
+      "detail": "귀 잡아당기며 '귀 아파' 울음",
+      "id": "F31"
+    },
+    {
+      "turn": 18,
+      "sec": "peds",
+      "key": "other",
+      "label": "어린이집 감기",
+      "pol": "+",
+      "detail": "감기 도는 중",
+      "id": "F32"
+    },
+    {
+      "turn": 19,
+      "sec": "peds",
+      "key": "other",
+      "label": "임신 주수",
+      "pol": "?",
+      "detail": "만삭",
+      "id": "F33"
+    },
+    {
+      "turn": 19,
+      "sec": "peds",
+      "key": "other",
+      "label": "분만 방식",
+      "pol": "?",
+      "detail": "자연분만",
+      "id": "F34"
+    },
+    {
+      "turn": 19,
+      "sec": "peds",
+      "key": "other",
+      "label": "출생 문제",
+      "pol": "-",
+      "detail": "특별한 문제 없음",
+      "id": "F35"
+    },
+    {
+      "turn": 20,
+      "sec": "peds",
+      "key": "other",
+      "label": "말 발달",
+      "pol": "+",
+      "detail": "말 잘함",
+      "id": "F36"
+    },
+    {
+      "turn": 20,
+      "sec": "peds",
+      "key": "other",
+      "label": "발달",
+      "pol": "?",
+      "detail": "또래와 비슷",
+      "id": "F37"
+    },
+    {
+      "turn": 21,
+      "sec": "peds",
+      "key": "other",
+      "label": "입원력",
+      "pol": "-",
+      "detail": "입원한 적 없음",
+      "id": "F38"
+    },
+    {
+      "turn": 21,
+      "sec": "pmh",
+      "key": "pmh.op_hx",
+      "label": "수술력",
+      "pol": "-",
+      "detail": "수술받은 적 없음",
+      "id": "F39"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "항생제 궁금증",
+      "pol": "?",
+      "detail": "항생제 꼭 필요한지 궁금",
+      "id": "F40"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "청력 걱정",
+      "pol": "?",
+      "detail": "귀가 나빠지거나 청력 문제 걱정",
+      "id": "F41"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "4b3d5d71748257ebbe5ffc7da9dc1cdd3131ce8bd1196b7f09cbbaab3993b43e",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 걱정되셨겠어요. 열은 몇 도까지 났나요?",
+      "effective": "열은 몇 도까지 났나요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "synthetic_cases/S03",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 34,
+  "luna_calls": 10,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 17751,
+  "sim_doctor_output_tokens": 9257,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v2c/run.py",
+  "grade_total": 60,
+  "grade_scores": {
+    "정보수집": 12,
+    "진단추론": 12,
+    "검사·추적": 7,
+    "안전": 11,
+    "의사소통": 7,
+    "효율": 11
+  }
+}

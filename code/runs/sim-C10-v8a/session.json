@@ -1,0 +1,481 @@
+{
+  "status": "completed",
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "안녕하세요, 걱정되셨죠. 다른 불편한 데는요?",
+      "effective_content": "다른 불편한 데는요?",
+      "response": {
+        "status": "OK",
+        "content": "손이 떨리는 것도 느껴진다.",
+        "turn": 1,
+        "turns_remaining": 49
+      },
+      "payload": {
+        "content": "안녕하세요, 걱정되셨죠. 다른 불편한 데는요?"
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "식사량이나 입맛은 예전과 어떠세요?",
+      "effective_content": "식사량이나 입맛은 예전과 어떠세요?",
+      "response": {
+        "status": "OK",
+        "content": "식사량은 늘었고, 식욕이 좋아졌어요.",
+        "turn": 2,
+        "turns_remaining": 48
+      },
+      "payload": {
+        "content": "식사량이나 입맛은 예전과 어떠세요?"
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "더위를 타거나 땀이 많아졌나요?",
+      "effective_content": "더위를 타거나 땀이 많아졌나요?",
+      "response": {
+        "status": "OK",
+        "content": "요즘 들어 더위를 많이 타는 것 같아요.",
+        "turn": 3,
+        "turns_remaining": 47
+      },
+      "payload": {
+        "content": "더위를 타거나 땀이 많아졌나요?"
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "가슴이 두근거릴 때가 있나요?",
+      "effective_content": "가슴이 두근거릴 때가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거리는 증상도 자주 있어요.",
+        "turn": 4,
+        "turns_remaining": 46
+      },
+      "payload": {
+        "content": "가슴이 두근거릴 때가 있나요?"
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "대변 횟수나 모양이 변했나요?",
+      "effective_content": "대변 횟수나 모양이 변했나요?",
+      "response": {
+        "status": "OK",
+        "content": "변이 묽은 편이고 하루에 이에서 삼회 정도예요.",
+        "turn": 5,
+        "turns_remaining": 45
+      },
+      "payload": {
+        "content": "대변 횟수나 모양이 변했나요?"
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "갈증이나 소변량 변화가 있나요?",
+      "effective_content": "갈증이나 소변량 변화가 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "소변량은 비슷하거나 약간 늘었고 갈증은 심하지 않아요.",
+        "turn": 6,
+        "turns_remaining": 44
+      },
+      "payload": {
+        "content": "갈증이나 소변량 변화가 있나요?"
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "눈이 튀어나오거나 뻑뻑한가요?",
+      "effective_content": "눈이 튀어나오거나 뻑뻑한가요?",
+      "response": {
+        "status": "OK",
+        "content": "눈이 약간 튀어나오고, 뻑뻑해요.",
+        "turn": 7,
+        "turns_remaining": 43
+      },
+      "payload": {
+        "content": "눈이 튀어나오거나 뻑뻑한가요?"
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "목이 붓거나 혹이 만져지나요?",
+      "effective_content": "목이 붓거나 혹이 만져지나요?",
+      "response": {
+        "status": "OK",
+        "content": "목 앞이 조금 두꺼워졌는데 혹은 없어요.",
+        "turn": 8,
+        "turns_remaining": 42
+      },
+      "payload": {
+        "content": "목이 붓거나 혹이 만져지나요?"
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "생리 양이나 기간이 변했나요?",
+      "effective_content": "생리 양이나 기간이 변했나요?",
+      "response": {
+        "status": "OK",
+        "content": "생리량이 많이 줄었고, 기간도 짧아졌어요.",
+        "turn": 9,
+        "turns_remaining": 41
+      },
+      "payload": {
+        "content": "생리 양이나 기간이 변했나요?"
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "복통이나 구토, 혈변은 없나요?",
+      "effective_content": "복통이나 구토, 혈변은 없나요?",
+      "response": {
+        "status": "OK",
+        "content": "복통이나 구토는 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      },
+      "payload": {
+        "content": "복통이나 구토, 혈변은 없나요?"
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "가슴 통증이나 숨찬 증상 있으세요?",
+      "effective_content": "가슴 통증이나 숨찬 증상 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "가슴이 두근거리고 숨이 차요.",
+        "turn": 11,
+        "turns_remaining": 39
+      },
+      "payload": {
+        "content": "가슴 통증이나 숨찬 증상 있으세요?"
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "갑상선 질환이나 천식·심장병 있으세요?",
+      "effective_content": "갑상선 질환이나 천식·심장병 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "갑상선 질환은 없어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      },
+      "payload": {
+        "content": "갑상선 질환이나 천식·심장병 있으세요?"
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "천식이 있으세요?",
+      "effective_content": "천식이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 13,
+        "turns_remaining": 37
+      },
+      "payload": {
+        "content": "천식이 있으세요?"
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "드시는 약이나 영양제 있으세요?",
+      "effective_content": "드시는 약이나 영양제 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      },
+      "payload": {
+        "content": "드시는 약이나 영양제 있으세요?"
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "가족 중 갑상선병 있는 분 있나요?",
+      "effective_content": "가족 중 갑상선병 있는 분 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 어머니가 갑상샘 기능저하증이 있어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      },
+      "payload": {
+        "content": "가족 중 갑상선병 있는 분 있나요?"
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "담배나 술은 하세요?",
+      "effective_content": "담배나 술은 하세요?",
+      "response": {
+        "status": "OK",
+        "content": "담배는 피우지 않고, 술은 한 달에 한두 번 마셔요.",
+        "turn": 16,
+        "turns_remaining": 34
+      },
+      "payload": {
+        "content": "담배나 술은 하세요?"
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "혹시 임신 가능성은 있으세요?",
+      "effective_content": "혹시 임신 가능성은 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "임신 가능성은 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      },
+      "payload": {
+        "content": "혹시 임신 가능성은 있으세요?"
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "혹시 걱정되는 병이 있으세요?",
+      "effective_content": "혹시 걱정되는 병이 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "최근 살이 많이 빠지고 여러 증상이 함께 있어서 혹시 큰 병이 아닐까 걱정이 많아요.",
+        "turn": 18,
+        "turns_remaining": 32
+      },
+      "payload": {
+        "content": "혹시 걱정되는 병이 있으세요?"
+      }
+    },
+    {
+      "turn": 19,
+      "action": "EXAM",
+      "content": "갑상선 촉진하겠습니다",
+      "effective_content": "r10",
+      "response": {
+        "status": "OK",
+        "result": "양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "EXAM",
+      "content": "갑상선 안징후 검사하겠습니다",
+      "effective_content": "r08",
+      "response": {
+        "status": "OK",
+        "result": "돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "EXAM",
+      "content": "자세성 떨림 확인하겠습니다",
+      "effective_content": "r21",
+      "response": {
+        "status": "OK",
+        "result": "자세성 떨림(+/+)",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "EXAM",
+      "content": "피부 온도·발한 촉진하겠습니다",
+      "effective_content": "r05",
+      "response": {
+        "status": "OK",
+        "result": "온난(+), 발한(+), 손바닥 습윤(+/+)",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "EXAM",
+      "content": "경부 림프절 촉진하겠습니다",
+      "effective_content": "r09",
+      "response": {
+        "status": "OK",
+        "result": "촉지(-/-), 압통(-/-)",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "EXAM",
+      "content": "복부 촉진하겠습니다",
+      "effective_content": "r17",
+      "response": {
+        "status": "OK",
+        "result": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "EXAM",
+      "content": "사지 근력 검사하겠습니다",
+      "effective_content": "r19",
+      "response": {
+        "status": "OK",
+        "result": "상지 Gr.5/Gr.5, 하지 근위부 Gr.4/Gr.4",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "SAY",
+      "content": "많이 걱정되셨죠, 그레이브스병 가능성이 있어요.",
+      "effective_content": "많이 걱정되셨죠, 그레이브스병 가능성이 있어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다. 다음 검사는 어떤 게 필요할까요?",
+        "turn": 27,
+        "turns_remaining": 23
+      },
+      "payload": {
+        "content": "많이 걱정되셨죠, 그레이브스병 가능성이 있어요."
+      }
+    },
+    {
+      "turn": 28,
+      "action": "SAY",
+      "content": "면역이 잘못돼서 호르몬이 많아 살이 빠지고 떨려요.",
+      "effective_content": "면역이 잘못돼서 호르몬이 많아 살이 빠지고 떨려요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 28,
+        "turns_remaining": 22
+      },
+      "payload": {
+        "content": "면역이 잘못돼서 호르몬이 많아 살이 빠지고 떨려요."
+      }
+    },
+    {
+      "turn": 29,
+      "action": "SAY",
+      "content": "걱정하신 큰 병보다 갑상샘항진증 가능성이 높아요.",
+      "effective_content": "걱정하신 큰 병보다 갑상샘항진증 가능성이 높아요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 29,
+        "turns_remaining": 21
+      },
+      "payload": {
+        "content": "걱정하신 큰 병보다 갑상샘항진증 가능성이 높아요."
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "피검사·초음파 를 2주 뒤 결과 보고 와요.",
+      "effective_content": "피검사·초음파 를 2주 뒤 결과 보고 와요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 30,
+        "turns_remaining": 20
+      },
+      "payload": {
+        "content": "피검사·초음파 를 2주 뒤 결과 보고 와요."
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "열·목 아픔·숨참·심한 두근거림 땐 바로 오세요.",
+      "effective_content": "열·목 아픔·숨참·심한 두근거림 땐 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 알겠습니다.",
+        "turn": 31,
+        "turns_remaining": 19
+      },
+      "payload": {
+        "content": "열·목 아픔·숨참·심한 두근거림 땐 바로 오세요."
+      }
+    },
+    {
+      "turn": 32,
+      "action": "SAY",
+      "content": "더 궁금하신 점 있으세요?",
+      "effective_content": "더 궁금하신 점 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그런 건 없어요.",
+        "turn": 32,
+        "turns_remaining": 18
+      },
+      "payload": {
+        "content": "더 궁금하신 점 있으세요?"
+      }
+    },
+    {
+      "turn": 33,
+      "action": "SAY",
+      "content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "effective_content": "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+      "response": {
+        "status": "OK",
+        "content": "밤에도 땀이 많이 나서 잠옷이 젖을 때가 있다.",
+        "turn": 33,
+        "turns_remaining": 17
+      },
+      "payload": {
+        "content": "바로 오셔야 할 증상 하나를 말씀해 보세요."
+      }
+    },
+    {
+      "turn": 33,
+      "action": "DIAGNOSE",
+      "diagnosis": "그레이브스병에 의한 갑상샘항진증 (Graves' disease)"
+    }
+  ]
+}

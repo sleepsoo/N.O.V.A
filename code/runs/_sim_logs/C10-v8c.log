@@ -1,0 +1,48 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  15.5s] llm[intake] low out=350 finish=stop 15.4s
+[  15.5s] intake: {'age': 32, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '체중 감소', 'request': '', 'categories': ['weight_loss', 'fatigue', 'mood'], 'empathy': '걱정되셨겠네요.', 'answered': []} diffs=['전신성 갑상선기능 항진증', '전이성 암', '간경변', '쿠싱증후군', '전신성 루푸스']
+[  15.5s] intake_v8 llm items: {'discriminators': [{'q': '갑상선 기능 항진을 의심하시면 갑상선 호르몬 수준을 확인해 보셨나요?', 'label': '갑상선검사', 'sys': 'endo'}, {'q': '암 이력이 있거나 흡연을 하셨는지요?', 'label': '암 위험', 'sys': 'hx'}, {'q': '간 기능 검사 결과를 보고 싶으신가요?', 'label': '간검사', 'sys': 'endo'}, {'q': '뇌경색 증상(오나 속기, 언어장애 등)이 있었나요?', 'label': '뇌졸중', 'sys': 'neuro'}, {'q': '환경적 자극(운동, 다이어트) 없이 급격히 체중이 감소한 경험이 있으면 알려주세요', 'label': '급성체감', 'sys': 'gen'}], 'contra': [{'q': '현재 심장질환이나 두근거림이 있으세요?', 'label': '심장질환', 'sys': 'gen'}, {'q': '나트륨이나 칼륨이 급격히 바뀐 약을 복용하고 있나요?', 'label': '전해질불균형', 'sys': 'gen'}]}
+[  15.5s] llm contra rejected (dup:두근거림/ok): 현재 심장질환이나 두근거림이 있으세요?
+[  15.5s] llm discriminators dropped (bank category): ['갑상선 기능 항진을 의심하시면 갑상선 호르몬 수준을 확인해 보셨나요?', '암 이력이 있거나 흡연을 하셨는지요?', '간 기능 검사 결과를 보고 싶으신가요?', '뇌경색 증상(오나 속기, 언어장애 등)이 있었나요?', '환경적 자극(운동, 다이어트) 없이 급격히 체중이 감소한 경험이 있으면 알려주세요']
+[  20.2s] turn 1 SAY: 안녕하세요, 걱정되셨겠네요. 다른 불편한 데는요? -> 손이 떨리는 것도 느껴진다.
+[  20.2s] cpx: main=weight_loss bank=True chosen=['wl_intake', 'wl_heat', 'wl_palp', 'wl_bowel', 'wl_eye', 'wl_neck', 'wl_cycle', 'wl_sleep', 'wl_cardio', 'wl_fever', 'hx_meds', 'hx_admit_op', 'hx_allergy', 'wl_fh', 'sh_smoke_alc', 'wm_preg', 'ice'] backlog=['wl_tremor', 'wl_thirst', 'wl_weak', 'ft_weight', 'ft_sleep', 'md_trigger', 'md_interest', 'wl_gi_red', 'ps_mood', 'wl_hx', 'hx_htn_dm', 'sh_caffeine', 'wl_hemato', 'llm_contra1', 'sh_job']
+[  27.0s] turn 2 SAY: 식사량이나 입맛은 예전과 어떠세요? -> 요즘은 식욕이 좋아져서 평소보다 더 많이 먹고 있어요.
+[  31.2s] turn 3 SAY: 더위를 타거나 땀이 많아졌나요? -> 사무실에서도 다른 사람들은 괜찮은데 나만 땀이 많이 난다.
+[  35.4s] turn 4 SAY: 가슴이 두근거릴 때가 있나요? -> 가슴이 두근거리는 증상도 자주 있어요.
+[  43.9s] turn 5 SAY: 대변 횟수나 모양이 변했나요? -> 변은 하루에 이에서 삼회 정도이고, 부드럽고 묽어졌어요.
+[  53.0s] turn 6 SAY: 눈이 튀어나오거나 뻑뻑한가요? -> 눈이 뻑뻑하고 가끔 충혈돼요. 거울 보면 눈이 약간 튀어나온 것 같아요.
+[  53.0s] cpx follow-up skipped (guard) [wl_eye] must=12 room=11
+[  63.4s] turn 7 SAY: 목이 붓거나 혹이 만져지나요? -> 목 앞이 전보다 조금 두꺼워졌고, 혹은 만져지지 않아요.
+[  66.3s] turn 8 SAY: 생리 양이나 기간이 변했나요? -> 생리량이 많이 줄었고, 기간도 짧아졌어요.
+[  80.4s] turn 9 SAY: 잠을 설치거나 불안하세요? -> 잠도 잘 못 자고, 불안해요.
+[  85.7s] turn 10 SAY: 가슴 통증이나 숨찬 증상 있으세요? -> 가슴이 아프지 않아요.
+[  85.7s] cpx reask safety item: ros_dysp
+[  85.7s] cpx pending dropped (guard): 숨찬 증상이 있으세요?
+[  90.3s] turn 11 SAY: 최근 열이나 감기 기운이 있었나요? -> 그런 건 없어요.
+[  93.5s] turn 12 SAY: 드시는 약이나 영양제 있으세요? -> 그런 건 없어요.
+[  96.5s] turn 13 SAY: 입원이나 수술한 적 있으세요? -> 그런 건 없어요.
+[ 100.4s] turn 14 SAY: 약 알레르기나 천식 있으세요? -> 그런 건 없어요.
+[ 105.2s] turn 15 SAY: 가족 중 갑상선병 있는 분 있나요? -> 어머니가 갑상샘 기능저하증이 있어요.
+[ 110.7s] turn 16 SAY: 담배나 술은 하세요? -> 담배는 피우지 않아요. 술은 한 달에 한두 번 마셔요.
+[ 110.7s] cpx follow-up skipped (guard) [sh_smoke_alc] must=2 room=1
+[ 114.3s] turn 17 SAY: 혹시 임신 가능성은 있으세요? -> 임신 가능성은 없어요.
+[ 126.5s] turn 18 SAY: 혹시 걱정되는 병이 있으세요? -> 그걸 알고 싶어서 왔어요.
+[ 126.5s] interview_v8 done: asked=17 items=29 missing_must=[]
+[ 126.5s] exams plan v8: ['vitals', 'thyroid', 'eye_signs', 'post_tremor', 'heart', 'lung', 'skin_temp'] (total=7, backlog=['cervical_ln', 'abd_palp', 'power', 'radial', 'thyroid_bruit', 'dtr', 'conj', 'eom', 'pretibial', 'liver_spleen', 'bowel', 'mental', 'periph', 'affect', 'insight', 'cognitive', 'sedation'])
+[ 126.5s] turn 19 EXAM: 활력징후 측정하겠습니다 -> 138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C
+[ 126.5s] turn 20 EXAM: 갑상선 촉진하겠습니다 -> 양측 대칭성 미만성 비대(+, 정상의 약 2배), 표면 매끈, 결절(-), 압통(-)
+[ 126.5s] turn 21 EXAM: 갑상선 안징후 검사하겠습니다 -> 돌출(+/+), 안검 지연(+/+), 안검 후퇴(+/+)
+[ 131.6s] turn 22 EXAM: 자세성 떨림 확인하겠습니다 -> 자세성 떨림(+/+)
+[ 131.6s] turn 23 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)
+[ 131.6s] turn 24 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 131.6s] turn 25 EXAM: 피부 온도·발한 촉진하겠습니다 -> 온난(+), 발한(+), 손바닥 습윤(+/+)
+[ 262.8s] llm[facts] medium out=2832 finish=stop 131.3s
+[ 262.8s] facts: 33
+[ 262.8s] guidelines[dx]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[ 262.8s] guidelines[dx]: 한국임상암학회 전이성 전립선암 치료 지침 (KR_Journals, 2017)
+[ 381.6s] llm[dx] medium out=2560 finish=stop 118.8s
+[ 381.6s] guidelines[plan-mgmt]: 갑상선기능항진증의 진단 및 치료 - 대한갑상선학회 합의안 (KR_Journals, 2013)
+[ 381.6s] guidelines[plan-ovw]: 2025 갑상선기능항진증의 방사성요오드 치료에 대한 진료권고안 (KR_Societies, 2025)
+[ 381.6s] guidelines[plan-edu]: 갑상선기능항진증 (KR_HealthInfo, 2026)
+[ 456.2s] llm[plan_p] medium out=1609 finish=stop 74.6s

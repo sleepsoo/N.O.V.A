@@ -1,0 +1,360 @@
+{
+  "case_id": "35dd8b69-2531-454e-bb8c-fb8030293447",
+  "alias": "C10",
+  "turns": 48,
+  "say": 39,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 30,
+  "skipped_invalid": 0,
+  "doctor_calls": 14,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 24572,
+  "doctor_output_tokens": 25778,
+  "seconds": 772.0,
+  "diagnosis": "갑상선 기능 항진증(그레이브스병) (Graves' disease)",
+  "accepted_diagnoses": [
+    "갑상샘항진증(그레이브스병)",
+    "그레이브스병",
+    "그레이브스병에 의한 갑상샘항진증",
+    "갑상선기능항진증(그레이브스병)",
+    "그레이브스병에 의한 갑상선기능항진증",
+    "Graves' disease",
+    "Graves disease",
+    "Hyperthyroidism due to Graves' disease"
+  ],
+  "dx_hit": true,
+  "dx_samples": [
+    {
+      "diagnosis_ko": "갑상선 기능 항진증(그레이브스병)",
+      "diagnosis_en": "Graves' disease",
+      "confidence": 0.92,
+      "_effort": "high"
+    },
+    {
+      "diagnosis_ko": "그레이브스병",
+      "diagnosis_en": "Graves' disease",
+      "confidence": 0.95,
+      "_effort": "medium"
+    }
+  ],
+  "profile": {
+    "age": 32,
+    "sex": "F",
+    "pediatric": false,
+    "cc": "갑작스런 체중 감소",
+    "categories": [
+      "weight"
+    ],
+    "answered": [
+      "onset",
+      "course",
+      "impact",
+      "prior_care"
+    ],
+    "empathy": "갑작스런 체중 감소에 많이 걱정되었겠어요."
+  },
+  "explained": [
+    "갑상선 항진증이 의심돼요.",
+    "갑상선 항체 증가 때문으로 보여요.",
+    "갑상선 기능 검사로 확인할게요.",
+    "항갑상선제 투여로 치료할 수 있어요.",
+    "심장 부정맥이 있으면 바로 오세요.",
+    "규칙적인 식사와 충분한 수분 섭취를 하세요.",
+    "더 궁금한 점 있으세요?",
+    "검사 후 재진 때 설명드릴게요"
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 577,
+      "out": 265,
+      "finish": "stop",
+      "sec": 5.5
+    },
+    {
+      "tag": "adaptive1",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1126,
+      "out": 3133,
+      "finish": "stop",
+      "sec": 71.6
+    },
+    {
+      "tag": "adaptive2",
+      "effort": "medium",
+      "max_tokens": 4000,
+      "in": 1438,
+      "out": 2887,
+      "finish": "stop",
+      "sec": 75.0
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2899,
+      "out": 865,
+      "finish": "stop",
+      "sec": 21.2
+    },
+    {
+      "tag": "dx1-high",
+      "effort": "high",
+      "max_tokens": 6000,
+      "in": 1938,
+      "out": 2749,
+      "finish": "stop",
+      "sec": 74.0
+    },
+    {
+      "tag": "dx2-medium",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1938,
+      "out": 606,
+      "finish": "stop",
+      "sec": 16.1
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1904,
+      "out": 860,
+      "finish": "stop",
+      "sec": 22.3
+    },
+    {
+      "tag": "plan",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1925,
+      "out": 1650,
+      "finish": "stop",
+      "sec": 41.1
+    },
+    {
+      "tag": "explain",
+      "effort": "medium",
+      "max_tokens": 5000,
+      "in": 2394,
+      "out": 1363,
+      "finish": "stop",
+      "sec": 33.7
+    },
+    {
+      "tag": "answer",
+      "effort": "low",
+      "max_tokens": 1200,
+      "in": 473,
+      "out": 36,
+      "finish": "stop",
+      "sec": 1.2
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2132,
+      "out": 3987,
+      "finish": "stop",
+      "sec": 93.7
+    },
+    {
+      "tag": "S-judge",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2154,
+      "out": 4626,
+      "finish": "stop",
+      "sec": 118.0
+    },
+    {
+      "tag": "S-hpi",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 1394,
+      "out": 791,
+      "finish": "stop",
+      "sec": 18.1
+    },
+    {
+      "tag": "A",
+      "effort": "medium",
+      "max_tokens": 6000,
+      "in": 2280,
+      "out": 1960,
+      "finish": "stop",
+      "sec": 47.5
+    }
+  ],
+  "phase_times": {
+    "structure": 5.5,
+    "interview": 231.6,
+    "examine": 47.3,
+    "diagnose_vote": 90.1,
+    "plan": 63.4,
+    "explain": 56.7,
+    "S": 229.8,
+    "S-verify": 0.0,
+    "A": 47.5
+  },
+  "findings": [
+    {
+      "turn": 2,
+      "key": "hpi.course",
+      "pol": "?",
+      "detail": "네, 계속 살이 빠지고 있어요.",
+      "label": "경과"
+    },
+    {
+      "turn": 3,
+      "key": "hpi.impact",
+      "pol": "?",
+      "detail": "쉽게 지쳐서 계단 오르기 힘들어요.",
+      "label": "일상 지장"
+    },
+    {
+      "turn": 4,
+      "key": "hpi.prior_visit",
+      "pol": "?",
+      "detail": "아니요, 이번이 처음이에요.",
+      "label": "이전 진료"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.DM",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 13,
+      "key": "pmh.HTN",
+      "pol": "-",
+      "detail": "",
+      "label": "DM/HTN"
+    },
+    {
+      "turn": 14,
+      "key": "pmh.other_illness",
+      "pol": "-",
+      "detail": "",
+      "label": "기타 지병"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.Tbc",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 15,
+      "key": "pmh.hepatitis",
+      "pol": "-",
+      "detail": "",
+      "label": "Tbc/hepatitis"
+    },
+    {
+      "turn": 16,
+      "key": "pmh.op_hx",
+      "pol": "-",
+      "detail": "",
+      "label": "Op. Hx"
+    },
+    {
+      "turn": 17,
+      "key": "pmh.meds",
+      "pol": "-",
+      "detail": "",
+      "label": "Medicine history"
+    },
+    {
+      "turn": 18,
+      "key": "pmh.allergy",
+      "pol": "-",
+      "detail": "",
+      "label": "Allergy"
+    },
+    {
+      "turn": 20,
+      "key": "ros.LMP",
+      "pol": "?",
+      "detail": "2주 전쯤 시작했어요.",
+      "label": "LMP"
+    },
+    {
+      "turn": 21,
+      "key": "fh.similar",
+      "pol": "+",
+      "detail": "어머니가 갑상샘 저하증이세요.",
+      "label": "FH 유사 질환"
+    },
+    {
+      "turn": 23,
+      "key": "sh.smoking",
+      "pol": "-",
+      "detail": "",
+      "label": "Smoking"
+    },
+    {
+      "turn": 24,
+      "key": "sh.alcohol",
+      "pol": "+",
+      "detail": "한 달에 한두 번 가볍게 마셔요.",
+      "label": "Alcohol"
+    },
+    {
+      "turn": 25,
+      "key": "ros.Palpitation",
+      "pol": "+",
+      "detail": "",
+      "label": "Palpitation"
+    },
+    {
+      "turn": 26,
+      "key": "ros.Dyspnea",
+      "pol": "+",
+      "detail": "",
+      "label": "Dyspnea"
+    },
+    {
+      "turn": 27,
+      "key": "ros.Chest pain",
+      "pol": "-",
+      "detail": "",
+      "label": "Chest pain"
+    },
+    {
+      "turn": 30,
+      "key": "ice.concern",
+      "pol": "?",
+      "detail": "큰 병일까 봐 가장 걱정돼요.",
+      "label": "걱정(ICE)"
+    },
+    {
+      "turn": 31,
+      "key": "ice.expectation",
+      "pol": "?",
+      "detail": "원인 알고 빨리 치료받고 싶어요.",
+      "label": "기대(ICE)"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "2758879e827e49177dc9d8d7118beaa74bef0bef3d22ebf2b8a59d9d3ef399a6",
+    "score_status": "not_scored",
+    "turn": 48
+  },
+  "error": null,
+  "session_id": "3306045f-7984-4984-b503-c8b072610ba4",
+  "api": "https://nova.snubhai.org"
+}

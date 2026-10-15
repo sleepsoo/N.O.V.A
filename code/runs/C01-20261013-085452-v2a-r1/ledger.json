@@ -1,0 +1,436 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "잠을 못 주무셔서 많이 힘드셨겠어요.",
+    "reply": "네, 잠을 못 자서 너무 힘들어요.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "언제부터 그러셨어요?",
+    "reply": "칠 년 전부터 잠을 못 잤어요.",
+    "phase": "hpi",
+    "qid": "onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "그 뒤로 점점 심해지고 있나요?",
+    "reply": "네, 약 먹는 양도 늘었어요.",
+    "phase": "hpi",
+    "qid": "course",
+    "label": "경과"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "일상생활에 지장이 얼마나 있으세요?",
+    "reply": "낮에 졸아서 집안일이 힘들어요.",
+    "phase": "hpi",
+    "qid": "impact",
+    "label": "일상 지장"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "드시는 약 이름과 용량을 아세요?",
+    "reply": "졸피뎀이고 한 알에 10mg예요.",
+    "phase": "bundle",
+    "qid": "dr_name",
+    "label": "약 이름·용량"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "지금 하루에 몇 알 드세요?",
+    "reply": "하루 대여섯 알, 많으면 일곱 알요.",
+    "phase": "bundle",
+    "qid": "dr_dose",
+    "label": "복용량"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "하루 중 언제 언제 드세요?",
+    "reply": "밤11시·새벽2~3시, 가끔 낮요.",
+    "phase": "bundle",
+    "qid": "dr_timing",
+    "label": "복용 시각"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "약을 안 드시면 어떤 증상이 있나요?",
+    "reply": "불안하고 손이 떨려 잠을 못 자요.",
+    "phase": "bundle",
+    "qid": "dr_withdraw",
+    "label": "금단 증상"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "잠드는 데 오래 걸리세요?",
+    "reply": "네, 약 없이는 잠을 못 자요.",
+    "phase": "bundle",
+    "qid": "sl_initiate",
+    "label": "입면 장애"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "줄이거나 끊어 보려 하신 적 있나요?",
+    "reply": "네, 여러 번 시도했지만 실패했어요.",
+    "phase": "bundle",
+    "qid": "dr_cut",
+    "label": "감량 시도"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "자다가 자주 깨세요?",
+    "reply": "네, 두세 시간 뒤에 깨요.",
+    "phase": "bundle",
+    "qid": "sl_maintain",
+    "label": "수면 유지 장애"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "낮에 졸리거나 멍하세요?",
+    "reply": "네, 낮에 졸리고 많이 멍해요.",
+    "phase": "bundle",
+    "qid": "sl_daytime",
+    "label": "주간 졸림"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "다른 수면제나 약국 약도 드세요?",
+    "reply": "약국 수면유도제도 가끔 같이 먹어요.",
+    "phase": "bundle",
+    "qid": "dr_other",
+    "label": "다른 약 병용"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "약을 줄일 때 경련한 적 있으세요?",
+    "reply": "아니요, 경련한 적은 없어요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "약 복용 후 깨우기 어려웠던 적 있나요?",
+    "reply": "아니요, 그런 적은 없어요.",
+    "phase": "adaptive1",
+    "qid": "ad1",
+    "label": "적응형"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "많이 피곤하거나 기운 없으세요?",
+    "reply": "네, 낮에 피곤하고 기운이 없어요.",
+    "phase": "ros",
+    "qid": "ros_fatigue",
+    "label": "Fatigue/Weakness"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "가슴 두근거림 있으세요?",
+    "reply": "네, 약 안 먹으면 두근거려요.",
+    "phase": "ros",
+    "qid": "ros_palp",
+    "label": "Palpitation"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "두통 있으세요?",
+    "reply": "네, 약 안 먹으면 머리가 아파요.",
+    "phase": "ros",
+    "qid": "ros_headache",
+    "label": "Headache"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 있으세요?",
+    "reply": "고혈압으로 암로디핀 먹어요.",
+    "phase": "history",
+    "qid": "pmh_dm_htn",
+    "label": "DM/HTN"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "다른 지병이나 수술받은 적 있으세요?",
+    "reply": "아니요, 다른 지병이나 수술은 없어요.",
+    "phase": "history",
+    "qid": "pmh_other",
+    "label": "기타 지병·수술"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "부모님이나 형제분 앓는 병 있나요?",
+    "reply": "어머니는 치매, 아버지는 심장병요.",
+    "phase": "history",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "담배는 피우세요?",
+    "reply": "아니요, 평생 안 피웠어요.",
+    "phase": "history",
+    "qid": "smoking",
+    "label": "Smoking"
+  },
+  {
+    "turn": 23,
+    "kind": "SAY",
+    "text": "약을 더 먹고 싶은 충동이 드세요?",
+    "reply": "네, 불안하면 더 먹고 싶어요.",
+    "phase": "adaptive2",
+    "qid": "ad2",
+    "label": "적응형"
+  },
+  {
+    "turn": 24,
+    "kind": "SAY",
+    "text": "가장 걱정되는 게 뭐예요?",
+    "reply": "약 줄이면 잠 못 잘까 봐 두려워요.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 25,
+    "kind": "SAY",
+    "text": "오늘 바라시는 게 있으세요?",
+    "reply": "일단 수면제 처방을 받고 싶어요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "기대(ICE)"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "128/78mmHg, 76회/분 규칙적, 18회/분, 36.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 정상 체형, 안절부절(+)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "주간 진정·불안 관찰하겠습니다",
+    "reply": "반응 지연(+), 졸림(+), 불안·초조(+), 급성 중독 징후(-)",
+    "phase": "exam",
+    "qid": "sedation",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "인지기능 선별검사 하겠습니다",
+    "reply": "MMSE-K 28/30점, 지연회상 2/3점",
+    "phase": "exam",
+    "qid": "cognitive",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 6mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "자세성 떨림 확인하겠습니다",
+    "reply": "자세성 떨림(-/-)",
+    "phase": "exam",
+    "qid": "post_tremor",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "피부 온도·발한 촉진하겠습니다",
+    "reply": "온난, 발한(-), 손바닥 습윤(-/-)",
+    "phase": "exam",
+    "qid": "skin_temp",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 34,
+    "kind": "EXAM",
+    "text": "인두·편도 시진하겠습니다",
+    "reply": "인두 발적(-), 편도 비대(-/-), 삼출물(-/-)",
+    "phase": "exam",
+    "qid": "pharynx",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 35,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_SPECIFIC",
+    "qid": "anthro",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "EXAM",
+    "text": "병식 평가하겠습니다",
+    "reply": "병식 부분적",
+    "phase": "exam",
+    "qid": "insight",
+    "label": "",
+    "system": "Psych"
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "졸피뎀 사용장애입니다.",
+    "reply": "그게 무슨 뜻인가요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "졸피뎀을 조절하기 어렵게 사용하는 상태입니다.",
+    "reply": "약을 줄일 수 있을까요?",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "오래 많이 복용해 약에 의존한 상태입니다.",
+    "reply": "줄이고 싶은데 잠 못 잘까 두려워요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "잠이 걱정돼도 급히 끊지 않고 감량을 계획합니다.",
+    "reply": "네, 천천히 줄여보고 싶어요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "혈구·전해질·간·신장 검사와 심전도를 합니다.",
+    "reply": "네, 검사받을게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "오늘 추가 처방 없이 응급실에서 감량을 평가합니다.",
+    "reply": "처방 없으면 잠 못 잘까 두려워요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "보호자와 가고 운전·수면유도제 병용은 피하세요.",
+    "reply": "네, 남편과 갈게요. 조심할게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 44,
+    "kind": "SAY",
+    "text": "경련·혼돈·환각·숨참·심한 두근거림은 바로 오세요.",
+    "reply": "네, 그러면 바로 올게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 45,
+    "kind": "SAY",
+    "text": "3~7일 내 재진하고 매일 같은 시각에 일어나세요.",
+    "reply": "네, 재진하고 제때 일어날게요.",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 46,
+    "kind": "SAY",
+    "text": "더 궁금하신 점 있으세요?",
+    "reply": "수면제 말고 다른 방법도 있나요?",
+    "phase": "explain",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 47,
+    "kind": "SAY",
+    "text": "네, 불면 인지행동치료와 수면습관 조절이 있습니다.",
+    "reply": "네, 그 치료도 받아보고 싶어요.",
+    "phase": "explain-answer",
+    "qid": "",
+    "label": ""
+  }
+]

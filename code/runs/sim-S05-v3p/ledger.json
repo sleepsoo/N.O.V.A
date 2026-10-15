@@ -1,0 +1,457 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 불편하셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "아픈 곳에 대해 자세히 말씀해 주세요",
+    "reply": "왼쪽 엉덩이에서 허벅지 뒤쪽, 종아리를 지나 발바깥쪽 새끼발가락 쪽까지 전기가 오듯 찌릿하게 내려가는 통…",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "아버지처럼 수술을 해야 하는 건 아닌지 걱정이 된다.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "다리 힘이 빠져서 넘어진 적은 없어요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "소변이나 대변을 보기 어려우세요?",
+    "reply": "소변이나 대변을 보는 데 문제는 없어요.",
+    "phase": "interview",
+    "qid": "mk_bladder",
+    "label": "대소변 장애"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "회음부 감각이 둔하거나 무뎌졌나요?",
+    "reply": "엉덩이 사이나 항문 주변이 멍하거나 감각이 없는 느낌은 없어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "열이 나거나 체중이 줄었나요?",
+    "reply": "열이나 오한은 없어요. 살도 빠지지 않았어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "왼쪽 다리 힘이 점점 약해지나요?",
+    "reply": "왼쪽이 오른쪽보다 힘이 좀 없는 것 같아요.",
+    "phase": "interview",
+    "qid": "hpi_course",
+    "label": "경과"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "허리 통증 양상에 대해 자세히 말씀해 주세요",
+    "reply": "허리만 뻐근했어요. 사흘째부터 다리 통증이 생겼어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "가족 병력에 대해 자세히 말씀해 주세요",
+    "reply": "아버지가 허리 디스크로 수술을 받으셨다.",
+    "phase": "interview",
+    "qid": "fh_open",
+    "label": "FH"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "어느 관절이 아프세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "mk_site",
+    "label": "부위"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "아침에 뻣뻣함이 얼마나 가나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "mk_morning",
+    "label": "조조강직"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "다리 힘이 약한 느낌에 대해 자세히 말씀해 주세요",
+    "reply": "왼쪽이 오른쪽보다 힘이 좀 없는 것 같아요.",
+    "phase": "interview",
+    "qid": "nr_weak",
+    "label": "근력 저하"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "일상생활 지장에 대해 자세히 말씀해 주세요",
+    "reply": "지금은 아파서 일주일째 병가를 내고 쉬고 있어요.",
+    "phase": "interview",
+    "qid": "hpi_impact",
+    "label": "일상 지장"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨가 있으세요?",
+    "reply": "고혈압, 당뇨는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "다른 지병이 있으세요?",
+    "reply": "암이나 결핵을 앓은 적은 없어요.",
+    "phase": "interview",
+    "qid": "pmh_other",
+    "label": "기타 질환"
+  },
+  {
+    "turn": 18,
+    "kind": "SAY",
+    "text": "담배를 피우세요?",
+    "reply": "하루 반 갑씩 이십 년째 피워요.",
+    "phase": "interview",
+    "qid": "sh_smoke",
+    "label": "Smoking"
+  },
+  {
+    "turn": 19,
+    "kind": "SAY",
+    "text": "술을 드세요?",
+    "reply": "술은 일주일에 두 번 맥주 두세 캔 정도 마신다.",
+    "phase": "interview",
+    "qid": "sh_alcohol",
+    "label": "Alcohol"
+  },
+  {
+    "turn": 20,
+    "kind": "SAY",
+    "text": "드시는 약이나 영양제 있으세요?",
+    "reply": "진통소염제 하루 두세 번 먹고 있는데 조금 나아질 뿐이에요.",
+    "phase": "interview",
+    "qid": "pmh_meds",
+    "label": "복용약·보조제"
+  },
+  {
+    "turn": 21,
+    "kind": "SAY",
+    "text": "밤에 쉬어도 아픈가요?",
+    "reply": "밤에 자다가 깨는 일은 없고, 자세를 바꾸면 괜찮아져요.",
+    "phase": "interview",
+    "qid": "mk_night",
+    "label": "야간통"
+  },
+  {
+    "turn": 22,
+    "kind": "SAY",
+    "text": "무슨 일 하세요?",
+    "reply": "직업은 택배 회사 물류센터 관리자로",
+    "phase": "interview",
+    "qid": "sh_job",
+    "label": "직업"
+  },
+  {
+    "turn": 23,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "아버지처럼 수술을 해야 하는 건 아닌지 걱정이 돼요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "하지직거상 검사하겠습니다",
+    "reply": "좌측 40도에서 방사통(+), 우측 80도 음성(-)",
+    "phase": "exam",
+    "qid": "slr",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "사지 근력 검사하겠습니다",
+    "reply": "족저굴곡 Gr.5/Gr.4, 족배굴곡 Gr.5/Gr.5, 무지 신전 Gr.5/Gr.5, 고관절 굴곡 Gr.5/Gr.5",
+    "phase": "exam",
+    "qid": "power",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "사지 감각 검사하겠습니다",
+    "reply": "좌측 발 외측·새끼발가락(S1 피부분절) 촉각·통각 저하(+), 우측 정상",
+    "phase": "exam",
+    "qid": "sensory",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "심부건반사 검사하겠습니다",
+    "reply": "슬개건 2+/2+, 아킬레스건 2+/1+(우/좌)",
+    "phase": "exam",
+    "qid": "dtr",
+    "label": "",
+    "system": "Neuro"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "척추 압통 확인하겠습니다",
+    "reply": "극돌기 타진 압통(-)",
+    "phase": "exam",
+    "qid": "spine",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 29,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 통증으로 왼쪽 다리 감싸는 자세(+), 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 30,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "심음 청진 (Heart auscultation) | 정상음(정상)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 31,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐 청진 (Lung auscultation) | 정상음성(정상)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 32,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 박동성 종괴(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 33,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 지남력 3/3점",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 34,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "결막·공막 시진 | 결막 홍반(-), 결막 충혈(-), 공막 색상 정상(정상색), 눈물샘 분비 정상(정상)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 35,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "갑상선 부드럽고, 정상 크기, 경계선 명확, 비대 없음",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 36,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 37,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "132/82mmHg, 78회/분 규칙적, 16회/분, 36.5°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "허리 디스크로 왼쪽 다리 신경이 눌린 듯해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 39,
+    "kind": "SAY",
+    "text": "엉덩이부터 발까지 찌릿하고 발 감각도 둔해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_meaning",
+    "label": ""
+  },
+  {
+    "turn": 40,
+    "kind": "SAY",
+    "text": "현재는 수술보다 보존치료를 먼저 고려해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 41,
+    "kind": "SAY",
+    "text": "MRI로 디스크와 신경 눌림을 확인해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 42,
+    "kind": "SAY",
+    "text": "엑스레이와 신장기능도 확인해요",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_tests2",
+    "label": ""
+  },
+  {
+    "turn": 43,
+    "kind": "SAY",
+    "text": "결과를 보고 약·재활·주사를 함께 정해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment",
+    "label": ""
+  },
+  {
+    "turn": 44,
+    "kind": "SAY",
+    "text": "소염진통제 복용 뒤 속쓰림은 알려주세요",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_treatment2",
+    "label": ""
+  },
+  {
+    "turn": 45,
+    "kind": "SAY",
+    "text": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 46,
+    "kind": "SAY",
+    "text": "1~2주 뒤 영상과 근력 변화를 확인해요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 47,
+    "kind": "SAY",
+    "text": "오래 앉지 말고 통증 없는 범위에서 걸으세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_lifestyle",
+    "label": ""
+  },
+  {
+    "turn": 48,
+    "kind": "SAY",
+    "text": "언제 바로 오셔야 하는지 말씀해 보세요",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  },
+  {
+    "turn": 49,
+    "kind": "SAY",
+    "text": "숨참·흉통·의식 변화·고열 시 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_recheck",
+    "label": ""
+  }
+]

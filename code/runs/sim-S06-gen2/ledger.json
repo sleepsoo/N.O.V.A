@@ -1,0 +1,335 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "많이 불편하셨겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "혈당에 대해 자세히 말씀해 주세요",
+    "reply": "혈당이 조금 높다고 해서 운동하라는 말이 있었어요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "가장 걱정되시는 게 뭐예요?",
+    "reply": "피곤해서 오후만 되면 눕고 싶고, 집안일을 하다가도 자주 쉰다.",
+    "phase": "ice",
+    "qid": "ice_concern",
+    "label": "걱정(ICE)"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "질 주변이 가렵고 분비물이 조금 늘어서 신경이 쓰여요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "그 밖에 또 불편한 건 없으세요?",
+    "reply": "소변도 자주 마려워서 낮에 열 번 넘게 화장실에 가고, 밤에도 두세 번은 깨서 소변을 본다.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "최근 체중 변화에 대해 자세히 말씀해 주세요",
+    "reply": "몸무게가 삼 키로그람 정도 빠졌어요.",
+    "phase": "interview",
+    "qid": "dm_weight",
+    "label": "체중 변화"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "고혈압이나 당뇨 진단을 받으신 적 있나요?",
+    "reply": "고혈압이 있어서 혈압약 하루 한 알 먹고 있어요.",
+    "phase": "interview",
+    "qid": "pmh_htn_dm",
+    "label": "HTN/DM"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "소변 볼 때 아프거나 따가우세요?",
+    "reply": "소변볼 때 아프거나 따갑지는 않아요.",
+    "phase": "interview",
+    "qid": "ur_dysuria",
+    "label": "배뇨통"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "열이나 오한이 있나요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ur_fever",
+    "label": "발열·오한"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "가족 중 당뇨병이 있는 분이 있나요?",
+    "reply": "아버지와 어머니 모두 당뇨병이 있었어요.",
+    "phase": "interview",
+    "qid": "dm_fh",
+    "label": "당뇨 가족력"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "시야 흐림이나 손발 저림은 없으세요?",
+    "reply": "눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.",
+    "phase": "interview",
+    "qid": "dm_vision",
+    "label": "시야"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "요즘 기분이 많이 가라앉으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ps_mood",
+    "label": "우울"
+  },
+  {
+    "turn": 13,
+    "kind": "SAY",
+    "text": "질 가려움과 분비물에 대해 자세히 말씀해 주세요",
+    "reply": "질이 가렵고 분비물이 늘었어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 14,
+    "kind": "SAY",
+    "text": "소변에 피가 섞인 적 있으세요?",
+    "reply": "소변 색이 붉은 적도 없어요.",
+    "phase": "interview",
+    "qid": "ur_hematuria",
+    "label": "혈뇨"
+  },
+  {
+    "turn": 15,
+    "kind": "SAY",
+    "text": "옆구리 통증은 없으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "interview",
+    "qid": "ur_flank",
+    "label": "옆구리 통증"
+  },
+  {
+    "turn": 16,
+    "kind": "SAY",
+    "text": "약 알레르기가 있으세요?",
+    "reply": "약 알레르기는 없어요.",
+    "phase": "interview",
+    "qid": "pmh_allergy",
+    "label": "Allergy"
+  },
+  {
+    "turn": 17,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정돼요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색(-), 비만 체형, 안절부절(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "기립성 혈압 측정하겠습니다",
+    "reply": "수축기 강하 4mmHg, 어지럼(-)",
+    "phase": "exam",
+    "qid": "orthostatic",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "신체 계측하겠습니다",
+    "reply": "신장 156cm, 체중 70kg, BMI 28.8, 허리둘레 94cm",
+    "phase": "exam",
+    "qid": "anthro",
+    "label": "",
+    "system": "Growth"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "피부 긴장도 확인하겠습니다",
+    "reply": "구강 점막 약간 건조(+), 피부 탄력 정상",
+    "phase": "exam",
+    "qid": "skin_turgor",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "흑색가시세포증 시진하겠습니다",
+    "reply": "후경부·액와 흑색극세포증(+)",
+    "phase": "exam",
+    "qid": "acanthosis",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "안저 검사하겠습니다",
+    "reply": "미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상",
+    "phase": "exam",
+    "qid": "fundus",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "외부 생식기 시진하겠습니다",
+    "reply": "외음부 발적(+) 경도, 흰색 분비물(+) 소량",
+    "phase": "exam",
+    "qid": "genital",
+    "label": "",
+    "system": "Genitalia"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "사지 감각 검사하겠습니다",
+    "reply": "",
+    "phase": "exam",
+    "refused": "EXAM_NOT_SPECIFIC",
+    "qid": "sensory",
+    "label": ""
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 27,
+    "kind": "SAY",
+    "text": "혈당이 높은 당뇨병이 의심돼요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 28,
+    "kind": "SAY",
+    "text": "갈증과 잦은 소변은 혈당 상승과 맞아요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_meaning",
+    "label": ""
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "콩팥 상태를 검사해 투석 위험을 살펴볼게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_concern",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "혈당과 당화혈색소로 당뇨를 확인해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "결과를 보고 식사·운동과 약을 상의해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "식사 조절과 운동이 치료의 기본이에요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_treatment2",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "구토·의식저하·심한 갈증·복통이면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "1~2주 뒤 결과와 증상을 함께 확인해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "소변이 붉은 적도 없어요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "구토·의식저하·심한 갈증·복통이면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_recheck",
+    "label": ""
+  }
+]

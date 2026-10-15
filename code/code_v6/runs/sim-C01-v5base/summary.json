@@ -1,0 +1,448 @@
+{
+  "case_id": "C01",
+  "alias": "C01",
+  "turns": 42,
+  "say": 31,
+  "exam": 11,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 22,
+  "skipped_invalid": 0,
+  "doctor_calls": 9,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 17187,
+  "doctor_output_tokens": 13257,
+  "seconds": 1015.0,
+  "diagnosis": "수면제(진정수면제) 사용장애 (Sedative-Hypnotic Use Disorder)",
+  "accepted_diagnoses": [
+    "수면제 의존 (Sedative-Hypnotic Use Disorder)",
+    "수면제 의존",
+    "수면제 의존증",
+    "졸피뎀 의존",
+    "수면제 사용장애",
+    "진정제·수면제 사용장애",
+    "Sedative-Hypnotic Use Disorder",
+    "Sedative, Hypnotic, or Anxiolytic Use Disorder"
+  ],
+  "dx_hit": true,
+  "dx_samples": null,
+  "profile": {
+    "age": 62,
+    "sex": "F",
+    "pediatric": false,
+    "informant": "본인",
+    "cc": "불면 (수면제 처방 원함)",
+    "request": "수면제 처방",
+    "categories": [
+      "substance",
+      "insomnia",
+      "mood"
+    ],
+    "empathy": "많이 걱정되셨겠어요.",
+    "answered": []
+  },
+  "explained": [
+    "박선희 님은 진정수면제 사용장애가 보여요",
+    "소변 검사로 다른 진정제 사용 여부를 확인하고요",
+    "감량은 전문의 지도하에 진행하며 운전은 피하도록 해요",
+    "약은 갑자기 끊지 말고 천천히 줄여요.",
+    "수면 습관 교정과 인지행동치료도 같이 해요.",
+    "숨참·불규칙 심박·고열·혼동이 생기면 바로 와요",
+    "바로 오셔야 할 증상 하나를 말씀해 보세요.",
+    "1~2주 뒤 결과 보러 다시 오세요",
+    "더 궁금하신 점 있으세요?"
+  ],
+  "call_log": [
+    {
+      "tag": "intake",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 692,
+      "out": 165,
+      "finish": "stop",
+      "sec": 9.9
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2491,
+      "out": 355,
+      "finish": "stop",
+      "sec": 18.6
+    },
+    {
+      "tag": "plan_q",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2668,
+      "out": 638,
+      "finish": "stop",
+      "sec": 30.7
+    },
+    {
+      "tag": "exams",
+      "effort": "low",
+      "max_tokens": 6000,
+      "in": 1147,
+      "out": 226,
+      "finish": "stop",
+      "sec": 14.8
+    },
+    {
+      "tag": "facts",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1515,
+      "out": 5560,
+      "finish": "stop",
+      "sec": 287.7
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1824,
+      "out": 1707,
+      "finish": "stop",
+      "sec": 84.3
+    },
+    {
+      "tag": "dx",
+      "effort": "medium",
+      "max_tokens": 8000,
+      "in": 1846,
+      "out": 3338,
+      "finish": "stop",
+      "sec": 185.6
+    },
+    {
+      "tag": "plan_say",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2886,
+      "out": 434,
+      "finish": "stop",
+      "sec": 24.9
+    },
+    {
+      "tag": "S-narr",
+      "effort": "low",
+      "max_tokens": 8000,
+      "in": 2118,
+      "out": 834,
+      "finish": "stop",
+      "sec": 38.5
+    }
+  ],
+  "phase_times": {
+    "intake": 9.9,
+    "interview": 246.9,
+    "examine": 81.2,
+    "facts": 287.7,
+    "dx": 269.9,
+    "plan_say": 24.9,
+    "explain": 55.6,
+    "S": 38.5
+  },
+  "findings": [
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "이름",
+      "pol": "+",
+      "detail": "박선희",
+      "id": "F1"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "연령",
+      "pol": "+",
+      "detail": "62세",
+      "id": "F2"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "성별",
+      "pol": "+",
+      "detail": "여성",
+      "id": "F3"
+    },
+    {
+      "turn": 0,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면",
+      "pol": "?",
+      "detail": "잠 못자",
+      "id": "F4"
+    },
+    {
+      "turn": 0,
+      "sec": "ice",
+      "key": "other",
+      "label": "처방요구",
+      "pol": "+",
+      "detail": "수면제 처방 요청",
+      "id": "F5"
+    },
+    {
+      "turn": 1,
+      "sec": "hpi",
+      "key": "other",
+      "label": "불면시기",
+      "pol": "?",
+      "detail": "7년전",
+      "id": "F6"
+    },
+    {
+      "turn": 2,
+      "sec": "meds",
+      "key": "other",
+      "label": "수면제",
+      "pol": "+",
+      "detail": "스틸녹스 10mg",
+      "id": "F7"
+    },
+    {
+      "turn": 3,
+      "sec": "meds",
+      "key": "other",
+      "label": "약시작시기",
+      "pol": "?",
+      "detail": "그때부터 동네 내과에서 수면제를 받아",
+      "id": "F8"
+    },
+    {
+      "turn": 4,
+      "sec": "meds",
+      "key": "other",
+      "label": "현재용량",
+      "pol": "+",
+      "detail": "한 번에 서너 알씩 먹어요.",
+      "id": "F9"
+    },
+    {
+      "turn": 5,
+      "sec": "meds",
+      "key": "other",
+      "label": "복용시간",
+      "pol": "+",
+      "detail": "11시, 2~3시",
+      "id": "F10"
+    },
+    {
+      "turn": 6,
+      "sec": "psych",
+      "key": "other",
+      "label": "불안",
+      "pol": "+",
+      "detail": "밤새 뒤척임·불안",
+      "id": "F11"
+    },
+    {
+      "turn": 7,
+      "sec": "ice",
+      "key": "other",
+      "label": "우려",
+      "pol": "+",
+      "detail": "약 지속 시 건강문제",
+      "id": "F12"
+    },
+    {
+      "turn": 8,
+      "sec": "meds",
+      "key": "other",
+      "label": "감량실패",
+      "pol": "+",
+      "detail": "여러 번 실패",
+      "id": "F13"
+    },
+    {
+      "turn": 9,
+      "sec": "meds",
+      "key": "other",
+      "label": "약국수면제",
+      "pol": "+",
+      "detail": "가끔 사서 복용",
+      "id": "F14"
+    },
+    {
+      "turn": 10,
+      "sec": "sh",
+      "key": "sh.smoking",
+      "label": "흡연",
+      "pol": "-",
+      "detail": "평생 없음",
+      "id": "F15"
+    },
+    {
+      "turn": 11,
+      "sec": "sh",
+      "key": "sh.alcohol",
+      "label": "술",
+      "pol": "+",
+      "detail": "연간 1~2잔",
+      "id": "F16"
+    },
+    {
+      "turn": 12,
+      "sec": "psych",
+      "key": "other",
+      "label": "기억상실",
+      "pol": "+",
+      "detail": "약 후 기억이 안 나",
+      "id": "F17"
+    },
+    {
+      "turn": 13,
+      "sec": "psych",
+      "key": "other",
+      "label": "가족갈등",
+      "pol": "+",
+      "detail": "가족과 갈등 있음",
+      "id": "F18"
+    },
+    {
+      "turn": 14,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "고혈압",
+      "id": "F19"
+    },
+    {
+      "turn": 15,
+      "sec": "sh",
+      "key": "other",
+      "label": "카페인",
+      "pol": "+",
+      "detail": "하루 한두잔",
+      "id": "F20"
+    },
+    {
+      "turn": 16,
+      "sec": "sh",
+      "key": "other",
+      "label": "스트레스",
+      "pol": "-",
+      "detail": "스트레스 없음",
+      "id": "F21"
+    },
+    {
+      "turn": 17,
+      "sec": "psych",
+      "key": "other",
+      "label": "우울",
+      "pol": "+",
+      "detail": "멍·가라앉음",
+      "id": "F22"
+    },
+    {
+      "turn": 18,
+      "sec": "meds",
+      "key": "other",
+      "label": "암로디핀",
+      "pol": "+",
+      "detail": "암로디핀",
+      "id": "F23"
+    },
+    {
+      "turn": 19,
+      "sec": "fh",
+      "key": "other",
+      "label": "심장병",
+      "pol": "+",
+      "detail": "아버지 사망: 심장병",
+      "id": "F24"
+    },
+    {
+      "turn": 19,
+      "sec": "fh",
+      "key": "other",
+      "label": "치매",
+      "pol": "+",
+      "detail": "어머니 치매",
+      "id": "F25"
+    },
+    {
+      "turn": 20,
+      "sec": "pmh",
+      "key": "pmh.HTN",
+      "label": "고혈압",
+      "pol": "+",
+      "detail": "고혈압",
+      "id": "F26"
+    },
+    {
+      "turn": 21,
+      "sec": "psych",
+      "key": "other",
+      "label": "사회활동",
+      "pol": "+",
+      "detail": "친구 모임 거의 안 갔음",
+      "id": "F27"
+    },
+    {
+      "turn": 22,
+      "sec": "ice",
+      "key": "other",
+      "label": "불면증",
+      "pol": "?",
+      "detail": "불면증 해결 방법 궁금",
+      "id": "F28"
+    }
+  ],
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "b078242d6cc82ccf4a1c6306b77eae77d99948899892a12af6e7ae1e106841b2",
+    "score_status": "not_scored",
+    "turn": 42
+  },
+  "truncated": 1,
+  "truncated_detail": [
+    {
+      "turn": 1,
+      "sent": "많이 걱정되셨겠어요. 언제부터 그러셨어요?",
+      "effective": "언제부터 그러셨어요?"
+    }
+  ],
+  "teach_back": null,
+  "exam_plan": null,
+  "error": null,
+  "mode": "local_sim",
+  "case_dir": "../공개 샘플데이터/C01",
+  "sim_model": "openai/gpt-oss-20b",
+  "sim_url": "http://localhost:8010/v1",
+  "sim_calls": 35,
+  "luna_calls": 0,
+  "doctor_mode": "local",
+  "doctor_model": "openai/gpt-oss-20b",
+  "doctor_url": "http://localhost:8010/v1",
+  "doctor_calls_remote": 0,
+  "doctor_calls_local": 9,
+  "sim_doctor_calls": 9,
+  "sim_doctor_input_tokens": 17187,
+  "sim_doctor_output_tokens": 13257,
+  "sim_turns": 42,
+  "agent": "/home/jovyan/Hyunsoo/projects/N.O.V.A/code_v5/run.py",
+  "grade_model": "openai/gpt-oss-20b",
+  "grade_calls": 1,
+  "grade_total": 62,
+  "grade_scores": {
+    "정보수집": 14,
+    "진단추론": 5,
+    "검사·추적": 6,
+    "안전": 15,
+    "의사소통": 10,
+    "효율": 12
+  }
+}

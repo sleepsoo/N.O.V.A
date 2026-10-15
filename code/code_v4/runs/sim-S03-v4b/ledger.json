@@ -1,0 +1,360 @@
+[
+  {
+    "turn": 1,
+    "kind": "SAY",
+    "text": "걱정이 많으시겠어요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "empathy",
+    "qid": "",
+    "label": ""
+  },
+  {
+    "turn": 2,
+    "kind": "SAY",
+    "text": "귀통증에 대해 자세히 말씀해 주세요",
+    "reply": "귀를 잡아당기고 울었어요. 고름이나 진물은 없었어요.",
+    "phase": "first",
+    "qid": "hpi_onset",
+    "label": "Onset"
+  },
+  {
+    "turn": 3,
+    "kind": "SAY",
+    "text": "다른 불편한 증상은 없으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "sweep",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 4,
+    "kind": "SAY",
+    "text": "귀에 난리 물이 나오나요?",
+    "reply": "고름이나 진물이 나오지 않아요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 5,
+    "kind": "SAY",
+    "text": "집에서 음식을 먹기 힘들었나요?",
+    "reply": "밥은 반 정도만 먹었어요.",
+    "phase": "interview",
+    "qid": "free",
+    "label": "적응형"
+  },
+  {
+    "turn": 6,
+    "kind": "SAY",
+    "text": "입원한 적 있나요?",
+    "reply": "입원한 적 없어요.",
+    "phase": "interview",
+    "qid": "p_illness",
+    "label": "과거력"
+  },
+  {
+    "turn": 7,
+    "kind": "SAY",
+    "text": "먹는 약이 있나요?",
+    "reply": "평소 먹는 약은 없어요.",
+    "phase": "interview",
+    "qid": "p_meds",
+    "label": "복용약"
+  },
+  {
+    "turn": 8,
+    "kind": "SAY",
+    "text": "가족 중에 아픈 분이 있나요?",
+    "reply": "아빠는 비염이 있어요.",
+    "phase": "interview",
+    "qid": "p_fh",
+    "label": "가족력"
+  },
+  {
+    "turn": 9,
+    "kind": "SAY",
+    "text": "어린이집 생활은 어떤가요?",
+    "reply": "평일에 어린이집에 다녀요.",
+    "phase": "interview",
+    "qid": "p_daycare",
+    "label": "사회력"
+  },
+  {
+    "turn": 10,
+    "kind": "SAY",
+    "text": "출산 때 문제는 없었나요?",
+    "reply": "태어날 때 특별한 문제는 없었어요.",
+    "phase": "interview",
+    "qid": "p_perinatal",
+    "label": "출생력"
+  },
+  {
+    "turn": 11,
+    "kind": "SAY",
+    "text": "발달은 또래와 비슷했나요?",
+    "reply": "발달은 또래와 비슷해요.",
+    "phase": "interview",
+    "qid": "p_develop",
+    "label": "발달"
+  },
+  {
+    "turn": 12,
+    "kind": "SAY",
+    "text": "오늘 특히 궁금하신 게 있으세요?",
+    "reply": "항생제 꼭 먹어야 하는지 궁금해요.",
+    "phase": "ice",
+    "qid": "ice_expect",
+    "label": "궁금증·기대"
+  },
+  {
+    "turn": 13,
+    "kind": "EXAM",
+    "text": "활력징후 측정하겠습니다",
+    "reply": "96/58mmHg, 128회/분 규칙적, 26회/분, 38.6°C",
+    "phase": "exam",
+    "qid": "vitals",
+    "label": "",
+    "system": "V/S"
+  },
+  {
+    "turn": 14,
+    "kind": "EXAM",
+    "text": "전반적 외관 시진하겠습니다",
+    "reply": "급성 병색 경도, 보챔(+), 처짐(-), 탈수 징후(-)",
+    "phase": "exam",
+    "qid": "general",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 15,
+    "kind": "EXAM",
+    "text": "의식·지남력 평가하겠습니다",
+    "reply": "명료, 연령에 맞는 반응, 보호자 알아봄(+)",
+    "phase": "exam",
+    "qid": "mental",
+    "label": "",
+    "system": "General"
+  },
+  {
+    "turn": 16,
+    "kind": "EXAM",
+    "text": "피부 발진 시진하겠습니다",
+    "reply": "발진(-), 점상출혈(-)",
+    "phase": "exam",
+    "qid": "skin_rash",
+    "label": "",
+    "system": "Skin"
+  },
+  {
+    "turn": 17,
+    "kind": "EXAM",
+    "text": "결막·공막 시진하겠습니다",
+    "reply": "창백(-/-), 충혈(-/-), 눈곱(-/-)",
+    "phase": "exam",
+    "qid": "conj",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 18,
+    "kind": "EXAM",
+    "text": "고막 시진하겠습니다",
+    "reply": "우측 고막 발적(+), 팽윤(+), 광반사 소실(+), 이루(-) / 좌측 고막 정상, 광반사(+)",
+    "phase": "exam",
+    "qid": "ear",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 19,
+    "kind": "EXAM",
+    "text": "인두·편도 시진하겠습니다",
+    "reply": "인두 경도 발적(+), 편도 비대 1도, 삼출물(-)",
+    "phase": "exam",
+    "qid": "pharynx",
+    "label": "",
+    "system": "H/E/E/N/T"
+  },
+  {
+    "turn": 20,
+    "kind": "EXAM",
+    "text": "경부 림프절 촉진하겠습니다",
+    "reply": "우측 상경부 1cm 림프절 촉지(+), 압통(-) / 좌측 촉지(-)",
+    "phase": "exam",
+    "qid": "cervical_ln",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 21,
+    "kind": "EXAM",
+    "text": "갑상선 촉진하겠습니다",
+    "reply": "갑상선 촉진 (Thyroid palpation) | 부드럽고, 크기 정상, 경계선 명확, 압통 없음",
+    "phase": "exam",
+    "qid": "thyroid",
+    "label": "",
+    "system": "Neck"
+  },
+  {
+    "turn": 22,
+    "kind": "EXAM",
+    "text": "흉곽 시진하겠습니다",
+    "reply": "흉곽 함몰(-), 보조호흡근 사용(-), 비익 확장(-)",
+    "phase": "exam",
+    "qid": "chest_insp",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 23,
+    "kind": "EXAM",
+    "text": "폐 청진하겠습니다",
+    "reply": "폐포음, 수포음(-/-), 천명음(-/-)",
+    "phase": "exam",
+    "qid": "lung",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 24,
+    "kind": "EXAM",
+    "text": "심음 청진하겠습니다",
+    "reply": "S1·S2 명료, 규칙적 128회/분, 심잡음(-)",
+    "phase": "exam",
+    "qid": "heart",
+    "label": "",
+    "system": "Chest"
+  },
+  {
+    "turn": 25,
+    "kind": "EXAM",
+    "text": "복부 시진하겠습니다",
+    "reply": "복부 시진 (Abdominal inspection) | 평평, 비대칭 없음, 색소 변색(-)",
+    "phase": "exam",
+    "qid": "abd_insp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 26,
+    "kind": "EXAM",
+    "text": "간·비장 촉진하겠습니다",
+    "reply": "간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "liver_spleen",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 27,
+    "kind": "EXAM",
+    "text": "복부 촉진하겠습니다",
+    "reply": "압통(-), 종괴(-), 근성방어·강직(-), 간·비장 촉지(-)",
+    "phase": "exam",
+    "qid": "abd_palp",
+    "label": "",
+    "system": "Abdomen"
+  },
+  {
+    "turn": 28,
+    "kind": "EXAM",
+    "text": "하지 말초 진찰하겠습니다",
+    "reply": "다리 맥박 정상(2+/2+), 대칭",
+    "phase": "exam",
+    "qid": "periph",
+    "label": "",
+    "system": "Extremities"
+  },
+  {
+    "turn": 29,
+    "kind": "SAY",
+    "text": "급성 중이염이 귀 안쪽 염증이예요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_dx",
+    "label": ""
+  },
+  {
+    "turn": 30,
+    "kind": "SAY",
+    "text": "열과 통증은 해열진통제로 조절해요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_options",
+    "label": ""
+  },
+  {
+    "turn": 31,
+    "kind": "SAY",
+    "text": "귀 안쪽 돔이 부풀어서 아프게 만들어요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_link",
+    "label": ""
+  },
+  {
+    "turn": 32,
+    "kind": "SAY",
+    "text": "고막 시진이 진단에 가장 사용돼요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_tests",
+    "label": ""
+  },
+  {
+    "turn": 33,
+    "kind": "SAY",
+    "text": "항생제 복용 시 약물 복용을 주의하세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_caution",
+    "label": ""
+  },
+  {
+    "turn": 34,
+    "kind": "SAY",
+    "text": "집에 담배 피우지 마세요",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_lifestyle",
+    "label": ""
+  },
+  {
+    "turn": 35,
+    "kind": "SAY",
+    "text": "설명 중 이해 안 되거나 궁금한 점 있으세요?",
+    "reply": "그런 건 없어요.",
+    "phase": "explain",
+    "qid": "x_final",
+    "label": ""
+  },
+  {
+    "turn": 36,
+    "kind": "SAY",
+    "text": "2~3일 뒤 귀 상태를 다시 볼게요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_followup",
+    "label": ""
+  },
+  {
+    "turn": 37,
+    "kind": "SAY",
+    "text": "귀 뒤 붓기·고열 지속·구토면 바로 오세요.",
+    "reply": "네, 알겠습니다.",
+    "phase": "explain",
+    "qid": "x_warning",
+    "label": ""
+  },
+  {
+    "turn": 38,
+    "kind": "SAY",
+    "text": "바로 오셔야 할 증상 하나를 말씀해 보세요",
+    "reply": "귀 아파서 울었어요.",
+    "phase": "explain",
+    "qid": "x_teach",
+    "label": ""
+  }
+]

@@ -1,0 +1,80 @@
+[   0.0s] prepare: guidelines dir absent (이번 버전은 미사용)
+[   3.5s] llm[intake] low out=227 finish=stop 3.4s
+[   3.5s] intake: {'age': 72, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '호흡곤란, 기침·가래', 'request': '', 'categories': ['dyspnea', 'cough_fever'], 'empathy': '숨이 차 많이 힘드셨겠어요.', 'answered': []} diffs=['만성폐쇄성폐질환 급성 악화', '폐렴', '심부전 악화', '급성 기관지염', '폐색전증']
+[   3.5s] checklist: 51 items, covered=['hpi_onset']
+[   8.8s] turn 1 SAY: 숨이 차 많이 힘드셨겠어요. -> 네, 알겠습니다.
+[  11.9s] turn 2 SAY: 호흡곤란, 기침·가래에 대해 자세히 말씀해 주세요 -> 가래는 지금은 하루 종일 누렇고 끈적한 가래가 많이 나온다.
+[  20.7s] turn 3 SAY: 가장 걱정되시는 게 뭐예요? -> 작년처럼 입원해야 하는 건 아닌지 걱정이 된다.
+[  41.1s] turn 4 SAY: 다른 불편한 증상은 없으세요? -> 열이 조금 나고 춥다
+[  51.7s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 열은 조금 나는 것 같고, 으슬으슬 춥기도 했다.
+[  65.5s] llm[plan_q3] low out=1034 finish=stop 13.8s
+[ 102.5s] turn 6 SAY: 숨찬 증상의 경과에 대해 자세히 말씀해 주세요 -> 집 안에서 조금만 움직여도 숨이 차고, 화장실 가기만 해도 숨이 차요.
+[ 108.7s] turn 7 SAY: 누우면 숨이 더 차나요? -> 누우면 숨이 더 차서 베개를 하나 더 받치고 잤다.
+[ 114.1s] turn 8 SAY: 다리가 붓나요? -> 그런 건 없어요.
+[ 120.3s] turn 9 SAY: 숨 쉴 때 쌕쌕 소리가 나나요? -> 숨을 쉴 때 가슴에서 쌕쌕거리는 소리가 난다.
+[ 125.8s] turn 10 SAY: 가슴 통증도 있나요? -> 가슴이 쥐어짜듯 아픈 적은 없어요.
+[ 136.6s] turn 11 SAY: 고혈압이나 당뇨가 있으세요? -> 고혈압이 있고, 당뇨는 없어요.
+[ 143.6s] turn 12 SAY: 다른 지병에 대해 자세히 말씀해 주세요 -> 고혈압이 있어서 혈압약을 하루 한 알 먹고, 당뇨나 심장병, 결핵은 없어요.
+[ 155.1s] llm[plan_q3] low out=781 finish=stop 11.5s
+[ 164.4s] turn 13 SAY: 숨찬 증상이 갑자기 시작됐나요? -> 사흘 전부터 숨이 많이 차고 기침과 가래가 심해져서 병원에 오게 되었다.
+[ 184.1s] turn 14 SAY: 이전 호흡기 진료에 대해 자세히 말씀해 주세요 -> 오 년 전에 폐 기능 검사 받고 만성 폐쇄성 폐질환이라 들었어요.
+[ 191.6s] turn 15 SAY: 자다가 숨이 차서 깬 적 있나요? -> 벌떡 일어나 앉은 적은 없어요.
+[ 193.7s] turn 16 SAY: 가래에 피가 섞인 적 있나요? -> 가래에 피가 섞여 나온 적은 없어요.
+[ 196.8s] turn 17 SAY: 흡연력에 대해 자세히 말씀해 주세요 -> 스무 살부터 하루 한 갑씩 오십 년 가까이 피웠다.
+[ 207.7s] llm[plan_q3] low out=759 finish=stop 10.9s
+[ 210.7s] turn 18 SAY: 열이 난 경과에 대해 자세히 말씀해 주세요 -> 열은 조금 나는 것 같고, 으슬으슬 춥기도 했다.
+[ 218.0s] turn 19 SAY: 콧물이나 목 아픔은 없으세요? -> 콧물 나고 목이 칼칼했어요.
+[ 221.8s] turn 20 SAY: 약 알레르기가 있으세요? -> 약 알레르기는 없어요.
+[ 224.2s] turn 21 SAY: 숨이 차면서 의식이 흐려진 적 있나요? -> 그런 건 없어요.
+[ 231.9s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 작년처럼 입원해야 하는 건 아닌지 걱정이 된다.
+[ 231.9s] v3 interview done: q=21 asked=16 covered=3 uncovered_p1=['dy_exert', 'dy_cough', 'fh_open', 'sh_alcohol']
+[ 237.0s] llm[exams_gen] low out=383 finish=stop 5.0s
+[ 237.0s] v3 exams(gen) plan: [('general', '호흡곤란의 중증도와 호흡 노력, 청색증·전반적 위중 상태를 평가합니다.'), ('mental', '저산소증·고탄산혈증에 따른 의식 변화를 확인해 악화 정도와 치료 안전성을 판단합니다.'), ('chest_insp', '흉곽 움직임, 보조호흡근 사용, 호흡 비대칭을 살펴 호흡곤란의 중증도와 흉수·무기폐 가능성을 평가합니다.'), ('lung', '천명으로 COPD 악화를, 수포음·기관지 호흡음으로 폐렴이나 폐울혈을 확인합니다.'), ('chest_perc', '국소 둔탁음은 폐렴·흉수를, 과공명은 폐기종을 시사하는지 확인합니다.'), ('heart', '심박수와 심음·추가 심음을 평가해 심부전 악화 등 심장 원인을 살핍니다.'), ('jvp', '경정맥 팽대를 확인해 체액 과다와 심부전 악화 가능성을 평가합니다.'), ('periph', '하지 부종 등 말초 체액 저류를 살펴 심부전을 평가하고, 말초 관류도 확인합니다.'), ('calf', '편측 종아리 압통·부종이 있는지 확인해 심부정맥혈전증 및 폐색전증 가능성을 평가합니다.'), ('pharynx', '인두 발적·삼출 등 상기도 감염 소견을 확인해 악화 유발 감염원을 살핍니다.')]
+[ 237.0s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 앉은 자세에서 입술 오므린 호흡(+), 안절부절(-)
+[ 237.0s] turn 24 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 237.0s] turn 25 EXAM: 흉곽 시진하겠습니다 -> 전후:좌우 1:1.2 술통형 흉곽(+), 보조호흡근 사용(+) 경도, 늑간 함몰(-)
+[ 237.0s] turn 26 EXAM: 폐 청진하겠습니다 -> 호흡음 감소(+/+), 호기 연장(+), 호기성 천명음(+/+) 미만성, 수포음(-/-)
+[ 237.0s] turn 27 EXAM: 흉부 타진하겠습니다 -> 양측 과공명음(+/+), 탁음(-/-)
+[ 237.0s] turn 28 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 104회/분, S3(-), 심잡음(-)
+[ 239.7s] turn 29 EXAM: 경정맥 팽대 관찰하겠습니다 -> 경정맥 팽창(-), 45도에서 JVP 3cm
+[ 239.7s] turn 30 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 241.0s] turn 31 EXAM: 종아리 압통 확인하겠습니다 -> 압통(-/-), 둘레 차이(-)
+[ 252.8s] turn 32 EXAM: 인두·편도 시진하겠습니다 -> 인두·편도 시진 | 인두 점막 무색, 편도 부위 무홍반, 부종(-), 비대(-), 비강 점막 무색
+[ 275.4s] llm[facts] medium out=2316 finish=stop 22.6s
+[ 275.4s] facts: 39
+[ 296.5s] llm[dx] medium out=2185 finish=stop 21.1s
+[ 307.8s] llm[plan_say3] low out=1053 finish=stop 11.3s
+[ 307.8s] v3 lines: {'dx': '만성폐쇄성폐질환 악화로 보여요.', 'meaning': '누런 가래와 쌕쌕거림이 심해졌어요.', 'concern': '검사와 호흡 상태를 보고 입원을 정해요.', 'tests': '엑스선으로 폐렴과 폐부종을 살펴요.', 'tests2': '혈액검사로 염증과 치료 전 상태를 봐요.', 'treatment': '결과에 따라 흡입치료 등을 정해요.', 'treatment2': '숨이 더 차면 바로 의료진에게 알려주세요.', 'warning': '숨참 악화·입술 파래짐·흉통·혼란이면 바로 오세요.', 'followup': '오늘 검사 뒤 호흡과 입원 필요성을 다시 봐요.', 'lifestyle': '담배를 피우지 말고 금연 도움을 상의하세요.'} musts=[] checks=[]
+[ 311.4s] turn 33 SAY: 만성폐쇄성폐질환 악화로 보여요. -> 네, 알겠습니다.
+[ 316.8s] turn 34 SAY: 누런 가래와 쌕쌕거림이 심해졌어요. -> 네, 알겠습니다.
+[ 322.1s] turn 35 SAY: 검사와 호흡 상태를 보고 입원을 정해요. -> 네, 알겠습니다.
+[ 324.9s] turn 36 SAY: 엑스선으로 폐렴과 폐부종을 살펴요. -> 네, 알겠습니다.
+[ 329.2s] turn 37 SAY: 결과에 따라 흡입치료 등을 정해요. -> 네, 알겠습니다.
+[ 332.9s] turn 38 SAY: 숨이 더 차면 바로 의료진에게 알려주세요. -> 네, 알겠습니다.
+[ 337.6s] turn 39 SAY: 숨참 악화·입술 파래짐·흉통·혼란이면 바로 오세요. -> 네, 알겠습니다.
+[ 342.5s] turn 40 SAY: 오늘 검사 뒤 호흡과 입원 필요성을 다시 봐요. -> 네, 알겠습니다.
+[ 361.3s] turn 41 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 어제 밤에는 숨이 차서 잠을 거의 못 잤다
+[ 365.6s] turn 42 SAY: 숨참 악화·입술 파래짐·흉통·혼란이면 바로 오세요. -> 네, 알겠습니다.
+[ 365.6s] v3 explain done: said=9 answers=0 teach={'reply': '어제 밤에는 숨이 차서 잠을 거의 못 잤다', 'ok': False} turns_left=8 (start 18)
+[ 373.8s] llm[S-narr] low out=733 finish=stop 8.2s
+[ 373.8s] summary: turns=42 counts={'say': 32, 'exam': 10, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 21, 'truncated': 0} budget={'doctor_calls': 9, 'doctor_ok_calls': 9, 'doctor_invalid': 0, 'doctor_input_tokens': 23268, 'doctor_output_tokens': 9471, 'elapsed_s': 373.8} dx=만성폐쇄성폐질환의 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)
+{
+ "turns": 42,
+ "say": 32,
+ "exam": 10,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 9,
+ "luna_calls": 9,
+ "doctor_input_tokens": 23268,
+ "doctor_output_tokens": 9471,
+ "sim_calls": 36,
+ "seconds": 373.8,
+ "diagnosis": "만성폐쇄성폐질환의 급성 악화 (Acute exacerbation of chronic obstructive pulmonary disease)",
+ "dx_hit": false,
+ "session_status": "completed",
+ "grade_total": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code/runs/sim-S04-gen1

@@ -1,0 +1,94 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.0s
+[   0.1s] prepare: preset=v4_40 V4=1 V3=1 cap=40 exam=c8flex explain=v4 pair=negscreen guide=on
+[  14.6s] llm[intake] low out=287 finish=stop 14.5s
+[  14.6s] intake: {'age': 24, 'sex': 'M', 'pediatric': False, 'informant': '본인', 'cc': '오른쪽 하복부 복통', 'request': '', 'categories': ['abd_pain', 'insomnia', 'gi'], 'empathy': '심상 많이 걱정되십니다.', 'answered': []} diffs=['급성 충수염 (Acute appendicitis)', '위궤양 (Peptic ulcer)', "크론병 (Crohn's disease)", '복벽 감염 (Peritonitis)', '피부감염(수술 후) (Post‑operative sepsis)']
+[  14.6s] checklist: 61 items, covered=['hpi_onset', 'ps_sleep']
+[  19.9s] turn 1 SAY: 심상 많이 걱정되십니다. -> 네, 알겠습니다.
+[  23.1s] turn 2 SAY: 오른쪽 하복부 복통에 대해 자세히 말씀해 주세요 -> 오른쪽 아랫배가 더 아파요
+[  32.1s] turn 3 SAY: 다른 불편한 증상은 없으세요? -> 밤새 잠을 거의 못 잤어요.
+[  39.2s] turn 4 SAY: 잠에 대해 자세히 말씀해 주세요 -> 밤새 잠을 거의 못 잤어요.
+[  45.8s] turn 5 SAY: 그 밖에 또 불편한 건 없으세요? -> 속이 메스껍고 토했어요
+[  45.8s] v4 q rejected (dup): 구토에 대해 자세히 말씀해 주세요
+[  45.8s] guidelines[iv]: 급성 충수염 (KR_HealthInfo, 2026)
+[  45.8s] guidelines[iv]: Guidelines of Treatment for Bleeding Peptic Ulcer Disease (KR_Journals, 2009)
+[  45.8s] guidelines[iv]: 크론병 치료 가이드라인 (KR_Journals, 2012)
+[  62.7s] llm[plan_v4] low out=361 finish=stop 16.9s
+[  82.7s] llm[plan_v4] low out=435 finish=stop 20.0s
+[  86.7s] turn 6 SAY: 평소 앓는 병이 있으세요? -> 그런 건 없어요.
+[  91.9s] turn 7 SAY: 드시는 약이 있으세요? -> 소화제 한 알만 먹었어요.
+[  97.4s] turn 8 SAY: 가족 중에 아픈 분이 있으세요? -> 가족 중에 염증성 장질환이나 대장암을 앓은 사람은 없어요.
+[ 107.1s] turn 9 SAY: 하루 일과를 말씀해 주세요 -> 대학원생이고 연구실에서 주로 앉아서 일해요.
+[ 109.9s] turn 10 SAY: 요즘 기분은 어떠세요? -> 그런 건 없어요.
+[ 115.9s] turn 11 SAY: 가족 중 또 아픈 분 있나요? -> 가족 중 염증성 장질환이나 대장암을 앓은 사람은 없어요.
+[ 119.4s] turn 12 SAY: 술은 얼마나 드세요? -> 주일에 한 번 정도 맥주 두세 잔 마셔요.
+[ 124.1s] turn 13 SAY: 담배 피우세요? -> 하루 반 갑씩 오 년째 피워요.
+[ 124.1s] v4 q rejected (dup): 하루 일과를 말씀해 주세요
+[ 127.7s] turn 14 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압, 당뇨는 없어요.
+[ 138.5s] turn 15 SAY: 오늘 특히 궁금하신 게 있으세요? -> 통증이 등이나 사타구니, 고환 쪽으로 뻗치지는 않아요.
+[ 138.5s] v4 interview done: q=14 turn=15 left=25
+[ 138.5s] v4 exams plan (c8flex, budget 14): spec=['bowel', 'rebound', 'murphy'] order=['vitals', 'general', 'mental', 'conj', 'chest_insp', 'lung', 'heart', 'abd_insp', 'bowel', 'liver_spleen', 'abd_palp', 'rebound', 'murphy', 'periph'] backups=['thyroid', 'mcburney', 'cva', 'abd_perc', 'psoas', 'hernia']
+[ 138.5s] turn 16 EXAM: 활력징후 측정하겠습니다 -> 124/76mmHg, 98회/분 규칙적, 18회/분, 37.9°C
+[ 138.5s] turn 17 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(+), 오른쪽 다리 굴곡 자세, 안절부절(-)
+[ 138.5s] turn 18 EXAM: 의식·지남력 평가하겠습니다 -> 명료, 지남력 3/3점
+[ 138.5s] turn 19 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 138.5s] turn 20 EXAM: 흉곽 시진하겠습니다 -> 전후:좌우 1:2, 보조호흡근 사용(-)
+[ 138.5s] turn 21 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 138.5s] turn 22 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적 98회/분, 심잡음(-)
+[ 138.5s] turn 23 EXAM: 복부 시진하겠습니다 -> 편평, 팽만(-), 수술 반흔(-)
+[ 138.5s] turn 24 EXAM: 장음 청진하겠습니다 -> 감소 4회/분, 금속성음(-)
+[ 138.5s] turn 25 EXAM: 간·비장 촉진하겠습니다 -> 간 늑골연하 촉지(-), 비장 촉지(-)
+[ 138.5s] turn 26 EXAM: 복부 촉진하겠습니다 -> 우하복부 압통(+), 근성방어(+) 우하복부 국한, 강직(-), 종괴(-)
+[ 145.0s] turn 27 EXAM: 반발통 확인하겠습니다 -> 우하복부 반발압통(+)
+[ 150.3s] turn 28 EXAM: 머피 징후 확인하겠습니다 -> 머피 징후(-)
+[ 150.3s] turn 29 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 함요부종(-/-)
+[ 150.3s] v4 exams done: ['vitals', 'general', 'mental', 'conj', 'chest_insp', 'lung', 'heart', 'abd_insp', 'bowel', 'liver_spleen', 'abd_palp', 'rebound', 'murphy', 'periph'] refused=[]
+[ 340.0s] llm[facts] medium out=4111 finish=stop 189.8s
+[ 340.1s] facts: 16
+[ 340.1s] guidelines[dx]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 340.1s] guidelines[dx]: Guidelines of Treatment for Bleeding Peptic Ulcer Disease (KR_Journals, 2009)
+[ 340.1s] guidelines[dx]: 크론병 치료 가이드라인 (KR_Journals, 2012)
+[ 418.6s] llm[dx] medium out=1863 finish=stop 78.5s
+[ 418.6s] guidelines[plan-mgmt-dx.fu/dx.fu.edu]: 급성 충수염 (KR_HealthInfo, 2026)
+[ 464.2s] llm[plan_say4] low out=1079 finish=stop 45.6s
+[ 464.2s] v4 lines: {'dx': '급성 충수염은 복통이 오른쪽 아랫배에 집중돼요.', 'options': '치료는 항생제·수술, 필요 시 입원합니다.', 'link': '고열·백혈구 상승은 염증 반응을 의미해요.', 'concern': '관절통이 점점 심해지면 바로 의사에게 말씀해 주세요.', 'tests': '복부 CT는 정확한 진단을 도와 주고요.', 'caution': '', 'followup': '오늘 바로 응급실에서 진료를 받으세요.', 'warning': '발열·복통·복부 팽창·통증 악화면 바로 오세요.', 'lifestyle': ''} musts=[] emergency=True checks=[{'drop': '항생제 복용 시 부작용이 있을 수 있으니 상처 관리 주의', 'key': 'caution', 'why': 'too_long'}, {'drop': '12시간 재진하면 치료계획을 정할 수 있어요.', 'key': 'followup', 'why': 'key'}, {'drop': '금연·알코올 제한을 통해 합병증 예방', 'key': 'lifestyle', 'why': 'ending'}]
+[ 468.5s] turn 30 SAY: 급성 충수염은 복통이 오른쪽 아랫배에 집중돼요. -> 네, 알겠습니다.
+[ 470.6s] turn 31 SAY: 치료는 항생제·수술, 필요 시 입원합니다. -> 네, 알겠습니다.
+[ 474.1s] turn 32 SAY: 고열·백혈구 상승은 염증 반응을 의미해요. -> 네, 알겠습니다.
+[ 479.5s] turn 33 SAY: 관절통이 점점 심해지면 바로 의사에게 말씀해 주세요. -> 네, 알겠습니다.
+[ 482.5s] turn 34 SAY: 복부 CT는 정확한 진단을 도와 주고요. -> 네, 알겠습니다.
+[ 488.0s] turn 35 SAY: 설명 중 이해 안 되거나 궁금한 점 있으세요? -> 네, 알겠습니다.
+[ 490.3s] turn 36 SAY: 오늘 바로 응급실에서 진료를 받으세요. -> 네, 알겠습니다.
+[ 493.5s] turn 37 SAY: 발열·복통·복부 팽창·통증 악화면 바로 오세요. -> 네, 알겠습니다.
+[ 502.2s] turn 38 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요 -> 배가 아프기 시작한 건 어제 저녁 일곱 시쯤
+[ 502.2s] v4 explain done: said=7 answers=0 final=True teach={'reply': '배가 아프기 시작한 건 어제 저녁 일곱 시쯤'} turns_left=2 (start 11)
+[ 517.6s] llm[S-narr] low out=363 finish=stop 15.4s
+[ 517.6s] summary: turns=38 counts={'say': 24, 'exam': 14, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 14, 'truncated': 0} budget={'doctor_calls': 7, 'doctor_ok_calls': 7, 'doctor_invalid': 0, 'doctor_input_tokens': 13685, 'doctor_output_tokens': 8499, 'elapsed_s': 517.5} dx=급성 충수염 (Acute Appendicitis)
+S01 gpt-oss-20b: total=38 정보수집=7 진단추론=4 검사·추적=0 안전=15 의사소통=8 효율=4 dx5=4
+- missed_key_questions: None
+- missed_key_exams: None
+- top_improvements: None
+{
+ "turns": 38,
+ "say": 24,
+ "exam": 14,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 0,
+ "doctor_calls": 7,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 7,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 13685,
+ "doctor_output_tokens": 8499,
+ "sim_calls": 26,
+ "seconds": 517.6,
+ "diagnosis": "급성 충수염 (Acute Appendicitis)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 38,
+ "grade_error": null,
+ "error": null
+}
+저장: /home/jovyan/Hyunsoo/projects/N.O.V.A/code_v4/runs/sim-S01-v4c

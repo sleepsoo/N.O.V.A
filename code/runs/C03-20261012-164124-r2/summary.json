@@ -1,0 +1,82 @@
+{
+  "case_id": "ef3649a9-330b-4e12-ad2d-fab94d019330",
+  "alias": "C03",
+  "turns": 39,
+  "say": 30,
+  "exam": 9,
+  "refused": 0,
+  "exam_refused": 0,
+  "one_at_a_time": 0,
+  "interview_questions": 28,
+  "skipped_invalid": 0,
+  "doctor_calls": 2,
+  "doctor_invalid": 0,
+  "doctor_input_tokens": 3472,
+  "doctor_output_tokens": 1079,
+  "seconds": 1710.6,
+  "diagnosis": "진단 미정",
+  "accepted_diagnoses": [
+    "체질성 성장지연",
+    "체질성 성장 및 사춘기 지연",
+    "체질성 저신장",
+    "Constitutional delay of growth and puberty",
+    "CDGP"
+  ],
+  "dx_hit": false,
+  "dx_samples": [],
+  "profile": {
+    "age": 6,
+    "sex": "M",
+    "pediatric": true,
+    "cc": "작은 키",
+    "categories": [
+      "growth"
+    ],
+    "answered": [
+      "onset",
+      "course"
+    ],
+    "empathy": "작은 키 때문에 많이 걱정이 많으시겠어요."
+  },
+  "explained": [
+    "진단 미정 가능성이 높아 보여요."
+  ],
+  "call_log": [
+    {
+      "tag": "structure",
+      "effort": "low",
+      "max_tokens": 1500,
+      "in": 651,
+      "out": 146,
+      "finish": "stop",
+      "sec": 35.5
+    },
+    {
+      "tag": "exams",
+      "effort": "medium",
+      "max_tokens": 3000,
+      "in": 2821,
+      "out": 933,
+      "finish": "stop",
+      "sec": 159.5
+    }
+  ],
+  "phase_times": {
+    "structure": 35.5,
+    "interview": 1061.4,
+    "examine": 180.1,
+    "diagnose_vote": 430.6,
+    "explain": 2.7
+  },
+  "findings": null,
+  "session_status": "completed",
+  "result": {
+    "status": "completed",
+    "record_digest": "5705c6590735f908f3ecb50d34e5fa615650f776c6954bd2667aa44c650f887e",
+    "score_status": "not_scored",
+    "turn": 39
+  },
+  "error": null,
+  "session_id": "e417f3d9-880b-4ce5-9f7a-f24e5dafb254",
+  "api": "https://nova.snubhai.org"
+}

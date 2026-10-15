@@ -1,0 +1,95 @@
+[   0.1s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[   6.8s] llm[intake] low out=136 finish=stop 6.6s
+[   6.8s] intake: {'age': 6, 'sex': 'M', 'pediatric': True, 'informant': '어머님', 'cc': '키가 작음', 'request': '', 'categories': ['growth'], 'empathy': '많이 걱정되셨겠어요.', 'answered': []} diffs=['저신장', '난소 언제식 과다호르몬(장애)-지방성땀', '유전성 성장 장애(예: 겐타 지대 성장 지연)', '저칼슘성 혈증', '서약성 성장 억제(영양 부족)']
+[   6.8s] checklist: 32 items, covered=['hpi_course', 'hpi_onset']
+[  28.3s] turn 1 SAY: 많이 걱정되셨겠어요. 언제부터 작다는 말을 들었나요? -> 최근 육 개월에서 일 년 사이에 키가 별로 크지 않다고 느꼈어요.
+[  33.9s] turn 2 SAY: 예전에 잰 키 기록이 있나요? -> 일 년 전에는 백 센티미터였고 지금은 백오 센티미터 정도였어요.
+[  39.0s] turn 3 SAY: 두 살, 네 살 때 키는 얼마였나요? -> 두 살 때 키는 팔십삼 센티미터, 네 살 때는 구십육 센티미터였어요.
+[  45.8s] turn 4 SAY: 부모님 키는 각각 어떻게 되세요? -> 아빠는 백칠십팔, 엄마는 백육십오 센티미터예요.
+[  53.0s] turn 5 SAY: 부모님 중 늦게 키가 큰 분 있나요? -> 아빠가 어릴 때 키가 작아서 할머니가 걱정을 많이 하셨다고 해요.
+[  57.6s] turn 6 SAY: 가족 중 키가 작거나 유전병 있나요? -> 아빠 말고는 엄마 쪽, 아빠 쪽 모두 키가 작거나 뼈에 이상이 있는 사람은 없고, 다른 가족 중에 사춘기…
+[  63.5s] turn 7 SAY: 천식이나 장, 콩팥 질환 들은 적 있나요? -> 천식이나 장, 콩팥 질환 들은 적 없어요.
+[  71.2s] turn 8 SAY: 어머님이 가장 걱정되시는 게 뭐예요? -> 키가 작아서 큰 병이 있을까 걱정돼요.
+[  71.2s] guidelines[iv]: 저신장 (KR_HealthInfo, 2026)
+[  97.6s] llm[plan_q] low out=592 finish=stop 26.4s
+[ 105.0s] turn 9 SAY: 스테로이드나 한약을 복용하고 있나요? -> 스테로이드나 한약은 안 먹었어요.
+[ 107.9s] turn 10 SAY: 음모가 늘어나셨나요? -> 그런 건 없어요.
+[ 112.0s] turn 11 SAY: 지치거나 변비가 자주 있나요? -> 그런 건 없어요.
+[ 115.7s] turn 12 SAY: 배가 부풀었거나 얼굴이 둥글어졌나요? -> 그런 건 없어요.
+[ 119.2s] turn 13 SAY: 태어날 때 키와 몸무게는 어땠나요? -> 태어날 때 키는 오십 센티미터, 몸무게는 삼 점 이 키로그람이었어요.
+[ 122.4s] turn 14 SAY: 임신이나 출산 때 문제가 있었나요? -> 임신 중이나 출산 과정에서 특별한 문제는 없었어요.
+[ 127.2s] turn 15 SAY: 입원하거나 큰 병이 있었나요? -> 입원하거나 큰 병을 앓은 적도 없었어요.
+[ 127.2s] guidelines[iv]: 무증상 갑상선기능저하증의 진단과 치료: 2023 대한갑상선학회 진료 권고안 (KR_Journals, 2024)
+[ 153.5s] llm[plan_q] low out=565 finish=stop 26.4s
+[ 156.9s] turn 16 SAY: 두통이나 구토가 있나요? -> 그런 건 없어요.
+[ 163.1s] turn 17 SAY: 최근 체중이 급증했어요? -> 그런 건 없어요.
+[ 166.5s] turn 18 SAY: 하루에 우유를 얼마나 마시나요? -> 우유도 하루 한두 잔씩 마신다.
+[ 171.5s] turn 19 SAY: 걷기나 말하기는 또래와 비슷해요? -> 언어, 운동, 사회성 모두 또래와 비슷해요.
+[ 176.8s] turn 20 SAY: 밥을 잘 먹어요? -> 식사는 평소 잘 먹는 편이에요.
+[ 182.3s] turn 21 SAY: 활동량은 충분한가요? -> 평소에도 운동이나 신체 활동을 활발하게 해요.
+[ 188.4s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 도현이가 앞으로 키가 더 클 수 있는지 궁금해해요.
+[ 188.4s] interview done: asked=22 covered=5 uncovered_p1=[]
+[ 195.7s] llm[exams] low out=142 finish=stop 7.4s
+[ 195.7s] exams plan: ['general', 'anthro', 'growth_chart', 'body_prop', 'tanner', 'dysmorph', 'thyroid', 'eye_signs', 'orthostatic', 'chest_insp', 'lung']
+[ 195.7s] turn 23 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 또래보다 작은 키, 안절부절(-)
+[ 195.7s] turn 24 EXAM: 신체 계측하겠습니다 -> 신장 105cm, 체중 16.5kg, 머리둘레 52cm
+[ 195.7s] turn 25 EXAM: 성장도표 백분위수 확인하겠습니다 -> 신장 3백분위수 미만, 체중 3~10백분위수, 성장속도 5cm/년(정상 하한), 중간부모키 178cm
+[ 195.7s] turn 26 EXAM: 신체 비율 평가하겠습니다 -> 상·하절 비율 정상, 양팔간격 불균형(-)
+[ 195.7s] turn 27 EXAM: 사춘기 성숙도 평가하겠습니다 -> Tanner 1기, 고환 2mL/2mL
+[ 195.7s] turn 28 EXAM: 안면 기형 소견 시진하겠습니다 -> 안면 기형(-), 귀 위치 이상(-/-)
+[ 195.8s] turn 29 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 206.6s] turn 30 EXAM: 갑상선 안징후 검사하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 212.3s] turn 31 EXAM: 기립성 혈압 측정하겠습니다 -> 100/60mmHg, 90회/분 규칙적, 20회/분, 36.7°C
+[ 212.3s] turn 32 EXAM: 흉곽 시진하겠습니다 -> 전후:좌우 1:2, 보조호흡근 사용(-)
+[ 212.3s] turn 33 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 581.8s] llm[facts] medium out=8000 finish=length 369.5s
+[ 786.2s] llm[facts] medium out=4385 finish=stop 204.4s
+[ 786.2s] facts: fallback
+[ 786.2s] guidelines[dx]: 저신장 (KR_HealthInfo, 2026)
+[ 786.2s] guidelines[dx]: 무증상 갑상선기능저하증의 진단과 치료: 2023 대한갑상선학회 진료 권고안 (KR_Journals, 2024)
+[ 866.2s] llm[dx] medium out=1715 finish=stop 80.0s
+[ 866.3s] guidelines[plan-mgmt]: 2022 Consensus statement on the management of familial hypercholesterolemia in K (KR_EuropePMC, 2022)
+[ 866.3s] guidelines[plan-ovw]: 2022 Consensus Statement on the Management of Familial Hypercholesterolemia in K (KR_EuropePMC, 2022)
+[ 889.9s] llm[plan_say] low out=522 finish=stop 23.6s
+[ 902.4s] llm[say_fix] low out=281 finish=stop 12.5s
+[ 902.4s] say fixes: ['tests']
+[ 906.8s] turn 34 SAY: 가족성 저신장은 유전 가능성이 높습니다 -> 네, 알겠습니다.
+[ 910.6s] turn 35 SAY: 신장은 부모 신장과 유사합니다 -> 네, 알겠습니다.
+[ 916.5s] turn 36 SAY: 키가 더 클 수도 있어요 확인이 필요합니다 -> 네, 알겠습니다.
+[ 918.8s] turn 37 SAY: 성장 호르몬 필요 시 치료 링크가 있어요 -> 네, 알겠습니다.
+[ 921.1s] turn 38 SAY: 숨참·불규칙한 맥·고열·혼동 시 바로 오세요 -> 네, 알겠습니다.
+[ 933.2s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 최근 일 년 동안 입원이나 수술, 큰 병을 앓은 적도 없어요.
+[ 935.9s] turn 40 SAY: 6개월 후 성장 곡선 확인으로 다시 오세요 -> 네, 알겠습니다.
+[ 941.5s] turn 41 SAY: 손 엑스레이로 뼈 나이를 확인할게요. -> 네, 알겠습니다.
+[ 945.7s] turn 42 SAY: 더 궁금하신 점 있으세요? -> 도현이가 앞으로 키가 더 클 수 있는지 궁금해해요.
+[ 964.0s] llm[S-narr] low out=398 finish=stop 18.2s
+[ 964.0s] summary: turns=42 counts={'say': 31, 'exam': 11, 'refused': 0, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 0, 'interview': 22} budget={'doctor_calls': 10, 'doctor_ok_calls': 10, 'doctor_invalid': 0, 'doctor_input_tokens': 19299, 'doctor_output_tokens': 16736, 'elapsed_s': 963.8} dx=가족성 저신장 (Familial short stature)
+C03 gpt-oss-20b: total=69 정보수집=23 진단추론=5 검사·추적=4 안전=15 의사소통=10 효율=12 dx5=5
+- missed_key_questions: ['예방접종 이력', '알레르기 및 약물 복용 이력', '가족 구조·보호자 업무 분담', '월경·여성 관련 성별 사춘기 초기 신호', '신체적 비율 이상(팔·다리 비율, 어깨폭 등)의 정량적 기록']
+- missed_key_exams: []
+- top_improvements: ['1. 면밀한 예방접종/알레르기/약물 이력 확인 및 기록', '2. 성장 포인트(신체 비율, 팔·다리 비율, 어깨 폭 등) 정량적 기록 포함', '3. 성장호르몬, 갑상선, IGF‑1 등 핵심 검사 계획을 명시', '4. 통계적/정량적 성장 곡선 인용을 통한 시각적 확인', '5. 단일 턴에 필요한 정보를 요청하도록 질의 패턴 최적화']
+{
+ "turns": 42,
+ "say": 31,
+ "exam": 11,
+ "refused": 0,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 10,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 10,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 19299,
+ "doctor_output_tokens": 16736,
+ "sim_calls": 33,
+ "seconds": 964.0,
+ "diagnosis": "가족성 저신장 (Familial short stature)",
+ "dx_hit": false,
+ "session_status": "completed",
+ "grade_total": 69,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-C03-v6ref

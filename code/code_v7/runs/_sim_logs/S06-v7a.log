@@ -1,0 +1,99 @@
+[   0.0s] guidelines: catalog.csv 2733 entries
+[   0.1s] guidelines: index ready 2733 docs, 7408 tokens, 0.1s
+[  11.6s] llm[intake] low out=252 finish=stop 11.5s
+[  11.6s] intake: {'age': 56, 'sex': 'F', 'pediatric': False, 'informant': '본인', 'cc': '피로', 'request': '', 'categories': ['fatigue', 'urinary', 'dm'], 'empathy': '많이 힘드셨겠어요.', 'answered': []} diffs=['dm', 'hypothyroidism', 'adrenal insufficiency', 'electrolyte imbalance', '사이토마이티스']
+[  11.6s] checklist: 58 items, covered=['hpi_onset']
+[  17.4s] turn 1 SAY: 많이 힘드셨겠어요. 최근 체중 변화가 있나요? -> 삼 키로그람 정도 빠졌어요
+[  22.3s] turn 2 SAY: 추위를 예전보다 많이 타세요? -> 더위나 추위를 타는 것은 예전과 같아요.
+[  27.8s] turn 3 SAY: 조금만 움직여도 숨이 차나요? -> 숨이 찬 적은 없어요.
+[  32.9s] turn 4 SAY: 변이 검거나 피가 섞인 적 있나요? -> 소변 색이 붉은 적도 없어요.
+[  38.4s] turn 5 SAY: 고혈압이나 당뇨 있으세요? -> 고혈압이 있어요.
+[  42.3s] turn 6 SAY: 다른 지병이 있으세요? -> 고혈압이 있어요.
+[  47.5s] turn 7 SAY: 드시는 약이나 영양제 있으세요? -> 혈압약을 하루 한 알 먹고 있어요.
+[  72.0s] turn 8 SAY: 가장 걱정되시는 게 뭐예요? -> 그런 건 없어요.
+[  99.6s] llm[plan_q] low out=479 finish=stop 27.7s
+[ 104.9s] turn 9 SAY: 변이 자주 차거나 뚝뚝 떨어지나요? -> 그런 건 없어요.
+[ 108.1s] turn 10 SAY: 얼굴이나 다리에 부기가 생기나요? -> 그런 건 없어요.
+[ 111.6s] turn 11 SAY: 어두운 곳에서 일어설 때 어지러워지나요? -> 그런 건 없어요.
+[ 115.9s] turn 12 SAY: 최근에 열이 있거나 밤에 땀을 많이 흘리셨나요? -> 그런 건 없어요.
+[ 121.1s] turn 13 SAY: 증상이 점점 심해지고 있나요? -> 두세 달 전부터 몸이 너무 피곤하고 목이 자주 말라서 병원에 오게 되었다.
+[ 125.5s] turn 14 SAY: 수술을 받은 적이 있나요? -> 십오 년 전에 제왕절개를 했어요.
+[ 129.5s] turn 15 SAY: 가족 중 고혈압이나 당뇨가 있나요? -> 아버지와 어머니 모두 당뇨병이 있었고, 아버지는 당뇨 합병증으로 투석을 받다가 돌아가셨다.
+[ 129.5s] guidelines[iv]: 당뇨병 Practical tip (KR_KoMGI, 2023)
+[ 129.5s] guidelines[iv]: 무증상 갑상선기능저하증의 진단과 치료: 2023 대한갑상선학회 진료 권고안 (KR_Journals, 2024)
+[ 151.0s] llm[plan_q] low out=458 finish=stop 21.4s
+[ 156.0s] turn 16 SAY: 요즘 기분이 많이 가라앉나요? -> 그런 건 없어요.
+[ 158.9s] turn 17 SAY: 잠은 잘 주무세요? -> 그런 건 없어요.
+[ 163.8s] turn 18 SAY: 소변 볼 때 아프시나요? -> 아프거나 따갑지는 않아요.
+[ 167.2s] turn 19 SAY: 담배를 피우시나요? -> 피운 적 없어요.
+[ 170.2s] turn 20 SAY: 술을 얼마나 드시나요? -> 그런 건 없어요.
+[ 173.4s] turn 21 SAY: 생리량이 많은 편인가요? -> 그런 건 없어요.
+[ 180.1s] turn 22 SAY: 오늘 특히 궁금하신 게 있으세요? -> 아버지처럼 당뇨 때문에 투석을 하게 될까 봐 너무 걱정된다.
+[ 180.1s] interview done: asked=22 covered=5 uncovered_p1=[]
+[ 180.1s] exams plan: ['vitals', 'general', 'conj', 'fundus', 'thyroid', 'heart', 'lung', 'abd_palp', 'cva', 'periph', 'sensory']
+[ 180.1s] turn 23 EXAM: 활력징후 측정하겠습니다 -> 146/88mmHg, 82회/분 규칙적, 16회/분, 36.6°C
+[ 180.1s] turn 24 EXAM: 전반적 외관 시진하겠습니다 -> 급성 병색(-), 비만 체형, 안절부절(-)
+[ 180.1s] turn 25 EXAM: 결막·공막 시진하겠습니다 -> 창백(-/-), 충혈(-/-), 황달(-/-)
+[ 180.1s] turn 26 EXAM: 안저 검사하겠습니다 -> 미세동맥류(-/-), 출혈(-/-), 삼출물(-/-), 시신경 유두 정상
+[ 180.1s] turn 27 EXAM: 갑상선 촉진하겠습니다 -> 비대(-), 결절(-), 압통(-)
+[ 180.1s] turn 28 EXAM: 심음 청진하겠습니다 -> S1·S2 명료, 규칙적, 심잡음(-)
+[ 180.1s] turn 29 EXAM: 폐 청진하겠습니다 -> 폐포음, 수포음(-/-), 천명음(-/-)
+[ 180.1s] turn 30 EXAM: 복부 촉진하겠습니다 -> 압통(-), 종괴(-), 근성방어·강직(-)
+[ 185.8s] turn 31 EXAM: 늑척추각 압통 확인하겠습니다 -> 압통(-/-)
+[ 185.8s] turn 32 EXAM: 하지 말초 진찰하겠습니다 -> 족배동맥(+/+), 후경골동맥(+/+), 함요부종(-/-)
+[ 209.2s] turn 33 EXAM REFUSED EXAM_NOT_SPECIFIC: 사지 감각 검사하겠습니다
+[ 455.4s] llm[facts] medium out=4929 finish=stop 246.2s
+[ 455.4s] fact key demoted: ros.Chill turn 2
+[ 455.4s] fact key demoted: pmh.DM turn 5
+[ 455.4s] fact key demoted: pmh.DM turn 6
+[ 455.4s] fact key demoted: ros.Fever turn 12
+[ 455.4s] fact key demoted: sh.alcohol turn 20
+[ 455.4s] fact key demoted: ros.Constipation turn 9
+[ 455.4s] fact key demoted: ros.Fever turn 12
+[ 455.4s] fact key demoted: sh.alcohol turn 20
+[ 455.4s] facts: 29
+[ 455.4s] guidelines[dx]: 당뇨병 Practical tip (KR_KoMGI, 2023)
+[ 455.4s] guidelines[dx]: 무증상 갑상선기능저하증의 진단과 치료: 2023 대한갑상선학회 진료 권고안 (KR_Journals, 2024)
+[ 549.3s] llm[dx] medium out=1869 finish=stop 93.9s
+[ 549.3s] guidelines[plan-mgmt]: 2019 Clinical Practice Guidelines for Type 2 Diabetes Mellitus in Korea (KR_EuropePMC, 2019)
+[ 549.3s] guidelines[plan-ovw]: 2021 Clinical Practice Guidelines for Diabetes Mellitus in Korea (KR_EuropePMC, 2021)
+[ 549.3s] guidelines[plan-edu]: 당뇨병 (KR_HealthInfo, 2026)
+[ 570.1s] llm[plan_say] low out=395 finish=stop 20.7s
+[ 576.1s] turn 34 SAY: 당뇨병 가능성이 높아 보여요. -> 네, 알겠습니다.
+[ 578.2s] turn 35 SAY: 피로·목말라함이 원인일 수 있어요. -> 네, 알겠습니다.
+[ 580.7s] turn 36 SAY: 투석 걱정이 있으면 고혈압·신장검사 할게요. -> 네, 알겠습니다.
+[ 584.1s] turn 37 SAY: 식이·운동써 혈당 관리 해요. -> 네, 알겠습니다.
+[ 586.4s] turn 38 SAY: 숨참·고열·저혈당·시야흐려 시 바로 오세요. -> 네, 알겠습니다.
+[ 591.7s] turn 39 SAY: 바로 오셔야 할 증상 하나를 말씀해 보세요. -> 눈이 침침하고 글씨가 흐릿하게 보일 때가 있어요.
+[ 594.0s] turn 40 SAY: 1~2주 뒤 결과 보러 다시 오세요. -> 네, 알겠습니다.
+[ 600.8s] turn 41 SAY: 더 궁금하신 점 있으세요? -> 소변이 자주 가요.
+[ 613.9s] llm[S-narr] low out=260 finish=stop 13.1s
+[ 613.9s] summary: turns=41 counts={'say': 30, 'exam': 10, 'refused': 1, 'one_at_a_time': 0, 'skipped_invalid': 0, 'exam_refused': 1, 'interview': 22} budget={'doctor_calls': 7, 'doctor_ok_calls': 7, 'doctor_invalid': 0, 'doctor_input_tokens': 15730, 'doctor_output_tokens': 8642, 'elapsed_s': 613.9} dx=2형 당뇨병 (Type 2 Diabetes Mellitus)
+S06 gpt-oss-20b: total=42 정보수집=12 진단추론=5 검사·추적=0 안전=15 의사소통=5 효율=5 dx5=2
+- missed_key_questions: ['다음 2L 이상 소수물 섭취량', '하루 다요수 10회 이상 여부', '야간뇨 빈도', '시야 흐림 빈도', '구강 건조 증상 여부', '기억력/지남력 부정변 등', '혈당 이력(공복, 들여다보기)', '갑상선 기능 테스트']
+- missed_key_exams: ['Acanthosis nigricans 검사', '단섬유 감각(Monofilament) 검사']
+- top_improvements: ['1) 주요 신체검사(아낙시강, 보)와 감각 검사 포함', '2) 구체적 진단 근거 및 감별진단 제시', '3) 필수 검사와 추적 계획 세부화', '4) 환자에게 민감한 설명과 교육 제공', '5) 대화 효율성과 초진 깊이 향상', '6) 기록 체계도 간소화 및 핵심 항목 서지']
+{
+ "turns": 41,
+ "say": 30,
+ "exam": 10,
+ "refused": 1,
+ "one_at_a_time": 0,
+ "truncated": 1,
+ "doctor_calls": 7,
+ "luna_calls": 0,
+ "doctor_mode": "local",
+ "doctor_calls_local": 7,
+ "doctor_calls_remote": 0,
+ "doctor_input_tokens": 15730,
+ "doctor_output_tokens": 8642,
+ "sim_calls": 32,
+ "seconds": 613.9,
+ "diagnosis": "2형 당뇨병 (Type 2 Diabetes Mellitus)",
+ "dx_hit": true,
+ "session_status": "completed",
+ "grade_total": 42,
+ "grade_error": null,
+ "error": null
+}
+저장: ../code_v7/runs/sim-S06-v7a

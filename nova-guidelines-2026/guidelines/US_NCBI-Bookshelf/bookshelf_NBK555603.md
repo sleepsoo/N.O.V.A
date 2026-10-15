@@ -1,0 +1,544 @@
+---
+title: "Alcohol Withdrawal in Hospitalized Patients"
+organization: "Michigan Medicine University of Michigan"
+year: "2020"
+language: en
+source_url: "https://www.ncbi.nlm.nih.gov/books/NBK555603/"
+license: "CC BY-NC-SA"
+---
+# Alcohol Withdrawal in Hospitalized Patients
+
+### Abstract
+
+This guideline applies to adult hospitalized non-critically ill patients with acute alcohol withdrawal in a nonintensive care setting. This guideline does not aid withdrawal of benzodiazepines or opioids. The objective to provide an evidence-based guideline for managing acute alcohol withdrawal, including screening and assessing patients with alcohol withdrawal syndrome (AWS); managing symptoms using a multimodal, symptom-triggered process; seeking consultation support; escalating care when appropriate; and providing long-term support for the patient.
+
+### Patient population:
+
+Adult hospitalized non-critically ill patients with acute alcohol withdrawal in a nonintensive care setting. This guideline does not aid withdrawal of benzodiazepines or opioids.
+
+### Objective:
+
+To provide an evidence-based guideline for managing acute alcohol withdrawal, including screening and assessing patients with alcohol withdrawal syndrome (AWS); managing symptoms using a multimodal, symptom-triggered process; seeking consultation support; escalating care when appropriate; and providing long-term support for the patient.
+
+### Key points:
+
+#### Clinical Presentation
+
+AWS is a clinical syndrome that can include a wide variety of symptoms and signs, such as anxiety and tremors (Figure 2).
+
+In its most severe form, acute alcohol withdrawal may culminate in delirium tremens (DTs), with symptoms that include delirium, agitation, fever, diaphoresis, and hypertension.
+
+#### Screening
+
+Screen all adult inpatients for risk of AWS using the AUDIT-C and, when indicated, the History of Alcohol Withdrawal Syndrome Screening Questions (Figure 1, Tables 1 and 2).
+
+Initiate the Michigan Alcohol Withdrawal Severity (MAWS) protocol for patients who are at risk for alcohol withdrawal (Figure 1).
+
+#### Diagnosis
+
+Diagnose AWS based on risk factors, history, presenting symptoms, and physical exam. Distinguish patients who have primary AWS from those who may have coexistent AWS in the context of additional acute or chronic illnesses – AWS overlaps with many other medical conditions. Initial evaluation is summarized in Table 3.
+
+#### Treatment
+
+Use a symptom-triggered treatment protocol (Figures 3 and 4) based on the MAWS assessment tool (Figure 2), which defines symptoms as Type A (CNS excitation), B (adrenergic hyperactivity), or C (delirium).
+
+Use benzodiazepines as the first-line therapy in the management of AWS. They are the most effective in preventing complications and reducing withdrawal severity. [I-A] Lorazepam is the benzodiazepine of choice for management of AWS because it does not undergo hepatic oxidation and has few active metabolites.
+
+Adjunctive medications can be helpful in mitigating severe withdrawal [II-B], but are never used as monotherapy. [III-B]
+
+- When patients experience refractory Type B symptoms (Figure 2) despite benzodiazepine treatment, consider prescribing adjunctive clonidine, as per Figures 3 and 4.
+- When patients experience refractory Type C symptoms (Figure 2) despite benzodiazepine medications, consider prescribing adjunctive haloperidol (orally or by intramuscular injection), as per Figures 3 and 4.
+
+When using benzodiazepines or haloperidol in patients over 65 years old or patients with renal or hepatic dysfunction, use lower doses and/or extend the interval between doses (Table 5).
+
+For patients also receiving acute or chronic opioid therapy, reduce the dose of sedative medications (eg, benzodiazepines, haloperidol) by 25% to help prevent respiratory depression (Table 5).
+
+No administration of alcohol in either IV or oral form. [III-C]
+
+When starting treatment for alcohol withdrawal, also give thiamine 100 mg PO/IV daily, folic acid 1 mg PO/IV daily, and a multivitamin PO daily. Continue giving these vitamins for 7–14 days. [I-C]
+
+Consider consultation for difficult or complicated AWS. Examples of relevant clinical expertise for various conditions include:
+
+- Critical care consultation may be appropriate for patients with hemodynamic or respiratory instability, progression of symptoms despite maximum appropriate therapy, or high-intensity nursing requirements. [I-E]
+- Consider maternal-fetal medicine consultation for pregnant patients, general medicine for significant comorbid conditions, and psychiatry for concomitant psychiatric issues and medications. [II-E]
+
+Transfer to a higher level of care is a multidisciplinary decision of the responsible physician, consult team, and nursing staff.
+
+#### Hospital Discharge
+
+Defer discharge until symptoms attributed to alcohol withdrawal have resolved.
+
+Do NOT provide patients with “as needed” (prn) medications to manage symptoms following discharge. [III-E] When patients who were treated with symptom-triggered therapy are ready for discharge, they are no longer at significant risk for continued or rebound withdrawal.
+
+Provide patients with written information and guidance to support continued abstinence from alcohol. [I-C] At UMHS, this is done by the General or Psychiatric Social Work Department.
+
+#### Hospital Follow-Up
+
+Schedule a follow-up appointment with the patient’s Primary Care Physician within 2 weeks of hospital discharge. [I-E]
+
+[그림/Figure] Figure 1. Universal Screening for Risk of Alcohol Withdrawal Syndrome and Initiation of the Michigan Alcohol Withdrawal Severity (MAWS) Protocol*SBIRT = Screening, brief intervention, and referral to treatment
+
+**Table 1. AUDIT-C Questionnaire Present all questions to the patient verbatim. Preferred methods are self-administered questionnaire or clinician inquiry. Options when the patient is unable to respond include medical record review or asking a family member.**
+
+| A standard drink is defined as follows: 12 oz. beer, 5 oz. glass of wine, or 1.5 oz. of 80-proof distilled spirits, according to the National Institute on Alcohol Abuse and Alcoholism (NIAAA). Questions | Scoring (points) | | | | | Points |
+|---|---|---|---|---|---|---|
+| 0 | 1 | 2 | 3 | 4 | | |
+| How often do you have a drink containing alcohol? | Never | 1 time a month or less | 2 to 4 times a month | 2 to 3 times a week | 4 or more times a week | |
+| If answer is Never (0 points), stop screening here ► | | | | | | |
+| How many drinks containing alcohol do you have on a typical day when you are drinking? | 1 to 2 drinks | 3 to 4 drinks | 5 to 6 drinks | 7 to 9 drinks | 10 or more drinks | |
+| How often do you have five or more drinks on one occasion? | Never | Less than monthly | Monthly | Weekly | Daily or almost daily | |
+| Total Score (Add points for all three questions) ► Scores of ≥ 8 are considered positive for withdrawal in both men and women for initial AWS screening in the context of this clinical guideline. | | | | | | |
+
+_Note: The AUDIT-C is an evidence-based, three item scale used to identify patients who engage in risky or hazardous drinking. Among those diagnosed as having hazardous or harmful alcohol use, 92% had an AUDIT score of 8 or more, and 94% of those with non-hazardous consumption had a score of less than 8. Training information on the administration of the AUDIT questions can be found here: https://www.youtube.com/watch?v=RHcalohcunU Note: The AUDIT-C is an evidence-based, three item scale used to identify patients who engage in risky or hazardous drinking. Among those diagnosed as having hazardous or harmful alcohol use, 92% had an AUDIT score of 8 or more, and 94% of those with non-hazardous consumption had a score of less than 8. Training information on the administration of the AUDIT questions can be found here: https://www.youtube.com/watch?v=RHcalohcunU_
+
+**Table 2. History of Alcohol Withdrawal Syndrome Screening Questions Present all questions to the patient verbatim. Preferred methods are self-administered questionnaire or clinician inquiry. Options when the patient is unable to respond include medical record review or asking a family member.**
+
+| Questions (Answering YES to any indicates a positive history) |
+|---|
+| Have you ever had seizures when you stopped drinking? Have you ever had delirium tremens (DTs) when you stopped drinking? Have you ever had other withdrawal symptoms when you stopped drinking? |
+
+_* DT signs/symptoms include visual, auditory or tactile hallucinations, agitation, tachycardia, hypertension, fever, or diaphoresis along with delirium. Symptoms and signs arise 48–96 hours after alcohol cessation. DT signs/symptoms include visual, auditory or tactile hallucinations, agitation, tachycardia, hypertension, fever, or diaphoresis along with delirium. Symptoms and signs arise 48–96 hours after alcohol cessation. ** Other signs/symptoms include insomnia, tremulousness, mild anxiety, gastrointestinal upset or anorexia, headache, diaphoresis and palpitations along with abnormal mental status which can arise within six hours of alcohol cessation. Other signs/symptoms include insomnia, tremulousness, mild anxiety, gastrointestinal upset or anorexia, headache, diaphoresis and palpitations along with abnormal mental status which can arise within six hours of alcohol cessation._
+
+**Table 3. Baseline Diagnostic Evaluation of Patients at High Risk for Acute Alcohol Withdrawal Syndrome**
+
+| Complete history and physical exam Blood alcohol level (BAL) Urine toxicology screen Complete blood count and differential, basic metabolic profile with magnesium and phosphorus levels, liver function tests Electrocardiogram (ECG) |
+|---|
+
+[그림/Figure] Figure 2. Michigan Alcohol Withdrawal Severity (MAWS) Scale At UMHS, this form is available through the electronic medical record
+
+[그림/Figure] Figure 3. Michigan Alcohol Withdrawal Severity (MAWS) Protocol for Mild to Moderate Alcohol Withdrawal
+
+[그림/Figure] Figure 4. Michigan Alcohol Withdrawal Severity (MAWS) Protocol for Severe Withdrawal
+
+**Table 4. Medication Characteristics**
+
+| Drug | Onset of Action | Half-life (approximate) | Metabolism | Excretion | Contraindications/ Potential Side Effects |
+|---|---|---|---|---|---|
+| Lorazepam | 2–3 min IV 30 min PO | 12–14 hours ESRD 18 hours | Hepatic | Urinary, fecal | Respiratory depression Oversedation Acidosis – high dose IV Pregnancy risk factor: D |
+| Clonidine | 10 min IV 30–60 min PO | 12–16 hours ESRD < 41 hours Renal dosing necessary | Hepatic | Urinary | Hypotension Bradycardia Pregnancy risk factor: C |
+| Haloperidol | 30–60 min IM 30–60 min PO | 10–37 hours | Hepatic | Urinary, fecal | QT prolongation Oversedation Dystonia Reduced seizure threshold Pregnancy risk factor: C |
+
+**Table 5. Recommendations for Medication Administration and Withholding**
+
+| Medication | Patient Assessment | Administration and Withholding | Dose Adjustments |
+|---|---|---|---|
+| Lorazepam | Assess patient sedation score (eg, UMSS or RASS), respiratory rate (RR), and oxygen saturation before and one hour after each dose. | Withhold medication if sedation of moderate level or greater (eg, UMSS score ≥ 2, or RASS score ≤ 3); RR < 10; oxygen saturation < 90% (unless there is an alternative explanation for hypoxia). Avoid coadministration (within one hour) with haloperidol or opioids unless directed by provider due to potential for oversedation. Use with caution during first trimester of pregnancy. Administer orally if possible. Use parenteral routes (IM, IV) when patient cannot tolerate oral administration. | Lower doses and/or extend dosing intervals in patients over 65 years old, or those with renal or hepatic dysfunction. Reduce dose by 25% if patient is chronically or acutely receiving opioids due to potential for respiratory depression. |
+| Clonidine | Reassess blood pressure and heart rate one hour after each dose. | Hold dose if systolic BP ≤ 130; diastolic BP ≤ 70 mm Hg; heart rate 60 beats per minute. Discontinue clonidine if any dose results in SBP decrease > 30 mm Hg, or DBP decrease of > 20 mm Hg. Use with caution during first trimester of pregnancy. Administer orally if possible. Use parenteral routes (IM, IV) when patient cannot tolerate oral administration. | Reduce dose in renal impairment. |
+| Haloperidol | Assess patient sedation score (eg, RASS or UMSS), respiratory rate, and oxygen saturation before and one hour after each dose. Obtain baseline ECG to assess QT interval; repeat ECG to monitor QTc interval if use exceeds 48 hours. | Withhold medication if sedation of moderate level or greater (eg, UMSS score > 2, or RASS score ≤ 3); RR < 10; oxygen saturation < 90% (unless there is an alternative explanation for desaturation). Avoid coadministration (within one hour) with lorazepam or opioids unless directed by provider due to potential for oversedation. Avoid further use of haloperidol if QTc interval > 450 ms. Avoid in patients with Parkinson’s disease or African American race due to increased risk of tardive dyskinesia. Avoid in persons with epilepsy or seizures because it can decrease the seizure threshold. Do not use during first trimester of pregnancy. Administer orally if possible. Use parenteral routes (IM) when patient cannot tolerate oral administration. | Lower doses and/or extend dosing intervals in patients over 65 years old, or those with renal or hepatic dysfunction. Reduce dose by 25% if patient is chronically or acutely receiving opioids due to potential for respiratory depression. |
+
+_* UM Sedation Scale (UMSS) (Internal link for University of Michigan only) and Richmond Agitation-Sedation Scale (RASS) UM Sedation Scale (UMSS) (Internal link for University of Michigan only) and Richmond Agitation-Sedation Scale (RASS)_
+
+**Table 6. Recommended Daily Nutritional Supplementation**
+
+| Nutritional Supplement | Dose |
+|---|---|
+| Multivitamin | 1 tablet PO daily |
+| Thiamine | 100 mg PO/IV daily x 7 – 14 days |
+| Folic Acid | 1 mg PO/IV daily x 7 – 14 days |
+
+### Clinical Problem and Management Issues
+
+#### Introduction
+
+Alcohol withdrawal syndrome (AWS) is a constellation of symptoms that occurs when a patient with sustained alcohol use experiences a sudden decrease in alcohol consumption. This guideline describes AWS and offers recommendations for identification, evaluation, and management of AWS in the hospital setting.
+
+The Diagnostic and Statistical Manual for Mental Health Disorders, 5th Edition (DSM-5), released in May 2013, combined the previously separate diagnoses of “alcohol abuse” and “alcohol dependence” and replaced them with single diagnosis of “alcohol use disorder.”
+
+#### Incidence
+
+Alcohol consumption in the United States contributes to approximately 85,000 deaths annually. Alcohol dependence or hazardous drinking behaviors have become increasingly common, occurring in up to 15–20% of patients in the ambulatory setting. Recent data describe hazardous alcohol use or high-risk behaviors in 22.3% of adults over a one-month period. Although males have a higher incidence of alcohol use disorder, in one survey up to 51.5% of women used alcohol during pregnancy, 15% of whom engaged in binge drinking.
+
+Patients entering the acute-care hospital setting have a similar prevalence of alcohol dependence or high-risk behaviors ranging from 15–25%. Of these patients, approximately 10% will demonstrate signs or symptoms of alcohol withdrawal during their admission. The severity of withdrawal is variable and influenced by several factors, which include age, gender, consumption patterns, frequency of prior withdrawal, and medical comorbidities. The presentation of AWS ranges from minor restlessness or anxiety to severe withdrawal and the phenomenon known as delirium tremens (DTs).
+
+The historical mortality among patients experiencing the most severe withdrawal is approximately 15%. As the ability to recognize and manage AWS has improved, the associated mortality has decreased to less than 1%. However, AWS remains a considerable challenge for patients and clinicians.
+
+### Rationale for Recommendations
+
+AWS is frequently observed in emergency departments as well as inpatient medical and surgical services. Given the spectrum of patient presentation and the breadth of treatment options, management of patients experiencing AWS is inherently complex. These guidelines have been developed to ensure consistent care delivery for patients with AWS across inpatient services. These guidelines are applicable to all inpatient services and patients, except for patients transferred to the Intensive Care Units (ICUs) for uncontrolled MAWS, which are beyond the scope of this guideline.
+
+### Pathophysiology of AWS
+
+The physiologic perturbations of alcohol withdrawal are made up of a complex interplay of both excitatory and inhibitory neurochemical pathways. Classically known as a CNS depressant, alcohol causes direct enhancement, and consequently down-regulation, of the inhibitory neurotransmitter, gamma-aminobutyric acid (GABA). GABA’s excitatory counterpart, glutamate, is in constant flux as it tries to maintain balance, ultimately resulting in up-regulation. This phenomenon, known clinically as tolerance, leads to the need for escalating doses of alcohol to achieve the same effect. Upon withdrawal of alcohol, the CNS inhibition suddenly decreases, causing significant excitation. The resulting autonomic hyperactivity leads to the classic signs and symptoms of alcohol withdrawal, as outlined in Figure 2.
+
+Another important alcohol-related physiologic phenomenon is called kindling. Kindling is a progressive increase in the intensity of symptoms with each subsequent withdrawal period. Repeated episodes of alcohol withdrawal cause alterations in GABA, glutamate, and norepinephrine transmission that increase the risk of seizures and DTs.
+
+### Clinical Presentation
+
+AWS is a clinical syndrome that can include a wide variety of symptoms and signs (Figure 2). They can be classified in three broad categories: CNS excitation (Type A), adrenergic hyperactivity (Type B), and delirium (Type C).
+
+Type A symptoms are the result of the CNS excitation described above. They occur within 6–12 hours after the last consumption of alcohol. Pharmacological treatments for these symptoms have traditionally been benzodiazepines.
+
+Adrenergic hyperactivity, otherwise known as Type B symptoms, may occur between 6–48 hours after alcohol cessation and are associated with elevated norepinephrine and epinephrine levels. The catecholamine surge imposed on the sympathetic nervous system can cause extremes of blood pressure, and significant tachycardia. Clonidine (and other alpha-2 agonists) has been shown to reduce the burden of norepinephrine release, while beta blockers such as propranolol have also been shown to decrease autonomic symptoms.,
+
+Type C symptoms include delirium and hallucinations. In contrast to Type A and B symptoms, Type C symptoms can be seen up to 2 weeks after alcohol cessation. The associated delirium and hallucinatory effects may be experienced between 2 to 10 days after alcohol cessation, despite attempts at control with pharmacological management such as haloperidol.
+
+Delirium tremens (DTs) is a clinical diagnosis based on a constellation of symptoms that include delirium, agitation, fever, diaphoresis, and hypertension.
+
+Alcohol withdrawal can also inherently cause seizures. DTs are not synonymous with alcohol-related seizure activity. Withdrawal seizures and alcoholic hallucinations are separate entities that can manifest during the first 48 hours of AWS and are self-limited. They may occur alone, or as part of DTs.
+
+The time course of AWS symptom development is well-described. Central nervous system excitation (eg, anxiety, nervousness) and adrenergic hyperactivity (eg, tremor, diaphoresis, hypertension) typically develop in the first 6 to 36 hours after alcohol cessation, while delirium tremens (DTs) typically develop after 48 to 96 hours. However, patients with significant alcohol abuse may manifest signs or symptoms of withdrawal even in the presence of detectable serum alcohol levels.
+
+### Screening
+
+**Recommendations:**
+
+- Screen all adult inpatients for risk of AWS, using the AUDIT-C and, if indicated, History of Alcohol Withdrawal Syndrome screening questions (Figure 1, Tables 1 and 2).
+- Initiate the Michigan Alcohol Withdrawal Severity (MAWS) protocol for patients who are at risk for alcohol withdrawal (Figure 1).
+
+The purpose of universal screening for risk of AWS among all adult inpatients is to identify those who are more likely to develop AWS and to promote early identification, intervention, treatment, and referral. About 20% of all adult medical inpatients are engaging in risky or hazardous alcohol use prior to hospital admission, and approximately 77% of these patients are alcohol dependent. With the abrupt cessation of alcohol consumption that usually accompanies inpatient hospitalization, a significant subset of that population is at risk for the development of AWS. The neurophysiological model of kindling suggests that subsequent episodes of alcohol withdrawal become increasingly severe with decreased provocation. Untreated or undertreated AWS during hospitalization has been associated with an increased incidence and severity of acute medical complications, increased lengths of stay, more frequent transfers to ICUs, increased hospital-related costs, and higher rates of patient mortality.
+
+Once symptoms appear, progression to severe AWS can be prevented if symptoms are identified, monitored, and treated aggressively. Despite the pronounced prevalence and serious consequences of AWS, no universally accepted screening instrument for symptoms yet exists. The revised Clinical Institute Withdrawal Assessment of Alcohol Scale (CIWA) is the most commonly used scoring system for recognition of AWS symptoms. However, in our experience, CIWA is too complex and subjective to be clinically useful.
+
+Instead we recommend a modified version of the Alcohol Withdrawal Risk Assessment (Figure 1) as developed and described by Williams and Mitchell. These investigators reduced the incidence of alcohol withdrawal and ICU transfers in AWS patients by using a combined set of screening tools. They used a subset of screening questions from the AUDIT-Consumption [AUDIT-C] and AUDIT-Dependence [AUDIT-D] tools (Table 1), in combination with questions related to any history of AWS-related seizures, delirium tremens (DTs), or other symptoms of alcohol withdrawal (Table 2). In subsequent personal communications (2016), Williams reported that AUDIT-D questions did not add substantively to the predictive capacity of their model, and they were subsequently deleted.
+
+The AUDIT-C is retained in its entirety because it has an established role in screening, brief intervention, and referral to treatment (SBIRT) for alcohol use, a public health approach to reducing alcohol use and related disorders.
+
+Patients who are identified as high-risk by the above screening approach should be started on the treatment protocol prophylactically (Figure 1). This allows close monitoring of these patients and initiation of early pharmacologic treatment, if indicated.
+
+### Diagnosis
+
+**Recommendations:**
+
+- Diagnose AWS based on risk factors, history, presenting symptoms, and physical exam (see Clinical Presentation above).
+- Distinguish patients who have primary AWS from those who may have coexistent AWS in the context of additional acute or chronic illnesses. AWS overlaps with many other medical conditions.
+- The initial evaluation of a patient with AWS is summarized in Table 3
+
+AWS is a clinical diagnosis, based on risk factors, history, presenting symptoms, and physical exam. Given its overlap with other conditions, it is important to understand a patient’s baseline medical history so that certain disease exacerbations are not perceived as being part of a developing AWS (eg, an essential tremor).
+
+No specific testing available confirms a diagnosis of AWS. The clinician may try to draw conclusions about the patient’s alcohol consumption based on laboratory testing, but these tests are often nonspecific. In patients who are seeking treatment for alcohol misuse, biomarkers do not offer any advantage over self-report measures. For example, liver function test abnormalities such an aspartate aminotransferase (AST) to alanine aminotransferase (ALT) ratio of 2:1 or higher is not more accurate than self-reported alcohol consumption, and is less sensitive and specific than the AUDIT in screening for alcohol misuse.− Several studies have evaluated other laboratory tests such as gamma-glutamyl transpeptidase (GGTP), mean corpuscular volume (MCV), or urinary ethyl glucuronide (ETG), but none has proven reliable or consistent. Biomarkers are of potential use in the outpatient setting because they can provide baseline measures of alcohol-related damage and can serve as a motivational strategy to patients.
+
+Diagnosis should begin with a detailed history that explores risk factors and high-risk behaviors associated with alcohol dependence and subsequent risk of AWS. This includes the time of last alcoholic drink, amount of alcohol consumed, other illicit or controlled substances used, and family history of an alcohol use disorder. Universal standardized screening for risk of alcohol withdrawal syndrome complements the information obtained by history. A detailed physical exam may detect CNS hyperactivity or hyperadrenergic states. Remember that these findings are not specific to AWS, and exclusion or identification of coexistent conditions is imperative.
+
+Perform baseline laboratory testing in those suspected of experiencing alcohol withdrawal (Table 3). These include the initial blood alcohol level (BAL), urine toxicology screen, complete blood count, basic metabolic profile with magnesium and phosphorus, and liver function tests. Even with a positive BAL, a person can experience significant withdrawal symptoms. Patients with alcohol dependence often have concomitant polysubstance use, and a urine toxicology screen may identify other substances that may mimic or coexist with AWS. Basic hematological measurements may identify alcohol induced suppression of bone marrow, signs of nutrient deficiencies, or thrombocytopenia as a consequence of cirrhosis. A baseline electrocardiogram can assess the QTc interval in the event patients require neuroleptics as part of their therapy.
+
+Seizures can be associated with AWS. If a patient’s seizures are likely to have an alternative etiology, additional evaluation (eg, EEG, imaging, LP, neurology consultation, etc.) may be necessary.
+
+### Principles of Treatment
+
+#### General Measures
+
+**Recommendations:**
+
+Provide optimal physical and social support during withdrawal. This includes a calm environment for detoxification, IV fluid and electrolyte replacement, nausea control, nutritional support and consultation, and expert social worker support and follow-up.
+
+Detoxification from any psychoactive substance can be a very difficult and exhausting process for the patient. General management includes:
+
+- Maintain adequate IV access for medication administration, fluid and electrolyte supplementation.
+- Keep the patient in a calm environment (eg, a dimly lit room with minimal outside disturbances).
+- Encourage adequate nutrition and consultation from an expert dietitian.
+- Provide supportive care including nausea control. Use ondansetron with caution due to its QTc prolonging effects, especially if concomitant antipsychotics are required.
+
+#### Treatment Protocols
+
+**Recommendations:**
+
+- Use a symptom-triggered treatment protocol (Figures 3 and 4) based on the Michigan Alcohol Withdrawal Severity (MAWS) assessment tool (Figure 2).
+- Periodically reassess treatment efficacy, especially if patients do not respond to therapy as expected. In these instances, consider other conditions that may mimic alcohol withdrawal.
+
+Several different treatment models have been developed for alcohol withdrawal. The three most commonly encountered are the symptom-triggered approach, fixed-dose model, and multimodal therapies. Symptom-triggered regimens tailor medication administration according to a predefined set of signs and symptoms commonly experienced during alcohol withdrawal. This necessitates a clearly defined protocol and extensive staff education and training. Pharmacotherapy is only provided if the patient demonstrates signs of withdrawal. Fixed dose regimens start with either a predefined or calculated dose of medication that is reduced over the treatment period. Multimodal models are hybrids that account for individual patient characteristics such as history of past severe withdrawal and/or seizures. Multimodal models typically utilize initial doses of long-acting pharmacotherapy, combined with short-acting medications and frequent symptom evaluation.
+
+Study results comparing the effectiveness of symptom-triggered to fixed dose therapy are inconsistent. Although some studies support superiority of symptom-triggered therapy (eg, less medication, fewer complications, shorter length of stay), more recent studies suggest that this approach may be no better in certain settings (eg, outpatient), but not inferior. Pitfalls of symptom-triggered therapy become clear when faced with nonverbal patients and with the intensity of evaluation necessary. However, symptom-triggered therapy has not been shown to have higher rates of progression to seizure or DTs compared to fixed-dose or multimodal therapy. Based on our collective experience and review of the evidence, we recommend continuing a symptom-triggered approach for the inpatient treatment of AWS.
+
+#### Pharmacotherapy
+
+##### Benzodiazepines.
+
+**Recommendations:**
+
+- Use benzodiazepines as the first-line therapy in the management of AWS. They are the most effective in preventing complications (such as seizures and delirium) and reducing withdrawal severity.
+- Lorazepam is the benzodiazepine of choice for management of AWS because it does not undergo hepatic oxidation and has few active metabolites.
+- Prescribe lorazepam for AWS as indicated in the standardized protocol (Figures 3 and 4).
+
+Benzodiazepines are the most extensively studied of the available pharmaceutical treatments for alcohol withdrawal. In the United States, they have become the foundation of medical therapy. When compared to other therapies such as gamma-hydroxybutyrate (GHB), baclofen and carbamazepine, they have demonstrated lower potential for misuse addiction potential and a greater margin of treatment safety. Benzodiazepines reduce the frequency of withdrawal-related seizures, and the US Preventive Services Task Force recommends use in the treatment of AWS. Central nervous system modulation is achieved by benzodiazepines through their cross-tolerance activation of GABA receptors, which reduce the hyperactivity induced by alcohol withdrawal.
+
+Lorazepam is the benzodiazepine of choice for management of AWS because it does not undergo hepatic oxidation and has few active metabolites. Several other benzodiazepines are available. Chlordiazepoxide has a lower abuse potential than the others, while diazepam has the most rapid onset. Neither lorazepam nor oxazepam depend on hepatic metabolism.
+
+Benzodiazepines are high-risk medications that should be used with care, ideally within a structured protocol. The structured use of these medications and careful patient monitoring can mitigate the many potential side effects (eg, sedation, especially in elderly adults, or when combined with other sedative medications). IV formulations can be up to ten times more expensive than their oral counterparts, so oral agents are preferred unless the patient cannot tolerate oral medications.
+
+##### Alpha-2 receptor agonists and beta blockers.
+
+**Recommendations:**
+
+When patients experience refractory hypertension and tachycardia despite benzodiazepine use, consider prescribing adjunctive clonidine, as per Figures 2, 3, and 4.
+
+When AWS progresses to a point that large benzodiazepine doses are not adequately treating the syndrome or are leading to unsafe side effects, adjunctive medications can aid in symptom relief.
+
+Clonidine acts at the alpha-2 receptor site, inhibiting presynaptic release of norepinephrine. Data from randomized controlled trials demonstrate the ability of clonidine to reduce symptoms of alcohol withdrawal related to sympathetic over activity (ie, hypertension, tachycardia) in patients with mild to moderate alcohol withdrawal. Clonidine doses of 0.2 mg to 1.2 mg daily (in divided doses) have been studied. Higher doses have been associated with an increased incidence of adverse effects (orthostatic hypotension).− The recommended clinical use of clonidine is outlined in Figures 2, 3, and 4.
+
+Data supporting dexmedetomidine use are limited at this time. It is another alpha-2 receptor agonist and is 8 times more potent than clonidine. One randomized controlled trial demonstrated that dexmedetomidine was associated with a significant decrease in benzodiazepine requirements. Other outcomes, such as duration of mechanical ventilation and length of ICU or hospital stay, were unaffected. Additional studies are required to understand the role that dexmedetomidine may have in the management of AWS.
+
+Data are insufficient to support use of beta blocker therapy on a routine basis. Limited data exist on beta blocker use in managing alcohol withdrawal. Patients with cardiovascular disease could benefit due to the additional heart rate reduction.
+
+##### Neuroleptics.
+
+**Recommendations:**
+
+- When patients experience refractory Type C symptoms despite benzodiazepine medications, consider prescribing adjunctive haloperidol (orally or by intramuscular injection), as per Figures 2, 3, and 4.
+- Use the lowest effective haloperidol dose.
+- Obtain a baseline ECG to assess QT interval; repeat the ECG to monitor QTc interval if haloperidol use exceeds 48 hours.
+
+Neuroleptics have had a prominent role in treating patients with significant Type C symptoms during withdrawal, especially during DTs. The mainstay drug in this class, haloperidol, is not typically utilized as a single agent for AWS. It is an additive therapy for symptom management, used along with a benzodiazepine medication. Haloperidol can control psychomotor agitation and violent or dangerously impulsive behavior. Neuroleptics can also have adverse effects. These effects include, but are not limited to, inadvertent masking of the withdrawal severity, increased propensity for seizures, restlessness, and agitation.
+
+##### Medication dosing considerations.
+
+**Recommendations:**
+
+- Consider medical comorbidities that might affect the metabolism of medications used to treat AWS.
+- When using benzodiazepines or haloperidol in patients over 65 years old or patients with renal or hepatic dysfunction, use lower doses and/or extend the dose intervals (Table 5).
+- When a patient is also receiving acute or chronic opioid therapy, reduce the dose of sedative medications (eg, benzodiazepines, haloperidol) by 25% to help prevent respiratory depression (Table 5).
+
+Elderly patients and those with decompensated hepatic dysfunction, renal failure, and underlying respiratory disorders pose special challenges in the treatment of AWS. The longer-acting benzodiazepines, such as chlordiazepoxide, which have been recommended in other alcohol withdrawal guidelines, can result in increased sedation and other adverse effects. The consensus at our institution is to utilize a shorter-acting agent to limit adverse effects. Lorazepam does not undergo hepatic oxidation through the cytochrome P-450 system and has no active metabolites, so hepatic clearance of this medication is not affected by liver disease. Although lorazepam is cleared by the kidneys, impaired renal function has little impact on drug accumulation, given that the medication is inactivated by the liver and does not produce active metabolites. Frequent patient assessments, as included in the protocol, are necessary to safely use benzodiazepines.
+
+In patients with renal failure the duration of effect of lorazepam increases. Intravenous lorazepam is formulated in a propylene glycol diluent that, when infused in sufficient quantities, may cause metabolic acidosis and potentiate acute kidney injury. Propylene glycol toxicity can occur with doses as low as 1 mg/kg of IV lorazepam administered within a 24-hour period. A serum osmolar gap of 10 to 12 mOsm/L is suggestive of significant propylene glycol accumulation.
+
+##### Non-benzodiazepine anticonvulsants.
+
+**Recommendations:**
+
+Do not use non-benzodiazepine anticonvulsants as part of AWS treatment.
+
+Evidence is insufficient to support the use of non-benzodiazepine anticonvulsants for treatment of AWS. Phenytoin, specifically, has not been shown to be effective or safe in preventing recurrent alcohol withdrawal seizures., Some recent studies of newer generation anticonvulsant drugs in the inpatient setting suggest they are safe and tolerable. However, when compared with benzodiazepines, evidence for newer anticonvulsants is inconclusive for efficacy in several key measures, such as prevention of alcohol withdrawal seizures and DTs.
+
+Phenobarbital has been studied as both a primary agent for managing alcohol withdrawal and as an adjunct to benzodiazepine therapy. Phenobarbital effects its mechanism of action by binding to GABA receptors and may also act at the NMDA receptor. When use as an adjunct with benzodiazepines, phenobarbital has been associated with decreased dosing requirements of the benzodiazepines. Further, some data have shown that use of phenobarbital may be associated with decreases in need for ICU admission or decreases in duration of mechanical ventilation. The use of oral or parenteral phenobarbital has been described as monotherapy in several studies. General findings have shown that phenobarbital is as effective as comparator agents. Some studies have used serum concentration monitoring of phenobarbital but there has not been a clear correlation of serum concentration and therapeutic efficacy determined. Lastly, use of phenobarbital as monotherapy should be limited to mild to moderate alcohol withdrawal.
+
+##### Vitamin replacement: B vitamins and folic acid.
+
+**Recommendations:**
+
+- When starting treatment for alcohol withdrawal, also give thiamine 100 mg PO/IV daily, folic acid 1 mg PO/IV daily, and a multivitamin PO daily. Continue giving these vitamins for 7–14 days.
+- Administer thiamine prior to any glucose-containing products to prevent precipitating Wernicke’s encephalopathy.
+- For patients with significant gastrointestinal symptoms or suspected Wernicke’s encephalopathy, IV administration of vitamins is recommended. Otherwise oral regimens are preferred.
+
+Nutritional deficiencies in patients with alcoholism are associated with significant morbidity and mortality. Clinical manifestations can range from relatively benign vitamin B deficient glossitis or vitamin A associated dermatitis to the extreme neurological manifestations of Korsakoff syndrome secondary to inadequate thiamine stores. Multiple mechanisms are involved in the generation of nutritional deficiency. Expect significant vitamin deficiency if more than 30% of daily caloric intake is from alcohol consumption. Among those who consume alcohol heavily, 80% are deficient in thiamine, 66% in folate, and more than half in pyridoxine.
+
+Replacement of vitamins B1 (thiamine), B2 (riboflavin), B6 (pyridoxine), and B9 (folic acid) has become the standard of care. This practice has been largely driven by the low cost and good safety profile of supplementation. No national guidelines exist to regarding the correct replacement dose. Table 6 shows our recommendations for daily dosing, which should continue for 7 to 14 days. Oral or parenteral formulations are equally effective and acceptable.
+
+Reserve IV supplementation for patients with significant GI symptoms. Patients with suspected Wernicke’s encephalopathy or Korsakoff syndrome should receive IV thiamine supplementation. To prevent acute thiamine deficiency, give thiamine before administering IV fluids containing glucose in patients with an alcohol use disorder.
+
+##### Miscellaneous pharmacotherapy.
+
+**Recommendations:**
+
+Do not use novel agents for the inpatient treatment of AWS at this time, due to insufficient evidence supporting their efficacy.
+
+Several novel agents have been studied for the treatment of AWS, but none have demonstrated superiority to the benzodiazepine-based approach described above. Examples of these include psychotropic analgesic nitrous oxide (PAN), magnesium, gamma-hydroxybutyrate (GHB), and baclofen.
+
+PAN is a purely outpatient regimen that has not gained acceptance in the United States. Although the correction of hypomagnesemia is standard supportive treatment in alcohol withdrawal, no evidence shows that magnesium supplementation alone is effective for treatment or prophylaxis of alcohol withdrawal.
+
+GHB research studies were limited by dizziness and vertigo. It also poses a risk of addiction and needs supervised administration.
+
+Baclofen has an acceptable safety profile and tolerability compared to diazepam, but there are insufficient data for its incorporation into guidelines at this time.
+
+##### Consultation.
+
+**Recommendations:**
+
+- Consider Critical Care consultation for patients with hemodynamic or respiratory instability, progression of symptoms despite maximum appropriate therapy, or high-intensity nursing requirements.
+- Transfer to a higher level of care is a multidisciplinary decision between the responsible physician, consult team, and nursing staff.
+- When treating pregnant patients, consult the Maternal-Fetal Medicine Service.
+- The general medicine service can assist with managing significant comorbid conditions.
+- The psychiatry service can provide support for concomitant psychiatric issues and medications.
+
+The protocols and treatment flow sheets have been designed to help the team provide step-by-step care for alcohol withdrawal. Consultation is appropriate in some cases. The following examples at UMHS illustrate special expertise to consider for various issues.
+
+Consider Critical Care consultation for patients with hemodynamic or respiratory instability, progression of symptoms despite maximum appropriate therapy, or high-intensity nursing requirements. Transfer to a higher level of care is a multidisciplinary decision between the treating physician, consulting physician and nursing staff.
+
+Pregnant patients are a unique population in whom medications may present risk to the fetus. Early consultation of Maternal-Fetal-Medicine is appropriate to guide management of pregnant patients experiencing AWS.
+
+The General Medicine Consult Service is available to assist with the management of AWS patients with significant medical comorbidities.
+
+The Inpatient Psychiatry Liaison Service can provide support for patients with concomitant psychiatric issues, or when it is necessary to treat off-protocol or during special circumstances, such as outpatient transition which may have medication restriction (eg, facilities that do not accept patients on benzodiazepine-based therapy).
+
+Occasionally, patients require fixed dose therapy in combination with symptom-triggered therapy for optimal control of symptom during hospitalization. Ask an expert consultation service to provide assistance. Specific dosing must be provided on a case-by-case basis.
+
+##### Preparation for hospital discharge.
+
+**Recommendations:**
+
+A patient with AWS can be discharged when fulfilling these criteria:
+
+- Symptoms of AWS have resolved.
+- Patient is no longer receiving benzodiazepine medications (or is receiving only minimal doses).
+- Metabolic derangements, including liver function test results, are appropriately improving.
+
+Do not provide “as needed” (prn) medications to manage symptoms following discharge.
+
+Provide patients with written information and guidance to support continued abstinence from alcohol.
+
+Patients managed for alcohol withdrawal using symptom-triggered therapy do not require additional supportive medications after discharge if they have demonstrated clinical stability for at least 24 hours.
+
+Coexistent metabolic derangements and conditions, including liver function test results, should be improving or at baseline prior to discharge. Reliable, adequate oral intake is important to support recovery, especially in patients with alcohol-induced pancreatitis.
+
+Patients who experienced altered sensorium during hospitalization should achieve baseline mental status prior to discharge. Emergency department discharge parameters (not specific to UMHS) have been established to manage patients who present with alcohol withdrawal seizures. According to the emergency medicine guidelines for alcohol withdrawal seizures, safe discharge to a detoxification center for patients presenting with alcohol-induced seizures is dependent on recovery of their baseline mental status, ability to safely ambulate, hemodynamic stability, and physician evaluation of the patient’s overall wellness to be safe in an environment outside of the hospital setting.
+
+Provide patients with written information and guidance to resources to support continued abstinence from alcohol after discharge. Patients should be specifically evaluated for the appropriateness of outpatient versus inpatient rehabilitation services, and provided information on how to contact these programs. At UMHS this is done by the General or Psychiatric Social Work Department.
+
+##### Hospital follow-up.
+
+**Recommendations:**
+
+Schedule a follow-up appointment with the patient’s primary care physician within 2 weeks of hospital discharge.
+
+As part of the initial follow-up evaluation, patient’s readiness for change should be assessed and patients should be linked to an alcohol treatment program. At UMHS, this counseling is provided by the Social Work Service.
+
+### Special Considerations: Preoperative Management of Patients at Risk for Alcohol Withdrawal
+
+**Recommendations:**
+
+- Assess risk of alcohol withdrawal syndrome using the AUDIT-C and History of Alcohol Withdrawal Syndrome screening questions, as for adult medical inpatients.
+- Counsel high-risk patients about the risk of alcohol withdrawal. Ask them to abstain from alcohol in the preoperative period.
+- Refer high-risk preoperative patients to Social Work to further assess risk, provide additional counseling, and guide referral for the treatment of alcohol use disorder.
+- Postoperatively immediately screen for signs and symptoms of alcohol withdrawal. If indicated, begin treatment (as described above).
+- Monitor postoperative vital signs and interpret abnormalities cautiously, considering the entire clinical situation.
+
+As many as 1 out of 5 perioperative patients has an alcohol use disorder, similar to the prevalence in the general population. Alcohol dependency is linked to a higher risk of numerous surgical complications, including infection and sepsis, acute respiratory distress syndrome (ARDS), cardiovascular complications such as arrhythmias and congestive heart failure, and bleeding related to thrombocytopenia.
+
+The preoperative assessment provides an opportunity to identify alcohol use disorder and reduce potential postsurgical complications. The use of short, validated screening instruments can identify at-risk alcohol consumption and related disorders. These tools can be administered during the preoperative visits and provide valuable information for clinicians to provide individualized care. We recommend the use of the AUDIT-C tool, as shown in Table 1.
+
+The optimal approach to patients identified as being at risk for perioperative alcohol withdrawal is not well defined. Counsel high-risk patients about the risk of alcohol withdrawal, and ask them to abstain from alcohol in the preoperative period. Some patients benefit from referral to Social Work to further assess risk, provide additional counseling, and guide referral for the treatment of alcohol use disorder. Delaying elective surgery in order to initiate treatment of alcohol use disorder may be appropriate.
+
+After surgery, immediately screen for signs and symptoms of alcohol withdrawal and, if needed, begin treatment (as described above). Interpret postoperative vital sign abnormalities cautiously, considering the entire clinical situation. For example, the vital sign abnormalities typically associated with alcohol withdrawal can also be seen with pain, anxiety, blood loss, sepsis, and other conditions. Therefore, the diagnosis of alcohol withdrawal in the postoperative setting requires a high level of clinical suspicion and a thoughtful approach to the patient.
+
+Many patients receive opioid medications in the postoperative setting to treat surgical pain. Use benzodiazepine medications at lower initial doses when coadministered with opioids, as in Table 5.
+
+### Related National Guidelines
+
+Many guidelines are related to alcohol use or dependence. Few national guidelines focus exclusively on hospitalized patients experiencing alcohol withdrawal. Of the existing guidelines that touch upon alcohol withdrawal, the UMHS Clinical Guideline on alcohol withdrawal is consistent with:
+
+- National Clinical Guideline Centre for Acute and Chronic Conditions. Alcohol-use disorders. Diagnosis and clinical management of alcohol-related physical complications. London (UK): National Institute for Health and Clinical Excellence (NICE); 2010 Jun. 30. (Clinical guideline; no. 100).
+- Screening, diagnosis and referral for substance use disorders. 2003 Aug (revised 2013 Aug). Michigan Quality Improvement Consortium - Professional Association.
+
+### Related National Performance Measures
+
+National measures related to the treatment of alcohol withdrawal.
+
+HEDIS: Initiation and Engagement of Alcohol and Other Drug Abuse or Dependence Treatment. The percentage of adolescent and adult patients with a new episode of alcohol or other drug (AOD) dependence who received the following:
+
+Initiation of AOD Treatment. The percentage of patients who initiate treatment through an inpatient AOD admission, outpatient visit, intensive outpatient encounter or partial hospitalization within 14 days of the diagnosis.
+
+Engagement of AOD Treatment. The percentage of patients who initiated treatment and who had two or more additional services with a diagnosis of AOD within 30 days of the initiation visit.
+
+National Committee for Quality Assurance: Follow-Up After Emergency Department Visit for Mental Illness or Alcohol and Other Drug Abuse or Dependence. The percentage of discharges for patients 18 years of age and older who had a visit to the emergency department with a primary diagnosis of mental health or alcohol or other drug dependence during the measurement year AND who had a follow-up visit with any provider with a corresponding primary diagnosis of mental health or alcohol or other drug dependence within 7- and 30-days of discharge.
+
+Four rates are reported:
+
+- The percentage of emergency department visits for mental health for which the patient received follow-up within 7 days of discharge.
+- The percentage of emergency department visits for mental health for which the patient received follow-up within 30 days of discharge.
+- The percentage of emergency department visits for alcohol or other drug dependence for which the patient received follow-up within 7 days of discharge.
+- The percentage of emergency department visits for alcohol or other drug dependence for which the patient received follow-up within 30 days of discharge.
+
+AMA-convened Physician Consortium for Performance Improvement: Preventive Care and Screening: Unhealthy Alcohol Use: Screening & Brief Counseling. Percentage of patients aged 18 years and older who were screened for unhealthy alcohol use using a systematic screening method at least once within the last 24 months AND who received brief counseling if identified as an unhealthy alcohol user.
+
+The Joint Commission: SUB-1 Alcohol Use Screening. Hospitalized patients 18 years of age and older who are screened within the first three days of admission using a validated screening questionnaire for unhealthy alcohol use. This measure is intended to be used as part of a set of 4 linked measures addressing Substance Use (SUB-1 Alcohol Use Screening; SUB-2 Alcohol Use Brief Intervention Provided or Offered; SUB-3 Alcohol and Other Drug Use Disorder Treatment Provided or Offered at Discharge; SUB-4 Alcohol and Drug Use: Assessing Status after Discharge [temporarily suspended]).
+
+### Guideline Development Methodology
+
+#### Funding
+
+The development of this guideline was funded by the UMHS.
+
+#### Guideline Development Team and Disclosures
+
+The multidisciplinary guideline development team consisted of:
+
+- Primary care physicians: Stephanie Czarnik, MD, Internal Medicine; Nell Kirst, MD, Family Medicine; Michael Lukela, MD, Internal Medicine.
+- Specialists: Cesar Alaniz, PharmD, Pharmacy; Scott Ciarkowski, PharmD, Pharmacy; Kelly Malloy, MD, Otolaryngology; Lisa Seyfried, MD, Psychiatry; David Somand, MD, Emergency Medicine.
+- Nursing: Mary Jo Kocan, MSN, RN, Nursing; Stephen Strobbe, PhD, RN, School of Nursing, Psychiatry; Winnie Wood, CNS, Nursing.
+- Guideline development methodologist: F. Jacob Seagull, PhD, Learning Health Sciences.
+- Literature search services were provided by informationists at the Taubman Health Sciences Library, University of Michigan Medical School.
+
+The UMHS endorses the Guidelines of the Association of American Medical Colleges and the Standards of the Accreditation Council for Continuing Medical Education that the individuals who present educational activities disclose significant relationships with commercial companies whose products or services are discussed. Disclosure of a relationship is not intended to suggest bias in the information presented, but is made to provide readers with information that might be of potential importance to their evaluation of the information.
+
+No relevant personal financial relationships with commercial entities: Cesar Alaniz, PharmD; Scott Ciakowski, PharmD; Stephanie Czarnik, MD; Nell Kirst, MD; Mary Jo Kocan, MSN, RN; Michael Lukela, MD; Kelly Malloy, MD; F. Jacob Seagull, PhD; Lisa Seyfried, MD; David Somand, MD; Stephen Strobbe, PhD, RN; Winnie Wood, CNS.
+
+#### Strategy for Literature Search
+
+Two different search strategies were used for this search, due to the inclusion of alcoholism in section 1.a. of the search. Due to the large retrieval, this search was limited to those articles that included some indication that the patients were hospitalized.
+
+Within the Medline (Ovid) database, the following search strategy was used for all but 1.a. of the search. This search is identified as Main in the search strategies document.
+
+1. *alcohol withdrawal delirium/ or *alcohol withdrawal seizures/ or delirium tremens.mp. or (alcohol adj5 withdrawal).ti.
+
+2. *alcoholism/ or *ethanol/ or exp *Alcohol-Related Disorders/
+
+3. exp *Substance Withdrawal Syndrome/
+
+4. 2 and 3
+
+5. 1 or 4
+
+The following strategy was used for 1.a. It is identified as Main1 in the search strategies document.
+
+1. exp *Alcohol-Induced Disorders/ or (alcohol and withdrawal).ti.
+
+2. *alcohol withdrawal delirium/ or *alcohol withdrawal seizures/
+
+3. delirium tremens.mp.
+
+4. *alcoholism/ or *ethanol/
+
+5. exp *Substance Withdrawal Syndrome/
+
+6. 4 and 5
+
+7. exp *Alcohol Drinking/ or exp *Alcohol-Related Disorders/
+
+8. 1 or 2 or 3 or 6 or 7
+
+9. hospital departments/ or admitting department, hospital/ or anesthesia department, hospital/ or cardiology service, hospital/ or exp emergency service, hospital/ or laboratories, hospital/ or “obstetrics and gynecology department, hospital”/ or oncology service, hospital/ or pathology department, hospital/ or pharmacy service, hospital/ or physical therapy department, hospital/ or psychiatric department, hospital/ or radiology department, hospital/ or respiratory therapy department, hospital/ or surgery department, hospital/ or urology department, hospital/ or exp hospital units/ or exp critical care/ or exp hospitalization/ or exp perioperative care/ or preoperative care/ or subacute care/ or exp terminal care/ or exp emergency medicine/
+
+10. inpatients/ or (inpatient* or hospitalized or hospitalised).ti,ab.
+
+11. 9 or 10
+
+12. 8 and 11
+
+Results were limited to: Humans, adults, English, and 2007 to current. The Main search retrieved 391 references. When the search hedges for Guidelines, Clinical Trials, and Cohort Studies were added, the base results are as follow:
+
+Alcohol Withdrawal Syndrome -Guidelines, total results were 10
+
+Alcohol Withdrawal Syndrome -Clinical Trials, total results were 58
+
+Alcohol Withdrawal Syndrome -Cohort Studies, total results were 51
+
+The Main1 search retrieved 1,043 references. When the search hedges for Guidelines, Clinical Trials, and Cohort Studies were added, the base results are as follow:
+
+Alcohol Withdrawal Syndrome -Guidelines, total results were 22
+
+Alcohol Withdrawal Syndrome -Clinical Trials, total results were 162
+
+Alcohol Withdrawal Syndrome -Cohort Studies, total results were 262
+
+The search was conducted in components each keyed to a specific causal link in a formal problem structure (available upon request). The search was supplemented with very recent clinical trials known to expert members of the panel. Negative trials were specifically sought. The search was a single cycle.
+
+Level of evidence supporting a diagnostic method or an intervention:
+
+A = systematic reviews of randomized controlled trials with or without meta-analysis,
+
+B = randomized controlled trials,
+
+C = systematic review of nonrandomized controlled trials or observational studies, nonrandomized controlled trials, group observation studies (cohort, cross-sectional, case-control),
+
+D = individual observation studies (case study/case series),
+
+E = expert opinion regarding benefits and harm
+
+Search details and evidence tables available at http://www.uofmhealth.org/provider/clinical-care-guidelines.
+
+#### Recommendations
+
+Guideline recommendations were based on prospective randomized controlled trials (RCTs) if available, to the exclusion of other data; if RCTs were not available, observational studies were admitted to consideration. If no such data were available for a given link in the problem formulation, expert opinion was used to estimate effect size. The “strength of recommendation” for key aspects of care was determined by expert opinion.
+
+The strength of recommendations regarding care were categorized as:
+
+I = Generally should be performed
+
+II = May be reasonable to perform
+
+III = Generally should not be performed
+
+#### Review and Endorsement
+
+Drafts of this guideline were reviewed in clinical conferences and by distribution for comment within departments and divisions of the University of Michigan Medical School to which the content is most relevant (listed alphabetically): Emergency Medicine, Family Medicine, Internal Medicine, Nursing, Otolaryngology, Pharmacy Services, Psychiatry.
+
+The final version of this guideline was endorsed by the Clinical Practice Committee of the University of Michigan Medical Group and by the Executive Committee for Clinical Affairs of the University of Michigan Hospitals and Health Centers.

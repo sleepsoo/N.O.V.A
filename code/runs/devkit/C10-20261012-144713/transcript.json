@@ -1,0 +1,392 @@
+{
+  "summary": {
+    "case_id": "C10",
+    "status": "expired",
+    "turns": 31,
+    "doctor_calls": 5,
+    "doctor_input_tokens": 7092,
+    "doctor_output_tokens": 5018,
+    "simulator_calls": 31,
+    "seconds": 1810.7,
+    "doctor_model": "openai/gpt-oss-20b",
+    "simulator_model": "openai/gpt-oss-20b"
+  },
+  "start_information": {
+    "opening": "이름은 최윤정이고, 나는 서른두 살 여자이다. 최근 석 달 동안 살이 많이 빠져서 병원에 오게 되었다. 원래 몸무게는 오십육 키로그람 정도였는데, 최근 석 달 사이에 칠 키로그람 정도 빠져서 지금은 사십구 키로그람 정도이다. 평소에는 몸무게 변화가 거의 없었는데, 이번에는 다이어트나 운동을 한 것도 아닌데 저절로 살이 빠져서 걱정이 되었다. 키는 백육십사 센티미터이다.",
+    "vital_signs": "혈압 : 138/72 mmHg\n맥박 : 102 회/분\n호흡 : 19 회/분\n체온 : 36.9°C"
+  },
+  "events": [
+    {
+      "turn": 1,
+      "action": "SAY",
+      "content": "살이 갑자기 빠져서 많이 걱정되셨겠어요.",
+      "effective_content": "살이 갑자기 빠져서 많이 걱정되셨겠어요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 많이 걱정돼요.",
+        "turn": 1,
+        "turns_remaining": 49
+      }
+    },
+    {
+      "turn": 2,
+      "action": "SAY",
+      "content": "그 뒤로 점점 심해지고 있나요?",
+      "effective_content": "그 뒤로 점점 심해지고 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 그렇습니다.",
+        "turn": 2,
+        "turns_remaining": 48
+      }
+    },
+    {
+      "turn": 3,
+      "action": "SAY",
+      "content": "일상생활에 지장이 얼마나 있으세요?",
+      "effective_content": "일상생활에 지장이 얼마나 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "가끔 숨이 차서 힘들어요.",
+        "turn": 3,
+        "turns_remaining": 47
+      }
+    },
+    {
+      "turn": 4,
+      "action": "SAY",
+      "content": "이 문제로 진료받은 적 있으세요?",
+      "effective_content": "이 문제로 진료받은 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "그걸 알고 싶어서 왔어요",
+        "turn": 4,
+        "turns_remaining": 46
+      }
+    },
+    {
+      "turn": 5,
+      "action": "SAY",
+      "content": "식사량은 예전과 비교해 어떠세요?",
+      "effective_content": "식사량은 예전과 비교해 어떠세요?",
+      "response": {
+        "status": "OK",
+        "content": "현재 많이 먹는 편이에요.",
+        "turn": 5,
+        "turns_remaining": 45
+      }
+    },
+    {
+      "turn": 6,
+      "action": "SAY",
+      "content": "더위나 추위를 많이 타세요?",
+      "effective_content": "더위나 추위를 많이 타세요?",
+      "response": {
+        "status": "OK",
+        "content": "더운 건 자주, 추운 건 별로 없어요.",
+        "turn": 6,
+        "turns_remaining": 44
+      }
+    },
+    {
+      "turn": 7,
+      "action": "SAY",
+      "content": "땀이 많아지셨나요?",
+      "effective_content": "땀이 많아지셨나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 밤에 많이 땀나요.",
+        "turn": 7,
+        "turns_remaining": 43
+      }
+    },
+    {
+      "turn": 8,
+      "action": "SAY",
+      "content": "손이 떨리세요?",
+      "effective_content": "손이 떨리세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 손이 떨려요.",
+        "turn": 8,
+        "turns_remaining": 42
+      }
+    },
+    {
+      "turn": 9,
+      "action": "SAY",
+      "content": "눈꺼풀이 부어오르나요?",
+      "effective_content": "눈꺼풀이 부어오르나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 눈꺼풀이 부어오르지 않아요.",
+        "turn": 9,
+        "turns_remaining": 41
+      }
+    },
+    {
+      "turn": 10,
+      "action": "SAY",
+      "content": "목 부위에 혹이 있나요?",
+      "effective_content": "목 부위에 혹이 있나요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 10,
+        "turns_remaining": 40
+      }
+    },
+    {
+      "turn": 11,
+      "action": "SAY",
+      "content": "소화가 잘 안되나요?",
+      "effective_content": "소화가 잘 안되나요?",
+      "response": {
+        "status": "OK",
+        "content": "그거는 잘 없어요.",
+        "turn": 11,
+        "turns_remaining": 39
+      }
+    },
+    {
+      "turn": 12,
+      "action": "SAY",
+      "content": "당뇨나 고혈압 있으세요?",
+      "effective_content": "당뇨나 고혈압 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 12,
+        "turns_remaining": 38
+      }
+    },
+    {
+      "turn": 13,
+      "action": "SAY",
+      "content": "다른 지병 있으세요?",
+      "effective_content": "다른 지병 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없습니다.",
+        "turn": 13,
+        "turns_remaining": 37
+      }
+    },
+    {
+      "turn": 14,
+      "action": "SAY",
+      "content": "결핵이나 간염 앓은 적 있으세요?",
+      "effective_content": "결핵이나 간염 앓은 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 14,
+        "turns_remaining": 36
+      }
+    },
+    {
+      "turn": 15,
+      "action": "SAY",
+      "content": "수술받으신 적 있으세요?",
+      "effective_content": "수술받으신 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 15,
+        "turns_remaining": 35
+      }
+    },
+    {
+      "turn": 16,
+      "action": "SAY",
+      "content": "지금 드시는 약 있으세요?",
+      "effective_content": "지금 드시는 약 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 없어요.",
+        "turn": 16,
+        "turns_remaining": 34
+      }
+    },
+    {
+      "turn": 17,
+      "action": "SAY",
+      "content": "약 알레르기 있으세요?",
+      "effective_content": "약 알레르기 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 없어요.",
+        "turn": 17,
+        "turns_remaining": 33
+      }
+    },
+    {
+      "turn": 18,
+      "action": "SAY",
+      "content": "생리 양이나 기간이 변했나요?",
+      "effective_content": "생리 양이나 기간이 변했나요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 생리량이 줄었어요.",
+        "turn": 18,
+        "turns_remaining": 32
+      }
+    },
+    {
+      "turn": 19,
+      "action": "SAY",
+      "content": "마지막 생리는 언제였어요?",
+      "effective_content": "마지막 생리는 언제였어요?",
+      "response": {
+        "status": "OK",
+        "content": "지난생리는 2주전이에요.",
+        "turn": 19,
+        "turns_remaining": 31
+      }
+    },
+    {
+      "turn": 20,
+      "action": "SAY",
+      "content": "가족 중 비슷한 병 있는 분 계세요?",
+      "effective_content": "가족 중 비슷한 병 있는 분 계세요?",
+      "response": {
+        "status": "OK",
+        "content": "아쉽게도 없습니다.",
+        "turn": 20,
+        "turns_remaining": 30
+      }
+    },
+    {
+      "turn": 21,
+      "action": "SAY",
+      "content": "가족 중 당뇨나 고혈압 있으세요?",
+      "effective_content": "가족 중 당뇨나 고혈압 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "아쉽게도 없습니다.",
+        "turn": 21,
+        "turns_remaining": 29
+      }
+    },
+    {
+      "turn": 22,
+      "action": "SAY",
+      "content": "담배 피우세요?",
+      "effective_content": "담배 피우세요?",
+      "response": {
+        "status": "OK",
+        "content": "아니요, 안 해요.",
+        "turn": 22,
+        "turns_remaining": 28
+      }
+    },
+    {
+      "turn": 23,
+      "action": "SAY",
+      "content": "술은 얼마나 드세요?",
+      "effective_content": "술은 얼마나 드세요?",
+      "response": {
+        "status": "OK",
+        "content": "한 달에 한두 번",
+        "turn": 23,
+        "turns_remaining": 27
+      }
+    },
+    {
+      "turn": 24,
+      "action": "SAY",
+      "content": "무슨 일 하세요?",
+      "effective_content": "무슨 일 하세요?",
+      "response": {
+        "status": "OK",
+        "content": "사무실에서 일해요.",
+        "turn": 24,
+        "turns_remaining": 26
+      }
+    },
+    {
+      "turn": 25,
+      "action": "SAY",
+      "content": "가슴 두근거림 있으세요?",
+      "effective_content": "가슴 두근거림 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 가슴이 빨리 뛰어요",
+        "turn": 25,
+        "turns_remaining": 25
+      }
+    },
+    {
+      "turn": 26,
+      "action": "SAY",
+      "content": "숨이 찬 적 있으세요?",
+      "effective_content": "숨이 찬 적 있으세요?",
+      "response": {
+        "status": "OK",
+        "content": "네, 가끔 숨이 차요.",
+        "turn": 26,
+        "turns_remaining": 24
+      }
+    },
+    {
+      "turn": 27,
+      "action": "EXAM",
+      "content": "활력징후 측정하겠습니다",
+      "effective_content": "r03",
+      "response": {
+        "status": "OK",
+        "result": "138/72mmHg, 102회/분 규칙적, 19회/분, 36.9°C",
+        "turn": 27,
+        "turns_remaining": 23
+      }
+    },
+    {
+      "turn": 28,
+      "action": "EXAM",
+      "content": "전반적 외관 시진하겠습니다",
+      "effective_content": "r01",
+      "response": {
+        "status": "OK",
+        "result": "급성 병색(-), 마른 체형, 안절부절(+) 경도",
+        "turn": 28,
+        "turns_remaining": 22
+      }
+    },
+    {
+      "turn": 29,
+      "action": "EXAM",
+      "content": "심음 청진하겠습니다",
+      "effective_content": "r14",
+      "response": {
+        "status": "OK",
+        "result": "S1·S2 명료, 규칙적 102회/분, 수축기 심잡음 Gr.2/6(흉골좌연)",
+        "turn": 29,
+        "turns_remaining": 21
+      }
+    },
+    {
+      "turn": 30,
+      "action": "SAY",
+      "content": "갑상선 기능 항진증 가능성이 높아 보여요.",
+      "effective_content": "갑상선 기능 항진증 가능성이 높아 보여요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 더욱 검사 부탁해요.",
+        "turn": 30,
+        "turns_remaining": 20
+      }
+    },
+    {
+      "turn": 31,
+      "action": "SAY",
+      "content": "검사 후 치료를 정하고, 심해지면 바로 오세요.",
+      "effective_content": "검사 후 치료를 정하고, 심해지면 바로 오세요.",
+      "response": {
+        "status": "OK",
+        "content": "네, 검사 부탁해요.",
+        "turn": 31,
+        "turns_remaining": 19
+      }
+    }
+  ]
+}

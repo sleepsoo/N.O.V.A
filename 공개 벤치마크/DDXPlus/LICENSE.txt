@@ -1,0 +1,12 @@
+DDXPlus Dataset (English), version 2
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Source: https://doi.org/10.6084/m9.figshare.22687585.v2
+Files in this folder are unmodified copies of the figshare release.
+
+Attribution:
+Arsene Fansi Tchango, Rishab Goel, Zhi Wen, Julien Martel, Joumana Ghosn.
+"DDXPlus: A New Dataset For Automatic Medical Diagnosis."
+NeurIPS 2022 Datasets and Benchmarks Track. arXiv:2205.09148.
