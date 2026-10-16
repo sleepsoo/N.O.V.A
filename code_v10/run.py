@@ -64,6 +64,8 @@ DEFAULTS = {
     'PAIR_MERGE': 0,           # 단일 항목 은행 질문 → 같은 계통 짝 질문(LLM 제안 + 검증기, 호출 1회)
     'ICE_PAIR': 0,             # 걱정 단독 질문 → 걱정·기대 짝
     'EFFORT_PAIR': 'low',
+    # v13: 턴 가치 재배분(진찰 행 = 확실한 채점 항목, 설명 줄 = 정보 0) — TURN_PRESET t34x와 함께
+    'V13': 0,                  # 설명 5문장 슬롯(치료 유지)·성인 입원·수술 필수 해제·저수익 진찰부터 밀어내기
     'TURN_PRESET': 't34',      # lean38 | bal44 | comm46 | full48 | t35 | t34(v8)
     'INTERVIEW_Q': 17,         # v8: 첫 개방형 질문 제외 문진 단위 수(ICE 포함) — 프리셋이 덮어씀
     # 턴 상한: 문진+진찰+설명(+환자 질문 답) 합계가 TURN_CAP을 넘지 않게. 문진은 진찰·설명·답 ANSWER_RESERVE턴을 먼저 남긴다
@@ -113,6 +115,9 @@ PRESETS = {
     't34': {'INTERVIEW_Q': 17, 'EXAM_N': 7, 'EXPLAIN_N': 7, 'ANSWER_MAX': 2},
     # v10c: 같은 34턴에서 문진 1 → 진찰 1(진찰 행 가설)
     't34e': {'INTERVIEW_Q': 16, 'EXAM_N': 8, 'EXPLAIN_N': 7, 'ANSWER_MAX': 2},
+    # v13 34턴(턴 가치 재배분): 개방 1 + 문진 15 + 진찰 11(활력 포함) + 설명 5문장 + '궁금하신 점' 1 + 답 1
+    't34x': {'INTERVIEW_Q': 15, 'EXAM_N': 11, 'EXPLAIN_N': 6, 'ANSWER_MAX': 1,
+             'EXPLAIN_MIN': 6, 'ANSWER_RESERVE': 1, 'EXPLAIN_MAX_LINES': 5},
 }
 
 LAST_RUN = {}  # 로컬 도구(tools/)가 실행 뒤 통계를 읽는 용도. 제출 환경에서는 쓰지 않음.
@@ -206,6 +211,7 @@ def consult(client, state):
         from agent import explain as _ex, say as _say
         _ex.apply_v11(bool(cfg.get('SAY_V11')))
         _say.QUESTION_LINE = _say.QUESTION_LINE_V11 if cfg.get('SAY_V11') else _say.QUESTION_LINE_BASE
+        _ex.apply_v13(bool(cfg.get('V13')))
     except Exception as exc:  # noqa: BLE001
         log_error(f'v11 say setup skipped: {type(exc).__name__}: {exc}')
     guidelines.set_index((state or {}).get('guidelines') if isinstance(state, dict) else None)

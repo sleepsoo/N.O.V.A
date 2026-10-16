@@ -599,8 +599,24 @@ def apply_v11(on: bool) -> None:
         SAY_SLOTS = list(SAY_SLOTS_BASE)
 
 
-def say_slots(n: int) -> list[tuple[str, str]]:
-    """n문장 슬롯(말하는 순서): 5=진단·기전·걱정·검사·경고, 6=+치료(6 핵심), 7=+재진·생활."""
+# v13: 설명 5문장(+질문 1 + 답 1 = 7턴)으로 줄일 때도 치료 줄을 지킨다. 걱정 질환이 있으면 걱정 직답, 없으면 기전.
+SLOT5_V13 = False
+# 치료 줄에 예후 문구('좋아져요')를 넣어, 설명 중 '치료하면 좋아질까요?' 질문을 이 줄을 당겨 답한다(답 턴 0)
+TREAT_V13_DESC = ("치료 방법(계열명)·기간 + 좋아지는 경과를 한 문장으로(예: '호르몬 낮추는 약으로 1~2년 조절하면 대부분 좋아져요.'). "
+                  "용량 숫자·'처방해 드려요'·'나중에 정해요' 금지")
+
+
+def apply_v13(on: bool) -> None:
+    global SLOT5_V13
+    SLOT5_V13 = bool(on)
+
+
+def say_slots(n: int, worry: bool = False) -> list[tuple[str, str]]:
+    """n문장 슬롯(말하는 순서): 5=진단·기전·걱정·검사·경고, 6=+치료(6 핵심), 7=+재진·생활.
+    v13(SLOT5_V13) 5문장 = 진단·(걱정|기전)·검사(+재진 시점)·치료·경고."""
+    if SLOT5_V13 and n == 5:
+        keys = ['dx', 'worry' if worry else 'mech', 'tests', 'treat', 'warn']
+        return [(k, TREAT_V13_DESC) if k == 'treat' else s for k in keys for s in SAY_SLOTS if s[0] == k]
     if n <= 3:
         keys = ['dx', 'tests', 'warn']
     elif n == 4:
@@ -614,7 +630,7 @@ def say_slots(n: int) -> list[tuple[str, str]]:
 
 def say_v8(enc, plan: dict, n: int, k) -> list[str]:
     c = _context(enc)
-    slots = say_slots(n)
+    slots = say_slots(n, bool(_worry_word(enc)))
     p = {kk: _list(plan.get(kk))[:5] for kk in ('tests', 'treatment', 'follow_up')}
     must = [s for _, s in (k or {}).get('must_say') or []]
     kb_t = ''
@@ -821,6 +837,9 @@ def build_slot_lines(enc, raw: list[str], keys: list[str], k, plan, checks=None)
             checks.append({'must_say': s, 'replaces': e[1]})
             e[1], e[2] = s, True
         else:
+            if SLOT5_V13 and len(entries) >= 5:
+                checks.append({'must_say_skipped_v13': s})   # v13: 설명 5줄 상한(중간 질문에 답할 턴을 남긴다)
+                continue
             sl = saymod.guess_slot(s, enc.dx or '')
             pos = next((i for i, e in enumerate(entries) if e[0] == 'warn'), len(entries))
             entries.insert(pos, [sl, s, True])
@@ -874,7 +893,7 @@ def plan_and_say_v8(enc) -> dict:
         out['fallback'] = True
         res = kb_fallback(enc, k)
     plan = {kk: _list(res.get(kk)) for kk in ('tests', 'treatment', 'disposition', 'follow_up', 'education')}
-    keys = [kk for kk, _ in say_slots(n)]
+    keys = [kk for kk, _ in say_slots(n, bool(_worry_word(enc)))]
     raw = say_v8(enc, plan, n, k)
     if len(raw) < 3:
         raw = []   # 슬롯별 템플릿(KB·진단·양성 사실)으로 채운다
@@ -956,7 +975,8 @@ def explain_loop_v8(enc, lines: list[str], faq: dict, quick=False):
         if not t or t == saymod.QUESTION_LINE or any(t == it['text'] for it in items):
             continue
         sl = slot_of.get(t) or saymod.guess_slot(t, dx_ko)
-        items.append({'text': t, 'slot': sl, 'prio': saymod.SLOT_PRIO.get(sl, 10) + (50 if t in keep else 0)})
+        boost = 40 if (SLOT5_V13 and sl == 'worry') else 0   # v13: 기전 줄 대신 들어간 걱정 직답 줄은 치료 줄 다음까지 지킨다
+        items.append({'text': t, 'slot': sl, 'prio': saymod.SLOT_PRIO.get(sl, 10) + boost + (50 if t in keep else 0)})
     said: list[str] = []
     dropped: list[dict] = []
     st = {'mid': 0}

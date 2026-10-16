@@ -711,6 +711,10 @@ def run_v8(enc):
     if cfg.get('BANK_V10') or cfg.get('HX_MUST'):
         units = cpx.apply_v10(units, prof, cfg)
         built['units'] = units
+    if cfg.get('V13') and not prof.get('pediatric'):
+        # v13: 성인 입원·수술력은 모범기록 3례 중 성인 2례에서 빈칸(채점 항목 아님) → 필수 해제·배경 등급(자리가 남을 때만)
+        units = [cpx._clone(u, must=False, prio=3) if u['id'] == 'hx_admit_op' else u for u in units]
+        built['units'] = units
     budget = int(cfg.get('INTERVIEW_Q', 17))
     st = CpxState(built, [], [])
     enc.cpx = st
@@ -933,6 +937,9 @@ POS_EXAM_RULES = (
 )
 
 
+LOW_YIELD_EXAMS = ('cervical_ln', 'abd_palp', 'abd_insp', 'conj', 'general', 'chest_insp')
+
+
 def _pos_exam_order(enc, order: list[str]) -> list[str]:
     from . import banks
     pos_text = []
@@ -966,6 +973,8 @@ def _pos_exam_order(enc, order: list[str]) -> list[str]:
     cats = set(prof.get('categories') or []) | {(st.built.get('main') if st else None)}
     guard = {'heart', 'lung'} if (cats & CARDIO_EXAM_CATS or _cardio_positive(enc, st)) else set()
     movable = [i for i in reversed(rest) if i not in want and i not in guard]
+    if enc.cfg.get('V13'):   # 범용 선별 진찰(림프절·복부 촉진·결막 등)을 먼저 밀어낸다 — 계통 특이 진찰이 채점 행일 확률이 높다
+        movable.sort(key=lambda i: 0 if i in LOW_YIELD_EXAMS else 1)
     for m in missing:
         if not movable:
             break
