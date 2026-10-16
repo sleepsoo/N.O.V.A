@@ -8,6 +8,7 @@ import re
 from . import guidelines
 from . import kb as kbmod
 from . import say as saymod
+from . import urgency as urg
 from .facts import table as facts_table
 from .llm import ask, ask_json
 from .util import is_similar, log, nfc
@@ -491,12 +492,23 @@ def render_plan(enc, plan: dict, k) -> dict:
     treat = dedup_lines(treat)
     disp = list((k or {}).get('disposition') or plan.get('disposition') or [])
     va = vitals_assessment(enc).lstrip('- ')
-    if '불안정' not in va and any(re.search(r'입원.{0,6}(필요|불필요|고려)', d) for d in disp):
+    em = getattr(enc, 'urgency', None) or {}
+    lv = em.get('level', 'routine')
+    if lv == 'emergency':   # v14: '입원 불필요, 외래 추적' 대신 응급 의뢰 한 줄 + LLM 줄 중 외래·귀가 문구 제거
+        rest = [d for d in disp if not re.search(r'외래\s*추적|입원\s*(은\s*)?(불필요|고려)|귀가|활력징후|경과\s*관찰', d)]
+        disp = [urg.emergency_disposition(enc, em, vitals_assessment)] + rest
+    elif '불안정' not in va and any(re.search(r'입원.{0,6}(필요|불필요|고려)', d) for d in disp):
         disp.insert(0, va.split(' → ')[0])
     else:
         disp.insert(0, va)
+    if lv == 'urgent' and not any(re.search(r'(\d\s*~?\s*\d?\s*일\s*(내|이내|뒤|후)|이틀|사흘|당일|조기\s*재진|빠른\s*재진)', d) for d in disp):
+        disp.append('급성 경과 → 2~3일 내 조기 재진으로 치료 반응·악화 여부 확인')
     disp = dedup_lines([safe_plan_line(d, 'disposition', admit_if) for d in disp])
     fu = list(plan.get('follow_up') or [])
+    if lv == 'emergency':
+        fu = [f for f in fu if not (re.search(r'재진|재방문|외래', f) and not re.search(r'응급', f))] + [urg.EMERG_FU]
+    elif lv == 'urgent' and not any(re.search(r'\d\s*~?\s*\d?\s*일|당일|이틀|사흘', f) for f in fu if re.search(r'재진', f)):
+        fu = [f for f in fu if not re.search(r'^\W*재진\s*:', f)] + [urg.URGENT_FU]
     if not any(re.search(r'(즉시|바로|응급)', f) for f in fu):
         fu.append(f"즉시 내원 : {(k or {}).get('red_flags') or '증상 악화, 호흡곤란, 흉통, 의식 변화, 고열'}")
     ec = (k or {}).get('early_contact')
@@ -550,6 +562,9 @@ def plan_v8(enc, k) -> dict:
             "- treatment: 조건부('검사 확인 후 ~ 고려', '금기(문진에서 확인한 것 명시) 확인 후'). 약은 계열명만, 용량·횟수 숫자 금지. "
             '비약물 치료 포함. 요청이 있으면 결정과 이유 한 줄. 적응증 없는 약 금지.\n'
             "- disposition: 외래/의뢰/응급 + 근거(활력징후·위험 징후 유무), 입원 고려 기준 한 줄.\n"
+            '- urgency: "emergency"(오늘 응급실·당일 수술/입원 평가가 표준: 급성 복막 징후·급성 관상동맥·대동맥·뇌혈관·수막염·'
+            '자궁외임신·염전·케톤산증 등) | "urgent"(2~3일 내 재진·조기 외래 평가) | "routine"(1~2주 뒤 결과 확인). '
+            '주진단과 놓치면 안 될 감별을 함께 보고 보수적으로.\n'
             "- follow_up: 4줄 형식 — '재진 : 기간과 확인할 것', '모니터링 : 치료 중 간격과 항목', '의뢰 기준 : 어떤 소견이면 어느 과', "
             "'즉시 내원 : 구체적 경고 증상(약 부작용 신호 포함)'.\n"
             '- education: 질환 설명, 검사 이유, 치료 선택지·기간, 생활 수칙, 경고 증상.\n'
@@ -559,7 +574,7 @@ def plan_v8(enc, k) -> dict:
             '[FAQ] 환자가 물을 만한 질문에 대한 28자 이내 답(존댓말 평서문, 질문의 핵심에 먼저 직접 답, 기간·예후는 일반적 범위로): '
             'prognosis, serious, tests, treatment, results, lifestyle, duration, prescribe(해당 시).\n'
             '출력: {"tests": [{"name": "...", "reason": "..."}], "treatment": [...], "disposition": [...], "follow_up": [...],\n'
-            ' "education": [...], "faq": {"prognosis": "...", ...}}')
+            ' "education": [...], "urgency": "emergency|urgent|routine", "faq": {"prognosis": "...", ...}}')
     res = ask_json(enc.client, enc.budget, ROLE, user, effort=enc.cfg.get('EFFORT_PLAN_P', 'medium'), max_tokens=8000,
                    tag='plan_p', want=dict, tries=2, max_wait=300,
                    validate=lambda v: isinstance(v.get('tests'), list) and len(v['tests']) >= 1)
@@ -638,9 +653,13 @@ def say_v8(enc, plan: dict, n: int, k) -> list[str]:
         dur = ((k.get('faq') or {}).get('duration') or '').strip()
         kb_t = (f"치료 참고(지식표): {[str(t)[:70] for t in (k.get('treatment') or [])[:3]]}"
                 + (f" / 기간: {dur}" if dur else '') + '\n')
+    lv = urg.level(enc)
+    urg_txt = {'emergency': '긴급도: 응급 — 검사 줄은 오늘 바로 응급실 안내, 치료 줄은 응급실 평가 뒤 결정됨을 알림. 재진 주 단위 금지\n',
+               'urgent': '긴급도: 급성 — 재진은 2~3일 뒤, 악화 시 당일 내원\n'}.get(lv, '')
     user = (f"환자: {enc.profile.get('age')}세 {c['sex']}, 정보 제공자 {enc.profile.get('informant')}, 주진단: {enc.dx}\n"
             f"환자가 말한 양성 증상: {c['pos'][:12]}\n진찰 이상 소견: {c['abn'][:8]}\n환자 걱정(ICE): {c['ice']}\n"
-            f"계획 요약: 검사 {p['tests']} / 치료 {p['treatment']} / 추적 {p['follow_up']}\n"
+            + urg_txt
+            + f"계획 요약: 검사 {p['tests']} / 치료 {p['treatment']} / 추적 {p['follow_up']}\n"
             + kb_t
             + (f"반드시 포함할 안전 문장(그대로 쓰기): {must}\n" if must else '')
             + f'[SAY 규칙] 정확히 {len(slots)}문장, 각 공백 포함 28자 이내, 쉬운 존댓말 평서문 한 문장(물음표 금지), 영어 약어 금지(MRI·CT만), '
@@ -673,6 +692,13 @@ def _dx_names(enc) -> tuple[str, str]:
 
 
 def _followup_phrase(enc, k, plan) -> str:
+    lv = urg.level(enc)
+    if lv == 'urgent':   # v14: 급성 질환은 2~3일 내 재진(LLM 계획이 더 짧게 잡았으면 그대로)
+        for s in list(plan.get('follow_up') or []):
+            m = re.search(r'(\d+\s*(?:~\s*\d+\s*)?일)\s*(?:뒤|후|안에|내|쯤)', nfc(str(s)))
+            if m:
+                return re.sub(r'\s+', '', m.group(1)) + ' 뒤'
+        return '2~3일 뒤'
     src = list(plan.get('follow_up') or []) + list((k or {}).get('follow_up') or []) + list((k or {}).get('say') or [])
     for s in src:
         m = re.search(r'(\d+\s*(?:~\s*\d+\s*)?(?:일|주|개월|달))\s*(?:뒤|후|안에|내|쯤)', nfc(str(s)))
@@ -744,6 +770,8 @@ def slot_candidates(slot: str, enc, k, plan) -> list[str]:
         out += [faq.get('serious', '')] + kb_say
         return out + [f'진찰 소견상 {short} 가능성이 가장 높아요.', '진찰 소견상 큰 병 가능성은 낮아 보여요.']
     if slot == 'tests':
+        if urg.level(enc) == 'emergency':
+            return [urg.EMERG_SAY, urg.EMERG_SAY_SHORT]
         good = [s for s in kb_say if saymod.FOLLOWUP_RE.search(s) and saymod.TEST_RE.search(s)]
         return good + _tests_line(enc, k, plan) + [s for s in kb_say if saymod.TEST_RE.search(s)]
     if slot == 'treat':
@@ -845,6 +873,26 @@ def build_slot_lines(enc, raw: list[str], keys: list[str], k, plan, checks=None)
             entries.insert(pos, [sl, s, True])
             checks.append({'must_say': s, 'added_as': sl})
 
+    # v14 응급: 검사 줄 = 응급실 안내(필수), 재진 '…주 뒤' 문구가 든 다른 줄은 제거
+    if urg.level(enc) == 'emergency':
+        if not any('응급실' in e[1] for e in entries):
+            e = next((e for e in entries if e[0] == 'tests'), None)
+            if e is not None:
+                checks.append({'emergency_tests': urg.EMERG_SAY, 'replaces': e[1]})
+                e[1], e[2] = urg.EMERG_SAY, True
+            else:
+                entries.insert(min(2, len(entries)), ['tests', urg.EMERG_SAY, True])
+        for e in entries:
+            if '응급실' in e[1]:
+                e[2] = True
+        entries = [e for e in entries if not (saymod.FOLLOWUP_RE.search(e[1]) and '응급' not in e[1])]
+    if urg.level(enc) == 'urgent':   # v14 급성: LLM 줄의 '…주 뒤' 재진을 2~3일 뒤로
+        for e in entries:
+            if re.search(r'\d+\s*(?:~\s*\d+\s*)?(?:주|개월|달)\s*(?:뒤|후|안에|내)', e[1]):
+                new = re.sub(r'\d+\s*(?:~\s*\d+\s*)?(?:주|개월|달)\s*(?:뒤|후|안에|내)', '2~3일 뒤', e[1])
+                if len(nfc(new)) <= 30 and not saymod.say_problem(new):
+                    checks.append({'urgent_followup': new, 'replaces': e[1]})
+                    e[1] = new
     # 공감(진단 줄) + 환자가 말한 걱정 질환 직답(걱정 줄)
     for e in entries:
         if e[0] == 'dx' and not saymod.EMPATHY_RE.search(e[1]):
@@ -863,8 +911,8 @@ def build_slot_lines(enc, raw: list[str], keys: list[str], k, plan, checks=None)
                 checks.append({'worry_ice': c, 'replaces': e[1]})
                 e[1] = c
 
-    # 재진 시점: 어느 줄에도 없으면 검사 줄에 넣는다(생활 줄은 먼저 빠질 수 있음)
-    if not any(saymod.FOLLOWUP_RE.search(e[1]) for e in entries):
+    # 재진 시점: 어느 줄에도 없으면 검사 줄에 넣는다(생활 줄은 먼저 빠질 수 있음). 응급이면 재진 대신 응급실 안내
+    if urg.level(enc) != 'emergency' and not any(saymod.FOLLOWUP_RE.search(e[1]) for e in entries):
         e = next((e for e in entries if e[0] == 'tests'), None)
         if e is not None:
             prev = [x[1] for x in entries if x is not e]
@@ -893,6 +941,7 @@ def plan_and_say_v8(enc) -> dict:
         out['fallback'] = True
         res = kb_fallback(enc, k)
     plan = {kk: _list(res.get(kk)) for kk in ('tests', 'treatment', 'disposition', 'follow_up', 'education')}
+    urg.assess(enc, k, res)
     keys = [kk for kk, _ in say_slots(n, bool(_worry_word(enc)))]
     raw = say_v8(enc, plan, n, k)
     if len(raw) < 3:

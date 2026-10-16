@@ -612,9 +612,11 @@ def _llm_units(enc, units: list[dict], bank: bool, built: dict | None = None) ->
             log(f'llm contra rejected ({why}): {d["q"]}')
             continue
         # 은행 범주는 필수 알레르기·천식 단위가 이미 있으므로 배경(prio 3) — 은행·필수 문항을 밀어내지 않게. 은행 밖이면 핵심(prio 1)
-        out.append(cpx.U(f'llm_contra{k}', 'hx', 3 if bank else 1, d['q'],
+        # v14: 은행 범주에서도 치료 금기·안전 질문은 감별 등급(prio 2)·safety — 숨은 증례의 '위험도 평가 불완전' 감점 대응
+        v14 = bool((getattr(enc, 'cfg', None) or {}).get('V14'))
+        out.append(cpx.U(f'llm_contra{k}', 'hx', (2 if v14 else 3) if bank else 1, d['q'],
                          [(f'llm_contra{k}', d['label'], _label_kw(d['label']))],
-                         d['sys'] if d['sys'] in ('hx', 'meds') else 'hx', safety=not bank))
+                         d['sys'] if d['sys'] in ('hx', 'meds') else 'hx', safety=(not bank) or v14))
     if bank:
         if llm.get('discriminators'):
             log(f"llm discriminators dropped (bank category): {[d['q'] for d in llm['discriminators']]}")
@@ -909,9 +911,72 @@ def exam_plan_v8(enc) -> list[str]:
     for i in order + extra:
         if i not in out and i in banks.EXAM_BY_ID:
             out.append(i)
+    # v14: 은행이 강하지 않은 범주(숨은 증례 다수)는 감별·양성 사실 기반 LLM 진찰 선택을 핵심 3개 뒤에 넣는다
+    if (enc.cfg or {}).get('V14') and (built.get('strength') or 'weak') != 'strong':
+        n = int(enc.cfg.get('EXAM_N', 7))
+        head = out[:4]
+        picks = llm_exam_pick(enc, head, max(0, n - len(head)))
+        if picks:
+            out = head + [i for i in picks if i not in head] + [i for i in out if i not in head and i not in picks]
+            log(f'v14 exam llm picks: {picks}')
+    if (enc.cfg or {}).get('V14'):   # 창이 비면(범주 표 없음) 표준 기본 진찰로 채운다 — 빈 턴 방지
+        out += [i for i in bank2.CORE12 if i not in out and i in banks.EXAM_BY_ID]
     if (enc.cfg or {}).get('EXAM_POS'):
         out = _pos_exam_order(enc, out)
     return out
+
+
+def llm_exam_pick(enc, have: list[str], need: int) -> list[str]:
+    """진찰 은행 메뉴(범주·핵심·조건부 필터)에서 LLM이 need개를 고른다(id만, 목록 밖 금지). 실패 시 []."""
+    from . import banks
+    cfg = enc.cfg
+    prof = enc.profile or {}
+    if need <= 0 or not enc.budget.can_call(cfg['CALL_RESERVE']):
+        return []
+    cats = list(prof.get('categories') or [])
+    diff_txt = ' '.join(enc.differentials or []) + ' ' + (prof.get('cc') or '')
+    in_cat = {i for c in cats for i in bank2.CATEGORY_EXAMS.get(c, [])}
+    st = getattr(enc, 'cpx', None)
+    weak = not in_cat or (st is not None and (st.built.get('strength') or 'weak') == 'weak')
+    # 약한 범주(은행 밖 주호소): 진찰 은행 전체를 메뉴로(귀·눈·관절 등 범주 표에 없는 진찰도 고를 수 있게). 중간 강도: 범주 표 + 공통
+    menu_ids = ({e[0] for e in banks.EXAM_BANK} if weak else
+                in_cat | set(bank2.CORE12) | {'gait', 'cervical_ln', 'skin_temp', 'radial', 'post_tremor', 'dtr', 'power',
+                                              'bowel', 'jvp', 'orthostatic', 'sensory', 'eom', 'periph', 'joint', 'spine'})
+    allowed = []
+    for e in banks.EXAM_BANK:
+        i = e[0]
+        if i in have or i not in menu_ids or i in enc.blacklist:
+            continue
+        if i in bank2.RISKY_EXAMS and i not in in_cat:
+            continue
+        if i in banks.CONDITIONAL_EXAMS and not re.search(banks.CONDITIONAL_EXAMS[i], diff_txt):
+            continue
+        allowed.append(e)
+    if not allowed:
+        return []
+    pos, neg = [], []
+    for e in enc.ledger:
+        if e['kind'] == 'SAY' and e.get('phase') in ('interview', 'first') and not e.get('refused'):
+            (neg if re.match(r'\s*(아니|없|안\s)', e.get('reply') or '') else pos).append(
+                f"{e.get('label') or e['text']}: {(e.get('reply') or '')[:30]}")
+    menu = '\n'.join(f'{e[0]} | {e[1].replace("하겠습니다", "").strip()} | {e[2]}' for e in allowed)
+    sys_prompt = ('신체진찰 항목을 고릅니다. 아래 목록의 id만 쓰고(목록 밖 진찰 금지), 같은 부위·같은 목적은 중복하지 마세요. '
+                  '감별진단을 확인·배제하는 진찰과 양성 증상 계통의 진찰을 먼저, 표준 기본 진찰(심음·폐 청진, 복부 촉진, 결막, 의식)은 '
+                  '남는 자리에. JSON 하나만 출력하세요.\n진찰 목록(id | 진찰 | 계통):\n' + menu)
+    sex = {'F': '여', 'M': '남'}.get(prof.get('sex'), '?')
+    user = (f"환자 요약: {prof.get('age')}세 {sex}, 주호소 {prof.get('cc')}, 카테고리 {cats}\n"
+            f"문진 핵심(양성): {pos[:25]}\n(음성): {neg[:20]}\n현재 감별진단: {enc.differentials}\n"
+            f"이미 하기로 한 진찰: {have}\n고를 개수: {need}\n"
+            '출력: {"exam_ids": ["중요한 순서"]}')
+    res = ask_json(enc.client, enc.budget, sys_prompt, user, effort=cfg['EFFORT_EXAMS'], max_tokens=6000,
+                   tag='exams_v14', want=dict, tries=1, reserve=cfg['CALL_RESERVE'])
+    allowed_ids = {e[0] for e in allowed}
+    out = []
+    for i in (res or {}).get('exam_ids') or []:
+        i = str(i).strip()
+        if i in allowed_ids and i not in out:
+            out.append(i)
+    return out[:need]
 
 
 # v10: 문진에서 양성으로 나온 증상 계통의 진찰을 진찰 창(활력 + EXAM_N) 안으로 당긴다(채점기는 양성 계통의 해당 진찰을 기대).

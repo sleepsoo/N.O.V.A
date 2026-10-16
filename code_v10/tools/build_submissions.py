@@ -28,8 +28,10 @@ VARIANTS = {
     'v12c': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, TURN_PRESET='t34e'),
     # v13: 턴 가치 재배분(진찰 11·설명 5줄+질문+답 1·문진 15 짝) + v12b
     'v13': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, TURN_PRESET='t34x'),
+    # v14 = v13 + 긴급도 판정(응급·조기 재진)·LLM 진찰 선택(비강력 범주)·금기 질문 감별 등급 — 리더보드 80 목표 1단계
+    'v14': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, V14=1, TURN_PRESET='t34x'),
 }
-SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'V13', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
+SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'V13', 'V14', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
         'EXPLAIN_N', 'EXPLAIN_MIN', 'ANSWER_RESERVE', 'EXPLAIN_MAX_LINES', 'TURN_CAP')
 
 
