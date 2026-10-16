@@ -34,8 +34,11 @@ VARIANTS = {
     'v15': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, V14=1, KIND=1, TURN_PRESET='t38'),
     # v15s = 34턴 대안(진찰 7, v10b 배분) + 같은 스위치
     'v15s': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, V14=1, KIND=1, TURN_PRESET='t34'),
+    # v16 = 리더보드 최고 v10b 대화 골격으로 복귀(34턴·문진 17·진찰 7·설명 9, 설명 문구·걱정 질문·공감 접두 v10b 그대로)
+    #       + 짝 합치기·긴급도 + 이름 확인 인사(CPX PPI) + MAI-DxO 반박자(진단 단계, 턴 0)
+    'v16': dict(B, PAIR_MERGE=1, V13=1, V14=1, NAME_GREET=1, DX_CHALLENGE=1, TURN_PRESET='t34'),
 }
-SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'V13', 'V14', 'KIND', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
+SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'V13', 'V14', 'KIND', 'NAME_GREET', 'DX_CHALLENGE', 'SAY_V11', 'ICE_PAIR', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
         'EXPLAIN_N', 'EXPLAIN_MIN', 'ANSWER_RESERVE', 'EXPLAIN_MAX_LINES', 'TURN_CAP')
 
 

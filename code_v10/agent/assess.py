@@ -165,6 +165,19 @@ def dx_and_assess(enc) -> dict:
         if cands:
             log(f"dx vague '{dx_ko}' -> '{cands[0]['dx']}'")
             dx_ko, dx_en = str(cands[0]['dx']), ''
+    if enc.cfg.get('DX_CHALLENGE'):
+        try:
+            sw = challenge_dx(enc, user, dx_ko, dx_en, diffs, res.get('candidates') or [])
+        except Exception as ex:  # noqa: BLE001 — 반박 단계 실패는 1차 진단 유지
+            log(f'dx challenge error: {type(ex).__name__}: {ex}')
+            sw = None
+        if sw:
+            old_name = nfc(str(dx_ko or dx_en or '')).strip()
+            dx_ko, dx_en = sw
+            diffs = [d for d in diffs if not _same_dx(d['dx'], dx_ko)]
+            if old_name and not any(_same_dx(d['dx'], old_name) for d in diffs):
+                diffs.insert(0, {'dx': old_name, 'reason': '1차 후보였으나 반박 검토에서 설명되지 않는 소견이 있어 차순위', 'refs': [],
+                                 'test': ''})
     out.update({'dx': normalize_dx(dx_ko, dx_en), 'evidence': ev,
                 'differential': diffs[:5], 'confidence': res.get('confidence'), 'candidates': res.get('candidates')})
     if (res.get('confidence') or 1) and isinstance(res.get('confidence'), (int, float)) and res['confidence'] < 0.5:
@@ -174,6 +187,51 @@ def dx_and_assess(enc) -> dict:
     except Exception as ex:  # 규칙 실패가 진단 전체를 막지 않도록
         log(f'dx short-stature rule error: {ex}')
     return out
+
+
+# ---------------------------------------------------------------- v16: MAI-DxO형 반박(Challenger) 단계
+# Nori et al. 2025(Sequential Diagnosis with Language Models, 대회 진단 5점 척도의 출처)의 가상 의사 패널 중
+# 'Dr. Challenger'(앵커링 방지: 현재 진단과 모순·미설명 소견을 찾고 대안을 제시)를 기록 단계에 1회 적용한다.
+# 교체는 (1) 반박자가 switch를 고르고 (2) 대안이 1차 후보·감별 목록 안에 있고 (3) 1차 진단으로 설명 안 되는 소견을 1개 이상
+# 사실 id로 제시할 때만. 그 밖에는 1차 진단 유지(무작정 바꾸는 것이 더 위험).
+def _key_dx(name: str) -> str:
+    return re.sub(r'\(.*?\)|\s|에\s*의한|으로\s*인한|의증|추정', '', nfc(name or '')).lower()
+
+
+def _same_dx(a: str, b: str) -> bool:
+    ka, kb = _key_dx(a), _key_dx(b)
+    return bool(ka and kb and (ka == kb or ka in kb or kb in ka))
+
+
+def challenge_dx(enc, case_txt: str, dx_ko, dx_en, diffs: list, cands: list):
+    if not enc.budget.can_call(enc.cfg.get('CALL_RESERVE', 15)):
+        return None
+    cur = nfc(str(dx_ko or dx_en or '')).strip()
+    pool = [d['dx'] for d in diffs] + [str(c.get('dx')) for c in cands if isinstance(c, dict) and c.get('dx')]
+    pool = [p for p in dict.fromkeys(nfc(x).strip() for x in pool) if p and not _same_dx(p, cur)]
+    if not cur or not pool:
+        return None
+    body = case_txt.split('[주진단]')[0]
+    user = (body + f'\n현재 주진단: {cur}\n대안 후보: {pool[:5]}\n'
+            '[역할] 당신은 진단 패널의 반박자(Challenger)입니다. 앵커링 편향을 막기 위해 현재 주진단으로 설명되지 않거나 모순되는 '
+            '사실(F#/E#)을 찾고, 대안 후보 중 그 사실까지 더 잘 설명하는 것이 있는지 판단하세요. 대안은 위 후보 목록에서만 고르고, '
+            '근거가 비슷하면 현재 진단을 유지(keep)하세요. 같은 질환을 더 구체적으로 부르는 것은 교체가 아닙니다.\n'
+            '출력: {"unexplained": [{"fact": "F#", "why": "..."}], "verdict": "keep"|"switch", '
+            '"final_ko": "...", "final_en": "...", "reason": "..."}')
+    res = ask_json(enc.client, enc.budget, ROLE, user, effort=enc.cfg.get('EFFORT_DX', 'medium'), max_tokens=6000,
+                   tag='dx_challenge', want=dict, tries=1, reserve=enc.cfg.get('CALL_RESERVE', 15))
+    if not isinstance(res, dict) or str(res.get('verdict') or '').strip().lower() != 'switch':
+        log(f"dx challenge: keep '{cur}'")
+        return None
+    fin = nfc(str(res.get('final_ko') or '')).strip()
+    ids = {f['id'] for f in (getattr(enc, 'facts', None) or [])} | {x['id'] for x in exam_rows(enc)}
+    unexplained = [u for u in (res.get('unexplained') or []) if isinstance(u, dict) and str(u.get('fact')) in ids]
+    match = next((p for p in pool if _same_dx(p, fin)), None)
+    if not fin or not match or not unexplained or re.search(VAGUE_DX_RE, fin, flags=re.I):
+        log(f"dx challenge: switch rejected ('{fin}', in_pool={bool(match)}, unexplained={len(unexplained)})")
+        return None
+    log(f"dx challenge: switch '{cur}' -> '{fin}' ({res.get('reason')})")
+    return fin, nfc(str(res.get('final_en') or '')).strip()
 
 
 # ---------------------------------------------------------------- v8c: 소아 저신장 감별(가족성 vs 체질성)

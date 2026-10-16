@@ -655,12 +655,33 @@ def _first_open_topic(prof: dict, main) -> str:
     return ''
 
 
-def _first_open(prof: dict, main, cfg=None) -> str:
+NAME_RE = re.compile(r'(?:이름은|저는|나는|제\s*이름은)\s*([가-힣]{2,4}?)(?:이고|이며|입니다|이다|예요|이에요|이라고|라고|,|\s)')
+
+
+def patient_name(opening: str) -> str:
+    t = nfc(opening or '')
+    m = NAME_RE.search(t)
+    if not m or re.match(r'\s*(살|세|개월|kg|키로|센티)', t[m.end(1):]) or \
+            re.search(r'(하나|둘|셋|넷|다섯|여섯|일곱|여덟|아홉|열|스물|서른|마흔|쉰|예순|일흔|여든|아흔)$', m.group(1)):
+        return ''
+    return m.group(1)
+
+
+def _first_open(prof: dict, main, cfg=None, opening: str = '') -> str:
     if (cfg or {}).get('OPEN_TOPIC'):
         t = _first_open_topic(prof, main)
         if t:
             return t
     emp = prof.get('empathy_short') or '걱정되셨죠.'
+    nm = patient_name(opening) if (cfg or {}).get('NAME_GREET') else ''
+    if nm:
+        # v16 CPX 환자-의사 관계(PPI) 첫 항목: 환자 확인(이름) + 인사. 턴 0(첫 질문과 한 문장)
+        who = f'{nm} 보호자님' if prof.get('pediatric') else f'{nm}님'
+        q = ('아이가 다른 불편한 데는요?' if prof.get('pediatric') else
+             '잠 말고 불편한 데는요?' if main in ('substance', 'insomnia') else '다른 불편한 데는요?')
+        for c in (f'{who}, {emp} {q}', f'{who}, {q}', f'안녕하세요, {emp} {q}'):
+            if fits(c):
+                return c
     if prof.get('pediatric'):
         cands = [f'안녕하세요, {emp} 아이가 다른 불편한 데는요?', '안녕하세요, 아이가 다른 불편한 데는요?']
     elif main in ('substance', 'insomnia'):
@@ -774,7 +795,7 @@ def run_v8(enc):
 
     # 1. 첫 턴: 인사·공감 + 개방형 질문 1개(공감 접두가 잘려도 질문 문장은 남는다)
     if enc.can_act():
-        e = enc.act('SAY', _first_open(prof, built['main'], cfg), phase='first', qid='open', label='개방형')
+        e = enc.act('SAY', _first_open(prof, built['main'], cfg, enc.opening), phase='first', qid='open', label='개방형')
         if e and not e.get('refused'):
             enc.counts['interview'] += 0  # 첫 턴은 문진 예산(INTERVIEW_Q) 밖
             note_mentions(e.get('reply') or '', e['turn'], entry=e)
