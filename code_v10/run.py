@@ -68,6 +68,7 @@ DEFAULTS = {
     'V13': 0,                  # 설명 5문장 슬롯(치료 유지)·성인 입원·수술 필수 해제·저수익 진찰부터 밀어내기
     # v14: 숨은 증례 일반화 — 긴급도 판정(응급실 안내·조기 재진·기록 처치 결정), 비강력 범주 LLM 진찰 선택, 금기 질문 감별 등급
     'V14': 0,
+    'KIND': 0,                 # v15: 양성·고충 답 뒤 문진 질문에 짧은 공감 접두(친절도 채점 대응, 턴 0)
     'TURN_PRESET': 't34',      # lean38 | bal44 | comm46 | full48 | t35 | t34(v8)
     'INTERVIEW_Q': 17,         # v8: 첫 개방형 질문 제외 문진 단위 수(ICE 포함) — 프리셋이 덮어씀
     # 턴 상한: 문진+진찰+설명(+환자 질문 답) 합계가 TURN_CAP을 넘지 않게. 문진은 진찰·설명·답 ANSWER_RESERVE턴을 먼저 남긴다
@@ -120,6 +121,10 @@ PRESETS = {
     # v13 34턴(턴 가치 재배분): 개방 1 + 문진 15 + 진찰 11(활력 포함) + 설명 5문장 + '궁금하신 점' 1 + 답 1
     't34x': {'INTERVIEW_Q': 15, 'EXAM_N': 11, 'EXPLAIN_N': 6, 'ANSWER_MAX': 1,
              'EXPLAIN_MIN': 6, 'ANSWER_RESERVE': 1, 'EXPLAIN_MAX_LINES': 5},
+    # v15 38턴: v10b 문진·설명(17 + 설명 7줄 + 답 2) 그대로 + 진찰 11 — v14 리더보드에서 진찰 +4는 정보 +1.6,
+    # 문진·설명 −2씩은 진단 −1.7·소통 −1.4였다 → 깎지 않고 턴을 4 더 쓴다
+    't38': {'INTERVIEW_Q': 17, 'EXAM_N': 11, 'EXPLAIN_N': 7, 'ANSWER_MAX': 2,
+            'EXPLAIN_MIN': 7, 'ANSWER_RESERVE': 2, 'EXPLAIN_MAX_LINES': 7, 'TURN_CAP': 38},
 }
 
 LAST_RUN = {}  # 로컬 도구(tools/)가 실행 뒤 통계를 읽는 용도. 제출 환경에서는 쓰지 않음.

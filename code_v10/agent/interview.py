@@ -749,6 +749,8 @@ def run_v8(enc):
     def ask_unit(u, q=None, items=None, phase='interview'):
         q = q or u['q']
         items = items or u['items']
+        if cfg.get('KIND'):
+            q = kind_prefix(enc, q)
         entry = enc.act('SAY', q, phase=phase, qid=u['id'], label='·'.join(i[1] for i in items))
         if entry is None or entry.get('refused'):
             return entry
@@ -864,6 +866,41 @@ def run_v8(enc):
                 log(f'cpx follow-up skipped (guard) [{u["id"]}] must={must} room={room}')
     missing = [u['id'] for u in queue if st.remaining_items(u) and (u['prio'] == 1 or u['safety'])]
     log(f'interview_v8 done: asked={len(st.asked_units)} items={len(st.status)} missing_must={missing}')
+
+
+# v15 친절도: 공식 평가는 임상 채점(sol high)과 별도로 친절도 채점(sol low)을 한다(실행흐름 PDF p.10·15).
+# 문진 질문이 맨 질문의 연속이면 '정형 문장 나열'로 읽힌다 → 양성·고충 답 뒤에 짧은 공감·수긍을 붙인다(30자 안, 턴 0).
+KIND_ACK = (
+    (re.compile(r'아프|아파|통증|쑤|저려|저리|따가|쓰려|쓰라'), ('많이 아프셨겠어요. ', '아프셨겠어요. ')),
+    (re.compile(r'못\s*자|잠을?\s*(설|못)|피곤|지치|힘들|힘이?\s*(빠|없)|졸려|멍해|숨이?\s*차|숨차'), ('힘드셨겠어요. ', '많이 힘드셨겠어요. ')),
+    (re.compile(r'걱정|불안|무서|겁|초조|예민|짜증|우울'), ('걱정되셨겠어요. ', '마음이 쓰이셨겠어요. ')),
+    (re.compile(r'떨|두근|땀|붓|부어|두꺼|튀어|가려|어지러|토|설사|묽|변|늘었|줄었|빠졌|빠져|더위|추위'), ('불편하셨겠어요. ', '그러셨군요. ')),
+)
+KIND_MAX = 6
+
+
+def kind_prefix(enc, q: str) -> str:
+    """직전 문진 답이 양성·고충이면 공감 접두(같은 문구 반복·연속 사용 금지, 증례당 KIND_MAX회)."""
+    st = enc.__dict__.setdefault('_kind', {'n': 0, 'last_turn': -9, 'used': []})
+    if st['n'] >= KIND_MAX:
+        return q
+    prev = next((e for e in reversed(enc.ledger) if e.get('kind') == 'SAY' and not e.get('refused')), None)
+    if not prev or prev.get('phase') not in ('first', 'interview') or prev.get('turn', 0) - st['last_turn'] < 2:
+        return q
+    reply = nfc(prev.get('reply') or '').strip()
+    if not reply or re.match(r'\s*(아니|없|안\s|전혀|괜찮|그런\s*(건|거|적))', reply) or re.search(r'한\s*번에\s*하나씩', reply):
+        return q
+    pos = ' '.join(seg for seg in cpx._segments(reply) if not cpx.NEG_TOK.search(seg))   # 부정 절('통증은 없고')은 제외
+    for pat, opts in KIND_ACK:
+        if pat.search(pos):
+            for pre in opts:
+                if pre not in st['used'] and len(nfc(pre + q)) <= 30:
+                    st['n'] += 1
+                    st['last_turn'] = prev.get('turn', 0) + 1
+                    st['used'].append(pre)
+                    return pre + q
+            return q
+    return q
 
 
 CARDIO_EXAM_CATS = {'cardio', 'resp', 'weight_loss', 'fatigue', 'palpitation', 'chest_pain', 'dyspnea', 'edema',

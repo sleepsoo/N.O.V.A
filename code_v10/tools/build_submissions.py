@@ -30,8 +30,12 @@ VARIANTS = {
     'v13': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, TURN_PRESET='t34x'),
     # v14 = v13 + 긴급도 판정(응급·조기 재진)·LLM 진찰 선택(비강력 범주)·금기 질문 감별 등급 — 리더보드 80 목표 1단계
     'v14': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, V14=1, TURN_PRESET='t34x'),
+    # v15 = v14 리더보드 분해 결과 반영: 문진 17·설명 7줄+답 2 복원(진단·소통 회복) + 진찰 11 유지 → 38턴, 친절도 공감 접두
+    'v15': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, V14=1, KIND=1, TURN_PRESET='t38'),
+    # v15s = 34턴 대안(진찰 7, v10b 배분) + 같은 스위치
+    'v15s': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, V13=1, V14=1, KIND=1, TURN_PRESET='t34'),
 }
-SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'V13', 'V14', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
+SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'V13', 'V14', 'KIND', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
         'EXPLAIN_N', 'EXPLAIN_MIN', 'ANSWER_RESERVE', 'EXPLAIN_MAX_LINES', 'TURN_CAP')
 
 

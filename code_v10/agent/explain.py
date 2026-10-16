@@ -865,7 +865,7 @@ def build_slot_lines(enc, raw: list[str], keys: list[str], k, plan, checks=None)
             checks.append({'must_say': s, 'replaces': e[1]})
             e[1], e[2] = s, True
         else:
-            if SLOT5_V13 and len(entries) >= 5:
+            if SLOT5_V13 and len(keys) <= 5 and len(entries) >= 5:
                 checks.append({'must_say_skipped_v13': s})   # v13: 설명 5줄 상한(중간 질문에 답할 턴을 남긴다)
                 continue
             sl = saymod.guess_slot(s, enc.dx or '')
@@ -1024,7 +1024,7 @@ def explain_loop_v8(enc, lines: list[str], faq: dict, quick=False):
         if not t or t == saymod.QUESTION_LINE or any(t == it['text'] for it in items):
             continue
         sl = slot_of.get(t) or saymod.guess_slot(t, dx_ko)
-        boost = 40 if (SLOT5_V13 and sl == 'worry') else 0   # v13: 기전 줄 대신 들어간 걱정 직답 줄은 치료 줄 다음까지 지킨다
+        boost = 40 if (SLOT5_V13 and sl == 'worry' and len(lines) <= 6) else 0   # v13: 기전 줄 대신 들어간 걱정 직답 줄은 치료 줄 다음까지 지킨다
         items.append({'text': t, 'slot': sl, 'prio': saymod.SLOT_PRIO.get(sl, 10) + boost + (50 if t in keep else 0)})
     said: list[str] = []
     dropped: list[dict] = []
