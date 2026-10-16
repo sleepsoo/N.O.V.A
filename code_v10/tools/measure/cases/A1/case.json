@@ -1,0 +1,98 @@
+{
+ "case_id": "A1",
+ "start_information": {
+  "opening": "이름은 정민호이고, 나는 스물네 살 남자이다. 어제 저녁부터 배가 아프기 시작했는데, 처음에는 명치 쪽이 더부룩하게 아프다가 오늘 아침부터는 오른쪽 아랫배가 계속 아파서 병원에 왔다.",
+  "vital_signs": "혈압 : 126/78 mmHg\n맥박 : 98 회/분\n호흡 : 18 회/분\n체온 : 37.9°C"
+ },
+ "patient_script": "이름은 정민호이고, 나는 스물네 살 남자이다. 어제 저녁부터 배가 아프기 시작했는데, 처음에는 명치 쪽이 더부룩하게 아프다가 오늘 아침부터는 오른쪽 아랫배가 계속 아파서 병원에 왔다.\n\n어제 저녁 여덟 시쯤 저녁을 먹고 나서 명치가 체한 것처럼 은근하게 아팠다. 밤사이 통증이 점점 오른쪽 아랫배로 옮겨 가서 오늘 아침에는 오른쪽 아랫배만 콕콕 찌르듯이 아프다. 통증은 계속 있고, 걷거나 기침하면 더 아프다. 차를 타고 오면서 덜컹거릴 때 많이 울렸다. 통증 정도는 열 점 중 일곱 점이다. 가만히 무릎을 굽히고 누우면 조금 낫다.\n\n어젯밤부터 속이 메스껍고, 오늘 새벽에 한 번 토했다. 토한 것은 먹은 음식이었고 피는 없었다. 어제 저녁 이후로 입맛이 전혀 없어서 아무것도 먹지 못했다. 몸이 으슬으슬하고 열이 나는 느낌이 있다.\n\n대변은 어제 아침에 정상으로 봤고 그 뒤로는 안 봤다. 설사나 혈변, 검은 변은 없다. 소변볼 때 아프거나 피가 섞이지는 않고, 옆구리 통증도 없다. 고환이 아프거나 붓지는 않았다.\n\n전에 이렇게 아픈 적은 없었다. 최근에 상한 음식을 먹은 기억은 없고, 같이 밥 먹은 사람 중에 아픈 사람도 없다. 기침이나 콧물 같은 감기 증상은 없다.\n\n특별한 지병은 없고 복용하는 약도 없다. 아파서 집에 있던 진통제를 먹을까 했지만 먹지 않았다. 수술이나 입원한 적은 없다. 약 알레르기는 없다.\n\n가족 중에 특별한 병은 없다. 아버지는 고혈압이 있다.\n\n대학원생이고, 담배는 피우지 않는다. 술은 일주일에 한 번 맥주 두세 잔 정도 마신다. 최근 해외여행은 없다.\n\n맹장염이 아닐까 걱정된다. 수술해야 하는지, 오늘 집에 갈 수 있는지 궁금하다.",
+ "exam_results": [
+  {
+   "exam": "전반적 외관 시진 (General appearance)",
+   "result": "급성 병색(+), 무릎 굽힌 자세로 누움, 움직임 조심스러움"
+  },
+  {
+   "exam": "의식·지남력 평가 (Mental status)",
+   "result": "명료, 지남력 3/3점"
+  },
+  {
+   "exam": "활력징후 측정 (Vital signs)",
+   "result": "126/78mmHg, 98회/분, 18회/분, 37.9°C"
+  },
+  {
+   "exam": "결막·공막 시진 (Conjunctiva and sclera inspection)",
+   "result": "창백(-/-), 황달(-/-)"
+  },
+  {
+   "exam": "구강 점막 시진 (Oral mucosa inspection)",
+   "result": "혀 약간 건조"
+  },
+  {
+   "exam": "흉곽 시진 (Chest inspection)",
+   "result": "대칭, 보조호흡근 사용(-)"
+  },
+  {
+   "exam": "폐 청진 (Lung auscultation)",
+   "result": "폐포음, 수포음(-/-), 천명음(-/-)"
+  },
+  {
+   "exam": "심음 청진 (Heart auscultation)",
+   "result": "S1·S2 명료, 규칙적 98회/분, 심잡음(-)"
+  },
+  {
+   "exam": "복부 시진 (Abdominal inspection)",
+   "result": "편평, 팽만(-)"
+  },
+  {
+   "exam": "장음 청진 (Bowel sound auscultation)",
+   "result": "감소 4회/분"
+  },
+  {
+   "exam": "복부 타진 (Abdominal percussion)",
+   "result": "고창음, 우하복부 타진 시 통증(+)"
+  },
+  {
+   "exam": "복부 촉진 (Abdominal palpation)",
+   "result": "우하복부 압통(+), 근성방어(+) 국소, 종괴(-)"
+  },
+  {
+   "exam": "맥버니 압통 (McBurney point tenderness)",
+   "result": "압통(+)"
+  },
+  {
+   "exam": "반발통 (Rebound tenderness)",
+   "result": "우하복부 반발통(+)"
+  },
+  {
+   "exam": "로브싱 징후 (Rovsing sign)",
+   "result": "양성(+)"
+  },
+  {
+   "exam": "요근 징후 (Psoas sign)",
+   "result": "우측 양성(+)"
+  },
+  {
+   "exam": "폐쇄근 징후 (Obturator sign)",
+   "result": "음성(-)"
+  },
+  {
+   "exam": "머피 징후 (Murphy sign)",
+   "result": "음성(-)"
+  },
+  {
+   "exam": "늑척추각 압통 (Costovertebral angle tenderness)",
+   "result": "압통(-/-)"
+  },
+  {
+   "exam": "간·비장 촉진 (Liver and spleen palpation)",
+   "result": "간 늑골연하 촉지(-), 비장 촉지(-)"
+  },
+  {
+   "exam": "서혜부 탈장 확인 (Inguinal hernia check)",
+   "result": "탈장(-/-)"
+  },
+  {
+   "exam": "고환 촉진 (Testicular palpation)",
+   "result": "압통(-/-), 종창(-/-)"
+  }
+ ]
+}

@@ -70,6 +70,7 @@ DEFAULTS = {
     'V14': 0,
     'NAME_GREET': 0,           # v16: 첫 턴에 환자 이름 확인 + 인사(CPX PPI 첫 항목, 턴 0)
     'DX_CHALLENGE': 0,         # v16: MAI-DxO형 반박자 1회(미설명 소견 + 후보 목록 안 대안일 때만 교체)
+    'QLINE_V11': 0,            # v17: 마지막 질문만 이해 확인형('이해 안 되시거나 더 궁금하신 점 있으세요?'), 설명 슬롯은 v10b 그대로
     'KIND': 0,                 # v15: 양성·고충 답 뒤 문진 질문에 짧은 공감 접두(친절도 채점 대응, 턴 0)
     'TURN_PRESET': 't34',      # lean38 | bal44 | comm46 | full48 | t35 | t34(v8)
     'INTERVIEW_Q': 17,         # v8: 첫 개방형 질문 제외 문진 단위 수(ICE 포함) — 프리셋이 덮어씀
@@ -219,7 +220,7 @@ def consult(client, state):
     try:   # v11: 설명 슬롯·마지막 질문 문구를 설정에 맞춰 교체(모듈 전역, 매 진료 시작 시 다시 정함)
         from agent import explain as _ex, say as _say
         _ex.apply_v11(bool(cfg.get('SAY_V11')))
-        _say.QUESTION_LINE = _say.QUESTION_LINE_V11 if cfg.get('SAY_V11') else _say.QUESTION_LINE_BASE
+        _say.QUESTION_LINE = _say.QUESTION_LINE_V11 if (cfg.get('SAY_V11') or cfg.get('QLINE_V11')) else _say.QUESTION_LINE_BASE
         _ex.apply_v13(bool(cfg.get('V13')))
     except Exception as exc:  # noqa: BLE001
         log_error(f'v11 say setup skipped: {type(exc).__name__}: {exc}')
