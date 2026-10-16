@@ -22,8 +22,12 @@ VARIANTS = {
     'v11a': dict(B, SAY_V11=1),
     'v11b': dict(B, OPEN_TOPIC=1),
     'v11c': dict(B, HPI_V11=1),
+    # v12: 34턴·같은 계통 2항목 규칙 안에서 턴당 항목 수(단일 질문 짝 합치기·걱정·기대 짝)
+    'v12a': dict(B, PAIR_MERGE=1, ICE_PAIR=1),
+    'v12b': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1),
+    'v12c': dict(B, PAIR_MERGE=1, ICE_PAIR=1, SAY_V11=1, TURN_PRESET='t34e'),
 }
-SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
+SHOW = ('REC_BACKSTOP', 'EXAM_POS', 'BANK_V10', 'PAIR_MERGE', 'ICE_PAIR', 'SAY_V11', 'OPEN_TOPIC', 'HPI_V11', 'TURN_PRESET', 'INTERVIEW_Q', 'EXAM_N',
         'EXPLAIN_N', 'TURN_CAP')
 
 

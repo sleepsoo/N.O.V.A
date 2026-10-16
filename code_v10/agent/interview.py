@@ -772,6 +772,17 @@ def run_v8(enc):
             note_mentions(e.get('reply') or '', e['turn'], entry=e)
             enc.store.record('open', '개방형', e)
 
+    # v12: 단일 단위 → 같은 계통 짝(PAIR_MERGE), 걱정 단독 → 걱정·기대 짝(ICE_PAIR). 덮인 단위는 합치지 않는다
+    if cfg.get('PAIR_MERGE') or cfg.get('ICE_PAIR'):
+        from . import pairmerge
+        if cfg.get('PAIR_MERGE'):
+            units = pairmerge.merge_singles(enc, units, covered=set(st.status))
+        if cfg.get('ICE_PAIR'):
+            units = pairmerge.ice_pair(units, bool(prof.get('pediatric')))
+        built['units'] = units
+        all_items = [i for u in units for i in u['items']]
+        labels.update({i[0]: (i[1], i[2]) for i in all_items})
+
     # 2. 시작 정보·개방형 답으로 이미 덮인 단위는 예산을 쓰지 않게 컴파일
     chosen, backlog = cpx.compile_units(units, budget, covered=set(st.status))
     st.chosen, st.backlog = chosen, backlog
