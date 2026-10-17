@@ -70,8 +70,8 @@ cd ../tools/measure && python3 measure.py --dry                                 
 - `--calibrate`: 리더보드 점수를 아는 v10b·v14·v16 × A1~A4(luna ≈ 550, sol 12)로 대리 측정이 리더보드 순위·영역 방향을 맞히는지 확인.
 
 ## 7. 지금 상태와 다음 할 일
-1. **사용자가 실행할 명령**(Claude는 실행하지 말고 안내만):
-   `cd code_v10/tools/measure && export NOVA_DEV_KEY=... && python3 measure.py --calibrate`
+1. **사용자가 실행할 명령**(Claude는 실행하지 말고 안내만): `bash code_v10/tools/measure/run_calibrate.sh`
+   (키를 숨김 입력으로 받아 보정 측정까지 한 번에. 또는 `cd code_v10/tools/measure && export NOVA_DEV_KEY=... && python3 measure.py --calibrate`)
    → 끝나면 Claude가 `results/summary.md`와 각 `results/<버전>/<증례>/`(transcript.json·record.md·grade.json)를 읽어 분석.
    - 순위 v10b > v14 > v16 일치 + 1점 이상 움직인 영역 방향 대부분 일치 → 대리 측정을 버전 비교에 채택.
      이어서 사용자가 `python3 measure.py`(v10b vs v17, v10b 진료 재사용).
