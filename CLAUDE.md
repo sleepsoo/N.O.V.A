@@ -1,22 +1,33 @@
-# N.O.V.A. 2026 예선 — 작업 인계 (다음 Claude는 이 파일부터 읽을 것)
+# N.O.V.A. 2026 예선 — 작업 인계 (이 서버의 Claude는 이 파일부터 읽을 것)
 
-최종 갱신 2026-10-17. 브랜치 `v10-info-gathering`(main은 Initial commit뿐). 상세 이력은 `대회기록 노트.md`(§1~§20),
-사용자 노트 원본 경로는 사용자 PC의 `/home/jovyan/Hyunsoo/projects/N.O.V.A/대회기록 노트.md`(이 저장소의 같은 파일과 동기화해 달라고 함).
+최종 갱신 2026-10-17. 프로젝트 루트 = **이 CLAUDE.md가 있는 폴더**(사용자 서버에서는 보통 `/home/jovyan/Hyunsoo/projects/` 아래).
+모든 경로는 이 루트 기준. 상세 이력은 같은 폴더의 `대회기록 노트.md`(§1~§21) — 작업할 때마다 이 노트를 갱신할 것(사용자 요청).
+이전 작업은 클라우드 세션에서 했고 GitHub `sleepsoo/N.O.V.A` 브랜치 `v10-info-gathering`이 원본. 서버에서는 이 폴더만으로 작업한다(git 필수 아님).
 
-## 1. 대회 요약 (정보/공지.md, 정보/nova2026_competition.json, code/docs/pdf_*.txt)
+## 0. 인계 묶음 설치 상태 확인 (처음 한 번)
+루트에 다음이 있어야 한다: `code_v10/`(현재 코드), `제출/submission_v8~v17.zip`, `정보/개발키트/`(nova_local.py 등), `공개 샘플데이터/`(C01·C03·C10), `대회기록 노트.md`.
+```bash
+cd <이 CLAUDE.md가 있는 폴더>
+python3 -V                                   # 3.10 이상(표준 라이브러리만 사용)
+cd code_v10/tests && python3 -m unittest discover -p "test_*.py" 2>&1 | tail -3    # 217 tests OK 여야 함
+cd ../tools/measure && python3 measure.py --dry                                    # 계획만 출력(호출 0)
+```
+
+## 1. 대회 요약 (정보/공지.md, 정보/nova2026_competition.json, 정보/*.pdf)
 - 가상 환자 진료 Doctor Agent. 행동 SAY(30자 이하)·EXAM(진찰 동작 하나)·DIAGNOSE(S·O·A·P 15칸 + 주진단). 증례당 최대 50턴.
 - 채점 6영역: 정보수집 25 / 진단추론 15(5점 척도, Nori et al. 2025) / 검사·추적 10 / 안전 15 / 의사소통 15 / 효율 20.
   기록에만 쓰고 묻지 않은 것은 미인정(판정은 기록 문장 인용). 공식 평가는 임상 채점 sol(high) + **친절도 채점 sol(low)** 별도.
 - 샘플 검증 = 공개 3례(C01 불면/수면제, C03 저신장, C10 그레이브스), luna 채점, 무료 하루 10회. **리더보드 = 숨은 5례, sol, 하루 1회.**
   최종 평가 = 선택한 제출 1개, 10례, GPT·Claude·Gemini 평균. 예선 10-22까지.
-- Doctor 모델 = gpt-6-luna(temperature 무시, effort low/medium/high, max_tokens ≤ 8000).
+- Doctor 모델 = gpt-6-luna(temperature 무시, effort low/medium/high, max_tokens ≤ 8000). 제출 = zip(루트에 run.py·requirements.txt), stdlib만.
 
 ## 2. 사용자 고정 규칙
-- **턴 34 고정**(아래 효율식으로 재확인됨). 묶음 질문은 같은 계통 2항목까지(병력·가족력 이름 3개 나열만 예외), 교차 계통·'~거나 ~고' 금지.
+- **턴 34 고정**(아래 효율식으로 재확인). 묶음 질문은 같은 계통 2항목까지(병력·가족력 이름 3개 나열만 예외), 교차 계통·'~거나 ~고' 금지.
   미응답 항목을 음성으로 기록 금지.
-- 개발 키: 원칙적으로 사용 금지였으나 10-16 사용자 승인으로 **측정 도구(code_v10/tools/measure)에 한해 최소 사용**. 키는 팀원 PC 환경변수로만,
-  코딩 도구(Claude 포함)에 연결 금지 → Claude는 스크립트만 만들고 실행은 사용자.
-- 파일은 항상 SendUserFile로 올려 바로 다운로드 가능하게. 작업 후 커밋·푸시(커밋 끝에 Co-Authored-By/Claude-Session 줄).
+- **개발 키(NOVA_DEV_KEY) — 대회 규칙상 코딩 도구(Claude 포함)에 연결 금지.** 이 서버의 Claude는 키를 읽거나 설정하거나,
+  키가 필요한 명령(`measure.py` 실제 실행, `--dry` 제외)을 직접 실행하지 말 것. 명령을 만들어 주고 **사용자가 자기 터미널에서 실행**,
+  결과 파일(`code_v10/tools/measure/results/`)만 Claude가 읽어 분석한다. 키 사용은 측정 도구에 한해 최소량(사용자 승인 10-16).
+- 새 제출 파일은 `제출/`에 저장하고 경로·sha256을 알려 줄 것. 작업 내용은 `대회기록 노트.md`에 섹션 추가로 기록.
 - 목표: 리더보드 80(1위 90). 사용자가 근거 없는 낙관 추정에 매우 민감 — 기대치는 보수적으로, 측정 없이 "+N점" 약속 금지.
 
 ## 3. 리더보드(sol, 숨은 5례) 전체 기록 — 이것만이 진실
@@ -29,36 +40,42 @@
 | v15 | 38 | 12.82 | 13.33 | 8.35 | 12.75 | 7.82 | 15.46 | 70.53 |
 | v16 | 34 | 12.10 | 12.00 | 8.10 | 10.50 | 8.65 | 18.08 | 69.43 |
 
-샘플(luna)은 리더보드를 예측하지 못한다: v14 샘플 83.83→리더보드 71.46, v15 84.30→70.53. v17 샘플 80.69(v10b 샘플 79.66).
+샘플(luna)은 리더보드를 예측하지 못한다: v14 샘플 83.83→리더보드 71.46, v15 84.30→70.53. v17 샘플 80.69(v10b 샘플 79.66, 소통 +1.33은 변동 폭 안).
 
 ## 4. 확인된 사실(데이터 근거)
 1. **효율 ≈ min(20, 20 − 0.69 × (턴 − 31.4))** — 리더보드 7점 일치(30턴 20.0, 34턴 18.1~18.4, 38턴 15.46, 44턴 11.29). 토큰은 거의 무관.
 2. 리더보드 턴 가치: 진찰 +1 ≈ 정보 +0.40, 설명 +1 ≈ 소통 +0.7, 문진 ±1 ≈ 정보 0.3~0.5 → 어느 턴도 효율 비용 0.69를 넘지 못함.
    턴 재배분은 최대 ±1점. 개선은 "같은 34턴에서 턴당 득점"으로만 가능.
-3. v10b 이후 v14·v15·v16 모두 하락. 원인 추정: v14·v15 소통 하락 = 설명 슬롯 문구(SAY_V11)·걱정+기대 짝(ICE_PAIR) 변경,
-   v16 진단·안전 하락 = MAI-DxO 반박자(DX_CHALLENGE)가 진단을 틀리게 바꾼 것으로 추정. 안전 12.75는 js7~v15 공통(숨은 증례 고유).
-4. 공개 샘플 3례는 전부 만성. 숨은 증례에는 급성·은행 밖 주호소가 있을 가능성(코드상 v8 이후 응급 승격 누락을 V14로 보완했으나 리더보드 변화 없음).
+3. v10b 이후 v14·v15·v16 모두 하락. 추정 원인: v14·v15 소통 하락 = 설명 슬롯 문구(SAY_V11)·걱정+기대 짝(ICE_PAIR),
+   v16 진단·안전 하락 = MAI-DxO 반박자(DX_CHALLENGE)가 진단을 틀리게 바꿈. 안전 12.75는 js7~v15 공통(숨은 증례 고유).
+4. 공개 샘플 3례는 전부 만성. 숨은 증례에는 급성·은행 밖 주호소가 있을 가능성.
 
 ## 5. 코드 구조 (code_v10/ = 현재 작업 기준, 제출물은 모두 여기서 빌드)
 - `run.py` DEFAULTS의 스위치로 변형을 만든다. 주요 스위치: REC_BACKSTOP(기록 안전장치), EXAM_POS, BANK_V10, PAIR_MERGE(단일→짝, LLM 1회),
-  ICE_PAIR, SAY_V11, QLINE_V11(마지막 질문만 이해 확인형), KIND(공감 접두), V13(t34x 배분·성인 입원력 해제), V14(긴급도·약한 범주 LLM 진찰·금기 질문),
-  NAME_GREET, DX_CHALLENGE, TURN_PRESET(t34 = 문진 17·진찰 7·설명 7줄+답 2 / t34x / t38).
-- `agent/`: interview.py(문진·진찰, run_v8·kind_prefix·llm_exam_pick), cpx.py·cpx_bank_a/b/c(62범주 CPX 은행), explain.py(계획·설명 슬롯·render_plan),
-  assess.py(진단·반박자), note2.py(기록·백스톱), pairmerge.py, urgency.py, kb.py(진단 지식표). `agent/data/`(DDXPlus KB)는 .gitignore — zip에서 복원.
-- 빌드: `python code_v10/tools/build_submissions.py v17` → `제출/submission_v17.zip`(다시 만들면 sha 바뀜 — 이미 낸 파일은 커밋된 zip 기준).
-- 테스트: `cd code_v10/tests && python3 -m unittest discover -p "test_*.py"` (217개 통과). `tests/data/pairs_labeled.tsv`는 `code/docs/pair_data/`에서 복사.
-- 제출 sha256: v10b `b3180738…`, v17 `645d9dd6…`.
+  ICE_PAIR, SAY_V11, QLINE_V11(마지막 질문만 이해 확인형), KIND(공감 접두), V13, V14(긴급도·약한 범주 LLM 진찰·금기 질문),
+  NAME_GREET, DX_CHALLENGE, TURN_PRESET(t34 = 개방 1 + 문진 17 + 진찰 7 + 설명 7줄 + 답 2 / t34x / t38).
+- `agent/`: interview.py(문진·진찰), cpx.py·cpx_bank_a/b/c(62범주 CPX 은행), explain.py(계획·설명·render_plan), assess.py(진단·반박자),
+  note2.py(기록·백스톱), pairmerge.py, urgency.py, kb.py(진단 지식표), data/ddx_kb.json(DDXPlus).
+- 빌드: `python3 code_v10/tools/build_submissions.py v17` → `제출/submission_v17.zip`. 변형 정의는 build_submissions.py의 VARIANTS
+  (v10b = `dict(EXAM_POS=1, BANK_V10=1)`, v17 = v10b + PAIR_MERGE·KIND·QLINE_V11). **다시 빌드하면 sha가 바뀌니 이미 낸 zip은 덮어쓰지 말 것.**
+- 모의 실행(키 불필요): tests/test_v8.py의 FakeClient로 34턴 대화를 재현(`tests/test_v12.py`의 run_var 참고).
+- 제출 sha256: v10b `b3180738…`, v14 `d991b6e2…`, v16 `3748e316…`, v17 `645d9dd6…`.
 
 ## 6. 측정 도구 (code_v10/tools/measure, README.md 참고)
-- 합성 증례 4개(make_cases.py): A1 급성 충수염 · A2 철결핍성 빈혈 · A3 요추 추간판 탈출증 · A4 소아 급성 중이염(대본·진찰표·참고 정답).
-- run_one.py: 개발 키트 시뮬레이터(정보/개발키트/nova_local.py, 서버 규칙) + Doctor=대회 Doctor(luna, 개발 키) + 환자·진찰 판정=luna(또는 NOVA_LOCAL_SIM_URL 로컬).
-- measure.py: zip 풀기 → 진료 → sol 대리 채점 → summary.md(평균·차이·판정). 호출 상한(--max-luna/--max-sol)·이어하기. 가짜 API로 배관 점검 완료, **실제 키 실행은 아직 없음**.
-- `--calibrate`: 리더보드 점수를 아는 v10b·v14·v16으로 대리 측정이 리더보드 순위·영역 방향을 맞히는지 확인(luna ≈ 550, sol 12).
+- 합성 증례 4개(make_cases.py → cases/A1~A4): A1 급성 충수염 · A2 철결핍성 빈혈 · A3 요추 추간판 탈출증 · A4 소아 급성 중이염.
+- run_one.py: 개발 키트 시뮬레이터(정보/개발키트/nova_local.py, 서버 규칙) + Doctor = 대회 Doctor(luna, 개발 키) + 환자·진찰 판정 = luna
+  (또는 `NOVA_LOCAL_SIM_URL`·`NOVA_LOCAL_SIM_MODEL`로 이 서버의 로컬 모델 → 키 사용량 대폭 감소).
+- measure.py: zip 풀기 → 진료 → sol 대리 채점 → results/summary.md(평균·차이·판정). 호출 상한(--max-luna/--max-sol)·이어하기.
+  가짜 API로 배관 점검 완료, **실제 키 실행은 아직 없음**.
+- `--calibrate`: 리더보드 점수를 아는 v10b·v14·v16 × A1~A4(luna ≈ 550, sol 12)로 대리 측정이 리더보드 순위·영역 방향을 맞히는지 확인.
 
 ## 7. 지금 상태와 다음 할 일
-1. **사용자 대기 중**: 팀원 PC에서 `python measure.py --calibrate` 실행 → results/summary.md(또는 results 폴더)를 받는다.
-   - 순위 v10b > v14 > v16 일치 + 큰 영역 방향 대부분 일치 → 대리 측정을 버전 비교에 채택. 이어서 `python measure.py`(v10b vs v17, v10b 진료 재사용).
-   - 불일치 → results 로그로 합성 증례·채점 지시문을 고쳐 재보정.
+1. **사용자가 실행할 명령**(Claude는 실행하지 말고 안내만):
+   `cd code_v10/tools/measure && export NOVA_DEV_KEY=... && python3 measure.py --calibrate`
+   → 끝나면 Claude가 `results/summary.md`와 각 `results/<버전>/<증례>/`(transcript.json·record.md·grade.json)를 읽어 분석.
+   - 순위 v10b > v14 > v16 일치 + 1점 이상 움직인 영역 방향 대부분 일치 → 대리 측정을 버전 비교에 채택.
+     이어서 사용자가 `python3 measure.py`(v10b vs v17, v10b 진료 재사용).
+   - 불일치 → 로그로 합성 증례·채점 지시문(measure.py RUBRIC)을 고쳐 재보정.
 2. v17(= v10b + PAIR_MERGE + KIND + QLINE_V11, 턴 0 변경만)은 대리 측정 판정이 '제출 후보'(정보+소통 ≥ +1.5, 안전·진단 하락 ≤ 0.5)일 때만 리더보드에.
 3. 이후 후보는 **v10b에서 변경 하나씩**, 대리 측정 통과분만 리더보드에. 최종 제출 선택은 리더보드 최고(현재 v10b).
 4. 개선 아이디어(측정으로 검증할 것): 설명 7줄 내용을 증례 교육 항목(진단·기전·걱정 직답·검사 목적·치료 선택지·약 부작용 안전망·경고·재진)에 맞추기,
@@ -66,5 +83,5 @@
 
 ## 8. 주의
 - 샘플 검증 점수 상승을 근거로 리더보드에 내지 말 것(3번 연속 하락).
-- 사용자가 화가 난 상태에서도 사실대로: 측정 없는 개선 약속 금지, 하락 원인은 추정이면 추정이라고 명시.
-- `pkill -f <패턴>`은 실행 중인 셸 자신도 죽일 수 있음(포트 기반 kill 사용).
+- 측정 없는 개선 약속 금지, 하락 원인은 추정이면 추정이라고 명시.
+- `pkill -f <패턴>`은 실행 중인 셸 자신도 죽일 수 있음(포트·PID 기반 kill 사용).
