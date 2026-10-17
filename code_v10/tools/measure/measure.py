@@ -27,6 +27,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parents[2]
 SUBMIT = PROJECT / '제출'
+# 리더보드(sol, 숨은 5례) 실측 — 보정용
+CALIB = {'v10b': {'정보수집': 11.28, '진단추론': 13.67, '검사·추적': 7.95, '안전': 12.75, '의사소통': 8.95, '효율': 18.20},
+         'v14': {'정보수집': 12.86, '진단추론': 12.00, '검사·추적': 8.18, '안전': 12.75, '의사소통': 7.52, '효율': 18.15},
+         'v16': {'정보수집': 12.10, '진단추론': 12.00, '검사·추적': 8.10, '안전': 10.50, '의사소통': 8.65, '효율': 18.08}}
 DOMAINS = ('정보수집', '진단추론', '검사·추적', '안전', '의사소통', '효율')
 MAX = {'정보수집': 25, '진단추론': 15, '검사·추적': 10, '안전': 15, '의사소통': 15, '효율': 20}
 
@@ -136,7 +140,13 @@ def main():
     ap.add_argument('--max-sol', type=int, default=10)
     ap.add_argument('--no-grade', action='store_true')
     ap.add_argument('--dry', action='store_true')
+    ap.add_argument('--calibrate', action='store_true',
+                    help='리더보드 점수를 아는 버전(v10b 72.80·v14 71.46·v16 69.43)으로 대리 측정이 리더보드 순위·영역 패턴을 맞히는지 확인')
     args = ap.parse_args()
+    if args.calibrate:
+        args.agents = [f'{n}={SUBMIT / f"submission_{n}.zip"}' for n in CALIB]
+        args.max_luna = max(args.max_luna, 600)
+        args.max_sol = max(args.max_sol, 14)
     root = Path(args.out)
     agents = [(a.split('=', 1)[0], Path(a.split('=', 1)[1])) for a in args.agents]
     local_sim = bool(os.environ.get('NOVA_LOCAL_SIM_URL'))
@@ -217,6 +227,26 @@ def summarize(root, agents, cases, used):
                 f'합 {sum(diff.values()):+.2f}']
         ok = diff['정보수집'] + diff['의사소통'] >= 1.5 and diff['안전'] >= -0.5 and diff['진단추론'] >= -0.5
         out.append(f"판정: {'리더보드 제출 후보' if ok else '제출 보류'} (정보+소통 ≥ +1.5, 안전·진단 하락 ≤ 0.5 기준)")
+    known = [n for n in names if n in CALIB and all(v is not None for v in means.get(n, {}).values())]
+    if len(known) >= 2:
+        tot_p = {n: sum(means[n].values()) for n in known}
+        tot_l = {n: sum(CALIB[n].values()) for n in known}
+        rank_p = sorted(known, key=lambda n: -tot_p[n])
+        rank_l = sorted(known, key=lambda n: -tot_l[n])
+        out += ['', '## 보정: 대리 측정 vs 리더보드', '| 버전 | 대리 합 | 리더보드 합 |', '|---|---|---|']
+        out += [f'| {n} | {tot_p[n]:.2f} | {tot_l[n]:.2f} |' for n in known]
+        ties = len({round(v, 1) for v in tot_p.values()}) < len(tot_p)
+        verdict = '판별 불가(대리 합 동점)' if ties else ('일치' if rank_p == rank_l else '불일치')
+        out.append(f"총점 순위 대리 {rank_p} / 리더보드 {rank_l} → {verdict}")
+        base = known[0]
+        for n in known[1:]:
+            agree = []
+            for d in DOMAINS:
+                dl, dp = CALIB[n][d] - CALIB[base][d], means[n][d] - means[base][d]
+                if abs(dl) >= 1.0:   # 리더보드에서 1점 이상 움직인 영역만 방향 비교
+                    agree.append(f"{d}(리더보드 {dl:+.2f}, 대리 {dp:+.2f}, {'같은 방향' if dl * dp > 0 else '반대'})")
+            out.append(f'{n} − {base}: ' + ('; '.join(agree) or '1점 이상 움직인 영역 없음'))
+        out.append('판단: 총점 순위가 일치하고 크게 움직인 영역 방향이 대부분 같으면 앞으로 버전 비교에 대리 측정을 쓴다.')
     (root / 'summary.md').write_text('\n'.join(out) + '\n', encoding='utf-8')
     print('\n'.join(out))
 
